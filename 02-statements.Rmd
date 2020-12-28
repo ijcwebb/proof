@@ -1,0 +1,191 @@
+# Statements
+
+A statement is a remark or declaration. Here are some examples:
+
+- Life is pain.
+- I am 19 years old.
+- I like your hat.
+- London is the capital of Great Britain.
+
+## Non-statements    
+
+So what is *not* a statement? I've listed four types of non-statements below. Can you think of any other types?
+
+### Fragments
+
+- Fish.
+- I am.
+- Bro.
+
+These are incomplete sentences, and are therefore not statements.
+    
+### Questions
+
+- What is $2 \cdot 2$?
+- Are you going to eat that?
+- What is this life if full of care?
+
+Anything that ends with a question mark is not a statement; it's a question.
+    
+### Implicit answers
+
+- $162.5$
+- Yes it is.
+- The day after tomorrow.
+
+Anything that answers a question, without explicitly referencing the question, is not a statement. Or at least, not one that we can work with.
+    
+### Exclamations
+
+- Dang!
+- Ura!
+- Phew!
+
+## What makes a *good* statement?
+
+Not all statements are equally good! Some are better than others. Follow the rules below for high-quality statements:
+    
+### All the words should be clear and understandable
+
+All the words in a statement should *either* already be understood by the reader, or should be easy to Google. Let's look at some examples:
+
+<center>
+
+**Bishkek** is the **capital** of the **Kyrgyz Republic**.
+
+</center>
+
+This is nice and clear. We know what the Kyrgyz Republic is, we know what Bishkek is, and we know what a capital is.
+
+<center>
+
+The **human foot** is comprised of 26 **bones**.
+
+</center>
+
+Again, this statement is nice and clear. We know what each term means.
+    
+<center>
+
+An **atom** of **uranium** has one more **electron** than an **atom** of **protactinium**.
+
+</center>
+
+We might not understand every term here, but we could use Google to find out more.
+    
+<center>
+
+<span style="color:red">The **candidate** won the **popular vote** but lost the **election**.</span>
+
+</center>
+
+This isn't clear, and no matter how much Googling we do, we won't be able to clarify the details. We need to ask the author of the statement: Which election? Which year? Which candidate?
+    
+<center>
+
+<span style="color:red">**I love you**.
+
+</center>
+
+On its own, this statement isn't clear enough. Who is speaking, and to whom?
+
+Once we understand that, we need to ask whether **love** is clearly defined? Are we talking about something from the soul? Something biological? Familiar love? Friendship?
+    
+<center>
+        
+<span style="color:red">1000 is a **large** number.
+
+</center>
+
+There's only one word here which is not clear: large. It's not clear how the author is defining large. Maybe the author could change the statement to compare it with something:
+
+<center>
+
+1000 is larger than 500.
+
+1000 people died today in our country, the largest **daily total** since the **global pandemic** began.
+        
+1000 is the largest number for which the **Romans** had a **symbol**.
+        
+</center>
+
+In all three of these statements, the word ``large'' has now  been given clear meaning.
+
+### No paradoxes!
+
+Paradoxes contradict themselves. These statements rely more on tricks of language:
+    
+<center>
+
+This statement is not clear.
+
+This statement is false.
+
+The statement below is not true.
+The statement above is true. 
+
+</center>
+            
+Because paradoxes are built to contradict themselves, they aren't much use to us. Therefore we'll avoid them in this course.^[They are good for keeping our brains busy though!]
+
+```{exercise}
+Can you find any other paradoxical statements? What makes them paradoxical?
+```
+
+### Statements should stand on their own
+
+Don't you hate that feeling when you start watching a film but nothing makes sense because you didn't watch the previous films in the series?^[I had watched *none* of the previous Marvel movies before watching *Avengers: Endgame*. I understood nothing and had to spend an hour afterwards quizzing my boyfriend on the Tesseract, the Ancient One, and what Robert Downey Jr. was doing stranded in space. I think I got it.]
+    
+A good statement should stand on its own, and not rely on the reader knowing previous statements. If it *does* assume knowledge of previous statements, they should be referenced or restated, like including a plot synopsis for the previous movies!
+
+Now it's your turn. Bring your answers to our next class. 
+
+Going forward, all statements will be coloured yellow, \hl{like this!}
+
+```{exercise}
+Take a look at the statements below. Are all the terms clear? Do you understand all the terms? If not, do you think you could find out their meaning on your own? Do any of the statements need more explanation by the author?
+    
+1. It is hot today.
+2. It is hotter today than it was yesterday.
+3. The highest temperature on record, 54.4$^{\circ}$C or 130$^{\circ}$F, was measured on 16th August 2020 at the Death Valley National Park in California.
+4. The explosion in Beirut in August 2020 could have been avoided.
+5. 24 is a nice number.
+6. 28 is a perfect number.
+7. Two negatives make a positive.
+8. Aman has a twin sister.
+9. Ariana Grande was the most streamed artist of the year.
+10. On average it rains more in Wales than it does in Kyrgyzstan.
+```
+
+```{solution}
+1. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
+2. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
+3. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.
+
+```
+
+```{exercise}
+Using the three rules given above, which of the following statements are good? What is wrong with the others?
+    
+1. The cyrillic alphabet contains 33 letters.
+2. Gunnar Garfors has visited every country in the world.
+3. People find it harder to concentrate on one task than they used to.
+4. Mobile phones have gotten more powerful over time.
+5. Video games help people relax.
+6. The US is larger than China.
+7. The last word of this sentence is.
+8. This sentence contains four e's.
+9. This sentence contains 3 1's, 1 2 and 2 3's.
+10. The longest word in this sentence is "complementary".
+```
+
+<div class="alert alert-info">
+<strong> What have we learnt? </strong> 
+
+- We understand what *isn't* a statement, what's a *bad* statement and what's a *good* statement. 
+- We also understand... </div>
+    
+        
+In this course, we will only work with good, high-quality statements.
+        
+Next, let's look at whether good statements are true or not. 

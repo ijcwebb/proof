@@ -2,8 +2,64 @@
 title: "An Introduction to Mathematical Proof"
 author: "Iain Webb"
 date: "`r Sys.Date()`"
+output: bookdown::gitbook
 site: bookdown::bookdown_site
 ---
+# Getting started
 
-# Down the rabbit-hole
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
+
+```{r, echo=FALSE}
+knitr::include_graphics(rep("figures/head1.png"))
+```
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+\end{equation}
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+\end{equation}
+
+\begin{equation}
+y = mx+b
+\end{equation}
+
+\begin{exercise} 
+  \item One
+\end{exercise}
+
+```{theorem}
+Here is my theorem.
+```
+
+```{lemma}
+Here is my lemma
+```
+
+```{corollary}
+Here is my corollary
+```
+
+```{proposition}
+Here is my proposition
+```
+
+```{conjecture}
+Here is my conjecture
+```
+
+```{definition}
+Here is my definition
+```
+
+```{example}
+Here is my example
+```
+
+```{exercise}
+Here is my exercise.
+```
