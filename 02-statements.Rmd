@@ -128,9 +128,11 @@ The statement above is true.
             
 Because paradoxes are built to contradict themselves, they aren't much use to us. Therefore we'll avoid them in this course.^[They are good for keeping our brains busy though!]
 
+<div class="alert alert-danger" role="alert">
 ```{exercise}
 Can you find any other paradoxical statements? What makes them paradoxical?
-```
+```  
+</div>
 
 ### Statements should stand on their own
 
@@ -179,11 +181,13 @@ Using the three rules given above, which of the following statements are good? W
 10. The longest word in this sentence is "complementary".
 ```
 
-<div class="alert alert-info">
+<div class="alert alert-success" role="alert">
 <strong> What have we learnt? </strong> 
 
 - We understand what *isn't* a statement, what's a *bad* statement and what's a *good* statement. 
-- We also understand... </div>
+- We also understand... 
+
+</div>
     
         
 In this course, we will only work with good, high-quality statements.
