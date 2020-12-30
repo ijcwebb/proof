@@ -4,8 +4,8 @@
 
 Simply, the *truth value* of a statement is whether the statement is true or false. 
     
-- The truth value of the statement **Bishkek is the capital of the Kyrgyz Republic** is true. 
-- The truth value of the statement **Osh is the capital of the Kyrgyz Republic** is false.
+- The truth value of the statement "Bishkek is the capital of the Kyrgyz Republic" is true. 
+- The truth value of the statement "Osh is the capital of the Kyrgyz Republic" is false.
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
@@ -17,7 +17,7 @@ c. Ice melts above $0^{\circ}$C on Earth.
 d. $11,118$ is the largest number in existence.
 e. The Earth is closer to the Sun than Jupiter.
 f. $a^2+b^2=c^2$, where $a$, $b$, $c = 1$.
-g. $a = b+c$
+g. $a = b+c$.
 h. $1000$ is a large number.
 
 ```  
