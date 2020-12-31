@@ -34,6 +34,12 @@ exr:unnamed-chunk-35
 exr:unnamed-chunk-36
 exr:unnamed-chunk-37
 exr:unnamed-chunk-38
+exr:unnamed-chunk-39
+exr:unnamed-chunk-40
+exr:unnamed-chunk-41
+exr:unnamed-chunk-42
+exr:unnamed-chunk-43
+exr:unnamed-chunk-44
 getting-started
 about-this-course
 about-this-book
@@ -57,3 +63,6 @@ mathematical-statements
 definition
 mathematical-statements-dont-need-to-be-about-mathematics
 statements-containing-mathematics-arent-necessarily-mathematical
+axioms
+what-makes-a-mathematical-statement-an-axiom
+what-makes-an-axiom-a-definition

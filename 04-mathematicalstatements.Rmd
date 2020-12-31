@@ -122,7 +122,7 @@ Do you think there are mathematical statements to which no one can *ever* know t
 Below are four more statements. Repeat Exercises 4.3 and 4.4 for these statements.
   
 a. There are infinitely many square numbers.
-b. There are infinitely many prime numbers.
+b. There are infinitely many prime numbers.^[Watch from 12:30 in this video: https://www.youtube.com/watch?v=OihQPf4mJH4.]
 c. There are infinitely many perfect numbers.
 d. There is no set^[A set is a collection of items.] whose cardinality^[Cardinality tells you the number of items in a set.] is strictly between that of the integers^[Integers are the whole numbers: ...-3, -2, -1, 0, 1, 2, 3...] and the real numbers^[Real number include both whole and non-whole numbers.].    
 
