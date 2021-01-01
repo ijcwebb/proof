@@ -40,6 +40,8 @@ exr:unnamed-chunk-41
 exr:unnamed-chunk-42
 exr:unnamed-chunk-43
 exr:unnamed-chunk-44
+fig:unnamed-chunk-46
+exr:unnamed-chunk-47
 getting-started
 about-this-course
 about-this-book
@@ -66,3 +68,10 @@ statements-containing-mathematics-arent-necessarily-mathematical
 axioms
 what-makes-a-mathematical-statement-an-axiom
 what-makes-an-axiom-a-definition
+mathematical-proof
+mathematics-versus-other-fields
+terminology
+methodology
+trial-and-improvement
+an-ever-changing-world
+so-what-does-this-all-mean

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Statements | An Introduction to Mathematical Proof</title>
-  <meta name="description" content="Chapter 2 Statements | An Introduction to Mathematical Proof" />
+  <title>Chapter 6 Mathematical proof | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="Chapter 6 Mathematical proof | An Introduction to Mathematical Proof" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Statements | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 6 Mathematical proof | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Statements | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 6 Mathematical proof | An Introduction to Mathematical Proof" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="truth-values.html"/>
+<link rel="prev" href="axioms.html"/>
+
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -140,171 +140,105 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="statements" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Statements</h1>
-<p>A statement is a remark or declaration. Here are some examples:</p>
-<ul>
-<li>Life is pain.</li>
-<li>I am 19 years old.</li>
-<li>I like your hat.</li>
-<li>London is the capital of Great Britain.</li>
-</ul>
-<div id="non-statements" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Non-statements</h2>
-<p>So what is <em>not</em> a statement? I’ve listed four types of non-statements below. Can you think of any other types?</p>
-<div id="fragments" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Fragments</h3>
-<ul>
-<li>Fish.</li>
-<li>I am.</li>
-<li>Bro.</li>
-</ul>
-<p>These are incomplete sentences, and are therefore not statements.</p>
+<div id="mathematical-proof" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Mathematical proof</h1>
+<div id="mathematics-versus-other-fields" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Mathematics versus other fields</h2>
+<p>Mathematical proof is different to proof in other fields. Let’s look at how.</p>
+<div id="terminology" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Terminology</h3>
+<p>Mathematics has a different set of terms when talking about proofs.</p>
+<p>In mathematics, once we have identified a statement which we would like to try to prove or disprove, we rename it a **conjecture}.</p>
+<p>If we are successful in proving it, the conjecture is renamed a <strong>theorem</strong>. If it is disproved, it is called a **disproved conjecture}. Only statements that have been proved true} can be called theorems.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-46"></span>
+<img src="figures/statementjourney.jpg" alt="The journey of a statement." width="65%" />
+<p class="caption">
+Figure 6.1: The journey of a statement.
+</p>
 </div>
-<div id="questions" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Questions</h3>
-<ul>
-<li>What is <span class="math inline">\(2 \cdot 2\)</span>?</li>
-<li>Are you going to eat that?</li>
-<li>What is this life if full of care?</li>
-</ul>
-<p>Anything that ends with a question mark is not a statement; it’s a question.</p>
-</div>
-<div id="implicit-answers" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Implicit answers</h3>
-<ul>
-<li><span class="math inline">\(162.5\)</span></li>
-<li>Yes it is.</li>
-<li>The day after tomorrow.</li>
-</ul>
-<p>Anything that answers a question, without explicitly referencing the question, is not a statement. Or at least, not one that we can work with.</p>
-</div>
-<div id="exclamations" class="section level3" number="2.1.4">
-<h3><span class="header-section-number">2.1.4</span> Exclamations</h3>
-<ul>
-<li>Dang!</li>
-<li>Ura!</li>
-<li>Phew!</li>
-</ul>
-</div>
-</div>
-<div id="what-makes-a-good-statement" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> What makes a <em>good</em> statement?</h2>
-<p>Not all statements are equally good! Some are better than others. Follow the rules below for high-quality statements:</p>
-<div id="all-the-words-should-be-clear-and-understandable" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> All the words should be clear and understandable</h3>
-<p>All the words in a statement should <em>either</em> already be understood by the reader, or should be easy to Google. Let’s look at some examples:</p>
-<center>
-<p><strong>Bishkek</strong> is the <strong>capital</strong> of the <strong>Kyrgyz Republic</strong>.</p>
-</center>
-<p>This is nice and clear. We know what the Kyrgyz Republic is, we know what Bishkek is, and we know what a capital is.</p>
-<center>
-<p>The <strong>human foot</strong> is comprised of 26 <strong>bones</strong>.</p>
-</center>
-<p>Again, this statement is nice and clear. We know what each term means.</p>
-<center>
-<p>An <strong>atom</strong> of <strong>uranium</strong> has one more <strong>electron</strong> than an <strong>atom</strong> of <strong>protactinium</strong>.</p>
-</center>
-<p>We might not understand every term here, but we could use Google to find out more.</p>
-<center>
-<p><span style="color:red">The <strong>candidate</strong> won the <strong>popular vote</strong> but lost the <strong>election</strong>.</span></p>
-</center>
-<p>This isn’t clear, and no matter how much Googling we do, we won’t be able to clarify the details. We need to ask the author of the statement: Which election? Which year? Which candidate?</p>
-<center>
-<p><span style="color:red"><strong>I love you</strong>.</p>
-</center>
-<p>On its own, this statement isn’t clear enough. Who is speaking, and to whom?</p>
-<p>Once we understand that, we need to ask whether <strong>love</strong> is clearly defined? Are we talking about something from the soul? Something biological? Familiar love? Friendship?</p>
-<center>
-<p><span style="color:red">1000 is a <strong>large</strong> number.</p>
-</center>
-<p>There’s only one word here which is not clear: large. It’s not clear how the author is defining large. Maybe the author could change the statement to compare it with something:</p>
-<center>
-<p>1000 is larger than 500.</p>
-<p>1000 people died today in our country, the largest <strong>daily total</strong> since the <strong>global pandemic</strong> began.</p>
-<p>1000 is the largest number for which the <strong>Romans</strong> had a <strong>symbol</strong>.</p>
-</center>
-<p>In all three of these statements, the word ``large’’ has now been given clear meaning.</p>
-</div>
-<div id="no-paradoxes" class="section level3" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> No paradoxes!</h3>
-<p>Paradoxes contradict themselves. These statements rely more on tricks of language:</p>
-<center>
-<p>This statement is not clear.</p>
-<p>This statement is false.</p>
-<p>The statement below is not true.
-The statement above is true.</p>
-</center>
-<p>Because paradoxes are built to contradict themselves, they aren’t much use to us. Therefore we’ll avoid them in this course.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>* A mathematical statement obviously!</p>
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-13" class="exercise"><strong>Exercise 2.1  </strong></span>Can you find any other paradoxical statements? What makes them paradoxical?
+<span id="exr:unnamed-chunk-47" class="exercise"><strong>Exercise 6.1  </strong></span>How many mathematical theorems can you name?
 </div>
 </div>
 </div>
-<div id="statements-should-stand-on-their-own" class="section level3" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Statements should stand on their own</h3>
-<p>Don’t you hate that feeling when you start watching a film but nothing makes sense because you didn’t watch the previous films in the series?<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-<p>A good statement should stand on its own, and not rely on the reader knowing previous statements. If it <em>does</em> assume knowledge of previous statements, they should be referenced or restated, like including a plot synopsis for the previous movies!</p>
-<p>Now it’s your turn. Bring your answers to our next class.</p>
-<p>Going forward, all statements will be coloured yellow, </p>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-14" class="exercise"><strong>Exercise 2.2  </strong></span>Take a look at the statements below. Are all the terms clear? Do you understand all the terms? If not, do you think you could find out their meaning on your own? Do any of the statements need more explanation by the author?</p>
-<ol style="list-style-type: decimal">
-<li>It is hot today.</li>
-<li>It is hotter today than it was yesterday.</li>
-<li>The highest temperature on record, 54.4<span class="math inline">\(^{\circ}\)</span>C or 130<span class="math inline">\(^{\circ}\)</span>F, was measured on 16th August 2020 at the Death Valley National Park in California.</li>
-<li>The explosion in Beirut in August 2020 could have been avoided.</li>
-<li>24 is a nice number.</li>
-<li>28 is a perfect number.</li>
-<li>Two negatives make a positive.</li>
-<li>Aman has a twin sister.</li>
-<li>Ariana Grande was the most streamed artist of the year.</li>
-<li>On average it rains more in Wales than it does in Kyrgyzstan.
-</div></li>
-</ol>
-
-<div class="solution">
-<p> <span class="solution"><em>Solution. </em></span> 1. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
-2. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
-3. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.</p>
+<div id="methodology" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Methodology</h3>
+<p>In mathematics we talk about theorems. In other sciences, they talk about theories. What’s the difference? It all about how the proof is constructed.</p>
+<p><strong>A proof in mathematics must be built deductively.</strong></p>
+<p>We say therefore that a theorem in mathematics is deductively true. In other words, you should be able to provide a list of steps which someone else could follow and arrive at the same conclusions.</p>
+<p><strong>A proof in science is built on evidence.</strong></p>
+<p>We say therefore that a scientific theory is empirically (or “verifiably”) true, based on observations made or evidence collected. To verify it, someone would need to either trust your evidence, or be able to recreate the evidence themselves.<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></p>
+<p>That’s the difference between a theorem in mathematics and a theory in science.</p>
 </div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-16" class="exercise"><strong>Exercise 2.3  </strong></span>Using the three rules given above, which of the following statements are good? What is wrong with the others?</p>
-<ol style="list-style-type: decimal">
-<li>The cyrillic alphabet contains 33 letters.</li>
-<li>Gunnar Garfors has visited every country in the world.</li>
-<li>People find it harder to concentrate on one task than they used to.</li>
-<li>Mobile phones have gotten more powerful over time.</li>
-<li>Video games help people relax.</li>
-<li>The US is larger than China.</li>
-<li>The last word of this sentence is.</li>
-<li>This sentence contains four e’s.</li>
-<li>This sentence contains 3 1’s, 1 2 and 2 3’s.</li>
-<li>The longest word in this sentence is “complementary”.
-</div></li>
-</ol>
+<div id="trial-and-improvement" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Trial and improvement</h3>
+<p>In mathematics, once a conjecture’s truth value has been discovered, it remains this way forever. However in other sciences (both natural sciences and social sciences), theories are always changing, being improved upon and added to as more research is done and more discoveries are made.</p>
+<p>This is a key principle of modern science - it doesn’t claim to know all the answers, but its aim is the truth, and it chooses as its foundations those theories which have the most compelling evidence.<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a></p>
+<p>The <strong>theory of gravity</strong>, the <strong>theory of relativity</strong>, the <strong>theory of evolution</strong> and even the current form of <strong>the periodic table</strong> are all examples of theories which are constantly being changed and updated as new evidence is revealed.</p>
+<p>Some scientific theories have even been shown to be completely wrong. Here’s a short list of some theories previously believed true but later disproven: <a href="https://www.famousscientists.org/10-most-famous-scientific-theories-that-were-later-debunked" class="uri">https://www.famousscientists.org/10-most-famous-scientific-theories-that-were-later-debunked</a>.</p>
+</div>
+<div id="an-ever-changing-world" class="section level3" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> An ever-changing world</h3>
+<p>Statements about world geography, international politics, currency markets, individual people, the state of technology and a lot else besides are all likely to all be time-dependent. Countries fall, empires collapse, capitals change, phones get faster, people and animals evolve.</p>
+<p>For example, the statement “Nur-Sultan is the capital of Kazakhstan” has a built-in time limit. It won’t be true forever. We don’t know how long it will be true for, but it won’t be true forever. Sure, it is true at the moment, but what if the capital is renamed in future years? The truth value of the statement would change.</p>
+<p>“The capital of Kazakhstan is located in the north of the country” is also currently true. This statement is definitely more general, but is still time-dependent: the capital of Kazakhstan used to be located in the south of the country; what’s stopping the location of the capital city shifting again in the future?
+And how long will Kazakhstan exist? All countries change over time. Eventually there won’t be a Kazakhstan, or a France or a Benin or a Britain.</p>
+</div>
+</div>
+<div id="so-what-does-this-all-mean" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> So what does this all mean?</h2>
+<p>It means that the study of mathematics is different to other sciences, to economics, to philosophy, psychology, evolutionary biology, and all other fields of study. If something is proved in mathematics, its truth value won’t change over time. Prove something is true in mathematics and you know that it has always been true and that it will remain true forever.<a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a> In 5 years or 100 years or 1000 years or a million years, the truth value will be unchanged.</p>
+<p>The axioms laid down by the Greek mathematician <strong>Euclid of Alexandria</strong> over two thousand years ago are as true now as they were then.<a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a></p>
+<p>The mathematical proofs of the mathematician <strong>Muhammad ibn Musa al-Khwarizmi</strong>, born near Khiva in Central Asia, which he presented in his book <em>The Compendious Book on Calculation by Completion and Balancing</em>,<a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a> have not had their truth values changed in the hundreds of years since. The many proofs of French mathematician <strong>Sophie Germain</strong> are as valid now as they were in the 18th and 19th century when she wrote them. The mathematics of American mathematician <strong>Katherine Johnson</strong> in the 1960s or the Iranian mathematician <strong>Maryam Mirzakhani</strong> in the 2000s and 2010s will remain relevant forever.</p>
+<p>Anything <strong>You</strong> prove true in this course will be true forever. Anything you show is false will be false forever. Get ready to make your mark on history!</p>
 <div class="alert alert-success" role="alert">
 <p><strong> What have we learnt? </strong></p>
 <ul>
-<li>We understand what <em>isn’t</em> a statement, what’s a <em>bad</em> statement and what’s a <em>good</em> statement.</li>
-<li>We also understand…</li>
+<li>As discussed in Chapter 3, a good mathematical statement has an unchanging truth value. Unfortunately, in many fields, the truth value of statements can change over time.</li>
 </ul>
 </div>
-<p>In this course, we will only work with good, high-quality statements.</p>
-<p>Next, let’s look at whether good statements are true or not.</p>
 
 </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>They are good for keeping our brains busy though!<a href="statements.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I had watched <em>none</em> of the previous Marvel movies before watching <em>Avengers: Endgame</em>. I understood nothing and had to spend an hour afterwards quizzing my boyfriend on the Tesseract, the Ancient One, and what Robert Downey Jr. was doing stranded in space. I think I got it.<a href="statements.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<ol start="19">
+<li id="fn19"><p>Something known as reproducibility.<a href="mathematical-proof.html#fnref19" class="footnote-back">↩︎</a></p></li>
+<li id="fn20"><p>This approach provides a stable platform for further exploration. Just because science can’t definitively say whether a statement is 100% true, its chosen approach is better than throwing our hands up and saying “who knows!” or ``no one can be sure!’’. Considering that we have science to thank for iPhones, vaccinations against deadly diseases, increased food yields, an understanding of how all life on Earth is connected, and a great many other things, it’s a pretty good approach!<a href="mathematical-proof.html#fnref20" class="footnote-back">↩︎</a></p></li>
+<li id="fn21"><p>For example, proving Pythagoras’ Theorem (<a href="https://www.pinterest.com/pin/300122762659059179/" class="uri">https://www.pinterest.com/pin/300122762659059179/</a>) tells us this theorem is true for all time.<a href="mathematical-proof.html#fnref21" class="footnote-back">↩︎</a></p></li>
+<li id="fn22"><p>See <a href="https://plus.maths.org/content/maths-minute-euclids-axioms" class="uri">https://plus.maths.org/content/maths-minute-euclids-axioms</a>.<a href="mathematical-proof.html#fnref22" class="footnote-back">↩︎</a></p></li>
+<li id="fn23"><p>The title of this book gave the us the word <em>algebra</em>, from the Arabic word <em>al-jabr</em> meaning “restoration”, “the reunion of broken parts” or sometimes “bone-setting”.<a href="mathematical-proof.html#fnref23" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -312,8 +246,8 @@ The statement above is true.</p>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="truth-values.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="axioms.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -344,7 +278,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/02-statements.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/06-mathematicalproof.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -352,7 +286,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/02-statements.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/06-mathematicalproof.Rmd",
 "text": null
 },
 "download": null,
