@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof" />
+  
+  
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="mathematical-proof.html"/>
+
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-course"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#in-this-book"><i class="fa fa-check"></i><b>1.3</b> In this book…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statements.html"><a href="statements.html#non-statements"><i class="fa fa-check"></i><b>2.1</b> Non-statements</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="statements.html"><a href="statements.html#fragments"><i class="fa fa-check"></i><b>2.1.1</b> Fragments</a></li>
+<li class="chapter" data-level="2.1.2" data-path="statements.html"><a href="statements.html#questions"><i class="fa fa-check"></i><b>2.1.2</b> Questions</a></li>
+<li class="chapter" data-level="2.1.3" data-path="statements.html"><a href="statements.html#implicit-answers"><i class="fa fa-check"></i><b>2.1.3</b> Implicit answers</a></li>
+<li class="chapter" data-level="2.1.4" data-path="statements.html"><a href="statements.html#exclamations"><i class="fa fa-check"></i><b>2.1.4</b> Exclamations</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="statements.html"><a href="statements.html#what-makes-a-good-statement"><i class="fa fa-check"></i><b>2.2</b> What makes a <em>good</em> statement?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="statements.html"><a href="statements.html#all-the-words-should-be-clear-and-understandable"><i class="fa fa-check"></i><b>2.2.1</b> All the words should be clear and understandable</a></li>
+<li class="chapter" data-level="2.2.2" data-path="statements.html"><a href="statements.html#no-paradoxes"><i class="fa fa-check"></i><b>2.2.2</b> No paradoxes!</a></li>
+<li class="chapter" data-level="2.2.3" data-path="statements.html"><a href="statements.html#statements-should-stand-on-their-own"><i class="fa fa-check"></i><b>2.2.3</b> Statements should stand on their own</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="truth-values.html"><a href="truth-values.html#what-is-the-truth-value-of-a-statement"><i class="fa fa-check"></i><b>3.1</b> What is the truth value of a statement?</a></li>
+<li class="chapter" data-level="3.2" data-path="truth-values.html"><a href="truth-values.html#clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.2</b> Clearly defined truth values</a></li>
+<li class="chapter" data-level="3.3" data-path="truth-values.html"><a href="truth-values.html#statements-without-clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.3</b> Statements without clearly defined truth values</a></li>
+<li class="chapter" data-level="3.4" data-path="truth-values.html"><a href="truth-values.html#unknown-truth-values"><i class="fa fa-check"></i><b>3.4</b> Unknown truth values</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematical-statements.html"><a href="mathematical-statements.html#definition"><i class="fa fa-check"></i><b>4.1</b> Definition</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-statements.html"><a href="mathematical-statements.html#mathematical-statements-dont-need-to-be-about-mathematics"><i class="fa fa-check"></i><b>4.2</b> Mathematical statements don’t need to be about mathematics!</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematical-statements.html"><a href="mathematical-statements.html#statements-containing-mathematics-arent-necessarily-mathematical"><i class="fa fa-check"></i><b>4.3</b> Statements containing mathematics aren’t necessarily mathematical!</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="axioms.html"><a href="axioms.html#what-makes-a-mathematical-statement-an-axiom"><i class="fa fa-check"></i><b>5.1</b> What makes a mathematical statement an axiom?</a></li>
+<li class="chapter" data-level="5.2" data-path="axioms.html"><a href="axioms.html#what-makes-an-axiom-a-definition"><i class="fa fa-check"></i><b>5.2</b> What makes an axiom a definition?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mathematical-proof.html"><a href="mathematical-proof.html#mathematics-versus-other-fields"><i class="fa fa-check"></i><b>6.1</b> Mathematics versus other fields</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mathematical-proof.html"><a href="mathematical-proof.html#terminology"><i class="fa fa-check"></i><b>6.1.1</b> Terminology</a></li>
+<li class="chapter" data-level="6.1.2" data-path="mathematical-proof.html"><a href="mathematical-proof.html#methodology"><i class="fa fa-check"></i><b>6.1.2</b> Methodology</a></li>
+<li class="chapter" data-level="6.1.3" data-path="mathematical-proof.html"><a href="mathematical-proof.html#trial-and-improvement"><i class="fa fa-check"></i><b>6.1.3</b> Trial and improvement</a></li>
+<li class="chapter" data-level="6.1.4" data-path="mathematical-proof.html"><a href="mathematical-proof.html#an-ever-changing-world"><i class="fa fa-check"></i><b>6.1.4</b> An ever-changing world</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="mathematical-proof.html"><a href="mathematical-proof.html#so-what-does-this-all-mean"><i class="fa fa-check"></i><b>6.2</b> So what does this all mean?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-counterexample"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="7.2" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-disproof"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="disproving-a-conjecture" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Disproving a conjecture</h1>
+<p>We’ve discussed truth values a lot already, and we’ve agreed that <em>mathematical</em> statements must be either true or they are false. Once we’ve decided that we’re interested in finding out the truth value of a mathematical statement, we rename it a conjecture and get to work…</p>
+<p>To <strong>prove a conjecture</strong> means to show that its truth value is “true”. To <strong>disprove a conjecture</strong> means to show that its truth value is “false”.</p>
+<p>In this chapter we’ll discuss disproving conjectures. There’s two ways to show a conjecture is false.</p>
+<div id="finding-a-counterexample" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Finding a counterexample</h2>
+<p>Disproving false conjectures is generally easier than proving true conjectures. This is because all false conjectures have <strong>counterexamples</strong>.</p>
+<p>Take a look at the following two conjectures:</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-48" class="example"><strong>Example 7.1  </strong></span>No Chinese citizen has green eyes.
+</div>
+
+<div class="example">
+<span id="exm:unnamed-chunk-49" class="example"><strong>Example 7.2  </strong></span>All Irish citizens have a vowel in their surname.
+</div>
+<p>How you would prove, or disprove, these conjectures?</p>
+<ul>
+<li><p>To prove this first one, we would need to check the eye colour of <em>all</em> Chinese citizens. That’s because this is a conjecture about all Chinese citizens. How long is that going to take!?! Is it even possible?!?
+But to disprove this conjecture, we just need to find one Chinese citizen with green eyes. Much easier! This single green-eyed Chinese citizen would be our counterexample.</p></li>
+<li><p>To prove the second conjecture, we would need to consult a database of the surnames of all Irish citizens. We would then set up a computer to check that each of them contain a vowel (a, e, i, o or u).
+To disprove the conjecture, we would just need to identify just one Irish citizen whose surname did not contain a vowel. This could be done using the database approach as well, or maybe we know of a famous Irish person whose surname is vowel-less. This one person would be our counterexample.</p></li>
+</ul>
+<p>Just one counterexample is needed to disprove a false conjecture. Of course, we might find lots of counterexamples, i.e. many Chinese citizens who have green eyes, or many Irish citizens without vowels in their surname. This would be great - it would probably make our job of finding a counterexample easier! But even if there is only one Chinese citizen with green eyes, or one Irish citizen with a surname devoid of vowels, that is enough to show the conjecture is false.</p>
+<p>Before you do anything, make an educated guess. Do you <em>believe</em> either of these conjectures are true. Or false?</p>
+<p>Your first step with any new conjectures is to look for a counterexample. A single counterexample is enough to disprove a conjecture.</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-50" class="exercise"><strong>Exercise 7.1  </strong></span>The following conjectures are all false. Find a single counterexample which shows this.</p>
+<ol style="list-style-type: lower-alpha">
+<li>All prime numbers are odd.}</li>
+<li><span class="math inline">\((a + b)^2 = a^2 + b^2\)</span> for any numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</li>
+<li>All sheep in South Africa are white. (Good luck Googling!)</li>
+<li>The national flags of all UN members are rectangular.</li>
+<li>All numbers are either positive or negative.</li>
+<li><span class="math inline">\(a^2 &gt; a\)</span>, where <span class="math inline">\(a\)</span> is a whole number.</li>
+<li>If <span class="math inline">\(a\)</span> is a whole number and <span class="math inline">\(a^2\)</span> is divisible by <span class="math inline">\(4\)</span>, then <span class="math inline">\(a\)</span> is divisible by 4.</li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-51" class="exercise"><strong>Exercise 7.2  </strong></span>In the last question, you found counterexamples which disproved the conjectures.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Which of the conjectures above have just one counterexample?</li>
+<li>Which of the conjectures above have a few counterexamples?</li>
+<li>Which of the conjectures above have an infinite number of counterexamples?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="finding-a-disproof" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Finding a disproof</h2>
+<p>Finding a counterexample is the most common and popular way of disproving a conjecture. It’s also possible to disprove a conjecture without finding a counterexample. This is called finding a disproof. We’ll look at this a bit later.</p>
+<div class="alert alert-success" role="alert">
+<p><strong> What have we learnt? </strong></p>
+<ul>
+<li><p>Finding a counterexample (or a few) is the most popular and common way to disprove a conjecture.</p></li>
+<li><p>Whilst there may be many counterexamples for a particular conjecture, just one is enough to disprove a conjecture.</p></li>
+<li><p>True conjectures don’t have counterexamples, because they’re true! Only conjectures which are false will have counterexamples.</p></li>
+</ul>
+</div>
+<p>In the following exercise, we will encounter some axioms about <strong>inequalities</strong>. Inequalities describe the ordering of real numbers. Let’s first check we know what real numbers are.</p>
+<p><strong>Real numbers</strong></p>
+<p>Real numbers are any numbers on the number line which stretches from <span class="math inline">\(-\infty\)</span> to <span class="math inline">\(\infty\)</span>.</p>
+<p>Any number that a calculator can display is a real number!</p>
+<p>Real numbers are:</p>
+<ul>
+<li>Whole numbers (integers)</li>
+<li>Terminating decimals (0.1, -0.5, 68.25)</li>
+<li>Recurring decimals (<span class="math inline">\(\frac{1}{3} = 0.3333...\)</span>, <span class="math inline">\(-\frac{11}{9} = -1.2222...\)</span>, <span class="math inline">\(\frac{1}{7} = 0.142857142857...\)</span>)</li>
+<li>Non-recurring decimals (<span class="math inline">\(\pi = 3.1415926...,\)</span> <span class="math inline">\(e = 2.7182818284590\)</span>, <span class="math inline">\(\sqrt{2} = 1.41421356237...\)</span>)</li>
+</ul>
+<p>There are two types of real number:
+- <em>Rational numbers} can be expressed as the ratio of two whole numbers.
+For example: <span class="math inline">\(\frac{1}{2}, -\frac{3}{4}\)</span> (or <span class="math inline">\(\frac{-3}{4}), \frac{11}{3}\)</span>, 4 (or <span class="math inline">\(\frac{4}{1}\)</span>), -7 (or <span class="math inline">\(\frac{-7}{1}\)</span>), 0 (or <span class="math inline">\(\frac{0}{1}\)</span>), 1 (or <span class="math inline">\(\frac{1}{1}\)</span>).
+- </em>Irrational numbers} can’t be written as the ratio of two whole numbers.
+For example: <span class="math inline">\(\pi, e, \sqrt{2}, \sqrt{3}\)</span>.</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-52" class="exercise"><strong>Exercise 7.3  </strong></span>Here are two axioms about inequalities:</p>
+<ol style="list-style-type: lower-alpha">
+<li>If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(a+b&gt;0\)</span>.</li>
+<li>If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(ab&gt;0\)</span>.</li>
+<li>(If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(a + b &gt; a\)</span> and <span class="math inline">\(a + b &gt; b\)</span>.)</li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-53" class="exercise"><strong>Exercise 7.4  </strong></span>Because these are axioms, we can’t prove them (they are <em>too</em> fundamental). However, we can illustrate them with examples. Find examples of each of the two axioms above, to illustrate them.</p>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-54" class="exercise"><strong>Exercise 7.5  </strong></span>Below are five more axioms about inequalities. Again, illustrate each of these axioms with an example.</p>
+<ul>
+<li>If <span class="math inline">\(a &gt; b\)</span> and <span class="math inline">\(k\)</span> is any real number, then <span class="math inline">\(a + k &gt; b + k\)</span>.</li>
+<li>If <span class="math inline">\(a &gt; b\)</span> and <span class="math inline">\(b &gt; c\)</span>, then <span class="math inline">\(a &gt; c\)</span>.</li>
+<li>If <span class="math inline">\(a &gt; b\)</span> and <span class="math inline">\(k &gt; 0\)</span> then <span class="math inline">\(ak &gt; bk\)</span>.</li>
+<li>If <span class="math inline">\(a &gt; b\)</span> and <span class="math inline">\(k &lt; 0\)</span>, then <span class="math inline">\(ak &lt; bk\)</span>.</li>
+<li>For any real number <span class="math inline">\(a\)</span>, <span class="math inline">\(a^2 \geq 0\)</span>.<br />
+</li>
+</ul>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-55" class="exercise"><strong>Exercise 7.6  </strong></span>Below are four conjectures about inequalities. Find <em>counterexamples</em> which disprove them:</p>
+<ul>
+<li>If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(ab &gt; a\)</span> and <span class="math inline">\(ab &gt; b\)</span>.</li>
+<li>If <span class="math inline">\(a^2 &lt; b^2\)</span> then <span class="math inline">\(a &lt; b\)</span>.</li>
+<li>If <span class="math inline">\(a &lt; b\)</span> and <span class="math inline">\(k &lt; l\)</span> then <span class="math inline">\(ak &lt; bl\)</span>.</li>
+<li>If <span class="math inline">\(\dfrac{a}{b} &gt; cd\)</span> then <span class="math inline">\(ad &gt; bc\)</span>.</li>
+</ul>
+<p>You only need to find one counterexample for each.</p>
+<em>Hint: Negative numbers will be useful here!</em>
+</div>
+</div>
+<p>Before we move on, let’s review types of numbers. We divide real numbers (symbol <span class="math inline">\(\mathbb{R}\)</span>) in two groups:</p>
+<ul>
+<li>Integers, terminating decimals and recurring decimals are called rationals (symbol <span class="math inline">\(\mathbb{Q}\)</span>), because they can all be expressed as the <strong>ratio</strong> of two integers.</li>
+<li>Non-recurring decimals can’t be expressed at the ratio of two integers and are therefore called irrationals (symbol <span class="math inline">\(\mathbb{Q}&#39;\)</span>).</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-56"></span>
+<img src="figures/numbertypes.png" alt="Types of numbers." width="80%" />
+<p class="caption">
+Figure 7.1: Types of numbers.
+</p>
+</div>
+<p>How to use these symbols? To tell your reader that you’re talking about a general real number, you write <span class="math inline">\(a \in \mathbb{R}\)</span>, where <span class="math inline">\(\in\)</span> means “belongs to” or “is”. If a conjecture doesn’t mention what type of number it’s talking about, assume it’s dealing with all the real numbers.<a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a></p>
+<p>If you are specifically dealing with the integers, you can specify this by saying <span class="math inline">\(a \in \mathbb{Z}\)</span>.</p>
+<p>If you’re dealing with <em>all</em> the rational numbers, you write <span class="math inline">\(a \in \mathbb{Q}\)</span>. And if you’re dealing with just irrational numbers, write <span class="math inline">\(a \in \mathbb{Q}&#39;\)</span>.<a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a> <a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a></p>
+<p>Finally, add <span class="math inline">\(^{+}\)</span> to any symbol to specify you’re only talking about the positive numbers from the set. Similarly, add <span class="math inline">\(^{-}\)</span> to specify you’re only talking about the negative numbers from the set.</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-57" class="exercise"><strong>Exercise 7.7  </strong></span>What type of number is <span class="math inline">\(a\)</span> in each of the following? Give a couple of examples of each.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(a \in \mathbb{Z}^{+}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{Q}&#39;\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{Q}^{+}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{Z}^{*}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{Z}^{-}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{R}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{C}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{Z}\)</span></li>
+<li><span class="math inline">\(a \in \mathbb{R}^{+}\)</span></li>
+</ol>
+</div>
+</div>
+<p>Within the integers, there are lots of sets of special numbers, for example <strong>even numbers</strong>, <strong>odd numbers</strong>, <strong>prime numbers</strong>, <strong>triangle numbers</strong>, <strong>Fibonacci numbers</strong>, and <strong>perfect numbers</strong>. Some of these sets overlap.</p>
+<p>And within these sets, there are even smaller subsets of numbers. For example, the Mersenne primes are special examples of primes.</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-58" class="exercise"><strong>Exercise 7.8  </strong></span>Can you find:</p>
+<ol style="list-style-type: lower-alpha">
+<li>A number which is both prime <em>and</em> triangular?</li>
+<li>A number which is both prime <em>and</em> perfect?</li>
+<li>A number which is both triangular <em>and</em> perfect?
+</div></li>
+</ol>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-59" class="exercise"><strong>Exercise 7.9  </strong></span>Are there any prime Fibonacci numbers?</p>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-60" class="exercise"><strong>Exercise 7.10  </strong></span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Is 1 perfect? Triangular? Prime? A Fibonacci number?</li>
+<li>Is 2 perfect? Triangular? Prime? A Fibonacci number?</li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-61" class="exercise"><strong>Exercise 7.11  </strong></span>What’s the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci?</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="24">
+<li id="fn24"><p>There are some numbers which are not real (called <em>complex numbers</em>). Although we will only be dealing with real numbers in this course, we state <span class="math inline">\(a \in \mathbb{R}\)</span> to avoid confusion.<a href="disproving-a-conjecture.html#fnref24" class="footnote-back">↩︎</a></p></li>
+<li id="fn25"><p>Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can’t be fully known because they follow no pattern and don’t repeat. Just because you know the first 12 million decimal digits of <span class="math inline">\(\pi\)</span>, it doesn’t mean you can predict the 12-million-and-first digit!<a href="disproving-a-conjecture.html#fnref25" class="footnote-back">↩︎</a></p></li>
+<li id="fn26"><p>Whilst <span class="math inline">\(\pi\)</span> and <span class="math inline">\(e\)</span> are both known to be irrational, no one knows if <span class="math inline">\(\pi + e\)</span>, <span class="math inline">\(\pi e\)</span>, <span class="math inline">\(\dfrac{\pi}{e}\)</span>, <span class="math inline">\(\pi^e\)</span>, <span class="math inline">\(\pi^\pi\)</span>, <span class="math inline">\(e^e\)</span>, <span class="math inline">\(e^\pi\)</span>, <span class="math inline">\(2^e\)</span> or ln<span class="math inline">\(\pi\)</span> are rational or irrational. See <a href="https://math.ou.edu/\char%60\~jalbert/courses/openprob2.pdf" class="uri">https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf</a>.<a href="disproving-a-conjecture.html#fnref26" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mathematical-proof.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/07-disprovingaconjecture.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/07-disprovingaconjecture.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

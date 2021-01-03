@@ -42,6 +42,20 @@ exr:unnamed-chunk-43
 exr:unnamed-chunk-44
 fig:unnamed-chunk-46
 exr:unnamed-chunk-47
+exm:unnamed-chunk-48
+exm:unnamed-chunk-49
+exr:unnamed-chunk-50
+exr:unnamed-chunk-51
+exr:unnamed-chunk-52
+exr:unnamed-chunk-53
+exr:unnamed-chunk-54
+exr:unnamed-chunk-55
+fig:unnamed-chunk-56
+exr:unnamed-chunk-57
+exr:unnamed-chunk-58
+exr:unnamed-chunk-59
+exr:unnamed-chunk-60
+exr:unnamed-chunk-61
 getting-started
 about-this-course
 about-this-book
@@ -75,3 +89,6 @@ methodology
 trial-and-improvement
 an-ever-changing-world
 so-what-does-this-all-mean
+disproving-a-conjecture
+finding-a-counterexample
+finding-a-disproof
