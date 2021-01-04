@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof</title>
-  <meta name="description" content="Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof" />
+  <title>Chapter 8 Disproving a conjecture | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="Chapter 8 Disproving a conjecture | An Introduction to Mathematical Proof" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 8 Disproving a conjecture | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Disproving a conjecture | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 8 Disproving a conjecture | An Introduction to Mathematical Proof" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mathematical-proof.html"/>
-<link rel="next" href="proving-a-conjecture.html"/>
+<link rel="prev" href="disproving-a-conjecture.html"/>
+
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -126,15 +126,10 @@
 <li class="chapter" data-level="7.1" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-counterexample"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
 <li class="chapter" data-level="7.2" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-disproof"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a>
+<li class="chapter" data-level="8" data-path="disproving-a-conjecture-1.html"><a href="disproving-a-conjecture-1.html"><i class="fa fa-check"></i><b>8</b> Disproving a conjecture</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#step-1-start-by-looking-for-a-counterexample"><i class="fa fa-check"></i><b>8.1</b> Step 1: Start by looking for a counterexample</a></li>
-<li class="chapter" data-level="8.2" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#step-2-try-to-build-a-proof"><i class="fa fa-check"></i><b>8.2</b> Step 2: Try to build a proof</a>
-<ul>
-<li class="chapter" data-level="8.2.1" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#ifthen"><i class="fa fa-check"></i><b>8.2.1</b> If…then…</a></li>
-<li class="chapter" data-level="8.2.2" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#draw-the-map"><i class="fa fa-check"></i><b>8.2.2</b> Draw the map</a></li>
-<li class="chapter" data-level="8.2.3" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#choose-your-method"><i class="fa fa-check"></i><b>8.2.3</b> Choose your method</a></li>
-</ul></li>
+<li class="chapter" data-level="8.1" data-path="disproving-a-conjecture-1.html"><a href="disproving-a-conjecture-1.html#finding-a-counterexample-1"><i class="fa fa-check"></i><b>8.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="8.2" data-path="disproving-a-conjecture-1.html"><a href="disproving-a-conjecture-1.html#finding-a-disproof-1"><i class="fa fa-check"></i><b>8.2</b> Finding a disproof</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -155,22 +150,22 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="disproving-a-conjecture" class="section level1" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Disproving a conjecture</h1>
+<div id="disproving-a-conjecture-1" class="section level1" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Disproving a conjecture</h1>
 <p>We’ve discussed truth values a lot already, and we’ve agreed that <em>mathematical</em> statements must be either true or they are false. Once we’ve decided that we’re interested in finding out the truth value of a mathematical statement, we rename it a conjecture and get to work…</p>
 <p>To <strong>prove a conjecture</strong> means to show that its truth value is “true”. To <strong>disprove a conjecture</strong> means to show that its truth value is “false”.</p>
 <p>In this chapter we’ll discuss disproving conjectures. There’s two ways to show a conjecture is false.</p>
-<div id="finding-a-counterexample" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Finding a counterexample</h2>
+<div id="finding-a-counterexample-1" class="section level2" number="8.1">
+<h2><span class="header-section-number">8.1</span> Finding a counterexample</h2>
 <p>Disproving false conjectures is generally easier than proving true conjectures. This is because all false conjectures have <strong>counterexamples</strong>.</p>
 <p>Take a look at the following two conjectures:</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-48" class="example"><strong>Example 7.1  </strong></span>No Chinese citizen has green eyes.
+<span id="exm:unnamed-chunk-62" class="example"><strong>Example 8.1  </strong></span>No Chinese citizen has green eyes.
 </div>
 
 <div class="example">
-<span id="exm:unnamed-chunk-49" class="example"><strong>Example 7.2  </strong></span>All Irish citizens have a vowel in their surname.
+<span id="exm:unnamed-chunk-63" class="example"><strong>Example 8.2  </strong></span>All Irish citizens have a vowel in their surname.
 </div>
 <p>How you would prove, or disprove, these conjectures?</p>
 <ul>
@@ -185,7 +180,7 @@ To disprove the conjecture, we would just need to identify just one Irish citize
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-50" class="exercise"><strong>Exercise 7.1  </strong></span>The following conjectures are all false. Find a single counterexample which shows this.</p>
+<p><span id="exr:unnamed-chunk-64" class="exercise"><strong>Exercise 8.1  </strong></span>The following conjectures are all false. Find a single counterexample which shows this.</p>
 <ol style="list-style-type: lower-alpha">
 <li>All prime numbers are odd.}</li>
 <li><span class="math inline">\((a + b)^2 = a^2 + b^2\)</span> for any numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</li>
@@ -198,7 +193,7 @@ To disprove the conjecture, we would just need to identify just one Irish citize
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-51" class="exercise"><strong>Exercise 7.2  </strong></span>In the last question, you found counterexamples which disproved the conjectures.</p>
+<p><span id="exr:unnamed-chunk-65" class="exercise"><strong>Exercise 8.2  </strong></span>In the last question, you found counterexamples which disproved the conjectures.</p>
 <ol style="list-style-type: lower-alpha">
 <li>Which of the conjectures above have just one counterexample?</li>
 <li>Which of the conjectures above have a few counterexamples?</li>
@@ -207,8 +202,8 @@ To disprove the conjecture, we would just need to identify just one Irish citize
 </div>
 </div>
 </div>
-<div id="finding-a-disproof" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Finding a disproof</h2>
+<div id="finding-a-disproof-1" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Finding a disproof</h2>
 <p>Finding a counterexample is the most common and popular way of disproving a conjecture. It’s also possible to disprove a conjecture without finding a counterexample. This is called finding a disproof. We’ll look at this a bit later.</p>
 <div class="alert alert-success" role="alert">
 <p><strong> What have we learnt? </strong></p>
@@ -237,7 +232,7 @@ For example: <span class="math inline">\(\pi, e, \sqrt{2}, \sqrt{3}\)</span>.</p
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-52" class="exercise"><strong>Exercise 7.3  </strong></span>Here are two axioms about inequalities:</p>
+<p><span id="exr:unnamed-chunk-66" class="exercise"><strong>Exercise 8.3  </strong></span>Here are two axioms about inequalities:</p>
 <ol style="list-style-type: lower-alpha">
 <li>If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(a+b&gt;0\)</span>.</li>
 <li>If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(ab&gt;0\)</span>.</li>
@@ -246,11 +241,11 @@ For example: <span class="math inline">\(\pi, e, \sqrt{2}, \sqrt{3}\)</span>.</p
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-53" class="exercise"><strong>Exercise 7.4  </strong></span>Because these are axioms, we can’t prove them (they are <em>too</em> fundamental). However, we can illustrate them with examples. Find examples of each of the two axioms above, to illustrate them.</p>
+<p><span id="exr:unnamed-chunk-67" class="exercise"><strong>Exercise 8.4  </strong></span>Because these are axioms, we can’t prove them (they are <em>too</em> fundamental). However, we can illustrate them with examples. Find examples of each of the two axioms above, to illustrate them.</p>
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-54" class="exercise"><strong>Exercise 7.5  </strong></span>Below are five more axioms about inequalities. Again, illustrate each of these axioms with an example.</p>
+<p><span id="exr:unnamed-chunk-68" class="exercise"><strong>Exercise 8.5  </strong></span>Below are five more axioms about inequalities. Again, illustrate each of these axioms with an example.</p>
 <ul>
 <li>If <span class="math inline">\(a &gt; b\)</span> and <span class="math inline">\(k\)</span> is any real number, then <span class="math inline">\(a + k &gt; b + k\)</span>.</li>
 <li>If <span class="math inline">\(a &gt; b\)</span> and <span class="math inline">\(b &gt; c\)</span>, then <span class="math inline">\(a &gt; c\)</span>.</li>
@@ -262,7 +257,7 @@ For example: <span class="math inline">\(\pi, e, \sqrt{2}, \sqrt{3}\)</span>.</p
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-55" class="exercise"><strong>Exercise 7.6  </strong></span>Below are four conjectures about inequalities. Find <em>counterexamples</em> which disprove them:</p>
+<p><span id="exr:unnamed-chunk-69" class="exercise"><strong>Exercise 8.6  </strong></span>Below are four conjectures about inequalities. Find <em>counterexamples</em> which disprove them:</p>
 <ul>
 <li>If <span class="math inline">\(a&gt;0\)</span> and <span class="math inline">\(b&gt;0\)</span>, then <span class="math inline">\(ab &gt; a\)</span> and <span class="math inline">\(ab &gt; b\)</span>.</li>
 <li>If <span class="math inline">\(a^2 &lt; b^2\)</span> then <span class="math inline">\(a &lt; b\)</span>.</li>
@@ -278,20 +273,20 @@ For example: <span class="math inline">\(\pi, e, \sqrt{2}, \sqrt{3}\)</span>.</p
 <li>Integers, terminating decimals and recurring decimals are called rationals (symbol <span class="math inline">\(\mathbb{Q}\)</span>), because they can all be expressed as the <strong>ratio</strong> of two integers.</li>
 <li>Non-recurring decimals can’t be expressed at the ratio of two integers and are therefore called irrationals (symbol <span class="math inline">\(\mathbb{Q}&#39;\)</span>).</li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-56"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-70"></span>
 <img src="figures/numbertypes.png" alt="Types of numbers." width="80%" />
 <p class="caption">
-Figure 7.1: Types of numbers.
+Figure 8.1: Types of numbers.
 </p>
 </div>
-<p>How to use these symbols? To tell your reader that you’re talking about a general real number, you write <span class="math inline">\(a \in \mathbb{R}\)</span>, where <span class="math inline">\(\in\)</span> means “belongs to” or “is”. If a conjecture doesn’t mention what type of number it’s talking about, assume it’s dealing with all the real numbers.<a href="#fn24" class="footnote-ref" id="fnref24"><sup>24</sup></a></p>
+<p>How to use these symbols? To tell your reader that you’re talking about a general real number, you write <span class="math inline">\(a \in \mathbb{R}\)</span>, where <span class="math inline">\(\in\)</span> means “belongs to” or “is”. If a conjecture doesn’t mention what type of number it’s talking about, assume it’s dealing with all the real numbers.<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a></p>
 <p>If you are specifically dealing with the integers, you can specify this by saying <span class="math inline">\(a \in \mathbb{Z}\)</span>.</p>
-<p>If you’re dealing with <em>all</em> the rational numbers, you write <span class="math inline">\(a \in \mathbb{Q}\)</span>. And if you’re dealing with just irrational numbers, write <span class="math inline">\(a \in \mathbb{Q}&#39;\)</span>.<a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a> <a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a></p>
+<p>If you’re dealing with <em>all</em> the rational numbers, you write <span class="math inline">\(a \in \mathbb{Q}\)</span>. And if you’re dealing with just irrational numbers, write <span class="math inline">\(a \in \mathbb{Q}&#39;\)</span>.<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a> <a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a></p>
 <p>Finally, add <span class="math inline">\(^{+}\)</span> to any symbol to specify you’re only talking about the positive numbers from the set. Similarly, add <span class="math inline">\(^{-}\)</span> to specify you’re only talking about the negative numbers from the set.</p>
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-57" class="exercise"><strong>Exercise 7.7  </strong></span>What type of number is <span class="math inline">\(a\)</span> in each of the following? Give a couple of examples of each.</p>
+<p><span id="exr:unnamed-chunk-71" class="exercise"><strong>Exercise 8.7  </strong></span>What type of number is <span class="math inline">\(a\)</span> in each of the following? Give a couple of examples of each.</p>
 <ol style="list-style-type: lower-alpha">
 <li><span class="math inline">\(a \in \mathbb{Z}^{+}\)</span></li>
 <li><span class="math inline">\(a \in \mathbb{Q}&#39;\)</span></li>
@@ -310,7 +305,7 @@ Figure 7.1: Types of numbers.
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-58" class="exercise"><strong>Exercise 7.8  </strong></span>Can you find:</p>
+<p><span id="exr:unnamed-chunk-72" class="exercise"><strong>Exercise 8.8  </strong></span>Can you find:</p>
 <ol style="list-style-type: lower-alpha">
 <li>A number which is both prime <em>and</em> triangular?</li>
 <li>A number which is both prime <em>and</em> perfect?</li>
@@ -319,11 +314,11 @@ Figure 7.1: Types of numbers.
 </ol>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-59" class="exercise"><strong>Exercise 7.9  </strong></span>Are there any prime Fibonacci numbers?</p>
+<p><span id="exr:unnamed-chunk-73" class="exercise"><strong>Exercise 8.9  </strong></span>Are there any prime Fibonacci numbers?</p>
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-60" class="exercise"><strong>Exercise 7.10  </strong></span></p>
+<p><span id="exr:unnamed-chunk-74" class="exercise"><strong>Exercise 8.10  </strong></span></p>
 <ol style="list-style-type: lower-alpha">
 <li>Is 1 perfect? Triangular? Prime? A Fibonacci number?</li>
 <li>Is 2 perfect? Triangular? Prime? A Fibonacci number?</li>
@@ -331,18 +326,52 @@ Figure 7.1: Types of numbers.
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-61" class="exercise"><strong>Exercise 7.11  </strong></span>What’s the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci?</p>
+<p><span id="exr:unnamed-chunk-75" class="exercise"><strong>Exercise 8.11  </strong></span>What’s the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci?</p>
 </div>
 </div>
 
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="footnotes">
 <hr />
-<ol start="24">
-<li id="fn24"><p>There are some numbers which are not real (called <em>complex numbers</em>). Although we will only be dealing with real numbers in this course, we state <span class="math inline">\(a \in \mathbb{R}\)</span> to avoid confusion.<a href="disproving-a-conjecture.html#fnref24" class="footnote-back">↩︎</a></p></li>
-<li id="fn25"><p>Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can’t be fully known because they follow no pattern and don’t repeat. Just because you know the first 12 million decimal digits of <span class="math inline">\(\pi\)</span>, it doesn’t mean you can predict the 12-million-and-first digit!<a href="disproving-a-conjecture.html#fnref25" class="footnote-back">↩︎</a></p></li>
-<li id="fn26"><p>Whilst <span class="math inline">\(\pi\)</span> and <span class="math inline">\(e\)</span> are both known to be irrational, no one knows if <span class="math inline">\(\pi + e\)</span>, <span class="math inline">\(\pi e\)</span>, <span class="math inline">\(\dfrac{\pi}{e}\)</span>, <span class="math inline">\(\pi^e\)</span>, <span class="math inline">\(\pi^\pi\)</span>, <span class="math inline">\(e^e\)</span>, <span class="math inline">\(e^\pi\)</span>, <span class="math inline">\(2^e\)</span> or ln<span class="math inline">\(\pi\)</span> are rational or irrational. See <a href="https://math.ou.edu/\char%60\~jalbert/courses/openprob2.pdf" class="uri">https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf</a>.<a href="disproving-a-conjecture.html#fnref26" class="footnote-back">↩︎</a></p></li>
+<ol start="27">
+<li id="fn27"><p>There are some numbers which are not real (called <em>complex numbers</em>). Although we will only be dealing with real numbers in this course, we state <span class="math inline">\(a \in \mathbb{R}\)</span> to avoid confusion.<a href="disproving-a-conjecture-1.html#fnref27" class="footnote-back">↩︎</a></p></li>
+<li id="fn28"><p>Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can’t be fully known because they follow no pattern and don’t repeat. Just because you know the first 12 million decimal digits of <span class="math inline">\(\pi\)</span>, it doesn’t mean you can predict the 12-million-and-first digit!<a href="disproving-a-conjecture-1.html#fnref28" class="footnote-back">↩︎</a></p></li>
+<li id="fn29"><p>Whilst <span class="math inline">\(\pi\)</span> and <span class="math inline">\(e\)</span> are both known to be irrational, no one knows if <span class="math inline">\(\pi + e\)</span>, <span class="math inline">\(\pi e\)</span>, <span class="math inline">\(\dfrac{\pi}{e}\)</span>, <span class="math inline">\(\pi^e\)</span>, <span class="math inline">\(\pi^\pi\)</span>, <span class="math inline">\(e^e\)</span>, <span class="math inline">\(e^\pi\)</span>, <span class="math inline">\(2^e\)</span> or ln<span class="math inline">\(\pi\)</span> are rational or irrational. See <a href="https://math.ou.edu/\char%60\~jalbert/courses/openprob2.pdf" class="uri">https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf</a>.<a href="disproving-a-conjecture-1.html#fnref29" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -350,8 +379,8 @@ Figure 7.1: Types of numbers.
           </div>
         </div>
       </div>
-<a href="mathematical-proof.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="proving-a-conjecture.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="disproving-a-conjecture.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -382,7 +411,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/07-disprovingaconjecture.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/08-provingaconjecture.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -390,7 +419,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/07-disprovingaconjecture.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/08-provingaconjecture.Rmd",
 "text": null
 },
 "download": null,
