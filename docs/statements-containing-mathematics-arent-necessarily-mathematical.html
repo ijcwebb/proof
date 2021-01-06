@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4.3 Statements containing mathematics aren’t necessarily mathematical! | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4.3 Statements containing mathematics aren’t necessarily mathematical! | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4.3 Statements containing mathematics aren’t necessarily mathematical! | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="mathematical-statements-dont-need-to-be-about-mathematics.html"/>
+<link rel="next" href="axioms.html"/>
+<script src="assets/header-attrs-2.6/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="about-this-course.html"><a href="about-this-course.html"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
+<li class="chapter" data-level="1.2" data-path="about-this-book.html"><a href="about-this-book.html"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
+<li class="chapter" data-level="1.3" data-path="in-this-book.html"><a href="in-this-book.html"><i class="fa fa-check"></i><b>1.3</b> In this book…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="non-statements.html"><a href="non-statements.html"><i class="fa fa-check"></i><b>2.1</b> Non-statements</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="non-statements.html"><a href="non-statements.html#fragments"><i class="fa fa-check"></i><b>2.1.1</b> Fragments</a></li>
+<li class="chapter" data-level="2.1.2" data-path="non-statements.html"><a href="non-statements.html#questions"><i class="fa fa-check"></i><b>2.1.2</b> Questions</a></li>
+<li class="chapter" data-level="2.1.3" data-path="non-statements.html"><a href="non-statements.html#implicit-answers"><i class="fa fa-check"></i><b>2.1.3</b> Implicit answers</a></li>
+<li class="chapter" data-level="2.1.4" data-path="non-statements.html"><a href="non-statements.html#exclamations"><i class="fa fa-check"></i><b>2.1.4</b> Exclamations</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html"><i class="fa fa-check"></i><b>2.2</b> What makes a <em>good</em> statement?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html#all-the-words-should-be-clear-and-understandable"><i class="fa fa-check"></i><b>2.2.1</b> All the words should be clear and understandable</a></li>
+<li class="chapter" data-level="2.2.2" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html#no-paradoxes"><i class="fa fa-check"></i><b>2.2.2</b> No paradoxes!</a></li>
+<li class="chapter" data-level="2.2.3" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html#statements-should-stand-on-their-own"><i class="fa fa-check"></i><b>2.2.3</b> Statements should stand on their own</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="what-is-the-truth-value-of-a-statement.html"><a href="what-is-the-truth-value-of-a-statement.html"><i class="fa fa-check"></i><b>3.1</b> What is the truth value of a statement?</a></li>
+<li class="chapter" data-level="3.2" data-path="clearly-defined-truth-values.html"><a href="clearly-defined-truth-values.html"><i class="fa fa-check"></i><b>3.2</b> Clearly defined truth values</a></li>
+<li class="chapter" data-level="3.3" data-path="statements-without-clearly-defined-truth-values.html"><a href="statements-without-clearly-defined-truth-values.html"><i class="fa fa-check"></i><b>3.3</b> Statements without clearly defined truth values</a></li>
+<li class="chapter" data-level="3.4" data-path="unknown-truth-values.html"><a href="unknown-truth-values.html"><i class="fa fa-check"></i><b>3.4</b> Unknown truth values</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="definition.html"><a href="definition.html"><i class="fa fa-check"></i><b>4.1</b> Definition</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-statements-dont-need-to-be-about-mathematics.html"><a href="mathematical-statements-dont-need-to-be-about-mathematics.html"><i class="fa fa-check"></i><b>4.2</b> Mathematical statements don’t need to be about mathematics!</a></li>
+<li class="chapter" data-level="4.3" data-path="statements-containing-mathematics-arent-necessarily-mathematical.html"><a href="statements-containing-mathematics-arent-necessarily-mathematical.html"><i class="fa fa-check"></i><b>4.3</b> Statements containing mathematics aren’t necessarily mathematical!</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="what-makes-a-mathematical-statement-an-axiom.html"><a href="what-makes-a-mathematical-statement-an-axiom.html"><i class="fa fa-check"></i><b>5.1</b> What makes a mathematical statement an axiom?</a></li>
+<li class="chapter" data-level="5.2" data-path="what-makes-an-axiom-a-definition.html"><a href="what-makes-an-axiom-a-definition.html"><i class="fa fa-check"></i><b>5.2</b> What makes an axiom a definition?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html"><i class="fa fa-check"></i><b>6.1</b> Mathematics versus other fields</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#terminology"><i class="fa fa-check"></i><b>6.1.1</b> Terminology</a></li>
+<li class="chapter" data-level="6.1.2" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#methodology"><i class="fa fa-check"></i><b>6.1.2</b> Methodology</a></li>
+<li class="chapter" data-level="6.1.3" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#trial-and-improvement"><i class="fa fa-check"></i><b>6.1.3</b> Trial and improvement</a></li>
+<li class="chapter" data-level="6.1.4" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#an-ever-changing-world"><i class="fa fa-check"></i><b>6.1.4</b> An ever-changing world</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="so-what-does-this-all-mean.html"><a href="so-what-does-this-all-mean.html"><i class="fa fa-check"></i><b>6.2</b> So what does this all mean?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="finding-a-counterexample.html"><a href="finding-a-counterexample.html"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="7.2" data-path="finding-a-disproof.html"><a href="finding-a-disproof.html"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="step-1-start-by-looking-for-a-counterexample.html"><a href="step-1-start-by-looking-for-a-counterexample.html"><i class="fa fa-check"></i><b>8.1</b> Step 1: Start by looking for a counterexample</a></li>
+<li class="chapter" data-level="8.2" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html"><i class="fa fa-check"></i><b>8.2</b> Step 2: Try to build a proof</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html#ifthen"><i class="fa fa-check"></i><b>8.2.1</b> If…then…</a></li>
+<li class="chapter" data-level="8.2.2" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html#draw-the-map"><i class="fa fa-check"></i><b>8.2.2</b> Draw the map</a></li>
+<li class="chapter" data-level="8.2.3" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html#choose-your-method"><i class="fa fa-check"></i><b>8.2.3</b> Choose your method</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="what-is-a-mathematical-proof.html"><a href="what-is-a-mathematical-proof.html"><i class="fa fa-check"></i><b>9.1</b> What is a mathematical proof?</a></li>
+<li class="chapter" data-level="9.2" data-path="why-prove-something.html"><a href="why-prove-something.html"><i class="fa fa-check"></i><b>9.2</b> Why prove something?}</a></li>
+<li class="chapter" data-level="9.3" data-path="how-do-i-write-a-good-proof.html"><a href="how-do-i-write-a-good-proof.html"><i class="fa fa-check"></i><b>9.3</b> How do I write a good proof?}</a></li>
+<li class="chapter" data-level="9.4" data-path="common-mistakes-in-proof.html"><a href="common-mistakes-in-proof.html"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof}</a></li>
+<li class="chapter" data-level="9.5" data-path="rightarrow-and-leftrightarrow.html"><a href="rightarrow-and-leftrightarrow.html"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span>}</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="statements-containing-mathematics-arent-necessarily-mathematical" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Statements containing mathematics aren’t necessarily mathematical!</h2>
+<p>We should also be clear on another point: Just because a statement contains mathematics, that doesn’t mean it’s mathematical!</p>
+<p>The statement “8 is a better number than 14” might be about numbers, but it’s not mathematical because it doesn’t have a clearly-defined truth value.</p>
+<p>Equally, the statement “<span class="math inline">\(ab = cd\)</span>” is definitely mathematical in its content, but it is not classified a mathematical statement because it doesn’t contain enough information to decide on its truth value.</p>
+<div class="alert alert-warning" role="alert">
+<p><strong>Careful!</strong></p>
+<p>Mathematical statements don’t have to be about mathematics. They just have to be good, clear statements with a clearly-defined (though possibly unknown) truth value. We use the word mathematical here to describe the <em>nature</em> of the statement, rather than its <em>content</em>.</p>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-33" class="exercise"><strong>Exercise 4.1  </strong></span>For this exercise, you should write:</p>
+<ol style="list-style-type: lower-alpha">
+<li>A mathematical statement that is <em>not</em> about mathematics.</li>
+<li>A mathematical statement that <em>is</em> about mathematics.</li>
+<li>A non-mathematical statement that <em>is</em> about mathematics.</li>
+<li>A non-mathematical statement that is <em>not</em> about mathematics.</li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-34" class="exercise"><strong>Exercise 4.2  </strong></span>Do you know the truth values of the two mathematical statements you wrote in the previous question? If not, do you think you could find out?</p>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-35" class="exercise"><strong>Exercise 4.3  </strong></span>Look back at the twenty-six statements in Exercise 3.7.</p>
+<ol style="list-style-type: lower-alpha">
+<li>How many of them are mathematical statements?</li>
+<li>How many are non-mathematical statements?</li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-36" class="exercise"><strong>Exercise 4.4  </strong></span>Of those statements in Exercise 3.7 which <em>are</em> mathematical statements:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Which of them do you know are true?</li>
+<li>Which do you know are false?</li>
+<li>Which don’t you know the truth value of but you think <em>someone</em> in the world does?</li>
+<li>Do you think there are any to which <em>no one</em> in the world knows the answer to?</li>
+</ol>
+</div>
+</div>
+<div class="alert alert-danger" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-37" class="exercise"><strong>Exercise 4.5  </strong></span>Do you think there are mathematical statements to which no one can <em>ever</em> know the answer? Can you think of any?
+</div>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-38" class="exercise"><strong>Exercise 4.6  </strong></span>Below are four more statements. Repeat Exercises 4.3 and 4.4 for these statements.</p>
+<ol style="list-style-type: lower-alpha">
+<li>There are infinitely many square numbers.</li>
+<li>There are infinitely many prime numbers.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a></li>
+<li>There are infinitely many perfect numbers.</li>
+<li>There is no set<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a> whose cardinality<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> is strictly between that of the integers<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a> and the real numbers<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>.<br />
+</li>
+</ol>
+</div>
+</div>
+<div class="alert alert-success" role="alert">
+<p><strong> What have we learnt? </strong></p>
+<ul>
+<li><p>We’ve learnt that the statement “A is the eighth letter of the Latin alphabet” is a mathematical statement, but “<span class="math inline">\(a^2 + b^2 = c^2\)</span>” is not, because it doesn’t have a clearly-defined truth value!</p></li>
+<li><p>We’ve learnt to consider the <em>nature</em> of the statement, not its subject, when deciding if it is “mathematical” or not.</p></li>
+</ul>
+</div>
+
+</div>
+<!-- </div> -->
+<div class="footnotes">
+<hr />
+<ol start="7">
+<li id="fn7"><p>Watch from 12:30 in this video: <a href="https://www.youtube.com/watch?v=OihQPf4mJH4" class="uri">https://www.youtube.com/watch?v=OihQPf4mJH4</a>.<a href="statements-containing-mathematics-arent-necessarily-mathematical.html#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>A set is a collection of items.<a href="statements-containing-mathematics-arent-necessarily-mathematical.html#fnref8" class="footnote-back">↩︎</a></p></li>
+<li id="fn9"><p>Cardinality tells you the number of items in a set.<a href="statements-containing-mathematics-arent-necessarily-mathematical.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p>Integers are the whole numbers: …-3, -2, -1, 0, 1, 2, 3…<a href="statements-containing-mathematics-arent-necessarily-mathematical.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p>Real number include both whole and non-whole numbers.<a href="statements-containing-mathematics-arent-necessarily-mathematical.html#fnref11" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mathematical-statements-dont-need-to-be-about-mathematics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="axioms.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/04-mathematicalstatements.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/04-mathematicalstatements.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

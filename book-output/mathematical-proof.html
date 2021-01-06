@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 Mathematical proof | bookdownproj.utf8</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 Mathematical proof | bookdownproj.utf8" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 Mathematical proof | bookdownproj.utf8" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="axioms.html"/>
+<link rel="next" href="disproving-a-conjecture.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="getting-started.html"><a href="getting-started.html#about-this-course"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
+<li class="chapter" data-level="1.2" data-path="getting-started.html"><a href="getting-started.html#about-this-book"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-started.html"><a href="getting-started.html#in-this-book"><i class="fa fa-check"></i><b>1.3</b> In this book…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statements.html"><a href="statements.html#non-statements"><i class="fa fa-check"></i><b>2.1</b> Non-statements</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="statements.html"><a href="statements.html#fragments"><i class="fa fa-check"></i><b>2.1.1</b> Fragments</a></li>
+<li class="chapter" data-level="2.1.2" data-path="statements.html"><a href="statements.html#questions"><i class="fa fa-check"></i><b>2.1.2</b> Questions</a></li>
+<li class="chapter" data-level="2.1.3" data-path="statements.html"><a href="statements.html#implicit-answers"><i class="fa fa-check"></i><b>2.1.3</b> Implicit answers</a></li>
+<li class="chapter" data-level="2.1.4" data-path="statements.html"><a href="statements.html#exclamations"><i class="fa fa-check"></i><b>2.1.4</b> Exclamations</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="statements.html"><a href="statements.html#what-makes-a-good-statement"><i class="fa fa-check"></i><b>2.2</b> What makes a <em>good</em> statement?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="statements.html"><a href="statements.html#all-the-words-should-be-clear-and-understandable"><i class="fa fa-check"></i><b>2.2.1</b> All the words should be clear and understandable</a></li>
+<li class="chapter" data-level="2.2.2" data-path="statements.html"><a href="statements.html#no-paradoxes"><i class="fa fa-check"></i><b>2.2.2</b> No paradoxes!</a></li>
+<li class="chapter" data-level="2.2.3" data-path="statements.html"><a href="statements.html#statements-should-stand-on-their-own"><i class="fa fa-check"></i><b>2.2.3</b> Statements should stand on their own</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="truth-values.html"><a href="truth-values.html#what-is-the-truth-value-of-a-statement"><i class="fa fa-check"></i><b>3.1</b> What is the truth value of a statement?</a></li>
+<li class="chapter" data-level="3.2" data-path="truth-values.html"><a href="truth-values.html#clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.2</b> Clearly defined truth values</a></li>
+<li class="chapter" data-level="3.3" data-path="truth-values.html"><a href="truth-values.html#statements-without-clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.3</b> Statements without clearly defined truth values</a></li>
+<li class="chapter" data-level="3.4" data-path="truth-values.html"><a href="truth-values.html#unknown-truth-values"><i class="fa fa-check"></i><b>3.4</b> Unknown truth values</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematical-statements.html"><a href="mathematical-statements.html#definition"><i class="fa fa-check"></i><b>4.1</b> Definition</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-statements.html"><a href="mathematical-statements.html#mathematical-statements-dont-need-to-be-about-mathematics"><i class="fa fa-check"></i><b>4.2</b> Mathematical statements don’t need to be about mathematics!</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematical-statements.html"><a href="mathematical-statements.html#statements-containing-mathematics-arent-necessarily-mathematical"><i class="fa fa-check"></i><b>4.3</b> Statements containing mathematics aren’t necessarily mathematical!</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="axioms.html"><a href="axioms.html#what-makes-a-mathematical-statement-an-axiom"><i class="fa fa-check"></i><b>5.1</b> What makes a mathematical statement an axiom?</a></li>
+<li class="chapter" data-level="5.2" data-path="axioms.html"><a href="axioms.html#what-makes-an-axiom-a-definition"><i class="fa fa-check"></i><b>5.2</b> What makes an axiom a definition?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mathematical-proof.html"><a href="mathematical-proof.html#mathematics-versus-other-fields"><i class="fa fa-check"></i><b>6.1</b> Mathematics versus other fields</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mathematical-proof.html"><a href="mathematical-proof.html#terminology"><i class="fa fa-check"></i><b>6.1.1</b> Terminology</a></li>
+<li class="chapter" data-level="6.1.2" data-path="mathematical-proof.html"><a href="mathematical-proof.html#methodology"><i class="fa fa-check"></i><b>6.1.2</b> Methodology</a></li>
+<li class="chapter" data-level="6.1.3" data-path="mathematical-proof.html"><a href="mathematical-proof.html#trial-and-improvement"><i class="fa fa-check"></i><b>6.1.3</b> Trial and improvement</a></li>
+<li class="chapter" data-level="6.1.4" data-path="mathematical-proof.html"><a href="mathematical-proof.html#an-ever-changing-world"><i class="fa fa-check"></i><b>6.1.4</b> An ever-changing world</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="mathematical-proof.html"><a href="mathematical-proof.html#so-what-does-this-all-mean"><i class="fa fa-check"></i><b>6.2</b> So what does this all mean?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-counterexample"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="7.2" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-disproof"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#step-1-start-by-looking-for-a-counterexample"><i class="fa fa-check"></i><b>8.1</b> Step 1: Start by looking for a counterexample</a></li>
+<li class="chapter" data-level="8.2" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#step-2-try-to-build-a-proof"><i class="fa fa-check"></i><b>8.2</b> Step 2: Try to build a proof</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#ifthen"><i class="fa fa-check"></i><b>8.2.1</b> If…then…</a></li>
+<li class="chapter" data-level="8.2.2" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#draw-the-map"><i class="fa fa-check"></i><b>8.2.2</b> Draw the map</a></li>
+<li class="chapter" data-level="8.2.3" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#choose-your-method"><i class="fa fa-check"></i><b>8.2.3</b> Choose your method</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="validity.html"><a href="validity.html#what-is-a-mathematical-proof"><i class="fa fa-check"></i><b>9.1</b> What is a mathematical proof?</a></li>
+<li class="chapter" data-level="9.2" data-path="validity.html"><a href="validity.html#why-prove-something"><i class="fa fa-check"></i><b>9.2</b> Why prove something?}</a></li>
+<li class="chapter" data-level="9.3" data-path="validity.html"><a href="validity.html#how-do-i-write-a-good-proof"><i class="fa fa-check"></i><b>9.3</b> How do I write a good proof?}</a></li>
+<li class="chapter" data-level="9.4" data-path="validity.html"><a href="validity.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof}</a></li>
+<li class="chapter" data-level="9.5" data-path="validity.html"><a href="validity.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span>}</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="mathematical-proof" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Mathematical proof</h1>
+<div id="mathematics-versus-other-fields" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Mathematics versus other fields</h2>
+<p>Mathematical proof is different to proof in other fields. Let’s look at how.</p>
+<div id="terminology" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Terminology</h3>
+<p>Mathematics has a different set of terms when talking about proofs.</p>
+<p>In mathematics, once we have identified a statement which we would like to try to prove or disprove, we rename it a **conjecture}.</p>
+<p>If we are successful in proving it, the conjecture is renamed a <strong>theorem</strong>. If it is disproved, it is called a **disproved conjecture}. Only statements that have been proved true} can be called theorems.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-46"></span>
+<img src="figures/statementjourney.jpg" alt="The journey of a statement." width="65%" />
+<p class="caption">
+Figure 6.1: The journey of a statement.
+</p>
+</div>
+<p>* A mathematical statement obviously!</p>
+<div class="alert alert-danger" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-47" class="exercise"><strong>Exercise 6.1  </strong></span>How many mathematical theorems can you name?
+</div>
+</div>
+</div>
+<div id="methodology" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Methodology</h3>
+<p>In mathematics we talk about theorems. In other sciences, they talk about theories. What’s the difference? It all about how the proof is constructed.</p>
+<p><strong>A proof in mathematics must be built deductively.</strong></p>
+<p>We say therefore that a theorem in mathematics is deductively true. In other words, you should be able to provide a list of steps which someone else could follow and arrive at the same conclusions.</p>
+<p><strong>A proof in science is built on evidence.</strong></p>
+<p>We say therefore that a scientific theory is empirically (or “verifiably”) true, based on observations made or evidence collected. To verify it, someone would need to either trust your evidence, or be able to recreate the evidence themselves.<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></p>
+<p>That’s the difference between a theorem in mathematics and a theory in science.</p>
+</div>
+<div id="trial-and-improvement" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Trial and improvement</h3>
+<p>In mathematics, once a conjecture’s truth value has been discovered, it remains this way forever. However in other sciences (both natural sciences and social sciences), theories are always changing, being improved upon and added to as more research is done and more discoveries are made.</p>
+<p>This is a key principle of modern science - it doesn’t claim to know all the answers, but its aim is the truth, and it chooses as its foundations those theories which have the most compelling evidence.<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a></p>
+<p>The <strong>theory of gravity</strong>, the <strong>theory of relativity</strong>, the <strong>theory of evolution</strong> and even the current form of <strong>the periodic table</strong> are all examples of theories which are constantly being changed and updated as new evidence is revealed.</p>
+<p>Some scientific theories have even been shown to be completely wrong. Here’s a short list of some theories previously believed true but later disproven: <a href="https://www.famousscientists.org/10-most-famous-scientific-theories-that-were-later-debunked" class="uri">https://www.famousscientists.org/10-most-famous-scientific-theories-that-were-later-debunked</a>.</p>
+</div>
+<div id="an-ever-changing-world" class="section level3" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> An ever-changing world</h3>
+<p>Statements about world geography, international politics, currency markets, individual people, the state of technology and a lot else besides are all likely to all be time-dependent. Countries fall, empires collapse, capitals change, phones get faster, people and animals evolve.</p>
+<p>For example, the statement “Nur-Sultan is the capital of Kazakhstan” has a built-in time limit. It won’t be true forever. We don’t know how long it will be true for, but it won’t be true forever. Sure, it is true at the moment, but what if the capital is renamed in future years? The truth value of the statement would change.</p>
+<p>“The capital of Kazakhstan is located in the north of the country” is also currently true. This statement is definitely more general, but is still time-dependent: the capital of Kazakhstan used to be located in the south of the country; what’s stopping the location of the capital city shifting again in the future?
+And how long will Kazakhstan exist? All countries change over time. Eventually there won’t be a Kazakhstan, or a France or a Benin or a Britain.</p>
+</div>
+</div>
+<div id="so-what-does-this-all-mean" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> So what does this all mean?</h2>
+<p>It means that the study of mathematics is different to other sciences, to economics, to philosophy, psychology, evolutionary biology, and all other fields of study. If something is proved in mathematics, its truth value won’t change over time. Prove something is true in mathematics and you know that it has always been true and that it will remain true forever.<a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a> In 5 years or 100 years or 1000 years or a million years, the truth value will be unchanged.</p>
+<p>The axioms laid down by the Greek mathematician <strong>Euclid of Alexandria</strong> over two thousand years ago are as true now as they were then.<a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a></p>
+<p>The mathematical proofs of the mathematician <strong>Muhammad ibn Musa al-Khwarizmi</strong>, born near Khiva in Central Asia, which he presented in his book <em>The Compendious Book on Calculation by Completion and Balancing</em>,<a href="#fn23" class="footnote-ref" id="fnref23"><sup>23</sup></a> have not had their truth values changed in the hundreds of years since. The many proofs of French mathematician <strong>Sophie Germain</strong> are as valid now as they were in the 18th and 19th century when she wrote them. The mathematics of American mathematician <strong>Katherine Johnson</strong> in the 1960s or the Iranian mathematician <strong>Maryam Mirzakhani</strong> in the 2000s and 2010s will remain relevant forever.</p>
+<p>Anything <strong>You</strong> prove true in this course will be true forever. Anything you show is false will be false forever. Get ready to make your mark on history!</p>
+<div class="alert alert-success" role="alert">
+<p><strong> What have we learnt? </strong></p>
+<ul>
+<li>As discussed in Chapter 3, a good mathematical statement has an unchanging truth value. Unfortunately, in many fields, the truth value of statements can change over time.</li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="19">
+<li id="fn19"><p>Something known as reproducibility.<a href="mathematical-proof.html#fnref19" class="footnote-back">↩︎</a></p></li>
+<li id="fn20"><p>This approach provides a stable platform for further exploration. Just because science can’t definitively say whether a statement is 100% true, its chosen approach is better than throwing our hands up and saying “who knows!” or ``no one can be sure!’’. Considering that we have science to thank for iPhones, vaccinations against deadly diseases, increased food yields, an understanding of how all life on Earth is connected, and a great many other things, it’s a pretty good approach!<a href="mathematical-proof.html#fnref20" class="footnote-back">↩︎</a></p></li>
+<li id="fn21"><p>For example, proving Pythagoras’ Theorem (<a href="https://www.pinterest.com/pin/300122762659059179/" class="uri">https://www.pinterest.com/pin/300122762659059179/</a>) tells us this theorem is true for all time.<a href="mathematical-proof.html#fnref21" class="footnote-back">↩︎</a></p></li>
+<li id="fn22"><p>See <a href="https://plus.maths.org/content/maths-minute-euclids-axioms" class="uri">https://plus.maths.org/content/maths-minute-euclids-axioms</a>.<a href="mathematical-proof.html#fnref22" class="footnote-back">↩︎</a></p></li>
+<li id="fn23"><p>The title of this book gave the us the word <em>algebra</em>, from the Arabic word <em>al-jabr</em> meaning “restoration”, “the reunion of broken parts” or sometimes “bone-setting”.<a href="mathematical-proof.html#fnref23" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="axioms.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="disproving-a-conjecture.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/06-mathematicalproof.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/06-mathematicalproof.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

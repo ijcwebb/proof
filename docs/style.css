@@ -12,3 +12,7 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.book.font-family-0 {
+  font-family: Georgia, serif;
+}

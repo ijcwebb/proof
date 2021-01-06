@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2.2 What makes a good statement? | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2.2 What makes a good statement? | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2.2 What makes a good statement? | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="non-statements.html"/>
+<link rel="next" href="truth-values.html"/>
+<script src="assets/header-attrs-2.6/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="about-this-course.html"><a href="about-this-course.html"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
+<li class="chapter" data-level="1.2" data-path="about-this-book.html"><a href="about-this-book.html"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
+<li class="chapter" data-level="1.3" data-path="in-this-book.html"><a href="in-this-book.html"><i class="fa fa-check"></i><b>1.3</b> In this book…</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="non-statements.html"><a href="non-statements.html"><i class="fa fa-check"></i><b>2.1</b> Non-statements</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="non-statements.html"><a href="non-statements.html#fragments"><i class="fa fa-check"></i><b>2.1.1</b> Fragments</a></li>
+<li class="chapter" data-level="2.1.2" data-path="non-statements.html"><a href="non-statements.html#questions"><i class="fa fa-check"></i><b>2.1.2</b> Questions</a></li>
+<li class="chapter" data-level="2.1.3" data-path="non-statements.html"><a href="non-statements.html#implicit-answers"><i class="fa fa-check"></i><b>2.1.3</b> Implicit answers</a></li>
+<li class="chapter" data-level="2.1.4" data-path="non-statements.html"><a href="non-statements.html#exclamations"><i class="fa fa-check"></i><b>2.1.4</b> Exclamations</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html"><i class="fa fa-check"></i><b>2.2</b> What makes a <em>good</em> statement?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html#all-the-words-should-be-clear-and-understandable"><i class="fa fa-check"></i><b>2.2.1</b> All the words should be clear and understandable</a></li>
+<li class="chapter" data-level="2.2.2" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html#no-paradoxes"><i class="fa fa-check"></i><b>2.2.2</b> No paradoxes!</a></li>
+<li class="chapter" data-level="2.2.3" data-path="what-makes-a-good-statement.html"><a href="what-makes-a-good-statement.html#statements-should-stand-on-their-own"><i class="fa fa-check"></i><b>2.2.3</b> Statements should stand on their own</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="what-is-the-truth-value-of-a-statement.html"><a href="what-is-the-truth-value-of-a-statement.html"><i class="fa fa-check"></i><b>3.1</b> What is the truth value of a statement?</a></li>
+<li class="chapter" data-level="3.2" data-path="clearly-defined-truth-values.html"><a href="clearly-defined-truth-values.html"><i class="fa fa-check"></i><b>3.2</b> Clearly defined truth values</a></li>
+<li class="chapter" data-level="3.3" data-path="statements-without-clearly-defined-truth-values.html"><a href="statements-without-clearly-defined-truth-values.html"><i class="fa fa-check"></i><b>3.3</b> Statements without clearly defined truth values</a></li>
+<li class="chapter" data-level="3.4" data-path="unknown-truth-values.html"><a href="unknown-truth-values.html"><i class="fa fa-check"></i><b>3.4</b> Unknown truth values</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="definition.html"><a href="definition.html"><i class="fa fa-check"></i><b>4.1</b> Definition</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-statements-dont-need-to-be-about-mathematics.html"><a href="mathematical-statements-dont-need-to-be-about-mathematics.html"><i class="fa fa-check"></i><b>4.2</b> Mathematical statements don’t need to be about mathematics!</a></li>
+<li class="chapter" data-level="4.3" data-path="statements-containing-mathematics-arent-necessarily-mathematical.html"><a href="statements-containing-mathematics-arent-necessarily-mathematical.html"><i class="fa fa-check"></i><b>4.3</b> Statements containing mathematics aren’t necessarily mathematical!</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="what-makes-a-mathematical-statement-an-axiom.html"><a href="what-makes-a-mathematical-statement-an-axiom.html"><i class="fa fa-check"></i><b>5.1</b> What makes a mathematical statement an axiom?</a></li>
+<li class="chapter" data-level="5.2" data-path="what-makes-an-axiom-a-definition.html"><a href="what-makes-an-axiom-a-definition.html"><i class="fa fa-check"></i><b>5.2</b> What makes an axiom a definition?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html"><i class="fa fa-check"></i><b>6.1</b> Mathematics versus other fields</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#terminology"><i class="fa fa-check"></i><b>6.1.1</b> Terminology</a></li>
+<li class="chapter" data-level="6.1.2" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#methodology"><i class="fa fa-check"></i><b>6.1.2</b> Methodology</a></li>
+<li class="chapter" data-level="6.1.3" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#trial-and-improvement"><i class="fa fa-check"></i><b>6.1.3</b> Trial and improvement</a></li>
+<li class="chapter" data-level="6.1.4" data-path="mathematics-versus-other-fields.html"><a href="mathematics-versus-other-fields.html#an-ever-changing-world"><i class="fa fa-check"></i><b>6.1.4</b> An ever-changing world</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="so-what-does-this-all-mean.html"><a href="so-what-does-this-all-mean.html"><i class="fa fa-check"></i><b>6.2</b> So what does this all mean?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="finding-a-counterexample.html"><a href="finding-a-counterexample.html"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="7.2" data-path="finding-a-disproof.html"><a href="finding-a-disproof.html"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="step-1-start-by-looking-for-a-counterexample.html"><a href="step-1-start-by-looking-for-a-counterexample.html"><i class="fa fa-check"></i><b>8.1</b> Step 1: Start by looking for a counterexample</a></li>
+<li class="chapter" data-level="8.2" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html"><i class="fa fa-check"></i><b>8.2</b> Step 2: Try to build a proof</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html#ifthen"><i class="fa fa-check"></i><b>8.2.1</b> If…then…</a></li>
+<li class="chapter" data-level="8.2.2" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html#draw-the-map"><i class="fa fa-check"></i><b>8.2.2</b> Draw the map</a></li>
+<li class="chapter" data-level="8.2.3" data-path="step-2-try-to-build-a-proof.html"><a href="step-2-try-to-build-a-proof.html#choose-your-method"><i class="fa fa-check"></i><b>8.2.3</b> Choose your method</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="what-is-a-mathematical-proof.html"><a href="what-is-a-mathematical-proof.html"><i class="fa fa-check"></i><b>9.1</b> What is a mathematical proof?</a></li>
+<li class="chapter" data-level="9.2" data-path="why-prove-something.html"><a href="why-prove-something.html"><i class="fa fa-check"></i><b>9.2</b> Why prove something?}</a></li>
+<li class="chapter" data-level="9.3" data-path="how-do-i-write-a-good-proof.html"><a href="how-do-i-write-a-good-proof.html"><i class="fa fa-check"></i><b>9.3</b> How do I write a good proof?}</a></li>
+<li class="chapter" data-level="9.4" data-path="common-mistakes-in-proof.html"><a href="common-mistakes-in-proof.html"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof}</a></li>
+<li class="chapter" data-level="9.5" data-path="rightarrow-and-leftrightarrow.html"><a href="rightarrow-and-leftrightarrow.html"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span>}</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="what-makes-a-good-statement" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> What makes a <em>good</em> statement?</h2>
+<p>Not all statements are equally good! Some are better than others. Follow the rules below for high-quality statements:</p>
+<div id="all-the-words-should-be-clear-and-understandable" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> All the words should be clear and understandable</h3>
+<p>All the words in a statement should <em>either</em> already be understood by the reader, or should be easy to Google. Let’s look at some examples:</p>
+<center>
+<p><strong>Bishkek</strong> is the <strong>capital</strong> of the <strong>Kyrgyz Republic</strong>.</p>
+</center>
+<p>This is nice and clear. We know what the Kyrgyz Republic is, we know what Bishkek is, and we know what a capital is.</p>
+<center>
+<p>The <strong>human foot</strong> is comprised of 26 <strong>bones</strong>.</p>
+</center>
+<p>Again, this statement is nice and clear. We know what each term means.</p>
+<center>
+<p>An <strong>atom</strong> of <strong>uranium</strong> has one more <strong>electron</strong> than an <strong>atom</strong> of <strong>protactinium</strong>.</p>
+</center>
+<p>We might not understand every term here, but we could use Google to find out more.</p>
+<center>
+<p><span style="color:red">The <strong>candidate</strong> won the <strong>popular vote</strong> but lost the <strong>election</strong>.</span></p>
+</center>
+<p>This isn’t clear, and no matter how much Googling we do, we won’t be able to clarify the details. We need to ask the author of the statement: Which election? Which year? Which candidate?</p>
+<center>
+<p><span style="color:red"><strong>I love you</strong>.</p>
+</center>
+<p>On its own, this statement isn’t clear enough. Who is speaking, and to whom?</p>
+<p>Once we understand that, we need to ask whether <strong>love</strong> is clearly defined? Are we talking about something from the soul? Something biological? Familiar love? Friendship?</p>
+<center>
+<p><span style="color:red">1000 is a <strong>large</strong> number.</p>
+</center>
+<p>There’s only one word here which is not clear: large. It’s not clear how the author is defining large. Maybe the author could change the statement to compare it with something:</p>
+<center>
+<p>1000 is larger than 500.</p>
+<p>1000 people died today in our country, the largest <strong>daily total</strong> since the <strong>global pandemic</strong> began.</p>
+<p>1000 is the largest number for which the <strong>Romans</strong> had a <strong>symbol</strong>.</p>
+</center>
+<p>In all three of these statements, the word ``large’’ has now been given clear meaning.</p>
+</div>
+<div id="no-paradoxes" class="section level3" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> No paradoxes!</h3>
+<p>Paradoxes contradict themselves. These statements rely more on tricks of language:</p>
+<center>
+<p>This statement is not clear.</p>
+<p>This statement is false.</p>
+<p>The statement below is not true.
+The statement above is true.</p>
+</center>
+<p>Because paradoxes are built to contradict themselves, they aren’t much use to us. Therefore we’ll avoid them in this course.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<div class="alert alert-danger" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-13" class="exercise"><strong>Exercise 2.1  </strong></span>Can you find any other paradoxical statements? What makes them paradoxical?
+</div>
+</div>
+</div>
+<div id="statements-should-stand-on-their-own" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Statements should stand on their own</h3>
+<p>Don’t you hate that feeling when you start watching a film but nothing makes sense because you didn’t watch the previous films in the series?<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+<p>A good statement should stand on its own, and not rely on the reader knowing previous statements. If it <em>does</em> assume knowledge of previous statements, they should be referenced or restated, like including a plot synopsis for the previous movies!</p>
+<p>Now it’s your turn. Bring your answers to our next class.</p>
+<p>Going forward, all statements will be coloured yellow, </p>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-14" class="exercise"><strong>Exercise 2.2  </strong></span>Take a look at the statements below. Are all the terms clear? Do you understand all the terms? If not, do you think you could find out their meaning on your own? Do any of the statements need more explanation by the author?</p>
+<ol style="list-style-type: decimal">
+<li>It is hot today.</li>
+<li>It is hotter today than it was yesterday.</li>
+<li>The highest temperature on record, 54.4<span class="math inline">\(^{\circ}\)</span>C or 130<span class="math inline">\(^{\circ}\)</span>F, was measured on 16th August 2020 at the Death Valley National Park in California.</li>
+<li>The explosion in Beirut in August 2020 could have been avoided.</li>
+<li>24 is a nice number.</li>
+<li>28 is a perfect number.</li>
+<li>Two negatives make a positive.</li>
+<li>Aman has a twin sister.</li>
+<li>Ariana Grande was the most streamed artist of the year.</li>
+<li>On average it rains more in Wales than it does in Kyrgyzstan.
+</div></li>
+</ol>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> 1. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
+2. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
+3. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.</p>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-16" class="exercise"><strong>Exercise 2.3  </strong></span>Using the three rules given above, which of the following statements are good? What is wrong with the others?</p>
+<ol style="list-style-type: decimal">
+<li>The cyrillic alphabet contains 33 letters.</li>
+<li>Gunnar Garfors has visited every country in the world.</li>
+<li>People find it harder to concentrate on one task than they used to.</li>
+<li>Mobile phones have gotten more powerful over time.</li>
+<li>Video games help people relax.</li>
+<li>The US is larger than China.</li>
+<li>The last word of this sentence is.</li>
+<li>This sentence contains four e’s.</li>
+<li>This sentence contains 3 1’s, 1 2 and 2 3’s.</li>
+<li>The longest word in this sentence is “complementary.”
+</div></li>
+</ol>
+<div class="alert alert-success" role="alert">
+<p><strong> What have we learnt? </strong></p>
+<ul>
+<li>We understand what <em>isn’t</em> a statement, what’s a <em>bad</em> statement and what’s a <em>good</em> statement.</li>
+<li>We also understand…</li>
+</ul>
+</div>
+<p>In this course, we will only work with good, high-quality statements.</p>
+<p>Next, let’s look at whether good statements are true or not.</p>
+
+</div>
+</div>
+<!-- </div> -->
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>They are good for keeping our brains busy though!<a href="what-makes-a-good-statement.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>I had watched <em>none</em> of the previous Marvel movies before watching <em>Avengers: Endgame</em>. I understood nothing and had to spend an hour afterwards quizzing my boyfriend on the Tesseract, the Ancient One, and what Robert Downey Jr. was doing stranded in space. I think I got it.<a href="what-makes-a-good-statement.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="non-statements.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="truth-values.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/02-statements.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/02-statements.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

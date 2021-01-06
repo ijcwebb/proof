@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof</title>
-  <meta name="description" content="Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof" />
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
-  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof" />
   
-  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
   
 
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-01-04" />
+<meta name="date" content="2021-01-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="disproving-a-conjecture.html"/>
-
+<link rel="next" href="validity.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -136,8 +136,17 @@
 <li class="chapter" data-level="8.2.3" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html#choose-your-method"><i class="fa fa-check"></i><b>8.2.3</b> Choose your method</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="validity.html"><a href="validity.html#what-is-a-mathematical-proof"><i class="fa fa-check"></i><b>9.1</b> What is a mathematical proof?</a></li>
+<li class="chapter" data-level="9.2" data-path="validity.html"><a href="validity.html#why-prove-something"><i class="fa fa-check"></i><b>9.2</b> Why prove something?</a></li>
+<li class="chapter" data-level="9.3" data-path="validity.html"><a href="validity.html#how-do-i-write-a-good-proof"><i class="fa fa-check"></i><b>9.3</b> How do I write a good proof?</a></li>
+<li class="chapter" data-level="9.4" data-path="validity.html"><a href="validity.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
+<li class="chapter" data-level="9.5" data-path="validity.html"><a href="validity.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -215,7 +224,7 @@
 
 <div class="example">
 <p><span id="exm:unnamed-chunk-64" class="example"><strong>Example 8.1  </strong></span>Multiples of even numbers are even.</p>
-<p>Rewritten in the <strong>If … then …</strong> form, this conjecture becomes “<strong>If</strong> <span class="math inline">\(a\)</span> is an even number, <strong>then</strong> <span class="math inline">\(ka\)</span> is even, where <span class="math inline">\(k \in \mathbb{Z}\)</span>”.</p>
+<p>Rewritten in the <strong>If … then …</strong> form, this conjecture becomes “<strong>If</strong> <span class="math inline">\(a\)</span> is an even number, <strong>then</strong> <span class="math inline">\(ka\)</span> is even, where <span class="math inline">\(k \in \mathbb{Z}\)</span>.”</p>
 </div>
 <p>We use the letter <span class="math inline">\(P\)</span> to indicate the starting point of a conjecture, and the letter <span class="math inline">\(Q\)</span> to indicate the destination. So for the above conjecture:</p>
 <p>Here are some more examples, taken from Exercise 6.1.1. The original conjecture is on the left, and the <strong>If … then …</strong> form on the right:</p>
@@ -281,7 +290,7 @@
 <p>Here’s the format of a conjecture map:</p>
 <p><img src="figures/maps1.png" width="45%" style="display: block; margin: auto;" /></p>
 <p>Notice we start on the left side of the picture and finish on the right.</p>
-<p>Next, we add <span class="math inline">\(P\)</span> and <span class="math inline">\(Q\)</span>. We’ll use the conjecture from above, “If <span class="math inline">\(a\)</span> is an even number, then <span class="math inline">\(ka\)</span> is even, where <span class="math inline">\(k \in \mathbb{Z}\)</span>”.</p>
+<p>Next, we add <span class="math inline">\(P\)</span> and <span class="math inline">\(Q\)</span>. We’ll use the conjecture from above, “If <span class="math inline">\(a\)</span> is an even number, then <span class="math inline">\(ka\)</span> is even, where <span class="math inline">\(k \in \mathbb{Z}\)</span>.”</p>
 <p><img src="figures/maps2.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>You can see that <span class="math inline">\(P\)</span> has been added to the left side of the map and <span class="math inline">\(Q\)</span> to the right side. Above the map we write what type of number we’re considering, in this case integers. Below the map, we write details of any variables (e.g. <span class="math inline">\(k\)</span>) that the conjecture uses.</p>
 <p>Next we add the <strong>opposite of <span class="math inline">\(P\)</span></strong> and the <strong>opposite of <span class="math inline">\(Q\)</span></strong> to the map.</p>
@@ -335,44 +344,11 @@
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="footnotes">
 <hr />
 <ol start="27">
 <li id="fn27"><p>This could be for a number of reasons, such as the the counterexample(s) are really really big, or maybe because you forgot to check all types of examples. Also, maybe you were just unlucky.<a href="proving-a-conjecture.html#fnref27" class="footnote-back">↩︎</a></p></li>
-<li id="fn28"><p>Also, when presented with a set of conjectures and told to “Prove using a direct proof…” or “Prove by induction…”, like a robot you will switch your brain off and switch on your autopilot, which we don’t want!<a href="proving-a-conjecture.html#fnref28" class="footnote-back">↩︎</a></p></li>
+<li id="fn28"><p>Also, when presented with a set of conjectures and told to “Prove using a direct proof…” or “Prove by induction…,” like a robot you will switch your brain off and switch on your autopilot, which we don’t want!<a href="proving-a-conjecture.html#fnref28" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -380,8 +356,8 @@
           </div>
         </div>
       </div>
-<a href="disproving-a-conjecture.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="disproving-a-conjecture.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="validity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

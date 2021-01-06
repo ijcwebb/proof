@@ -1,3 +1,4 @@
+---
 book_filename: "bookdownproj"
 output_dir: docs
 delete_merged_file: true
@@ -6,3 +7,9 @@ view: https://github.com/ijcwebb/proof/blob/master/%s
 language:
   ui:
     chapter_name: "Chapter "
+output:
+  bookdown::gitbook:
+    includes:
+      in_header: preamble.tex
+  css: style.css
+---
