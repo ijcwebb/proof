@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Statements | An Introduction to Mathematical Proof</title>
+  <title>Chapter 10 Proof by exhaustion | An Introduction to Mathematical Proof</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Statements | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 10 Proof by exhaustion | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Statements | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 10 Proof by exhaustion | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="truth-values.html"/>
+<link rel="prev" href="validity.html"/>
+
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -170,171 +170,179 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="statements" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Statements</h1>
-<p>A statement is a remark or declaration. Here are some examples:</p>
+<div id="proof-by-exhaustion" class="section level1" number="10">
+<h1><span class="header-section-number">Chapter 10</span> Proof by exhaustion</h1>
+<p>(</p>
+<p>Our first method of proof is not perhaps the most interesting, demanding or even the most common. However, it is very quick to unpack and will get us proving things immediately. It will give us a good launch pad onto more involved methods over the next few weeks.</p>
+<p>)</p>
+<p>Our method this week is called <strong>proof by exhaustion</strong>. This doesn’t mean you do it until <em>you</em> are exhausted. Rather, you do it until all possibilities are exhausted. It is closely related to another method we will look at in a couple of weeks. Let’s relate it to some conjectures:</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Conjecture</strong></th>
+<th><strong>If true, how to prove by exhaustion?</strong></th>
+<th><strong>Practical?</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>No Chinese citizen has green eyes</td>
+<td>Check eyes of every Chinese citizen</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>All Irish citizens have a vowel in their surname</td>
+<td>Check a database of Irish citizens</td>
+<td>Possibly</td>
+</tr>
+<tr class="odd">
+<td>There is no integer <span class="math inline">\(n\)</span> such that <span class="math inline">\(n^2 + n^3 = 100\)</span></td>
+<td>Check possible integers</td>
+<td>Yes</td>
+</tr>
+<tr class="even">
+<td>The sum of the digits of a multiple of <span class="math inline">\(9\)</span> is itself a multiple of <span class="math inline">\(9\)</span></td>
+<td>Check all multiples of <span class="math inline">\(9\)</span></td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td>For any right-angle triangle with hypotenuse <span class="math inline">\(a\)</span> and legs <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>, <span class="math inline">\(a^2 = b^2 + c^2\)</span></td>
+<td>Check every possible right-angle triangle</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Using this method when there are too many cases, as in (1) and (4), will take far too long, unless you’ve got a quick or systematic way to carry out the check, as in (2). This method works best for conjectures where the number of possibilities is low, as in (3).<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a></p>
+<div id="steps" class="section level2" number="10.1">
+<h2><span class="header-section-number">10.1</span> Steps</h2>
 <ul>
-<li>Life is pain.</li>
-<li>I am 19 years old.</li>
-<li>I like your hat.</li>
-<li>London is the capital of Great Britain.</li>
-</ul>
-<div id="non-statements" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Non-statements</h2>
-<p>So what is <em>not</em> a statement? I’ve listed four types of non-statements below. Can you think of any other types?</p>
-<div id="fragments" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Fragments</h3>
-<ul>
-<li>Fish.</li>
-<li>I am.</li>
-<li>Bro.</li>
-</ul>
-<p>These are incomplete sentences, and are therefore not statements.</p>
-</div>
-<div id="questions" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Questions</h3>
-<ul>
-<li>What is <span class="math inline">\(2 \cdot 2\)</span>?</li>
-<li>Are you going to eat that?</li>
-<li>What is this life if full of care?</li>
-</ul>
-<p>Anything that ends with a question mark is not a statement; it’s a question.</p>
-</div>
-<div id="implicit-answers" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Implicit answers</h3>
-<ul>
-<li><span class="math inline">\(162.5\)</span></li>
-<li>Yes it is.</li>
-<li>The day after tomorrow.</li>
-</ul>
-<p>Anything that answers a question, without explicitly referencing the question, is not a statement. Or at least, not one that we can work with.</p>
-</div>
-<div id="exclamations" class="section level3" number="2.1.4">
-<h3><span class="header-section-number">2.1.4</span> Exclamations</h3>
-<ul>
-<li>Dang!</li>
-<li>Ura!</li>
-<li>Phew!</li>
+<li>Identify and list all possibilities.</li>
+<li>Prove that your list definitely contains all possibilities (i.e. you haven’t forgotten any).</li>
+<li>Show that the conjecture is true for each of the possibilities on your list.</li>
 </ul>
 </div>
+<div id="formal-definition" class="section level2" number="10.2">
+<h2><span class="header-section-number">10.2</span> Formal definition</h2>
+To prove “If <span class="math inline">\(P\)</span> then <span class="math inline">\(Q\)</span>” by exhaustion, show that
+\begin{align}
+<center>
+If <span class="math inline">\(P_1\)</span> then <span class="math inline">\(Q\)</span>.
+If <span class="math inline">\(P_2\)</span> then <span class="math inline">\(Q\)</span>.
+<span class="math inline">\(\vdots\)</span>
+If <span class="math inline">\(P_n\)</span> then <span class="math inline">\(Q\)</span>.
+</center>
+<p>where <span class="math inline">\(P_1\)</span>, <span class="math inline">\(P_2\)</span>, …, <span class="math inline">\(P_n\)</span> are all possible (finitely many) values of <span class="math inline">\(P\)</span>.</p>
 </div>
-<div id="what-makes-a-good-statement" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> What makes a <em>good</em> statement?</h2>
-<p>Not all statements are equally good! Some are better than others. Follow the rules below for high-quality statements:</p>
-<div id="all-the-words-should-be-clear-and-understandable" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> All the words should be clear and understandable</h3>
-<p>All the words in a statement should <em>either</em> already be understood by the reader, or should be easy to Google. Let’s look at some examples:</p>
-<center>
-<p><strong>Bishkek</strong> is the <strong>capital</strong> of the <strong>Kyrgyz Republic</strong>.</p>
-</center>
-<p>This is nice and clear. We know what the Kyrgyz Republic is, we know what Bishkek is, and we know what a capital is.</p>
-<center>
-<p>The <strong>human foot</strong> is comprised of 26 <strong>bones</strong>.</p>
-</center>
-<p>Again, this statement is nice and clear. We know what each term means.</p>
-<center>
-<p>An <strong>atom</strong> of <strong>uranium</strong> has one more <strong>electron</strong> than an <strong>atom</strong> of <strong>protactinium</strong>.</p>
-</center>
-<p>We might not understand every term here, but we could use Google to find out more.</p>
-<center>
-<p><span style="color:red">The <strong>candidate</strong> won the <strong>popular vote</strong> but lost the <strong>election</strong>.</span></p>
-</center>
-<p>This isn’t clear, and no matter how much Googling we do, we won’t be able to clarify the details. We need to ask the author of the statement: Which election? Which year? Which candidate?</p>
-<center>
-<p><span style="color:red"><strong>I love you</strong>.</p>
-</center>
-<p>On its own, this statement isn’t clear enough. Who is speaking, and to whom?</p>
-<p>Once we understand that, we need to ask whether <strong>love</strong> is clearly defined? Are we talking about something from the soul? Something biological? Familiar love? Friendship?</p>
-<center>
-<p><span style="color:red">1000 is a <strong>large</strong> number.</p>
-</center>
-<p>There’s only one word here which is not clear: large. It’s not clear how the author is defining large. Maybe the author could change the statement to compare it with something:</p>
-<center>
-<p>1000 is larger than 500.</p>
-<p>1000 people died today in our country, the largest <strong>daily total</strong> since the <strong>global pandemic</strong> began.</p>
-<p>1000 is the largest number for which the <strong>Romans</strong> had a <strong>symbol</strong>.</p>
-</center>
-<p>In all three of these statements, the word ``large’’ has now been given clear meaning.</p>
-</div>
-<div id="no-paradoxes" class="section level3" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> No paradoxes!</h3>
-<p>Paradoxes contradict themselves. These statements rely more on tricks of language:</p>
-<center>
-<p>This statement is not clear.</p>
-<p>This statement is false.</p>
-<p>The statement below is not true.
-The statement above is true.</p>
-</center>
-<p>Because paradoxes are built to contradict themselves, they aren’t much use to us. Therefore we’ll avoid them in this course.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<div class="alert alert-danger" role="alert">
-
-<div class="exercise">
-<span id="exr:unnamed-chunk-13" class="exercise"><strong>Exercise 2.1  </strong></span>Can you find any other paradoxical statements? What makes them paradoxical?
-</div>
-</div>
-</div>
-<div id="statements-should-stand-on-their-own" class="section level3" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Statements should stand on their own</h3>
-<p>Don’t you hate that feeling when you start watching a film but nothing makes sense because you didn’t watch the previous films in the series?<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
-<p>A good statement should stand on its own, and not rely on the reader knowing previous statements. If it <em>does</em> assume knowledge of previous statements, they should be referenced or restated, like including a plot synopsis for the previous movies!</p>
-<p>Now it’s your turn. Bring your answers to our next class.</p>
-<p>Going forward, all statements will be coloured yellow, </p>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-14" class="exercise"><strong>Exercise 2.2  </strong></span>Take a look at the statements below. Are all the terms clear? Do you understand all the terms? If not, do you think you could find out their meaning on your own? Do any of the statements need more explanation by the author?</p>
-<ol style="list-style-type: decimal">
-<li>It is hot today.</li>
-<li>It is hotter today than it was yesterday.</li>
-<li>The highest temperature on record, 54.4<span class="math inline">\(^{\circ}\)</span>C or 130<span class="math inline">\(^{\circ}\)</span>F, was measured on 16th August 2020 at the Death Valley National Park in California.</li>
-<li>The explosion in Beirut in August 2020 could have been avoided.</li>
-<li>24 is a nice number.</li>
-<li>28 is a perfect number.</li>
-<li>Two negatives make a positive.</li>
-<li>Aman has a twin sister.</li>
-<li>Ariana Grande was the most streamed artist of the year.</li>
-<li>On average it rains more in Wales than it does in Kyrgyzstan.
-</div></li>
-</ol>
+<div id="practice" class="section level2" number="10.3">
+<h2><span class="header-section-number">10.3</span> Practice</h2>
+<p>Use these examples to practise. If the conjecture is not in the form <strong>If … then …</strong>, make sure you rewrite it before starting the proof. Attempt the proof before checking the solution.</p>
+<p>Conjecture 10.1 : If <span class="math inline">\(2 \leq a \leq 7\)</span> and <span class="math inline">\(a \in{\mathbb Z}^+\)</span>, then <span class="math inline">\(4 \nmid a^2 + 2\)</span>.</p>
 
 <div class="solution">
-<p> <span class="solution"><em>Solution. </em></span> 1. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
-2. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
-3. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.</p>
+<p> <span class="solution"><em>Solution. </em></span> <a href="https://www.youtube.com/watch?v=ifMZt4l5JIM" class="uri">https://www.youtube.com/watch?v=ifMZt4l5JIM</a>
+(<a href="https://www.youtube.com/watch?v=YmbTI91TUp4" class="uri">https://www.youtube.com/watch?v=YmbTI91TUp4</a>)</p>
+</div>
+<p>Conjecture 10.2 : There is a prime number between <span class="math inline">\(8\)</span> and <span class="math inline">\(12\)</span>.</p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> <a href="https://www.youtube.com/watch?v=eQM778zoB14" class="uri">https://www.youtube.com/watch?v=eQM778zoB14</a></p>
+</div>
+<p>(</p>
+<p>Conjecture 10.3 : There is no integer <span class="math inline">\(a\)</span> such that <span class="math inline">\(a^2 + a^3 = 100\)</span>.</p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> XXX</p>
+</div>
+<p>)</p>
+<p>Conjecture 10.4 : No square number ends in <span class="math inline">\(8\)</span>.</p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> Solution: Watch 0:00-4:20 of <a href="https://www.youtube.com/watch?v=k0f7w4xTp1I" class="uri">https://www.youtube.com/watch?v=k0f7w4xTp1I</a></p>
+</div>
+<p>Conjecture 10.5 : <span class="math inline">\(97\)</span> is a prime number.</p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> <a href="https://www.youtube.com/watch?v=1amtOenZEwU" class="uri">https://www.youtube.com/watch?v=1amtOenZEwU</a></p>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-86" class="exercise"><strong>Exercise 10.1  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them by exhaustion.</p>
+<p>Conjecture 10.6 : There is no two-digit number which is both a perfect square <em>and</em> a perfect cube.</p>
+<p>Conjecture 10.7 : If <span class="math inline">\(p\)</span> is a prime number and <span class="math inline">\(p &gt; 5\)</span>, then <span class="math inline">\(p^4\)</span> ends in 1. (<a href="https://www.youtube.com/watch?v=Q_UdUwm3Biw" class="uri">https://www.youtube.com/watch?v=Q_UdUwm3Biw</a>)</p>
+<p>Conjecture 10.8 : There is no three-digit number which is a perfect square.</p>
+<p>Conjecture 10.9 : <span class="math inline">\((a + 1)^3\geq 3^a\)</span> for <span class="math inline">\(a\in{\mathbb Z^+}\)</span>, <span class="math inline">\(a\leq 4\)</span>.</p>
+<p>Conjecture 10.10 : The product of two non-integers is never an integer.</p>
+<p>Conjecture 10.11 : No number greater than 2 when written in English, has more letters than the number itself.</p>
+<p>Conjecture 10.12 : No number greater than 2 when written in Russian using the Cyrillic alphabet, has more letters than the number itself.</p>
+<p>Conjecture 10.13 : There is no perfect square between 4100 and 4200.</p>
+<p>Conjecture 10.14 : If <span class="math inline">\(p\)</span> is a prime number such that <span class="math inline">\(3 \leq p \leq 23\)</span>, then <span class="math inline">\(8 \mid (p+1)(p-1)\)</span>.</p>
+<p>Conjecture 10.15 : Every positive integer up to and including 28 is at least one of the following: prime, perfect, triangular, or can be written as <span class="math inline">\(b^c\)</span>, where <span class="math inline">\(b\in{\mathbb Z}\)</span> and <span class="math inline">\(c\in{\mathbb Z^+}\)</span>, <span class="math inline">\(c &gt; 1\)</span>.</p>
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-16" class="exercise"><strong>Exercise 2.3  </strong></span>Using the three rules given above, which of the following statements are good? What is wrong with the others?</p>
-<ol style="list-style-type: decimal">
-<li>The cyrillic alphabet contains 33 letters.</li>
-<li>Gunnar Garfors has visited every country in the world.</li>
-<li>People find it harder to concentrate on one task than they used to.</li>
-<li>Mobile phones have gotten more powerful over time.</li>
-<li>Video games help people relax.</li>
-<li>The US is larger than China.</li>
-<li>The last word of this sentence is.</li>
-<li>This sentence contains four e’s.</li>
-<li>This sentence contains 3 1’s, 1 2 and 2 3’s.</li>
-<li>The longest word in this sentence is “complementary.”
-</div></li>
-</ol>
-<div class="alert alert-success" role="alert">
-<p><strong> What have we learnt? </strong></p>
-<ul>
-<li>We understand what <em>isn’t</em> a statement, what’s a <em>bad</em> statement and what’s a <em>good</em> statement.</li>
-<li>We also understand…</li>
-</ul>
+<p><span id="exr:unnamed-chunk-87" class="exercise"><strong>Exercise 10.2  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some are true; prove them by exhaustion.</p>
+<p>Conjecture 10.16 : Every integer between 20 and 30 (inclusive) can be written as the sum of <em>exactly</em> five <strong>non-zero</strong> square numbers.</p>
+<p>Conjecture 10.17 : If <span class="math inline">\(x\)</span> is a positive integer less than 5, the last digit of <span class="math inline">\(x^5\)</span> is <span class="math inline">\(x\)</span>.</p>
+<p>Conjecture 10.18 : There are fewer square numbers below 50 than prime numbers.</p>
+<p>Conjecture 10.19 : Every even integer between (and including) 4 and 30 can be written as a sum of two primes.</p>
+<p>Conjecture 10.20 : The sum of two distinct square numbers is a square number. (<strong>Distinct</strong> means the two square numbers can’t be the same.)</p>
+<p>Conjecture 10.21 : For <span class="math inline">\(x, y, a \in \mathbb R\)</span>, if <span class="math inline">\(x &gt; y\)</span> then <span class="math inline">\(ax &gt; ay\)</span>.</p>
+<p>Conjecture 10.22 : It’s impossible to move a knight from one corner of a chess board to the corner diagonally opposite in 4 moves. (You don’t play chess? Look up online how a <strong>knight</strong> moves.)</p>
+<p>Conjecture 10.23 : Each integer in the set 2, 4, 6, 8, …, 24, 26 can be written the sum of <em>at most</em> three perfect squares.</p>
+<p>Conjecture 10.24 : There are no integers <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> such that <span class="math inline">\((1+\frac{1}{a})(1+\frac{1}{b})(1+\frac{1}{c}) = 2\)</span>.</p>
+<p>Conjecture 10.25 : If the sum of two integers is even, then at least one of the summands is even. (Don’t know what a <strong>summand</strong> is? Have a search online…)</p>
 </div>
-<p>In this course, we will only work with good, high-quality statements.</p>
-<p>Next, let’s look at whether good statements are true or not.</p>
+</div>
 
 </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>They are good for keeping our brains busy though!<a href="statements.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>I had watched <em>none</em> of the previous Marvel movies before watching <em>Avengers: Endgame</em>. I understood nothing and had to spend an hour afterwards quizzing my boyfriend on the Tesseract, the Ancient One, and what Robert Downey Jr. was doing stranded in space. I think I got it.<a href="statements.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<ol start="32">
+<li id="fn32"><p>Unless we could prove that there exist only a limited (and small) number of “families” of right-angled triangles. We’ll return to this example later, but for now it seems unlikely to be suitable for a proof by exhaustion.<a href="proof-by-exhaustion.html#fnref32" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -342,8 +350,8 @@ The statement above is true.</p>
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="truth-values.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="validity.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -374,7 +382,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/02-statements.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/10-proofbyexhaustion.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -382,7 +390,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/02-statements.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/10-proofbyexhaustion.Rmd",
 "text": null
 },
 "download": null,
