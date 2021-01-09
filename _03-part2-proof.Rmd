@@ -1,0 +1,697 @@
+# Mathematical proof
+
+## Mathematics versus other fields
+
+Mathematical proof is different to proof in other fields. Let's look at how.
+
+### Terminology
+
+Mathematics has a different set of terms when talking about proofs.
+
+In mathematics, once we have identified a statement which we would like to try to prove or disprove, we rename it a **conjecture}.
+
+If we are successful in proving it, the conjecture is renamed a **theorem**. If it is disproved, it is called a **disproved conjecture}. Only statements that have been proved true} can be called theorems.
+
+```{r, echo=FALSE, out.width="65%", fig.cap="The journey of a statement.", fig.align="center"}
+knitr::include_graphics(rep("figures/statementjourney.jpg"))
+```
+
+\* A mathematical statement obviously!
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+How many mathematical theorems can you name?
+  
+```  
+</div>
+
+### Methodology
+
+In mathematics we talk about theorems. In other sciences, they talk about theories. What's the difference? It all about how the proof is constructed.
+
+**A proof in mathematics must be built deductively.**
+
+We say therefore that a theorem in mathematics is deductively true. In other words, you should be able to provide a list of steps which someone else could follow and arrive at the same conclusions. 
+
+**A proof in science is built on evidence.**
+
+We say therefore that a scientific theory is empirically (or "verifiably") true, based on observations made or evidence collected. To verify it, someone would need to either trust your evidence, or be able to recreate the evidence themselves.^[Something known as reproducibility.]
+
+That's the difference between a theorem in mathematics and a theory in science.
+
+### Trial and improvement
+
+In mathematics, once a conjecture's truth value has been discovered, it remains this way forever. However in other sciences (both natural sciences and social sciences), theories are always changing, being improved upon and added to as more research is done and more discoveries are made.
+
+This is a key principle of modern science - it doesn't claim to know all the answers, but its aim is the truth, and it chooses as its foundations those theories which have the most compelling evidence.^[This approach provides a stable platform for further exploration. Just because science can't definitively say whether a statement is 100\% true, its chosen approach is better than throwing our hands up and saying "who knows!" or ``no one can be sure!''. Considering that we have science to thank for iPhones, vaccinations against deadly diseases, increased food yields, an understanding of how all life on Earth is connected, and a great many other things, it's a pretty good approach!]
+
+The **theory of gravity**, the **theory of relativity**, the **theory of evolution** and even the current form of **the periodic table** are all examples of theories which are constantly being changed and updated as new evidence is revealed.
+
+Some scientific theories have even been shown to be completely wrong. Here's a short list of some theories previously believed true but later disproven: https://www.famousscientists.org/10-most-famous-scientific-theories-that-were-later-debunked.
+
+### An ever-changing world
+
+Statements about world geography,  international politics, currency markets, individual people, the state of technology and a lot else besides are all likely to all be time-dependent. Countries fall, empires collapse, capitals change, phones get faster, people and animals evolve.
+
+For example, the statement "Nur-Sultan is the capital of Kazakhstan" has a built-in time limit. It won't be true forever. We don't know how long it will be true for, but it won't be true forever. Sure, it is true at the moment, but what if the capital is renamed in future years? The truth value of the statement would change. 
+
+"The capital of Kazakhstan is located in the north of the country" is also currently true. This statement is definitely more general, but is still time-dependent: the capital of Kazakhstan used to be located in the south of the country; what's stopping the location of the capital city shifting again in the future? 
+And how long will Kazakhstan exist? All countries change over time. Eventually there won't be a Kazakhstan, or a France or a Benin or a Britain.
+
+## So what does this all mean?
+
+It means that the study of mathematics is different to other sciences, to economics, to philosophy, psychology, evolutionary biology, and all other fields of study. If something is proved in mathematics, its truth value won't change over time. Prove something is true in mathematics and you know that it has always been true and that it will remain true forever.^[For example, proving Pythagoras' Theorem (https://www.pinterest.com/pin/300122762659059179/) tells us this theorem is true for all time.] In 5 years or 100 years or 1000 years or a million years, the truth value will be unchanged. 
+
+The axioms laid down by the Greek mathematician **Euclid of Alexandria** over two thousand years ago are as true now as they were then.^[See https://plus.maths.org/content/maths-minute-euclids-axioms.]
+
+The mathematical proofs of the mathematician **Muhammad ibn Musa al-Khwarizmi**, born near Khiva in Central Asia, which he presented in his book *The Compendious Book on Calculation by Completion and Balancing*,^[The title of this book gave the us the word *algebra*, from the Arabic word *al-jabr* meaning "restoration", "the reunion of broken parts" or sometimes "bone-setting".] have not had their truth values changed in the hundreds of years since. The many proofs of French mathematician **Sophie Germain** are as valid now as they were in the 18th and 19th century when she wrote them. The mathematics of American mathematician **Katherine Johnson** in the 1960s or the Iranian mathematician **Maryam Mirzakhani** in the 2000s and 2010s will remain relevant forever. 
+
+Anything **You** prove true in this course will be true forever. Anything you show is false will be false forever. Get ready to make your mark on history!
+
+
+<div class="alert alert-success" role="alert">
+<strong> What have we learnt? </strong> 
+
+- As discussed in Chapter 3, a good mathematical statement has an unchanging truth value. Unfortunately, in many fields, the truth value of statements can change over time.
+
+</div>
+
+# Disproving a conjecture
+
+We've discussed truth values a lot already, and we've agreed that *mathematical* statements must be either true or they are false.  Once we've decided that we're interested in finding out the truth value of a mathematical statement, we rename it a conjecture and get to work...
+
+To **prove a conjecture**  means to show that its truth value is "true". To **disprove a conjecture** means to show that its truth value is "false".
+
+In this chapter we'll discuss disproving conjectures. There's two ways to show a conjecture is false.
+
+## Finding a counterexample
+
+Disproving false conjectures is generally easier than proving true conjectures. This is because all false conjectures have **counterexamples**.
+
+Take a look at the following two conjectures:
+
+```{example}
+No Chinese citizen has green eyes.
+```
+
+```{example}
+All Irish citizens have a vowel in their surname.
+```
+
+How you would prove, or disprove, these conjectures?
+
+- To prove this first one, we would need to check the eye colour of *all* Chinese citizens. That's because this is a conjecture about all Chinese citizens. How long is that going to take!?! Is it even possible?!?
+But to disprove this conjecture, we just need to find one Chinese citizen with green eyes. Much easier! This single green-eyed Chinese citizen would be our counterexample.
+    
+- To prove the second conjecture, we would need to consult a database of the surnames of all Irish citizens. We would then set up a computer to check that each of them contain a vowel (a, e, i, o or u).
+To disprove the conjecture, we would just need to identify just one Irish citizen whose surname did not contain a vowel. This could be done using the database approach as well, or maybe we know of a famous Irish person whose surname is vowel-less. This one person would be our counterexample.
+
+Just one counterexample is needed to disprove a false conjecture. Of course, we might find lots of counterexamples, i.e. many Chinese citizens who have green eyes, or many Irish citizens without vowels in their surname. This would be great - it would probably make our job of finding a counterexample easier! But even if there is only one Chinese citizen with green eyes, or one Irish citizen with a surname devoid of vowels, that is enough to show the conjecture is false.
+
+Before you do anything, make an educated guess. Do you *believe* either of these conjectures are true. Or false?
+
+Your first step with any new conjectures is to look for a counterexample. A single counterexample is enough to disprove a conjecture.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+The following conjectures are all false. Find a single counterexample which shows this.
+
+a. All prime numbers are odd.}
+b. $(a + b)^2 = a^2 + b^2$ for any numbers $a$ and $b$.
+c. All sheep in South Africa are white. (Good luck Googling!)
+d. The national flags of all UN members are rectangular.
+e. All numbers are either positive or negative.
+f. $a^2 > a$, where $a$ is a whole number.
+g. If $a$ is a whole number and $a^2$ is divisible by $4$, then $a$ is divisible by 4.
+
+``` 
+
+```{exercise}
+In the last question, you found counterexamples which disproved the conjectures.
+
+a. Which of the conjectures above have just one counterexample? 
+b. Which of the conjectures above have a few counterexamples? 
+c. Which of the conjectures above have an infinite number of counterexamples?
+
+``` 
+</div>
+
+## Finding a disproof
+
+Finding a counterexample is the most common and popular way of disproving a conjecture. It's also possible to disprove a conjecture without finding a counterexample. This is called finding a disproof. We'll look at this a bit later.
+
+<div class="alert alert-success" role="alert">
+<strong> What have we learnt? </strong> 
+
+- Finding a counterexample (or a few) is the most popular and common way to disprove a conjecture.
+   
+- Whilst there may be many counterexamples for a particular conjecture, just one is enough to disprove a conjecture.
+   
+- True conjectures don't have counterexamples, because they're true! Only conjectures which are false will have counterexamples.
+
+</div>
+
+In the following exercise, we will encounter some axioms about **inequalities**. Inequalities describe the ordering of real numbers. Let's first check we know what real numbers are.
+
+**Real numbers**
+
+Real numbers are any numbers on the number line which stretches from $-\infty$ to $\infty$.
+
+Any number that a calculator can display is a real number!
+
+Real numbers are:
+
+- Whole numbers (integers)
+- Terminating decimals (0.1, -0.5, 68.25)
+- Recurring decimals ($\frac{1}{3} = 0.3333...$, $-\frac{11}{9} = -1.2222...$, $\frac{1}{7} = 0.142857142857...$)
+- Non-recurring decimals ($\pi = 3.1415926...,$ $e = 2.7182818284590$, $\sqrt{2} = 1.41421356237...$)
+
+There are two types of real number:
+- *Rational numbers} can be expressed as the ratio of two whole numbers.
+For example: $\frac{1}{2}, -\frac{3}{4}$ (or $\frac{-3}{4}), \frac{11}{3}$, 4 (or $\frac{4}{1}$), -7 (or $\frac{-7}{1}$), 0 (or $\frac{0}{1}$), 1 (or $\frac{1}{1}$).
+- *Irrational numbers} can't be written as the ratio of two whole numbers.
+For example: $\pi, e, \sqrt{2}, \sqrt{3}$.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Here are two axioms about inequalities:
+
+a. If $a>0$ and $b>0$, then $a+b>0$.
+b. If $a>0$ and $b>0$, then $ab>0$.
+c. (If $a>0$ and $b>0$, then $a + b > a$ and $a + b > b$.)
+
+``` 
+
+```{exercise}
+Because these are axioms, we can't prove them (they are *too* fundamental). However, we can illustrate them with examples. Find examples of each of the two axioms above, to illustrate them.
+
+``` 
+
+```{exercise}
+Below are five more axioms about inequalities. Again, illustrate each of these axioms with an example.
+    
+- If $a > b$ and $k$ is any real number, then $a + k > b + k$.
+- If $a > b$ and $b > c$, then $a > c$.
+- If $a > b$ and $k > 0$ then $ak > bk$.
+- If $a > b$ and $k < 0$, then  $ak < bk$.
+- For any real number $a$, $a^2 \geq 0$.   
+
+``` 
+
+```{exercise}
+Below are four conjectures about inequalities. Find *counterexamples* which disprove them:
+    
+- If $a>0$ and $b>0$, then $ab > a$ and $ab > b$.
+- If $a^2 < b^2$ then $a < b$.
+- If $a < b$ and $k < l$ then $ak < bl$.
+- If $\dfrac{a}{b} > cd$ then $ad > bc$. 
+
+You only need to find one counterexample for each.
+
+*Hint: Negative numbers will be useful here!*
+``` 
+</div>
+
+Before we move on, let's review types of numbers. We divide real numbers (symbol $\mathbb{R}$) in two groups:
+
+- Integers, terminating decimals and recurring decimals are called rationals (symbol $\mathbb{Q}$), because they can all be expressed as the **ratio** of two integers. 
+- Non-recurring decimals can't be expressed at the ratio of two integers and are therefore called irrationals (symbol $\mathbb{Q}'$).
+
+```{r, echo=FALSE, out.width="80%", fig.cap="Types of numbers.", fig.align="center"}
+knitr::include_graphics(rep("figures/numbertypes.png"))
+```
+
+How to use these symbols? To tell your reader that you're talking about a general real number, you write $a \in \mathbb{R}$, where $\in$ means "belongs to" or "is". If a conjecture doesn't mention what type of number it's talking about, assume it's dealing with all the real numbers.^[There are some numbers which are not real (called *complex numbers*). Although we will only be dealing with real numbers in this course, we state $a \in \mathbb{R}$ to avoid confusion.]
+
+If you are specifically dealing with the integers, you can specify this by saying $a \in \mathbb{Z}$.
+
+If you're dealing with *all* the rational numbers, you write $a \in \mathbb{Q}$. And if you're dealing with just irrational numbers, write $a \in \mathbb{Q}'$.^[Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can't be fully known because they follow no pattern and don't repeat. Just because you know the first 12 million decimal digits of $\pi$, it doesn't mean you can predict the 12-million-and-first digit!] ^[Whilst $\pi$ and $e$ are both known to be irrational, no one knows if $\pi + e$, $\pi e$, $\dfrac{\pi}{e}$, $\pi^e$, $\pi^\pi$, $e^e$, $e^\pi$, $2^e$ or ln$\pi$ are rational or irrational. See https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf.]
+
+
+Finally, add $^{+}$ to any symbol to specify you're only talking about the positive numbers from the set. Similarly, add $^{-}$ to specify you're only talking about the negative numbers from the set.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+What type of number is $a$ in each of the following? Give a couple of examples of each.
+
+a. $a \in \mathbb{Z}^{+}$
+b. $a \in \mathbb{Q}'$
+c. $a \in \mathbb{Q}^{+}$
+d. $a \in \mathbb{Z}^{*}$
+e. $a \in \mathbb{Z}^{-}$
+f. $a \in \mathbb{R}$
+g. $a \in \mathbb{C}$
+h. $a \in \mathbb{Z}$
+i. $a \in \mathbb{R}^{+}$
+
+``` 
+</div>
+
+Within the integers, there are lots of sets of special numbers, for example **even numbers**, **odd numbers**, **prime numbers**, **triangle numbers**, **Fibonacci numbers**, and **perfect numbers**. Some of these sets overlap.
+
+And within these sets, there are even smaller subsets of numbers. For example, the Mersenne primes are special examples of primes.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Can you find:
+
+a. A number which is both prime *and* triangular?
+b. A number which is both prime *and* perfect?
+c. A number which is both triangular *and* perfect?
+```
+
+```{exercise}
+Are there any prime Fibonacci numbers?
+
+```
+
+```{exercise}
+ 
+
+a. Is 1 perfect? Triangular? Prime? A Fibonacci number?
+b. Is 2 perfect? Triangular? Prime? A Fibonacci number?
+
+``` 
+
+```{exercise}
+What's the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci? 
+
+``` 
+</div>
+
+# Proving a conjecture
+
+So far we have seen that axioms are statements which can't be proved, because they are so fundamental. Axioms (and the even more fundamental definitions) are statements which allow us to talk about and do mathematics.
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Here are four more axioms. All of these axioms are about probability. How many of these have you heard about or used before?
+  
+- The probability of something happening is a non-negative, real number.
+- The probability of something happening is never greater than 1.
+- The probability that at least one of the possible events will happen is 1.
+- The sum of the probabilities of all possible events is 1.
+
+```  
+</div>
+
+Any mathematical statement that is not an axiom or a definition and that we're interested in proving or disproving can be reclassified a conjecture. We can then attempt to prove it or disprove it. Follow these steps when meeting a new conjecture...
+
+## Step 1: Start by looking for a counterexample
+
+When beginning with a new conjecture, you (probably) don't know whether it's true or false. Therefore, your first step should always be to look for a counterexample. We saw in the last chapter that to disprove a false statement, we just need to find a single counterexample to disprove it.
+
+If you find one, then you have disproved the conjecture, and don't need to worry about trying to prove it (as you know it's false!). If you don't find one, it doesn't mean there isn't one, but at least you tried. 
+
+Looking for a counterexample is also a good place to begin with a new conjecture because it helps you to understand what the conjecture is saying.
+
+<div class="alert alert-warning" role="alert">
+<strong>How long should you look for a counterexample?</strong> 
+
+I would suggest trying out four or five examples to see if any of them are counterexamples.
+</div>
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Try to find a counterexample of the following conjectures. I'm not promising that they are all false so it might be that a counterexample doesn't exist for some of them.
+
+a. Multiples of $4$ are divisible by $8$.
+b. For two real numbers $a$ and $b$, $|a||b| = |ab|$.
+c. Every whole number greater than $2$ can be written as the difference of two perfect squares. (For example, $11 = 36 - 25, 12 = 16 - 4, 13 = 49 - 36$.)
+d. Every positive odd number can be written as the difference of two perfect squares.
+e. All triangles contain at least one angle measuring $\geq 60^{\circ}$.}
+f. All triangles contain at most one angle measuring $\geq 60^{\circ}$.
+
+*Hint: Being creative when trying to find a counterexample will increase your chance of finding a one (if it exists). For example, with the second conjecture, try an example where $a$ and $b$ are both positive, then an example where $a$ and $b$ are both negative. Then you could try an example where $a$ and $b$ have different signs, then an example where one or both of $a$ and $b$ are equal to zero.
+
+Keeping going until you think you've tried all possible "types" of example. Obviously stop if you find a counterexample.*
+
+``` 
+</div>
+
+If you fail to find a counterexample, maybe the conjecture is true. Or maybe you just weren't able to find a counterexample, even though one (or more) exists.^[This could be for a number of reasons, such as the the counterexample(s) are really really big, or maybe because you forgot to check all types of examples. Also, maybe you were just unlucky.] Because we don't know which, we move onto Step 2...
+
+## Step 2: Try to build a proof
+
+We don't know if the conjecture is true or false, but our attempts to disprove it by finding a counterexample failed. Our next step is to attempt to build a proof.
+
+If the conjecture is true, we should be able to construct a proof to show this. If it is actually false, then as we build our proof we will find it breaks somehow. This would be called a disproof. Whilst finding a disproof is sufficient in showing the conjecture to be false, the disproof might make it easier to find a counterexample to the conjecture.
+
+<div class="alert alert-warning" role="alert">
+<strong>Note</strong> 
+
+When trying to build a proof, be optimistic and believe that the conjecture *is* true.
+
+Expecting the proof to fail is not a good mindset for effective proof building!
+
+</div>
+
+There are many different methods of proof we could build, and our choice will depend on the type of conjecture. We might have to try out several of the methods before we find the one that works. Also, different people might use different methods for the same conjecture. That's fine. As long as they both come to the same conclusion about the conjecture's truth value, the method used isn't important.
+
+### If...then...
+No matter what method you decide to start with, make sure the conjecture is in the form **If ... then ...**. If the conjecture is not in this form, rewrite it so that it is.
+
+Why is the **If ... then ...**. form so important? The 'if' part signals the conjecture's starting point, and the 'then' part signals the conjecture's destination. It means we know where to begin our proof, and where we're headed whilst we're building the proof.
+
+```{example}
+Multiples of even numbers are even.
+
+Rewritten in the  **If ... then ...** form, this conjecture becomes "**If** $a$ is an even number, **then** $ka$ is even, where $k \in \mathbb{Z}$".
+
+```
+
+We use the letter $P$ to indicate the starting point of a conjecture, and the letter $Q$ to indicate the destination. So for the above conjecture:
+
+Here are some more examples, taken from Exercise 6.1.1. The original conjecture is on the left, and the **If ... then ...** form on the right:
+
+$P$: $a$ is an even number
+
+$Q$: $ka$ is even, where $k \in \mathbb{Z}$
+
+**Original conjecture** | **If ... then ...**
+------------- | -------------
+All prime numbers are odd | If $p$ is prime, then $p$ is odd
+$(a + b)^2 = a^2 + b^2$ for any numbers $a$ and $b$ | If $a$ and $b \in \mathbb{R}$, then $(a + b)^2 = a^2 + b^2$ 
+All sheep in South Africa are white | If a sheep lives in South Africa, then it is white
+The national flags of all UN members are rectangular | If a country is a UN member, then its flag is rectangular
+All numbers are either positive or negative | If $a \in \mathbb{R}$, then $a$ is either positive or negative
+$a^2 > a$, where $a$ is a whole number | If $a \in \mathbb{Z}$, then $a^2 > a$
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+For each example above, what is $P$? What is $Q$?
+
+``` 
+
+```{exercise}
+For each of the six conjectures from Exercise 8.2:
+  
+a. Rewrite them in the **If ... then ...** form.
+b. What is $P$ for each? And $Q$?
+
+``` 
+</div> 
+
+### Draw the map
+
+Once the conjecture is in the form **If ... then ...**, you should attempt to draw the conjecture's **map**.
+
+It's not always possible to draw a conjecture's map, but if you're able to it can *really* help you choose the most appropriate method of proof for that conjecture.
+
+Here's the format of a conjecture map:
+
+```{r, echo=FALSE, out.width="45%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps1.png"))
+```
+
+Notice we start on the left side of the picture and finish on the right.
+
+Next, we add $P$ and $Q$. We'll use the conjecture from above, "If $a$ is an even number, then $ka$ is even, where $k \in \mathbb{Z}$".
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps2.png"))
+```
+
+You can see that $P$ has been added to the left side of the map and $Q$ to the right side. Above the map we write what type of number we're considering, in this case integers. Below the map, we write details of any variables (e.g. $k$) that the conjecture uses.
+
+Next we add the **opposite of $P$** and the **opposite of $Q$** to the map.
+
+What does the opposite mean? Well, in the example above, the numbers we're considering are the integers. We put the even ones in $P$, and all those which are not even (so odd) in $S$ (see below).
+
+Similarly, if you multiply an integer $a$ (even or odd) by another integer ($k$), the result will be another integer. The even $ka$ we're storing in $Q$, and the odd $ka$ will go into $T$.
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps3.png"))
+```
+
+Finally, we add **arrows** to the map to represent what the conjecture is saying. Arrows can only go from the left side of the map to the right side.
+
+Therefore, the conjecture map of the statement 
+"multiples of even numbers are even" is:
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps4.png"))
+```
+
+This can all seem really confusing, but trying to draw a couple of conjecture maps yourself will really help.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Draw the conjecture map for the following conjectures.
+
+a. The square of a prime number is also prime.
+b. Integers retain their parity when squared.
+c. The sum of two consecutive integers is odd.
+d. Numbers retain their sign when cubed.
+
+``` 
+
+```{exercise}
+Draw the conjecture map of the conjecture from Exercise 8.2 (a), (c) and (d).
+
+``` 
+
+```{exercise}
+Why is it difficult to draw a conjecture map for Exercise 8.2 (b), (e) and (f)?
+
+``` 
+</div>
+
+### Choose your method
+
+Once you have written the conjecture in the form "If ... then ..." and have attempted (hopefully successfully) in drawing its map, you are ready to begin to try building a proof.
+
+We have lots of choices of methods of proof available. In this course, we'll look at:
+
+- proof by **exhaustion**, 
+- **direct proof**, 
+- proof by **cases**, 
+- proof using **previously proved or disproved conjectures**, 
+- proof via the **contrapositive**, 
+- proof by **contradiction**, and 
+- proof by **induction**.
+
+Each of chapters 10 - 16 will cover one of these methods, and give you some examples to practice on.
+
+At the end of each chapter there will be some more conjectures to work on. These conjectures might be true or might be false. To prove the true ones, you will be expected not just to rely on the method introduced in that chapter, but all previous methods too. This is because the challenge (and fun) of proving conjectures comes from not knowing where to start and feeling your own way to a proof. It's a very satisfying experience!^[Also, when presented with a set of conjectures and told to "Prove using a direct proof..." or "Prove by induction...", like a robot you will switch your brain off and switch on your autopilot, which we don't want!]
+
+Chapter 17 is a bonus chapter, and covers the incompleteness of mathematics.
+
+The next chapter, chapter 9, looks at what makes a good proof. 
+
+# Validity
+
+## What is a mathematical proof?
+
+(
+
+There is something that connects the work of Euclid and al-Khwarizmi and Germain and Johnson and Mirzakhani - all of their mathematical proofs were *valid*. 
+
+For a proof to be declared as *valid* it should be:
+
+- **Universal**: A proof written by one person should be understandable by another. 
+- **Clear**: All terms should be defined, as well as any variables used.
+- **Watertight**. This means that it shouldn't contain any holes. No one should be able to criticise you for not considering something.^[Note, proofs might be overly long or complicated, and this is a justified criticism we can make - proofs should always be as short and efficient as they can be (whilst still being complete). However, a valid proof don't stop being valid just because it is overly long.]
+- **Complete**: Your proof should cover all cases described or inferred by the statement.^[If the statement concerns all whole numbers, your proof would not be valid if it only covers positive numbers. If the statement concerns all polygons, your proof would not be valid if it only covers triangles and squares.]
+- **General**: Your proof can't just relate to specific examples of the statements; it should cover *all* possible cases of the statement.
+
+Mathematicians can't check the validity of their own work - they offer to their peers who then check it for validity. Germain did this, Mirzakhani did this, Euclid did. Once your peers have approved it, you then can publish your proof as a piece of mathematics. It's at *this* point that you enter the history books! The reason you shouldn't check the validity of your own work is that *you* wrote it. It's very hard to notice mistakes or holes in your own work.\footnote[This is why I always think it's strange to tell  students at the end of an exam "*Check your paper for mistakes before giving it in*". You might notice a question you forgot to answer or a piece of work you forgot to cross out, but it's very difficult to check your own work for actual mistakes.  *You* wrote it, so you're not the best person to check it!] 
+
+However, as you move through the rest of this book, you will start to get a sense of when you have finished a proof. Knowing when a proof is finished, and when it is *not* finished, is a skill you should try to develop.
+
+)
+
+Generally speaking, a mathematical proof is a rigorous demonstration that a mathematical statement is true. As an elementary example, consider the following conjecture. We won't discuss exactly which method of proof we're using here, just show a proof to give an idea of how a rigorous proof looks. We will also see an example of a bad proof of this conjecture, for comparison. Notice that the conjecture has a number (in this case 9.1). This is so we can refer back to it, especially in work on later conjectures.
+
+(\#cnj:red): If $a$ and $c$ are positive real numbers and $x = \pm \sqrt{\frac{c}{a}}$, then $ax^2-c=0$.
+
+A couple of observations before we begin our proof: Note that $a, c >0$ implies that $a \neq 0$, which is important as it's the denominator of the fraction $\frac{c}{a}$. This means that $\frac{c}{a}$ is **defined**. Also note that $a, c > 0$ implies that $\frac{c}{a} > 0$ which is important as it is under a square root. This means that $\sqrt{\frac{c}{a}}$ is **defined}.
+
+Proving this conjecture is not too challenging, using our axioms of algebra. Have a go yourself, then turn to the next page to see how our proofs compare!
+
+```{proof}
+Our starting point $P$ is $x = \pm \sqrt{\frac{c}{a}}$, with $a, c \in \mathbb R^+$.
+  If
+\begin{align}
+  x &= \pm \sqrt{\frac{c}{a}}(\#eq:abe)
+\end{align}
+  then squaring both sides, meaning both sides are positive and equivalent,
+\begin{align}
+  x^2 &= \left(\pm \sqrt{\frac{c}{a}} \right)^2 (\#eq:chick) \\
+  &= \frac{c}{a} (\#eq:maybe)
+\end{align}
+  Multiplying both sides by $a$, which we can do as $a\neq 0$, we get
+\begin{align}
+  ax^2 &= c (\#eq:load) \\
+  ax^2 - c &= 0 (\#eq:neigh)
+\end{align}
+  We have shown that $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$ as required.
+
+```
+
+Here's a couple of things to notice:
+
+- We label the conjecture with its reference number from the textbook, in this case "**Conjecture \@ref(cnj:red)**", so that if we need to we can refer back to it and its proof/disproof later. As we'll see in a later chapter, we often use work we've done previously, and having a quick way to refer back to previous conjectures and their proofs/disproof can speed this up for us.
+    
+- I have labelled EVERY line in the proof with a reference number (\@ref(eq:abe), \@ref(eq:chick), \@ref(eq:maybe), \@ref(eq:load), \@ref(eq:neigh)). You don't need to label every line of a proof, but you should label important lines, so that you can easily refer back to them later in the proof, or in later work. When should you label a line? Whenever you need to refer specifically to it later on.
+
+- Notice that we used the $\square$ symbol to indicate that the proof is finished.
+
+This statement was not difficult to prove. The presentation above was given to demonstrate how to write a clear, comprehensive, cohesive and rigorous (watertight) argument.
+
+To underline why the above prof is well written, we provide a second "proof" of **Conjecture: \@ref(cnj:red)**, which we'll then criticise:
+
+```{proof}
+2:
+\begin{align}
+  ax^2 + c &= x^2 + \frac{c}{a} = 0 (\#eq:water) \\
+  &= x \Rightarrow \pm \sqrt{\frac{c}{a}} (\#eq:fire)
+\end{align}
+   
+```
+
+You can probably see very easily that "Proof 2" is far from perfect. However, you might argue that the person who wrote the answer more or less knew "why" $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$; so why bother being so precise when formulating a proof?
+
+The two main problems with "Proof 2" is twofold. Firstly, it is really hard for the reader to follow. Secondly, when you are not absolutely clear about what your assumptions are, or don't properly justify implications, it is easy to run into trouble. Here's another example which demonstrates this:
+
+```{proof}
+Let
+\begin{align}
+  x=y
+\end{align}
+  As $x=y$,
+\begin{align}
+    y(x-y) &= x(x-y) (\#eq:noone)
+\end{align}
+  Also,
+\begin{align}
+    & x(x-y) = x^2 - xy - x^2 - y^2 = (x+y)(x-y) = 2y(x-y) (\#eq:reign)
+\end{align}
+  So,
+\begin{align}
+  y(x-y) &= 2y(x-y) (\#eq:rain)
+\end{align}
+  or
+\begin{align}
+  1 &= 2 (\#eq:decide)
+\end{align}
+
+```
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Be as critical of ``Proof 2'' as you can be; find as many mistakes/ambiguities/places where the argument can be improved as possible.
+  
+```  
+</div>
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Prove the following conjecture:
+``` 
+
+
+(\#cnj:blue): If $a, b, c \in \mathbb R$, with $a\neq 0$ and $b^2 - 4ac > 0$, and $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, then $ax^2 + bx + c = 0$.
+
+</div>
+
+## Why prove something?
+
+Okay, so if we accept that proofs are important, then we accept that they should be written carefully and precisely. However, we might ask why are proofs important? This is a *big* question, which we won't pretend to be able to answer in just a few short paragraphs. Instead, let's look at a few reasons why we should care about proving something:
+
+- A proof of a mathematical statement is absolute; there is no exception to the rule. Such absolute statements are wonderful and do not exist in any other field of study!
+- Mathematics is EVERYWHERE! From music to the economy, mathematics is used to help us reason about the world we live in. If we weren't able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us.
+- It is possible to know when you can not do better; for example, cartographer wishing to buy as few colours as possible to colour her maps can be told by a mathematician that four different colours will be enough to colour her map to ensure adjacent areas are all differently coloured (this is called the *Four Colour Theorem}. Similarly mathematicians have been able to tell chemists when certain crystal structures have no mathematical obstructions (which led chemists to search for, and successfully produce, new crystal structures). There are numerous other examples of this kind.
+- Perhaps most importantly, a mathematical proof precisely captures an idea; these ideas are often beautiful and elegant, and they deserve to be written down correctly.
+
+## How do I write a good proof?
+
+Here are some things to remember when writing proofs:
+
+- We've already mentioned a couple of good practices for proof writing, such as labeling the conjecture and important lines of work with references numbers, and ending the proof with the $\square$ symbol.
+- Notice also that the first proof given for Conjecture \@ref(cnj:red) can be read, and understood independently of the conjecture, but that "Proof 2" is completely obscure without the context of Conjecture \@ref(cnj:red)!
+- Always clearly state your assumptions. This becomes extra important with the method proof by contradiction, and is key with the method proof by cases.
+- Always use English (or Kyrgyz, Spanish, Russian, Arabic or whichever language you're writing your proof in) to clearly convey what you mean; good mathematical arguments should read like an essay. The first sentence in the proof of Conjecture\@ref(cnj:red) reads "If $x$ equals plus or minus the square root of $c$ divided by $a$ then $x$ squared equals plus or minus the square root of $c$ divided by $a$ all squared, which equals $c$ divided by $a$." Whenever you write a proof, you should read through your answer and check to see if it could be read aloud and still be understood.
+- Use words or symbols to correctly connect the mathematical statements which make up your proof.
+- Take pride in the mathematics you write; when you write a piece of mathematics, you are showing people *exactly* how you think. So, you should try to write as elegantly and beautifully as you can!
+
+<!-- And proof by smallest counterexample: https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample -->
+
+<!-- Select text, then Shift Ctrl and C to comment it out. -->
+
+## Common mistakes in proof
+
+Here are some of the most common mistakes when writing proofs, all of which make your proof *invalid:
+
+- **Arguing from examples:** Looking at examples is one of the most helpful practices a conjecture-prover can engage in. We discussed how useful it is to start with examples as a "way-in" to a new conjecture. However, it is a mistake to think that general statement can be proved by showing it to be true for some cases. For example, finding five right-angled triangles where Pythagoras' Theorem is true does not prove that the theorem is true for *all* triangles.
+- **Using the same letter to mean two different things:** Often beginner conjecture provers give a new variable quantity the same letter name as a previously introduced variable. This will confuse your reader.
+- **Claiming something is true without having justified it:**. This is also called “jumping to a conclusion”.
+- **Assuming the thing to be proved is true:** If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.^[A lawyer in court trying to prove a defendant guilty is not allowed to say, ``Because we know the defendant is guilty, we know he can't have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.'' No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.]
+<!-- - **Using “any” when you mean “some” -->
+<!-- - For example, *any* multiple of 5 ends with 5 versus *some* multiples of 5 end with 5. -->
+<!-- **Using “if” when you mean “because”** -->
+
+The first of these means you haven't actually started a proof. The second is not too much of a problem and is easily rectified. The last two would mean you have started a proof but that it contains fundamental problems. Both of these two are a headache to mathematicians and conjecture-provers around the world!
+
+## $=$, $\Rightarrow$ and $\Leftrightarrow$
+
+Finally, we discuss the important mathematical symbols "$\Rightarrow$", "$\Leftrightarrow$" and "$=$", and how they should be used in proofs.
+
+"$=$"
+The **equals sign** is used to denote an equality between mathematics expressions (not statements). So for example, $1+1=2$, or $\sin^2 \theta + \cos^2 \theta = 1$.
+
+"$\Rightarrow$"
+The **implies sign** is used to denote when one mathematical statement follows directly from another. For example
+\begin{align}
+    $x &= 3 \Rightarrow x^2 = 9$
+\end{align}
+which is read "if $x$ equals three then $x$ squared equals nine"
+
+"$\Leftrightarrow$"
+The **equivalence sign** is used to denote the equivalence of two mathematical statements. If $A$ and $B$ are mathematical statements, then writing $A \Leftrightarrow B$ means that both $A \Leftarrow B$ and $B \Leftarrow A$ are true. For example,
+
+\begin{align}
+    x - 1 &= 0 \Leftrightarrow x = 1
+\end{align}
+
+Note that it would be wrong to write
+
+\begin{align}
+    x^2 &= 9 \Leftrightarrow x = 3
+\end{align}
+
+but correct to write
+
+\begin{align}
+    x^2 &= 9 \Leftrightarrow x = \pm 3
+\end{align}
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Look back to your proofs of Conjecture \@ref(cnj:red) and Conjecture \@ref(cnj:blue). With everything you've read in mind, is there anything you would change about your proofs?
+
+``` 
+
+```{exercise}
+What is wrong with the following argument:
+
+*Proof:* Let
+\begin{align}
+  x &= 1 + 1 + ... + 1 \text{ ($x$ times)} (\#eq:last) 
+\end{align}
+  Multiplying both sides of Equality \@ref(eq:last) by $x$ we get:
+\begin{align}
+  x^2 &= x + x + ... + x (\#eq:yellow) 
+\end{align}
+  Differentiating both sides of Equality \@ref(eq:yellow) with respect to $x$ we get
+\begin{align}
+  2x &= 1 + 1 + ... + 1 = x (\#eq:knew) 
+\end{align}
+  Divide both sides of Equality \@ref(eq:knew) by $x$, we conclude that
+\begin{align}
+  2 &= 1 \hspace{55mm}\square
+\end{align}
+
+``` 
+
+</div>

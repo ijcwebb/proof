@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>An Introduction to Mathematical Proof</title>
+  <title>Chapter 15 Proof by contraposition | An Introduction to Mathematical Proof</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 15 Proof by contraposition | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 15 Proof by contraposition | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="statements.html"/>
+<link rel="prev" href="proof-by-induction.html"/>
+<link rel="next" href="proof-by-contradiction.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -107,99 +107,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">An Introduction to Mathematical Proof</h1>
-<p class="author"><em>Iain Webb</em></p>
-<p class="date"><em>2021-01-09</em></p>
-</div>
-<div id="getting-started" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Getting started</h1>
-<p><img src="figures/head1.png" /><!-- --></p>
-<div id="about-this-course" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> About this course</h2>
-<p>The course this book accompanies “Reason and Argue Better: Logic in Proof and Argument,” which was written between 2018-2019 and has been taught every semester since.</p>
-</div>
-<div id="about-this-book" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> About this book</h2>
-<p>This book contains the material we will study as well as exercises (see the next section) and links for further reading. Most weeks I will assign you a chapter to read, and you should complete both the reading and the exercises within the chapter before our next class. This is a “living” textbook, which means that it will be updated throughout the course. This is for two reasons: (i) because mistakes are noticed (by you or me) and corrections made, (ii) because I am still writing and improving sections of it. Therefore, even though you <em>can</em> read ahead of the set chapter, you are advised that later chapters might change.</p>
-<p>Also note that because this textbook will be updated during the course, you are advised to access the book at the link at <a href="https://ijcwebb.github.io/proof" class="uri">https://ijcwebb.github.io/proof</a>, rather than printing or downloading the book.</p>
-</div>
-<div id="in-this-book" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> In this book…</h2>
-<div class="alert alert-info" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-2" class="exercise"><strong>Exercise 1.1  </strong></span>Regular exercises look like this…</p>
-<ol style="list-style-type: decimal">
-<li>…with subparts like this.
-</div></li>
-</ol>
-</div>
-
-<div class="solution">
-<p> <span class="solution"><em>Solution. </em></span> Solutions might be included underneath exercises, in which case you should aim to complete the exercise before checking the solution. If the solution is not included, then we will probably discuss it in class.</p>
-</div>
-<div class="alert alert-danger" role="alert">
-
-<div class="exercise">
-<span id="exr:unnamed-chunk-4" class="exercise"><strong>Exercise 1.2  </strong></span>Extension exercises look like this. These are exercises that require a little more thought. Solutions won’t be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss.
-</div>
-</div>
-<div class="alert alert-warning" role="alert">
-<p><strong>Careful!
-</strong> This is where I alert you to mistakes commonly made by students in this course. Read these warnings carefully to avoid these mistakes yourself.</p>
-</div>
-<div class="alert alert-success" role="alert">
-<p><strong>What we’ve learnt </strong>
-These boxes are found at the end of each chapter, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too.</p>
-</div>
-<p><span class="math display" id="eq:binom">\[\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \tag{1.1}
-\end{equation}\]</span></p>
-<p><span class="math display">\[\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-\end{equation}\]</span></p>
-<p><span class="math display">\[\begin{align}
-a_1&amp; =b_1+c_1\\
-a_2&amp; =b_2+c_2-d_2+e_2\\
-\mathbb R
-\end{align}\]</span></p>
-<p><span class="math display">\[\begin{equation}
-y = mx+b
-\end{equation}\]</span></p>
-
-<div class="theorem">
-<span id="thm:unnamed-chunk-5" class="theorem"><strong>Theorem 1.1  </strong></span>Here is my theorem.
-</div>
-
-<div class="lemma">
-<span id="lem:unnamed-chunk-6" class="lemma"><strong>Lemma 1.1  </strong></span>Here is my lemma
-</div>
-
-<div class="corollary">
-<span id="cor:unnamed-chunk-7" class="corollary"><strong>Corollary 1.1  </strong></span>Here is my corollary
-</div>
-
-<div class="proposition">
-<span id="prp:unnamed-chunk-8" class="proposition"><strong>Proposition 1.1  </strong></span>Here is my proposition
-</div>
-
-<div class="conjecture">
-<span id="cnj:unnamed-chunk-9" class="conjecture"><strong>Conjecture 1.1  </strong></span>Here is my conjecture
-</div>
-
-<div class="definition">
-<span id="def:unnamed-chunk-10" class="definition"><strong>Definition 1.1  </strong></span>Here is my definition
-</div>
-
-<div class="example">
-<span id="exm:unnamed-chunk-11" class="example"><strong>Example 1.1  </strong></span>Here is my example
-</div>
-
-<div class="exercise">
-<span id="exr:unnamed-chunk-12" class="exercise"><strong>Exercise 1.3  </strong></span>Here is my exercise.
-</div>
+<div id="proof-by-contraposition" class="section level1" number="15">
+<h1><span class="header-section-number">Chapter 15</span> Proof by contraposition</h1>
+<div id="not-yet-uploaded" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> Not yet uploaded</h2>
 
 </div>
 </div>
@@ -208,8 +119,8 @@ y = mx+b
           </div>
         </div>
       </div>
-
-<a href="statements.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="proof-by-induction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="proof-by-contradiction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -240,7 +151,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/index.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/15-test.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -248,7 +159,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/index.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/15-test.Rmd",
 "text": null
 },
 "download": null,

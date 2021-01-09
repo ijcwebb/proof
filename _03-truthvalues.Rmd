@@ -1,0 +1,223 @@
+# Truth values
+
+## What is the truth value of a statement?  
+
+Simply, the *truth value* of a statement is whether the statement is true or false. 
+    
+- The truth value of the statement "Bishkek is the capital of the Kyrgyz Republic" is true. 
+- The truth value of the statement "Osh is the capital of the Kyrgyz Republic" is false.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+What are the truth values of the following statements?
+  
+a. $4 + 4 = 9$
+b. $3 \cdot 6 = 18$
+c. Ice melts above $0^{\circ}$C on Earth.
+d. $11,118$ is the largest number in existence.
+e. The Earth is closer to the Sun than Jupiter.
+f. $a^2+b^2=c^2$, where $a$, $b$, $c = 1$.
+g. $a = b+c$.
+h. $1000$ is a large number.
+
+```  
+</div>
+
+## Clearly defined truth values
+
+Look back up at **Exercise 3.1**. Did you notice how the first 6 statements all have clearly defined truth values: they are either true (b, c and e) or false (a, d and f).
+    
+What do we mean when we say the statement has a **clearly defined** truth value? 
+
+- **Completeness** - The statement contains enough information for its truth value to be decided. Terms are clearly defined or easily researchable.
+- **Objectivity** - The truth value is not based on personal opinion or experience.
+- **Mutual exclusivity** - If a statement is true, it can't also be false. If a statement is false, it can't also be true.
+- **Universality** - If the statement is true today, it will be true tomorrow, and it was true yesterday.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+For this exercise, you should write:
+
+1. A statement which has a **clearly defined** truth value of true.  
+2. A statement which has a **clearly defined** truth value of false.
+3. A statement which has a **clearly defined** truth value that *only you* know.
+
+```  
+</div>
+    
+## Statements without clearly defined truth values
+ 
+Look again at **Exercise 3.1**. Did you notice how statements g and h *didn't* have clearly defined truth values? Why not?
+    
+Let's look at g: 
+
+<center>
+
+$a = b + c$
+
+</center>
+
+This statement doesn't contain enough information for us to be able to decide on its truth value. It *can* be true, for example if $a = 5$, $b = 2$ and $c = 3$. But it can also be false, for example if $a$, $b$, $c = 1$. We can't decide, as we know nothing about $a$, $b$, or $c$.
+    
+Next we'll look at h: 
+
+<center>
+
+$1000$ is a large number.
+
+</center> 
+
+This statement doesn't have a clearly defined truth value because it depends on personal opinion. Younger members of your family might say the truth value of this statement is true, because they are used to using smaller numbers. However an economist or an astrophysicist or a paleontologist (or you) might disagree, because they are used to dealing with numbers much larger than 1000.
+    
+Let's look at two more examples: 
+
+<center>
+
+$4x>0$
+
+</center> 
+
+Why is the truth value of this statement not clearly defined? It's because there is not enough information. Its truth value depends entirely on the value of $x$, about which we know nothing. If we choose $x$ to be 10, this statement is true, but if we choose $x$ to be $-5$, the statement is false. 
+
+<center>
+
+Bishkek is a big city.
+
+</center> 
+
+We've already said that good statements are clear and specific. The reason for this is so that we can decide their truth value. 
+    
+In this statement, "big" is a very vague term. The units of measurement aren't clear. Is it referring to area, to the number of people in Bishkek, to the number of buildings, to the size of those buildings? Also, big compared to what? Compared to Karakol? Compared to Osh? Compared to Almaty? Compared to Seoul? Or maybe compared to 100 years ago? Again, it's not clear.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+The following statements **do not** have clearly defined truth values. Why not?
+
+a. This math problem is difficult.
+b. Damascus is an old city.
+c. The largest city in my country is also my capital city.
+d. The world is in a bad state right now.
+e. $3.14$
+f. $x$ is positive.
+g. $ab > cd$
+h. Tomorrow is Wednesday.
+i. $4$ is an unlucky number.
+
+```  
+
+```{exercise}
+Write a statement which does not have clearly defined truth value. For what reason(s) does your statement not have a clearly defined truth value?
+  
+```  
+</div>
+
+## Unknown truth values
+
+What if you don't know the truth value of a statement? Does that mean it is not clearly defined?
+ 
+Let's consider the following statement:  
+
+```{example}
+$29,999$ is a prime number.^[Go googling if you're not sure what *prime* means!]
+
+```
+
+You probably don't know whether this statement is true or false. I certainly didn't know when I wrote it! However, it's clear that this statement *will* have a clearly defined truth value, even if we don't know what it is:
+    
+- **Completeness** - The statement contains enough information, and the terms are clear.
+- **Objectivity** - The primeness of numbers is not a matter of personal opinion.
+- **Mutual exclusivity** - This statement is either true or it is false: 29,999 can't be both prime and not prime. 
+- **Universality** - If 29,999 is prime today, it will be prime tomorrow, and it was prime yesterday.
+
+Here's another example:  
+
+```{example}
+Earth is the only planet in the entire universe with life.
+
+```
+    
+- **Completeness** - The statement contains enough information, and the terms are clear (as long as life is clearly defined^[It is possible that people might disagree on what constitutes life, see https://www.theguardian.com/books/2020/aug/06/lyfe-a-new-word-for-aliens-that-takes-a-leaf-out-of-life. However, as long as we agree on a definition of life, this statement will have a clearly defined truth value.]).
+- **Objectivity** - The existence (or not) of life on other planets won't be a personal opinion: it either exists or it doesn't.
+- **Mutual exclusivity** - This statement is either true or it is false.
+- **Universality** - This statement is universal to a point. For example, the truth value of this statement *could* change over time, for example if life appears on a planet sometime in the future. However, considering the huge amounts of time that is required for life to appear, for our purposes this statement has universality.
+
+Despite not knowing the truth value of this statement, it will have a clearly defined truth value. Either Earth *is* the only planet with life (statement's truth value: true) or there are other planets with life somewhere in the universe (statement's truth value: false).
+    
+However, unlike **Example 3.1**, this statement's truth value is less easy to find out. Googling ``is there life out there?'' isn't going to help, as the answer is not yet known, and might never be known. 
+
+<div class="alert alert-warning" role="alert">
+<strong>Careful!</strong> 
+
+Just because we don't know the truth value of a statement, that doesn't mean it doesn't have one!
+
+It's also possible that a statement has a clearly defined truth value that we can or will *never* know.
+</div>
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Write a statement which does not have clearly defined truth value. For what reason(s) does your statement not have a clearly defined truth value?
+
+``` 
+
+```{exercise}
+Which of the following are important for a statement's truth value to be clearly defined?
+
+  - The statement contains enough information.
+  - The statement is written in English.
+  - The statement is about mathematics.
+  - Any terms new to the reader are easy to look up using Google or in a book. 
+  - The statement is objectively true or false, not personal opinion.
+  - The statement contains numbers.
+  - The statement is universally true or false, not just locally.
+  - The statement is short.
+  - All terms are clear.
+  - The statement is not a paradox.
+  - Someone else wrote the statement, not me.
+  - The statement is typed, not handwritten.
+  
+```  
+
+```{exercise}
+Which of the following statements will have clearly defined truth values? Which *won't* have clearly defined truth values? Why not?
+
+a. No UN member state has a flag which contains purple.
+b. SZA is taller than The Weeknd.
+c. People find me funnier than you.
+d. There is a largest number.
+e. $x > 0$.
+f. $|x|$ is never negative.
+g. All odd numbers end with $1$, $3$, $5$, $7$ or $9$.
+h. All even numbers end with $2$, $4$, $6$, $8$ or $0$.
+i. $100$ is prime.
+j. Poetry is difficult to understand.
+k. Earth is the only planet in the universe which contains life.
+l. All square numbers are even.
+m. There are no solutions to the equation $a^2 + b^2 = c^2$.
+n. There are no solutions to the equation $a^3 + b^3 = c^3$.
+o. All perfect numbers are even.^[See http://mathforum.org/library/drmath/view/51526.html.]
+p. Eating vegetables is good for people's health.
+q. All men are created equal.
+r. It rained in Bishkek on New Year's Day 2020.
+s. All people have black hair.
+t. Most people are good.
+u. Max is tall.
+v. The identity of the oldest person alive is known.
+w. $30\mod 7 = 2$.
+x. $29\mod 4 = 3$.
+y. Japanese is the hardest language for non-native speakers to learn.
+z. Japanese is difficult for non-native speakers to learn.
+
+```
+</div>
+
+<div class="alert alert-success" role="alert">
+<strong> What have we learnt? </strong> 
+
+- We've learnt what it means to be a statement.
+- We've learnt what it means to be a *good* statement too. 
+- And we've learnt what it means for a good statement to have a *clearly-defined* truth value.
+
+</div>
+
+
+In our next chapter, we define a new term...

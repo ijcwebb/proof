@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 12 Using previous proofs / disproofs | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 12 Using previous proofs / disproofs | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 12 Using previous proofs / disproofs | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="direct-proof.html"/>
+<link rel="next" href="proof-by-cases.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
+<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a></li>
+<li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a></li>
+<li class="chapter" data-level="11" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>11</b> Direct proof</a></li>
+<li class="chapter" data-level="12" data-path="using-previous-proofs-disproofs.html"><a href="using-previous-proofs-disproofs.html"><i class="fa fa-check"></i><b>12</b> Using previous proofs / disproofs</a></li>
+<li class="chapter" data-level="13" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>13</b> Proof by cases</a></li>
+<li class="chapter" data-level="14" data-path="proof-by-induction.html"><a href="proof-by-induction.html"><i class="fa fa-check"></i><b>14</b> Proof by induction</a></li>
+<li class="chapter" data-level="15" data-path="proof-by-contraposition.html"><a href="proof-by-contraposition.html"><i class="fa fa-check"></i><b>15</b> Proof by contraposition</a></li>
+<li class="chapter" data-level="16" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html"><i class="fa fa-check"></i><b>16</b> Proof by contradiction</a></li>
+<li class="chapter" data-level="17" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>17</b> Mathematical incompleteness</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="using-previous-proofs-disproofs" class="section level1" number="12">
+<h1><span class="header-section-number">Chapter 12</span> Using previous proofs / disproofs</h1>
+<p>Noticing that a conjecture can be proved using previous work you’ve done can save you a lot of time! Aside from that, it can often show you the way that future conjectures can be proved.</p>
+<p>Let’s assume we have already proved the conjecture:</p>
+<p>Conjecture 12.1 : Every prime number, except 2 and 3, is either one more or one less than a multiple of 6.</p>
+<p>Knowing this is true, we can use it in the proof of the conjecture:</p>
+<p>Conjecture 12.2 : Doubling <strong>every</strong> prime number (except 2) then adding two creates a number divisible by four.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> As conjecture <a href="#cnj:collect">12.1</a> is known to be true, we know that every prime <span class="math inline">\(p\)</span>, <span class="math inline">\(p \neq 2, 3\)</span>, can be written in the form</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k + 1
+\end{align}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k - 1
+\end{align}\]</span></p>
+<p>with <span class="math inline">\(k \in \mathbb Z\)</span>.</p>
+<p>Let’s deal with these one-by-one.</p>
+<p>If</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k + 1
+\end{align}\]</span></p>
+<p>then doubling it and adding two gives</p>
+<p><span class="math display">\[\begin{align}
+    2p + 2  &amp;= 2(6k + 1) + 2 \\
+    &amp;= 12p + 2 + 2 \\
+    &amp;= 12p + 4 \\
+    &amp;= 4(3p + 1)
+\end{align}\]</span></p>
+<p>which is a multiple of 4.</p>
+<p>Similarly, if</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k - 1
+\end{align}\]</span></p>
+<p>then doubling it and adding two gives</p>
+<p><span class="math display">\[\begin{align}
+    2p + 2  &amp;= 2(6k - 1) + 2 \\
+    &amp;= 12p - 2 + 2 \\
+    &amp;= 12p \\
+    &amp;= 4(3p)
+\end{align}\]</span></p>
+<p>which is a multiple of 4.</p>
+<p>As noted in the first line of the proof, this proof covers all primes <em>except</em> <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>. However, conjecture <a href="#cnj:cusp">12.2</a> covers all primes except <span class="math inline">\(2\)</span>, so we should also check that the conjecture holds for <span class="math inline">\(3\)</span>.</p>
+<p>If <span class="math inline">\(p=3\)</span>, then <span class="math inline">\(2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8\)</span>, which is a multiple of <span class="math inline">\(4\)</span>.</p>
+<p>Therefore the conjecture is true.</p>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-96" class="exercise"><strong>Exercise 12.1  </strong></span>The following conjectures <em>might</em> need you to use earlier work, or might not.</p>
+<p>Every prime number, except <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>, is either one more or one less than a multiple of <span class="math inline">\(6\)</span>. (This is the conjecture on the previous page!)
+Hint: You might want to try writing the positive whole numbers greater than <span class="math inline">\(3\)</span> in a rectangular grid, in such a way that all the primes are in only one or two columns.</p>
+<p>Doubling <strong>every</strong> prime number (except <span class="math inline">\(2\)</span>) then adding two creates a number divisible by four. (We proved this on the previous page!)</p>
+<p>Squares of odd numbers are all one more than a multiple of <span class="math inline">\(8\)</span>.</p>
+<p>The only numbers which can be classed as “odd” or “even” are integers (whole numbers).</p>
+<p><span class="math inline">\(a^2 - a + 41\)</span> is always prime for all positive integers <span class="math inline">\(a\)</span>.</p>
+<p><span class="math inline">\(a^2 - a + 41\)</span> is always prime for all **nonpositive} integers <span class="math inline">\(a\)</span>.</p>
+<p>The <strong>interior angles</strong> of the octagon formed by joining the midpoint of each side of a square with each corner of the square are not all equal. <em>Hint: Draw the picture first!</em></p>
+<p><span class="math inline">\(1^2\)</span>, <span class="math inline">\(11^2\)</span>, <span class="math inline">\(111^2\)</span>, <span class="math inline">\(1111^2\)</span>, … are all palindromic numbers.</p>
+<p>A palindromic number is one that reads the same backwards as it does forwards, e.g. <span class="math inline">\(987789\)</span> and <span class="math inline">\(62926\)</span>.
+Similarly, a word is palindromic if it reads the same backwards as it does forwards, e.g. <em>racecar</em> and <em>noon</em>. Sentences can be palindromic too, usually by ignoring spaces and punctuation, e.g. “<em>No lemon, no melon</em>” or “<em>Was it a cat I saw?</em>”</p>
+</div>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-97" class="exercise"><strong>Exercise 12.2  </strong></span>Something slightly different today:</p>
+<p>This chapter was all about using previously proved (or disproved) conjectures to aid your work on new proofs. Today, I want you to look back over <em>all</em> the previous conjectures we’ve proved and disproved and use your findings to write some new conjectures.</p>
+<p>Here are the rules:</p>
+<p>Each student should write at least two conjectures.</p>
+<ul>
+<li><p>The conjectures should be true.</p></li>
+<li><p>The conjectures should be provable using work which you and your classmates have previously done, and using the methods we’ve already met: direct proof and exhaustion.</p></li>
+<li><p>DON’T rush - take your time to write these conjectures.</p></li>
+<li><p>Post your conjectures onto the XXXXXXXXXXXXXXXXXXXx padlet.
+<strong>Note:</strong> Post each conjecture whenever it’s ready to go!</p></li>
+<li><p>If you still have time remaining in class OR as homework, try to solve some of your classmates’ conjectures. Post your proof <strong>underneath</strong> their post.
+<strong>Note:</strong> DON’T solve too many conjectures - leave some for other people to solve!!</p></li>
+<li><p>If there are no unsolved conjectures left on the padlet, try solving one of the conjectures already solved. Maybe you can solve it in a different way??</p></li>
+<li><p>If you think your classmate has written a conjecture which is actually false, tell them by posting a disproof (or counterexample) under their post.</p></li>
+<li><p>If <em>your</em> conjecture is disproved by a classmate, can you modify it to make it true?</p></li>
+</ul>
+<p>Good luck!</p>
+</div>
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="direct-proof.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="proof-by-cases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/12-test.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/12-test.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

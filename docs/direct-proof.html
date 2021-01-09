@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 11 Direct proof | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 11 Direct proof | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 11 Direct proof | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="proof-by-exhaustion.html"/>
+<link rel="next" href="using-previous-proofs-disproofs.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
+<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a></li>
+<li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a></li>
+<li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a></li>
+<li class="chapter" data-level="11" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>11</b> Direct proof</a></li>
+<li class="chapter" data-level="12" data-path="using-previous-proofs-disproofs.html"><a href="using-previous-proofs-disproofs.html"><i class="fa fa-check"></i><b>12</b> Using previous proofs / disproofs</a></li>
+<li class="chapter" data-level="13" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>13</b> Proof by cases</a></li>
+<li class="chapter" data-level="14" data-path="proof-by-induction.html"><a href="proof-by-induction.html"><i class="fa fa-check"></i><b>14</b> Proof by induction</a></li>
+<li class="chapter" data-level="15" data-path="proof-by-contraposition.html"><a href="proof-by-contraposition.html"><i class="fa fa-check"></i><b>15</b> Proof by contraposition</a></li>
+<li class="chapter" data-level="16" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html"><i class="fa fa-check"></i><b>16</b> Proof by contradiction</a></li>
+<li class="chapter" data-level="17" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>17</b> Mathematical incompleteness</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="direct-proof" class="section level1" number="11">
+<h1><span class="header-section-number">Chapter 11</span> Direct proof</h1>
+<p>Look back at the proof of <strong>Conjecture 8.1</strong> in Chapter 8. This was an example of a direct proof. Direct proofs use algebra to move from <span class="math inline">\(P\)</span> to <span class="math inline">\(Q\)</span>.</p>
+<div id="steps-1" class="section level2" number="11.1">
+<h2><span class="header-section-number">11.1</span> Steps</h2>
+<ul>
+<li>If possible, rewrite the conjecture in the form <strong>If … then …</strong>.</li>
+<li>If possible, draw the map of the statement. The map is not always essential (or even easy) to draw. However for some proofs it will be invaluable!</li>
+<li>Define any variables that you use, for example “<span class="math inline">\(m \in \mathbb Q\)</span>” or “<span class="math inline">\(n \in \mathbb Z, n \neq 0\)</span>.”</li>
+<li>If you are relying on any definitions or axioms (from our Miro board or elsewhere), you should explicitly reference them. You don’t need to explain or prove them, but by not referencing axioms and definitions you employ, you might leave your audience in the dark.</li>
+</ul>
+</div>
+<div id="formal-definition-1" class="section level2" number="11.2">
+<h2><span class="header-section-number">11.2</span> Formal definition</h2>
+<p>Simply, prove that “If <span class="math inline">\(P\)</span> then <span class="math inline">\(Q\)</span>.”</p>
+</div>
+<div id="practice-1" class="section level2" number="11.3">
+<h2><span class="header-section-number">11.3</span> Practice</h2>
+<p>Use these examples to practise. If it’s not in the form <strong>If … then …</strong>, make sure you rewrite it before starting the proof. Attempt the proof before checking the solution.</p>
+<p>(#cnj:wave:) The sum of two even numbers is even.}</p>
+<p>Rewritten conjecture : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are even integers, then <span class="math inline">\(a+b\)</span> is even.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Since <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are even, they can be written as
+<span class="math display">\[\begin{align}
+    a &amp;= 2k \\
+    b &amp;= 2l
+\end{align}\]</span>
+where <span class="math inline">\(k\)</span> and <span class="math inline">\(l\)</span> are integers. Therefore the sum of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is
+<span class="math display">\[\begin{align}
+    a + b &amp;= 2k + 2l\\
+    &amp;= 2(k + l)
+\end{align}\]</span>
+by factoring out 2.</p>
+As the sum of integers equals an integer, <span class="math inline">\(k + l\)</span> must equal some integer. Let’s call it <span class="math inline">\(m\)</span>. Therefore we have
+<span class="math display">\[\begin{align}
+    a + b &amp;= 2m
+\end{align}\]</span>
+which is clearly even.
+</div>
+<p>(#cnj:welcome:) The square of an odd number is also odd.}</p>
+<p>Rewritten conjecture: If <span class="math inline">\(a\)</span> is an odd integer, then <span class="math inline">\(a^2\)</span> is odd.</p>
+
+<div class="proof">
+ <span class="proof"><em>Proof. </em></span> If <span class="math inline">\(a\)</span> is an odd integer, it can be expressed as
+<span class="math display" id="eq:bertie">\[\begin{align}
+    a &amp;= 2k + 1 \tag{11.1} 
+\end{align}\]</span>
+where <span class="math inline">\(k\)</span> is an integer. Squaring our odd number, we get
+<span class="math display" id="eq:bessie" id="eq:bernie" id="eq:betty">\[\begin{align}
+    a^2 &amp;= (2k + 1)^2 \tag{11.2} \\
+    &amp;= 4k^2 + 4k +1 \tag{11.3} \\
+    &amp;= 2(2k^2 + 2k) +1 \tag{11.4} 
+\end{align}\]</span>
+As <span class="math inline">\(2k^2\)</span> is an integer and <span class="math inline">\(2k\)</span> is an integer, <span class="math inline">\(2k^2 + 2k\)</span> is an integer, which we’ll call <span class="math inline">\(l\)</span>. Therefore Equality <a href="direct-proof.html#eq:bessie">(11.4)</a> becomes
+<span class="math display" id="eq:bess">\[\begin{align}
+    a^2 &amp;= 2l+1 \tag{11.5} 
+\end{align}\]</span>
+and <span class="math inline">\(a^2\)</span> is therefore odd.
+</div>
+<p>(#cnj:wood:) The sum of the first <span class="math inline">\(n\)</span> positive integers is <span class="math inline">\(\frac{n}{2}(n+1)\)</span>.</p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solution. </em></span> Solution: <a href="https://www.youtube.com/watch?v=aaFrAFZATKU" class="uri">https://www.youtube.com/watch?v=aaFrAFZATKU</a></p>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-91" class="exercise"><strong>Exercise 11.1  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using a <strong>direct proof</strong>.</p>
+<p>Conjecture 11.1 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both perfect squares, then <span class="math inline">\(ab\)</span> is also a perfect square.</p>
+<p>Conjecture 11.2 : (The sum of two even numbers is even.)</p>
+<p>Conjecture 10.21 : The sum of two odd integers is even.</p>
+<p>Conjecture 11.3 : All odd primes end with 1, 3, 7 or 9.</p>
+<p>Conjecture 11.4 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both odd, then the difference of their squares is even. (This means if you square two odd numbers and find the difference between these two squares, the difference will be even.)</p>
+<p>Conjecture 11.5 : The sum of two consecutive integers is odd.</p>
+<p>Conjecture 11.6 : The sum of three consecutive integers is odd.</p>
+<p>Conjecture 11.7 : The sum of three consecutive integers is divisible by 3.</p>
+<p>Conjecture 11.8 : The sum of three consecutive odd numbers is divisible by 3.</p>
+<p>Conjecture 11.9 : The sum of two consecutive odd numbers is divisible by 4.</p>
+<p>Conjecture 11.10 : For a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. This is the <em>Pythagoras Theorem</em>. Prove it algebraically with a direct proof using this picture:</p>
+</div>
+<p><img src="figures/Diagram_of_Pythagoras_Theorem_simplified.png" width="45%" style="display: block; margin: auto;" /></p>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-93" class="exercise"><strong>Exercise 11.2  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using <strong>EITHER</strong> a proof by exhaustion or a direct proof.</p>
+<p>Conjecture 11.11 : The product of three consecutive integers is divisible by 6.</p>
+<p>Conjecture 11.12 : There is no four-digit number that reverses its digits when multiplied by 4 (in other words, ABCD x 4 = DCBA).</p>
+<p>Conjecture 11.13 : Summing two 3-digit numbers results in a 4-digit number.</p>
+<p>Conjecture 11.14 : For any four consecutive integers, the difference between the product of the last two and the product of the first two of these numbers is equal to their sum.</p>
+<p>Conjecture 11.15 : If a number is divisible by 4, then it is divisible by 2.</p>
+<p>Conjecture 11.16 : If a number is divisible by 2, then it is divisible by 4.</p>
+<p>Conjecture 11.17 : If <span class="math inline">\(a\)</span> is a positive nonprime whole number and some prime number <span class="math inline">\(p\)</span> divides <span class="math inline">\(a\)</span>, then some other prime <span class="math inline">\(q\)</span> (<span class="math inline">\(q \neq p\)</span>) also divides <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 11.18 : If <span class="math inline">\(a + 4 &gt; 0\)</span>, then <span class="math inline">\(a\)</span> is positive.</p>
+<p>Conjecture 11.19 : For any negative number <span class="math inline">\(a\)</span>, <span class="math inline">\(a^2 &gt; a\)</span>.</p>
+<p>Conjecture 11.20 : If <span class="math inline">\(a^2\)</span> is divisible by 2, then so is <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 11.21 : If <span class="math inline">\(a^2\)</span> is divisible by 3, then so is <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 11.22 : In the picture below, the larger square is twice the area of the smaller square:</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-94"></span>
+<img src="figures/Diagram_of_Pythagoras_Theorem_simplified.png" alt="The figure shows a square **inscribed** in a circle, which is **inscribed** in another square." width="45%" />
+<p class="caption">
+Figure 11.1: The figure shows a square <strong>inscribed</strong> in a circle, which is <strong>inscribed</strong> in another square.
+</p>
+</div>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="proof-by-exhaustion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="using-previous-proofs-disproofs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/11-test.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/11-test.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

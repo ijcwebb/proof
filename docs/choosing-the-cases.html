@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 16 Choosing the cases} | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 16 Choosing the cases} | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 16 Choosing the cases} | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="knowing-when-to-use-cases.html"/>
+<link rel="next" href="how-many-cases.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
+<li class="chapter" data-level="11" data-path="using-previous-proofs-disproofs.html"><a href="using-previous-proofs-disproofs.html"><i class="fa fa-check"></i><b>11</b> Using previous proofs / disproofs</a></li>
+<li class="chapter" data-level="12" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>12</b> Proof by cases</a></li>
+<li class="chapter" data-level="13" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>13</b> Introduction</a></li>
+<li class="chapter" data-level="14" data-path="similarity-to-proof-by-exhaustion.html"><a href="similarity-to-proof-by-exhaustion.html"><i class="fa fa-check"></i><b>14</b> Similarity to proof by exhaustion}</a></li>
+<li class="chapter" data-level="15" data-path="knowing-when-to-use-cases.html"><a href="knowing-when-to-use-cases.html"><i class="fa fa-check"></i><b>15</b> Knowing when to use cases}</a></li>
+<li class="chapter" data-level="16" data-path="choosing-the-cases.html"><a href="choosing-the-cases.html"><i class="fa fa-check"></i><b>16</b> Choosing the cases}</a></li>
+<li class="chapter" data-level="17" data-path="how-many-cases.html"><a href="how-many-cases.html"><i class="fa fa-check"></i><b>17</b> How many cases?}</a></li>
+<li class="chapter" data-level="18" data-path="test-2.html"><a href="test-2.html"><i class="fa fa-check"></i><b>18</b> Test 2</a></li>
+<li class="chapter" data-level="19" data-path="test-2-1.html"><a href="test-2-1.html"><i class="fa fa-check"></i><b>19</b> Test 2</a></li>
+<li class="chapter" data-level="20" data-path="test-2-2.html"><a href="test-2-2.html"><i class="fa fa-check"></i><b>20</b> Test 2</a></li>
+<li class="chapter" data-level="21" data-path="test-2-3.html"><a href="test-2-3.html"><i class="fa fa-check"></i><b>21</b> Test 2</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="choosing-the-cases" class="section level1" number="16">
+<h1><span class="header-section-number">Chapter 16</span> Choosing the cases}</h1>
+<p>Once you have recognised that your proof will require cases (see Part~), it can sometimes be difficult deciding how to split the proof up.</p>
+<p>The most important thing to remember when using cases is to make them  (they should not overlap) and  (they should consider all possible situations).</p>
+<p>For example, if <span class="math inline">\(P\)</span> says  and you split the proof into positive integers and negative integers, then you have forgotten to consider <span class="math inline">\(a = 0\)</span>, and your cases are not complete. You will have to amend one of the two cases to include <span class="math inline">\(a = 0\)</span>, or add it as its own case. Similarly, if you have the cases <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(a \leq 0\)</span>, then 0 is contained in both cases, meaning the cases overlap, which also isn’t good. You should amend one of the cases so it no longer includes 0.</p>
+<p>Here are some examples of how you might split up a proof into cases, depending on what type of number the conjecture concerns:</p>
+<p> You might split the proof into cases differently to a classmate. Don’t worry! There’s many ways to prove the same thing - just make sure that when splitting up the problem into cases, you don’t miss any numbers!</p>
+<p>Once you have split the problem into parts, consider each part  from one another.</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="knowing-when-to-use-cases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="how-many-cases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/13-test.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/13-test.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

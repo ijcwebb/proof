@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 14 Similarity to proof by exhaustion} | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 14 Similarity to proof by exhaustion} | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 14 Similarity to proof by exhaustion} | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-01-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="knowing-when-to-use-cases.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a></li>
+<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
+<li class="chapter" data-level="11" data-path="using-previous-proofs-disproofs.html"><a href="using-previous-proofs-disproofs.html"><i class="fa fa-check"></i><b>11</b> Using previous proofs / disproofs</a></li>
+<li class="chapter" data-level="12" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>12</b> Proof by cases</a></li>
+<li class="chapter" data-level="13" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>13</b> Introduction</a></li>
+<li class="chapter" data-level="14" data-path="similarity-to-proof-by-exhaustion.html"><a href="similarity-to-proof-by-exhaustion.html"><i class="fa fa-check"></i><b>14</b> Similarity to proof by exhaustion}</a></li>
+<li class="chapter" data-level="15" data-path="knowing-when-to-use-cases.html"><a href="knowing-when-to-use-cases.html"><i class="fa fa-check"></i><b>15</b> Knowing when to use cases}</a></li>
+<li class="chapter" data-level="16" data-path="choosing-the-cases.html"><a href="choosing-the-cases.html"><i class="fa fa-check"></i><b>16</b> Choosing the cases}</a></li>
+<li class="chapter" data-level="17" data-path="how-many-cases.html"><a href="how-many-cases.html"><i class="fa fa-check"></i><b>17</b> How many cases?}</a></li>
+<li class="chapter" data-level="18" data-path="test-2.html"><a href="test-2.html"><i class="fa fa-check"></i><b>18</b> Test 2</a></li>
+<li class="chapter" data-level="19" data-path="test-2-1.html"><a href="test-2-1.html"><i class="fa fa-check"></i><b>19</b> Test 2</a></li>
+<li class="chapter" data-level="20" data-path="test-2-2.html"><a href="test-2-2.html"><i class="fa fa-check"></i><b>20</b> Test 2</a></li>
+<li class="chapter" data-level="21" data-path="test-2-3.html"><a href="test-2-3.html"><i class="fa fa-check"></i><b>21</b> Test 2</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="similarity-to-proof-by-exhaustion" class="section level1" number="14">
+<h1><span class="header-section-number">Chapter 14</span> Similarity to proof by exhaustion}</h1>
+<p>Recall that in a proof by exhaustion, we:</p>
+<ul>
+<li>identify all the possibilities,</li>
+<li>make sure that we haven’t forgotten any possibilities, and</li>
+<li>prove <span class="math inline">\(P \rightarrow Q\)</span> for each possibility.</li>
+</ul>
+<p>In proof by cases, we use the same technique. The only difference is the list of possibilities are renamed “” and each single case is much broader (more general and less specific) than each single possibility in a proof by exhaustion.</p>
+<p>For example, while the list of possibilities in a proof by exhaustion might be each whole number from 1 to 20 or each possible route taken by a knight on a chessboard, the cases in a proof by cases might be  negative numbers and  non-negative numbers, or  even integers between 1 and 20 and  odd integers between 1 and 20, or  whole numbers and  non-whole numbers.</p>
+<p>Let’s compare a couple of conjectures we previously proved by exhaustion and a couple which can be proved using cases, to see the difference between  in a proof by exhaustion and  in a proof by cases.</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Conjecture</strong></th>
+<th><strong>Proof by exhaustion</strong></th>
+<th><strong>Proof by cases</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Conjecture | The video solution identified four possible divisors of <span class="math inline">\(97\)</span> (using some clever reasoning about prime numbers and the square root of 97 to not identify more possibilities than necessary) and then checked them all. Finding none divided 97, and being satisfied that this list of candidate divisors was complete, the conjecture was declared true. |
+Conjecture | In the video solution, the list of possibilities was identified as the integers &amp;\
+&amp; 0, 1, 2, 3, …, 9. Again, this list was long &amp;\
+&amp; enough to ensure completeness but not &amp; \
+&amp; longer than it needed to be. &amp; \
+
+ &amp; &amp; We should first check the \
+ &amp; &amp; conjecture is true for even \
+ &amp; &amp; integers, then check it’s \
+&amp; &amp; true for odd integers.\
+&amp; &amp;  All even integers \
+&amp; &amp;  All odd integers \
+&amp; &amp; As all integers are either \
+&amp; &amp; even or odd, we’re done!\
+
+ &amp; &amp; As we’re dealing with the\
+ &amp; &amp; modulus function*, it \
+&amp; &amp; makes sense to build \
+&amp; &amp; cases by varying the sign \
+&amp; &amp; of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. We could try: \
+&amp; &amp;  <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span> \
+&amp; &amp;  <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span> \
+&amp; &amp;  <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span> \
+&amp; &amp;  <span class="math inline">\(a &lt; 0\)</span> and <span class="math inline">\(b \geq 0\)</span> \
+&amp; &amp; Notice we can collapse\
+&amp; &amp; cases 3 and 4 into one by \
+&amp; &amp; simply switching the \
+&amp; &amp; letters  \
+&amp; &amp; , so actually \
+&amp; &amp; we only require three cases. \
+
+ &amp; &amp; What do you think?? What\
+ &amp; &amp; cases should we use??? \
+ &amp; &amp;\
+ &amp; &amp;\
+
+\end{tabular}
+\end{center}</p>
+<p><span class="math display">\[\begin{gather*}
+\hspace{-8mm} \text{* Recall that the modulus function states: } |a| = \begin{cases}
+  a &amp; \text{for } a \geq 0,\\
+  -a &amp; \text{for } a &lt; 0.\\
+\end{cases}
+\end{gather*}\]</span></p>
+<div style="page-break-after: always;"></div>
+<p>In the table on the previous page, we referred to the phrase “without loss of generality,” or simply  We can use it whenever simply switching the letters doesn’t fundamentally change the case we’re looking at.</p>
+<p>Consider conjecture  from the table,</p>
+<p>We use  to check if the conjecture is  when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are non-negative. We use  to check if the conjecture is  when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are negative. Finally, we should check if the conjecture is  if one of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is negative and the other is non-negative. We say, , that the negative one will be <span class="math inline">\(b\)</span> and the non-negative one will be <span class="math inline">\(a\)</span>.</p>
+<p>This means we need just three cases, not four:</p>
+<p> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span></p>
+<p> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span></p>
+<p> <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span></p>
+<p>If we want to demonstrate this conjecture to someone by asking them to pick two numbers, and they pick one negative number and one non-negative number, we can assign the negative one to <span class="math inline">\(b\)</span> and the non-negative one to <span class="math inline">\(a\)</span>.\</p>
+<p>Consider the conjecture</p>
+<p><span class="math display">\[\begin{align*}
+    \intertext{We are considering the product of two integers, $a \cdot b$. One of these integers is even, and the other is odd. \\
+    W.l.o.g., let&#39;s say that $a$ is the even one and $b$ is the odd one, so}
+    a &amp;= 2m \\
+    b &amp;= 2n + 1 
+    \intertext{with $m, n \in \mathbb Z$. Notice I have used two different integers here, $m$ and $n$, as the conjecture doesn&#39;t say $a$ and $b$ must be consecutive (though of course they can be).\\
+    We have}
+    a \cdot b &amp;= (2m)\cdot (2n+1) \\
+    &amp;= 4mn + 2m\\ 
+    &amp;= 2(2mn+m)
+    \intertext{which is clearly even. \hspace{110mm}$\square$}
+\end{align*}\]</span></p>
+<p>Again, if I wanted to demonstrate this conjecture to someone by asking them to pick two numbers, one even and one odd, I just assign the even one to <span class="math inline">\(a\)</span> and the odd one to <span class="math inline">\(b\)</span>.</p>
+<p>If we had made <span class="math inline">\(a\)</span> the odd one and <span class="math inline">\(b\)</span> the even one, the proof would look identical, so our choice of which was odd and which was even was unimportant. That’s what w.l.o.g. means!</p>
+<p>Sometimes, however, w.l.o.g. doesn’t work. That’s because changing the letters  fundamentally change the case we’re considering. Let’s look at an example…</p>
+Consider the conjecture
+<p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. If two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive, then <span class="math inline">\(b = a + 1\)</span>. If we multiply them, we get
+<span class="math display">\[\begin{align*}
+    a \cdot b &amp;= (a)(a+1) \\
+    &amp;= a^2 + a
+    \intertext{but it isn&#39;t obvious that this is even, so we&#39;ll need a new strategy.  \\
+    As $a$ and $b$ are consecutive integers, one is even, and the other is odd, because parity alternates for integers.\\
+    Let&#39;s make $a$ the even one and $b$ the odd one, so,}
+    a &amp;= 2m \\
+    b &amp;= 2m + 1 
+    \intertext{Their product is}
+    (2m)\cdot (2m+1) &amp;= 4m^2 + 2m\\
+    &amp;= 2(2m^2+m) 
+    \intertext{which is clearly even. \\
+    But notice, this proof only covers pairs of consecutive integers where the smaller number is even, for example 2 and 3, 4 and 5, or $-2$ and $-1$. It does \textit{not} cover pairs of consecutive integers where the smaller number is odd. If you ask a friend to pick two consecutive numbers and they pick 7 and 8, we must assign 7 to $a$ as it&#39;s the smaller of the two numbers, but we \textit{can&#39;t} assign 7 to $a$ because we said &quot;let&#39;s make $a$ the even one&quot;. \\
+    We can label the case above as \textbf{Case 1}, then provide a second case, where $a$ is odd and $b$ is even:\\
+    \textbf{Case 2: }} 
+    a &amp;= 2m + 1 \\
+    b &amp;= (2m + 1) + 1 = 2m + 2
+    \intertext{The product is}
+    (2m + 1)\cdot (2m+2) &amp;= 4m^2 + 4m + 2\\
+    &amp;= 2(2m^2+2m + 1) 
+    \intertext{which is clearly even. \\
+    We&#39;ve shown that this conjecture is \textsc{true} if the smaller of the two consecutive numbers is even, and if the smaller of the two consecutive numbers is odd. These two cases cover all possible pairs of consecutive numbers, and in both cases, we found the statement to be \text{true}, so the conjecture is \textsc{true}. We are done! \hspace{120mm}}
+\end{align*}\]</span></p>
+<p>Here’s what the proof looks like in full:
+<span class="math display">\[\begin{align*}
+    \intertext{\textbf{Conjecture: }The product of two consecutive numbers is even. \\
+    \textbf{Proof:} We call our two consecutive numbers $a$ and $b$. W.l.o.g., let $a$ be the smaller of the two. \\
+    \textbf{Case 1:} $a$ even, $b$ odd.}
+    a &amp;= 2m \\
+    b &amp;= 2m + 1 
+    \intertext{Thus,}
+    a \cdot b &amp;= (2m)\cdot (2m+1) \\
+    &amp;= 4m^2 + 2m\\
+    &amp;= 2(2m^2+m) 
+    \intertext{which is clearly even. \\
+    \textbf{Case 2:} $a$ odd, $b$ even.} 
+    a &amp;= 2m + 1 \\
+    b &amp;= (2m + 1) + 1 = 2m + 2
+    \intertext{Thus,}
+    a \cdot b &amp;= (2m + 1)\cdot (2m+2) \\
+    &amp;= 4m^2 + 4m + 2\\
+    &amp;= 2(2m^2+2m + 1) 
+    \intertext{which is clearly even. \hspace{110mm}$\square$}
+\end{align*}\]</span></p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="knowing-when-to-use-cases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/13-test.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/13-test.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
