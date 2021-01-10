@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 14 Proof by induction | An Introduction to Mathematical Proof</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 14 Proof by induction | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta property="og:description" content="Description" />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 14 Proof by induction | An Introduction to Mathematical Proof" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book." />
+  <meta name="twitter:description" content="Description" />
   
 
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-01-09" />
+<meta name="date" content="2021-01-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -70,7 +70,7 @@
 <li><a href="./">An Introduction to Mathematical Proof</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting started</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a></li>
 <li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a></li>
 <li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a></li>
@@ -109,23 +109,153 @@
             <section class="normal" id="section-">
 <div id="proof-by-induction" class="section level1" number="14">
 <h1><span class="header-section-number">Chapter 14</span> Proof by induction</h1>
-<p>Text</p>
-<div id="test-2.1" class="section level2" number="14.1">
-<h2><span class="header-section-number">14.1</span> Test 2.1</h2>
-<p>Text</p>
-<div id="test-2.1.1" class="section level3" number="14.1.1">
-<h3><span class="header-section-number">14.1.1</span> Test 2.1.1</h3>
-<p>Text</p>
+<p>One of the simplest, but most powerful techniques of proof is <em>Induction</em>. We use it to show that a conjecture is true for all integers above (and including) a specified integer.</p>
+<div id="the-steps" class="section level2" number="14.1">
+<h2><span class="header-section-number">14.1</span> The steps</h2>
+<p>There are two things to do:</p>
+<p><strong>First</strong>, <em>assume</em> that the conjecture is true for <span class="math inline">\(a\)</span> (or whatever is the subject of the conjecture), and show that the conjecture would also be correct for the next number <span class="math inline">\(a + 1\)</span>.</p>
+<p><strong>Second</strong>, show that the conjecture is true for the lowest value of <span class="math inline">\(a\)</span>, called <span class="math inline">\(a_0\)</span>. This is known the ‘base case.’</p>
+<p>And you’re done!</p>
 </div>
+<div id="the-domino-analogy" class="section level2" number="14.2">
+<h2><span class="header-section-number">14.2</span> The domino analogy</h2>
+<p>Think of this method of proof like a row of dominoes, and you want every domino to fall over:</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-99"></span>
+<img src="figures/dominoeffect.png" alt="A row of dominoes. Source: Pokipsy76 via commonswiki." width="65%" />
+<p class="caption">
+Figure 14.1: A row of dominoes. Source: Pokipsy76 via commonswiki.
+</p>
 </div>
-<div id="test-2.2" class="section level2" number="14.2">
-<h2><span class="header-section-number">14.2</span> Test 2.2</h2>
-<p>Text</p>
-<div id="test-2.2.1" class="section level3" number="14.2.1">
-<h3><span class="header-section-number">14.2.1</span> Test 2.2.1</h3>
-<p>Text</p>
+<p>First, you make sure that each domino is spaced so that if the one before it falls, then it too will fall. This is proving that if the conjecture is true for <span class="math inline">\(a\)</span>, it’s also true for <span class="math inline">\(a+1\)</span>.</p>
+<p>Next, you push the first domino. This is proving the conjecture is true for the base case, <span class="math inline">\(a_0\)</span>.</p>
+<p>The result: all the dominoes will fall - <a href="https://www.youtube.com/watch?v=TE5RdFFgW0w" class="uri">https://www.youtube.com/watch?v=TE5RdFFgW0w</a>.</p>
+</div>
+<div id="when-to-use-induction" class="section level2" number="14.3">
+<h2><span class="header-section-number">14.3</span> When to use induction</h2>
+<p>We usually use a proof by induction when the conjecture:</p>
+<ul>
+<li>is dealing with integers,</li>
+<li>has an obvious starting point, for example “for all positive integers…,” “for all three-digit primes,” “for all odd numbers,” etc.</li>
+</ul>
+</div>
+<div id="identifying-the-base-case" class="section level2" number="14.4">
+<h2><span class="header-section-number">14.4</span> Identifying the base case</h2>
+<p>It’s easy to identify the base case <span class="math inline">\(a = a_0\)</span>, as it will be obvious from the conjecture. For example, if the conjecture begins:</p>
+<ul>
+<li><p>“For all integers greater than or equal to 2 …,” then your base case is <span class="math inline">\(a_0 = 2\)</span>.</p></li>
+<li><p>“For all positive integers …,” your base case is <span class="math inline">\(a_0 = 1\)</span>.</p></li>
+<li><p>“For all non-negative integers …,” your base case is <span class="math inline">\(a_0 = 0\)</span>.</p></li>
+<li><p>“For all integers greater than <span class="math inline">\(-10\)</span> …,” your base case is <span class="math inline">\(a_0 = -9\)</span>.</p></li>
+<li><p>“For all composite numbers …,” your base case is <span class="math inline">\(a_0 = 4\)</span>.</p></li>
+</ul>
+</div>
+<div id="formal-definition-2" class="section level2" number="14.5">
+<h2><span class="header-section-number">14.5</span> Formal definition</h2>
+<p>To prove <span class="math inline">\(P \Rightarrow Q\)</span> for all <span class="math inline">\(a\)</span> (where usually <span class="math inline">\(a \in \mathbb Z\)</span>) by induction, show that</p>
+<center>
+<p>If <span class="math inline">\(P \Rightarrow Q\)</span> for <span class="math inline">\(a\)</span>, then <span class="math inline">\(P \Rightarrow Q\)</span> for <span class="math inline">\(a+1\)</span></p>
+</center>
+<p>and</p>
+<center>
+<p><span class="math inline">\(P \Rightarrow Q\)</span> for <span class="math inline">\(a_0\)</span>,</p>
+</center>
+<p>where <span class="math inline">\(a_0\)</span> is the smallest example of <span class="math inline">\(a\)</span>.</p>
+</div>
+<div id="practice-2" class="section level2" number="14.6">
+<h2><span class="header-section-number">14.6</span> Practice</h2>
+<p>As always, a method of proof is easier to understand when actually doing it. Use the examples below to get hands on with this method. As always, if the conjecture is not in the form <strong>If … then …</strong>, make sure you rewrite it before starting the proof.</p>
 
+<div class="example">
+<p><span id="exm:unnamed-chunk-100" class="example"><strong>Example 14.1  </strong></span>Consider the following conjecture:</p>
+<p>Conjecture 14.1 : The sum of the first <span class="math inline">\(a\)</span> positive integers is given by <span class="math inline">\(\frac{a(a+1)}{2}\)</span></p>
 </div>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Step 1: Show that if the conjecture is true for <span class="math inline">\(a\)</span>, then it must be true for <span class="math inline">\(a+1\)</span>.</p>
+<p>We assume that the sum of the first <span class="math inline">\(a\)</span> positive integers is <span class="math inline">\(\frac{a(a+1)}{2}\)</span>. The sum of the first <span class="math inline">\(a+1\)</span> positive integers would therefore be</p>
+<p><span class="math display">\[\begin{align}
+  \frac{(a+1)((a+1)+1)}{2}
+\end{align}\]</span></p>
+<p>which was found by replacing any appearance of <span class="math inline">\(a\)</span> with <span class="math inline">\(a+1\)</span>. Let’s simplify</p>
+<p><span class="math display" id="eq:pursuit">\[\begin{align}
+  \frac{(a+1)((a+1)+1)}{2} &amp;= \frac{(a+1)(a+1+1)}{2} \\
+  &amp;= \frac{(a+1)(a+2)}{2} \\
+  &amp;= \frac{a^2+3a+2}{2}. \tag{14.1}
+\end{align}\]</span></p>
+<p>But if the sum of the first <span class="math inline">\(a\)</span> positive integers is <span class="math inline">\(\frac{a(a+1)}{2}\)</span>, then the sum of the first <span class="math inline">\(a+1\)</span> positive integers is <span class="math inline">\((a+1)\)</span> more than <span class="math inline">\(\frac{a(a+1)}{2}\)</span>, so</p>
+<p><span class="math display" id="eq:paper">\[\begin{align}
+  \frac{a(a+1)}{2} + (a+1). \tag{14.2}
+\end{align}\]</span></p>
+<p>Let’s simplify Equation <a href="proof-by-induction.html#eq:paper">(14.2)</a> and check whether this is same as Equation <a href="proof-by-induction.html#eq:pursuit">(14.1)</a>.</p>
+<p><span class="math display">\[\begin{align}
+  \frac{a(a+1)}{2} + (a+1) &amp;= \frac{a(a+1)}{2} + \frac{2(a+1)}{2} \\
+  &amp;= \frac{a(a+1) + 2(a+1)}{2} \\
+  &amp;= \frac{a^2+a + 2a+2}{2} \\
+  &amp;= \frac{a^2+3a+2}{2}
+\end{align}\]</span></p>
+<p>which is the same as we found in Equation <a href="proof-by-induction.html#eq:pursuit">(14.1)</a>. We have proved that if the conjecture is true for the first <span class="math inline">\(a\)</span> positive integers, it will be true for the first <span class="math inline">\(a+1\)</span> positive integers.</p>
+<p>Step 2: We should show that the conjecture is true for the base case. For this conjecture, the base case is <span class="math inline">\(a_0 = 1\)</span>, as we’re concerned with the first <span class="math inline">\(a\)</span> positive integers and the first positive integer is 1.</p>
+<p>The sum of the first 1 positive integers is 1. Let’s substitute <span class="math inline">\(a_0 = 1\)</span> into <span class="math inline">\(\frac{a(a+1)}{2}\)</span> and check we get this:</p>
+<p><span class="math display">\[\begin{align}
+  \frac{a(a+1)}{2} &amp;= \frac{1(1+1)}{2} \\
+  &amp;= \frac{2}{2} \\
+  &amp;= 1
+\end{align}\]</span></p>
+<p>We’ve shown the conjecture is true for the base case, <span class="math inline">\(a=1\)</span>.</p>
+</div>
+<p>Because we’ve also shown that if the conjecture is true for <span class="math inline">\(a\)</span>, it’s true for <span class="math inline">\(a+1\)</span>, we know the conjecture is true for <span class="math inline">\(a=2\)</span>. And as the conjecture is true for <span class="math inline">\(a=2\)</span>, it must be true for <span class="math inline">\(a=3\)</span>. And as the conjecture is true for <span class="math inline">\(a=3\)</span>, it must be true for <span class="math inline">\(a=4\)</span>, and so on.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-102" class="example"><strong>Example 14.2  </strong></span>Consider the following conjecture:</p>
+<p>Conjecture 14.2 : Every non-negative integer is either even or odd.</p>
+<p>For this conjecture, we’ll need a proof by induction <em>using cases</em>.</p>
+</div>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Step 1: Show that if the conjecture is true for <span class="math inline">\(a\)</span>, then it must be true for <span class="math inline">\(a+1\)</span>.</p>
+<p><strong>Case 1:</strong> Consider two consecutive numbers <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. If <span class="math inline">\(x\)</span> is even, it can be written as <span class="math inline">\(2k\)</span>, where <span class="math inline">\(k\)</span> is some integer. As <span class="math inline">\(y\)</span> is consecutive to <span class="math inline">\(x\)</span>, it must equal <span class="math inline">\(2k + 1\)</span>, which means it is odd. We have shown that odd numbers always follow even numbers.</p>
+<p><strong>Case 2:</strong> Consider two consecutive numbers <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. If <span class="math inline">\(x\)</span> is odd, it can be written as <span class="math inline">\(2k +1\)</span>, where <span class="math inline">\(k\)</span> is some integer. As <span class="math inline">\(y\)</span> is consecutive to <span class="math inline">\(x\)</span>, it must equal <span class="math inline">\((2k + 1) + 1 = 2k + 2\)</span> which can be written as <span class="math inline">\(2(k + 1)\)</span>, which means it is even. We have shown that even numbers always follow odd numbers.</p>
+<p>Step 2: We should show that the conjecture is true for the base case. As the conjecture concerns non-negative integers, our base case is <span class="math inline">\(a_0 = 0\)</span>. 0 is even, because <span class="math inline">\(0 = 2(0)\)</span>. We are done. </p>
+</div>
+<p>Why are we done?? Because 0 is even, then 1 must be odd and because 1 is odd, 2 must be even, and so on, till infinity…</p>
+<div class="alert alert-warning" role="alert">
+<p><strong>Note
+</strong> We could use a similar proof to show this conjecture is also true till negative infinity. See the next section.</p>
+</div>
+</div>
+<div id="going-the-other-way" class="section level2" number="14.7">
+<h2><span class="header-section-number">14.7</span> Going the “other” way</h2>
+<p>The method of proof by induction I have so far described is built for proving all cases till <em>positive</em> infinity, from the base case upwards.</p>
+<p>Quite easily, however, this method can be modified to prove all cases till <em>negative</em> infinity, from the base case <strong>downwards</strong>.</p>
+<p>For example, with Conjecture <a href="#cnj:progress">14.2</a> above, instead of showing that odd numbers always follow even numbers, you could show that even numbers always <em>precede</em> odd numbers (and that odd numbers always precede even numbers). Then, by using a base case of <span class="math inline">\(a_0 = -1\)</span>, you could prove this conjecture for all negative integers till negative infinity. (See conjectures <a href="#cnj:prayer">14.11</a> and <a href="#cnj:pillow">14.12</a> below.)</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-104" class="exercise"><strong>Exercise 14.1  </strong></span>Try to prove the following conjectures using induction. I’m not promising that they’re all true, but they <em>might</em> be. If a conjecture is not true, find a counterexample which disprove it.</p>
+<p>Conjecture 14.3 : The sum of two consecutive positive integers is odd. We have proved this theorem before, but try to prove it again using induction.</p>
+<p>Conjecture 14.4 : The sum of the first <span class="math inline">\(a\)</span> positive odd numbers equals <span class="math inline">\(a^2\)</span>.</p>
+<p>Conjecture 14.5 : <span class="math inline">\(2^a &gt; a\)</span> for all non-negative integers <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 14.6 : <span class="math inline">\(8^a - 1\)</span> is divisible by 7 for any positive integer <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 14.7 : <span class="math inline">\(8a - 1\)</span> is divisible by 7 for any positive integer <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 14.8 : Any group of students is able to be split up into groups of twos, groups of threes, or a combination of groups of twos and threes.</p>
+<p>Conjecture 14.9 : Any group of students greater than two is able to be split up into groups of threes, groups of fours, or a combination of groups of threes and fours.</p>
+<p>Conjecture 14.10 : Any amount greater than or equal to 12 soms can be made using an infinite supply of 4-som and 5-som coins.</p>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-105" class="exercise"><strong>Exercise 14.2  </strong></span>Use a proof by induction in the opposite direction (towards negative infinity) to prove:</p>
+<p>Conjecture 14.11 : Every negative integer is either even or odd. (See Conjecture <a href="#cnj:progress">14.2</a> for the non-negative version of this.)</p>
+<p>Conjecture 14.12 : <span class="math inline">\(2^a &gt; a\)</span> for all negative integers <span class="math inline">\(a\)</span>.</p>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-106" class="exercise"><strong>Exercise 14.3  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using any of the methods we have so far covered.</p>
+<p>Conjecture 14.13 : The rows of Pascal’s Triangle are all powers of 11.</p>
+<p>Conjecture 14.14 : The product of any amount of odd numbers is odd.</p>
+</div>
+</div>
+<!-- private platform pan peak passion please person -->
+
 </div>
 </div>
             </section>

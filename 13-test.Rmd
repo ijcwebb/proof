@@ -309,7 +309,7 @@ The game Tenzi (https://ilovetenzi.com) uses forty 6-sided dice, each numbered 1
         
 (\#cnj:helicopter): If $a$ is an integer, then $a^2 + 1$ is prime.
         
-(\#cnj:homosexual): If $a > 0$, then $\sqrt a < a$.
+(\#cnj:homely): If $a > 0$, then $\sqrt a < a$.
         
 You have 27 small cubes, 3 each of nine different colours. <br /> (\#cnj:hypothesis): You can use all these small cubes to make a 3 x 3 x 3 cube so that *each* face of the bigger cube contains one of each of the nine colours.
 

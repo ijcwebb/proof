@@ -142,44 +142,44 @@ A good statement should stand on its own, and not rely on the reader knowing pre
 
 Now it's your turn. Bring your answers to our next class. 
 
-Going forward, all statements will be coloured yellow, \hl{like this!}
-
+<div class="alert alert-info" role="alert">
 ```{exercise}
 Take a look at the statements below. Are all the terms clear? Do you understand all the terms? If not, do you think you could find out their meaning on your own? Do any of the statements need more explanation by the author?
     
-1. It is hot today.
-2. It is hotter today than it was yesterday.
-3. The highest temperature on record, 54.4$^{\circ}$C or 130$^{\circ}$F, was measured on 16th August 2020 at the Death Valley National Park in California.
-4. The explosion in Beirut in August 2020 could have been avoided.
-5. 24 is a nice number.
-6. 28 is a perfect number.
-7. Two negatives make a positive.
-8. Aman has a twin sister.
-9. Ariana Grande was the most streamed artist of the year.
-10. On average it rains more in Wales than it does in Kyrgyzstan.
+a. It is hot today.
+b. It is hotter today than it was yesterday.
+c. The highest temperature on record, 54.4$^{\circ}$C or 130$^{\circ}$F, was measured on 16th August 2020 at the Death Valley National Park in California.
+d. The explosion in Beirut in August 2020 could have been avoided.
+e. 24 is a nice number.
+f. 28 is a perfect number.
+g. Two negatives make a positive.
+h. Aman has a twin sister.
+i. Ariana Grande was the most streamed artist of the year.
+j. On average it rains more in Wales than it does in Kyrgyzstan.
 ```
 
 ```{solution}
-1. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
-2. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
-3. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.
+a. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
+b. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
+c. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.
 
 ```
 
 ```{exercise}
 Using the three rules given above, which of the following statements are good? What is wrong with the others?
     
-1. The cyrillic alphabet contains 33 letters.
-2. Gunnar Garfors has visited every country in the world.
-3. People find it harder to concentrate on one task than they used to.
-4. Mobile phones have gotten more powerful over time.
-5. Video games help people relax.
-6. The US is larger than China.
-7. The last word of this sentence is.
-8. This sentence contains four e's.
-9. This sentence contains 3 1's, 1 2 and 2 3's.
-10. The longest word in this sentence is "complementary".
+a. The cyrillic alphabet contains 33 letters.
+b. Gunnar Garfors has visited every country in the world.
+c. People find it harder to concentrate on one task than they used to.
+d. Mobile phones have gotten more powerful over time.
+e. Video games help people relax.
+f. The US is larger than China.
+g. The last word of this sentence is.
+h. This sentence contains four e's.
+i. This sentence contains 3 1's, 1 2 and 2 3's.
+j. The longest word in this sentence is "complementary".
 ```
+</div>
 
 <div class="alert alert-success" role="alert">
 <strong> What have we learnt? </strong> 

@@ -7,14 +7,15 @@ documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using
-  the bookdown package to write a book."
+description: "Description"
 ---
-# Getting started
+# Introduction
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+Welcome! It's lovely to have you here!
 
 ```{r, echo=FALSE}
 knitr::include_graphics(rep("figures/head1.png"))
@@ -22,21 +23,29 @@ knitr::include_graphics(rep("figures/head1.png"))
 
 ## About this course
 
-The course this book accompanies "Reason and Argue Better: Logic in Proof and Argument", which was written between 2018-2019 and has been taught every semester since.
+This book accompanies the course "Reason and Argue Better: Logic in Proof and Argument", which was written between 2018-2019 and has been taught every semester since.
+
+This is the third semester that this course has been taught online or partly online. The course has been adapted for online teaching, with some elements simplified and others expanded. Completing this course online offers some challenges, but also opportunities for things not possible when offline. 
 
 ## About this book
 
-This book contains the material we will study as well as exercises (see the next section) and links for further reading. Most weeks I will assign you a chapter to read, and you should complete both the reading and the exercises within the chapter before our next class. This is a "living" textbook, which means that it will be updated throughout the course. This is for two reasons: (i) because mistakes are noticed (by you or me) and corrections made, (ii) because I am still writing and improving sections of it. Therefore, even though you *can* read ahead of the set chapter, you are advised that later chapters might change.
+This book contains the material we will study as well as exercises (see the next section) and links for further reading. Most weeks I will assign you a chapter to read, and you should complete both the reading and the exercises within the chapter before our next class. 
 
-Also note that because this textbook will be updated during the course, you are advised to access the book at the link at https://ijcwebb.github.io/proof, rather than printing or downloading the book.
+This textbook may be updated during the course. Therefore you are advised to access the book at the link at https://ijcwebb.github.io/proof, rather than printing or downloading it. Also, even though you *can* read ahead of the set chapter, you are advised that later chapters might change as the course procedes.
 
-## In this book...
+Part I of this book (chapters 2-5) covers the terminology surrounding mathematical proof, part II (chapters 6-9) covers the basics of proof, and chapters 10-16 in part III each cover a different method of proof. Chapter 17 covers mathematical completeness.
+
+## How to use this book
+
+When completing the week's reading, you will encounter some exercises. I will indicate which of these you should attempt.
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
 Regular exercises look like this...
   
-1. ...with subparts like this.
+a. ...with subparts...
+b. ...like this.
+
 ```  
 </div>
 
@@ -47,9 +56,14 @@ Solutions might be included underneath exercises, in which case you should aim t
 
 <div class="alert alert-danger" role="alert">
 ```{exercise}
-Extension exercises look like this. These are exercises that require a little more thought. Solutions won't be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss.
+Extension exercises look like this. These are exercises that require a little more thought. 
+
+Solutions won't be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss.
+
 ```
 </div>
+
+There are a couple of other coloured boxes used in this book:
 
 <div class="alert alert-warning" role="alert">
 <strong>Careful!
@@ -62,58 +76,4 @@ Extension exercises look like this. These are exercises that require a little mo
 These boxes are found at the end of each chapter, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too. 
 </div>
 
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  (\#eq:binom)
-\end{equation}
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-\end{equation}
-
-\begin{align}
-a_1& =b_1+c_1\\
-a_2& =b_2+c_2-d_2+e_2\\
-\mathbb R
-\end{align}
-
-\begin{equation}
-y = mx+b
-\end{equation}
-
-\begin{exercise} 
-  \item One
-\end{exercise}
-
-```{theorem}
-Here is my theorem.
-```
-
-```{lemma}
-Here is my lemma
-```
-
-```{corollary}
-Here is my corollary
-```
-
-```{proposition}
-Here is my proposition
-```
-
-```{conjecture}
-Here is my conjecture
-```
-
-```{definition}
-Here is my definition
-```
-
-```{example}
-Here is my example
-```
-
-```{exercise}
-Here is my exercise.
-```
+That's it. You're ready to begin!

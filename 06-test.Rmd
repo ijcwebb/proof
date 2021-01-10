@@ -13,7 +13,7 @@ In mathematics, once we have identified a statement which we would like to try t
 If we are successful in proving it, the conjecture is renamed a **theorem**. If it is disproved, it is called a **disproved conjecture}. Only statements that have been proved true} can be called theorems.
 
 ```{r, echo=FALSE, out.width="65%", fig.cap="The journey of a statement.", fig.align="center"}
-knitr::include_graphics(rep("figures/statementjourney.jpg"))
+knitr::include_graphics(rep("figures/statementjourney.png"))
 ```
 
 \* A mathematical statement obviously!
