@@ -1,11 +1,31 @@
 # Statements
 
-A statement is a remark or declaration. Here are some examples:
+A statement is a **remark** or **declaration**. Here are some examples:
 
-- Life is pain.
-- I am 19 years old.
-- I like your hat.
-- London is the capital of Great Britain.
+```{example}
+Life is pain.
+
+```
+
+```{example}
+I am 19 years old.
+
+```
+
+```{example}
+I like your hat.
+
+```
+
+```{example}
+London is the capital of Great Britain.
+
+```
+
+```{example}
+Four people are traveling to different places on different types of transport.
+
+```
 
 ## Non-statements    
 
@@ -13,33 +33,84 @@ So what is *not* a statement? I've listed four types of non-statements below. Ca
 
 ### Fragments
 
-- Fish.
-- I am.
-- Bro.
+Fragments are incomplete sentences, and are not statements.
 
-These are incomplete sentences, and are therefore not statements.
-    
+```{example}
+Fish.
+
+```
+
+```{example}
+I am.
+
+```
+
+```{example}
+Bro!
+
+```
+
+```{example}
+Okurrr.
+
+```
+
 ### Questions
 
-- What is $2 \cdot 2$?
-- Are you going to eat that?
-- What is this life if full of care?
-
 Anything that ends with a question mark is not a statement; it's a question.
-    
+
+```{example}
+What is $2 \cdot 2$?
+
+```
+
+```{example}
+Are you going to eat that?
+
+```
+
+```{example}
+What is this life if full of care?
+
+```
+
 ### Implicit answers
 
-- $162.5$
-- Yes it is.
-- The day after tomorrow.
-
 Anything that answers a question, without explicitly referencing the question, is not a statement. Or at least, not one that we can work with.
-    
+
+```{example}
+$162.5$
+
+```
+
+```{example}
+Yes it is.
+
+```
+
+```{example}
+The day after tomorrow.
+
+```
+
 ### Exclamations
 
-- Dang!
-- Ura!
-- Phew!
+These are like fragments, and are not complete sentences.
+
+```{example}
+Dang!
+
+```
+
+```{example}
+Ura!
+
+```
+
+```{example}
+Phew!
+
+```
 
 ## What makes a *good* statement?
 
@@ -49,55 +120,92 @@ Not all statements are equally good! Some are better than others. Follow the rul
 
 All the words in a statement should *either* already be understood by the reader, or should be easy to Google. Let's look at some examples:
 
-> **Bishkek** is the **capital** of the **Kyrgyz Republic**.
+```{example} 
+**Bishkek** is the **capital** of the **Kyrgyz Republic**.
+
+```
 
 This is nice and clear. We know what the Kyrgyz Republic is, we know what Bishkek is, and we know what a capital is.
 
-> The **human foot** is comprised of 26 **bones**.
+```{example} 
+The **human foot** is comprised of 26 **bones**.
+
+```
 
 Again, this statement is nice and clear. We know what each term means.
     
-> An **atom** of **uranium** has one more **electron** than an **atom** of **protactinium**.
+```{example} 
+An **atom** of **uranium** has one more **electron** than an **atom** of **protactinium**.
+
+```
 
 We might not understand every term here, but we could use Google to find out more.
     
-> <span style="color:red">The **candidate** won the **popular vote** but lost the **election**.</span>
+```{example} 
+The **candidate** won the **popular vote** but lost the **election**.
+    
+```
 
 This isn't clear, and no matter how much Googling we do, we won't be able to clarify the details. We need to ask the author of the statement: Which election? Which year? Which candidate?
     
-> <span style="color:red">**I love you**.
+```{example} 
+**I love you**.
+
+```
 
 On its own, this statement isn't clear enough. Who is speaking, and to whom?
 
 Once we understand that, we need to ask whether **love** is clearly defined? Are we talking about something from the soul? Something biological? Familiar love? Friendship?
     
-> <span style="color:red">1000 is a **large** number.
+```{example} 
+1000 is a **large** number.
+
+```
 
 There's only one word here which is not clear: large. It's not clear how the author is defining large. Maybe the author could change the statement to compare it with something:
 
-> 1000 is larger than 500.
+```{example} 
+1000 is larger (higher) than 500.
 
-> 1000 people died today in our country, the largest **daily total** since the **global pandemic** began.
+```
+
+```{example} 
+1000 people died of **Covid-19** today in the U.S., the largest **daily total** since the **global pandemic** began.
+
+```
         
-> 1000 is the largest number for which the **Romans** had a **symbol**.
+```{example} 
+1000 is the largest number for which the **Romans** had a **symbol**.
 
-In all three of these statements, the word ``large'' has now  been given clear meaning.
+```
+
+In all three of these statements, the word "large" has now  been given clear meaning.
 
 ### No paradoxes!
 
-Paradoxes contradict themselves. These statements rely more on tricks of language:
+Paradoxes contradict themselves. They are statements which are built on tricks of language:
     
-> This statement is not clear.
+```{example} 
+This sentence is not clear.
 
-> This statement is false.
+```
 
-> The statement below is not true. </br> The statement above is true. 
+```{example} 
+This sentence is false.
+
+```
+
+```{example} 
+The next sentence is not true. The previous sentence is true.
+
+```
             
 Because paradoxes are built to contradict themselves, they aren't much use to us. Therefore we'll avoid them in this course.^[They are good for keeping our brains busy though!]
 
 <div class="alert alert-danger" role="alert">
 ```{exercise}
 Can you find any other paradoxical statements? What makes them paradoxical?
+
 ```  
 </div>
 
@@ -152,18 +260,19 @@ g. The last word of this sentence is.
 h. This sentence contains four e's.
 i. This sentence contains 3 1's, 1 2 and 2 3's.
 j. The longest word in this sentence is "complementary".
+
 ```
 </div>
 
 <div class="alert alert-success" role="alert">
 <strong> What have we learnt? </strong> 
 
-- We understand what *isn't* a statement, what's a *bad* statement and what's a *good* statement. 
-- We also understand... 
+- We know what *isn't* a statement.
+- We know what makes a *bad* statement.
+- We know what makes a *good* statement.
 
 </div>
-    
-        
-In this course, we will only work with good, high-quality statements.
+
+In this course, we will only work with good, high-quality statements. You should ensure that any statement *you* write obeys the above rules.
         
 Next, let's look at whether good statements are true or not. 
