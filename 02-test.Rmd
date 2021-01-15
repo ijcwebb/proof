@@ -49,65 +49,37 @@ Not all statements are equally good! Some are better than others. Follow the rul
 
 All the words in a statement should *either* already be understood by the reader, or should be easy to Google. Let's look at some examples:
 
-<center>
-
-**Bishkek** is the **capital** of the **Kyrgyz Republic**.
-
-</center>
+> **Bishkek** is the **capital** of the **Kyrgyz Republic**.
 
 This is nice and clear. We know what the Kyrgyz Republic is, we know what Bishkek is, and we know what a capital is.
 
-<center>
-
-The **human foot** is comprised of 26 **bones**.
-
-</center>
+> The **human foot** is comprised of 26 **bones**.
 
 Again, this statement is nice and clear. We know what each term means.
     
-<center>
-
-An **atom** of **uranium** has one more **electron** than an **atom** of **protactinium**.
-
-</center>
+> An **atom** of **uranium** has one more **electron** than an **atom** of **protactinium**.
 
 We might not understand every term here, but we could use Google to find out more.
     
-<center>
-
-<span style="color:red">The **candidate** won the **popular vote** but lost the **election**.</span>
-
-</center>
+> <span style="color:red">The **candidate** won the **popular vote** but lost the **election**.</span>
 
 This isn't clear, and no matter how much Googling we do, we won't be able to clarify the details. We need to ask the author of the statement: Which election? Which year? Which candidate?
     
-<center>
-
-<span style="color:red">**I love you**.
-
-</center>
+> <span style="color:red">**I love you**.
 
 On its own, this statement isn't clear enough. Who is speaking, and to whom?
 
 Once we understand that, we need to ask whether **love** is clearly defined? Are we talking about something from the soul? Something biological? Familiar love? Friendship?
     
-<center>
-        
-<span style="color:red">1000 is a **large** number.
-
-</center>
+> <span style="color:red">1000 is a **large** number.
 
 There's only one word here which is not clear: large. It's not clear how the author is defining large. Maybe the author could change the statement to compare it with something:
 
-<center>
+> 1000 is larger than 500.
 
-1000 is larger than 500.
-
-1000 people died today in our country, the largest **daily total** since the **global pandemic** began.
+> 1000 people died today in our country, the largest **daily total** since the **global pandemic** began.
         
-1000 is the largest number for which the **Romans** had a **symbol**.
-        
-</center>
+> 1000 is the largest number for which the **Romans** had a **symbol**.
 
 In all three of these statements, the word ``large'' has now  been given clear meaning.
 
@@ -115,16 +87,11 @@ In all three of these statements, the word ``large'' has now  been given clear m
 
 Paradoxes contradict themselves. These statements rely more on tricks of language:
     
-<center>
+> This statement is not clear.
 
-This statement is not clear.
+> This statement is false.
 
-This statement is false.
-
-The statement below is not true.
-The statement above is true. 
-
-</center>
+> The statement below is not true. </br> The statement above is true. 
             
 Because paradoxes are built to contradict themselves, they aren't much use to us. Therefore we'll avoid them in this course.^[They are good for keeping our brains busy though!]
 
