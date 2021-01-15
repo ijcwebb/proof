@@ -136,7 +136,7 @@ Can you find any other paradoxical statements? What makes them paradoxical?
 
 ### Statements should stand on their own
 
-Don't you hate that feeling when you start watching a film but nothing makes sense because you didn't watch the previous films in the series?^[I had watched *none* of the previous Marvel movies before watching *Avengers: Endgame*. I understood nothing and had to spend an hour afterwards quizzing my boyfriend on the Tesseract, the Ancient One, and what Robert Downey Jr. was doing stranded in space. I think I got it.]
+Don't you hate that feeling when you start watching a film but nothing makes sense because you didn't watch the previous films in the series?^[I had watched *none* of the previous Marvel movies before watching *Avengers: Endgame*. I understood nothing and had to spend an hour afterwards quizzing my boyfriend on the Tesseract, the Ancient One, and what Robert Downey Jr. was doing stranded in space. I *think* I got it.]
     
 A good statement should stand on its own, and not rely on the reader knowing previous statements. If it *does* assume knowledge of previous statements, they should be referenced or restated, like including a plot synopsis for the previous movies!
 
@@ -161,6 +161,8 @@ j. On average it rains more in Wales than it does in Kyrgyzstan.
 </div>
 
 ```{solution}
+Here are a few solutions to the above exercise.
+
 a. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
 
 b. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
