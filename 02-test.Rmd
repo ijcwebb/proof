@@ -156,15 +156,20 @@ g. Two negatives make a positive.
 h. Aman has a twin sister.
 i. Ariana Grande was the most streamed artist of the year.
 j. On average it rains more in Wales than it does in Kyrgyzstan.
+
 ```
+</div>
 
 ```{solution}
 a. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
+
 b. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
+
 c. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.
 
 ```
 
+<div class="alert alert-info" role="alert">
 ```{exercise}
 Using the three rules given above, which of the following statements are good? What is wrong with the others?
     
