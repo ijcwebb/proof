@@ -76,7 +76,7 @@ What is this life if full of care?
 
 ### Implicit answers
 
-Anything that answers a question, without explicitly referencing the question, is not a statement. Or at least, not one that we can work with.
+Anything that answers a question, **without explicitly referencing the question**, is not a statement. Or at least, not one that we can work with.
 
 ```{example}
 $162.5$
@@ -103,7 +103,7 @@ Dang!
 ```
 
 ```{example}
-Ura!
+Ura!!
 
 ```
 
@@ -238,9 +238,9 @@ j. On average it rains more in Wales than it does in Kyrgyzstan.
 ```{solution}
 Here are a few solutions to the above exercise.
 
-a. It is not clear what hot means. Definitions of hot will vary around the world and from person to person.
+a. It is not clear what hot means. Definitions of hot will vary around the world and from person to person. It's also not clear which day the statement is talking about (i.e. when the statement was written).
 
-b. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time?
+b. This is clearer than the previous statement, however we could benefit from knowing where this statement is talking about. Bishkek? New York? Night time? Day time? And again, it's not clear which day the statement is talking about (i.e. when the statement was written).
 
 c. This is pefectly clear. We know where and when the statement is talking about, that it is referring to a peak temperature, and that it is not claiming that this was indeed the highest temperature ever on Earth, merely that it is the highest on record.
 
