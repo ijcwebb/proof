@@ -20,6 +20,8 @@ f. $a^2+b^2=c^2$, where $a$, $b$, $c = 1$.
 g. $a = b+c$.
 h. $1000$ is a large number.
 
+See below for the answers.
+
 ```  
 </div>
 
@@ -71,19 +73,17 @@ This statement doesn't have a clearly defined truth value because it depends on 
     
 Let's look at two more examples: 
 
-<center>
-
+```{example}
 $4x>0$
 
-</center> 
+```
 
 Why is the truth value of this statement not clearly defined? It's because there is not enough information. Its truth value depends entirely on the value of $x$, about which we know nothing. If we choose $x$ to be 10, this statement is true, but if we choose $x$ to be $-5$, the statement is false. 
 
-<center>
-
+```{example}
 Bishkek is a big city.
 
-</center> 
+```
 
 We've already said that good statements are clear and specific. The reason for this is so that we can decide their truth value. 
     
@@ -161,7 +161,7 @@ It's also possible that a statement has a clearly defined truth value that we wi
 
 <div class="alert alert-danger" role="alert">
 ```{exercise}
-Do you know (or can find out about) any statemens which will have a clearly defined truth value but which no one in the world knows? Do people who know a lot about this statement think the truth value *will* one day be known, do they know it can never be know, or are they not sure? 
+Do you know (or can find out about) any statements which will have a clearly defined truth value but which no one in the world knows? Do people who know a lot about this statement think the truth value *will* one day be known, do they know it can never be known, or are they not sure? 
 
 ``` 
 </div>
@@ -170,7 +170,7 @@ Do you know (or can find out about) any statemens which will have a clearly defi
 ```{exercise}
 Which of the following are important for a statement's truth value to be clearly defined?
 
-  - The statement contains enough information.
+  - The statement contains enough information to assess its truth value.
   - The statement is written in English.
   - The statement is about mathematics.
   - Any terms new to the reader are easy to look up using Google or in a book. 
