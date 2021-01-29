@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-01-22" />
+<meta name="date" content="2021-01-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -74,7 +74,7 @@
 <li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a></li>
 <li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a></li>
 <li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a></li>
-<li class="chapter" data-level="5" data-path="axioms.html"><a href="axioms.html"><i class="fa fa-check"></i><b>5</b> Axioms</a></li>
+<li class="chapter" data-level="5" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html"><i class="fa fa-check"></i><b>5</b> Axioms and definitions</a></li>
 <li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
 <li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
 <li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a></li>
@@ -171,7 +171,7 @@
 <p>In the table on the previous page, we referred to the phrase “without loss of generality,” or simply <em>w.l.o.g.</em> We can use it whenever simply switching the letters doesn’t fundamentally change the case we’re looking at.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-123" class="example"><strong>Example 13.1  </strong></span>Consider conjecture <a href="#cnj:have">13.2</a> from the table:</p>
+<p><span id="exm:unnamed-chunk-125" class="example"><strong>Example 13.1  </strong></span>Consider conjecture <a href="#cnj:have">13.2</a> from the table:</p>
 <p>Conjecture 13.2 : For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</p>
 <p>We use <strong>Case 1</strong> to check if the conjecture is true when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are non-negative. We use <strong>Case 2</strong> to check if the conjecture is true when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are negative. Finally, we should check if the conjecture is true if one of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is negative and the other is non-negative. We say, <em>without loss of generality</em>, that the negative one will be <span class="math inline">\(b\)</span> and the non-negative one will be <span class="math inline">\(a\)</span>.</p>
 <p>This means we need just three cases, not four:</p>
@@ -182,7 +182,7 @@ If we want to demonstrate this conjecture to someone by asking them to pick two 
 </div>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-124" class="example"><strong>Example 13.2  </strong></span>Consider the conjecture</p>
+<p><span id="exm:unnamed-chunk-126" class="example"><strong>Example 13.2  </strong></span>Consider the conjecture</p>
 <p>Conjecture 13.4 : The product of an odd integer and an even integer is even.</p>
 <p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. One of these integers is even, and the other is odd.</p>
 <p>W.l.o.g., let’s say that <span class="math inline">\(a\)</span> is the even one and <span class="math inline">\(b\)</span> is the odd one, so</p>
@@ -204,7 +204,7 @@ If we want to demonstrate this conjecture to someone by asking them to pick two 
 <p>Sometimes, however, w.l.o.g. doesn’t work. That’s because changing the letters <em>does</em> fundamentally change the case we’re considering. Let’s look at an example…</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-125" class="example"><strong>Example 13.3  </strong></span>Consider the conjecture</p>
+<p><span id="exm:unnamed-chunk-127" class="example"><strong>Example 13.3  </strong></span>Consider the conjecture</p>
 <p>Conjecture 13.5 : The product of two consecutive numbers is even.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></p>
 <p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. If two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive, then <span class="math inline">\(b = a + 1\)</span>. If we multiply them, we get</p>
 <p><span class="math display">\[\begin{align}
@@ -293,7 +293,7 @@ which is clearly even.</p>
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-127" class="exercise"><strong>Exercise 13.1  </strong></span>Verify that for the above examples, the cases are <strong>distinct</strong> and <strong>complete</strong>.
+<span id="exr:unnamed-chunk-129" class="exercise"><strong>Exercise 13.1  </strong></span>Verify that for the above examples, the cases are <strong>distinct</strong> and <strong>complete</strong>.
 </div>
 </div>
 <p><strong>Note:</strong> You might split the proof into cases differently to a classmate. Don’t worry! There’s many ways to prove the same thing - just make sure that when splitting up the problem into cases, you don’t miss any numbers!</p>
@@ -306,7 +306,7 @@ which is clearly even.</p>
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-128" class="exercise"><strong>Exercise 13.2  </strong></span>
+<p><span id="exr:unnamed-chunk-130" class="exercise"><strong>Exercise 13.2  </strong></span>
 a. Prove conjecture <a href="#cnj:hobby">13.1</a> from the table earlier in this chapter. Remember that we discussed the cases for this conjecture in the table.</p>
 <ol start="2" style="list-style-type: lower-alpha">
 <li><p>Prove conjecture <a href="#cnj:have">13.2</a> from the table earlier in this chapter. Remember that we discussed the cases for this conjecture in the table and afterwards.</p></li>
@@ -315,7 +315,7 @@ a. Prove conjecture <a href="#cnj:hobby">13.1</a> from the table earlier in this
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-129" class="exercise"><strong>Exercise 13.3  </strong></span>All of the conjectures below require a <strong>proof by cases</strong>. You should first identify the cases required (making sure they are distinct and complete), and show that the conjectures are true for each case.</p>
+<p><span id="exr:unnamed-chunk-131" class="exercise"><strong>Exercise 13.3  </strong></span>All of the conjectures below require a <strong>proof by cases</strong>. You should first identify the cases required (making sure they are distinct and complete), and show that the conjectures are true for each case.</p>
 <p>Conjecture 13.6 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are integers, <span class="math inline">\(a^2b^2\)</span> is even.</p>
 <p>Conjecture 13.7 : For all numbers <span class="math inline">\(a, b, c\)</span>, if <span class="math inline">\(ab = bc\)</span> then <span class="math inline">\(a = c\)</span>.</p>
 <p>Conjecture 13.8 : For any integer <span class="math inline">\(a\)</span>, <span class="math inline">\((3a-1)\)</span> is a multiple of 2.</p>
@@ -326,7 +326,7 @@ a. Prove conjecture <a href="#cnj:hobby">13.1</a> from the table earlier in this
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-130" class="exercise"><strong>Exercise 13.4  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using <strong>EITHER</strong> a proof by exhaustion, a direct proof or a proof by cases, unless directed otherwise.</p>
+<p><span id="exr:unnamed-chunk-132" class="exercise"><strong>Exercise 13.4  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using <strong>EITHER</strong> a proof by exhaustion, a direct proof or a proof by cases, unless directed otherwise.</p>
 <p>Conjecture 13.13 : There is no integer <span class="math inline">\(a\)</span> such that <span class="math inline">\(a^2 + a^3 = 100\)</span>.</p>
 <ol style="list-style-type: lower-roman">
 <li>Prove this conjecture using cases <span class="math inline">\(a \in \mathbb Z^-\)</span>, <span class="math inline">\(a = 0\)</span>, <span class="math inline">\(a \in \mathbb Z^+\)</span> with <span class="math inline">\(a &lt; 5\)</span>, and <span class="math inline">\(a \in \mathbb Z^+\)</span> with <span class="math inline">\(a \geq 5\)</span>.</li>
@@ -345,7 +345,7 @@ a. Prove conjecture <a href="#cnj:hobby">13.1</a> from the table earlier in this
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-131" class="exercise"><strong>Exercise 13.5  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using <strong>EITHER</strong> a proof by exhaustion, a direct proof or a proof by cases.</p>
+<p><span id="exr:unnamed-chunk-133" class="exercise"><strong>Exercise 13.5  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using <strong>EITHER</strong> a proof by exhaustion, a direct proof or a proof by cases.</p>
 <p>Conjecture 13.24 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both positive integers and <span class="math inline">\(n = ab\)</span>, then either <span class="math inline">\(a \leq \sqrt{n}\)</span> or <span class="math inline">\(b\leq \sqrt{n}\)</span>.</p>
 <p>Conjecture 13.25 : The only way for <span class="math inline">\(3a^2 + 4a + 3\)</span> to be even is if <span class="math inline">\(a\)</span> is odd.</p>
 <p>Conjecture 13.26 : For integers <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> and <span class="math inline">\(n\)</span>, <span class="math inline">\((an + b)\)</span> and <span class="math inline">\((cn + d)\)</span> have different parity to one another only when <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> have different parity to one another AND <span class="math inline">\(c\)</span> and <span class="math inline">\(d\)</span> have different parity to one another.</p>
