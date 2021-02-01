@@ -4,7 +4,7 @@ Now that we fully understand what makes a statement "mathematical", we should di
 
 ## Axioms are a special kind of mathematical statement
 
-Axioms are mathematical statements which are true, and are *self-evidently* so and therefore cannot be proved. They should be things so obviously true or so universally accepted, that when you read them, you say to yourself, "*Duh, of course!*"^[https://www.merriam-webster.com/dictionary/duh]. Axioms should be so obvious, that when asked to prove them, you end up scratching your head and shouting "C'MON, IT JUST *IS* TRUE!!!!".
+Axioms are mathematical statements which are true, and are *self-evidently* so and therefore cannot be proved. They should be things so obviously true or so universally accepted, that when you read them, you say to yourself, "*Duh, of course!*"^[https://www.merriam-webster.com/dictionary/duh]. Axioms should be so obvious, that when asked to prove them, you end up scratching your head and shouting "C'MON, IT JUST *IS* TRUE!!!".
 
 Axioms are the building blocks of mathematics. There is no complete list of them all, as we can always add more of them to the list. This chapter contains the axioms which we may use in this course. Tell me if you find a statement which you believe is an axiom but which I've forgotten, and I'll add it to the list below.
 

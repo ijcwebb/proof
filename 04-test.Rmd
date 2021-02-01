@@ -64,7 +64,7 @@ This is also not mathematical because it is vague and therefore will not have a 
 ```{example}
 Poetry is difficult to understand.
 
-'Understand' is not clearly defined (do we mean to get a personal understanding; to understand other people's interpretation of the poem; to grasp the poet's meaning; or just to understand what the words mean?). 'Difficult' will have a subjectivity to it which means different people might come to different conclusions about the truth value of this statement. It's also not clear which type of poetry, or whih poet, the statement is referring to. Therefore the truth value of this statement will not be clearly defined, and so the statement is not mathematical.
+'Understand' is not clearly defined (do we mean to get a personal understanding; to understand other people's interpretation of the poem; to grasp the poet's meaning; or just to understand what the words mean?). 'Difficult' will have a subjectivity to it which means different people might come to different conclusions about the truth value of this statement. It's also not clear which type of poetry, or which poet, the statement is referring to. Therefore the truth value of this statement will not be clearly defined, and so the statement is not mathematical.
 
 ```
 
