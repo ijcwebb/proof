@@ -262,3 +262,131 @@ j. How many of the following are *not* lengths?
 - We've also learnt that *really* fundamental axioms are called definitions. They are how we guarantee that you, your fellow mathematicians and your reader all understand what you're talking about!^[See https://en.wikipedia.org/wiki/Vacuous_truth.]
 
 </div>
+
+## Types of real numbers
+
+In the following exercise, we will encounter some axioms about **inequalities**. Inequalities describe the ordering of real numbers. Let's first check we know what real numbers are.
+
+Real numbers are any numbers on the number line which stretches from $-\infty$ to $\infty$.
+
+Any number that a calculator can display is a real number!
+
+Real numbers are:
+
+- Whole numbers (integers)
+- Terminating decimals (0.1, -0.5, 68.25)
+- Recurring decimals ($\frac{1}{3} = 0.3333...$, $-\frac{11}{9} = -1.2222...$, $\frac{1}{7} = 0.142857142857...$)
+- Non-recurring decimals ($\pi = 3.1415926...,$ $e = 2.7182818284590$, $\sqrt{2} = 1.41421356237...$)
+
+There are two types of real number:
+- *Rational numbers} can be expressed as the ratio of two whole numbers.
+For example: $\frac{1}{2}, -\frac{3}{4}$ (or $\frac{-3}{4}), \frac{11}{3}$, 4 (or $\frac{4}{1}$), -7 (or $\frac{-7}{1}$), 0 (or $\frac{0}{1}$), 1 (or $\frac{1}{1}$).
+- *Irrational numbers} can't be written as the ratio of two whole numbers.
+For example: $\pi, e, \sqrt{2}, \sqrt{3}$.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Here are two axioms about inequalities:
+
+a. If $a>0$ and $b>0$, then $a+b>0$.
+b. If $a>0$ and $b>0$, then $ab>0$.
+c. (If $a>0$ and $b>0$, then $a + b > a$ and $a + b > b$.)
+
+``` 
+
+```{exercise}
+Because these are axioms, we can't prove them (they are *too* fundamental). However, we can illustrate them with examples. Find examples of each of the two axioms above, to illustrate them.
+
+``` 
+
+```{exercise}
+Below are five more axioms about inequalities. Again, illustrate each of these axioms with an example.
+    
+- If $a > b$ and $k$ is any real number, then $a + k > b + k$.
+- If $a > b$ and $b > c$, then $a > c$.
+- If $a > b$ and $k > 0$ then $ak > bk$.
+- If $a > b$ and $k < 0$, then  $ak < bk$.
+- For any real number $a$, $a^2 \geq 0$.   
+
+``` 
+
+```{exercise}
+Below are four conjectures about inequalities. Find *counterexamples* which disprove them:
+    
+- If $a>0$ and $b>0$, then $ab > a$ and $ab > b$.
+- If $a^2 < b^2$ then $a < b$.
+- If $a < b$ and $k < l$ then $ak < bl$.
+- If $\dfrac{a}{b} > cd$ then $ad > bc$. 
+
+You only need to find one counterexample for each.
+
+*Hint: Negative numbers will be useful here!*
+``` 
+</div>
+
+Before we move on, let's review types of numbers. We divide real numbers (symbol $\mathbb{R}$) in two groups:
+
+- Integers, terminating decimals and recurring decimals are called rationals (symbol $\mathbb{Q}$), because they can all be expressed as the **ratio** of two integers. 
+- Non-recurring decimals can't be expressed at the ratio of two integers and are therefore called irrationals (symbol $\mathbb{Q}'$).
+
+```{r, echo=FALSE, out.width="80%", fig.cap="Types of numbers.", fig.align="center"}
+knitr::include_graphics(rep("figures/numbertypes.png"))
+```
+
+How to use these symbols? To tell your reader that you're talking about a general real number, you write $a \in \mathbb{R}$, where $\in$ means "belongs to" or "is". If a conjecture doesn't mention what type of number it's talking about, assume it's dealing with all the real numbers.^[There are some numbers which are not real (called *complex numbers*). Although we will only be dealing with real numbers in this course, we state $a \in \mathbb{R}$ to avoid confusion.]
+
+If you are specifically dealing with the integers, you can specify this by saying $a \in \mathbb{Z}$.
+
+If you're dealing with *all* the rational numbers, you write $a \in \mathbb{Q}$. And if you're dealing with just irrational numbers, write $a \in \mathbb{Q}'$.^[Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can't be fully known because they follow no pattern and don't repeat. Just because you know the first 12 million decimal digits of $\pi$, it doesn't mean you can predict the 12-million-and-first digit!] ^[Whilst $\pi$ and $e$ are both known to be irrational, no one knows if $\pi + e$, $\pi e$, $\dfrac{\pi}{e}$, $\pi^e$, $\pi^\pi$, $e^e$, $e^\pi$, $2^e$ or ln$\pi$ are rational or irrational. See https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf.]
+
+
+Finally, add $^{+}$ to any symbol to specify you're only talking about the positive numbers from the set. Similarly, add $^{-}$ to specify you're only talking about the negative numbers from the set.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+What type of number is $a$ in each of the following? Give a couple of examples of each.
+
+a. $a \in \mathbb{Z}^{+}$
+b. $a \in \mathbb{Q}'$
+c. $a \in \mathbb{Q}^{+}$
+d. $a \in \mathbb{Z}^{*}$
+e. $a \in \mathbb{Z}^{-}$
+f. $a \in \mathbb{R}$
+g. $a \in \mathbb{C}$
+h. $a \in \mathbb{Z}$
+i. $a \in \mathbb{R}^{+}$
+
+``` 
+</div>
+
+Within the integers, there are lots of sets of special numbers, for example **even numbers**, **odd numbers**, **prime numbers**, **triangle numbers**, **Fibonacci numbers**, and **perfect numbers**. Some of these sets overlap.
+
+And within these sets, there are even smaller subsets of numbers. For example, the Mersenne primes are special examples of primes.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Can you find:
+
+a. A number which is both prime *and* triangular?
+b. A number which is both prime *and* perfect?
+c. A number which is both triangular *and* perfect?
+```
+
+```{exercise}
+Are there any prime Fibonacci numbers?
+
+```
+
+```{exercise}
+ 
+
+a. Is 1 perfect? Triangular? Prime? A Fibonacci number?
+b. Is 2 perfect? Triangular? Prime? A Fibonacci number?
+
+``` 
+
+```{exercise}
+What's the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci? 
+
+``` 
+</div>
