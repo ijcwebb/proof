@@ -106,8 +106,6 @@ j. A **line** has length but no width or height.
 
 ```
 
-## Exercises
-
 <div class="alert alert-info" role="alert">
 ```{exercise}
 Below are three mathematical statements (i.e. they have clearly-defined truth values). One of them is an axiom, one is a definition and one is just a regular statement. Which is which?
@@ -265,40 +263,164 @@ j. How many of the following are *not* lengths?
 
 ## Types of real numbers
 
-In the following exercise, we will encounter some axioms about **inequalities**. Inequalities describe the ordering of real numbers. Let's first check we know what real numbers are.
+In section 5.4, we will meet some axioms about **inequalities**. Inequalities describe the *ordering of real numbers*. In this section, we will check we know what real numbers are.
 
-Real numbers are any numbers on the number line which stretches from $-\infty$ to $\infty$.
+Real numbers are any numbers on the number line which stretches from $-\infty$ to $\infty$:
 
-Any number that a calculator can display is a real number!
+```{r, echo=FALSE, out.width="90%", fig.cap="The number line.", fig.align="center"}
+knitr::include_graphics(rep("figures/numberline.png"))
+```
 
-Real numbers are:
+\begin{center}
+\begin{tikzpicture}
+\draw[latex-latex] (-5.5,0) -- (5.5,0) ; %edit here for the axis
+\foreach \x in  {-5,-4, -3,-2,-1,0,1,2,3,4,5} % edit here for the vertical lines
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {,, -3,-2,-1,0,1,2,3,,} % edit here for the numbers
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+{$\x$};
+\end{tikzpicture}
+\end{center}
 
-- Whole numbers (integers)
-- Terminating decimals (0.1, -0.5, 68.25)
-- Recurring decimals ($\frac{1}{3} = 0.3333...$, $-\frac{11}{9} = -1.2222...$, $\frac{1}{7} = 0.142857142857...$)
-- Non-recurring decimals ($\pi = 3.1415926...,$ $e = 2.7182818284590$, $\sqrt{2} = 1.41421356237...$)
+*Any* number that a calculator can display is a real number:
 
-There are two types of real number:
-- *Rational numbers} can be expressed as the ratio of two whole numbers.
-For example: $\frac{1}{2}, -\frac{3}{4}$ (or $\frac{-3}{4}), \frac{11}{3}$, 4 (or $\frac{4}{1}$), -7 (or $\frac{-7}{1}$), 0 (or $\frac{0}{1}$), 1 (or $\frac{1}{1}$).
-- *Irrational numbers} can't be written as the ratio of two whole numbers.
-For example: $\pi, e, \sqrt{2}, \sqrt{3}$.
+(A) Whole numbers (integers)
+(B) *Terminating* decimals (0.1, -0.5, 68.25)
+(C) *Recurring* decimals ($\frac{1}{3} = 0.3333...$, $-\frac{11}{9} = -1.2222...$, $\frac{1}{7} = 0.142857142857...$. In the last example, notice that the sequence $142857$ repeats.)
+(D) Non-recurring decimals ($\pi = 3.1415926...,$ $e = 2.7182818284590$, $\sqrt{2} = 1.41421356237...$)
+
+We split the four types of real number above into two groups: 
+
+### Rational real numbers
+(A), (B) and (C) are **rational real numbers**, because they can be expressed as the *ratio* of two integers.
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Here are two axioms about inequalities:
+Pick an example of a number of type (A), (B) and (C) above. Show for each of your choices that the number can be written as the ratio of two integers.
 
-a. If $a>0$ and $b>0$, then $a+b>0$.
-b. If $a>0$ and $b>0$, then $ab>0$.
-c. (If $a>0$ and $b>0$, then $a + b > a$ and $a + b > b$.)
+```
+</div>
+
+```{solution}
+Answers will vary. An example of type (A) is $4$, which can be written as $\frac{4}{1}$, which is the ratio of two integers. Similarly, $-3$ can be written as $\frac{-3}{1}$, which is the ratio of two integers. An example of type (B) is $0.5$, which can be written as $\frac{1}{2}, which is the ratio of two integers. Similarly, $-0.1$ can be written as $\frac{-1}{10}$, which is the ratio of two integers. Or $1.875$, which can be written as $\frac{15}{8}$, and $19.5$ which can be written as $\frac{29}{2}$. An example of type (C) is $-0.1111...$ which can be written as $\frac{-1}{9}$, or 1.166666... which can be written as $\frac{7}{6}.
+```
+
+### Irrational real numbers
+
+Type (D) are **irrational real numbers**, because they *can't* be written as the ratio of two whole numbers.
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Later in the course, we'll see why $\pi$, $e$, $\sqrt{2}$ and $\sqrt{3}$ are all irrational numbers. Do you know way to show this?^[Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can't be fully known because they follow no pattern and don't repeat. Just because you know the first 12 million decimal digits of $\pi$, it doesn't mean you can predict the 12-million-and-first digit!] ^[Whilst $\pi$ and $e$ are both known to be irrational, no one knows if $\pi + e$, $\pi e$, $\dfrac{\pi}{e}$, $\pi^e$, $\pi^\pi$, $e^e$, $e^\pi$, $2^e$ or ln$\pi$ are rational or irrational. See https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf.]
+
+```
+</div>
+
+### Symbols
+
+We use the symbol $\mathbb{R}$ to mean ALL real numbers, for example $a \in \mathbb{R}$ means that the number $a$ is a real number (and $a \not\in \mathbb{R}$ means that the number $a$ is not a real number^[We won't deal with "non-real" numbers (called imaginary or complex numbers) in this course.]).
+
+We use the symbol $\mathbb{Q}$ for just the rational real numbers, and $\mathbb{Q}'$ for the non-rational real numbers. For those rational numbers which are integers (whole numbers), we use the symbol $\mathbb{Z}$.
+
+```{r, echo=FALSE, out.width="90%", fig.cap="The real numbers are divided into two groups.", fig.align="center"}
+knitr::include_graphics(rep("figures/numbertypes.png"))
+```
+
+How to use these symbols? As mentioned above, to tell your reader that you're talking about a general real number, you write $a \in \mathbb{R}$, where $\in$ means "belongs to" or "is".
+
+<div class="alert alert-warning" role="alert">
+<strong>Careful!</strong> 
+
+The symbol $\in$ is very powerful: it covers ALL possible values of the type of number given. For example, if you write $a \in \mathbb{Z}$, you are saying that $a$ could be *any* integer in the world, and if you write $a \in \mathbb{Q}$, you're saying that $a$ can be *any* rational number. Similarly, writing $a \in \mathbb{Q'}$ means that $a$ is *any* irrational number (so not just $\pi$ or $\sqrt{2}$). 
+
+</div>
+
+
+Add $^{+}$ to any symbol to specify you're only talking about the positive numbers from the set. Similarly, add $^{-}$ to specify you're only talking about the negative numbers from the set.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Give a couple of example of $a$ in each of the cases below.
+
+a. $a \in \mathbb{Z}^{+}$
+b. $a \in \mathbb{Q}'$
+c. $a \in \mathbb{Q}^{+}$
+d. $a \in \mathbb{Z}^{*}$
+e. $a \in \mathbb{Z}^{-}$
+f. $a \in \mathbb{R}$
+g. $a \in \mathbb{C}$
+h. $a \in \mathbb{Z}$
+i. $a \in \mathbb{R}^{+}$
+
+Part d might be more challenging!
+
+``` 
+</div>
+
+### Further dividing up the integers
+
+Within the integers, there are lots of sets of special numbers, for example *even* numbers, *odd* numbers, *prime* numbers, *triangle* numbers, *Fibonacci* numbers, and *perfect* numbers. Some of these sets overlap (i.e. there are some numbers which are in more than one set).^[Within these sets, there are even smaller subsets of numbers. For example, the Mersenne primes are special examples of primes.]
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Can you find:
+
+a. A number which is both prime *and* triangular?
+b. A number which is both prime *and* perfect?
+c. A number which is both triangular *and* perfect?
+
+```
+
+```{exercise}
+Are there any prime Fibonacci numbers?
+
+```
+
+```{exercise}
+ 
+
+a. Is 1 perfect? Triangular? Prime? A Fibonacci number?
+b. Is 2 perfect? Triangular? Prime? A Fibonacci number?
 
 ``` 
 
 ```{exercise}
-Because these are axioms, we can't prove them (they are *too* fundamental). However, we can illustrate them with examples. Find examples of each of the two axioms above, to illustrate them.
+What's the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci? 
 
 ``` 
+</div>
 
+## Inequalities
+
+Inequalities compare numbers^[Or expressions], in terms of their size. Earlier in this chapter we defined "greater than" and "less than". One number is "greater than" another if it appears further to the right on the number line:
+
+```{r, echo=FALSE, out.width="90%", fig.cap="The number line. The further to the right a number is, the 'greater' it is.", fig.align="center"}
+knitr::include_graphics(rep("figures/numberline.png"))
+```
+
+So $11$ is greater than $10$ (or $11 > 10$), and $10$ is greater than $0$ (or $10 > 0$), and $2 > -5$ and $-5 > -10$. If we write $a > 5$, we mean that $a$ is a number greater than $5$ (for example $6$ or $20$ or $5.1$). If we write $a \geq 5$ we mean $a$ is either greater than $5$ or equal to $5$. The symbols $<$ and $\leq$ apply for less than, and less than or equal to.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Here are three axioms about inequalities:
+
+a. If $a>0$ and $b>0$, then $a+b>0$.
+b. If $a>0$ and $b>0$, then $ab>0$.
+c. If $a>0$ and $b>0$, then $a + b > a$ and $a + b > b$.
+
+Because these are axioms, we can't prove them (they are *too* fundamental). However, we can illustrate them with examples. Find examples of each of the axioms above, in order to illustrate them.
+
+``` 
+</div>
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Aida says that, mathematically, $-10$ is greater than $-50$. Murat says that $-50$ *could* be considered as greater than $-10$, in certain circumstances. How could you argue Murat's case? Give specific example(s) how he could be seen as right. ^[Note, in this course, we will ALWAYS use "greater than" to mean "further to the right on the number line" (despite what Murat says!).]
+
+``` 
+</div>
+
+<div class="alert alert-info" role="alert">
 ```{exercise}
 Below are five more axioms about inequalities. Again, illustrate each of these axioms with an example.
     
@@ -318,75 +440,7 @@ Below are four conjectures about inequalities. Find *counterexamples* which disp
 - If $a < b$ and $k < l$ then $ak < bl$.
 - If $\dfrac{a}{b} > cd$ then $ad > bc$. 
 
-You only need to find one counterexample for each.
-
-*Hint: Negative numbers will be useful here!*
-``` 
-</div>
-
-Before we move on, let's review types of numbers. We divide real numbers (symbol $\mathbb{R}$) in two groups:
-
-- Integers, terminating decimals and recurring decimals are called rationals (symbol $\mathbb{Q}$), because they can all be expressed as the **ratio** of two integers. 
-- Non-recurring decimals can't be expressed at the ratio of two integers and are therefore called irrationals (symbol $\mathbb{Q}'$).
-
-```{r, echo=FALSE, out.width="80%", fig.cap="Types of numbers.", fig.align="center"}
-knitr::include_graphics(rep("figures/numbertypes.png"))
-```
-
-How to use these symbols? To tell your reader that you're talking about a general real number, you write $a \in \mathbb{R}$, where $\in$ means "belongs to" or "is". If a conjecture doesn't mention what type of number it's talking about, assume it's dealing with all the real numbers.^[There are some numbers which are not real (called *complex numbers*). Although we will only be dealing with real numbers in this course, we state $a \in \mathbb{R}$ to avoid confusion.]
-
-If you are specifically dealing with the integers, you can specify this by saying $a \in \mathbb{Z}$.
-
-If you're dealing with *all* the rational numbers, you write $a \in \mathbb{Q}$. And if you're dealing with just irrational numbers, write $a \in \mathbb{Q}'$.^[Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can't be fully known because they follow no pattern and don't repeat. Just because you know the first 12 million decimal digits of $\pi$, it doesn't mean you can predict the 12-million-and-first digit!] ^[Whilst $\pi$ and $e$ are both known to be irrational, no one knows if $\pi + e$, $\pi e$, $\dfrac{\pi}{e}$, $\pi^e$, $\pi^\pi$, $e^e$, $e^\pi$, $2^e$ or ln$\pi$ are rational or irrational. See https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf.]
-
-
-Finally, add $^{+}$ to any symbol to specify you're only talking about the positive numbers from the set. Similarly, add $^{-}$ to specify you're only talking about the negative numbers from the set.
-
-<div class="alert alert-info" role="alert">
-```{exercise}
-What type of number is $a$ in each of the following? Give a couple of examples of each.
-
-a. $a \in \mathbb{Z}^{+}$
-b. $a \in \mathbb{Q}'$
-c. $a \in \mathbb{Q}^{+}$
-d. $a \in \mathbb{Z}^{*}$
-e. $a \in \mathbb{Z}^{-}$
-f. $a \in \mathbb{R}$
-g. $a \in \mathbb{C}$
-h. $a \in \mathbb{Z}$
-i. $a \in \mathbb{R}^{+}$
-
-``` 
-</div>
-
-Within the integers, there are lots of sets of special numbers, for example **even numbers**, **odd numbers**, **prime numbers**, **triangle numbers**, **Fibonacci numbers**, and **perfect numbers**. Some of these sets overlap.
-
-And within these sets, there are even smaller subsets of numbers. For example, the Mersenne primes are special examples of primes.
-
-<div class="alert alert-info" role="alert">
-```{exercise}
-Can you find:
-
-a. A number which is both prime *and* triangular?
-b. A number which is both prime *and* perfect?
-c. A number which is both triangular *and* perfect?
-```
-
-```{exercise}
-Are there any prime Fibonacci numbers?
-
-```
-
-```{exercise}
- 
-
-a. Is 1 perfect? Triangular? Prime? A Fibonacci number?
-b. Is 2 perfect? Triangular? Prime? A Fibonacci number?
-
-``` 
-
-```{exercise}
-What's the smallest positive integer that is neither prime nor triangular nor perfect nor Fibonacci? 
+You only need to find one counterexample for each. *Hint: Negative numbers will be useful here!*
 
 ``` 
 </div>
