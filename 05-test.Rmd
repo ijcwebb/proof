@@ -302,7 +302,7 @@ Pick an example of a number of type (A), (B) and (C) above. Show for each of you
 </div>
 
 ```{solution}
-Answers will vary. An example of type (A) is $4$, which can be written as $\frac{4}{1}$, which is the ratio of two integers. Similarly, $-3$ can be written as $\frac{-3}{1}$, which is the ratio of two integers. An example of type (B) is $0.5$, which can be written as $\frac{1}{2}, which is the ratio of two integers. Similarly, $-0.1$ can be written as $\frac{-1}{10}$, which is the ratio of two integers. Or $1.875$, which can be written as $\frac{15}{8}$, and $19.5$ which can be written as $\frac{29}{2}$. An example of type (C) is $-0.1111...$ which can be written as $\frac{-1}{9}$, or 1.166666... which can be written as $\frac{7}{6}.
+Answers will vary. An example of type (A) is $4$, which can be written as $\frac{4}{1}$, which is the ratio of two integers. Similarly, $-3$ can be written as $\frac{-3}{1}$, which is the ratio of two integers. An example of type (B) is $0.5$, which can be written as $\frac{1}{2}, which is the ratio of two integers. Similarly, $-0.1$ can be written as $\frac{-1}{10}$, which is the ratio of two integers. Or $1.875$, which can be written as $\frac{15}{8}$, and $19.5$ which can be written as $\frac{29}{2}$. An example of type (C) is $-0.1111...$ which can be written as $\frac{-1}{9}$, or 1.166666... which can be written as $\frac{7}{6}$.
 ```
 
 ### Irrational real numbers
@@ -311,7 +311,7 @@ Type (D) are **irrational real numbers**, because they *can't* be written as the
 
 <div class="alert alert-danger" role="alert">
 ```{exercise}
-Later in the course, we'll see why $\pi$, $e$, $\sqrt{2}$ and $\sqrt{3}$ are all irrational numbers. Do you know way to show this?^[Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can't be fully known because they follow no pattern and don't repeat. Just because you know the first 12 million decimal digits of $\pi$, it doesn't mean you can predict the 12-million-and-first digit!] ^[Whilst $\pi$ and $e$ are both known to be irrational, no one knows if $\pi + e$, $\pi e$, $\dfrac{\pi}{e}$, $\pi^e$, $\pi^\pi$, $e^e$, $e^\pi$, $2^e$ or ln$\pi$ are rational or irrational. See https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf.]
+Later in the course, we'll see why $\pi$, $e$, $\sqrt{2}$ and $\sqrt{3}$ are all irrational numbers. Do you know a way to show this?^[Rational and irrational numbers have very different properties. The digits of rational numbers (including non-terminating decimal numbers) are fully known. The digits of irrational numbers can't be fully known because they follow no pattern and don't repeat. Just because you know the first 12 million decimal digits of $\pi$, it doesn't mean you can predict the 12-million-and-first digit!] ^[Whilst $\pi$ and $e$ are both known to be irrational, no one knows if $\pi + e$, $\pi e$, $\dfrac{\pi}{e}$, $\pi^e$, $\pi^\pi$, $e^e$, $e^\pi$, $2^e$ or ln$\pi$ are rational or irrational. See https://math.ou.edu/\char`\~jalbert/courses/openprob2.pdf.]
 
 ```
 </div>
@@ -340,7 +340,7 @@ Add $^{+}$ to any symbol to specify you're only talking about the positive numbe
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Give a couple of example of $a$ in each of the cases below.
+Give a couple of examples of $a$ in each of the cases below.
 
 a. $a \in \mathbb{Z}^{+}$
 b. $a \in \mathbb{Q}'$
