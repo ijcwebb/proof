@@ -127,6 +127,8 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
   
 (\#cnj:worm): If $a^2$ is divisible by 3, then so is $a$.
   
+(\#cnj:whizz): To multiply a two-digit number by 11, simply add the two digits of the number together, then insert it inbetween the two digits.
+  
 (\#cnj:wend): In the picture below, the larger square is twice the area of the smaller square:
 
 ``` 

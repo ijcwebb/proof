@@ -168,6 +168,7 @@ cnj:warrant
 cnj:wake
 cnj:wreck
 cnj:worm
+cnj:whizz
 cnj:wend
 fig:unnamed-chunk-127
 cnj:collect

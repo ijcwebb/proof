@@ -30,15 +30,11 @@ To disprove the conjecture, we would just need to identify just one Irish citize
 
 Just one counterexample is needed to disprove a false conjecture. Of course, we might find lots of counterexamples, i.e. many Chinese citizens who have green eyes, or many Irish citizens without vowels in their surname. This would be great - it would probably make our job of finding a counterexample easier! But even if there is only one Chinese citizen with green eyes, or one Irish citizen with a surname devoid of vowels, that is enough to show the conjecture is false.
 
-Before you do anything, make an educated guess. Do you *believe* either of these conjectures are true. Or false?
-
-Your first step with any new conjectures is to look for a counterexample. A single counterexample is enough to disprove a conjecture.
-
 <div class="alert alert-info" role="alert">
 ```{exercise}
 The following conjectures are all false. Find a single counterexample which shows this.
 
-a. All prime numbers are odd.}
+a. All prime numbers are odd.
 b. $(a + b)^2 = a^2 + b^2$ for any numbers $a$ and $b$.
 c. All sheep in South Africa are white. (Good luck Googling!)
 d. The national flags of all UN members are rectangular.
@@ -49,18 +45,18 @@ g. If $a$ is a whole number and $a^2$ is divisible by $4$, then $a$ is divisible
 ``` 
 
 ```{exercise}
-In the last question, you found counterexamples which disproved the conjectures.
+In the last exercise, you found counterexamples which disproved the conjectures.
 
-a. Which of the conjectures above have just one counterexample? 
-b. Which of the conjectures above have a few counterexamples? 
-c. Which of the conjectures above have an infinite number of counterexamples?
+a. Which of the conjectures above have just **one** counterexample? 
+b. Which of the conjectures above have **a few** counterexamples? 
+c. Which of the conjectures above have **an infinite number** of counterexamples?
 
 ``` 
 </div>
 
 ## Finding a disproof
 
-Finding a counterexample is the most common and popular way of disproving a conjecture. It's also possible to disprove a conjecture without finding a counterexample. This is called finding a disproof. We'll look at this a bit later.
+Finding a counterexample is the most common and popular way of disproving a conjecture. It's also possible to disprove a conjecture without finding a counterexample. This is called finding a disproof, and often happens when you set out looking for a proof and it goes wrong! We'll look at this a bit later. 
 
 <div class="alert alert-success" role="alert">
 <strong> What have we learnt? </strong> 
