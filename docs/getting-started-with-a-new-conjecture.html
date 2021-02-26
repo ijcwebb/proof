@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof</title>
+  <title>Chapter 8 Getting started with a new conjecture | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 8 Getting started with a new conjecture | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Proving a conjecture | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 8 Getting started with a new conjecture | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -77,7 +77,7 @@
 <li class="chapter" data-level="5" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html"><i class="fa fa-check"></i><b>5</b> Axioms and definitions</a></li>
 <li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
 <li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
-<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a></li>
+<li class="chapter" data-level="8" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html"><i class="fa fa-check"></i><b>8</b> Getting started with a new conjecture</a></li>
 <li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a></li>
 <li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a></li>
 <li class="chapter" data-level="11" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>11</b> Direct proof</a></li>
@@ -107,23 +107,32 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="proving-a-conjecture" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Proving a conjecture</h1>
-<p>Let’s take a moment to review what we’ve learnt over the past couple of chapters. In Chapter 5 we saw that that axioms are statements which can’t be proved, because they are so fundamental. Axioms (and the even more fundamental definitions) are statements which allow us to talk about and do mathematics.</p>
+<div id="getting-started-with-a-new-conjecture" class="section level1" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Getting started with a new conjecture</h1>
+<p>Let’s take a moment to review what we’ve learnt over the past couple of chapters. In Chapter 5 we saw that axioms are statements which can’t be proved, because they are so fundamental. Axioms (and the even more fundamental definitions) are statements which allow us to talk about and do mathematics.</p>
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-95" class="exercise"><strong>Exercise 8.1  </strong></span>Here are four more axioms. All of these axioms are about probability. How many of these have you heard about or used before?</p>
+<p><span id="exr:unnamed-chunk-95" class="exercise"><strong>Exercise 8.1  </strong></span>Here are four more axioms, all of which are about probability. How many of these have you heard about or used before?</p>
 <ul>
 <li>The probability of something happening is a non-negative, real number.</li>
 <li>The probability of something happening is never greater than 1.</li>
-<li>The probability that at least one of the possible events will happen is 1.</li>
 <li>The sum of the probabilities of all possible events is 1.</li>
+<li>The probability that at least one of the possible events will happen is 1.</li>
 </ul>
 </div>
 </div>
-<p>In Chapter 6 we learnt that any mathematical statement (that is not an axiom or a definition) that we’re interested in proving or disproving can be reclassified a “conjecture.” We can then attempt to prove it or disprove it. In Chapter 7 we met the most common way of disprove a conjecture is to hunt for a counterexample.</p>
-<p>In this chapter, we’ll look at what to do upon meeting (or creating) a new conjecture, of whose truth value you don’t yet know.</p>
+<p>In Chapter 6 we learnt that any mathematical statement<a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> that we’re interested in proving or disproving can be reclassified a “conjecture.” We can then attempt to prove it or disprove it. In Chapter 7 we saw that the most common way of disproving a conjecture is to hunt for a counterexample.</p>
+<p>In this chapter, we’ll formalise the steps you should follow upon meeting (or creating) a new conjecture, of whose truth value you don’t yet know. The steps are:</p>
+<ol style="list-style-type: decimal">
+<li><p>Look for a counterexample.</p></li>
+<li><p>Attempt a proof:</p></li>
+</ol>
+<ul>
+<li>Rewrite the statement in the form “If…then…”</li>
+<li>If needed, draw the conjecture’s map.</li>
+<li>Select the method(s) of proof.</li>
+</ul>
 <div id="step-1-start-by-looking-for-a-counterexample" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> Step 1: Start by looking for a counterexample</h2>
 <p>When beginning with a new conjecture, you (probably) don’t know whether it’s true or false. Therefore, your first step should always be to look for a counterexample. We saw in the last chapter that to disprove a false statement, we just need to find a single counterexample to disprove it.</p>
@@ -133,26 +142,24 @@
 <p><strong>Tips for looking for a counterexample</strong></p>
 <ul>
 <li><p>How long should you look for a counterexample? I would suggest trying out four or five examples to see if any of them are counterexamples.</p></li>
-<li><p>Being creative when trying to find a counterexample will increase your chance of finding a one (if it exists). For example, with the second conjecture in Exercise 8.2 (below), you could experiment with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both positive, then with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both negative, then with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> having different signs, then with either or both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> equal to zero. The more varied your attempts are, the more likely you’re find a counterexaple (if it exists).</p></li>
+<li><p>Being creative when trying to find a counterexample will increase your chance of finding a one (if it exists). For example, with the second conjecture in <strong>Exercise 8.2</strong> below, you could experiment with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both positive, then with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both negative, then with <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> having different signs, then with either or both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> equal to zero, etc. The more varied your attempts are, the more likely you’re find a counterexample (if it exists).</p></li>
 <li><p>Keeping going until you think you’ve tried all possible “types” of example.</p></li>
-<li><p>Stop if you find a counterexample, or if you think you’ve tried enough and have begun to wonder if the conjecture might be true.</p></li>
+<li><p>Stop if you find a counterexample, or if you think you’ve tried enough and are ready to try a proof.</p></li>
 </ul>
 </div>
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
 <p><span id="exr:unnamed-chunk-96" class="exercise"><strong>Exercise 8.2  </strong></span>Try to find a counterexample of the following conjectures. I’m not promising that they are all false so it might be that a counterexample doesn’t exist for some of them.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Multiples of <span class="math inline">\(4\)</span> are divisible by <span class="math inline">\(8\)</span>.</li>
-<li>For two real numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math inline">\(|a||b| = |ab|\)</span>.</li>
-<li>Every whole number greater than <span class="math inline">\(2\)</span> can be written as the difference of two perfect squares. (For example, <span class="math inline">\(11 = 36 - 25, 12 = 16 - 4, 13 = 49 - 36\)</span>.)</li>
-<li>Every positive odd number can be written as the difference of two perfect squares.</li>
-<li>All triangles contain at least one angle measuring <span class="math inline">\(\geq 60^{\circ}\)</span>.}</li>
-<li>All triangles contain at most one angle measuring <span class="math inline">\(\geq 60^{\circ}\)</span>.</li>
-</ol>
+<p>Conjecture 8.1 : Multiples of <span class="math inline">\(4\)</span> are divisible by <span class="math inline">\(8\)</span>.</p>
+<p>Conjecture 8.2 : For two real numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, <span class="math inline">\(|a||b| = |ab|\)</span>.</p>
+<p>Conjecture 8.3 : Every whole number greater than <span class="math inline">\(2\)</span> can be written as the difference of two perfect squares. (For example, <span class="math inline">\(11 = 36 - 25, 12 = 16 - 4, 13 = 49 - 36\)</span>.)</p>
+<p>Conjecture 8.4 : Every positive odd number can be written as the difference of two perfect squares.</p>
+<p>Conjecture 8.5 : All triangles contain at least one angle measuring <span class="math inline">\(\geq 60^{\circ}\)</span>.</p>
+<p>Conjecture 8.6 : All triangles contain at most one angle measuring <span class="math inline">\(\geq 60^{\circ}\)</span>.</p>
 </div>
 </div>
-<p>If you fail to find a counterexample, maybe the conjecture is true. Or maybe you just weren’t able to find a counterexample, even though one (or more) exists.<a href="#fn30" class="footnote-ref" id="fnref30"><sup>30</sup></a> Because we don’t know which, we move onto Step 2…</p>
+<p>If you fail to find a counterexample, maybe the conjecture is true. Or maybe you just weren’t able to find a counterexample, even though one (or more) exists.<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a> Because we don’t know which, we move onto Step 2…</p>
 </div>
 <div id="step-2-try-to-build-a-proof" class="section level2" number="8.2">
 <h2><span class="header-section-number">8.2</span> Step 2: Try to build a proof</h2>
@@ -284,7 +291,7 @@
 <li>proof by <strong>induction</strong>.</li>
 </ul>
 <p>Each of chapters 10 - 16 will cover one of these methods, and give you some examples to practice on.</p>
-<p>At the end of each chapter there will be some more conjectures to work on. These conjectures might be true or might be false. To prove the true ones, you will be expected not just to rely on the method introduced in that chapter, but all previous methods too. This is because the challenge (and fun) of proving conjectures comes from not knowing where to start and feeling your own way to a proof. It’s a very satisfying experience!<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a></p>
+<p>At the end of each chapter there will be some more conjectures to work on. These conjectures might be true or might be false. To prove the true ones, you will be expected not just to rely on the method introduced in that chapter, but all previous methods too. This is because the challenge (and fun) of proving conjectures comes from not knowing where to start and feeling your own way to a proof. It’s a very satisfying experience!<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a></p>
 <p>Chapter 17 is a bonus chapter, and covers the incompleteness of mathematics.</p>
 <p>The next chapter, chapter 9, looks at what makes a good proof.</p>
 
@@ -294,8 +301,9 @@
 <div class="footnotes">
 <hr />
 <ol start="30">
-<li id="fn30"><p>This could be for a number of reasons, such as the the counterexample(s) are really really big, or maybe because you forgot to check all types of examples. Also, maybe you were just unlucky.<a href="proving-a-conjecture.html#fnref30" class="footnote-back">↩︎</a></p></li>
-<li id="fn31"><p>Also, when presented with a set of conjectures and told to “Prove using a direct proof…” or “Prove by induction…,” like a robot you will switch your brain off and switch on your autopilot, which we don’t want!<a href="proving-a-conjecture.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn30"><p>Which is not an axiom or a definition.<a href="getting-started-with-a-new-conjecture.html#fnref30" class="footnote-back">↩︎</a></p></li>
+<li id="fn31"><p>This could be for a number of reasons, such as the the counterexample(s) are really really big, or maybe because you forgot to check all types of examples. Also, maybe you were just unlucky.<a href="getting-started-with-a-new-conjecture.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn32"><p>Also, when presented with a set of conjectures and told to “Prove using a direct proof…” or “Prove by induction…,” like a robot you will switch your brain off and switch on your autopilot, which we don’t want!<a href="getting-started-with-a-new-conjecture.html#fnref32" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

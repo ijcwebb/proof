@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-02-19" />
+<meta name="date" content="2021-02-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -77,7 +77,7 @@
 <li class="chapter" data-level="5" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html"><i class="fa fa-check"></i><b>5</b> Axioms and definitions</a></li>
 <li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
 <li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
-<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a></li>
+<li class="chapter" data-level="8" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html"><i class="fa fa-check"></i><b>8</b> Getting started with a new conjecture</a></li>
 <li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a></li>
 <li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a></li>
 <li class="chapter" data-level="11" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>11</b> Direct proof</a></li>
@@ -156,7 +156,7 @@
 <tr class="even">
 <td>Conjecture 13.2 : For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</td>
 <td></td>
-<td>As we’re dealing with the modulus function<a href="#fn36" class="footnote-ref" id="fnref36"><sup>36</sup></a>, it makes sense to build cases by varying the sign of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. We could try: <br /> <strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>. <br /> <strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>. <br /> <strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span>. <br /> <strong>Case 4:</strong> <span class="math inline">\(a &lt; 0\)</span> and <span class="math inline">\(b \geq 0\)</span>. <br /> Notice we can collapse cases 3 and 4 into one by simply switching the letters <em>without loss of generality</em>, so actually we only require three cases.</td>
+<td>As we’re dealing with the modulus function<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a>, it makes sense to build cases by varying the sign of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. We could try: <br /> <strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>. <br /> <strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>. <br /> <strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span>. <br /> <strong>Case 4:</strong> <span class="math inline">\(a &lt; 0\)</span> and <span class="math inline">\(b \geq 0\)</span>. <br /> Notice we can collapse cases 3 and 4 into one by simply switching the letters <em>without loss of generality</em>, so actually we only require three cases.</td>
 </tr>
 <tr class="odd">
 <td>Conjecture 13.3 : <em>All</em> perfect squares are either a multiple of <span class="math inline">\(3\)</span> or one more than a multiple of <span class="math inline">\(3\)</span>.</td>
@@ -205,7 +205,7 @@ If we want to demonstrate this conjecture to someone by asking them to pick two 
 
 <div class="example">
 <p><span id="exm:unnamed-chunk-133" class="example"><strong>Example 13.3  </strong></span>Consider the conjecture</p>
-<p>Conjecture 13.5 : The product of two consecutive numbers is even.<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a></p>
+<p>Conjecture 13.5 : The product of two consecutive numbers is even.<a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a></p>
 <p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. If two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive, then <span class="math inline">\(b = a + 1\)</span>. If we multiply them, we get</p>
 <p><span class="math display">\[\begin{align}
     a \cdot b &amp;= (a)(a+1) \\
@@ -302,7 +302,7 @@ which is clearly even.</p>
 <div id="how-many-cases" class="section level2" number="13.6">
 <h2><span class="header-section-number">13.6</span> How many cases?</h2>
 <p>For conjectures in this course that require a proof by cases, you will probably need 2, 3, or maybe 4 cases. However, there is no upper limit for how many you can use. Proofs involving between 5 and 10 cases are common. You should always try to use the smallest number of cases possible.</p>
-<p>The first proof of the <em>Four Colour Theorem</em><a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a> used 1936 cases. Since then, mathematicians have managed to reduce this number to close to 600, which is still a lot, but less than 1936!</p>
+<p>The first proof of the <em>Four Colour Theorem</em><a href="#fn39" class="footnote-ref" id="fnref39"><sup>39</sup></a> used 1936 cases. Since then, mathematicians have managed to reduce this number to close to 600, which is still a lot, but less than 1936!</p>
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
@@ -362,10 +362,10 @@ a. Prove conjecture <a href="#cnj:hobby">13.1</a> from the table earlier in this
 </div>
 <div class="footnotes">
 <hr />
-<ol start="36">
-<li id="fn36"><p>Recall that the modulus function states: <span class="math inline">\(|a| = a\)</span> for <span class="math inline">\(a \geq 0\)</span>, and <span class="math inline">\(-a\)</span> for <span class="math inline">\(a &lt; 0\)</span>.<a href="proof-by-cases.html#fnref36" class="footnote-back">↩︎</a></p></li>
-<li id="fn37"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">13.4</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="proof-by-cases.html#fnref37" class="footnote-back">↩︎</a></p></li>
-<li id="fn38"><p>The Four Colour Theorem states that any map, like a map of the states of the U.S. or countries of the world, can be coloured using only four colours in such a way that regions sharing a common boundary (other than a single point) do not share the same colour. In other words, a cartographer knows that she needs only four colours to colour <em>any</em> map.<a href="proof-by-cases.html#fnref38" class="footnote-back">↩︎</a></p></li>
+<ol start="37">
+<li id="fn37"><p>Recall that the modulus function states: <span class="math inline">\(|a| = a\)</span> for <span class="math inline">\(a \geq 0\)</span>, and <span class="math inline">\(-a\)</span> for <span class="math inline">\(a &lt; 0\)</span>.<a href="proof-by-cases.html#fnref37" class="footnote-back">↩︎</a></p></li>
+<li id="fn38"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">13.4</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="proof-by-cases.html#fnref38" class="footnote-back">↩︎</a></p></li>
+<li id="fn39"><p>The Four Colour Theorem states that any map, like a map of the states of the U.S. or countries of the world, can be coloured using only four colours in such a way that regions sharing a common boundary (other than a single point) do not share the same colour. In other words, a cartographer knows that she needs only four colours to colour <em>any</em> map.<a href="proof-by-cases.html#fnref39" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

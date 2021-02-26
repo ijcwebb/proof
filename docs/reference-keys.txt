@@ -88,6 +88,12 @@ exr:unnamed-chunk-93
 exr:unnamed-chunk-94
 exr:unnamed-chunk-95
 exr:unnamed-chunk-96
+cnj:oxygen
+cnj:oxen
+cnj:oops
+cnj:oodles
+cnj:only
+cnj:osh
 exm:unnamed-chunk-97
 exr:unnamed-chunk-98
 exr:unnamed-chunk-99
@@ -283,7 +289,7 @@ so-what-does-this-all-mean
 disproving-a-conjecture
 finding-a-counterexample
 finding-a-disproof
-proving-a-conjecture
+getting-started-with-a-new-conjecture
 step-1-start-by-looking-for-a-counterexample
 step-2-try-to-build-a-proof
 ifthen

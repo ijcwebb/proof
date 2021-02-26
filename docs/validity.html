@@ -24,14 +24,14 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-02-19" />
+<meta name="date" content="2021-02-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="proving-a-conjecture.html"/>
+<link rel="prev" href="getting-started-with-a-new-conjecture.html"/>
 <link rel="next" href="proof-by-exhaustion.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
@@ -77,7 +77,7 @@
 <li class="chapter" data-level="5" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html"><i class="fa fa-check"></i><b>5</b> Axioms and definitions</a></li>
 <li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a></li>
 <li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a></li>
-<li class="chapter" data-level="8" data-path="proving-a-conjecture.html"><a href="proving-a-conjecture.html"><i class="fa fa-check"></i><b>8</b> Proving a conjecture</a></li>
+<li class="chapter" data-level="8" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html"><i class="fa fa-check"></i><b>8</b> Getting started with a new conjecture</a></li>
 <li class="chapter" data-level="9" data-path="validity.html"><a href="validity.html"><i class="fa fa-check"></i><b>9</b> Validity</a></li>
 <li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a></li>
 <li class="chapter" data-level="11" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>11</b> Direct proof</a></li>
@@ -117,8 +117,8 @@
 <ul>
 <li><strong>Universal</strong>: A proof written by one person should be understandable by another.</li>
 <li><strong>Clear</strong>: All terms should be defined, as well as any variables used.</li>
-<li><strong>Watertight</strong>. This means that it shouldn’t contain any holes. No one should be able to criticise you for not considering something.<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a></li>
-<li><strong>Complete</strong>: Your proof should cover all cases described or inferred by the statement.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></li>
+<li><strong>Watertight</strong>. This means that it shouldn’t contain any holes. No one should be able to criticise you for not considering something.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></li>
+<li><strong>Complete</strong>: Your proof should cover all cases described or inferred by the statement.<a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a></li>
 <li><strong>General</strong>: Your proof can’t just relate to specific examples of the statements; it should cover <em>all</em> possible cases of the statement.</li>
 </ul>
 <p>Mathematicians can’t check the validity of their own work - they offer to their peers who then check it for validity. Germain did this, Mirzakhani did this, Euclid did. Once your peers have approved it, you then can publish your proof as a piece of mathematics. It’s at <em>this</em> point that you enter the history books! The reason you shouldn’t check the validity of your own work is that <em>you</em> wrote it. It’s very hard to notice mistakes or holes in your own work.\footnote[This is why I always think it’s strange to tell students at the end of an exam “<em>Check your paper for mistakes before giving it in</em>.” You might notice a question you forgot to answer or a piece of work you forgot to cross out, but it’s very difficult to check your own work for actual mistakes. <em>You</em> wrote it, so you’re not the best person to check it!]</p>
@@ -233,7 +233,7 @@ or
 <li><strong>Arguing from examples:</strong> Looking at examples is one of the most helpful practices a conjecture-prover can engage in. We discussed how useful it is to start with examples as a “way-in” to a new conjecture. However, it is a mistake to think that general statement can be proved by showing it to be true for some cases. For example, finding five right-angled triangles where Pythagoras’ Theorem is true does not prove that the theorem is true for <em>all</em> triangles.</li>
 <li><strong>Using the same letter to mean two different things:</strong> Often beginner conjecture provers give a new variable quantity the same letter name as a previously introduced variable. This will confuse your reader.</li>
 <li><strong>Claiming something is true without having justified it:</strong>. This is also called “jumping to a conclusion.”</li>
-<li><strong>Assuming the thing to be proved is true:</strong> If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.<a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a>
+<li><strong>Assuming the thing to be proved is true:</strong> If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.<a href="#fn35" class="footnote-ref" id="fnref35"><sup>35</sup></a>
 <!-- - **Using “any” when you mean “some” -->
 <!-- - For example, *any* multiple of 5 ends with 5 versus *some* multiples of 5 end with 5. -->
 <!-- **Using “if” when you mean “because”** --></li>
@@ -295,10 +295,10 @@ Divide both sides of Equality <a href="validity.html#eq:knew">(9.14)</a> by <spa
 </div>
 <div class="footnotes">
 <hr />
-<ol start="32">
-<li id="fn32"><p>Note, proofs might be overly long or complicated, and this is a justified criticism we can make - proofs should always be as short and efficient as they can be (whilst still being complete). However, a valid proof don’t stop being valid just because it is overly long.<a href="validity.html#fnref32" class="footnote-back">↩︎</a></p></li>
-<li id="fn33"><p>If the statement concerns all whole numbers, your proof would not be valid if it only covers positive numbers. If the statement concerns all polygons, your proof would not be valid if it only covers triangles and squares.<a href="validity.html#fnref33" class="footnote-back">↩︎</a></p></li>
-<li id="fn34"><p>A lawyer in court trying to prove a defendant guilty is not allowed to say, ``Because we know the defendant is guilty, we know he can’t have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.’’ No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.<a href="validity.html#fnref34" class="footnote-back">↩︎</a></p></li>
+<ol start="33">
+<li id="fn33"><p>Note, proofs might be overly long or complicated, and this is a justified criticism we can make - proofs should always be as short and efficient as they can be (whilst still being complete). However, a valid proof don’t stop being valid just because it is overly long.<a href="validity.html#fnref33" class="footnote-back">↩︎</a></p></li>
+<li id="fn34"><p>If the statement concerns all whole numbers, your proof would not be valid if it only covers positive numbers. If the statement concerns all polygons, your proof would not be valid if it only covers triangles and squares.<a href="validity.html#fnref34" class="footnote-back">↩︎</a></p></li>
+<li id="fn35"><p>A lawyer in court trying to prove a defendant guilty is not allowed to say, ``Because we know the defendant is guilty, we know he can’t have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.’’ No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.<a href="validity.html#fnref35" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -306,7 +306,7 @@ Divide both sides of Equality <a href="validity.html#eq:knew">(9.14)</a> by <spa
           </div>
         </div>
       </div>
-<a href="proving-a-conjecture.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-started-with-a-new-conjecture.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="proof-by-exhaustion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
