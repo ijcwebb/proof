@@ -179,17 +179,24 @@ b. Integers retain their parity when squared.
 c. The sum of two consecutive integers is odd.
 d. Numbers retain their sign when cubed.
 
-``` 
+```
 
 ```{exercise}
 Draw the conjecture map of the conjecture from Exercise 8.2 (a), (c) and (d).
 
-``` 
+```
 
 ```{exercise}
 Why is it difficult to draw a conjecture map for Exercise 8.2 (b), (e) and (f)?
 
-``` 
+```
+
+```{exercise}
+In class, we met the concept of dividing up a group of items into two smaller groups. If ALL the elements in the original groups are contained in one (or both) of the two smaller groups, we say the smaller groups are 'complete'. And if the two smaller groups don't share any elements, we say they are 'disjoint' from one another.
+a. Our class.
+b. The integer
+
+```
 </div>
 
 ### Choose your method

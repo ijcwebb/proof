@@ -134,7 +134,7 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 ``` 
 
 ```{r, echo=FALSE, out.width="45%", fig.cap="The figure shows a square **inscribed** in a circle, which is **inscribed** in another square.", fig.align="center"}
-knitr::include_graphics(rep("figures/Diagram_of_Pythagoras_Theorem_simplified.png"))
+knitr::include_graphics(rep("figures/sqinacircinasq.png"))
 ```
 
 </div>

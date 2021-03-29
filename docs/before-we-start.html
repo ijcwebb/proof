@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Before we start… | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="Description" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Before we start… | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Before we start… | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="Description" />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-03-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="getting-started-with-a-new-conjecture.html"/>
+<link rel="next" href="proof-by-exhaustion.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-course"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.3</b> How to use this book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statements.html"><a href="statements.html#non-statements"><i class="fa fa-check"></i><b>2.1</b> Non-statements</a></li>
+<li class="chapter" data-level="2.2" data-path="statements.html"><a href="statements.html#what-makes-a-good-statement"><i class="fa fa-check"></i><b>2.2</b> What makes a <em>good</em> statement?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="truth-values.html"><a href="truth-values.html#what-is-the-truth-value-of-a-statement"><i class="fa fa-check"></i><b>3.1</b> What is the truth value of a statement?</a></li>
+<li class="chapter" data-level="3.2" data-path="truth-values.html"><a href="truth-values.html#statements-with-clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.2</b> Statements with clearly defined truth values</a></li>
+<li class="chapter" data-level="3.3" data-path="truth-values.html"><a href="truth-values.html#statements-without-clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.3</b> Statements without clearly defined truth values</a></li>
+<li class="chapter" data-level="3.4" data-path="truth-values.html"><a href="truth-values.html#unknown-truth-values"><i class="fa fa-check"></i><b>3.4</b> Unknown truth values</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematical-statements.html"><a href="mathematical-statements.html#definition"><i class="fa fa-check"></i><b>4.1</b> Definition</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-statements.html"><a href="mathematical-statements.html#mathematical-statements-dont-need-to-be-about-mathematics"><i class="fa fa-check"></i><b>4.2</b> Mathematical statements don’t need to be about mathematics!</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematical-statements.html"><a href="mathematical-statements.html#statements-containing-mathematics-arent-necessarily-mathematical"><i class="fa fa-check"></i><b>4.3</b> Statements containing mathematics aren’t necessarily mathematical!</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html"><i class="fa fa-check"></i><b>5</b> Axioms and definitions</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#axioms-are-a-special-kind-of-mathematical-statement"><i class="fa fa-check"></i><b>5.1</b> Axioms are a special kind of mathematical statement</a></li>
+<li class="chapter" data-level="5.2" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#definitions-are-a-special-kind-of-axiom"><i class="fa fa-check"></i><b>5.2</b> Definitions are a special kind of axiom</a></li>
+<li class="chapter" data-level="5.3" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#types-of-real-numbers"><i class="fa fa-check"></i><b>5.3</b> Types of real numbers</a></li>
+<li class="chapter" data-level="5.4" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#inequalities"><i class="fa fa-check"></i><b>5.4</b> Inequalities</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mathematical-proof.html"><a href="mathematical-proof.html#mathematics-versus-other-fields"><i class="fa fa-check"></i><b>6.1</b> Mathematics versus other fields</a></li>
+<li class="chapter" data-level="6.2" data-path="mathematical-proof.html"><a href="mathematical-proof.html#so-what-does-this-all-mean"><i class="fa fa-check"></i><b>6.2</b> So what does this all mean?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-counterexample"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="7.2" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-disproof"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html"><i class="fa fa-check"></i><b>8</b> Getting started with a new conjecture</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html#step-1-start-by-looking-for-a-counterexample"><i class="fa fa-check"></i><b>8.1</b> Step 1: Start by looking for a counterexample</a></li>
+<li class="chapter" data-level="8.2" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html#step-2-try-to-build-a-proof"><i class="fa fa-check"></i><b>8.2</b> Step 2: Try to build a proof</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="before-we-start.html"><a href="before-we-start.html"><i class="fa fa-check"></i><b>9</b> Before we start…</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="before-we-start.html"><a href="before-we-start.html#why-prove-something"><i class="fa fa-check"></i><b>9.1</b> Why prove something?</a></li>
+<li class="chapter" data-level="9.2" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-write-a-good-proof"><i class="fa fa-check"></i><b>9.2</b> How do I write a good proof?</a></li>
+<li class="chapter" data-level="9.3" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-check-my-proof-is-correct"><i class="fa fa-check"></i><b>9.3</b> How do I check my proof is correct?</a></li>
+<li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
+<li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
+<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
+<li class="chapter" data-level="9.7" data-path="before-we-start.html"><a href="before-we-start.html#exercises"><i class="fa fa-check"></i><b>9.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html#steps"><i class="fa fa-check"></i><b>10.1</b> Steps</a></li>
+<li class="chapter" data-level="10.2" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html#formal-definition"><i class="fa fa-check"></i><b>10.2</b> Formal definition</a></li>
+<li class="chapter" data-level="10.3" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html#practice"><i class="fa fa-check"></i><b>10.3</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>11</b> Direct proof</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="direct-proof.html"><a href="direct-proof.html#steps-1"><i class="fa fa-check"></i><b>11.1</b> Steps</a></li>
+<li class="chapter" data-level="11.2" data-path="direct-proof.html"><a href="direct-proof.html#formal-definition-1"><i class="fa fa-check"></i><b>11.2</b> Formal definition</a></li>
+<li class="chapter" data-level="11.3" data-path="direct-proof.html"><a href="direct-proof.html#practice-1"><i class="fa fa-check"></i><b>11.3</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="using-previous-proofs-disproofs.html"><a href="using-previous-proofs-disproofs.html"><i class="fa fa-check"></i><b>12</b> Using previous proofs / disproofs</a></li>
+<li class="chapter" data-level="13" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>13</b> Proof by cases</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="proof-by-cases.html"><a href="proof-by-cases.html#introduction-1"><i class="fa fa-check"></i><b>13.1</b> Introduction</a></li>
+<li class="chapter" data-level="13.2" data-path="proof-by-cases.html"><a href="proof-by-cases.html#similarity-to-proof-by-exhaustion"><i class="fa fa-check"></i><b>13.2</b> Similarity to proof by exhaustion</a></li>
+<li class="chapter" data-level="13.3" data-path="proof-by-cases.html"><a href="proof-by-cases.html#without-loss-of-generality"><i class="fa fa-check"></i><b>13.3</b> Without loss of generality</a></li>
+<li class="chapter" data-level="13.4" data-path="proof-by-cases.html"><a href="proof-by-cases.html#knowing-when-to-use-cases"><i class="fa fa-check"></i><b>13.4</b> Knowing when to use cases</a></li>
+<li class="chapter" data-level="13.5" data-path="proof-by-cases.html"><a href="proof-by-cases.html#choosing-the-cases"><i class="fa fa-check"></i><b>13.5</b> Choosing the cases</a></li>
+<li class="chapter" data-level="13.6" data-path="proof-by-cases.html"><a href="proof-by-cases.html#how-many-cases"><i class="fa fa-check"></i><b>13.6</b> How many cases?</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="proof-by-induction.html"><a href="proof-by-induction.html"><i class="fa fa-check"></i><b>14</b> Proof by induction</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="proof-by-induction.html"><a href="proof-by-induction.html#the-steps"><i class="fa fa-check"></i><b>14.1</b> The steps</a></li>
+<li class="chapter" data-level="14.2" data-path="proof-by-induction.html"><a href="proof-by-induction.html#the-domino-analogy"><i class="fa fa-check"></i><b>14.2</b> The domino analogy</a></li>
+<li class="chapter" data-level="14.3" data-path="proof-by-induction.html"><a href="proof-by-induction.html#when-to-use-induction"><i class="fa fa-check"></i><b>14.3</b> When to use induction</a></li>
+<li class="chapter" data-level="14.4" data-path="proof-by-induction.html"><a href="proof-by-induction.html#identifying-the-base-case"><i class="fa fa-check"></i><b>14.4</b> Identifying the base case</a></li>
+<li class="chapter" data-level="14.5" data-path="proof-by-induction.html"><a href="proof-by-induction.html#formal-definition-2"><i class="fa fa-check"></i><b>14.5</b> Formal definition</a></li>
+<li class="chapter" data-level="14.6" data-path="proof-by-induction.html"><a href="proof-by-induction.html#practice-2"><i class="fa fa-check"></i><b>14.6</b> Practice</a></li>
+<li class="chapter" data-level="14.7" data-path="proof-by-induction.html"><a href="proof-by-induction.html#going-the-other-way"><i class="fa fa-check"></i><b>14.7</b> Going the “other” way</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="proof-by-contraposition.html"><a href="proof-by-contraposition.html"><i class="fa fa-check"></i><b>15</b> Proof by contraposition</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="proof-by-contraposition.html"><a href="proof-by-contraposition.html#not-yet-uploaded"><i class="fa fa-check"></i><b>15.1</b> Not yet uploaded</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html"><i class="fa fa-check"></i><b>16</b> Proof by contradiction</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html#not-yet-uploaded-1"><i class="fa fa-check"></i><b>16.1</b> Not yet uploaded</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>17</b> Mathematical incompleteness</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html#not-yet-uploaded-2"><i class="fa fa-check"></i><b>17.1</b> Not yet uploaded</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="before-we-start" class="section level1" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Before we start…</h1>
+<p>Prior to beginning to prove some conjectures, there are several questions which students always have, or difficulties that seem to arise. This chapter will address some of them.</p>
+<div id="why-prove-something" class="section level2" number="9.1">
+<h2><span class="header-section-number">9.1</span> Why prove something?</h2>
+<p>We should ask ourselves why we should care about mathematical proof. (Hopefully you asked yourself this prior to taking this course!) Why are mathematics proofs important? This is a <em>big</em> question, which we won’t pretend to be able to answer in just a few short paragraphs, but I’ll mention a couple of my main reasons for caring about mathematical proof:</p>
+<ul>
+<li><p>A proof of a mathematical statement is absolute; there is no exception to the rule. They cannot be argued this way or that way, and no two people can come to different conclusions upon reading a mathematical proof. There is no “fake news,” “alternative facts,” or lies in mathematics. Such absolute statements are wonderful and do not exist in any other field of study</p></li>
+<li><p>Mathematics is EVERYWHERE! From music to the economy, from demographics to nature, from business to space travel, mathematics is used to help us reason about the world we live in. If we weren’t able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us.</p></li>
+<li><p>It is possible to know when you can not do better; for example, a cartographer wishing to use as few colours as possible to colour her maps can be told by a mathematician that four different colours will suffice to ensure no two adjacent areas are the same colour (this theorem is called the <em>Four Colour Theorem</em>}. Similarly mathematicians have been able to tell chemists when certain crystal structures have no mathematical obstructions (which led chemists to search for, and successfully produce, new crystal structures). There are numerous other examples of this kind.</p></li>
+<li><p>Mathematics isn’t done simply to serve a purpose, however, or to support other fields. A mathematical proof precisely captures an idea, ideas which as well as being fundamental are often beautiful and elegant. These beautiful ideas deserve to be written down correctly.</p></li>
+</ul>
+</div>
+<div id="how-do-i-write-a-good-proof" class="section level2" number="9.2">
+<h2><span class="header-section-number">9.2</span> How do I write a good proof?</h2>
+<p>Here are some things to remember when writing proofs:</p>
+<ul>
+<li><p>Always use English (or Kyrgyz, Spanish, Russian, Arabic or whichever language you’re writing your proof in) to clearly convey what you mean; good mathematical arguments should read like an essay. Whenever you write a proof, you should read through your answer and check to see if it could be read aloud and still be understood.</p></li>
+<li><p>Label lines of work that you need to refer back to with reference numbers. In this course, you should also label the conjecture with the reference number from the textbook. End the proof with the <span class="math inline">\(\square\)</span> symbol to show you’re done.</p></li>
+<li><p>Always clearly state your assumptions. This becomes extra important with the method proof by contradiction, and is key with the method proof by cases.</p></li>
+<li><p>Use words or symbols to correctly connect the mathematical statements which make up your proof (See the section below on the difference between the symbols <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span>.)</p></li>
+<li><p>Take pride in the mathematics you write; when you write a piece of mathematics, you are showing people <em>exactly</em> how you think. So, you should try to write as elegantly and beautifully as you can!</p></li>
+<li><p>Good mathematical proofs written by one person should be understandable by another. All terms should be clearly defined, and any variables used too.</p></li>
+<li><p>Proofs should be watertight, meaning that it shouldn’t contain any holes - no one should be able to criticise you for not considering something. For example, if the conjecture concerns all whole numbers, your proof would not be valid if it only covers positive numbers. If the statement concerns all polygons, your proof would not be valid if it only covers triangles and squares.</p></li>
+<li><p>Proofs should always be as short and efficient as possible, whilst still being complete.</p></li>
+</ul>
+</div>
+<div id="how-do-i-check-my-proof-is-correct" class="section level2" number="9.3">
+<h2><span class="header-section-number">9.3</span> How do I check my proof is correct?</h2>
+<p>Mathematicians can’t check their own proofs, mainly because <em>they</em> wrote it. Have you ever tried to spot a mistake you’ve made in your own work? It can be really difficult to do!</p>
+<p>For a proof to be declared valid, it should be shared with your peers to check it. Germain did this, Mirzakhani did this, Euclid did this. In this course, you’ll share your answers with me and with each other.</p>
+<p>Once your peers have approved it, you then can publish your proof as a piece of mathematics. It’s at <em>this</em> point that you enter the history books and your mathematical proof remains valid for ever!</p>
+<p>Note however, that as you move through the rest of this course, you will start to get a sense of when you have finished a proof. Knowing when a proof is finished, and when it is <em>not</em> finished, is a valuable skill you will develop.</p>
+</div>
+<div id="common-mistakes-in-proof" class="section level2" number="9.4">
+<h2><span class="header-section-number">9.4</span> Common mistakes in proof</h2>
+<p>Here are some of the most common mistakes when writing proofs, all of which make your proof *invalid:</p>
+<ul>
+<li><strong>Arguing from examples:</strong> Looking at examples is one of the most helpful practices a conjecture-prover can engage in. We discussed how useful it is to start with examples as a “way-in” to a new conjecture. However, it is a mistake to think that general statement can be proved by showing it to be true for some cases. For example, finding five right-angled triangles where Pythagoras’ Theorem is true does not prove that the theorem is true for <em>all</em> triangles.</li>
+<li><strong>Using the same letter to mean two different things:</strong> Often beginner conjecture provers give a new variable quantity the same letter name as a previously introduced variable. This will confuse your reader.</li>
+<li><strong>Assuming the thing to be proved is true:</strong> If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></li>
+<li><strong>Claiming something is true without having justified it:</strong>. This is also called “jumping to a conclusion.”
+<!-- - **Using “any” when you mean “some” -->
+<!-- - For example, *any* multiple of 5 ends with 5 versus *some* multiples of 5 end with 5. -->
+<!-- **Using “if” when you mean “because”** --></li>
+</ul>
+<p>The first of these means you haven’t actually started a proof. The second is not too much of a problem and is easily rectified. The last two would mean you have started a proof but that it contains fundamental problems. Both of these two are a headache to mathematicians and conjecture-provers around the world!</p>
+</div>
+<div id="rightarrow-and-leftrightarrow" class="section level2" number="9.5">
+<h2><span class="header-section-number">9.5</span> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></h2>
+<p>Finally, we discuss the important mathematical symbols “<span class="math inline">\(\Rightarrow\)</span>,” “<span class="math inline">\(\Leftrightarrow\)</span>” and “<span class="math inline">\(=\)</span>,” and how they should be used in proofs.</p>
+<div id="the-equals-sign" class="section level3" number="9.5.1">
+<h3><span class="header-section-number">9.5.1</span> The equals sign</h3>
+<p>The equals sign, “<span class="math inline">\(=\)</span>,” is used to denote an equality between mathematics expressions (not statements). So for example,</p>
+<p><span class="math display">\[\begin{align}
+  1+1=2
+\end{align}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\begin{align}
+  \sin^2 \theta + \cos^2 \theta = 1
+\end{align}\]</span></p>
+</div>
+<div id="the-implies-sign" class="section level3" number="9.5.2">
+<h3><span class="header-section-number">9.5.2</span> The implies sign</h3>
+<p>The implies sign, “<span class="math inline">\(\Rightarrow\)</span>,” is used to denote when one mathematical statement follows directly from another. For example</p>
+<p><span class="math display">\[\begin{align}
+  x &amp;= 3 \Rightarrow x^2 = 9
+\end{align}\]</span></p>
+<p>which is read “if <span class="math inline">\(x\)</span> equals three then <span class="math inline">\(x\)</span> squared equals nine.” Note that it would be wrong to write</p>
+<p><span class="math display">\[\begin{align}
+  x^2 = 9 \Rightarrow x &amp;= 3
+\end{align}\]</span></p>
+<p>as <span class="math inline">\(x^2 = 9\)</span> doesn’t mean that <span class="math inline">\(x\)</span> is definitely <span class="math inline">\(3\)</span> (it could be <span class="math inline">\(-3\)</span>).</p>
+</div>
+<div id="the-equivalence-sign" class="section level3" number="9.5.3">
+<h3><span class="header-section-number">9.5.3</span> The equivalence sign</h3>
+<p>The equivalence sign, “<span class="math inline">\(\Leftrightarrow\)</span>,” is used to denote the equivalence of two mathematical statements. If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are mathematical statements, then writing <span class="math inline">\(A \Leftrightarrow B\)</span> means that both <span class="math inline">\(A \Rightarrow B\)</span> and <span class="math inline">\(B \Rightarrow A\)</span> are true. For example,</p>
+<p><span class="math display">\[\begin{align}
+    x - 1 &amp;= 0 \Leftrightarrow x = 1
+\end{align}\]</span></p>
+<p>Note that it would be wrong to write</p>
+<p><span class="math display">\[\begin{align}
+    x^2 &amp;= 9 \Leftrightarrow x = 3
+\end{align}\]</span></p>
+<p>but correct to write</p>
+<p><span class="math display">\[\begin{align}
+    x^2 &amp;= 9 \Leftrightarrow x = \pm 3
+\end{align}\]</span></p>
+</div>
+</div>
+<div id="example" class="section level2" number="9.6">
+<h2><span class="header-section-number">9.6</span> Example</h2>
+<p>Let’s look at an example of a good proof and a bad proof. Both are trying to prove the following conjecture:</p>
+<p>Conjecture 9.1 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> are positive real numbers and <span class="math inline">\(x = \pm \sqrt{\frac{c}{a}}\)</span>, then <span class="math inline">\(ax^2-c=0\)</span>.</p>
+<p>A couple of observations first. Note that <span class="math inline">\(a, c &gt;0\)</span> implies that <span class="math inline">\(a \neq 0\)</span>, which is important as it’s the denominator of the fraction <span class="math inline">\(\frac{c}{a}\)</span>. This means that <span class="math inline">\(\frac{c}{a}\)</span> is defined. Also note that <span class="math inline">\(a, c &gt; 0\)</span> implies that <span class="math inline">\(\frac{c}{a} &gt; 0\)</span> which is important as it is under a square root. This means that <span class="math inline">\(\sqrt{\frac{c}{a}}\)</span> is defined.</p>
+<div id="a-good-proof" class="section level3" number="9.6.1">
+<h3><span class="header-section-number">9.6.1</span> A good proof</h3>
+<p>First, the good proof.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Our starting point <span class="math inline">\(P\)</span> is <span class="math inline">\(x = \pm \sqrt{\frac{c}{a}}\)</span>, with <span class="math inline">\(a, c \in \mathbb R^+\)</span>.
+If
+<span class="math display" id="eq:abe">\[\begin{align}
+  x &amp;= \pm \sqrt{\frac{c}{a}}\tag{9.1}
+\end{align}\]</span>
+then squaring both sides, meaning both sides are positive and equivalent, gives
+<span class="math display" id="eq:maybe" id="eq:chick">\[\begin{align}
+  x^2 &amp;= \left(\pm \sqrt{\frac{c}{a}} \right)^2 \tag{9.2} \\
+  &amp;= \frac{c}{a} \tag{9.3}
+\end{align}\]</span>
+Multiplying both sides by <span class="math inline">\(a\)</span>, which we can do as <span class="math inline">\(a\neq 0\)</span>, we get
+<span class="math display" id="eq:neigh" id="eq:load">\[\begin{align}
+  ax^2 &amp;= c \tag{9.4} \\
+  ax^2 - c &amp;= 0 \tag{9.5}
+\end{align}\]</span>
+We have shown that <span class="math inline">\(x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0\)</span> as required.</p>
+</div>
+<p>Here are a couple of things to notice:</p>
+<ul>
+<li><p>This conjecture was not difficult to prove, so the proof shouldn’t be overly complicated. The presentation above demonstrates how to write a clear, comprehensive, cohesive and rigorous (watertight) argument.</p></li>
+<li><p>We label the conjecture with its reference number from the textbook, in this case “Conjecture <a href="#cnj:red">9.1</a>,” so that if we need to we can refer back to it and its proof/disproof later. As we’ll see in a later chapter, we often use work we’ve done previously, and having a quick way to refer back to previous conjectures and their proofs/disproof can speed this up for us!</p></li>
+<li><p>Every line in the proof above is labelled with a reference number: <a href="before-we-start.html#eq:abe">(9.1)</a>, <a href="before-we-start.html#eq:chick">(9.2)</a>, <a href="before-we-start.html#eq:maybe">(9.3)</a>, <a href="before-we-start.html#eq:load">(9.4)</a>, <a href="before-we-start.html#eq:neigh">(9.5)</a>. In your proofs, you probably won’t need or want to label every line of work, but you should label important lines, ones which you use later in the proof (or even later in proofs of other conjectures!)</p></li>
+<li><p>Notice that we used the <span class="math inline">\(\square\)</span> symbol to indicate that we consider the proof is finished.</p></li>
+</ul>
+</div>
+<div id="a-bad-proof" class="section level3" number="9.6.2">
+<h3><span class="header-section-number">9.6.2</span> A bad proof</h3>
+<p>Now for the bad proof.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> 
+<span class="math display" id="eq:fire" id="eq:water">\[\begin{align}
+  ax^2 + c &amp;= x^2 + \frac{c}{a} = 0 \tag{9.6} \\
+  &amp;= x \Rightarrow \pm \sqrt{\frac{c}{a}} \tag{9.7}
+\end{align}\]</span>
+which completes the proof.</p>
+</div>
+<p>You can probably see very easily that this second proof is far from perfect. However, you might argue that the person who wrote the answer more or less knew what they meant. For example, they know “why” <span class="math inline">\(x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0\)</span>. The question then is, what’s wrong with this proof?</p>
+<ul>
+<li><p>Firstly, it is really hard for the reader to follow.</p></li>
+<li><p>Secondly, when you, the author, are not absolutely clear about what your assumptions are, or don’t properly justify implications, it is easy to run into trouble.</p></li>
+</ul>
+<p>Here’s another example which demonstrates this:</p>
+<p>Let
+<span class="math display">\[\begin{align}
+  x=y
+\end{align}\]</span>
+As <span class="math inline">\(x=y\)</span>,
+<span class="math display" id="eq:noone">\[\begin{align}
+    y(x-y) &amp;= x(x-y) \tag{9.8}
+\end{align}\]</span>
+Also,
+<span class="math display" id="eq:reign">\[\begin{align}
+    &amp; x(x-y) = x^2 - xy - x^2 - y^2 = (x+y)(x-y) = 2y(x-y) \tag{9.9}
+\end{align}\]</span>
+So,
+<span class="math display" id="eq:rain">\[\begin{align}
+  y(x-y) &amp;= 2y(x-y) \tag{9.10}
+\end{align}\]</span>
+and so
+<span class="math display" id="eq:decide">\[\begin{align}
+  1 &amp;= 2 \tag{9.11}
+\end{align}\]</span></p>
+</div>
+</div>
+<div id="exercises" class="section level2" number="9.7">
+<h2><span class="header-section-number">9.7</span> Exercises</h2>
+<div class="alert alert-danger" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-110" class="exercise"><strong>Exercise 9.1  </strong></span>Look back at the “bad proof” above. Based on everything you’ve read in this chapter, how many things can you find to criticise about this proof?</p>
+</div>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-111" class="exercise"><strong>Exercise 9.2  </strong></span>Prove the following conjecture using the good proof practices outlined above.
+</div>
+<p>Conjecture 9.2 : If <span class="math inline">\(a, b, c \in \mathbb R\)</span>, with <span class="math inline">\(a\neq 0\)</span>, <span class="math inline">\(b^2 - 4ac &gt; 0\)</span> and <span class="math inline">\(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)</span>, then <span class="math inline">\(ax^2 + bx + c = 0\)</span>.</p>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-112" class="exercise"><strong>Exercise 9.3  </strong></span>What is wrong with the following argument?</p>
+<p><em>Proof:</em> Let
+<span class="math display" id="eq:last">\[\begin{align}
+  x &amp;= 1 + 1 + ... + 1 \text{ (so there are $x$ 1&#39;s)} \tag{9.12} 
+\end{align}\]</span>
+Multiplying both sides of equality <a href="before-we-start.html#eq:last">(9.12)</a> by <span class="math inline">\(x\)</span> we get:
+<span class="math display" id="eq:yellow">\[\begin{align}
+  x^2 &amp;= x + x + ... + x \tag{9.13} 
+\end{align}\]</span>
+Differentiating both sides of equality <a href="before-we-start.html#eq:yellow">(9.13)</a> with respect to <span class="math inline">\(x\)</span> we get
+<span class="math display" id="eq:pepper" id="eq:knew">\[\begin{align}
+  2x &amp;= 1 + 1 + ... + 1 \tag{9.14} \\
+  &amp;= x \tag{9.15} 
+\end{align}\]</span>
+Divide both sides of equality <a href="before-we-start.html#eq:knew">(9.14)</a> by <span class="math inline">\(x\)</span>, we conclude that
+<span class="math display" id="eq:salt">\[\begin{align}
+  2 &amp;= 1  \tag{9.16}
+\end{align}\]</span></p>
+</div>
+</div>
+<!-- And proof by smallest counterexample: https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample -->
+<!-- Select text, then Shift Ctrl and C to comment it out. -->
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="33">
+<li id="fn33"><p>A lawyer in court trying to prove a defendant guilty is not allowed to say, “Because we know the defendant is guilty, we know he can’t have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.” No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.<a href="before-we-start.html#fnref33" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="getting-started-with-a-new-conjecture.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="proof-by-exhaustion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/09-test.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/09-test.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,142 +1,48 @@
-# Validity
+# Before we start...
 
-## What is a mathematical proof?
-
-(
-
-There is something that connects the work of Euclid and al-Khwarizmi and Germain and Johnson and Mirzakhani - all of their mathematical proofs were *valid*. 
-
-For a proof to be declared as *valid* it should be:
-
-- **Universal**: A proof written by one person should be understandable by another. 
-- **Clear**: All terms should be defined, as well as any variables used.
-- **Watertight**. This means that it shouldn't contain any holes. No one should be able to criticise you for not considering something.^[Note, proofs might be overly long or complicated, and this is a justified criticism we can make - proofs should always be as short and efficient as they can be (whilst still being complete). However, a valid proof don't stop being valid just because it is overly long.]
-- **Complete**: Your proof should cover all cases described or inferred by the statement.^[If the statement concerns all whole numbers, your proof would not be valid if it only covers positive numbers. If the statement concerns all polygons, your proof would not be valid if it only covers triangles and squares.]
-- **General**: Your proof can't just relate to specific examples of the statements; it should cover *all* possible cases of the statement.
-
-Mathematicians can't check the validity of their own work - they offer to their peers who then check it for validity. Germain did this, Mirzakhani did this, Euclid did. Once your peers have approved it, you then can publish your proof as a piece of mathematics. It's at *this* point that you enter the history books! The reason you shouldn't check the validity of your own work is that *you* wrote it. It's very hard to notice mistakes or holes in your own work.\footnote[This is why I always think it's strange to tell  students at the end of an exam "*Check your paper for mistakes before giving it in*". You might notice a question you forgot to answer or a piece of work you forgot to cross out, but it's very difficult to check your own work for actual mistakes.  *You* wrote it, so you're not the best person to check it!] 
-
-However, as you move through the rest of this book, you will start to get a sense of when you have finished a proof. Knowing when a proof is finished, and when it is *not* finished, is a skill you should try to develop.
-
-)
-
-Generally speaking, a mathematical proof is a rigorous demonstration that a mathematical statement is true. As an elementary example, consider the following conjecture. We won't discuss exactly which method of proof we're using here, just show a proof to give an idea of how a rigorous proof looks. We will also see an example of a bad proof of this conjecture, for comparison. Notice that the conjecture has a number (in this case 9.1). This is so we can refer back to it, especially in work on later conjectures.
-
-(\#cnj:red): If $a$ and $c$ are positive real numbers and $x = \pm \sqrt{\frac{c}{a}}$, then $ax^2-c=0$.
-
-A couple of observations before we begin our proof: Note that $a, c >0$ implies that $a \neq 0$, which is important as it's the denominator of the fraction $\frac{c}{a}$. This means that $\frac{c}{a}$ is **defined**. Also note that $a, c > 0$ implies that $\frac{c}{a} > 0$ which is important as it is under a square root. This means that $\sqrt{\frac{c}{a}}$ is **defined}.
-
-Proving this conjecture is not too challenging, using our axioms of algebra. Have a go yourself, then turn to the next page to see how our proofs compare!
-
-```{proof}
-Our starting point $P$ is $x = \pm \sqrt{\frac{c}{a}}$, with $a, c \in \mathbb R^+$.
-  If
-\begin{align}
-  x &= \pm \sqrt{\frac{c}{a}}(\#eq:abe)
-\end{align}
-  then squaring both sides, meaning both sides are positive and equivalent,
-\begin{align}
-  x^2 &= \left(\pm \sqrt{\frac{c}{a}} \right)^2 (\#eq:chick) \\
-  &= \frac{c}{a} (\#eq:maybe)
-\end{align}
-  Multiplying both sides by $a$, which we can do as $a\neq 0$, we get
-\begin{align}
-  ax^2 &= c (\#eq:load) \\
-  ax^2 - c &= 0 (\#eq:neigh)
-\end{align}
-  We have shown that $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$ as required.
-
-```
-
-Here's a couple of things to notice:
-
-- We label the conjecture with its reference number from the textbook, in this case "**Conjecture \@ref(cnj:red)**", so that if we need to we can refer back to it and its proof/disproof later. As we'll see in a later chapter, we often use work we've done previously, and having a quick way to refer back to previous conjectures and their proofs/disproof can speed this up for us.
-    
-- I have labelled EVERY line in the proof with a reference number (\@ref(eq:abe), \@ref(eq:chick), \@ref(eq:maybe), \@ref(eq:load), \@ref(eq:neigh)). You don't need to label every line of a proof, but you should label important lines, so that you can easily refer back to them later in the proof, or in later work. When should you label a line? Whenever you need to refer specifically to it later on.
-
-- Notice that we used the $\square$ symbol to indicate that the proof is finished.
-
-This statement was not difficult to prove. The presentation above was given to demonstrate how to write a clear, comprehensive, cohesive and rigorous (watertight) argument.
-
-To underline why the above prof is well written, we provide a second "proof" of **Conjecture: \@ref(cnj:red)**, which we'll then criticise:
-
-```{proof}
-2:
-\begin{align}
-  ax^2 + c &= x^2 + \frac{c}{a} = 0 (\#eq:water) \\
-  &= x \Rightarrow \pm \sqrt{\frac{c}{a}} (\#eq:fire)
-\end{align}
-   
-```
-
-You can probably see very easily that "Proof 2" is far from perfect. However, you might argue that the person who wrote the answer more or less knew "why" $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$; so why bother being so precise when formulating a proof?
-
-The two main problems with "Proof 2" is twofold. Firstly, it is really hard for the reader to follow. Secondly, when you are not absolutely clear about what your assumptions are, or don't properly justify implications, it is easy to run into trouble. Here's another example which demonstrates this:
-
-```{proof}
-Let
-\begin{align}
-  x=y
-\end{align}
-  As $x=y$,
-\begin{align}
-    y(x-y) &= x(x-y) (\#eq:noone)
-\end{align}
-  Also,
-\begin{align}
-    & x(x-y) = x^2 - xy - x^2 - y^2 = (x+y)(x-y) = 2y(x-y) (\#eq:reign)
-\end{align}
-  So,
-\begin{align}
-  y(x-y) &= 2y(x-y) (\#eq:rain)
-\end{align}
-  or
-\begin{align}
-  1 &= 2 (\#eq:decide)
-\end{align}
-
-```
-
-<div class="alert alert-danger" role="alert">
-```{exercise}
-Be as critical of ``Proof 2'' as you can be; find as many mistakes/ambiguities/places where the argument can be improved as possible.
-  
-```  
-</div>
-
-<div class="alert alert-info" role="alert">
-```{exercise}
-Prove the following conjecture:
-``` 
-
-
-(\#cnj:blue): If $a, b, c \in \mathbb R$, with $a\neq 0$ and $b^2 - 4ac > 0$, and $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, then $ax^2 + bx + c = 0$.
-
-</div>
+Prior to beginning to prove some conjectures, there are several questions which students always have, or difficulties that seem to arise. This chapter will address some of them.
 
 ## Why prove something?
 
-Okay, so if we accept that proofs are important, then we accept that they should be written carefully and precisely. However, we might ask why are proofs important? This is a *big* question, which we won't pretend to be able to answer in just a few short paragraphs. Instead, let's look at a few reasons why we should care about proving something:
+We should ask ourselves why we should care about mathematical proof. (Hopefully you asked yourself this prior to taking this course!) Why are mathematics proofs important? This is a *big* question, which we won't pretend to be able to answer in just a few short paragraphs, but I'll mention a couple of my main reasons for caring about mathematical proof:
 
-- A proof of a mathematical statement is absolute; there is no exception to the rule. Such absolute statements are wonderful and do not exist in any other field of study!
-- Mathematics is EVERYWHERE! From music to the economy, mathematics is used to help us reason about the world we live in. If we weren't able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us.
-- It is possible to know when you can not do better; for example, cartographer wishing to buy as few colours as possible to colour her maps can be told by a mathematician that four different colours will be enough to colour her map to ensure adjacent areas are all differently coloured (this is called the *Four Colour Theorem}. Similarly mathematicians have been able to tell chemists when certain crystal structures have no mathematical obstructions (which led chemists to search for, and successfully produce, new crystal structures). There are numerous other examples of this kind.
-- Perhaps most importantly, a mathematical proof precisely captures an idea; these ideas are often beautiful and elegant, and they deserve to be written down correctly.
+- A proof of a mathematical statement is absolute; there is no exception to the rule. They cannot be argued this way or that way, and no two people can come to different conclusions upon reading a mathematical proof. There is no "fake news", "alternative facts", or lies in mathematics. Such absolute statements are wonderful and do not exist in any other field of study
+
+- Mathematics is EVERYWHERE! From music to the economy, from demographics to nature, from business to space travel, mathematics is used to help us reason about the world we live in. If we weren't able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us.
+
+- It is possible to know when you can not do better; for example, a cartographer wishing to use as few colours as possible to colour her maps can be told by a mathematician that four different colours will suffice to ensure no two adjacent areas are the same colour (this theorem is called the *Four Colour Theorem*}. Similarly mathematicians have been able to tell chemists when certain crystal structures have no mathematical obstructions (which led chemists to search for, and successfully produce, new crystal structures). There are numerous other examples of this kind.
+
+- Mathematics isn't done simply to serve a purpose, however, or to support other fields. A mathematical proof precisely captures an idea, ideas which as well as being fundamental are often beautiful and elegant. These beautiful ideas deserve to be written down correctly.
 
 ## How do I write a good proof?
 
 Here are some things to remember when writing proofs:
 
-- We've already mentioned a couple of good practices for proof writing, such as labeling the conjecture and important lines of work with references numbers, and ending the proof with the $\square$ symbol.
-- Notice also that the first proof given for Conjecture \@ref(cnj:red) can be read, and understood independently of the conjecture, but that "Proof 2" is completely obscure without the context of Conjecture \@ref(cnj:red)!
+- Always use English (or Kyrgyz, Spanish, Russian, Arabic or whichever language you're writing your proof in) to clearly convey what you mean; good mathematical arguments should read like an essay. Whenever you write a proof, you should read through your answer and check to see if it could be read aloud and still be understood. 
+
+- Label lines of work that you need to refer back to with reference numbers. In this course, you should also label the conjecture with the reference number from the textbook. End the proof with the $\square$ symbol to show you're done.
+
 - Always clearly state your assumptions. This becomes extra important with the method proof by contradiction, and is key with the method proof by cases.
-- Always use English (or Kyrgyz, Spanish, Russian, Arabic or whichever language you're writing your proof in) to clearly convey what you mean; good mathematical arguments should read like an essay. The first sentence in the proof of Conjecture\@ref(cnj:red) reads "If $x$ equals plus or minus the square root of $c$ divided by $a$ then $x$ squared equals plus or minus the square root of $c$ divided by $a$ all squared, which equals $c$ divided by $a$." Whenever you write a proof, you should read through your answer and check to see if it could be read aloud and still be understood.
-- Use words or symbols to correctly connect the mathematical statements which make up your proof.
+
+- Use words or symbols to correctly connect the mathematical statements which make up your proof (See the section below on the difference between the symbols $=$, $\Rightarrow$ and $\Leftrightarrow$.)
+
 - Take pride in the mathematics you write; when you write a piece of mathematics, you are showing people *exactly* how you think. So, you should try to write as elegantly and beautifully as you can!
 
-<!-- And proof by smallest counterexample: https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample -->
+- Good mathematical proofs written by one person should be understandable by another. All terms should be clearly defined, and any variables used too.
 
-<!-- Select text, then Shift Ctrl and C to comment it out. -->
+- Proofs should be watertight, meaning that it shouldn't contain any holes - no one should be able to criticise you for not considering something. For example, if the conjecture concerns all whole numbers, your proof would not be valid if it only covers positive numbers. If the statement concerns all polygons, your proof would not be valid if it only covers triangles and squares.
+
+- Proofs should always be as short and efficient as possible, whilst still being complete.
+
+## How do I check my proof is correct?
+
+Mathematicians can't check their own proofs, mainly because *they* wrote it. Have you ever tried to spot a mistake you've made in your own work? It can be really difficult to do! 
+
+For a proof to be declared valid, it should be shared with your peers to check it. Germain did this, Mirzakhani did this, Euclid did this. In this course, you'll share your answers with me and with each other. 
+
+Once your peers have approved it, you then can publish your proof as a piece of mathematics. It's at *this* point that you enter the history books and your mathematical proof remains valid for ever!
+
+Note however, that as you move through the rest of this course, you will start to get a sense of when you have finished a proof. Knowing when a proof is finished, and when it is *not* finished, is a valuable skill you will develop.
 
 ## Common mistakes in proof
 
@@ -144,8 +50,8 @@ Here are some of the most common mistakes when writing proofs, all of which make
 
 - **Arguing from examples:** Looking at examples is one of the most helpful practices a conjecture-prover can engage in. We discussed how useful it is to start with examples as a "way-in" to a new conjecture. However, it is a mistake to think that general statement can be proved by showing it to be true for some cases. For example, finding five right-angled triangles where Pythagoras' Theorem is true does not prove that the theorem is true for *all* triangles.
 - **Using the same letter to mean two different things:** Often beginner conjecture provers give a new variable quantity the same letter name as a previously introduced variable. This will confuse your reader.
+- **Assuming the thing to be proved is true:** If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.^[A lawyer in court trying to prove a defendant guilty is not allowed to say, "Because we know the defendant is guilty, we know he can't have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night". No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.]
 - **Claiming something is true without having justified it:**. This is also called “jumping to a conclusion”.
-- **Assuming the thing to be proved is true:** If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.^[A lawyer in court trying to prove a defendant guilty is not allowed to say, ``Because we know the defendant is guilty, we know he can't have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.'' No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.]
 <!-- - **Using “any” when you mean “some” -->
 <!-- - For example, *any* multiple of 5 ends with 5 versus *some* multiples of 5 end with 5. -->
 <!-- **Using “if” when you mean “because”** -->
@@ -156,18 +62,39 @@ The first of these means you haven't actually started a proof. The second is not
 
 Finally, we discuss the important mathematical symbols "$\Rightarrow$", "$\Leftrightarrow$" and "$=$", and how they should be used in proofs.
 
-"$=$"
-The **equals sign** is used to denote an equality between mathematics expressions (not statements). So for example, $1+1=2$, or $\sin^2 \theta + \cos^2 \theta = 1$.
+### The equals sign
 
-"$\Rightarrow$"
-The **implies sign** is used to denote when one mathematical statement follows directly from another. For example
+The equals sign, "$=$", is used to denote an equality between mathematics expressions (not statements). So for example, 
+
 \begin{align}
-    $x &= 3 \Rightarrow x^2 = 9$
+  1+1=2
 \end{align}
-which is read "if $x$ equals three then $x$ squared equals nine"
 
-"$\Leftrightarrow$"
-The **equivalence sign** is used to denote the equivalence of two mathematical statements. If $A$ and $B$ are mathematical statements, then writing $A \Leftrightarrow B$ means that both $A \Leftarrow B$ and $B \Leftarrow A$ are true. For example,
+or
+
+\begin{align}
+  \sin^2 \theta + \cos^2 \theta = 1
+\end{align}
+
+### The implies sign
+
+The implies sign, "$\Rightarrow$", is used to denote when one mathematical statement follows directly from another. For example
+
+\begin{align}
+  x &= 3 \Rightarrow x^2 = 9
+\end{align}
+
+which is read "if $x$ equals three then $x$ squared equals nine". Note that it would be wrong to write
+
+\begin{align}
+  x^2 = 9 \Rightarrow x &= 3
+\end{align}
+
+as $x^2 = 9$ doesn't mean that $x$ is definitely $3$ (it could be $-3$).
+
+### The equivalence sign
+
+The equivalence sign, "$\Leftrightarrow$", is used to denote the equivalence of two mathematical statements. If $A$ and $B$ are mathematical statements, then writing $A \Leftrightarrow B$ means that both $A \Rightarrow B$ and $B \Rightarrow A$ are true. For example,
 
 \begin{align}
     x - 1 &= 0 \Leftrightarrow x = 1
@@ -185,32 +112,134 @@ but correct to write
     x^2 &= 9 \Leftrightarrow x = \pm 3
 \end{align}
 
+## Example
+
+Let's look at an example of a good proof and a bad proof. Both are trying to prove the following conjecture:
+
+(\#cnj:red): If $a$ and $c$ are positive real numbers and $x = \pm \sqrt{\frac{c}{a}}$, then $ax^2-c=0$.
+
+A couple of observations first. Note that $a, c >0$ implies that $a \neq 0$, which is important as it's the denominator of the fraction $\frac{c}{a}$. This means that $\frac{c}{a}$ is defined. Also note that $a, c > 0$ implies that $\frac{c}{a} > 0$ which is important as it is under a square root. This means that $\sqrt{\frac{c}{a}}$ is defined.
+
+### A good proof
+
+First, the good proof.
+
+```{proof}
+Our starting point $P$ is $x = \pm \sqrt{\frac{c}{a}}$, with $a, c \in \mathbb R^+$.
+  If
+\begin{align}
+  x &= \pm \sqrt{\frac{c}{a}}(\#eq:abe)
+\end{align}
+  then squaring both sides, meaning both sides are positive and equivalent, gives
+\begin{align}
+  x^2 &= \left(\pm \sqrt{\frac{c}{a}} \right)^2 (\#eq:chick) \\
+  &= \frac{c}{a} (\#eq:maybe)
+\end{align}
+  Multiplying both sides by $a$, which we can do as $a\neq 0$, we get
+\begin{align}
+  ax^2 &= c (\#eq:load) \\
+  ax^2 - c &= 0 (\#eq:neigh)
+\end{align}
+  We have shown that $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$ as required.
+
+```
+
+Here are a couple of things to notice:
+
+- This conjecture was not difficult to prove, so the proof shouldn't be overly complicated. The presentation above demonstrates how to write a clear, comprehensive, cohesive and rigorous (watertight) argument.
+
+- We label the conjecture with its reference number from the textbook, in this case "Conjecture \@ref(cnj:red)", so that if we need to we can refer back to it and its proof/disproof later. As we'll see in a later chapter, we often use work we've done previously, and having a quick way to refer back to previous conjectures and their proofs/disproof can speed this up for us!
+    
+- Every line in the proof above is labelled with a reference number: \@ref(eq:abe), \@ref(eq:chick), \@ref(eq:maybe), \@ref(eq:load), \@ref(eq:neigh). In your proofs, you probably won't need or want to label every line of work, but you should label important lines, ones which you use later in the proof (or even later in proofs of other conjectures!)
+
+- Notice that we used the $\square$ symbol to indicate that we consider the proof is finished.
+
+### A bad proof
+
+Now for the bad proof.
+
+```{proof}
+
+\begin{align}
+  ax^2 + c &= x^2 + \frac{c}{a} = 0 (\#eq:water) \\
+  &= x \Rightarrow \pm \sqrt{\frac{c}{a}} (\#eq:fire)
+\end{align}
+which completes the proof.
+
+```
+
+You can probably see very easily that this second proof is far from perfect. However, you might argue that the person who wrote the answer more or less knew what they meant. For example, they know "why" $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$. The question then is, what's wrong with this proof? 
+
+- Firstly, it is really hard for the reader to follow. 
+
+- Secondly, when you, the author, are not absolutely clear about what your assumptions are, or don't properly justify implications, it is easy to run into trouble. 
+
+Here's another example which demonstrates this:
+
+Let
+\begin{align}
+  x=y
+\end{align}
+  As $x=y$,
+\begin{align}
+    y(x-y) &= x(x-y) (\#eq:noone)
+\end{align}
+  Also,
+\begin{align}
+    & x(x-y) = x^2 - xy - x^2 - y^2 = (x+y)(x-y) = 2y(x-y) (\#eq:reign)
+\end{align}
+  So,
+\begin{align}
+  y(x-y) &= 2y(x-y) (\#eq:rain)
+\end{align}
+  and so
+\begin{align}
+  1 &= 2 (\#eq:decide)
+\end{align}
+
+## Exercises
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Look back at the "bad proof" above. Based on everything you've read in this chapter, how many things can you find to criticise about this proof?
+
+```  
+</div>
+
+
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Look back to your proofs of Conjecture \@ref(cnj:red) and Conjecture \@ref(cnj:blue). With everything you've read in mind, is there anything you would change about your proofs?
-
+Prove the following conjecture using the good proof practices outlined above.
 ``` 
 
+
+(\#cnj:blue): If $a, b, c \in \mathbb R$, with $a\neq 0$, $b^2 - 4ac > 0$ and $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, then $ax^2 + bx + c = 0$.
+
 ```{exercise}
-What is wrong with the following argument:
+What is wrong with the following argument?
 
 *Proof:* Let
 \begin{align}
-  x &= 1 + 1 + ... + 1 \text{ ($x$ times)} (\#eq:last) 
+  x &= 1 + 1 + ... + 1 \text{ (so there are $x$ 1's)} (\#eq:last) 
 \end{align}
-  Multiplying both sides of Equality \@ref(eq:last) by $x$ we get:
+  Multiplying both sides of equality \@ref(eq:last) by $x$ we get:
 \begin{align}
   x^2 &= x + x + ... + x (\#eq:yellow) 
 \end{align}
-  Differentiating both sides of Equality \@ref(eq:yellow) with respect to $x$ we get
+  Differentiating both sides of equality \@ref(eq:yellow) with respect to $x$ we get
 \begin{align}
-  2x &= 1 + 1 + ... + 1 = x (\#eq:knew) 
+  2x &= 1 + 1 + ... + 1 (\#eq:knew) \\
+  &= x (\#eq:pepper) 
 \end{align}
-  Divide both sides of Equality \@ref(eq:knew) by $x$, we conclude that
+  Divide both sides of equality \@ref(eq:knew) by $x$, we conclude that
 \begin{align}
-  2 &= 1 \hspace{55mm}\square
+  2 &= 1  (\#eq:salt)
 \end{align}
 
 ``` 
 
 </div>
+
+<!-- And proof by smallest counterexample: https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample -->
+
+<!-- Select text, then Shift Ctrl and C to comment it out. -->
