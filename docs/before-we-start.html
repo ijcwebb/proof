@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-03-29" />
+<meta name="date" content="2021-04-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,6 @@
 <li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
 <li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
 <li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
-<li class="chapter" data-level="9.7" data-path="before-we-start.html"><a href="before-we-start.html#exercises"><i class="fa fa-check"></i><b>9.7</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>10</b> Proof by exhaustion</a>
 <ul>
@@ -353,47 +352,43 @@ and so
 <span class="math display" id="eq:decide">\[\begin{align}
   1 &amp;= 2 \tag{9.11}
 \end{align}\]</span></p>
-</div>
-</div>
-<div id="exercises" class="section level2" number="9.7">
-<h2><span class="header-section-number">9.7</span> Exercises</h2>
+<!-- ## Exercises -->
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
 <p><span id="exr:unnamed-chunk-110" class="exercise"><strong>Exercise 9.1  </strong></span>Look back at the “bad proof” above. Based on everything you’ve read in this chapter, how many things can you find to criticise about this proof?</p>
 </div>
 </div>
-<div class="alert alert-info" role="alert">
-
-<div class="exercise">
-<span id="exr:unnamed-chunk-111" class="exercise"><strong>Exercise 9.2  </strong></span>Prove the following conjecture using the good proof practices outlined above.
-</div>
-<p>Conjecture 9.2 : If <span class="math inline">\(a, b, c \in \mathbb R\)</span>, with <span class="math inline">\(a\neq 0\)</span>, <span class="math inline">\(b^2 - 4ac &gt; 0\)</span> and <span class="math inline">\(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)</span>, then <span class="math inline">\(ax^2 + bx + c = 0\)</span>.</p>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-112" class="exercise"><strong>Exercise 9.3  </strong></span>What is wrong with the following argument?</p>
-<p><em>Proof:</em> Let
-<span class="math display" id="eq:last">\[\begin{align}
-  x &amp;= 1 + 1 + ... + 1 \text{ (so there are $x$ 1&#39;s)} \tag{9.12} 
-\end{align}\]</span>
-Multiplying both sides of equality <a href="before-we-start.html#eq:last">(9.12)</a> by <span class="math inline">\(x\)</span> we get:
-<span class="math display" id="eq:yellow">\[\begin{align}
-  x^2 &amp;= x + x + ... + x \tag{9.13} 
-\end{align}\]</span>
-Differentiating both sides of equality <a href="before-we-start.html#eq:yellow">(9.13)</a> with respect to <span class="math inline">\(x\)</span> we get
-<span class="math display" id="eq:pepper" id="eq:knew">\[\begin{align}
-  2x &amp;= 1 + 1 + ... + 1 \tag{9.14} \\
-  &amp;= x \tag{9.15} 
-\end{align}\]</span>
-Divide both sides of equality <a href="before-we-start.html#eq:knew">(9.14)</a> by <span class="math inline">\(x\)</span>, we conclude that
-<span class="math display" id="eq:salt">\[\begin{align}
-  2 &amp;= 1  \tag{9.16}
-\end{align}\]</span></p>
-</div>
-</div>
+<!-- <div class="alert alert-info" role="alert"> -->
+<!-- ```{exercise} -->
+<!-- Prove the following conjecture using the good proof practices outlined above. -->
+<!-- ```  -->
+<!-- (\#cnj:blue): If $a, b, c \in \mathbb R$, with $a\neq 0$, $b^2 - 4ac > 0$ and $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, then $ax^2 + bx + c = 0$. -->
+<!-- ```{exercise} -->
+<!-- What is wrong with the following argument? -->
+<!-- *Proof:* Let -->
+<!-- \begin{align} -->
+<!--   x &= 1 + 1 + ... + 1 \text{ (so there are $x$ 1's)} (\#eq:last)  -->
+<!-- \end{align} -->
+<!--   Multiplying both sides of equality \@ref(eq:last) by $x$ we get: -->
+<!-- \begin{align} -->
+<!--   x^2 &= x + x + ... + x (\#eq:yellow)  -->
+<!-- \end{align} -->
+<!--   Differentiating both sides of equality \@ref(eq:yellow) with respect to $x$ we get -->
+<!-- \begin{align} -->
+<!--   2x &= 1 + 1 + ... + 1 (\#eq:knew) \\ -->
+<!--   &= x (\#eq:pepper)  -->
+<!-- \end{align} -->
+<!--   Divide both sides of equality \@ref(eq:knew) by $x$, we conclude that -->
+<!-- \begin{align} -->
+<!--   2 &= 1  (\#eq:salt) -->
+<!-- \end{align} -->
+<!-- ```  -->
+<!-- </div> -->
 <!-- And proof by smallest counterexample: https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample -->
 <!-- Select text, then Shift Ctrl and C to comment it out. -->
 
+</div>
 </div>
 </div>
 <div class="footnotes">

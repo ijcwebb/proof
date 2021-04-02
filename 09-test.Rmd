@@ -197,7 +197,7 @@ Let
   1 &= 2 (\#eq:decide)
 \end{align}
 
-## Exercises
+<!-- ## Exercises -->
 
 <div class="alert alert-danger" role="alert">
 ```{exercise}
@@ -207,38 +207,38 @@ Look back at the "bad proof" above. Based on everything you've read in this chap
 </div>
 
 
-<div class="alert alert-info" role="alert">
-```{exercise}
-Prove the following conjecture using the good proof practices outlined above.
-``` 
+<!-- <div class="alert alert-info" role="alert"> -->
+<!-- ```{exercise} -->
+<!-- Prove the following conjecture using the good proof practices outlined above. -->
+<!-- ```  -->
 
 
-(\#cnj:blue): If $a, b, c \in \mathbb R$, with $a\neq 0$, $b^2 - 4ac > 0$ and $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, then $ax^2 + bx + c = 0$.
+<!-- (\#cnj:blue): If $a, b, c \in \mathbb R$, with $a\neq 0$, $b^2 - 4ac > 0$ and $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, then $ax^2 + bx + c = 0$. -->
 
-```{exercise}
-What is wrong with the following argument?
+<!-- ```{exercise} -->
+<!-- What is wrong with the following argument? -->
 
-*Proof:* Let
-\begin{align}
-  x &= 1 + 1 + ... + 1 \text{ (so there are $x$ 1's)} (\#eq:last) 
-\end{align}
-  Multiplying both sides of equality \@ref(eq:last) by $x$ we get:
-\begin{align}
-  x^2 &= x + x + ... + x (\#eq:yellow) 
-\end{align}
-  Differentiating both sides of equality \@ref(eq:yellow) with respect to $x$ we get
-\begin{align}
-  2x &= 1 + 1 + ... + 1 (\#eq:knew) \\
-  &= x (\#eq:pepper) 
-\end{align}
-  Divide both sides of equality \@ref(eq:knew) by $x$, we conclude that
-\begin{align}
-  2 &= 1  (\#eq:salt)
-\end{align}
+<!-- *Proof:* Let -->
+<!-- \begin{align} -->
+<!--   x &= 1 + 1 + ... + 1 \text{ (so there are $x$ 1's)} (\#eq:last)  -->
+<!-- \end{align} -->
+<!--   Multiplying both sides of equality \@ref(eq:last) by $x$ we get: -->
+<!-- \begin{align} -->
+<!--   x^2 &= x + x + ... + x (\#eq:yellow)  -->
+<!-- \end{align} -->
+<!--   Differentiating both sides of equality \@ref(eq:yellow) with respect to $x$ we get -->
+<!-- \begin{align} -->
+<!--   2x &= 1 + 1 + ... + 1 (\#eq:knew) \\ -->
+<!--   &= x (\#eq:pepper)  -->
+<!-- \end{align} -->
+<!--   Divide both sides of equality \@ref(eq:knew) by $x$, we conclude that -->
+<!-- \begin{align} -->
+<!--   2 &= 1  (\#eq:salt) -->
+<!-- \end{align} -->
 
-``` 
+<!-- ```  -->
 
-</div>
+<!-- </div> -->
 
 <!-- And proof by smallest counterexample: https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample -->
 

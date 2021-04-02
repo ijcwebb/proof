@@ -1,6 +1,8 @@
 # Proof by exhaustion
 
-(
+Welcome to our first method of proving conjectures!
+
+Remember, you should(
 
 Our first method of proof is not perhaps the most interesting, demanding or even the most common. However, it is very quick to unpack and will get us proving things immediately. It will give us a good launch pad onto more involved methods over the next few weeks.
 
