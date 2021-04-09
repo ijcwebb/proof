@@ -81,65 +81,57 @@ Conjecture \@ref(cnj:exit): Watch 0:00-4:20 of https://www.youtube.com/watch?v=k
 
 Conjecture \@ref(cnj:send): See https://www.youtube.com/watch?v=1amtOenZEwU.
 
-<div class="alert alert-info" role="alert">
-```{exercise}
-This exercise will be updated for our next class.
-
-``` 
-</div> 
-
 
 <!-- There is no integer $a$ such that $a^2 + a^3 = 100$. -->
 
-<!-- <div class="alert alert-info" role="alert"> -->
-<!-- ```{exercise} -->
-<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them by exhaustion. -->
+<div class="alert alert-info" role="alert">
+```{exercise}
+Some of these conjectures below are false; **disprove them by finding a counterexample**. Some of them are true; **prove them by exhaustion**. Follow the flowchart in Chapter 10 to help you.
 
-<!-- (\#cnj:syndrome): There is no two-digit number which is both a perfect square *and* a perfect cube. -->
+(\#cnj:syndrome): There is no two-digit number which is both a perfect square *and* a perfect cube.
 
-<!-- (\#cnj:crush): If $p$ is a prime number and $p > 5$, then $p^4$ ends in 1. (https://www.youtube.com/watch?v=Q_UdUwm3Biw) -->
+(\#cnj:crush): If $p$ is a prime number and $p > 5$, then $p^4$ ends in 1. *(Hint here: https://www.youtube.com/watch?v=Q_UdUwm3Biw.)*
 
-<!-- (\#cnj:defeat): There is no three-digit number which is a perfect square. -->
+(\#cnj:defeat): There is no three-digit number which is a perfect square.
 
-<!-- (\#cnj:rich): $(a + 1)^3\geq 3^a$ for $a\in{\mathbb Z^+}$, $a\leq 4$. -->
+(\#cnj:frighten): There is no perfect square between 4100 and 4200.
 
-<!-- (\#cnj:dive): The product of two non-integers is never an integer. -->
+(\#cnj:rich): $(a + 1)^3\geq 3^a$ for $a\in{\mathbb Z^+}$, $a\leq 4$.
 
-<!-- (\#cnj:stun): No number greater than 2 when written in English, has more letters than the number itself. -->
+(\#cnj:dive): The product of two non-integers is never an integer.
 
-<!-- (\#cnj:dirty): No number greater than 2 when written in Russian using the Cyrillic alphabet, has more letters than the number itself. -->
+(\#cnj:stun): No number greater than 2 when written in English, has more letters than the number itself. *(Think carefully about which numbers need to be included on your list of possibilities here.)*
 
-<!-- (\#cnj:frighten): There is no perfect square between 4100 and 4200. -->
+(\#cnj:dirty): No number greater than 2 when written in Russian using the Cyrillic alphabet, has more letters than the number itself. *(Again, think carefully about which numbers need to be included on your list of possibilities here.)*
 
-<!-- (\#cnj:nest): If $p$ is a prime number such that $3 \leq p \leq 23$, then $8 \mid (p+1)(p-1)$. -->
+(\#cnj:nest): If $p$ is a prime number such that $3 \leq p \leq 23$, then $8 \mid (p+1)(p-1)$.
 
-<!-- (\#cnj:cupboard): Every positive integer up to and including 28 is at least one of the following: prime, perfect, triangular, or can be written as $b^c$, where $b\in{\mathbb Z}$ and $c\in{\mathbb Z^+}$, $c > 1$. -->
+(\#cnj:cupboard): Every positive integer up to and including 28 is at least one of the following: prime, perfect, triangular, or can be written as $b^c$, where $b\in{\mathbb Z}$ and $c\in{\mathbb Z^+}$, $c > 1$.
+  
+(\#cnj:study): Every integer between 20 and 30 (inclusive) can be written as the sum of *exactly* five **non-zero** square numbers.
 
-<!-- ``` -->
+(\#cnj:curl): If $x$ is a positive integer less than 5, the last digit of $x^5$ is $x$.
 
-<!-- ```{exercise} -->
-<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some are true; prove them by exhaustion. -->
+(\#cnj:drag): There are fewer square numbers below 50 than prime numbers.
 
-<!-- (\#cnj:study): Every integer between 20 and 30 (inclusive) can be written as the sum of *exactly* five **non-zero** square numbers. -->
+(\#cnj:junior): Every even integer between (and including) 4 and 30 can be written as a sum of two primes.
 
-<!-- (\#cnj:curl): If $x$ is a positive integer less than 5, the last digit of $x^5$ is $x$. -->
+(\#cnj:world): The sum of two distinct square numbers is a square number. *(**Distinct** means the two square numbers can't be the same.)*
 
-<!-- (\#cnj:drag): There are fewer square numbers below 50 than prime numbers. -->
+(\#cnj:landscape): For $x, y, a \in \mathbb R$, if $x > y$ then $ax > ay$.
 
-<!-- (\#cnj:junior): Every even integer between (and including) 4 and 30 can be written as a sum of two primes. -->
+(\#cnj:write): It's impossible to move a knight from one corner of a chess board to the corner diagonally opposite in 4 moves. *(You don't play chess? Look up online how a **knight** moves.)*
 
-<!-- (\#cnj:world): The sum of two distinct square numbers is a square number. (**Distinct** means the two square numbers can't be the same.) -->
+(\#cnj:wash): Each integer in the set 2, 4, 6, 8, ..., 24, 26 can be written the sum of *at most* three perfect squares.
 
-<!-- (\#cnj:landscape): For $x, y, a \in \mathbb R$, if $x > y$ then $ax > ay$. -->
+(\#cnj:cat): There are no integers $a$, $b$ and $c$ such that $(1+\frac{1}{a})(1+\frac{1}{b})(1+\frac{1}{c}) = 2$.
 
-<!-- (\#cnj:write): It's impossible to move a knight from one corner of a chess board to the corner diagonally opposite in 4 moves. (You don't play chess? Look up online how a **knight** moves.) -->
+(\#cnj:refund): If the sum of two integers is even, then at least one of the summands is even. *(Don't know what a **summand** is? Have a search online...)*
 
-<!-- (\#cnj:wash): Each integer in the set 2, 4, 6, 8, ..., 24, 26 can be written the sum of *at most* three perfect squares. -->
+(\#cnj:snitch): The sum of two consecutive perfect squares between 100 and 200 is an odd number.
 
-<!-- (\#cnj:cat): There are no integers $a$, $b$ and $c$ such that $(1+\frac{1}{a})(1+\frac{1}{b})(1+\frac{1}{c}) = 2$. -->
+(\#cnj:crumple): The sum of any two distinct perfect squares between 100 and 200 is an odd number.
 
-<!-- (\#cnj:refund): If the sum of two integers is even, then at least one of the summands is even. (Don't know what a **summand** is? Have a search online...) -->
 
-<!-- ```  -->
-
-<!-- </div> -->
+```
+</div> 
