@@ -69,18 +69,29 @@ Use the following examples to practise.
 ``` 
 </div> 
 
+***
+
 ***Solutions:***
+
+***
 
 Conjecture \@ref(cnj:nigh): See
 https://www.youtube.com/watch?v=ifMZt4l5JIM. Alternatively https://www.youtube.com/watch?v=YmbTI91TUp4.
 
+***
+
 Conjecture \@ref(cnj:thru): See
 https://www.youtube.com/watch?v=eQM778zoB14.
 
+***
+
 Conjecture \@ref(cnj:exit): Watch 0:00-4:20 of https://www.youtube.com/watch?v=k0f7w4xTp1I.
+
+***
 
 Conjecture \@ref(cnj:send): See https://www.youtube.com/watch?v=1amtOenZEwU.
 
+***
 
 <!-- There is no integer $a$ such that $a^2 + a^3 = 100$. -->
 
