@@ -153,67 +153,60 @@ As this is the same as Equality \@ref(eq:bess), we are done.
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-This exercise will be uploaded at the beginning of our next class.
+Some of these conjectures are false; disprove them by finding a **counterexample**. Some of them are true; prove them using a proof by **exhaustion** (from last class) or a **direct proof** (from this class).
+
+(\#cnj:waste): If $a$ and $b$ are both perfect squares, then $ab$ is also a perfect square.
+
+(\#cnj:write): The sum of two odd integers is even.
+
+(\#cnj:waiter): All odd primes end with 1, 3, 7 or 9.
+
+(\#cnj:wrap): If $a$ and $b$ are both odd, then the difference of their squares is even. *(This means if you square two odd numbers and find the difference between these two squares, the difference will be even.)*
+
+(\#cnj:worth): The sum of two consecutive integers is odd.
+
+(\#cnj:worry): The sum of three consecutive integers is odd.
+
+(\#cnj:workshop): The sum of three consecutive integers is divisible by 3.
+
+(\#cnj:witch): The sum of three consecutive odd numbers is divisible by 3.
+
+(\#cnj:war): The sum of two consecutive odd numbers is divisible by 4.
+
+(\#cnj:withdraw): For a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. This is the *Pythagoras Theorem*. Prove it algebraically with a direct proof using the picture below.
+
 ```
+
+```{r, echo=FALSE, out.width="45%", fig.align="center"}
+knitr::include_graphics(rep("figures/Diagram_of_Pythagoras_Theorem_simplified.png"))
+```
+
+(\#cnj:woman): The product of three consecutive integers is divisible by 6.
+
+(\#cnj:wealth): There is no four-digit number that reverses its digits when multiplied by 4 (in other words, ABCD x 4 = DCBA).
+
+(\#cnj:window): Summing two 3-digit numbers results in a 4-digit number.
+
+(\#cnj:weed): If a number is divisible by 4, then it is divisible by 2.
+
+(\#cnj:wander): If a number is divisible by 2, then it is divisible by 4.
+
+(\#cnj:word): If $a$ is a positive nonprime whole number and some prime number $p$ divides $a$, then some other prime $q$ ($q \neq p$) also divides $a$.
+
+(\#cnj:warrant): If $a + 4 > 0$, then $a$ is positive.
+
+(\#cnj:wake): For any negative number $a$, $a^2 > a$.
+
+(\#cnj:wreck): If $a^2$ is divisible by 2, then so is $a$.
+
+(\#cnj:worm): If $a^2$ is divisible by 3, then so is $a$.
+
+(\#cnj:whizz): To multiply a two-digit number by 11, simply add the two digits of the number together, then insert it inbetween the two digits.
+
+(\#cnj:wend): In the picture below, the larger square is twice the area of the smaller square.
+
+```{r, echo=FALSE, out.width="45%", fig.cap="The figure shows a square **inscribed** in a circle, which is **inscribed** in another square.", fig.align="center"}
+knitr::include_graphics(rep("figures/sqinacircinasq.png"))
+```
+
 </div>
-
-
-<!-- <div class="alert alert-info" role="alert"> -->
-<!-- ```{exercise} -->
-<!-- Some of these conjectures are false; disprove them by finding a **counterexample**. Some of them are true; prove them using a proof by **exhaustion** (from last class) or a **direct proof** (from this class). -->
-
-<!-- (\#cnj:waste): If $a$ and $b$ are both perfect squares, then $ab$ is also a perfect square. -->
-
-<!-- (\#cnj:write): The sum of two odd integers is even. -->
-
-<!-- (\#cnj:waiter): All odd primes end with 1, 3, 7 or 9. -->
-
-<!-- (\#cnj:wrap): If $a$ and $b$ are both odd, then the difference of their squares is even. *(This means if you square two odd numbers and find the difference between these two squares, the difference will be even.)* -->
-
-<!-- (\#cnj:worth): The sum of two consecutive integers is odd. -->
-
-<!-- (\#cnj:worry): The sum of three consecutive integers is odd. -->
-
-<!-- (\#cnj:workshop): The sum of three consecutive integers is divisible by 3. -->
-
-<!-- (\#cnj:witch): The sum of three consecutive odd numbers is divisible by 3. -->
-
-<!-- (\#cnj:war): The sum of two consecutive odd numbers is divisible by 4. -->
-
-<!-- (\#cnj:withdraw): For a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. This is the *Pythagoras Theorem*. Prove it algebraically with a direct proof using this picture: -->
-
-<!-- ```  -->
-
-<!-- ```{r, echo=FALSE, out.width="45%", fig.align="center"} -->
-<!-- knitr::include_graphics(rep("figures/Diagram_of_Pythagoras_Theorem_simplified.png")) -->
-<!-- ``` -->
-
-<!-- (\#cnj:woman): The product of three consecutive integers is divisible by 6. -->
-
-<!-- (\#cnj:wealth): There is no four-digit number that reverses its digits when multiplied by 4 (in other words, ABCD x 4 = DCBA). -->
-
-<!-- (\#cnj:window): Summing two 3-digit numbers results in a 4-digit number. -->
-
-<!-- (\#cnj:weed): If a number is divisible by 4, then it is divisible by 2. -->
-
-<!-- (\#cnj:wander): If a number is divisible by 2, then it is divisible by 4. -->
-
-<!-- (\#cnj:word): If $a$ is a positive nonprime whole number and some prime number $p$ divides $a$, then some other prime $q$ ($q \neq p$) also divides $a$. -->
-
-<!-- (\#cnj:warrant): If $a + 4 > 0$, then $a$ is positive. -->
-
-<!-- (\#cnj:wake): For any negative number $a$, $a^2 > a$. -->
-
-<!-- (\#cnj:wreck): If $a^2$ is divisible by 2, then so is $a$. -->
-
-<!-- (\#cnj:worm): If $a^2$ is divisible by 3, then so is $a$. -->
-
-<!-- (\#cnj:whizz): To multiply a two-digit number by 11, simply add the two digits of the number together, then insert it inbetween the two digits. -->
-
-<!-- (\#cnj:wend): In the picture below, the larger square is twice the area of the smaller square: -->
-
-<!-- ```{r, echo=FALSE, out.width="45%", fig.cap="The figure shows a square **inscribed** in a circle, which is **inscribed** in another square.", fig.align="center"} -->
-<!-- knitr::include_graphics(rep("figures/sqinacircinasq.png")) -->
-<!-- ``` -->
-
-<!-- </div> -->

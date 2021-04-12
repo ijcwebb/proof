@@ -1,0 +1,211 @@
+# Proof by cases
+
+Our third method of proof is a beautiful method, called **proof by cases**. Proving something by cases is very similar to proving something by exhaustion. 
+
+## Steps
+
+The steps in a proof by cases are similar to those in a proof by exhaustion:
+
+1. Partition $P$ into cases. <br /> *Note that a partition of $P$ into "*cases*" is similar to the list of possibilities you create for a proof by exhaustion, except that cases are generally more broad (usually containing multiple elements) than each single possibility in a proof by exhaustion.*
+
+2. Show that the conjecture is true for each of the cases on your list. <br /> *In a proof by exhaustion, you had to show that the conjecture was true for each possibility, which usually required testing just a single number. Similarly for a proof by cases, you need to show that $P \rightarrow Q$ for each case, but as cases generally contain more elements, something like a direct proof will be needed for each case.*
+
+<!-- For example, while the list of possibilities in a proof by exhaustion might be each whole number from 1 to 20 or each possible route taken by a knight on a chessboard, the cases in a proof by cases might be *all* negative numbers and *all* non-negative numbers, or *all* even integers between 1 and 20 and *all* odd integers between 1 and 20, or *all* whole numbers and *all* non-whole numbers. -->
+
+Here are some examples of how you might split up a proof into cases (Step 1), depending on what type of number the conjecture concerns:
+
+**Family** | **Possible cases** 
+------------- | ------------- 
+$a \in \mathbb Z$ | **Case 1:** $a$ is even <br /> **Case 2:** $a$ is odd <br /> <br /> **Case 1:**  $a = 3k$ <br /> **Case 2:** $a = 3k + 1$ <br /> **Case 3:** $a = 3k + 2$ with $k \in \mathbb Z$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
+$a \in \mathbb R$ | **Case 1:** $a$  is rational <br /> **Case 2:** $a$ is irrational <br /> <br /> **Case 1:** $|a| > 1$ <br /> **Case 2:** $|a| \leq 1$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
+Pairs of numbers $a, b$ | **Case 1:** both $a, b > 0$ <br /> **Case 2:** both $a, b < 0$ <br /> **Case 3:** $a > 0$ and $b < 0$ (w.l.o.g.) <br /> **Case 4:** at least one of $a$ and $b$ equals 0 <br /> <br /> **Case 1:** $a,b \neq 0$ <br /> **Case 2:** at least one of $a$ and $b$ equals 0
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Verify that for each of the examples given in the table above, the cases are **distinct** and **complete** (i.e. they form a partition).
+
+```
+
+```{exercise}
+Can you think of any other possible cases for the families of numbers in the table?
+
+```  
+</div>
+
+<div class="alert alert-warning" role="alert">
+<strong>Note:
+</strong> 
+
+- You might partition $P$ into cases differently to a classmate. Don't worry! There are many ways to prove the same thing - just make sure you don't miss any numbers! 
+<!-- For example, if $P$ says $a$ is an integer and -->
+
+<!-- - you split the proof into positive integers and negative integers, then you have forgotten to consider $a = 0$, and your cases are not complete. You will have to amend one of the two cases to include $a = 0$, or add it as its own case.  -->
+
+<!-- - you split the proof into cases $a \geq 0$ and $a \leq 0$, then 0 is contained in both cases, meaning the cases overlap, which also isn't good. You should amend one of the cases so it no longer includes 0. -->
+
+- Once you have partitioned $P$ into cases, consider each case separately from one another. 
+
+- For conjectures in this course that require a proof by cases, you will probably need 2, 3, or maybe 4 cases. However, there is no upper limit for how many you can use. Proofs involving between 5 and 10 cases are common. You should always try to use the smallest number of cases possible.^[The first proof of the *Four Colour Theorem* used 1936 cases. Since then, mathematicians have managed to reduce this number to close to 600, which is still a lot, but less than 1936! <br /> The Four Colour Theorem states that any map, like a map of the states of the U.S. or countries of the world, can be coloured using only four colours in such a way that regions sharing a common boundary (other than a single point) do not share the same colour. In other words, a cartographer knows that she needs only four colours to colour *any* map.]
+
+</div>
+
+## Formal definition
+
+To prove "If $P$ then $Q$" by cases, show that
+
+<center>
+
+If $P_1$ then $Q$.
+
+If $P_2$ then $Q$.
+
+$\vdots$
+
+If $P_n$ then $Q$.
+
+</center>
+
+where $P_1$, $P_2$, ..., $P_n$ is a partition of $P$.
+
+## Exhaustion versus cases
+
+Let's compare a couple of conjectures we previously proved by exhaustion and a couple which can be proved using cases, to see the difference between "*possibilities*" in a proof by exhaustion and "*cases*" in a proof by cases.
+
+**Conjecture** | **Proof by exhaustion** | **Proof by cases**
+------------- | ------------- | -------------
+Conjecture 11.4 (from Chapter 11) | The video solution identified four possible divisors of $97$ (using some clever reasoning about prime numbers and the square root of $97$ to not identify more possibilities than necessary) and then checked them all. Finding none divided $97$, and being satisfied that this list of candidate divisors was complete, the conjecture was declared true. <br /> **List of possibilities:** $2, 3, 5, 7$. |
+Conjecture 11.3 (from Chapter 11) | In the video solution, the list of possibilities was identified as the integers $0, 1, 2, 3, ..., 9$. Again, this list was long enough to ensure completeness but not longer than it needed to be. <br /> **List of possibilities:** $0,1,2,3,4,5,6,7,8,9$. |
+(\#cnj:hobby): Integers retain their parity when squared. || We should first check the conjecture is true for even integers, then check it's true for odd integers.  <br /> **Partition of $a \in \mathbb Z$ into cases:**  <br /> **Case 1:** All even integers. <br /> **Case 2:** All odd integers.  
+(\#cnj:have): For $a, b \in \mathbb R$, $|a + b| \leq |a| + |b|$. || As we're dealing with the modulus function^[Recall the modulus function: $|a| = a$ for $a \geq 0$, and $|a| = -a$ for $a < 0$.], it  makes sense to build cases by varying the sign of $a$ and $b$. <br /> **Partition of $a \in \mathbb R$ into cases:**  <br /> **Case 1:** $a$ and $b$ both $\geq 0$. <br /> **Case 2:** $a$ and $b$ both $< 0$. <br /> **Case 3:** $a \geq 0$ and $b <0$. <br /> **Case 4:** $a < 0$ and $b \geq 0$. 
+(\#cnj:haunt): There is no integer $a$ such that $a^2 + a^3 = 100$. | | **Partition of $a \in \mathbb Z$ into cases:**  <br /> **Case 1:** $a \in \mathbb Z^-$ <br /> **Case 2:** $a=0$ <br /> **Case 3:** $1 \leq a \leq 4$ <br /> **Case 4:** $a \geq 5$ 
+(\#cnj:hallway): All perfect squares are either a multiple of $3$ or one more than a multiple of $3$. | | See **Exercise 13.3** below.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+What do you think for Conjecture \@ref(cnj:hallway)? What cases should we use?
+```
+</div>
+
+## Conjectures
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+We have already met the following four conjectures above. Use them to practice the method of proof by cases. Solutions are below.
+  
+(\#cnj:hobby): Integers retain their parity when squared.
+
+(\#cnj:have): For $a, b \in \mathbb R$, $|a + b| \leq |a| + |b|$.
+
+(\#cnj:haunt): There is no integer $a$ such that $a^2 + a^3 = 100$.
+
+(\#cnj:hallway): *All* perfect squares are either a multiple of $3$ or one more than a multiple of $3$.
+
+``` 
+</div> 
+
+***
+
+***Solutions:***
+
+***
+
+Conjecture \@ref(cnj:wave): First, we rewrite the conjecture,
+
+<center> If $a$ and $b$ are even integers, then $a+b$ is even. </center>
+
+Now we're ready for a direct proof.
+
+```{proof}
+Since $a$ and $b$ are even, they can be written as
+\begin{align}
+    a &= 2k \\
+    b &= 2l
+\end{align}
+where $k$ and $l$ are integers. Therefore the sum of $a$ and $b$ is
+\begin{align}
+    a + b &= 2k + 2l\\
+    &= 2(k + l)
+\end{align} 
+by factoring out 2.
+
+As the sum of integers equals an integer, $k + l$ must equal some integer. Let's call it $m$. Therefore we have
+\begin{align}
+    a + b &= 2m
+\end{align}
+which is clearly even.
+```
+
+***
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+Before moving forward, read Chapter 14, **Without loss of generality**. This is a really useful technique that can save you a lot of time when using proof by cases.
+
+``` 
+</div> 
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far.
+  
+(\#cnj:highway): $5a+6$ has the same parity as $a$.
+
+(\#cnj:hay): $a^2 + a^3$ is even for all integers $a$. 
+
+(\#cnj:hip): If $a$ and $b$ are integers, $a^2b^2$ is even.
+
+(\#cnj:heart): For all numbers $a, b, c$, if $ab = bc$ then $a = c$.
+  
+(\#cnj:harvest): For any integer $a$, $(3a-1)$ is a multiple of 2.
+
+(\#cnj:harm): The sum of two consecutive numbers is odd.
+  
+(\#cnj:hover): Let $a$ be an integer. Then $a^{2} + a$ is even.
+  
+(\#cnj:hang): There are no negative square numbers.
+    
+(\#cnj:hole): If $a$ is prime, then $a + 13$ isn't. 
+        
+(\#cnj:half): There is no two-digit prime number (with different digits) which is still prime when you swap its digits. 
+        
+(\#cnj:hot): For $a \in \mathbb Z^+$, $a^2 - a + 11$ is prime.
+
+(\#cnj:holt): Zero is even. 
+        
+(\#cnj:horse): For any pair of integers $a$ and $b$, there is an integer $c$ such that $a^2 + b^2 = c^2$, where $c > a$ and $c > b$. 
+
+(\#cnj:heavy): MAX($a, b$) + MIN($a, b) = a + b$ for any $a$ and $b$. 
+        
+(\#cnj:hardware): If $a>c$ and $b>c$ for any numbers $a,b$ and $c$, then MAX$(a,b) - c$ is always positive. 
+
+        
+(\#cnj:honour): Let $a$ be an integer. If 3 does not divide $a$, then 3 does divides $a^2 - 1$.
+
+(\#cnj:harmony): If $a$ and $b$ are both positive integers and $n = ab$, then either $a \leq \sqrt{n}$ or $b\leq \sqrt{n}$. 
+        
+(\#cnj:hilarity): The only way for $3a^2 + 4a + 3$ to be even is if $a$ is odd. 
+        
+(\#cnj:headquarters): For integers $a$, $b$, $c$, $d$ and $n$, $(an + b)$ and $(cn + d)$ have different parity to one another only when $a$ and $b$ have different parity to one another AND $c$ and $d$ have different parity to one another. 
+        
+(\#cnj:history): 127 is prime.
+        
+(\#cnj:helicopter): If $a$ is an integer, then $a^2 + 1$ is prime.
+        
+(\#cnj:homely): If $a > 0$, then $\sqrt a < a$.
+
+``` 
+</div>
+
+
+<!-- (\#cnj:he): There is no integer $a$ such that $a^2 + a^3 = 100$.  -->
+<!-- i. Prove this conjecture using cases $a \in \mathbb Z^-$, $a = 0$, $a \in \mathbb Z^+$ with $a < 5$, and $a \in \mathbb Z^+$ with $a \geq 5$.  -->
+<!-- ii. Now prove this conjecture again, either using a proof by cases with a different set of cases (your choice which ones) or using a different method of proof.  -->
+
+<!-- (\#cnj:halt): DELETE If an integer $n$ is not divisible by 3,  then $n^2=3k+1$ where $k$ is a whole number -->
+
+<!-- Today's date is 03/12/2020, which contains lots of repeated digits: three 0's and three 2's. The last three dates with *no* repeated digits were probably before you were born: 23/06/1987, 24/06/1987 and 25/06/1987. <br /> (\#cnj:handicap): The next date this will happen is over 300 years in the future. -->
+
+        
+<!-- The game Tenzi (https://ilovetenzi.com) uses forty 6-sided dice, each numbered 1 to 6. <br /> (\#cnj:heroine): If you roll all forty dice at the same time, at least seven will land on the same number. -->
+
+<!-- You have 27 small cubes, 3 each of nine different colours. <br /> (\#cnj:hypothesis): You can use all these small cubes to make a 3 x 3 x 3 cube so that *each* face of the bigger cube contains one of each of the nine colours. -->

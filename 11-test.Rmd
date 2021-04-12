@@ -16,7 +16,7 @@ Part of the skill of mathematical proof is identifying the most appropriate meth
 ------------- | ------------- | -------------
 No Chinese citizen has green eyes | Check eye colour of every Chinese citizen | No, as there's too many
 All Irish citizens have a vowel in their surname | Check a database of Irish citizens | Possibly
-There is no integer $n$ such that $n^2 + n^3 = 100$ | Check possible integers | Yes, as there are only so many integers which could work here.
+There is no integer $a$ such that $a^2 + a^3 = 100$ | Check possible integers | Yes, as there are only so many integers which could work here.
 The sum of the digits of a multiple of $9$ is itself a multiple of $9$ | Check all multiples of $9$ | No, as there's infinite number of them
 For any right-angle triangle with hypotenuse $a$ and legs $b$ and $c$, $a^2 = b^2 + c^2$ | Check every possible right-angle triangle | No, as there's infinite number of them
 

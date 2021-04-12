@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>An Introduction to Mathematical Proof</title>
+  <title>Chapter 14 Without loss of generality | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 14 Without loss of generality | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 14 Without loss of generality | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="proof-by-cases.html"/>
 
-<link rel="next" href="statements.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -138,6 +138,18 @@
 <li class="chapter" data-level="12.2" data-path="direct-proof.html"><a href="direct-proof.html#formal-definition-1"><i class="fa fa-check"></i><b>12.2</b> Formal definition</a></li>
 <li class="chapter" data-level="12.3" data-path="direct-proof.html"><a href="direct-proof.html#conjectures-1"><i class="fa fa-check"></i><b>12.3</b> Conjectures</a></li>
 </ul></li>
+<li class="chapter" data-level="13" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>13</b> Proof by cases</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="proof-by-cases.html"><a href="proof-by-cases.html#steps-2"><i class="fa fa-check"></i><b>13.1</b> Steps</a></li>
+<li class="chapter" data-level="13.2" data-path="proof-by-cases.html"><a href="proof-by-cases.html#formal-definition-2"><i class="fa fa-check"></i><b>13.2</b> Formal definition</a></li>
+<li class="chapter" data-level="13.3" data-path="proof-by-cases.html"><a href="proof-by-cases.html#exhaustion-versus-cases"><i class="fa fa-check"></i><b>13.3</b> Exhaustion versus cases</a></li>
+<li class="chapter" data-level="13.4" data-path="proof-by-cases.html"><a href="proof-by-cases.html#conjectures-2"><i class="fa fa-check"></i><b>13.4</b> Conjectures</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html"><i class="fa fa-check"></i><b>14</b> Without loss of generality</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-does-work"><i class="fa fa-check"></i><b>14.1</b> When w.l.o.g. does work</a></li>
+<li class="chapter" data-level="14.2" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-doesnt-work"><i class="fa fa-check"></i><b>14.2</b> When w.l.o.g. doesn’t work</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -158,70 +170,137 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">An Introduction to Mathematical Proof</h1>
-<p class="author"><em>Iain Webb</em></p>
-<p class="date"><em>2021-04-12</em></p>
-</div>
-<div id="introduction" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>Welcome! It’s lovely to have you here!</p>
-<p><img src="figures/head1.png" width="332" /></p>
-<div id="about-this-course" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> About this course</h2>
-<p>This book accompanies the course “Reason and Argue Better: Logic in Proof and Argument,” which was written between 2018-2019 and has been taught every semester since.</p>
-<p>This is the third semester that this course has been taught online or partly online. The course has been adapted for online teaching, with some elements simplified and others expanded. Completing this course online offers some challenges, but also opportunities for things not possible when offline.</p>
-</div>
-<div id="about-this-book" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> About this book</h2>
-<p>This book contains the material we will study as well as exercises (see the next section) and links for further reading. Most weeks I will assign you a chapter to read, and you should complete both the reading and the exercises within the chapter before our next class.</p>
-<p>This textbook may be updated during the course. Therefore you are advised to access the book at the link at <a href="https://ijcwebb.github.io/proof" class="uri">https://ijcwebb.github.io/proof</a>, rather than printing or downloading it. Also, even though you <em>can</em> read ahead of the set chapter, you are advised that later chapters might change as the course procedes.</p>
-<p>Part I of this book (chapters 2-5) covers the terminology surrounding mathematical proof, part II (chapters 6-9) covers the basics of proof, and chapters 10-16 in part III each cover a different method of proof. Chapter 17 covers mathematical completeness.</p>
-</div>
-<div id="how-to-use-this-book" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> How to use this book</h2>
-<p>When completing the week’s reading, you will encounter some exercises. I will indicate which of these you should attempt.</p>
-<div class="alert alert-info" role="alert">
+<div id="without-loss-of-generality" class="section level1" number="14">
+<h1><span class="header-section-number">Chapter 14</span> Without loss of generality</h1>
+<p>Look back at Conjecture 13.2 in the previous chapter. We used four cases in our proof. Whilst there is something fundamentally different about <strong>Cases 1, 2</strong> and <strong>3</strong> (because positive and negative numbers behave differently within the modulus function), <strong>Case 4</strong> is essentially the same as <strong>Case 3</strong>. We can use <strong>Case 3</strong> whenever we have a nonnegative number and a negative number, which covers everything <strong>Case 4</strong> covers, and so <strong>Case 4</strong> is redundant. If, for example, we had <span class="math inline">\(a=-5\)</span> and <span class="math inline">\(b = 2\)</span> (<strong>Case 4</strong>), we can just swap the letters (so <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b = -5\)</span>) and this is covered in <strong>Case 3</strong>.</p>
+<p>This is referred to as “without loss of generality,” or simply <em>w.l.o.g.</em> This is an incredibly useful technique, which will save you a lot of time when using proof by cases. We can use it whenever simply switching the letters doesn’t fundamentally change the case we’re looking at. It doesn’t work if switching the letters fundamentally changes the case.</p>
+<p>We’ll first look at a couple of examples where w.l.o.g. does work, then an example where it doesn’t work.</p>
+<div id="when-w.l.o.g.-does-work" class="section level2" number="14.1">
+<h2><span class="header-section-number">14.1</span> When w.l.o.g. does work</h2>
+<p>Conjecture 13.2 (from Chapter 13): For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</p>
+<p>We use <strong>Case 1</strong> to check if the conjecture is true when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are non-negative. We use <strong>Case 2</strong> to check if the conjecture is true when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are negative. Finally, we should check if the conjecture is true if one of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is negative and the other is non-negative. We say, <em>without loss of generality</em>, that the non-negative one will be <span class="math inline">\(a\)</span> and the negative one will be <span class="math inline">\(b\)</span>.</p>
+<p>This means we need just three cases, not four:</p>
+<p><strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>.</p>
+<p><strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>.</p>
+<p><strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span>.</p>
+<p>If we want to demonstrate this conjecture to someone by asking them to pick two numbers, and they pick one negative number and one non-negative number, we can simply assign the non-negative one to <span class="math inline">\(a\)</span> and the negative one to <span class="math inline">\(b\)</span>.</p>
+<hr />
+<p>Conjecture 14.1 : The product of an odd integer and an even integer is even.</p>
+<p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. One of these integers is even, and the other is odd.</p>
+<p>W.l.o.g., let’s say that <span class="math inline">\(a\)</span> is the even one and <span class="math inline">\(b\)</span> is the odd one, so</p>
+<p><span class="math display">\[\begin{align}
+  a &amp;= 2m \\
+  b &amp;= 2n + 1
+\end{align}\]</span></p>
+<p>with <span class="math inline">\(m, n \in \mathbb Z\)</span>. Notice I have used two different integers here, <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>, as the conjecture doesn’t say <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> must be consecutive (though of course they can be). We could now continue with our proof, having halved the amount of work we need to do!</p>
+<p>Again, if I wanted to demonstrate this conjecture to someone by asking them to pick two numbers, one even and one odd, I just assign the even one to <span class="math inline">\(a\)</span> and the odd one to <span class="math inline">\(b\)</span>. If we had made <span class="math inline">\(a\)</span> the odd one and <span class="math inline">\(b\)</span> the even one, the proof would look identical, so our choice of which was odd and which was even was unimportant. That’s what w.l.o.g. means!</p>
+<p>Here’s the complete proof:</p>
 
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-2" class="exercise"><strong>Exercise 1.1  </strong></span>Regular exercises look like this…</p>
-<ol style="list-style-type: lower-alpha">
-<li>…with subparts…</li>
-<li>…like this.</li>
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> W.l.o.g., let’s say that <span class="math inline">\(a\)</span> is the even one and <span class="math inline">\(b\)</span> is the odd one, so</p>
+<p><span class="math display">\[\begin{align}
+  a &amp;= 2m \\
+  b &amp;= 2n + 1
+\end{align}\]</span></p>
+<p>with <span class="math inline">\(m, n \in \mathbb Z\)</span>.</p>
+<p>We have</p>
+<p><span class="math display">\[\begin{align}
+  a \cdot b &amp;= (2m)\cdot (2n+1) \\
+  &amp;= 4mn + 2m\\
+  &amp;= 2(2mn+m)
+\end{align}\]</span></p>
+<p>which is clearly even.</p>
+</div>
+</div>
+<div id="when-w.l.o.g.-doesnt-work" class="section level2" number="14.2">
+<h2><span class="header-section-number">14.2</span> When w.l.o.g. doesn’t work</h2>
+<p>Sometimes w.l.o.g. doesn’t work. That’s because changing the letters <em>does</em> fundamentally change the case we’re considering. Let’s look at an example…</p>
+<p>Conjecture 14.2 : The product of two consecutive numbers is even.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. If two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive, then <span class="math inline">\(b = a + 1\)</span>. If we multiply them, we get</p>
+<p><span class="math display">\[\begin{align}
+    a \cdot b &amp;= (a)(a+1) \\
+    &amp;= a^2 + a
+\end{align}\]</span></p>
+<p>but it isn’t obvious that this is even, so we’ll need a new strategy.</p>
+<p>As <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive integers, one is even, and the other is odd, because parity alternates for integers.</p>
+<p>Let’s make <span class="math inline">\(a\)</span> the even one and <span class="math inline">\(b\)</span> the odd one, so,</p>
+<p><span class="math display">\[\begin{align}
+    a &amp;= 2m \\
+    b &amp;= 2m + 1  
+\end{align}\]</span></p>
+<p>Their product is</p>
+<p><span class="math display">\[\begin{align}
+    (2m)\cdot (2m+1) &amp;= 4m^2 + 2m\\
+    &amp;= 2(2m^2+m)  
+\end{align}\]</span>
+which is clearly even.</p>
+<p>But notice, this proof only covers pairs of consecutive integers where the smaller number is even, for example <span class="math inline">\((2, 3)\)</span>, <span class="math inline">\((4, 5)\)</span>, (<span class="math inline">\(-2\)</span>, <span class="math inline">\(-1\)</span>). It does <em>not</em> cover pairs of consecutive integers where the smaller number is odd, for example <span class="math inline">\((1, 2)\)</span>, <span class="math inline">\((-1, 0)\)</span>, (<span class="math inline">\(7\)</span>, <span class="math inline">\(8\)</span>). If you ask a friend to pick two consecutive numbers and they pick 7 and 8, we <strong>must</strong> assign 7 to <span class="math inline">\(a\)</span> as it’s the smaller of the two numbers, but we <em>can’t</em> assign 7 to <span class="math inline">\(a\)</span> because we said “let’s make <span class="math inline">\(a\)</span> the even one.”</p>
+<p>We should label the case above as <strong>Case 1</strong>, then provide a second case, where <span class="math inline">\(a\)</span> is odd and <span class="math inline">\(b\)</span> is even:</p>
+<p><strong>Case 2:</strong></p>
+<p><span class="math display">\[\begin{align}
+    a &amp;= 2m + 1 \\
+    b &amp;= (2m + 1) + 1 \\
+    &amp;= 2m + 2
+\end{align}\]</span></p>
+<p>The product is</p>
+<p><span class="math display">\[\begin{align}
+    (2m + 1)\cdot (2m+2) &amp;= 4m^2 + 4m + 2\\
+    &amp;= 2(2m^2+2m + 1)
+\end{align}\]</span></p>
+<p>which is clearly even.</p>
+<p>We’ve shown that this conjecture is true if the smaller of the two consecutive numbers is even, and if the smaller of the two consecutive numbers is odd. These two cases cover all possible pairs of consecutive numbers, and in both cases, we found the statement to be true, so the conjecture is true. We are done!</p>
+<p>Here’s what the proof looks like in full:</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> We call our two consecutive numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. W.l.o.g., let <span class="math inline">\(a\)</span> be the smaller of the two.</p>
+<p><strong>Case 1:</strong> <span class="math inline">\(a\)</span> even, <span class="math inline">\(b\)</span> odd.</p>
+<p><span class="math display">\[\begin{align}
+    a &amp;= 2m \\
+    b &amp;= 2m + 1
+\end{align}\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[\begin{align}
+  a \cdot b &amp;= (2m)\cdot (2m+1) \\
+  &amp;= 4m^2 + 2m\\
+  &amp;= 2(2m^2+m)
+\end{align}\]</span></p>
+<p>which is clearly even.</p>
+<p><strong>Case 2:</strong> <span class="math inline">\(a\)</span> odd, <span class="math inline">\(b\)</span> even.</p>
+<p><span class="math display">\[\begin{align}
+    a &amp;= 2m + 1 \\
+    b &amp;= (2m + 1) + 1 \\
+    &amp;= 2m + 2
+\end{align}\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[\begin{align}
+    a \cdot b &amp;= (2m + 1)\cdot (2m+2) \\
+    &amp;= 4m^2 + 4m + 2\\
+    &amp;= 2(2m^2+2m + 1) 
+\end{align}\]</span></p>
+<p>which is clearly even.</p>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">14.1</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="without-loss-of-generality.html#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
-</div>
-</div>
-
-<div class="solution">
-<p> <span class="solution"><em>Solution. </em></span> Solutions might be included underneath exercises, in which case you should aim to complete the exercise before checking the solution. If the solution is not included, then we will probably discuss it in class.</p>
-</div>
-<div class="alert alert-danger" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-4" class="exercise"><strong>Exercise 1.2  </strong></span>Extension exercises look like this. These are exercises that require a little more thought.</p>
-<p>Solutions won’t be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss.</p>
-</div>
-</div>
-<p>There are a couple of other coloured boxes used in this book:</p>
-<div class="alert alert-warning" role="alert">
-<p><strong>Careful!
-</strong> This is where I alert you to mistakes commonly made by students in this course. Read these warnings carefully to avoid these mistakes yourself.</p>
-</div>
-<div class="alert alert-success" role="alert">
-<p><strong>What we’ve learnt </strong>
-These boxes are found at the end of each chapter, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too.</p>
-</div>
-<p>That’s it. You’re ready to begin!</p>
-
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="proof-by-cases.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="statements.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -252,7 +331,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/index.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/14-test.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -260,7 +339,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/index.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/14-test.Rmd",
 "text": null
 },
 "download": null,
