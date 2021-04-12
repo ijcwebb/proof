@@ -93,7 +93,7 @@ What do you think for Conjecture \@ref(cnj:hallway)? What cases should we use?
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-We have already met the following four conjectures above. Use them to practice the method of proof by cases. Solutions are below.
+We have already met the following four conjectures above. Use them to practice the method of proof by cases. Solutions are below, as usual. 
   
 (\#cnj:hobby): Integers retain their parity when squared.
 
@@ -102,6 +102,8 @@ We have already met the following four conjectures above. Use them to practice t
 (\#cnj:have): For $a, b \in \mathbb R$, $|a + b| \leq |a| + |b|$.
 
 (\#cnj:hallway): All perfect squares are either a multiple of $3$ or one more than a multiple of $3$.
+  
+**Also, watch 0:00-9:30 of this video for a couple more examples of proof by cases:** https://www.youtube.com/watch?v=dheuJkuSNyI.
 
 ``` 
 </div> 
@@ -300,7 +302,7 @@ We have
 \begin{align}
     a &= (3n+2)^2 \\
     &= 9n^2 + 12n + 4 \\
-    &= 9n^2 + 12n + 3 + 1
+    &= 9n^2 + 12n + 3 + 1 \\
     &= 3(3n^2 + 4n + 1) + 1 
 \end{align}
 which is clearly one more than a multiple of 3.
