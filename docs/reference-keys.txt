@@ -268,3 +268,8 @@ conjectures-2
 without-loss-of-generality
 when-w.l.o.g.-does-work
 when-w.l.o.g.-doesnt-work
+fig:unnamed-chunk-1
+exr:unnamed-chunk-3
+exr:unnamed-chunk-5
+exr:unnamed-chunk-10
+exr:unnamed-chunk-11
