@@ -1,0 +1,166 @@
+# Without loss of generality
+
+"Without loss of generality", or simply *w.l.o.g.*, is an incredibly useful technique which will save you a lot of time when using proof by cases. When used correctly, it allows you to merge two cases into one.
+
+Here's a general example: 
+
+*I ask all students that I teach to complete a questionnaire which asks them, among other things, how many siblings they have. After looking at the results, I assemble in one room all those students who indicated that they have just one sibling. I am interested in the age difference between these students and their sibling. I ask them to subtract their sibling's age from their age. If the answer is between 0 and 5 years, they must stand on the left side of the room. If the answer is more than 5, they must stand on the right side of the room. If the answer is between 0 and -5, they must stand at the front of the room. If the answer is below -5, they must stand at the back of the room.*
+
+Notice that because I asked them to subtract their sibling's age from their age, a positive number indicates that they are older than their sibling, and a negative number indicates that their sibling is older than them.
+
+But then I realise, why do I care whether the answer is positive or negative? Aren't I just interested in the difference in the ages? Do I really need to know who was older, the student or their sibling? If not, then I can tell them to simple subtract the lower age from the upper age. This will produce a nonnegative number, which, if I'm only interested in the difference in ages, is enough information for me. I have condensed four cases into two, losing no crucial information.
+
+<div class="alert alert-warning" role="alert">
+<strong>W.l.o.g. is used whenever no crucial information is lost by cutting out cases.
+</strong> 
+</div>
+
+Let consider another example. Imagine a conjecture in which $P$ says that $a,b \in \mathbb R$. Depending on the conjecture, we could use four cases to partition here:
+
+**Case 1:** $a,b \geq 0$ <br />
+**Case 2:** $a,b < 0$ <br />
+**Case 3:** $a\geq 0$, $b < 0$ <br />
+**Case 4:** $a <0$, $b \geq 0$ <br />
+
+Whilst there is something fundamentally different about **Cases 1, 2** and **3** (because positive and negative numbers usually behave quite differently to each other), **Case 4** is essentially the same as **Case 3**. Unless the order of $a$ and $b$ is important, we can use **Case 3** whenever we have a nonnegative number and a negative number, which covers everything **Case 4** covers. **Case 4** is therefore redundant and without loss of generality can be merged with **Case 3**. Then, for example, we had $a=-5$ and $b = 2$ (**Case 4**), we can just swap the letters (so $a=2$ and $b = -5$) and this is covered in **Case 3**. In the proof, we would write "One of $a,b$ nonnegative, the other negative. W.l.o.g., let $a\geq 0$, $b < 0$".
+
+Let's look at a couple of conjectures. First, a conjecture where w.l.o.g. can be used, and then a conjecture where it can't.
+
+## When w.l.o.g. does work
+
+(\#cnj:hall): The product of an odd integer and an even integer is even.
+
+We are considering the product of two integers, $a \cdot b$. One of these integers is even, and the other is odd.
+  
+W.l.o.g., let's say that $a$ is the even one and $b$ is the odd one, so
+
+\begin{align}
+  a &= 2m \\
+  b &= 2n + 1
+\end{align}
+
+with $m, n \in \mathbb Z$.^[Notice I have used two different integers here, $m$ and $n$, as the conjecture doesn't say $a$ and $b$ must be consecutive (though of course they can be).] We could now continue with our proof, having halved the amount of work we need to do!
+
+**Do you see why w.l.o.g. worked here?** If I wanted to demonstrate this conjecture to someone by asking them to pick two numbers, one even and one odd, I just assign the even one to $a$ and the odd one to $b$. If we had made $a$ the odd one and $b$ the even one, the proof would look identical, so our choice of which was odd and which was even was unimportant. That's what w.l.o.g. means!
+
+Here's the complete proof:
+
+```{proof}
+W.l.o.g., let's say that $a$ is the even one and $b$ is the odd one, so
+
+\begin{align}
+  a &= 2m \\
+  b &= 2n + 1
+\end{align}
+
+with $m, n \in \mathbb Z$. 
+  
+We have
+
+\begin{align}
+  a \cdot b &= (2m)\cdot (2n+1) \\
+  &= 4mn + 2m\\
+  &= 2(2mn+m)
+\end{align}
+
+which is clearly even.
+
+```
+
+## When w.l.o.g. doesn't work
+
+Sometimes w.l.o.g. doesn't work.  That's because changing the letters *does* fundamentally change the case we're considering. Let's look at an example...
+
+(\#cnj:hope): The product of two consecutive numbers is even.^[Note, we could simply use the fact that conjecture \@ref(cnj:hall) is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.]
+
+We are considering the product of two integers, $a \cdot b$. If two integers $a$ and $b$ are consecutive, then $b = a + 1$. If we multiply them, we get
+  
+\begin{align}
+    a \cdot b &= (a)(a+1) \\
+    &= a^2 + a
+\end{align}
+    
+but it isn't obvious that this is even, so we'll need a new strategy.
+
+As $a$ and $b$ are consecutive integers, one is even, and the other is odd, because parity alternates for integers.
+
+Let's make $a$ the even one and $b$ the odd one, so,
+  
+\begin{align}
+    a &= 2m \\
+    b &= 2m + 1  
+\end{align} 
+
+Their product is  
+
+\begin{align}
+    (2m)\cdot (2m+1) &= 4m^2 + 2m\\
+    &= 2(2m^2+m)  
+\end{align} 
+which is clearly even.
+
+But notice, this proof only covers pairs of consecutive integers where the smaller number is even, for example $(2, 3)$, $(4, 5)$, ($-2$, $-1$). It does *not* cover pairs of consecutive integers where the smaller number is odd, for example $(1, 2)$, $(-1, 0)$, ($7$, $8$). If you ask a friend to pick two consecutive numbers and they pick 7 and 8, we **must** assign 7 to $a$ as it's the smaller of the two numbers, but we *can't* assign 7 to $a$ because we said "let's make $a$ the even one".
+
+We should label the case above as **Case 1**, then provide a second case, where $a$ is odd and $b$ is even:
+
+**Case 2:** 
+
+\begin{align}
+    a &= 2m + 1 \\
+    b &= (2m + 1) + 1 \\
+    &= 2m + 2
+\end{align}
+
+The product is
+
+\begin{align}
+    (2m + 1)\cdot (2m+2) &= 4m^2 + 4m + 2\\
+    &= 2(2m^2+2m + 1)
+\end{align}
+
+which is clearly even.
+
+We've shown that this conjecture is true if the smaller of the two consecutive numbers is even, and if the smaller of the two consecutive numbers is odd. These two cases cover all possible pairs of consecutive numbers, and in both cases, we found the statement to be true, so the conjecture is true. We are done!
+
+Here's what the proof looks like in full:
+
+```{proof}
+We call our two consecutive numbers $a$ and $b$. W.l.o.g., let $a$ be the smaller of the two.
+
+**Case 1:** $a$ even, $b$ odd.
+
+\begin{align}
+    a &= 2m \\
+    b &= 2m + 1
+\end{align}
+
+Thus,
+
+\begin{align}
+  a \cdot b &= (2m)\cdot (2m+1) \\
+  &= 4m^2 + 2m\\
+  &= 2(2m^2+m)
+\end{align}
+
+which is clearly even.
+
+**Case 2:** $a$ odd, $b$ even.
+
+\begin{align}
+    a &= 2m + 1 \\
+    b &= (2m + 1) + 1 \\
+    &= 2m + 2
+\end{align}
+    
+Thus,
+
+\begin{align}
+    a \cdot b &= (2m + 1)\cdot (2m+2) \\
+    &= 4m^2 + 4m + 2\\
+    &= 2(2m^2+2m + 1) 
+\end{align}
+
+which is clearly even.
+
+```
+

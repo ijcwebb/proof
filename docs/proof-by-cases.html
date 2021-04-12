@@ -211,11 +211,11 @@
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-2" class="exercise"><strong>Exercise 13.1  </strong></span>Verify that for each of the examples given in the table above, the cases are <strong>distinct</strong> and <strong>complete</strong> (i.e. they form a partition).</p>
+<p><span id="exr:unnamed-chunk-121" class="exercise"><strong>Exercise 13.1  </strong></span>Verify that for each of the examples given in the table above, the cases are <strong>distinct</strong> and <strong>complete</strong> (i.e. they form a partition).</p>
 </div>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-3" class="exercise"><strong>Exercise 13.2  </strong></span>Can you think of any other possible cases for the families of numbers in the table?</p>
+<p><span id="exr:unnamed-chunk-122" class="exercise"><strong>Exercise 13.2  </strong></span>Can you think of any other possible cases for the families of numbers in the table?</p>
 </div>
 </div>
 <div class="alert alert-warning" role="alert">
@@ -229,7 +229,7 @@
 <!-- - you split the proof into cases $a \geq 0$ and $a \leq 0$, then 0 is contained in both cases, meaning the cases overlap, which also isn't good. You should amend one of the cases so it no longer includes 0. -->
 <ul>
 <li><p>Once you have partitioned <span class="math inline">\(P\)</span> into cases, consider each case separately from one another.</p></li>
-<li><p>For conjectures in this course that require a proof by cases, you will probably need 2, 3, or maybe 4 cases. However, there is no upper limit for how many you can use. Proofs involving between 5 and 10 cases are common. You should always try to use the smallest number of cases possible.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p></li>
+<li><p>For conjectures in this course that require a proof by cases, you will probably need 2, 3, or maybe 4 cases. However, there is no upper limit for how many you can use. Proofs involving between 5 and 10 cases are common. You should always try to use the smallest number of cases possible.<a href="#fn35" class="footnote-ref" id="fnref35"><sup>35</sup></a></p></li>
 </ul>
 </div>
 </div>
@@ -277,14 +277,14 @@
 <td>We should first check the conjecture is true for even integers, then check it’s true for odd integers. <br /> <strong>Partition of <span class="math inline">\(a \in \mathbb Z\)</span> into cases:</strong> <br /> <strong>Case 1:</strong> All even integers. <br /> <strong>Case 2:</strong> All odd integers.</td>
 </tr>
 <tr class="even">
-<td>Conjecture 13.2 : For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</td>
-<td></td>
-<td>As we’re dealing with the modulus function<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, it makes sense to build cases by varying the sign of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. <br /> <strong>Partition of <span class="math inline">\(a \in \mathbb R\)</span> into cases:</strong> <br /> <strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>. <br /> <strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>. <br /> <strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span>. <br /> <strong>Case 4:</strong> <span class="math inline">\(a &lt; 0\)</span> and <span class="math inline">\(b \geq 0\)</span>.</td>
-</tr>
-<tr class="odd">
-<td>Conjecture 13.3 : There is no integer <span class="math inline">\(a\)</span> such that <span class="math inline">\(a^2 + a^3 = 100\)</span>.</td>
+<td>Conjecture 13.2 : There is no integer <span class="math inline">\(a\)</span> such that <span class="math inline">\(a^2 + a^3 = 100\)</span>.</td>
 <td></td>
 <td><strong>Partition of <span class="math inline">\(a \in \mathbb Z\)</span> into cases:</strong> <br /> <strong>Case 1:</strong> <span class="math inline">\(a \in \mathbb Z^-\)</span> <br /> <strong>Case 2:</strong> <span class="math inline">\(a=0\)</span> <br /> <strong>Case 3:</strong> <span class="math inline">\(1 \leq a \leq 4\)</span> <br /> <strong>Case 4:</strong> <span class="math inline">\(a \geq 5\)</span></td>
+</tr>
+<tr class="odd">
+<td>Conjecture 13.3 : For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</td>
+<td></td>
+<td>As we’re dealing with the modulus function<a href="#fn36" class="footnote-ref" id="fnref36"><sup>36</sup></a>, it makes sense to build cases by varying the sign of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>. <br /> <strong>Partition of <span class="math inline">\(a \in \mathbb R\)</span> into cases:</strong> <br /> <strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>. <br /> <strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>. <br /> <strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(b &lt;0\)</span>, <span class="math inline">\(|a| \geq |b|\)</span>. <br /> <strong>Case 4:</strong> <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(b &lt;0\)</span>, <span class="math inline">\(|a| &lt; |b|\)</span>.</td>
 </tr>
 <tr class="even">
 <td>Conjecture 13.4 : All perfect squares are either a multiple of <span class="math inline">\(3\)</span> or one more than a multiple of <span class="math inline">\(3\)</span>.</td>
@@ -296,7 +296,8 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-4" class="exercise"><strong>Exercise 13.3  </strong></span>What do you think for Conjecture <a href="#cnj:hallway">13.4</a>? What cases should we use?
+<p><span id="exr:unnamed-chunk-123" class="exercise"><strong>Exercise 13.3  </strong></span>What do you think for Conjecture <a href="#cnj:hallway">13.4</a>? What cases should we use?</p>
+<p><em>Solution: See below for my suggestion of cases for this conjecture.</em></p>
 </div>
 </div>
 </div>
@@ -305,75 +306,217 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-5" class="exercise"><strong>Exercise 13.4  </strong></span>We have already met the following four conjectures above. Use them to practice the method of proof by cases. Solutions are below.</p>
+<p><span id="exr:unnamed-chunk-124" class="exercise"><strong>Exercise 13.4  </strong></span>We have already met the following four conjectures above. Use them to practice the method of proof by cases. Solutions are below.</p>
 <p>Conjecture 13.1 : Integers retain their parity when squared.</p>
-<p>Conjecture 13.2 : For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</p>
-<p>Conjecture 13.3 : There is no integer <span class="math inline">\(a\)</span> such that <span class="math inline">\(a^2 + a^3 = 100\)</span>.</p>
-<p>Conjecture 13.4 : <em>All</em> perfect squares are either a multiple of <span class="math inline">\(3\)</span> or one more than a multiple of <span class="math inline">\(3\)</span>.</p>
+<p>Conjecture 13.2 : There is no integer <span class="math inline">\(a\)</span> such that <span class="math inline">\(a^2 + a^3 = 100\)</span>.</p>
+<p>Conjecture 13.3 : For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</p>
+<p>Conjecture 13.4 : All perfect squares are either a multiple of <span class="math inline">\(3\)</span> or one more than a multiple of <span class="math inline">\(3\)</span>.</p>
 </div>
 </div>
 <hr />
 <p><strong><em>Solutions:</em></strong></p>
 <hr />
-<p>Conjecture <a href="#cnj:wave"><strong>??</strong></a>: First, we rewrite the conjecture,</p>
+<p>Conjecture <a href="#cnj:hobby">13.1</a>: First, we rewrite the conjecture,</p>
 <center>
-If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are even integers, then <span class="math inline">\(a+b\)</span> is even.
+If <span class="math inline">\(a\)</span> is an even integer, then <span class="math inline">\(a^2\)</span> is an even integer. <br /> If <span class="math inline">\(a\)</span> is an odd integer, then <span class="math inline">\(a^2\)</span> is an odd integer.
 </center>
-<p>Now we’re ready for a direct proof.</p>
+<p>Now we’re ready for a proof by cases. We’ll use a direct proof within each of the two cases.</p>
 
 <div class="proof">
-<p> <span class="proof"><em>Proof. </em></span> Since <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are even, they can be written as
+<p> <span class="proof"><em>Proof. </em></span> <br />
+<strong>Case 1:</strong> <span class="math inline">\(a\)</span> even</p>
+<p>Since <span class="math inline">\(a\)</span> is even, it can be written as
 <span class="math display">\[\begin{align}
-    a &amp;= 2k \\
-    b &amp;= 2l
+    a &amp;= 2k
 \end{align}\]</span>
-where <span class="math inline">\(k\)</span> and <span class="math inline">\(l\)</span> are integers. Therefore the sum of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is
+where <span class="math inline">\(k\)</span> is an integer.</p>
+<p>Then,
 <span class="math display">\[\begin{align}
-    a + b &amp;= 2k + 2l\\
-    &amp;= 2(k + l)
+    a^2 &amp;= (2k)^2 \\
+    &amp;= 4k^2 \\
+    &amp;= 2(2k^2)
 \end{align}\]</span>
-by factoring out 2.</p>
-As the sum of integers equals an integer, <span class="math inline">\(k + l\)</span> must equal some integer. Let’s call it <span class="math inline">\(m\)</span>. Therefore we have
+by factoring out <span class="math inline">\(2\)</span>.</p>
+<p><span class="math inline">\(2k^2\)</span> is clearly an integer. Let’s call it <span class="math inline">\(m\)</span>. Therefore we have
 <span class="math display">\[\begin{align}
-    a + b &amp;= 2m
+    a^2 &amp;= 2m
 \end{align}\]</span>
-which is clearly even.
+which is clearly even.</p>
+<p><strong>Case 2:</strong> <span class="math inline">\(a\)</span> odd</p>
+<p>Since <span class="math inline">\(a\)</span> is odd, it can be written as
+<span class="math display">\[\begin{align}
+    a &amp;= 2k + 1
+\end{align}\]</span>
+where <span class="math inline">\(k\)</span> is an integer. (Note that we are allowed to reuse the letter <span class="math inline">\(k\)</span> as cases are separate from one another.)</p>
+<p>Then,
+<span class="math display">\[\begin{align}
+    a^2 &amp;= (2k + 1)^2 \\
+    &amp;= 4k^2 + 4k + 1 \\
+    &amp;= 2(2k^2 + 2k) + 1
+\end{align}\]</span>
+by factoring out <span class="math inline">\(2\)</span>.</p>
+<p><span class="math inline">\(2k^2 + 2k\)</span> is clearly an integer. Let’s call it <span class="math inline">\(m\)</span>. Therefore we have
+<span class="math display">\[\begin{align}
+    a^2 &amp;= 2m + 1
+\end{align}\]</span>
+which is clearly odd.</p>
+</div>
+<hr />
+<p>Conjecture <a href="#cnj:haunt">13.2</a>: First, we rewrite the conjecture,</p>
+<center>
+If <span class="math inline">\(a \in \mathbb Z\)</span>, then <span class="math inline">\(a^2 + a^3 \neq 100\)</span>.
+</center>
+<p>Now we’re ready for a proof by cases.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> <br />
+<strong>Case 1:</strong> <span class="math inline">\(a \in \mathbb Z^-\)</span> <br />
+For all negative integers <span class="math inline">\(a^2 + a^3 \leq 0\)</span>, as <span class="math inline">\(|a^3| \geq |a^2|\)</span> and <span class="math inline">\(a^3 &lt; 0\)</span>.</p>
+<p><strong>Case 2:</strong> <span class="math inline">\(a=0\)</span> <br />
+<span class="math inline">\(0^2 + 0^3 = 0 \neq 100\)</span>.</p>
+<p><strong>Case 3:</strong> <span class="math inline">\(1 \leq a \leq 4\)</span> <br />
+We’ll use proof by exhaustion for these four possibilities.</p>
+<p>If <span class="math inline">\(a=1\)</span> then <span class="math inline">\(a^2 + a^3 = 2 \neq 100\)</span>. <br />
+If <span class="math inline">\(a=2\)</span> then <span class="math inline">\(a^2 + a^3 = 12 \neq 100\)</span>. <br />
+If <span class="math inline">\(a=3\)</span> then <span class="math inline">\(a^2 + a^3 = 36 \neq 100\)</span>. <br />
+If <span class="math inline">\(a=4\)</span> then <span class="math inline">\(a^2 + a^3 = 80 \neq 100\)</span>. <br /></p>
+<p><strong>Case 4:</strong> <span class="math inline">\(a \geq 5\)</span> <br />
+As <span class="math inline">\(5^2 + 5^3 = 150 &gt; 100\)</span>, all integers from <span class="math inline">\(5\)</span> and up will be too large for <span class="math inline">\(a^2 + a^3\)</span> to equal <span class="math inline">\(100\)</span>.</p>
+</div>
+<hr />
+<p>Conjecture <a href="#cnj:have">13.3</a>: First, we rewrite the conjecture,</p>
+<center>
+If <span class="math inline">\(a, b \in \mathbb R\)</span>, then <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.
+</center>
+<p>Now we’re ready for a proof by cases.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> <br />
+<strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>. <br />
+Since <span class="math inline">\(a,b \geq 0\)</span>, we know that <span class="math inline">\(|a| = a\)</span> and <span class="math inline">\(|b| = b\)</span>. Also, as <span class="math inline">\(a+b \geq 0\)</span>, we know that <span class="math inline">\(|a+b| = a+b\)</span>. We have,
+<span class="math display">\[\begin{align}
+    |a + b| &amp;= a + b
+\end{align}\]</span>
+and
+<span class="math display">\[\begin{align}
+    |a| + |b| &amp;=  a + b
+\end{align}\]</span>
+Therefore <span class="math inline">\(|a + b| = |a| + |b|\)</span>, which satisfies the conjecture.</p>
+<p><strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>. <br />
+Since <span class="math inline">\(a,b &lt;0\)</span>, we know that <span class="math inline">\(|a| = -a\)</span> and <span class="math inline">\(|b| = -b\)</span>. Also, as <span class="math inline">\(a+b &lt;0\)</span>, we know that <span class="math inline">\(|a+b| = -(a+b)\)</span>. We have,
+<span class="math display">\[\begin{align}
+    |a + b| &amp;= -(a + b) \\
+  &amp;= -a - b
+\end{align}\]</span>
+and
+<span class="math display">\[\begin{align}
+    |a| + |b| &amp;=  -a - b
+\end{align}\]</span>
+Therefore <span class="math inline">\(|a + b| = |a| + |b|\)</span>, which satisfies the conjecture.</p>
+<p><strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(b &lt;0\)</span>, <span class="math inline">\(|a| \geq |b|\)</span>. <br />
+Since <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(|a| = a\)</span>. Since <span class="math inline">\(b&lt;0\)</span>, we know that <span class="math inline">\(|b| &gt; 0\)</span>.</p>
+<p>Thus
+<span class="math display">\[\begin{align}
+    |a| + |b| &amp;&gt; a
+\end{align}\]</span></p>
+<p>As <span class="math inline">\(b&lt;0\)</span> and <span class="math inline">\(|a| \geq |b|\)</span>, we know that
+<span class="math display">\[\begin{align}
+    |a + b| &amp;&lt; a
+\end{align}\]</span>
+Therefore <span class="math inline">\(|a + b| &lt; a &lt; |a| + |b|\)</span>, which satisfies the conjecture.</p>
+<p><strong>Case 4:</strong> <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(b &lt;0\)</span>, <span class="math inline">\(|a| &lt; |b|\)</span>. <br />
+Since <span class="math inline">\(a \geq 0\)</span>, <span class="math inline">\(|a| = a\)</span>. Since <span class="math inline">\(b&lt;0\)</span>, <span class="math inline">\(|b| = -b\)</span>.</p>
+<p>Therefore
+<span class="math display">\[\begin{align}
+    |a| + |b| &amp;= a - b
+\end{align}\]</span></p>
+<p>As <span class="math inline">\(b&lt;0\)</span> and <span class="math inline">\(|a| &lt; |b|\)</span>, we know that <span class="math inline">\(a + b &lt; 0\)</span> and thus
+<span class="math display">\[\begin{align}
+    |a + b| &amp;= -(a+b) \\
+    &amp;= -a-b
+\end{align}\]</span>
+The conjecture says that <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>, so we must show that
+<span class="math display">\[\begin{align}
+    -a-b &amp;\leq a - b
+\end{align}\]</span>
+Adding <span class="math inline">\(b\)</span> to both sides gives <span class="math inline">\(-a \leq a\)</span> which, as <span class="math inline">\(a&gt;0\)</span>, is clearly true.</p>
+</div>
+<hr />
+<p>Conjecture <a href="#cnj:hallway">13.4</a>: First, we rewrite the conjecture,</p>
+<center>
+If <span class="math inline">\(a\)</span> is a perfect square, then <span class="math inline">\(a\)</span> is either a multiple of <span class="math inline">\(3\)</span> or one more than a multiple of <span class="math inline">\(3\)</span>
+</center>
+<p>Now we’re ready for a proof by cases.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> If <span class="math inline">\(a\)</span> is a perfect square, then there is some integer that when squared gives <span class="math inline">\(a\)</span>. As all integers are either a multiple of <span class="math inline">\(3\)</span>, one more than a multiple of <span class="math inline">\(3\)</span> or two more than a multiple of <span class="math inline">\(3\)</span>, I’ll consider these three cases. We’ll use a direct proof within each case.</p>
+<p><strong>Case 1:</strong> <span class="math inline">\(a=(3n)^2\)</span> <br /> i.e. <span class="math inline">\(a\)</span> is the square of a multiple of <span class="math inline">\(3\)</span>, which covers square numbers like 0, 9, 36, 81, 144, …</p>
+<p>We have
+<span class="math display">\[\begin{align}
+    a &amp;= (3n)^2 \\
+    &amp;= 9n^2 \\
+    &amp;= 3(3n^2)
+\end{align}\]</span>
+which is clearly a multiple of 3.</p>
+<p><strong>Case 2:</strong> <span class="math inline">\(a=(3n + 1)^2\)</span> <br /> i.e. <span class="math inline">\(a\)</span> is the square of one more than a multiple of <span class="math inline">\(3\)</span>, which covers square numbers like 1, 16, 49, 100, 169, …</p>
+<p>We have
+<span class="math display">\[\begin{align}
+    a &amp;= (3n+1)^2 \\
+    &amp;= 9n^2 + 6n + 1 \\
+    &amp;= 3(3n^2 + 2n) + 1
+\end{align}\]</span>
+which is clearly one more than a multiple of 3.</p>
+<p><strong>Case 3:</strong> <span class="math inline">\(a=(3n + 2)^2\)</span> <br /> i.e. <span class="math inline">\(a\)</span> is the square of two more than a multiple of <span class="math inline">\(3\)</span>, which covers the remaining square numbers, like 4, 25, 64, 121, 196, …</p>
+<p>We have
+<span class="math display">\[\begin{align}
+    a &amp;= (3n+2)^2 \\
+    &amp;= 9n^2 + 12n + 4 \\
+    &amp;= 9n^2 + 12n + 3 + 1
+    &amp;= 3(3n^2 + 4n + 1) + 1 
+\end{align}\]</span>
+which is clearly one more than a multiple of 3.</p>
+<p>As we’ve accounted for all square numbers, we’re done.</p>
 </div>
 <hr />
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-7" class="exercise"><strong>Exercise 13.5  </strong></span>Before moving forward, read Chapter 14, <strong>Without loss of generality</strong>. This is a really useful technique that can save you a lot of time when using proof by cases.</p>
+<p><span id="exr:unnamed-chunk-129" class="exercise"><strong>Exercise 13.5  </strong></span>Before moving forward, read Chapter 14, <strong>Without loss of generality</strong>. This is a really useful technique that can save you a lot of time when using proof by cases.</p>
 </div>
 </div>
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-8" class="exercise"><strong>Exercise 13.6  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we’ve met so far.</p>
-<p>Conjecture 13.5 : <span class="math inline">\(5a+6\)</span> has the same parity as <span class="math inline">\(a\)</span>.</p>
-<p>Conjecture 13.6 : <span class="math inline">\(a^2 + a^3\)</span> is even for all integers <span class="math inline">\(a\)</span>.</p>
-<p>Conjecture 13.7 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are integers, <span class="math inline">\(a^2b^2\)</span> is even.</p>
-<p>Conjecture 13.8 : For all numbers <span class="math inline">\(a, b, c\)</span>, if <span class="math inline">\(ab = bc\)</span> then <span class="math inline">\(a = c\)</span>.</p>
-<p>Conjecture 13.9 : For any integer <span class="math inline">\(a\)</span>, <span class="math inline">\((3a-1)\)</span> is a multiple of 2.</p>
-<p>Conjecture 13.10 : The sum of two consecutive numbers is odd.</p>
-<p>Conjecture 13.11 : Let <span class="math inline">\(a\)</span> be an integer. Then <span class="math inline">\(a^{2} + a\)</span> is even.</p>
-<p>Conjecture 13.12 : There are no negative square numbers.</p>
-<p>Conjecture 13.13 : If <span class="math inline">\(a\)</span> is prime, then <span class="math inline">\(a + 13\)</span> isn’t.</p>
-<p>Conjecture 13.14 : There is no two-digit prime number (with different digits) which is still prime when you swap its digits.</p>
-<p>Conjecture 13.15 : For <span class="math inline">\(a \in \mathbb Z^+\)</span>, <span class="math inline">\(a^2 - a + 11\)</span> is prime.</p>
-<p>Conjecture 13.16 : Zero is even.</p>
-<p>Conjecture 13.17 : For any pair of integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, there is an integer <span class="math inline">\(c\)</span> such that <span class="math inline">\(a^2 + b^2 = c^2\)</span>, where <span class="math inline">\(c &gt; a\)</span> and <span class="math inline">\(c &gt; b\)</span>.</p>
-<p>Conjecture 13.18 : MAX(<span class="math inline">\(a, b\)</span>) + MIN(<span class="math inline">\(a, b) = a + b\)</span> for any <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p>
-<p>Conjecture 13.19 : If <span class="math inline">\(a&gt;c\)</span> and <span class="math inline">\(b&gt;c\)</span> for any numbers <span class="math inline">\(a,b\)</span> and <span class="math inline">\(c\)</span>, then MAX<span class="math inline">\((a,b) - c\)</span> is always positive.</p>
-<p>Conjecture 13.20 : Let <span class="math inline">\(a\)</span> be an integer. If 3 does not divide <span class="math inline">\(a\)</span>, then 3 does divides <span class="math inline">\(a^2 - 1\)</span>.</p>
-<p>Conjecture 13.21 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both positive integers and <span class="math inline">\(n = ab\)</span>, then either <span class="math inline">\(a \leq \sqrt{n}\)</span> or <span class="math inline">\(b\leq \sqrt{n}\)</span>.</p>
-<p>Conjecture 13.22 : The only way for <span class="math inline">\(3a^2 + 4a + 3\)</span> to be even is if <span class="math inline">\(a\)</span> is odd.</p>
-<p>Conjecture 13.23 : For integers <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, <span class="math inline">\(d\)</span> and <span class="math inline">\(n\)</span>, <span class="math inline">\((an + b)\)</span> and <span class="math inline">\((cn + d)\)</span> have different parity to one another only when <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> have different parity to one another AND <span class="math inline">\(c\)</span> and <span class="math inline">\(d\)</span> have different parity to one another.</p>
-<p>Conjecture 13.24 : 127 is prime.</p>
-<p>Conjecture 13.25 : If <span class="math inline">\(a\)</span> is an integer, then <span class="math inline">\(a^2 + 1\)</span> is prime.</p>
-<p>Conjecture 13.26 : If <span class="math inline">\(a &gt; 0\)</span>, then <span class="math inline">\(\sqrt a &lt; a\)</span>.</p>
+<p><span id="exr:unnamed-chunk-130" class="exercise"><strong>Exercise 13.6  </strong></span>This exercise will be updated at the beginning of our next lesson.</p>
 </div>
 </div>
+<!-- <div class="alert alert-info" role="alert"> -->
+<!-- ```{exercise} -->
+<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far. -->
+<!-- (\#cnj:highway): $5a+6$ has the same parity as $a$. -->
+<!-- (\#cnj:hay): $a^2 + a^3$ is even for all integers $a$.  -->
+<!-- (\#cnj:hip): If $a$ and $b$ are integers, $a^2b^2$ is even. -->
+<!-- (\#cnj:heart): For all numbers $a, b, c$, if $ab = bc$ then $a = c$. -->
+<!-- (\#cnj:harvest): For any integer $a$, $(3a-1)$ is a multiple of 2. -->
+<!-- (\#cnj:harm): The sum of two consecutive numbers is odd. -->
+<!-- (\#cnj:hover): Let $a$ be an integer. Then $a^{2} + a$ is even. -->
+<!-- (\#cnj:hang): There are no negative square numbers. -->
+<!-- (\#cnj:hole): If $a$ is prime, then $a + 13$ isn't.  -->
+<!-- (\#cnj:half): There is no two-digit prime number (with different digits) which is still prime when you swap its digits.  -->
+<!-- (\#cnj:hot): For $a \in \mathbb Z^+$, $a^2 - a + 11$ is prime. -->
+<!-- (\#cnj:holt): Zero is even.  -->
+<!-- (\#cnj:horse): For any pair of integers $a$ and $b$, there is an integer $c$ such that $a^2 + b^2 = c^2$, where $c > a$ and $c > b$.  -->
+<!-- (\#cnj:heavy): MAX($a, b$) + MIN($a, b) = a + b$ for any $a$ and $b$.  -->
+<!-- (\#cnj:hardware): If $a>c$ and $b>c$ for any numbers $a,b$ and $c$, then MAX$(a,b) - c$ is always positive.  -->
+<!-- (\#cnj:honour): Let $a$ be an integer. If 3 does not divide $a$, then 3 does divides $a^2 - 1$. -->
+<!-- (\#cnj:harmony): If $a$ and $b$ are both positive integers and $n = ab$, then either $a \leq \sqrt{n}$ or $b\leq \sqrt{n}$.  -->
+<!-- (\#cnj:hilarity): The only way for $3a^2 + 4a + 3$ to be even is if $a$ is odd.  -->
+<!-- (\#cnj:headquarters): For integers $a$, $b$, $c$, $d$ and $n$, $(an + b)$ and $(cn + d)$ have different parity to one another only when $a$ and $b$ have different parity to one another AND $c$ and $d$ have different parity to one another.  -->
+<!-- (\#cnj:history): 127 is prime. -->
+<!-- (\#cnj:helicopter): If $a$ is an integer, then $a^2 + 1$ is prime. -->
+<!-- (\#cnj:homely): If $a > 0$, then $\sqrt a < a$. -->
+<!-- ```  -->
+<!-- </div> -->
 <!-- (\#cnj:he): There is no integer $a$ such that $a^2 + a^3 = 100$.  -->
 <!-- i. Prove this conjecture using cases $a \in \mathbb Z^-$, $a = 0$, $a \in \mathbb Z^+$ with $a < 5$, and $a \in \mathbb Z^+$ with $a \geq 5$.  -->
 <!-- ii. Now prove this conjecture again, either using a proof by cases with a different set of cases (your choice which ones) or using a different method of proof.  -->
@@ -386,9 +529,9 @@ which is clearly even.
 </div>
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>The first proof of the <em>Four Colour Theorem</em> used 1936 cases. Since then, mathematicians have managed to reduce this number to close to 600, which is still a lot, but less than 1936! <br /> The Four Colour Theorem states that any map, like a map of the states of the U.S. or countries of the world, can be coloured using only four colours in such a way that regions sharing a common boundary (other than a single point) do not share the same colour. In other words, a cartographer knows that she needs only four colours to colour <em>any</em> map.<a href="proof-by-cases.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>Recall the modulus function: <span class="math inline">\(|a| = a\)</span> for <span class="math inline">\(a \geq 0\)</span>, and <span class="math inline">\(|a| = -a\)</span> for <span class="math inline">\(a &lt; 0\)</span>.<a href="proof-by-cases.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<ol start="35">
+<li id="fn35"><p>The first proof of the <em>Four Colour Theorem</em> used 1936 cases. Since then, mathematicians have managed to reduce this number to close to 600, which is still a lot, but less than 1936! <br /> The Four Colour Theorem states that any map, like a map of the states of the U.S. or countries of the world, can be coloured using only four colours in such a way that regions sharing a common boundary (other than a single point) do not share the same colour. In other words, a cartographer knows that she needs only four colours to colour <em>any</em> map.<a href="proof-by-cases.html#fnref35" class="footnote-back">↩︎</a></p></li>
+<li id="fn36"><p>Recall the modulus function: <span class="math inline">\(|a| = a\)</span> for <span class="math inline">\(a \geq 0\)</span>, and <span class="math inline">\(|a| = -a\)</span> for <span class="math inline">\(a &lt; 0\)</span>.<a href="proof-by-cases.html#fnref36" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

@@ -172,19 +172,24 @@
             <section class="normal" id="section-">
 <div id="without-loss-of-generality" class="section level1" number="14">
 <h1><span class="header-section-number">Chapter 14</span> Without loss of generality</h1>
-<p>Look back at Conjecture 13.2 in the previous chapter. We used four cases in our proof. Whilst there is something fundamentally different about <strong>Cases 1, 2</strong> and <strong>3</strong> (because positive and negative numbers behave differently within the modulus function), <strong>Case 4</strong> is essentially the same as <strong>Case 3</strong>. We can use <strong>Case 3</strong> whenever we have a nonnegative number and a negative number, which covers everything <strong>Case 4</strong> covers, and so <strong>Case 4</strong> is redundant. If, for example, we had <span class="math inline">\(a=-5\)</span> and <span class="math inline">\(b = 2\)</span> (<strong>Case 4</strong>), we can just swap the letters (so <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b = -5\)</span>) and this is covered in <strong>Case 3</strong>.</p>
-<p>This is referred to as “without loss of generality,” or simply <em>w.l.o.g.</em> This is an incredibly useful technique, which will save you a lot of time when using proof by cases. We can use it whenever simply switching the letters doesn’t fundamentally change the case we’re looking at. It doesn’t work if switching the letters fundamentally changes the case.</p>
-<p>We’ll first look at a couple of examples where w.l.o.g. does work, then an example where it doesn’t work.</p>
+<p>“Without loss of generality,” or simply <em>w.l.o.g.</em>, is an incredibly useful technique which will save you a lot of time when using proof by cases. When used correctly, it allows you to merge two cases into one.</p>
+<p>Here’s a general example:</p>
+<p><em>I ask all students that I teach to complete a questionnaire which asks them, among other things, how many siblings they have. After looking at the results, I assemble in one room all those students who indicated that they have just one sibling. I am interested in the age difference between these students and their sibling. I ask them to subtract their sibling’s age from their age. If the answer is between 0 and 5 years, they must stand on the left side of the room. If the answer is more than 5, they must stand on the right side of the room. If the answer is between 0 and -5, they must stand at the front of the room. If the answer is below -5, they must stand at the back of the room.</em></p>
+<p>Notice that because I asked them to subtract their sibling’s age from their age, a positive number indicates that they are older than their sibling, and a negative number indicates that their sibling is older than them.</p>
+<p>But then I realise, why do I care whether the answer is positive or negative? Aren’t I just interested in the difference in the ages? Do I really need to know who was older, the student or their sibling? If not, then I can tell them to simple subtract the lower age from the upper age. This will produce a nonnegative number, which, if I’m only interested in the difference in ages, is enough information for me. I have condensed four cases into two, losing no crucial information.</p>
+<div class="alert alert-warning" role="alert">
+<p><strong>W.l.o.g. is used whenever no crucial information is lost by cutting out cases.
+</strong></p>
+</div>
+<p>Let consider another example. Imagine a conjecture in which <span class="math inline">\(P\)</span> says that <span class="math inline">\(a,b \in \mathbb R\)</span>. Depending on the conjecture, we could use four cases to partition here:</p>
+<p><strong>Case 1:</strong> <span class="math inline">\(a,b \geq 0\)</span> <br />
+<strong>Case 2:</strong> <span class="math inline">\(a,b &lt; 0\)</span> <br />
+<strong>Case 3:</strong> <span class="math inline">\(a\geq 0\)</span>, <span class="math inline">\(b &lt; 0\)</span> <br />
+<strong>Case 4:</strong> <span class="math inline">\(a &lt;0\)</span>, <span class="math inline">\(b \geq 0\)</span> <br /></p>
+<p>Whilst there is something fundamentally different about <strong>Cases 1, 2</strong> and <strong>3</strong> (because positive and negative numbers usually behave quite differently to each other), <strong>Case 4</strong> is essentially the same as <strong>Case 3</strong>. Unless the order of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is important, we can use <strong>Case 3</strong> whenever we have a nonnegative number and a negative number, which covers everything <strong>Case 4</strong> covers. <strong>Case 4</strong> is therefore redundant and without loss of generality can be merged with <strong>Case 3</strong>. Then, for example, we had <span class="math inline">\(a=-5\)</span> and <span class="math inline">\(b = 2\)</span> (<strong>Case 4</strong>), we can just swap the letters (so <span class="math inline">\(a=2\)</span> and <span class="math inline">\(b = -5\)</span>) and this is covered in <strong>Case 3</strong>. In the proof, we would write “One of <span class="math inline">\(a,b\)</span> nonnegative, the other negative. W.l.o.g., let <span class="math inline">\(a\geq 0\)</span>, <span class="math inline">\(b &lt; 0\)</span>.”</p>
+<p>Let’s look at a couple of conjectures. First, a conjecture where w.l.o.g. can be used, and then a conjecture where it can’t.</p>
 <div id="when-w.l.o.g.-does-work" class="section level2" number="14.1">
 <h2><span class="header-section-number">14.1</span> When w.l.o.g. does work</h2>
-<p>Conjecture 13.2 (from Chapter 13): For <span class="math inline">\(a, b \in \mathbb R\)</span>, <span class="math inline">\(|a + b| \leq |a| + |b|\)</span>.</p>
-<p>We use <strong>Case 1</strong> to check if the conjecture is true when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are non-negative. We use <strong>Case 2</strong> to check if the conjecture is true when both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are negative. Finally, we should check if the conjecture is true if one of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is negative and the other is non-negative. We say, <em>without loss of generality</em>, that the non-negative one will be <span class="math inline">\(a\)</span> and the negative one will be <span class="math inline">\(b\)</span>.</p>
-<p>This means we need just three cases, not four:</p>
-<p><strong>Case 1:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(\geq 0\)</span>.</p>
-<p><strong>Case 2:</strong> <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both <span class="math inline">\(&lt; 0\)</span>.</p>
-<p><strong>Case 3:</strong> <span class="math inline">\(a \geq 0\)</span> and <span class="math inline">\(b &lt;0\)</span>.</p>
-<p>If we want to demonstrate this conjecture to someone by asking them to pick two numbers, and they pick one negative number and one non-negative number, we can simply assign the non-negative one to <span class="math inline">\(a\)</span> and the negative one to <span class="math inline">\(b\)</span>.</p>
-<hr />
 <p>Conjecture 14.1 : The product of an odd integer and an even integer is even.</p>
 <p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. One of these integers is even, and the other is odd.</p>
 <p>W.l.o.g., let’s say that <span class="math inline">\(a\)</span> is the even one and <span class="math inline">\(b\)</span> is the odd one, so</p>
@@ -192,8 +197,8 @@
   a &amp;= 2m \\
   b &amp;= 2n + 1
 \end{align}\]</span></p>
-<p>with <span class="math inline">\(m, n \in \mathbb Z\)</span>. Notice I have used two different integers here, <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>, as the conjecture doesn’t say <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> must be consecutive (though of course they can be). We could now continue with our proof, having halved the amount of work we need to do!</p>
-<p>Again, if I wanted to demonstrate this conjecture to someone by asking them to pick two numbers, one even and one odd, I just assign the even one to <span class="math inline">\(a\)</span> and the odd one to <span class="math inline">\(b\)</span>. If we had made <span class="math inline">\(a\)</span> the odd one and <span class="math inline">\(b\)</span> the even one, the proof would look identical, so our choice of which was odd and which was even was unimportant. That’s what w.l.o.g. means!</p>
+<p>with <span class="math inline">\(m, n \in \mathbb Z\)</span>.<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a> We could now continue with our proof, having halved the amount of work we need to do!</p>
+<p><strong>Do you see why w.l.o.g. worked here?</strong> If I wanted to demonstrate this conjecture to someone by asking them to pick two numbers, one even and one odd, I just assign the even one to <span class="math inline">\(a\)</span> and the odd one to <span class="math inline">\(b\)</span>. If we had made <span class="math inline">\(a\)</span> the odd one and <span class="math inline">\(b\)</span> the even one, the proof would look identical, so our choice of which was odd and which was even was unimportant. That’s what w.l.o.g. means!</p>
 <p>Here’s the complete proof:</p>
 
 <div class="proof">
@@ -215,7 +220,7 @@
 <div id="when-w.l.o.g.-doesnt-work" class="section level2" number="14.2">
 <h2><span class="header-section-number">14.2</span> When w.l.o.g. doesn’t work</h2>
 <p>Sometimes w.l.o.g. doesn’t work. That’s because changing the letters <em>does</em> fundamentally change the case we’re considering. Let’s look at an example…</p>
-<p>Conjecture 14.2 : The product of two consecutive numbers is even.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Conjecture 14.2 : The product of two consecutive numbers is even.<a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a></p>
 <p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. If two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive, then <span class="math inline">\(b = a + 1\)</span>. If we multiply them, we get</p>
 <p><span class="math display">\[\begin{align}
     a \cdot b &amp;= (a)(a+1) \\
@@ -288,10 +293,48 @@ which is clearly even.</p>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">14.1</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="without-loss-of-generality.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<ol start="37">
+<li id="fn37"><p>Notice I have used two different integers here, <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>, as the conjecture doesn’t say <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> must be consecutive (though of course they can be).<a href="without-loss-of-generality.html#fnref37" class="footnote-back">↩︎</a></p></li>
+<li id="fn38"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">14.1</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="without-loss-of-generality.html#fnref38" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
