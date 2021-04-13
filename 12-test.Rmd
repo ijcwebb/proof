@@ -157,7 +157,7 @@ Some of these conjectures are false; disprove them by finding a **counterexample
 
 (\#cnj:waste): If $a$ and $b$ are both perfect squares, then $ab$ is also a perfect square.
 
-(\#cnj:write): The sum of two odd integers is even.
+(\#cnj:web): The sum of two odd integers is even.
 
 (\#cnj:waiter): All odd primes end with 1, 3, 7 or 9.
 
