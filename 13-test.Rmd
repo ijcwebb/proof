@@ -1,12 +1,12 @@
 # Proof by cases
 
-Our third method of proof is a beautiful method, called **proof by cases**. Proving something by cases is very similar to proving something by exhaustion. 
+Our third method of proof is called **proof by cases**. Proving something by cases is very similar to proving something by exhaustion. 
 
 ## Steps
 
 The steps in a proof by cases are similar to those in a proof by exhaustion:
 
-1. Partition $P$ into cases. <br /> *Note that a partition of $P$ into "*cases*" is similar to the list of possibilities you create for a proof by exhaustion, except that cases are generally more broad (usually containing multiple elements) than each single possibility in a proof by exhaustion.*
+1. Perform a partition of $P$ into cases. <br /> *Note that a partition of $P$ into "*cases*" is similar to the list of possibilities you create for a proof by exhaustion, except that cases are generally more broad (usually containing multiple elements) than each single possibility in a proof by exhaustion.*
 
 2. Show that the conjecture is true for each of the cases on your list. <br /> *In a proof by exhaustion, you had to show that the conjecture was true for each possibility, which usually required testing just a single number. Similarly for a proof by cases, you need to show that $P \rightarrow Q$ for each case, but as cases generally contain more elements, something like a direct proof will be needed for each case.*
 
@@ -16,9 +16,9 @@ Here are some examples of how you might split up a proof into cases (Step 1), de
 
 **Family** | **Possible cases** 
 ------------- | ------------- 
-$a \in \mathbb Z$ | **Case 1:** $a$ is even <br /> **Case 2:** $a$ is odd <br /> <br /> **Case 1:**  $a = 3k$ <br /> **Case 2:** $a = 3k + 1$ <br /> **Case 3:** $a = 3k + 2$ with $k \in \mathbb Z$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
+$a \in \mathbb Z$ | **Case 1:** $a$ is even <br /> **Case 2:** $a$ is odd <br /> <br /> **Case 1:**  $a = 3k$ <br /> **Case 2:** $a = 3k + 1$ <br /> **Case 3:** $a = 3k + 2$ <br /> with $k \in \mathbb Z$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
 $a \in \mathbb R$ | **Case 1:** $a$  is rational <br /> **Case 2:** $a$ is irrational <br /> <br /> **Case 1:** $|a| > 1$ <br /> **Case 2:** $|a| \leq 1$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
-Pairs of numbers $a, b$ | **Case 1:** both $a, b > 0$ <br /> **Case 2:** both $a, b < 0$ <br /> **Case 3:** $a > 0$ and $b < 0$ (w.l.o.g.) <br /> **Case 4:** at least one of $a$ and $b$ equals 0 <br /> <br /> **Case 1:** $a,b \neq 0$ <br /> **Case 2:** at least one of $a$ and $b$ equals 0
+Pairs of numbers $a, b$ | **Case 1:** both $a, b > 0$ <br /> **Case 2:** both $a, b < 0$ <br /> **Case 3:** $a > 0$ and $b < 0$ (w.l.o.g.^[See Chapter 14 for more on w.l.o.g.]) <br /> **Case 4:** at least one of $a$ and $b$ equals 0 <br /> <br /> **Case 1:** $a,b \neq 0$ <br /> **Case 2:** at least one of $a$ and $b$ equals 0
 
 <div class="alert alert-danger" role="alert">
 ```{exercise}
@@ -207,7 +207,7 @@ Now we're ready for a proof by cases.
 
 ```{proof}
 <br />
-**Case 1:** $a$ and $b$ both $\geq 0$. <br />
+**Case 1:** $a$ and $b$ both $\geq 0$ <br />
 Since $a,b \geq 0$, we know that $|a| = a$ and $|b| = b$. Also, as $a+b \geq 0$, we know that $|a+b| = a+b$. We have,
 \begin{align}
     |a + b| &= a + b
@@ -218,7 +218,7 @@ and
 \end{align}
 Therefore $|a + b| = |a| + |b|$, which satisfies the conjecture.
 
-**Case 2:** $a$ and $b$ both $< 0$. <br />
+**Case 2:** $a$ and $b$ both $< 0$ <br />
 Since $a,b <0$, we know that $|a| = -a$ and $|b| = -b$. Also, as $a+b <0$, we know that $|a+b| = -(a+b)$. We have,
 \begin{align}
     |a + b| &= -(a + b) \\
@@ -230,7 +230,7 @@ and
 \end{align}
 Therefore $|a + b| = |a| + |b|$, which satisfies the conjecture. 
 
-**Case 3:** $a \geq 0$, $b <0$, $|a| \geq |b|$.  <br />
+**Case 3:** $a \geq 0$, $b <0$, $|a| \geq |b|$  <br />
 Since $a \geq 0$, $|a| = a$. Since $b<0$, we know that $|b| > 0$. 
 
 Thus 
@@ -244,7 +244,7 @@ As $b<0$ and $|a| \geq |b|$, we know that
 \end{align}
 Therefore $|a + b| < a < |a| + |b|$, which satisfies the conjecture. 
 
-**Case 4:** $a \geq 0$, $b <0$, $|a| < |b|$. <br />
+**Case 4:** $a \geq 0$, $b <0$, $|a| < |b|$ <br />
 Since $a \geq 0$, $|a| = a$. Since $b<0$, $|b| = -b$.
 
   Therefore 
@@ -276,7 +276,7 @@ Now we're ready for a proof by cases.
 ```{proof} 
 If $a$ is a perfect square, then there is some integer that when squared gives $a$. As all integers are either a multiple of $3$, one more than a multiple of $3$ or two more than a multiple of $3$, I'll consider these three cases. We'll use a direct proof within each case.
 
-**Case 1:** $a=(3n)^2$ <br /> i.e. $a$ is the square of a multiple of $3$, which covers square numbers like 0, 9, 36, 81, 144, ...
+**Case 1:** $a=(3n)^2, n \in \mathbb Z$ <br /> i.e. $a$ is the square of a multiple of $3$, which covers square numbers like 0, 9, 36, 81, 144, ...
 
 We have
 \begin{align}
@@ -286,7 +286,7 @@ We have
 \end{align}
 which is clearly a multiple of 3.
 
-**Case 2:** $a=(3n + 1)^2$ <br /> i.e. $a$ is the square of one more than a multiple of $3$, which covers square numbers like 1, 16, 49, 100, 169, ...
+**Case 2:** $a=(3n + 1)^2, n \in \mathbb Z$ <br /> i.e. $a$ is the square of one more than a multiple of $3$, which covers square numbers like 1, 16, 49, 100, 169, ...
 
 We have
 \begin{align}
@@ -296,7 +296,7 @@ We have
 \end{align}
 which is clearly one more than a multiple of 3.
 
-**Case 3:** $a=(3n + 2)^2$ <br /> i.e. $a$ is the square of two more than a multiple of $3$, which covers the remaining square numbers, like 4, 25, 64, 121, 196, ...
+**Case 3:** $a=(3n + 2)^2, n \in \mathbb Z$ <br /> i.e. $a$ is the square of two more than a multiple of $3$, which covers the remaining square numbers, like 4, 25, 64, 121, 196, ...
 
 We have
 \begin{align}
@@ -378,17 +378,3 @@ This exercise will be updated at the beginning of our next lesson.
 
 <!-- ```  -->
 <!-- </div> -->
-
-
-<!-- (\#cnj:he): There is no integer $a$ such that $a^2 + a^3 = 100$.  -->
-<!-- i. Prove this conjecture using cases $a \in \mathbb Z^-$, $a = 0$, $a \in \mathbb Z^+$ with $a < 5$, and $a \in \mathbb Z^+$ with $a \geq 5$.  -->
-<!-- ii. Now prove this conjecture again, either using a proof by cases with a different set of cases (your choice which ones) or using a different method of proof.  -->
-
-<!-- (\#cnj:halt): DELETE If an integer $n$ is not divisible by 3,  then $n^2=3k+1$ where $k$ is a whole number -->
-
-<!-- Today's date is 03/12/2020, which contains lots of repeated digits: three 0's and three 2's. The last three dates with *no* repeated digits were probably before you were born: 23/06/1987, 24/06/1987 and 25/06/1987. <br /> (\#cnj:handicap): The next date this will happen is over 300 years in the future. -->
-
-        
-<!-- The game Tenzi (https://ilovetenzi.com) uses forty 6-sided dice, each numbered 1 to 6. <br /> (\#cnj:heroine): If you roll all forty dice at the same time, at least seven will land on the same number. -->
-
-<!-- You have 27 small cubes, 3 each of nine different colours. <br /> (\#cnj:hypothesis): You can use all these small cubes to make a 3 x 3 x 3 cube so that *each* face of the bigger cube contains one of each of the nine colours. -->
