@@ -111,9 +111,9 @@ Some of these conjectures below are false; **disprove them by finding a countere
 
 (\#cnj:dive): The product of two non-integers is never an integer.
 
-(\#cnj:stun): No number greater than 2 when written in English, has more letters than the number itself. *(Think carefully about which numbers need to be included on your list of possibilities here.)*
+(\#cnj:stun): No integer greater than 2, when written in English with the Latin alphabet, has more letters than the number itself. *(Think carefully about which numbers need to be included on your list of possibilities here.)*
 
-(\#cnj:dirty): No number greater than 2 when written in Russian using the Cyrillic alphabet, has more letters than the number itself. *(Again, think carefully about which numbers need to be included on your list of possibilities here.)*
+(\#cnj:dirty): No integer greater than 2, when written in Russian using the Cyrillic alphabet, has more letters than the number itself. *(Again, think carefully about which numbers need to be included on your list of possibilities here.)*
 
 (\#cnj:nest): If $p$ is a prime number such that $3 \leq p \leq 23$, then $8 \mid (p+1)(p-1)$.
 
