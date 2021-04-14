@@ -16,7 +16,7 @@ Here are some examples of how you might split up a proof into cases (Step 1), de
 
 **Family** | **Possible cases** 
 ------------- | ------------- 
-$a \in \mathbb Z$ | **Case 1:** $a$ is even <br /> **Case 2:** $a$ is odd <br /> <br /> **Case 1:**  $a = 3k$ <br /> **Case 2:** $a = 3k + 1$ <br /> **Case 3:** $a = 3k + 2$ <br /> with $k \in \mathbb Z$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
+$a \in \mathbb Z$ | **Case 1:** $a$ is even <br /> **Case 2:** $a$ is odd <br /> <br /> **Case 1:**  $a = 3k$ <br /> **Case 2:** $a = 3k + 1$ <br /> **Case 3:** $a = 3k + 2$ <br /> with $k \in \mathbb Z$ <br /> In other words, every integer is either a multiple of $3$, one more than a multiple of $3$, or two more than a multiple of $3$. <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
 $a \in \mathbb R$ | **Case 1:** $a$  is rational <br /> **Case 2:** $a$ is irrational <br /> <br /> **Case 1:** $|a| > 1$ <br /> **Case 2:** $|a| \leq 1$ <br /> <br /> **Case 1:** $a$ is positive <br /> **Case 2:** $a$ is negative <br /> **Case 3:** $a$ = 0
 Pairs of numbers $a, b$ | **Case 1:** both $a, b > 0$ <br /> **Case 2:** both $a, b < 0$ <br /> **Case 3:** $a > 0$ and $b < 0$ (w.l.o.g.^[See Chapter 14 for more on w.l.o.g.]) <br /> **Case 4:** at least one of $a$ and $b$ equals 0 <br /> <br /> **Case 1:** $a,b \neq 0$ <br /> **Case 2:** at least one of $a$ and $b$ equals 0
 
@@ -261,7 +261,7 @@ The conjecture says that $|a + b| \leq |a| + |b|$, so we must show that
 \begin{align}
     -a-b &\leq a - b
 \end{align}
-Adding $b$ to both sides gives $-a \leq a$ which, as $a>0$, is clearly true.
+Adding $b$ to both sides gives $-a \leq a$ which, as $a \geq 0$, is clearly true.
 
 ```
 
@@ -269,7 +269,7 @@ Adding $b$ to both sides gives $-a \leq a$ which, as $a>0$, is clearly true.
 
 Conjecture \@ref(cnj:hallway): First, we rewrite the conjecture,
 
-<center> If $a$ is a perfect square, then $a$ is either a multiple of $3$ or one more than a multiple of $3$  </center>
+<center> If $a$ is a perfect square, then $a$ is either a multiple of $3$ or one more than a multiple of $3$.  </center>
 
 Now we're ready for a proof by cases. 
 

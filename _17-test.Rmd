@@ -1,5 +1,30 @@
 # Proof by contraposition
 
+Note: P arrow Q means “all elements in P go to Q”. 
+
+To understand this method, we will use a conjecture map. 
+
+One thing we haven’t yet recognised about conjectures maps is maybe something that you have realised when using them so far in this course. We know that P and S contain every element of the family specified at the top of the map (and are disjoint). What you might have already realised too is that every element on the left hand side must travel to the right hand side. 
+Maybe this is obvious to you. After all, we know that Q and T contain every element on the right hand side.
+
+Let’s look at an example.
+Conjecture XX.X (from Chapter XX): Integers retain their parity when squared. 
+The left hand side of the map contains all integers. The right hand side contains all perfect squares. And every element on the left hand side makes the journey to the right hand side. 
+
+Note: Every element on the left hand side makes the journey to the right hand side. 
+
+This fact gives us a useful way to prove conjectures. Take a look at the conjecture map below. It asserts that if P then Q, i.e. all elements in P end up in Q. Therefore if there are any elements in T, how did they get there? They of course came from the left hand side, but the conjecture maintains that they definitely don’t come from P, as all elements in P went to Q (according to the conjecture). Any element in T must therefore have come from S. 
+
+Therefore, in order to prove the conjecture that P arrow Q, we should simply prove that every element in T started out in S, or T arrow S. 
+
+Example: Multiples of even numbers?
+
+Note: This method, of proving that T arrow S and therefore P only arrow Q does not prove that S arrow T. It certainly proves that some elements in S arrow T, but it doesn’t rule out the possibility that some elements of S arrow Q. That’s fine. Our conjecture merely states that all elements of P arrow Q. We don’t care if there are other elements in Q which came from S - it doesn’t affect the truth of the statement P arrow Q. 
+
+Proving T arrw S in order to rpove the conjecture P arrow Q is called a proof by contraposition (or contrapositive).
+
+When would you use a proof by contraposition? It's a really useful method generally, but specifically if proving P arrow Q would require multiple cases (a proof by cases) but proving T arrow S only requires one case, then it's a very efficient method. As an example, here's a conjecture we proved previous by cases (Chapter 13) now proved by contraposition. Go back to Chapter 13 to compare this proof to that one - it's so much more efficient!
+
 \textcolor{red}{\textbf{\textsc{Method 4: Proof using the Contraposition |}}  \textit{To prove P$\Rightarrow$Q, prove T$\Rightarrow$S}}
 \vspace{2mm}
 \begin{tcolorbox}
