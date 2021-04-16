@@ -1,28 +1,4 @@
-# Proof by contrapositive
-
-
-To understand this method, we will use a conjecture map. 
-
-One thing we haven’t yet recognised about conjectures maps is maybe something that you have realised when using them so far in this course. We know that P and S contain every element of the family specified at the top of the map (and are disjoint). What you might have already realised too is that every element on the left hand side must travel to the right hand side. 
-Maybe this is obvious to you. After all, we know that Q and T contain every element on the right hand side.
-
-Let’s look at an example.
-Conjecture XX.X (from Chapter XX): Integers retain their parity when squared. 
-The left hand side of the map contains all integers. The right hand side contains all perfect squares. And every element on the left hand side makes the journey to the right hand side. 
-
-Note: Every element on the left hand side makes the journey to the right hand side. 
-
-This fact gives us a useful way to prove conjectures. Take a look at the conjecture map below. It asserts that if P then Q, i.e. all elements in P end up in Q. Therefore if there are any elements in T, how did they get there? They of course came from the left hand side, but the conjecture maintains that they definitely don’t come from P, as all elements in P went to Q (according to the conjecture). Any element in T must therefore have come from S. 
-
-Therefore, in order to prove the conjecture that P arrow Q, we should simply prove that every element in T started out in S, or T arrow S. 
-
-Example: Multiples of even numbers?
-
-Note: This method, of proving that T arrow S and therefore P only arrow Q does not prove that S arrow T. It certainly proves that some elements in S arrow T, but it doesn’t rule out the possibility that some elements of S arrow Q. That’s fine. Our conjecture merely states that all elements of P arrow Q. We don’t care if there are other elements in Q which came from S - it doesn’t affect the truth of the statement P arrow Q. 
-
-Proving T arrw S in order to rpove the conjecture P arrow Q is called a proof by contrapositive (or contrapositive).
-
-When would you use a proof by contrapositive? It's a really useful method generally, but specifically if proving P arrow Q would require multiple cases (a proof by cases) but proving T arrow S only requires one case, then it's a very efficient method. As an example, here's a conjecture we proved previous by cases (Chapter 13) now proved by contrapositive. Go back to Chapter 13 to compare this proof to that one - it's so much more efficient!
+# Proof by contrapositive [RAW]
 
 \textcolor{red}{\textbf{\textsc{Method 4: Proof using the contrapositive |}}  \textit{To prove P$\Rightarrow$Q, prove T$\Rightarrow$S}}
 \vspace{2mm}
@@ -41,73 +17,7 @@ When would you use a proof by contrapositive? It's a really useful method genera
 
 ## Not yet uploaded
 
-\pagebreak
-\color{RawSienna}
-\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Raw Sienna} (try to prove these using the contrapositive method)}}
-\item Every multiple of 3 can be written as the sum of three consecutive numbers.
-\item If $a, b$ are both even, then the sum of $a$ and $b$ is even.
-\item If $a^2+b^2$ is odd and $a$ and $b$ both whole, then either $a$ or $b$ is even.
-\item If $a, b$ and $c$ are a \href{https://www.mathsisfun.com/pythagorean_triples.html}{\ul{Pythagorean triple}}, then at least one of them must be even.
 
-\color{WildStrawberry}
-\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Wild Strawberry}}}
-\\{\color{black}
-\vspace{2mm}\hspace{-29mm}{Another collection of conjectures which might be false (and which can hopefully can be} 
-\\\hspace{-29mm}{disproved using a nice \hl{counterexample}) or which might be true.} %https://cs.brown.edu/courses/csci0220/static/files/documents/templates/counterexample.pdf
-\\\vspace{2mm}\hspace{-29mm}{If you can't find a counterexample, it might be true so try a \hl{direct proof} (of P$\rightarrow$Q).} 
-\\\vspace{2mm}\hspace{-29mm}{If that's nasty and you are able to draw a map of the conjecture (and it's not a \textsc{type iii}} 
-\\\hspace{-29mm}{map!) try a \hl{proof by contrapositive}. If none of these work, wait till next Tuesday for our} 
-\\\hspace{-29mm}{next method of proof...}}
-\\{\color{WildStrawberry}
-\item If the product of two whole numbers is even then at least one of them's even.
-\item ($a + b - c$) can't be even unless at least one of $a, b$ or $c$ is even.
-\item For a whole number $a$, if $a^2$ is even, then $a$ is even.
-\item For a whole number $a$, if $a^2$ is odd, then $a$ is odd. 
-\item If $2a$ is even, then $a$ must be whole.
-\item Every odd number can be written as the sum of two perfect squares.}
-
-\color{Thistle}
-\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Highland Thistle}}}
-\\
-\vspace{2mm}\hspace{-29mm}{Note, the symbol $|$ means one number is a \textbf{divisor} of another.} 
-\\\hspace{-29mm}{For example, 11 is a divisor of 33 and so we can write $11|33$ and 6 is a divisor of 18 so we} 
-\\\hspace{-29mm}{can write $6|18$. Similarly, $4|16$, $5|25$, $5|30$, $7|42$ etc.} 
-\\\hspace{-29mm}{Note, we're not actually \textit{doing} the division! We're just stating that if you did the division,} 
-\\\hspace{-29mm}{the result would be a whole number.} 
-\\\hspace{-29mm}{4 is NOT a divisor of 15 so we write $4\nmid15$. Similarly $3\nmid10$, $5\nmid8$, $5\nmid7$, $2\nmid5$, $7\nmid22$, $10\nmid31$}
-\item For whole numbers $a, b$ and $c$, if $a|(bc)$, then $a |$ both $b$ and $c$.
-\item For whole numbers $a, b$ and $c$, if $a|(bc)$, then $a|$ either $b$ or $c$ or possibly both.
-\item For whole numbers $a, b$ and $c$, if $a \nmid (bc)$, then $a \nmid b$.
-\item For whole numbers $a$ and $b$, if $5 \nmid (ab)$, then $5 \nmid a$ and $5 \nmid b$. 
-\item If $a$ is an odd number, then $8 | (a^2 - 1)$.
-\item For a whole number $a$, if $4|a^2$, then $4|a$.
-% Amazing direct and contrapositive proofs - https://www.people.vcu.edu/~rhammack/BookOfProof2/Contrapositive.pdf
-% http://sites.millersville.edu/bikenaga/math-proof/counterexamples/counterexamples.pdf
-% Suggestion to call prove by cotraposition 'indirect proof': http://math.northwestern.edu/~mlerma/courses/cs310-05s/notes/dm-proofs.pdf
-
-\pagebreak
-\color{OrangeRed}
-\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Watermelon}}}
-\item For any non-zero numbers $a, b$ and $c$, if $ab=c$ then at least one of $a, b$ and $c$ is positive.
-\item The sum of two consecutive numbers is odd.
-\item A triangle has at most one obtuse angle. 
-\\ {\color{black}Note: An \textit{obtuse} angle is an angle between $90^\text{o}$ and $180^\text{o}$.}
-\item If $a$ is odd, $a^2 + 1$ is even.
-%\item If $a$ is odd, $a^3 + 1$ is even.
-\item If $(a + b)$ is a multiple of 4, then $(a - b)$ can't be.
-\item If $(a + b)$ is a multiple of 3, then $(a - b)$ can't be.
-
-\color{Aquamarine}
-\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Turquoise Stone}}}
-\\{\color{black}
-\vspace{2mm}\hspace{-29mm}{Practice our new method of \hl{proof by contradiction} with these:}}
-\item The sum of two whole numbers is also whole.
-\item There are no whole numbers $a$ and $b$ for which $9a - 6b = 1$.
-\item There are no non-zero whole numbers $a$ and $b$ for which $a^2 - b^2 = 1$. % From here: http://zimmer.csufresno.edu/~larryc/proofs/proofs.contradict.html
-\item There are no whole numbers $a$ and $b$ for which $a^2 - b^2 = 10$.
-\item The product of two consecutive numbers is even. {\color{black}(I know we've done this one before, but try to find a proof by contradiction of it.)}
-\item There is no largest number. 
-% Suppose that a largest number does exist. Let it be L. If L really is the largest number, then there can be no number larger than L. Consider the number L+1. This number is larger than L, but it was just stated that there cannot be any number larger than L. This is a contradiction. The premise that there existed a largest number cannot be true, because the consequence of this premise is absurd. Therefore, there is no largest number. From https://brilliant.org/wiki/contradiction/
 
 \textbf{Proof by contra-position:} Assume $\neg Q$ and aim for $\neg P$
 \\If $Q$ hasn't happened, you know $P$ has not happened, or in other words, $Q$ cannot happen without $P$. If $Q$ cannot happen without $P$, then 

@@ -1,0 +1,109 @@
+# Proof by contrapositive
+
+Look back at the definition of the **contrapositive** from Chapter 15. Do you notice something? The contrapositive always has the same truth value as the original conjecture $P \Rightarrow Q$. If one of them is true, the other is too. If one of them is false, the other is too.
+
+Sometimes it can be easier to prove the contrapositive is true than to prove the original conjecture $P \Rightarrow Q$ is true. As they have identical truth values, this gives us a useful way of proving conjectures: If $T \Rightarrow S$ is true, then $P \Rightarrow Q$ is true. We use this method in this chapter. <br /> <br />
+
+<div class="alert alert-warning" role="alert">
+<strong>Why?</strong> 
+
+To see why a conjecture $P \Rightarrow Q$ and its contrapositive $T \Rightarrow S$ have identical truth values, consider this: **Every element on the left hand side of a conjecture map *must* travel to the right hand side.** Therefore every element from both $P$ and $S$ must find a home in either $Q$ or $T$. 
+
+A conjecture $P \Rightarrow Q$ asserts that *all* elements in $P$ end up in $Q$. Therefore if there are any elements in $T$, how did they get there? They of course came from the left hand side, but the conjecture maintains that they definitely didn’t come from $P$, as all elements in $P$ went to $Q$. Therefore, if the conjecture $P \Rightarrow Q$ is true, then any element in $T$ must have come from $S$.
+
+Proof by contrapositive exploits this fact, proving the every element in $P$ goes to $Q$ by proving that every element in $T$ started out in $S$ (or simply $T \Rightarrow S$ proves $P \Rightarrow Q$).
+
+</div>
+
+
+## Steps
+
+1. Write the conjecture $P \Rightarrow Q$ in the form **If...then...**.
+2. Write the contrapositive $T \Rightarrow S$ in the form **If...then...**.
+3. Prove $T \Rightarrow S$.
+4. This proves $P \Rightarrow Q$.
+
+## Formal definition
+
+To prove conjecture "If $P$ then $Q$" by contrapositive, show that
+
+<center>
+
+$T \Rightarrow S$
+
+</center>
+
+where $T \Rightarrow S$ is the contrapositive of the original conjecture.
+
+## Conjectures
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Use the following examples to practise proof by contrapositive. Try proving them using a direct proof too.
+
+(\#cnj:xats): If $a^2+b^2$ is odd and $a$ and $b$ both integers, then one of $a$ or $b$ is even.
+  
+(\#cnj:xat): Every multiple of $3$ can be written as the sum of three consecutive integers
+
+(\#cnj:xes): If $a, b$ are both even, then the sum of $a$ and $b$ is even.
+
+(\#cnj:xian): The product of two non-integers is never an integer. (This was Conjecture 11.10.)
+
+``` 
+</div> 
+
+<!-- *** -->
+
+<!-- ***Solutions:*** -->
+
+<!-- *** -->
+
+<!-- Conjecture \@ref(cnj:xat): The conjecture is already in the form "If...then...". To prove this using a direct proof would require us to set $a^2 + b^2$ equal to $2k+1, k \in \mathbb Z$ (as we're told that it's odd) and then doing some crazy algebra involving three variables.  -->
+
+<!-- But a proof by contrapositive here is very quick, so we'll use that: -->
+
+<!-- ```{proof}  -->
+<!-- The contrapositive of the conjecture is "If both of $a$ or $b$ is odd, then $a^2+b^2$ is even". -->
+
+<!-- W.l.o.g. let $a$ be odd, so $b$ is even. We have, -->
+<!-- \begin{align} -->
+<!--     a &= 2k +1 \\ -->
+<!--     b &= 2l -->
+<!-- \end{align} -->
+<!-- where $k,l \in \mathbb Z$. -->
+
+<!-- Thus -->
+<!-- \begin{align} -->
+<!--     a^2 + b^2 &= (2k +1)^2 + (2k)^2 \\ -->
+<!--     &= 4k^2 +4k + 1 + 4k^2 \\ -->
+<!--     &= 8k^2 +4k + 1 \\ -->
+<!--     &= 2(4k^2 +2k) + 1 \\ -->
+<!-- \end{align} -->
+<!-- which is clearly odd. -->
+
+<!-- We have proved the contrapositive, $T \Rightarrow S$. Thus $P\Rightarrow Q$ is proved. -->
+<!-- ``` -->
+
+<!-- *** -->
+
+<!-- Conjecture \@ref(cnj:xes):  -->
+
+<!-- *** -->
+
+<!-- Conjecture \@ref(cnj:xats):  -->
+
+<!-- *** -->
+
+<!-- Conjecture \@ref(cnj:xian): Rewritten, this conjecture becomes "If $a,b \notin \mathbb Z$, then $ab \notin \mathbb Z$". This conjecture is false, but I know many students struggle to see that immediately. So instead, consider the contrapositive of this conjecture: "If $ab \in \mathbb Z$, then at least one of $a$ or $b$ are integers". But it's easy to find counterexample to this. For example, let $ab = 1 = \frac{3}{5} \times \frac{5}{3}$. Or let $ab = 2 = \sqrt{2} \times \sqrt{2}$. As we've found counterexamples to the contrapositive, we know the original conjecture is false too.  -->
+
+<!-- The counterexamples we found against the contrapositive can be reworked to give us counterexamples against the original conjecture: $a = b = \sqrt{2} \notin \mathbb Z$ but $ab = \sqrt{2} \times \sqrt{2} = 2 \in \mathbb Z$. -->
+
+<!-- *** -->
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+This exercise will be uploaded at the start of our next class.
+
+```
+</div> 
+

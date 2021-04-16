@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 15 A conjecture and its negation, converse, inverse, and contrapositive | An Introduction to Mathematical Proof</title>
+  <title>Chapter 15 Maps revisited | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 15 A conjecture and its negation, converse, inverse, and contrapositive | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 15 Maps revisited | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 15 A conjecture and its negation, converse, inverse, and contrapositive | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 15 Maps revisited | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="without-loss-of-generality.html"/>
-
+<link rel="next" href="proof-by-contrapositive.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -150,9 +150,17 @@
 <li class="chapter" data-level="14.1" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-does-work"><i class="fa fa-check"></i><b>14.1</b> When w.l.o.g. does work</a></li>
 <li class="chapter" data-level="14.2" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-doesnt-work"><i class="fa fa-check"></i><b>14.2</b> When w.l.o.g. doesn’t work</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html"><a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html"><i class="fa fa-check"></i><b>15</b> A conjecture and its negation, converse, inverse, and contrapositive</a>
+<li class="chapter" data-level="15" data-path="maps-revisited.html"><a href="maps-revisited.html"><i class="fa fa-check"></i><b>15</b> Maps revisited</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html"><a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#rightarrow-revisited"><i class="fa fa-check"></i><b>15.1</b> <span class="math inline">\(\Rightarrow\)</span> revisited</a></li>
+<li class="chapter" data-level="15.1" data-path="maps-revisited.html"><a href="maps-revisited.html#rightarrow-revisited"><i class="fa fa-check"></i><b>15.1</b> <span class="math inline">\(\Rightarrow\)</span> revisited</a></li>
+<li class="chapter" data-level="15.2" data-path="maps-revisited.html"><a href="maps-revisited.html#more-relations-within-a-map"><i class="fa fa-check"></i><b>15.2</b> More relations within a map</a></li>
+<li class="chapter" data-level="15.3" data-path="maps-revisited.html"><a href="maps-revisited.html#a-conjecture-and-its-negation-converse-inverse-and-contrapositive"><i class="fa fa-check"></i><b>15.3</b> A conjecture and its negation, converse, inverse, and contrapositive</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="proof-by-contrapositive.html"><a href="proof-by-contrapositive.html"><i class="fa fa-check"></i><b>16</b> Proof by contrapositive</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="proof-by-contrapositive.html"><a href="proof-by-contrapositive.html#steps-3"><i class="fa fa-check"></i><b>16.1</b> Steps</a></li>
+<li class="chapter" data-level="16.2" data-path="proof-by-contrapositive.html"><a href="proof-by-contrapositive.html#formal-definition-3"><i class="fa fa-check"></i><b>16.2</b> Formal definition</a></li>
+<li class="chapter" data-level="16.3" data-path="proof-by-contrapositive.html"><a href="proof-by-contrapositive.html#conjectures-3"><i class="fa fa-check"></i><b>16.3</b> Conjectures</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -174,12 +182,15 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="a-conjecture-and-its-negation-converse-inverse-and-contrapositive" class="section level1" number="15">
-<h1><span class="header-section-number">Chapter 15</span> A conjecture and its negation, converse, inverse, and contrapositive</h1>
+<div id="maps-revisited" class="section level1" number="15">
+<h1><span class="header-section-number">Chapter 15</span> Maps revisited</h1>
 <div id="rightarrow-revisited" class="section level2" number="15.1">
 <h2><span class="header-section-number">15.1</span> <span class="math inline">\(\Rightarrow\)</span> revisited</h2>
 <p>We discussed the symbol “<span class="math inline">\(\Rightarrow\)</span>” in Chapter 9. We return to it here, clarifying its meaning a little further.</p>
-<p>For sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A \leftarrow B\)</span> means “<em>all</em> elements in <span class="math inline">\(A\)</span> go to <span class="math inline">\(B\)</span>.”</p>
+<p>For sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A \Rightarrow B\)</span> means “<em>all</em> elements in <span class="math inline">\(A\)</span> go to <span class="math inline">\(B\)</span>.”</p>
+</div>
+<div id="more-relations-within-a-map" class="section level2" number="15.2">
+<h2><span class="header-section-number">15.2</span> More relations within a map</h2>
 <p>Consider the (empty) conjecture map below:</p>
 <p><img src="figures/maps5.png" width="35%" style="display: block; margin: auto;" /></p>
 <p>The conjectures we will meet in this course are generally of the form <span class="math inline">\(P \Rightarrow Q\)</span> (e.g. “The product of three consecutive integers is divisible by <span class="math inline">\(6\)</span>,” “For any negative number <span class="math inline">\(a\)</span>, <span class="math inline">\(a^2 &gt;a\)</span>,” “All primes are odd”). In other words:</p>
@@ -203,7 +214,7 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-3" class="exercise"><strong>Exercise 15.1  </strong></span>Take a look at the following conjecture map<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>:</p>
+<p><span id="exr:unnamed-chunk-134" class="exercise"><strong>Exercise 15.1  </strong></span>Take a look at the following conjecture map<a href="#fn40" class="footnote-ref" id="fnref40"><sup>40</sup></a>:</p>
 </div>
 <p><img src="figures/maps8.png" width="85%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: lower-alpha">
@@ -294,7 +305,7 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-5" class="exercise"><strong>Exercise 15.2  </strong></span>Consider the following class of twelve students. Female students are coloured yellow, male students are coloured purple. The earring(s) that the students wear are indicated with black dots.</p>
+<p><span id="exr:unnamed-chunk-136" class="exercise"><strong>Exercise 15.2  </strong></span>Consider the following class of twelve students. Female students are coloured yellow, male students are coloured purple. The earring(s) that the students wear are indicated with black dots.</p>
 </div>
 <p><img src="figures/classearrings.png" width="75%" style="display: block; margin: auto;" /></p>
 <p>Which of the eight statements from the previous Exercise are true for this class?</p>
@@ -371,7 +382,7 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-7" class="exercise"><strong>Exercise 15.3  </strong></span>Take a look at the following conjecture map from Chapter 8:</p>
+<p><span id="exr:unnamed-chunk-138" class="exercise"><strong>Exercise 15.3  </strong></span>Take a look at the following conjecture map (taken from Chapter 8):</p>
 </div>
 <p><img src="figures/maps6.png" width="65%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: lower-alpha">
@@ -401,7 +412,7 @@
 <tbody>
 <tr class="odd">
 <td><span class="math inline">\(P \Rightarrow Q\)</span></td>
-<td>If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(ka\)</span> is even<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, for <span class="math inline">\(k \in \mathbb Z\)</span>.</td>
+<td>If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(ka\)</span> is even<a href="#fn41" class="footnote-ref" id="fnref41"><sup>41</sup></a>, for <span class="math inline">\(k \in \mathbb Z\)</span>.</td>
 <td>True</td>
 <td>An even integer multiplied by any integer remains even</td>
 <td>No counterexample exists</td>
@@ -462,7 +473,7 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-9" class="exercise"><strong>Exercise 15.4  </strong></span>Consider the following conjecture map:</p>
+<p><span id="exr:unnamed-chunk-140" class="exercise"><strong>Exercise 15.4  </strong></span>Consider the following conjecture map:</p>
 </div>
 <p><img src="figures/maps7.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Which of the eight relationships above are true for this map?</p>
@@ -470,32 +481,37 @@
 </div>
 <p><strong><em>Solution:</em></strong></p>
 <ul>
-<li><span class="math inline">\(P \Rightarrow Q\)</span>, “If <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is even,” is <strong>false</strong>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> <br /> Counterexample: <span class="math inline">\(a^2 = 2\)</span>, <span class="math inline">\(a=\sqrt{2} \neq\)</span> an even number.</li>
-<li><span class="math inline">\(P \Rightarrow T\)</span>, “If <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is not even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 4\)</span>, <span class="math inline">\(a=2 =\)</span> an even number.</li>
-<li><span class="math inline">\(S \Rightarrow Q\)</span>, “If <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 9\)</span>, <span class="math inline">\(a=3 \neq\)</span> an even number.</li>
-<li><span class="math inline">\(S \Rightarrow T\)</span>, “If <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is not even,” is <strong>true</strong>.</li>
-<li><span class="math inline">\(Q \Rightarrow P\)</span>, “If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(a^2\)</span> is even,” is <strong>true</strong>.</li>
-<li><span class="math inline">\(T \Rightarrow P\)</span>, “If <span class="math inline">\(a\)</span> is not even, then <span class="math inline">\(a^2\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 1\)</span>, <span class="math inline">\(a^2=1 \neq\)</span> an even number.</li>
-<li><span class="math inline">\(Q \Rightarrow S\)</span>, “If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(a^2\)</span> is odd,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 2\)</span>, <span class="math inline">\(a^2=4 \neq\)</span> an odd number.</li>
-<li><span class="math inline">\(T \Rightarrow S\)</span>, “If <span class="math inline">\(a\)</span> is not even, then <span class="math inline">\(a^2\)</span> is odd,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 1.1\)</span>, <span class="math inline">\(a^2=1.21 \neq\)</span> an odd number.</li>
+<li><p><span class="math inline">\(P \Rightarrow Q\)</span>, “If <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is even,” is <strong>false</strong>.<a href="#fn42" class="footnote-ref" id="fnref42"><sup>42</sup></a> <br /> Counterexample: <span class="math inline">\(a^2 = 2\)</span>, <span class="math inline">\(a=\sqrt{2} \neq\)</span> an even number.</p></li>
+<li><p><span class="math inline">\(P \Rightarrow T\)</span>, “If <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is not even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 4\)</span>, <span class="math inline">\(a=2 =\)</span> an even number.</p></li>
+<li><p><span class="math inline">\(S \Rightarrow Q\)</span>, “If <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 9\)</span>, <span class="math inline">\(a=3 \neq\)</span> an even number.</p></li>
+<li><p><span class="math inline">\(S \Rightarrow T\)</span>, “If <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is not even,” is <strong>true</strong>.</p></li>
+<li><p><span class="math inline">\(Q \Rightarrow P\)</span>, “If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(a^2\)</span> is even,” is <strong>true</strong>.</p></li>
+<li><p><span class="math inline">\(T \Rightarrow P\)</span>, “If <span class="math inline">\(a\)</span> is not even, then <span class="math inline">\(a^2\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 1\)</span>, <span class="math inline">\(a^2=1 \neq\)</span> an even number.</p></li>
+<li><p><span class="math inline">\(Q \Rightarrow S\)</span>, “If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(a^2\)</span> is odd,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 2\)</span>, <span class="math inline">\(a^2=4 \neq\)</span> an odd number.</p></li>
+<li><p><span class="math inline">\(T \Rightarrow S\)</span>, “If <span class="math inline">\(a\)</span> is not even, then <span class="math inline">\(a^2\)</span> is odd,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 1.1\)</span>, <span class="math inline">\(a^2=1.21 \neq\)</span> an odd number.</p></li>
 </ul>
+</div>
+<div id="a-conjecture-and-its-negation-converse-inverse-and-contrapositive" class="section level2" number="15.3">
+<h2><span class="header-section-number">15.3</span> A conjecture and its negation, converse, inverse, and contrapositive</h2>
+<p>Some of the eight relationships that we’ve looked at in this chapter have special names.</p>
+<p><span class="math inline">\(P \Rightarrow Q\)</span> is a particular <strong>conjecture</strong> that we are trying to prove. If it’s true, we say “The conjecture is true” and if it’s false we say “The conjecture is false.”</p>
+<p>In relation to a particular conjecture <span class="math inline">\(P \Rightarrow Q\)</span>:</p>
+<p><span class="math inline">\(P \Rightarrow T\)</span> is called the <strong>negation</strong> of the conjecture. If the conjecture <span class="math inline">\(P \Rightarrow Q\)</span> is true, then the negation is false. If the conjecture <span class="math inline">\(P \Rightarrow Q\)</span> is false, then the negation might be true. Can you see why?</p>
+<p><span class="math inline">\(S \Rightarrow T\)</span> is called the <strong>inverse</strong> of the conjecture. The truth value of the original conjecture and its inverse have no relation to one another: they can both be true, they can both be false, or they can have opposing truth values. Can you see why?</p>
+<p><span class="math inline">\(Q \Rightarrow P\)</span> is called the <strong>converse</strong> of the conjecture. If the conjecture <span class="math inline">\(P \Rightarrow Q\)</span> is false, then the converse is false. If the conjecture <span class="math inline">\(P \Rightarrow Q\)</span> is true, then the converse might be true. Can you see why?</p>
+<p><span class="math inline">\(T \Rightarrow S\)</span> is called the <strong>contrapositive</strong> of the conjecture. If the original conjecture is true, the contrapositive is true too. If the original conjecture is false, the contrapositive is false too.</p>
+<p>The picture below illustrates these four special relationships, along with the original conjecture <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
+<p><img src="figures/negationetc.png" width="40%" style="display: block; margin: auto;" /></p>
+<p>Note that the relationships <span class="math inline">\(S \Rightarrow Q\)</span>, <span class="math inline">\(T \Rightarrow P\)</span> and <span class="math inline">\(Q \Rightarrow S\)</span> don’t have particular names.</p>
 
 </div>
 </div>
-
-
-
-
-
-
-
-
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>This map assumes that gender is binary, at least within our class, so that each student identifies definitively as female or male. In fact, many people don’t neatly fit into either of the categories “male” or “female,” and identify themselves as having a non-binary gender. Therefore this example is overly simplistic and is used only for illustrative purposes.<a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p>The word <em>always</em> is implied here, and in all other statements in this table.<a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>This is Conjecture 12.23 from Chapter 12.<a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<ol start="40">
+<li id="fn40"><p>This map assumes that gender is binary, at least within our class, so that each student identifies definitively as female or male. In fact, many people don’t neatly fit into either of the categories “male” or “female,” and identify themselves as having a non-binary gender. Therefore this example is overly simplistic and is used only for illustrative purposes.<a href="maps-revisited.html#fnref40" class="footnote-back">↩︎</a></p></li>
+<li id="fn41"><p>The word <em>always</em> is implied here, and in all other statements in this table.<a href="maps-revisited.html#fnref41" class="footnote-back">↩︎</a></p></li>
+<li id="fn42"><p>This is Conjecture 12.23 from Chapter 12.<a href="maps-revisited.html#fnref42" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -503,8 +519,8 @@
           </div>
         </div>
       </div>
-<a href="without-loss-of-generality.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="without-loss-of-generality.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="proof-by-contrapositive.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

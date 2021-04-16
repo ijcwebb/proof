@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 10 The flowchart of proof | An Introduction to Mathematical Proof</title>
+  <title>Chapter 16 Proof by contrapositive | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 10 The flowchart of proof | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 16 Proof by contrapositive | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 10 The flowchart of proof | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 16 Proof by contrapositive | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="before-we-start.html"/>
-<link rel="next" href="proof-by-exhaustion.html"/>
+<link rel="prev" href="maps-revisited.html"/>
+
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -182,24 +182,139 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-flowchart-of-proof" class="section level1" number="10">
-<h1><span class="header-section-number">Chapter 10</span> The flowchart of proof</h1>
-<p>The picture below summarises everything we’ve covered in the first nine chapters. You should follow this flowchart to set up and conduct mathematical proof.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-111"></span>
-<img src="figures/flowchart_for_proof.png" alt="The flowchart of proof." width="100%" />
-<p class="caption">
-Figure 10.1: The flowchart of proof.
-</p>
+<div id="proof-by-contrapositive" class="section level1" number="16">
+<h1><span class="header-section-number">Chapter 16</span> Proof by contrapositive</h1>
+<p>Look back at the definition of the <strong>contrapositive</strong> from Chapter 15. Do you notice something? The contrapositive always has the same truth value as the original conjecture <span class="math inline">\(P \Rightarrow Q\)</span>. If one of them is true, the other is too. If one of them is false, the other is too.</p>
+<p>Sometimes it can be easier to prove the contrapositive is true than to prove the original conjecture <span class="math inline">\(P \Rightarrow Q\)</span> is true. As they have identical truth values, this gives us a useful way of proving conjectures: If <span class="math inline">\(T \Rightarrow S\)</span> is true, then <span class="math inline">\(P \Rightarrow Q\)</span> is true. We use this method in this chapter. <br /> <br /></p>
+<div class="alert alert-warning" role="alert">
+<p><strong>Why?</strong></p>
+<p>To see why a conjecture <span class="math inline">\(P \Rightarrow Q\)</span> and its contrapositive <span class="math inline">\(T \Rightarrow S\)</span> have identical truth values, consider this: <strong>Every element on the left hand side of a conjecture map <em>must</em> travel to the right hand side.</strong> Therefore every element from both <span class="math inline">\(P\)</span> and <span class="math inline">\(S\)</span> must find a home in either <span class="math inline">\(Q\)</span> or <span class="math inline">\(T\)</span>.</p>
+<p>A conjecture <span class="math inline">\(P \Rightarrow Q\)</span> asserts that <em>all</em> elements in <span class="math inline">\(P\)</span> end up in <span class="math inline">\(Q\)</span>. Therefore if there are any elements in <span class="math inline">\(T\)</span>, how did they get there? They of course came from the left hand side, but the conjecture maintains that they definitely didn’t come from <span class="math inline">\(P\)</span>, as all elements in <span class="math inline">\(P\)</span> went to <span class="math inline">\(Q\)</span>. Therefore, if the conjecture <span class="math inline">\(P \Rightarrow Q\)</span> is true, then any element in <span class="math inline">\(T\)</span> must have come from <span class="math inline">\(S\)</span>.</p>
+<p>Proof by contrapositive exploits this fact, proving the every element in <span class="math inline">\(P\)</span> goes to <span class="math inline">\(Q\)</span> by proving that every element in <span class="math inline">\(T\)</span> started out in <span class="math inline">\(S\)</span> (or simply <span class="math inline">\(T \Rightarrow S\)</span> proves <span class="math inline">\(P \Rightarrow Q\)</span>).</p>
+</div>
+<div id="steps-3" class="section level2" number="16.1">
+<h2><span class="header-section-number">16.1</span> Steps</h2>
+<ol style="list-style-type: decimal">
+<li>Write the conjecture <span class="math inline">\(P \Rightarrow Q\)</span> in the form <strong>If…then…</strong>.</li>
+<li>Write the contrapositive <span class="math inline">\(T \Rightarrow S\)</span> in the form <strong>If…then…</strong>.</li>
+<li>Prove <span class="math inline">\(T \Rightarrow S\)</span>.</li>
+<li>This proves <span class="math inline">\(P \Rightarrow Q\)</span>.</li>
+</ol>
+</div>
+<div id="formal-definition-3" class="section level2" number="16.2">
+<h2><span class="header-section-number">16.2</span> Formal definition</h2>
+<p>To prove conjecture “If <span class="math inline">\(P\)</span> then <span class="math inline">\(Q\)</span>” by contrapositive, show that</p>
+<center>
+<p><span class="math inline">\(T \Rightarrow S\)</span></p>
+</center>
+<p>where <span class="math inline">\(T \Rightarrow S\)</span> is the contrapositive of the original conjecture.</p>
+</div>
+<div id="conjectures-3" class="section level2" number="16.3">
+<h2><span class="header-section-number">16.3</span> Conjectures</h2>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-143" class="exercise"><strong>Exercise 16.1  </strong></span>Use the following examples to practise proof by contrapositive. Try proving them using a direct proof too.</p>
+<p>Conjecture 16.1 : If <span class="math inline">\(a^2+b^2\)</span> is odd and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both integers, then one of <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is even.</p>
+<p>Conjecture 16.2 : Every multiple of <span class="math inline">\(3\)</span> can be written as the sum of three consecutive integers</p>
+<p>Conjecture 16.3 : If <span class="math inline">\(a, b\)</span> are both even, then the sum of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is even.</p>
+<p>Conjecture 16.4 : The product of two non-integers is never an integer. (This was Conjecture 11.10.)</p>
+</div>
+</div>
+<!-- *** -->
+<!-- ***Solutions:*** -->
+<!-- *** -->
+<!-- Conjecture \@ref(cnj:xat): The conjecture is already in the form "If...then...". To prove this using a direct proof would require us to set $a^2 + b^2$ equal to $2k+1, k \in \mathbb Z$ (as we're told that it's odd) and then doing some crazy algebra involving three variables.  -->
+<!-- But a proof by contrapositive here is very quick, so we'll use that: -->
+<!-- ```{proof}  -->
+<!-- The contrapositive of the conjecture is "If both of $a$ or $b$ is odd, then $a^2+b^2$ is even". -->
+<!-- W.l.o.g. let $a$ be odd, so $b$ is even. We have, -->
+<!-- \begin{align} -->
+<!--     a &= 2k +1 \\ -->
+<!--     b &= 2l -->
+<!-- \end{align} -->
+<!-- where $k,l \in \mathbb Z$. -->
+<!-- Thus -->
+<!-- \begin{align} -->
+<!--     a^2 + b^2 &= (2k +1)^2 + (2k)^2 \\ -->
+<!--     &= 4k^2 +4k + 1 + 4k^2 \\ -->
+<!--     &= 8k^2 +4k + 1 \\ -->
+<!--     &= 2(4k^2 +2k) + 1 \\ -->
+<!-- \end{align} -->
+<!-- which is clearly odd. -->
+<!-- We have proved the contrapositive, $T \Rightarrow S$. Thus $P\Rightarrow Q$ is proved. -->
+<!-- ``` -->
+<!-- *** -->
+<!-- Conjecture \@ref(cnj:xes):  -->
+<!-- *** -->
+<!-- Conjecture \@ref(cnj:xats):  -->
+<!-- *** -->
+<!-- Conjecture \@ref(cnj:xian): Rewritten, this conjecture becomes "If $a,b \notin \mathbb Z$, then $ab \notin \mathbb Z$". This conjecture is false, but I know many students struggle to see that immediately. So instead, consider the contrapositive of this conjecture: "If $ab \in \mathbb Z$, then at least one of $a$ or $b$ are integers". But it's easy to find counterexample to this. For example, let $ab = 1 = \frac{3}{5} \times \frac{5}{3}$. Or let $ab = 2 = \sqrt{2} \times \sqrt{2}$. As we've found counterexamples to the contrapositive, we know the original conjecture is false too.  -->
+<!-- The counterexamples we found against the contrapositive can be reworked to give us counterexamples against the original conjecture: $a = b = \sqrt{2} \notin \mathbb Z$ but $ab = \sqrt{2} \times \sqrt{2} = 2 \in \mathbb Z$. -->
+<!-- *** -->
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-144" class="exercise"><strong>Exercise 16.2  </strong></span>This exercise will be uploaded at the start of our next class.</p>
+</div>
 </div>
 
 </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="before-we-start.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="proof-by-exhaustion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="maps-revisited.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -230,7 +345,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/10-test.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/16-test.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -238,7 +353,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/10-test.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/16-test.Rmd",
 "text": null
 },
 "download": null,

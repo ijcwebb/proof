@@ -93,8 +93,6 @@ Conjecture \@ref(cnj:send): See https://www.youtube.com/watch?v=1amtOenZEwU.
 
 ***
 
-<!-- There is no integer $a$ such that $a^2 + a^3 = 100$. -->
-
 <div class="alert alert-info" role="alert">
 ```{exercise}
 Some of these conjectures below are false; **disprove them by finding a counterexample**. Some of them are true; **prove them by exhaustion**. Follow the flowchart in Chapter 10 to help you.

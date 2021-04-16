@@ -1,10 +1,12 @@
-# A conjecture and its negation, converse, inverse, and contrapositive
+# Maps revisited
 
 ## $\Rightarrow$ revisited
 
 We discussed the symbol "$\Rightarrow$" in Chapter 9. We return to it here, clarifying its meaning a little further.
 
-For sets $A$ and $B$, $A \leftarrow B$ means “*all* elements in $A$ go to $B$”.
+For sets $A$ and $B$, $A \Rightarrow B$ means “*all* elements in $A$ go to $B$”.
+
+## More relations within a map
 
 Consider the (empty) conjecture map below:
 
@@ -98,7 +100,7 @@ $T \Rightarrow S$ | All the non-earring-wearing students are male. | If a studen
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Take a look at the following conjecture map from Chapter 8:
+Take a look at the following conjecture map (taken from Chapter 8):
 
 ``` 
 
@@ -146,7 +148,8 @@ Be careful! According to this map, we know only that $a^2$ is an integer (hence 
 
 ***Solution:***
 
-- $P \Rightarrow Q$, "If $a^2$ is even, then $a$ is even", is **false**. <br /> Counterexample: $a^2 = 2$, $a=\sqrt{2} \neq$ an even number.
+- $P \Rightarrow Q$, "If $a^2$ is even, then $a$ is even", is **false**.^[This is Conjecture 12.23 from Chapter 12.] <br /> Counterexample: $a^2 = 2$, $a=\sqrt{2} \neq$ an even number.
+
 - $P \Rightarrow T$, "If $a^2$ is even, then $a$ is not even", is **false**. <br /> Counterexample: $a^2 = 4$, $a=2 =$ an even number.
 - $S \Rightarrow Q$, "If $a^2$ is odd, then $a$ is even", is **false**. <br /> Counterexample: $a^2 = 9$, $a=3 \neq$ an even number.
 - $S \Rightarrow T$, "If $a^2$ is odd, then $a$ is not even", is **true**.
@@ -155,3 +158,26 @@ Be careful! According to this map, we know only that $a^2$ is an integer (hence 
 - $Q \Rightarrow S$, "If $a$ is even, then $a^2$ is odd", is **false**. <br /> Counterexample: $a = 2$, $a^2=4 \neq$ an odd number.
 - $T \Rightarrow S$, "If $a$ is not even, then $a^2$ is odd", is **false**. <br /> Counterexample: $a = 1.1$, $a^2=1.21 \neq$ an odd number.
 
+## A conjecture and its negation, converse, inverse, and contrapositive
+
+Some of the eight relationships that we've looked at in this chapter have special names.
+
+$P \Rightarrow Q$ is a particular **conjecture** that we are trying to prove. If it's true, we say "The conjecture is true" and if it's false we say "The conjecture is false".
+
+In relation to a particular conjecture $P \Rightarrow Q$:
+
+$P \Rightarrow T$ is called the **negation** of the conjecture. If the conjecture $P \Rightarrow Q$ is true, then the negation is false. If the conjecture $P \Rightarrow Q$ is false, then the negation might be true. Can you see why?
+
+$S \Rightarrow T$ is called the **inverse** of the conjecture. The truth value of the original conjecture and its inverse have no relation to one another: they can both be true, they can both be false, or they can have opposing truth values. Can you see why?
+
+$Q \Rightarrow P$ is called the **converse** of the conjecture. If the conjecture $P \Rightarrow Q$ is false, then the converse is false. If the conjecture $P \Rightarrow Q$ is true, then the converse might be true. Can you see why?
+
+$T \Rightarrow S$ is called the **contrapositive** of the conjecture. If the original conjecture is true, the contrapositive is true too. If the original conjecture is false, the contrapositive is false too.
+
+The picture below illustrates these four special relationships, along with the original conjecture $P \Rightarrow Q$.
+
+```{r, echo=FALSE, out.width="40%", fig.align="center"}
+knitr::include_graphics(rep("figures/negationetc.png"))
+```
+
+Note that the relationships $S \Rightarrow Q$, $T \Rightarrow P$ and $Q \Rightarrow S$ don't have particular names.
