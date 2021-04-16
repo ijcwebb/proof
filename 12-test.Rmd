@@ -197,11 +197,11 @@ knitr::include_graphics(rep("figures/Diagram_of_Pythagoras_Theorem_simplified.pn
 
 (\#cnj:wake): For any negative number $a$, $a^2 > a$.
 
-(\#cnj:wreck): If $a^2$ is divisible by 2, then so is $a$.
+(\#cnj:wreck): If $a^2$ is divisible by $2$, then so is $a$.
 
-(\#cnj:worm): If $a^2$ is divisible by 3, then so is $a$.
+(\#cnj:worm): If $a^2$ is divisible by $3$, then so is $a$.
 
-(\#cnj:whizz): To multiply a two-digit number by 11, simply add the two digits of the number together, then insert it inbetween the two digits.
+(\#cnj:whizz): To multiply a two-digit number by $11$, simply add the two digits of the number togetheIf the sum of the two digits is $10, 11, 12, ..., 19$, carry the one over to the first number.r, then insert it in between the two digits.  <br /> *For example $11 \times 11 = 121$, $23 \times 11 = 253$,  $77 \times 11 = 847$.*
 
 (\#cnj:wend): In the picture below, the larger square is twice the area of the smaller square.
 
