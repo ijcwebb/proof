@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 10 The flowchart of proof | An Introduction to Mathematical Proof</title>
+  <title>Chapter 15 A conjecture, its negation, its converse, its inverse, its contraposition | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 10 The flowchart of proof | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 15 A conjecture, its negation, its converse, its inverse, its contraposition | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 10 The flowchart of proof | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 15 A conjecture, its negation, its converse, its inverse, its contraposition | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -24,15 +24,15 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-16" />
+<meta name="date" content="2021-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="before-we-start.html"/>
-<link rel="next" href="proof-by-exhaustion.html"/>
+<link rel="prev" href="without-loss-of-generality.html"/>
+
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -150,6 +150,10 @@
 <li class="chapter" data-level="14.1" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-does-work"><i class="fa fa-check"></i><b>14.1</b> When w.l.o.g. does work</a></li>
 <li class="chapter" data-level="14.2" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-doesnt-work"><i class="fa fa-check"></i><b>14.2</b> When w.l.o.g. doesn’t work</a></li>
 </ul></li>
+<li class="chapter" data-level="15" data-path="a-conjecture-its-negation-its-converse-its-inverse-its-contraposition.html"><a href="a-conjecture-its-negation-its-converse-its-inverse-its-contraposition.html"><i class="fa fa-check"></i><b>15</b> A conjecture, its negation, its converse, its inverse, its contraposition</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="a-conjecture-its-negation-its-converse-its-inverse-its-contraposition.html"><a href="a-conjecture-its-negation-its-converse-its-inverse-its-contraposition.html#rightarrow-revisited"><i class="fa fa-check"></i><b>15.1</b> <span class="math inline">\(\Rightarrow\)</span> revisited</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -170,24 +174,77 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-flowchart-of-proof" class="section level1" number="10">
-<h1><span class="header-section-number">Chapter 10</span> The flowchart of proof</h1>
-<p>The picture below summarises everything we’ve covered in the first nine chapters. You should follow this flowchart to set up and conduct mathematical proof.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-111"></span>
-<img src="figures/flowchart_for_proof.png" alt="The flowchart of proof." width="100%" />
-<p class="caption">
-Figure 10.1: The flowchart of proof.
-</p>
-</div>
+<div id="a-conjecture-its-negation-its-converse-its-inverse-its-contraposition" class="section level1" number="15">
+<h1><span class="header-section-number">Chapter 15</span> A conjecture, its negation, its converse, its inverse, its contraposition</h1>
+<div id="rightarrow-revisited" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> <span class="math inline">\(\Rightarrow\)</span> revisited</h2>
+<p>We discussed the symbol “<span class="math inline">\(\Rightarrow\)</span>” in Chapter 9. We return to it here, clarifying its meaning a little further.</p>
+<p>For sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A \leftarrow B\)</span> means “<em>all</em> elements in <span class="math inline">\(A\)</span> go to <span class="math inline">\(B\)</span>.”</p>
+<p>Consider the (empty) conjecture map below:</p>
+<p><img src="figures/maps5.png" width="30%" style="display: block; margin: auto;" /></p>
+<p>The conjectures we will meet in this course are generally of the form <span class="math inline">\(P \Rightarrow Q\)</span> (e.g. “The product of three consecutive integers is divisible by 6,” “For any negative number <span class="math inline">\(a\)</span>, <span class="math inline">\(a^2 &gt;a\)</span>,” “All primes are odd”). In other words:</p>
+<ul>
+<li><span class="math inline">\(P \Rightarrow Q\)</span>: ALL elements in <span class="math inline">\(P\)</span> go to <span class="math inline">\(Q\)</span> (and never <span class="math inline">\(T\)</span>).</li>
+</ul>
+<p>Some other possible relationships within this map are:</p>
+<ul>
+<li><span class="math inline">\(P \Rightarrow T\)</span>: ALL elements in <span class="math inline">\(P\)</span> go to <span class="math inline">\(T\)</span> (and never <span class="math inline">\(Q\)</span>).</li>
+<li><span class="math inline">\(S \Rightarrow Q\)</span>: ALL elements in <span class="math inline">\(S\)</span> go to <span class="math inline">\(Q\)</span> (and never <span class="math inline">\(T\)</span>).</li>
+<li><span class="math inline">\(S \Rightarrow T\)</span>: ALL elements in <span class="math inline">\(S\)</span> go to <span class="math inline">\(T\)</span> (and never <span class="math inline">\(Q\)</span>).</li>
+</ul>
+<p>Also,the following relationships are possible, but different, from those four above:</p>
+<ul>
+<li><span class="math inline">\(Q \Rightarrow P\)</span>: ALL elements in <span class="math inline">\(Q\)</span> came from <span class="math inline">\(P\)</span> (i.e. no elements from <span class="math inline">\(S\)</span> went to <span class="math inline">\(Q\)</span>).</li>
+<li><span class="math inline">\(T \Rightarrow P\)</span>: ALL elements in <span class="math inline">\(T\)</span> came from <span class="math inline">\(P\)</span> (i.e. no elements from <span class="math inline">\(S\)</span> went to <span class="math inline">\(T\)</span>).</li>
+<li><span class="math inline">\(Q \Rightarrow S\)</span>: ALL elements in <span class="math inline">\(Q\)</span> came from <span class="math inline">\(S\)</span> (i.e. no elements from <span class="math inline">\(P\)</span> went to <span class="math inline">\(Q\)</span>).</li>
+<li><span class="math inline">\(T \Rightarrow S\)</span>: ALL elements in <span class="math inline">\(T\)</span> came from <span class="math inline">\(S\)</span> (i.e. no elements from <span class="math inline">\(P\)</span> went to <span class="math inline">\(T\)</span>).
+</div></li>
+</ul>
+<div class="alert alert-info" role="alert">
 
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-3" class="exercise"><strong>Exercise 15.1  </strong></span>Take a look at the following conjecture map (from Chapter 8). Which of the eight relationships from above are true in this map?</p>
+</div>
+<p><img src="figures/maps6.png" width="50%" style="display: block; margin: auto;" /></p>
+</div>
+<p><strong><em>Solution:</em></strong></p>
+<ul>
+<li><p><span class="math inline">\(P \Rightarrow Q\)</span> is true in this map: An even integer multiplied by any integer remains even.</p></li>
+<li><p><span class="math inline">\(P \Rightarrow T\)</span> is false in this map (as <span class="math inline">\(P \Rightarrow Q\)</span>).</p></li>
+<li><p><span class="math inline">\(S \Rightarrow Q\)</span> is false in this map. <em>Sometimes</em> an odd intger multiplied by another integer is even (if the second integer is even) but not always. We can’t use <span class="math inline">\(\Rightarrow\)</span> unless <em>every</em> element of <span class="math inline">\(S\)</span> goes to <span class="math inline">\(Q\)</span>.</p></li>
+<li><p><span class="math inline">\(S \Rightarrow T\)</span>: is false in this map for the same reason <span class="math inline">\(S \Rightarrow Q\)</span> is false. <em>Sometimes</em> an odd integer multiplied by another integer is odd (if the second integer is odd) but not always. We can’t use <span class="math inline">\(\Rightarrow\)</span> unless <em>every</em> element of <span class="math inline">\(S\)</span> goes to <span class="math inline">\(T\)</span>.</p></li>
+<li><p><span class="math inline">\(Q \Rightarrow P\)</span> is false in this map: not all elements in <span class="math inline">\(Q\)</span> come from <span class="math inline">\(P\)</span> - some come from <span class="math inline">\(S\)</span>.</p></li>
+<li><p><span class="math inline">\(T \Rightarrow P\)</span> is false in this map: in fact, no elements in <span class="math inline">\(T\)</span> come from <span class="math inline">\(P\)</span>.</p></li>
+<li><p><span class="math inline">\(Q \Rightarrow S\)</span> is false in this map: some elements in <span class="math inline">\(Q\)</span> come from <span class="math inline">\(S\)</span> but some come from <span class="math inline">\(P\)</span>.</p></li>
+<li><p><span class="math inline">\(T \Rightarrow S\)</span> is true in this map: Any element in <span class="math inline">\(T\)</span> definitely came from <span class="math inline">\(S\)</span> (i.e. none came from <span class="math inline">\(P\)</span>).</p></li>
+</ul>
+<p>These four relationships have subtle distinctions, and you should try to make sure you are happy with the difference between them. Do you understand why <span class="math inline">\(P \Rightarrow Q\)</span> is different to <span class="math inline">\(Q \Leftarrow P\)</span>, for instance? To test yourself, attempt the following exercise.</p>
+<div class="alert alert-info" role="alert">
+<p>Consider the following conjecture map:</p>
+<p><img src="figures/maps7.png" width="50%" style="display: block; margin: auto;" />
+Which of the eight relationships above are true for this map?</p>
+</div>
+<p><strong><em>Solution:</em></strong></p>
+<ul>
+<li><p><span class="math inline">\(P \Rightarrow Q\)</span> is true in this map: An even integer multiplied by any integer remains even.</p></li>
+<li><p><span class="math inline">\(P \Rightarrow T\)</span> is false in this map (as <span class="math inline">\(P \Rightarrow Q\)</span>).</p></li>
+<li><p><span class="math inline">\(S \Rightarrow Q\)</span> is false in this map. <em>Sometimes</em> an odd intger multiplied by another integer is even (if the second integer is even) but not always. We can’t use <span class="math inline">\(\Rightarrow\)</span> unless <em>every</em> element of <span class="math inline">\(S\)</span> goes to <span class="math inline">\(Q\)</span>.</p></li>
+<li><p><span class="math inline">\(S \Rightarrow T\)</span>: is false in this map for the same reason <span class="math inline">\(S \Rightarrow Q\)</span> is false. <em>Sometimes</em> an odd integer multiplied by another integer is odd (if the second integer is odd) but not always. We can’t use <span class="math inline">\(\Rightarrow\)</span> unless <em>every</em> element of <span class="math inline">\(S\)</span> goes to <span class="math inline">\(T\)</span>.</p></li>
+<li><p><span class="math inline">\(Q \Rightarrow P\)</span> is false in this map: not all elements in <span class="math inline">\(Q\)</span> come from <span class="math inline">\(P\)</span> - some come from <span class="math inline">\(S\)</span>.</p></li>
+<li><p><span class="math inline">\(T \Rightarrow P\)</span> is false in this map: in fact, no elements in <span class="math inline">\(T\)</span> come from <span class="math inline">\(P\)</span>.</p></li>
+<li><p><span class="math inline">\(Q \Rightarrow S\)</span> is false in this map: some elements in <span class="math inline">\(Q\)</span> come from <span class="math inline">\(S\)</span> but some come from <span class="math inline">\(P\)</span>.</p></li>
+<li><p><span class="math inline">\(T \Rightarrow S\)</span> is true in this map: Any element in <span class="math inline">\(T\)</span> definitely came from <span class="math inline">\(S\)</span> (i.e. none came from <span class="math inline">\(P\)</span>).</p></li>
+</ul>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="before-we-start.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="proof-by-exhaustion.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="without-loss-of-generality.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -218,7 +275,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/10-test.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/15-test.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -226,7 +283,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/10-test.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/15-test.Rmd",
 "text": null
 },
 "download": null,

@@ -322,59 +322,52 @@ Before moving forward, read Chapter 14, **Without loss of generality**. This is 
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-This exercise will be updated at the beginning of our next lesson.
+Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far.
 
-``` 
+(\#cnj:highway): $5a+6$ has the same parity as $a$.
+
+(\#cnj:hay): $a^2 + a^3$ is even for all integers $a$.
+
+(\#cnj:hip): If $a$ and $b$ are integers, $a^2b^2$ is even.
+
+(\#cnj:heart): For all numbers $a, b, c$, if $ab = bc$ then $a = c$.
+
+(\#cnj:harvest): For any integer $a$, $(3a-1)$ is a multiple of 2.
+
+(\#cnj:harm): The sum of two consecutive numbers is odd.
+
+(\#cnj:hover): Let $a$ be an integer. Then $a^{2} + a$ is even.
+
+(\#cnj:hang): There are no negative square numbers.
+
+(\#cnj:hole): If $a$ is prime, then $a + 13$ isn't.
+
+(\#cnj:half): There is no two-digit prime number (with different digits) which is still prime when you swap its digits.
+
+(\#cnj:hot): For $a \in \mathbb Z^+$, $a^2 - a + 11$ is prime.
+
+(\#cnj:holt): Zero is even.
+
+(\#cnj:horse): For any pair of integers $a$ and $b$, there is an integer $c$ such that $a^2 + b^2 = c^2$, where $c > a$ and $c > b$.
+
+(\#cnj:heavy): MAX($a, b$) + MIN($a, b) = a + b$ for any $a$ and $b$.
+
+(\#cnj:hardware): If $a>c$ and $b>c$ for any numbers $a,b$ and $c$, then MAX$(a,b) - c$ is always positive.
+
+
+(\#cnj:honour): Let $a$ be an integer. If 3 does not divide $a$, then 3 does divides $a^2 - 1$.
+
+(\#cnj:harmony): If $a$ and $b$ are both positive integers and $n = ab$, then either $a \leq \sqrt{n}$ or $b\leq \sqrt{n}$.
+
+(\#cnj:hilarity): The only way for $3a^2 + 4a + 3$ to be even is if $a$ is odd.
+
+(\#cnj:headquarters): For integers $a$, $b$, $c$, $d$ and $n$, $(an + b)$ and $(cn + d)$ have different parity to one another only when $a$ and $b$ have different parity to one another AND $c$ and $d$ have different parity to one another.
+
+(\#cnj:history): 127 is prime.
+
+(\#cnj:helicopter): If $a$ is an integer, then $a^2 + 1$ is prime.
+
+(\#cnj:homely): If $a > 0$, then $\sqrt a < a$.
+
+```
 </div>
-
-<!-- <div class="alert alert-info" role="alert"> -->
-<!-- ```{exercise} -->
-<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far. -->
-
-<!-- (\#cnj:highway): $5a+6$ has the same parity as $a$. -->
-
-<!-- (\#cnj:hay): $a^2 + a^3$ is even for all integers $a$.  -->
-
-<!-- (\#cnj:hip): If $a$ and $b$ are integers, $a^2b^2$ is even. -->
-
-<!-- (\#cnj:heart): For all numbers $a, b, c$, if $ab = bc$ then $a = c$. -->
-
-<!-- (\#cnj:harvest): For any integer $a$, $(3a-1)$ is a multiple of 2. -->
-
-<!-- (\#cnj:harm): The sum of two consecutive numbers is odd. -->
-
-<!-- (\#cnj:hover): Let $a$ be an integer. Then $a^{2} + a$ is even. -->
-
-<!-- (\#cnj:hang): There are no negative square numbers. -->
-
-<!-- (\#cnj:hole): If $a$ is prime, then $a + 13$ isn't.  -->
-
-<!-- (\#cnj:half): There is no two-digit prime number (with different digits) which is still prime when you swap its digits.  -->
-
-<!-- (\#cnj:hot): For $a \in \mathbb Z^+$, $a^2 - a + 11$ is prime. -->
-
-<!-- (\#cnj:holt): Zero is even.  -->
-
-<!-- (\#cnj:horse): For any pair of integers $a$ and $b$, there is an integer $c$ such that $a^2 + b^2 = c^2$, where $c > a$ and $c > b$.  -->
-
-<!-- (\#cnj:heavy): MAX($a, b$) + MIN($a, b) = a + b$ for any $a$ and $b$.  -->
-
-<!-- (\#cnj:hardware): If $a>c$ and $b>c$ for any numbers $a,b$ and $c$, then MAX$(a,b) - c$ is always positive.  -->
-
-
-<!-- (\#cnj:honour): Let $a$ be an integer. If 3 does not divide $a$, then 3 does divides $a^2 - 1$. -->
-
-<!-- (\#cnj:harmony): If $a$ and $b$ are both positive integers and $n = ab$, then either $a \leq \sqrt{n}$ or $b\leq \sqrt{n}$.  -->
-
-<!-- (\#cnj:hilarity): The only way for $3a^2 + 4a + 3$ to be even is if $a$ is odd.  -->
-
-<!-- (\#cnj:headquarters): For integers $a$, $b$, $c$, $d$ and $n$, $(an + b)$ and $(cn + d)$ have different parity to one another only when $a$ and $b$ have different parity to one another AND $c$ and $d$ have different parity to one another.  -->
-
-<!-- (\#cnj:history): 127 is prime. -->
-
-<!-- (\#cnj:helicopter): If $a$ is an integer, then $a^2 + 1$ is prime. -->
-
-<!-- (\#cnj:homely): If $a > 0$, then $\sqrt a < a$. -->
-
-<!-- ```  -->
-<!-- </div> -->

@@ -1,6 +1,5 @@
-# Proof by contraposition
+# Proof by contrapositive
 
-Note: P arrow Q means “all elements in P go to Q”. 
 
 To understand this method, we will use a conjecture map. 
 
@@ -21,30 +20,30 @@ Example: Multiples of even numbers?
 
 Note: This method, of proving that T arrow S and therefore P only arrow Q does not prove that S arrow T. It certainly proves that some elements in S arrow T, but it doesn’t rule out the possibility that some elements of S arrow Q. That’s fine. Our conjecture merely states that all elements of P arrow Q. We don’t care if there are other elements in Q which came from S - it doesn’t affect the truth of the statement P arrow Q. 
 
-Proving T arrw S in order to rpove the conjecture P arrow Q is called a proof by contraposition (or contrapositive).
+Proving T arrw S in order to rpove the conjecture P arrow Q is called a proof by contrapositive (or contrapositive).
 
-When would you use a proof by contraposition? It's a really useful method generally, but specifically if proving P arrow Q would require multiple cases (a proof by cases) but proving T arrow S only requires one case, then it's a very efficient method. As an example, here's a conjecture we proved previous by cases (Chapter 13) now proved by contraposition. Go back to Chapter 13 to compare this proof to that one - it's so much more efficient!
+When would you use a proof by contrapositive? It's a really useful method generally, but specifically if proving P arrow Q would require multiple cases (a proof by cases) but proving T arrow S only requires one case, then it's a very efficient method. As an example, here's a conjecture we proved previous by cases (Chapter 13) now proved by contrapositive. Go back to Chapter 13 to compare this proof to that one - it's so much more efficient!
 
-\textcolor{red}{\textbf{\textsc{Method 4: Proof using the Contraposition |}}  \textit{To prove P$\Rightarrow$Q, prove T$\Rightarrow$S}}
+\textcolor{red}{\textbf{\textsc{Method 4: Proof using the contrapositive |}}  \textit{To prove P$\Rightarrow$Q, prove T$\Rightarrow$S}}
 \vspace{2mm}
 \begin{tcolorbox}
     \textbf{What?}
     \\To prove that P $ \Rightarrow $ only Q, prove  that T $ \Rightarrow $ only S.
     \vspace{5mm}\\
-    \textbf{Steps for a proof by contraposition:}
+    \textbf{Steps for a proof by contrapositive:}
     \\\underline{Step 1:} Identify P and Q (and then S and T).
     \\\underline{Step 2:} Build the map of the conjecture.
     \\\underline{Step 3:} Prove T only $ \Rightarrow $ S. If this is true, then P only $ \Rightarrow $ Q, и все!
     \vspace{5mm}
     \\\textbf{Why would you use this method?}
-    \\For example, if a direct proof requires lots of cases, proving the contraposition might require no cases (or fewer cases), so it can save you time.
+    \\For example, if a direct proof requires lots of cases, proving the contrapositive might require no cases (or fewer cases), so it can save you time.
 \end{tcolorbox}
 
 ## Not yet uploaded
 
 \pagebreak
 \color{RawSienna}
-\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Raw Sienna} (try to prove these using the contraposition method)}}
+\vspace{5mm}\hspace{-29mm}{\fontsize{17}{12}\selectfont \textbf{\textit{Raw Sienna} (try to prove these using the contrapositive method)}}
 \item Every multiple of 3 can be written as the sum of three consecutive numbers.
 \item If $a, b$ are both even, then the sum of $a$ and $b$ is even.
 \item If $a^2+b^2$ is odd and $a$ and $b$ both whole, then either $a$ or $b$ is even.
@@ -57,7 +56,7 @@ When would you use a proof by contraposition? It's a really useful method genera
 \\\hspace{-29mm}{disproved using a nice \hl{counterexample}) or which might be true.} %https://cs.brown.edu/courses/csci0220/static/files/documents/templates/counterexample.pdf
 \\\vspace{2mm}\hspace{-29mm}{If you can't find a counterexample, it might be true so try a \hl{direct proof} (of P$\rightarrow$Q).} 
 \\\vspace{2mm}\hspace{-29mm}{If that's nasty and you are able to draw a map of the conjecture (and it's not a \textsc{type iii}} 
-\\\hspace{-29mm}{map!) try a \hl{proof by contraposition}. If none of these work, wait till next Tuesday for our} 
+\\\hspace{-29mm}{map!) try a \hl{proof by contrapositive}. If none of these work, wait till next Tuesday for our} 
 \\\hspace{-29mm}{next method of proof...}}
 \\{\color{WildStrawberry}
 \item If the product of two whole numbers is even then at least one of them's even.
@@ -82,7 +81,7 @@ When would you use a proof by contraposition? It's a really useful method genera
 \item For whole numbers $a$ and $b$, if $5 \nmid (ab)$, then $5 \nmid a$ and $5 \nmid b$. 
 \item If $a$ is an odd number, then $8 | (a^2 - 1)$.
 \item For a whole number $a$, if $4|a^2$, then $4|a$.
-% Amazing direct and contraposition proofs - https://www.people.vcu.edu/~rhammack/BookOfProof2/Contrapositive.pdf
+% Amazing direct and contrapositive proofs - https://www.people.vcu.edu/~rhammack/BookOfProof2/Contrapositive.pdf
 % http://sites.millersville.edu/bikenaga/math-proof/counterexamples/counterexamples.pdf
 % Suggestion to call prove by cotraposition 'indirect proof': http://math.northwestern.edu/~mlerma/courses/cs310-05s/notes/dm-proofs.pdf
 
@@ -114,5 +113,5 @@ When would you use a proof by contraposition? It's a really useful method genera
 \\If $Q$ hasn't happened, you know $P$ has not happened, or in other words, $Q$ cannot happen without $P$. If $Q$ cannot happen without $P$, then 
 \end{tcolorbox}
 For contra-position, these two methods are basically the same: if you are able to prove $\neg P$ from $\neg Q$ (the method of contra-position) then because proof by contradiction requires you to assume $P$ then  then that would also yield a contradiction in the proof by contradiction, since you are assuming $P$.
-\\So you might as well do a proof by contradiction if you are going to do a proof by contraposition! 
-In fact, this is actually how many proofs by contraposition are found: begin with a proof by contradiction, and then after you are done you realise you never use the assumption of $P$, so the proof is rewritten.
+\\So you might as well do a proof by contradiction if you are going to do a proof by contrapositive! 
+In fact, this is actually how many proofs by contrapositive are found: begin with a proof by contradiction, and then after you are done you realise you never use the assumption of $P$, so the proof is rewritten.

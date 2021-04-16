@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 15 A conjecture and its negation, converse, inverse, and contrapositive | An Introduction to Mathematical Proof</title>
+  <meta name="description" content="Description" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 15 A conjecture and its negation, converse, inverse, and contrapositive | An Introduction to Mathematical Proof" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 15 A conjecture and its negation, converse, inverse, and contrapositive | An Introduction to Mathematical Proof" />
+  
+  <meta name="twitter:description" content="Description" />
+  
+
+<meta name="author" content="Iain Webb" />
+
+
+<meta name="date" content="2021-04-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="without-loss-of-generality.html"/>
+
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">An Introduction to Mathematical Proof</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-course"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.3</b> How to use this book</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statements.html"><a href="statements.html#non-statements"><i class="fa fa-check"></i><b>2.1</b> Non-statements</a></li>
+<li class="chapter" data-level="2.2" data-path="statements.html"><a href="statements.html#what-makes-a-good-statement"><i class="fa fa-check"></i><b>2.2</b> What makes a <em>good</em> statement?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="truth-values.html"><a href="truth-values.html"><i class="fa fa-check"></i><b>3</b> Truth values</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="truth-values.html"><a href="truth-values.html#what-is-the-truth-value-of-a-statement"><i class="fa fa-check"></i><b>3.1</b> What is the truth value of a statement?</a></li>
+<li class="chapter" data-level="3.2" data-path="truth-values.html"><a href="truth-values.html#statements-with-clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.2</b> Statements with clearly defined truth values</a></li>
+<li class="chapter" data-level="3.3" data-path="truth-values.html"><a href="truth-values.html#statements-without-clearly-defined-truth-values"><i class="fa fa-check"></i><b>3.3</b> Statements without clearly defined truth values</a></li>
+<li class="chapter" data-level="3.4" data-path="truth-values.html"><a href="truth-values.html#unknown-truth-values"><i class="fa fa-check"></i><b>3.4</b> Unknown truth values</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="mathematical-statements.html"><a href="mathematical-statements.html"><i class="fa fa-check"></i><b>4</b> Mathematical statements</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="mathematical-statements.html"><a href="mathematical-statements.html#definition"><i class="fa fa-check"></i><b>4.1</b> Definition</a></li>
+<li class="chapter" data-level="4.2" data-path="mathematical-statements.html"><a href="mathematical-statements.html#mathematical-statements-dont-need-to-be-about-mathematics"><i class="fa fa-check"></i><b>4.2</b> Mathematical statements don’t need to be about mathematics!</a></li>
+<li class="chapter" data-level="4.3" data-path="mathematical-statements.html"><a href="mathematical-statements.html#statements-containing-mathematics-arent-necessarily-mathematical"><i class="fa fa-check"></i><b>4.3</b> Statements containing mathematics aren’t necessarily mathematical!</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html"><i class="fa fa-check"></i><b>5</b> Axioms and definitions</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#axioms-are-a-special-kind-of-mathematical-statement"><i class="fa fa-check"></i><b>5.1</b> Axioms are a special kind of mathematical statement</a></li>
+<li class="chapter" data-level="5.2" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#definitions-are-a-special-kind-of-axiom"><i class="fa fa-check"></i><b>5.2</b> Definitions are a special kind of axiom</a></li>
+<li class="chapter" data-level="5.3" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#types-of-real-numbers"><i class="fa fa-check"></i><b>5.3</b> Types of real numbers</a></li>
+<li class="chapter" data-level="5.4" data-path="axioms-and-definitions.html"><a href="axioms-and-definitions.html#inequalities"><i class="fa fa-check"></i><b>5.4</b> Inequalities</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="mathematical-proof.html"><a href="mathematical-proof.html"><i class="fa fa-check"></i><b>6</b> Mathematical proof</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="mathematical-proof.html"><a href="mathematical-proof.html#mathematics-versus-other-fields"><i class="fa fa-check"></i><b>6.1</b> Mathematics versus other fields</a></li>
+<li class="chapter" data-level="6.2" data-path="mathematical-proof.html"><a href="mathematical-proof.html#so-what-does-this-all-mean"><i class="fa fa-check"></i><b>6.2</b> So what does this all mean?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html"><i class="fa fa-check"></i><b>7</b> Disproving a conjecture</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-counterexample"><i class="fa fa-check"></i><b>7.1</b> Finding a counterexample</a></li>
+<li class="chapter" data-level="7.2" data-path="disproving-a-conjecture.html"><a href="disproving-a-conjecture.html#finding-a-disproof"><i class="fa fa-check"></i><b>7.2</b> Finding a disproof</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html"><i class="fa fa-check"></i><b>8</b> Getting started with a new conjecture</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html#step-1-start-by-looking-for-a-counterexample"><i class="fa fa-check"></i><b>8.1</b> Step 1: Start by looking for a counterexample</a></li>
+<li class="chapter" data-level="8.2" data-path="getting-started-with-a-new-conjecture.html"><a href="getting-started-with-a-new-conjecture.html#step-2-try-to-build-a-proof"><i class="fa fa-check"></i><b>8.2</b> Step 2: Try to build a proof</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="before-we-start.html"><a href="before-we-start.html"><i class="fa fa-check"></i><b>9</b> Before we start…</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="before-we-start.html"><a href="before-we-start.html#why-prove-something"><i class="fa fa-check"></i><b>9.1</b> Why prove something?</a></li>
+<li class="chapter" data-level="9.2" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-write-a-good-proof"><i class="fa fa-check"></i><b>9.2</b> How do I write a good proof?</a></li>
+<li class="chapter" data-level="9.3" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-check-my-proof-is-correct"><i class="fa fa-check"></i><b>9.3</b> How do I check my proof is correct?</a></li>
+<li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
+<li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
+<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="the-flowchart-of-proof.html"><a href="the-flowchart-of-proof.html"><i class="fa fa-check"></i><b>10</b> The flowchart of proof</a></li>
+<li class="chapter" data-level="11" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>11</b> Proof by exhaustion</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html#steps"><i class="fa fa-check"></i><b>11.1</b> Steps</a></li>
+<li class="chapter" data-level="11.2" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html#formal-definition"><i class="fa fa-check"></i><b>11.2</b> Formal definition</a></li>
+<li class="chapter" data-level="11.3" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html#conjectures"><i class="fa fa-check"></i><b>11.3</b> Conjectures</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="direct-proof.html"><a href="direct-proof.html"><i class="fa fa-check"></i><b>12</b> Direct proof</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="direct-proof.html"><a href="direct-proof.html#steps-1"><i class="fa fa-check"></i><b>12.1</b> Steps</a></li>
+<li class="chapter" data-level="12.2" data-path="direct-proof.html"><a href="direct-proof.html#formal-definition-1"><i class="fa fa-check"></i><b>12.2</b> Formal definition</a></li>
+<li class="chapter" data-level="12.3" data-path="direct-proof.html"><a href="direct-proof.html#conjectures-1"><i class="fa fa-check"></i><b>12.3</b> Conjectures</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="proof-by-cases.html"><a href="proof-by-cases.html"><i class="fa fa-check"></i><b>13</b> Proof by cases</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="proof-by-cases.html"><a href="proof-by-cases.html#steps-2"><i class="fa fa-check"></i><b>13.1</b> Steps</a></li>
+<li class="chapter" data-level="13.2" data-path="proof-by-cases.html"><a href="proof-by-cases.html#formal-definition-2"><i class="fa fa-check"></i><b>13.2</b> Formal definition</a></li>
+<li class="chapter" data-level="13.3" data-path="proof-by-cases.html"><a href="proof-by-cases.html#exhaustion-versus-cases"><i class="fa fa-check"></i><b>13.3</b> Exhaustion versus cases</a></li>
+<li class="chapter" data-level="13.4" data-path="proof-by-cases.html"><a href="proof-by-cases.html#conjectures-2"><i class="fa fa-check"></i><b>13.4</b> Conjectures</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html"><i class="fa fa-check"></i><b>14</b> Without loss of generality</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-does-work"><i class="fa fa-check"></i><b>14.1</b> When w.l.o.g. does work</a></li>
+<li class="chapter" data-level="14.2" data-path="without-loss-of-generality.html"><a href="without-loss-of-generality.html#when-w.l.o.g.-doesnt-work"><i class="fa fa-check"></i><b>14.2</b> When w.l.o.g. doesn’t work</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html"><a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html"><i class="fa fa-check"></i><b>15</b> A conjecture and its negation, converse, inverse, and contrapositive</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html"><a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#rightarrow-revisited"><i class="fa fa-check"></i><b>15.1</b> <span class="math inline">\(\Rightarrow\)</span> revisited</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An Introduction to Mathematical Proof</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="a-conjecture-and-its-negation-converse-inverse-and-contrapositive" class="section level1" number="15">
+<h1><span class="header-section-number">Chapter 15</span> A conjecture and its negation, converse, inverse, and contrapositive</h1>
+<div id="rightarrow-revisited" class="section level2" number="15.1">
+<h2><span class="header-section-number">15.1</span> <span class="math inline">\(\Rightarrow\)</span> revisited</h2>
+<p>We discussed the symbol “<span class="math inline">\(\Rightarrow\)</span>” in Chapter 9. We return to it here, clarifying its meaning a little further.</p>
+<p>For sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A \leftarrow B\)</span> means “<em>all</em> elements in <span class="math inline">\(A\)</span> go to <span class="math inline">\(B\)</span>.”</p>
+<p>Consider the (empty) conjecture map below:</p>
+<p><img src="figures/maps5.png" width="35%" style="display: block; margin: auto;" /></p>
+<p>The conjectures we will meet in this course are generally of the form <span class="math inline">\(P \Rightarrow Q\)</span> (e.g. “The product of three consecutive integers is divisible by <span class="math inline">\(6\)</span>,” “For any negative number <span class="math inline">\(a\)</span>, <span class="math inline">\(a^2 &gt;a\)</span>,” “All primes are odd”). In other words:</p>
+<ul>
+<li><span class="math inline">\(P \Rightarrow Q\)</span>: ALL elements in <span class="math inline">\(P\)</span> go to <span class="math inline">\(Q\)</span> (and never to <span class="math inline">\(T\)</span>).</li>
+</ul>
+<p>Some other possible relationships within this map are:</p>
+<ul>
+<li><span class="math inline">\(P \Rightarrow T\)</span>: ALL elements in <span class="math inline">\(P\)</span> go to <span class="math inline">\(T\)</span> (and never to <span class="math inline">\(Q\)</span>).</li>
+<li><span class="math inline">\(S \Rightarrow Q\)</span>: ALL elements in <span class="math inline">\(S\)</span> go to <span class="math inline">\(Q\)</span> (and never to <span class="math inline">\(T\)</span>).</li>
+<li><span class="math inline">\(S \Rightarrow T\)</span>: ALL elements in <span class="math inline">\(S\)</span> go to <span class="math inline">\(T\)</span> (and never to <span class="math inline">\(Q\)</span>).</li>
+</ul>
+<p>The following relationships are also possible, but are different from those four above:</p>
+<ul>
+<li><span class="math inline">\(Q \Rightarrow P\)</span>: ALL elements in <span class="math inline">\(Q\)</span> came from <span class="math inline">\(P\)</span> (i.e. no elements in <span class="math inline">\(S\)</span> go to <span class="math inline">\(Q\)</span>).</li>
+<li><span class="math inline">\(T \Rightarrow P\)</span>: ALL elements in <span class="math inline">\(T\)</span> came from <span class="math inline">\(P\)</span> (i.e. no elements in <span class="math inline">\(S\)</span> go to <span class="math inline">\(T\)</span>).</li>
+<li><span class="math inline">\(Q \Rightarrow S\)</span>: ALL elements in <span class="math inline">\(Q\)</span> came from <span class="math inline">\(S\)</span> (i.e. no elements in <span class="math inline">\(P\)</span> go to <span class="math inline">\(Q\)</span>).</li>
+<li><span class="math inline">\(T \Rightarrow S\)</span>: ALL elements in <span class="math inline">\(T\)</span> came from <span class="math inline">\(S\)</span> (i.e. no elements in <span class="math inline">\(P\)</span> go to <span class="math inline">\(T\)</span>).</li>
+</ul>
+<p>Let’s practise…</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-134" class="exercise"><strong>Exercise 15.1  </strong></span>Take a look at the following conjecture map<a href="#fn40" class="footnote-ref" id="fnref40"><sup>40</sup></a>:</p>
+</div>
+<p><img src="figures/maps8.png" width="85%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Write down the conjecture (<span class="math inline">\(P \Rightarrow Q\)</span>) for this map.<br /></p></li>
+<li><p>For this map, write down the statement which is associated with each of the following: <span class="math inline">\(P \Rightarrow T\)</span>, <span class="math inline">\(S \Rightarrow Q\)</span>, <span class="math inline">\(S \Rightarrow T\)</span>, <span class="math inline">\(Q \Rightarrow P\)</span>, <span class="math inline">\(T \Rightarrow P\)</span>, <span class="math inline">\(Q \Rightarrow S\)</span>, <span class="math inline">\(T \Rightarrow S\)</span>.<br /></p></li>
+<li><p>How would we verify the truth value for each of the eight statements above? What would a counterexample for each of the eight statements above look like?</p></li>
+</ol>
+</div>
+<p><strong><em>Solution:</em></strong></p>
+<p>Parts a and b are answered in the second and third columns of the table below. Part c is answered in the fourth and fifth columns of the table.</p>
+<table>
+<colgroup>
+<col width="6%" />
+<col width="23%" />
+<col width="23%" />
+<col width="23%" />
+<col width="23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Statement</strong></th>
+<th><strong>If…then…</strong></th>
+<th><strong>How to verify its truth value?</strong></th>
+<th><strong>What would a counterexample look like?</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(P \Rightarrow Q\)</span></td>
+<td>All female students in our class wear earring(s).</td>
+<td>If a student in our class is female, then that student wears earring(s).</td>
+<td>Check each female student’s ears</td>
+<td>A female student in our class who doesn’t wear earring(s)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(P \Rightarrow T\)</span></td>
+<td>No female students in our class wear earring(s).</td>
+<td>If a student in our class is female, then that student doesn’t wear earring(s).</td>
+<td>Check each female student’s ears</td>
+<td>A female student in our class who wears earring(s)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(S \Rightarrow Q\)</span></td>
+<td>All male students in our class wear earring(s).</td>
+<td>If a student in our class is male, then that student wears earring(s).</td>
+<td>Check each male student’s ears</td>
+<td>A male student in our class who doesn’t wear earring(s)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S \Rightarrow T\)</span></td>
+<td>No male students in our class wear earring(s).</td>
+<td>If a student in our class is male, then that student doesn’t wear earring(s).</td>
+<td>Check each male student’s ears</td>
+<td>A male student in our class who wears earring(s)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q \Rightarrow P\)</span></td>
+<td>All the earring-wearing students in our class are female.</td>
+<td>If a student in our class wears earring(s), then that student is female.</td>
+<td>Check the gender of all earring-wearers</td>
+<td>A male student who wears earring(s)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T \Rightarrow P\)</span></td>
+<td>All the non-earring-wearing students in our class are female.</td>
+<td>If a student in our class doesn’t wear earring(s), then that student is female.</td>
+<td>Check the gender of all non-earring-wearers</td>
+<td>A male student who doesn’t wear earring(s)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q \Rightarrow S\)</span></td>
+<td>All the earring-wearing students in our class are male.</td>
+<td>If a student in our class wears earring(s), then that student is male.</td>
+<td>Check the gender of all earring-wearers</td>
+<td>A female student who wears earring(s)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T \Rightarrow S\)</span></td>
+<td>All the non-earring-wearing students in our class are male.</td>
+<td>If a student in our class doesn’t wear earring(s), then that student is male.</td>
+<td>Check the gender of all non-earring-wearers</td>
+<td>A female student who doesn’t wear earring(s)</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-136" class="exercise"><strong>Exercise 15.2  </strong></span>Consider the following class of twelve students. Female students are coloured yellow, male students are coloured purple. The earring(s) that the students wear are indicated with black dots.</p>
+</div>
+<p><img src="figures/classearrings.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Which of the eight statements from the previous Exercise are true for this class?</p>
+</div>
+<p><strong><em>Solution:</em></strong></p>
+<p>The statements are reprinted from the previous exercise, for ease of reference, along with their truth values:</p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="32%" />
+<col width="35%" />
+<col width="26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Statement</strong></th>
+<th><strong>If…then…</strong></th>
+<th><strong>Truth value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(P \Rightarrow Q\)</span></td>
+<td>All female students wear earring(s).</td>
+<td>If a student is female, then that student wears earring(s).</td>
+<td>True</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(P \Rightarrow T\)</span></td>
+<td>No female students wear earring(s).</td>
+<td>If a student is female, then that student doesn’t wear earring(s).</td>
+<td>False</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(S \Rightarrow Q\)</span></td>
+<td>All male students wear earring(s).</td>
+<td>If a student is male, then that student wears earring(s).</td>
+<td>False (some do but not all)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S \Rightarrow T\)</span></td>
+<td>No male students wear earring(s).</td>
+<td>If a student is male, then that student doesn’t wear earring(s).</td>
+<td>False (some don’t but some do)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q \Rightarrow P\)</span></td>
+<td>All the earring-wearing students are female.</td>
+<td>If a student wears earring(s), then that student is female.</td>
+<td>False (some of the earring-wearers are male)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T \Rightarrow P\)</span></td>
+<td>All the non-earring-wearing students are female.</td>
+<td>If a student doesn’t wear earring(s), then that student is female.</td>
+<td>False (in fact <em>none</em> of the non-earring-wearers are female!)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q \Rightarrow S\)</span></td>
+<td>All the earring-wearing students are male.</td>
+<td>If a student wears earring(s), then that student is male.</td>
+<td>False (some of them are female)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T \Rightarrow S\)</span></td>
+<td>All the non-earring-wearing students are male.</td>
+<td>If a student doesn’t wear earring(s), then that student is male.</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-138" class="exercise"><strong>Exercise 15.3  </strong></span>Take a look at the following conjecture map from Chapter 8:</p>
+</div>
+<p><img src="figures/maps6.png" width="65%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Write down the conjecture (<span class="math inline">\(P \Rightarrow Q\)</span>) for this map.<br /></p></li>
+<li><p>For this map, write down the statement which is associated with each of the following: <span class="math inline">\(P \Rightarrow T\)</span>, <span class="math inline">\(S \Rightarrow Q\)</span>, <span class="math inline">\(S \Rightarrow T\)</span>, <span class="math inline">\(Q \Rightarrow P\)</span>, <span class="math inline">\(T \Rightarrow P\)</span>, <span class="math inline">\(Q \Rightarrow S\)</span>, <span class="math inline">\(T \Rightarrow S\)</span>.<br /></p></li>
+<li><p>Which of the eight relationships from questions a and b are true in this map, and which are false? For those which are false, can you find a counterexample which disproves them?</p></li>
+</ol>
+</div>
+<p><strong><em>Solution:</em></strong></p>
+<table style="width:100%;">
+<colgroup>
+<col width="8%" />
+<col width="27%" />
+<col width="9%" />
+<col width="45%" />
+<col width="8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Statement</strong></th>
+<th><strong>Truth value</strong></th>
+<th><strong>Justification</strong></th>
+<th><strong>Counterexample (if false)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(P \Rightarrow Q\)</span></td>
+<td>If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(ka\)</span> is even<a href="#fn41" class="footnote-ref" id="fnref41"><sup>41</sup></a>, for <span class="math inline">\(k \in \mathbb Z\)</span>.</td>
+<td>True</td>
+<td>An even integer multiplied by any integer remains even</td>
+<td>No counterexample exists</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(P \Rightarrow T\)</span></td>
+<td>If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(ka\)</span> is odd, for <span class="math inline">\(k \in \mathbb Z\)</span>.</td>
+<td>False</td>
+<td>Because <span class="math inline">\(P \Rightarrow Q\)</span></td>
+<td><span class="math inline">\(a=2, k=1\)</span>. <br /> Then <br /> <span class="math inline">\(ka=2 \neq\)</span> odd.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(S \Rightarrow Q\)</span></td>
+<td>If <span class="math inline">\(a\)</span> is odd, then <span class="math inline">\(ka\)</span> is even, for <span class="math inline">\(k \in \mathbb Z\)</span>.</td>
+<td>False</td>
+<td><em>Sometimes</em> an odd integer multiplied by another integer is even (if the second integer is even) but not always. We can’t use <span class="math inline">\(\Rightarrow\)</span> unless <em>every</em> element of <span class="math inline">\(S\)</span> goes to <span class="math inline">\(Q\)</span></td>
+<td><span class="math inline">\(a=1, k=1\)</span>. <br /> Then <br /> <span class="math inline">\(ka=1 \neq\)</span> even.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S \Rightarrow T\)</span></td>
+<td>If <span class="math inline">\(a\)</span> is odd, then <span class="math inline">\(ka\)</span> is odd, for <span class="math inline">\(k \in \mathbb Z\)</span>.</td>
+<td>False</td>
+<td>For the same reason that <span class="math inline">\(S \Rightarrow Q\)</span> is false. <em>Sometimes</em> an odd integer multiplied by another integer is odd (if the second integer is odd) but not always. We can’t use <span class="math inline">\(\Rightarrow\)</span> unless <em>every</em> element of <span class="math inline">\(S\)</span> goes to <span class="math inline">\(T\)</span></td>
+<td><span class="math inline">\(a=1, k=2\)</span>. <br /> Then <br /> <span class="math inline">\(ka=2 \neq\)</span> odd.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q \Rightarrow P\)</span></td>
+<td>If <span class="math inline">\(ka\)</span> is even, with <span class="math inline">\(k \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> is even.</td>
+<td>False</td>
+<td>Not all elements in <span class="math inline">\(Q\)</span> came from <span class="math inline">\(P\)</span> - some came from <span class="math inline">\(S\)</span></td>
+<td><span class="math inline">\(ka=2, k=2\)</span>. <br /> Then <br /> <span class="math inline">\(a=1 \neq\)</span> even.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T \Rightarrow P\)</span></td>
+<td>If <span class="math inline">\(ka\)</span> is odd, with <span class="math inline">\(k \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> is even.</td>
+<td>False</td>
+<td>In fact, no elements in <span class="math inline">\(T\)</span> come from <span class="math inline">\(P\)</span>.</td>
+<td><span class="math inline">\(ka=3, k=1\)</span>. <br /> Then <br /> <span class="math inline">\(a=3 \neq\)</span> even.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(Q \Rightarrow S\)</span></td>
+<td>If <span class="math inline">\(ka\)</span> is even, with <span class="math inline">\(k \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> is odd.</td>
+<td>False</td>
+<td>Some elements in <span class="math inline">\(Q\)</span> came from <span class="math inline">\(S\)</span> but some came from <span class="math inline">\(P\)</span>.</td>
+<td><span class="math inline">\(ka=2, k=1\)</span>. <br /> Then <br /> <span class="math inline">\(a=2 \neq\)</span> odd.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(T \Rightarrow S\)</span></td>
+<td>If <span class="math inline">\(ka\)</span> is odd, with <span class="math inline">\(k \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> is odd.</td>
+<td>True</td>
+<td>Any element in <span class="math inline">\(T\)</span> definitely came from <span class="math inline">\(S\)</span> (i.e. none came from <span class="math inline">\(P\)</span>).</td>
+<td>No counterexample exists</td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+<!-- These four relationships have subtle distinctions, and you should try to make sure you are happy with the difference between them. Do you understand why $P \Rightarrow Q$ is different to $Q \Leftarrow P$, for instance? To test yourself, attempt the following exercise. -->
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-140" class="exercise"><strong>Exercise 15.4  </strong></span>Consider the following conjecture map:</p>
+</div>
+<p><img src="figures/maps7.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Which of the eight relationships above are true for this map?</p>
+<p>Be careful! According to this map, we know only that <span class="math inline">\(a^2\)</span> is an integer (hence why we can partition the <span class="math inline">\(a^2\)</span>s into evens and odds) but not whether <span class="math inline">\(a\)</span> is an integer.</p>
+</div>
+<p><strong><em>Solution:</em></strong></p>
+<ul>
+<li><span class="math inline">\(P \Rightarrow Q\)</span>, “If <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 2\)</span>, <span class="math inline">\(a=\sqrt{2} \neq\)</span> an even number.</li>
+<li><span class="math inline">\(P \Rightarrow T\)</span>, “If <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is not even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 4\)</span>, <span class="math inline">\(a=2 =\)</span> an even number.</li>
+<li><span class="math inline">\(S \Rightarrow Q\)</span>, “If <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a^2 = 9\)</span>, <span class="math inline">\(a=3 \neq\)</span> an even number.</li>
+<li><span class="math inline">\(S \Rightarrow T\)</span>, “If <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is not even,” is <strong>true</strong>.</li>
+<li><span class="math inline">\(Q \Rightarrow P\)</span>, “If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(a^2\)</span> is even,” is <strong>true</strong>.</li>
+<li><span class="math inline">\(T \Rightarrow P\)</span>, “If <span class="math inline">\(a\)</span> is not even, then <span class="math inline">\(a^2\)</span> is even,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 1\)</span>, <span class="math inline">\(a^2=1 \neq\)</span> an even number.</li>
+<li><span class="math inline">\(Q \Rightarrow S\)</span>, “If <span class="math inline">\(a\)</span> is even, then <span class="math inline">\(a^2\)</span> is odd,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 2\)</span>, <span class="math inline">\(a^2=4 \neq\)</span> an odd number.</li>
+<li><span class="math inline">\(T \Rightarrow S\)</span>, “If <span class="math inline">\(a\)</span> is not even, then <span class="math inline">\(a^2\)</span> is odd,” is <strong>false</strong>. <br /> Counterexample: <span class="math inline">\(a = 1.1\)</span>, <span class="math inline">\(a^2=1.21 \neq\)</span> an odd number.</li>
+</ul>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="40">
+<li id="fn40"><p>This map assumes that gender is binary, at least within our class, so that each student identifies definitively as female or male. In fact, many people don’t neatly fit into either of the categories “male” or “female,” and identify themselves as having a non-binary gender. Therefore this example is overly simplistic and is used only for illustrative purposes.<a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#fnref40" class="footnote-back">↩︎</a></p></li>
+<li id="fn41"><p>The word <em>always</em> is implied here, and in all other statements in this table.<a href="a-conjecture-and-its-negation-converse-inverse-and-contrapositive.html#fnref41" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="without-loss-of-generality.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ijcwebb/proof/edit/master/15-test.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/ijcwebb/proof/blob/master/15-test.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
