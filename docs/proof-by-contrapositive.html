@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-16" />
+<meta name="date" content="2021-04-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -214,48 +214,125 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-143" class="exercise"><strong>Exercise 16.1  </strong></span>Use the following examples to practise proof by contrapositive. Try proving them using a direct proof too.</p>
+<p><span id="exr:unnamed-chunk-143" class="exercise"><strong>Exercise 16.1  </strong></span>Use the following examples to practise proof by contrapositive. Consider why this method is easier than a direct proof for these conjectures.</p>
 <p>Conjecture 16.1 : If <span class="math inline">\(a^2+b^2\)</span> is odd and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> both integers, then one of <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is even.</p>
 <p>Conjecture 16.2 : Every multiple of <span class="math inline">\(3\)</span> can be written as the sum of three consecutive integers</p>
-<p>Conjecture 16.3 : If <span class="math inline">\(a, b\)</span> are both even, then the sum of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is even.</p>
-<p>Conjecture 16.4 : The product of two non-integers is never an integer. (This was Conjecture 11.10.)</p>
+<p>Conjecture 16.3 : If <span class="math inline">\(a+b\)</span> is even, with <span class="math inline">\(a,b \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> have the same parity.</p>
+<p>Conjecture 16.4 : If <span class="math inline">\(a\)</span> is irrational, then <span class="math inline">\(\frac{1}{a}\)</span> is too.</p>
 </div>
 </div>
-<!-- *** -->
-<!-- ***Solutions:*** -->
-<!-- *** -->
-<!-- Conjecture \@ref(cnj:xat): The conjecture is already in the form "If...then...". To prove this using a direct proof would require us to set $a^2 + b^2$ equal to $2k+1, k \in \mathbb Z$ (as we're told that it's odd) and then doing some crazy algebra involving three variables.  -->
-<!-- But a proof by contrapositive here is very quick, so we'll use that: -->
-<!-- ```{proof}  -->
-<!-- The contrapositive of the conjecture is "If both of $a$ or $b$ is odd, then $a^2+b^2$ is even". -->
-<!-- W.l.o.g. let $a$ be odd, so $b$ is even. We have, -->
-<!-- \begin{align} -->
-<!--     a &= 2k +1 \\ -->
-<!--     b &= 2l -->
-<!-- \end{align} -->
-<!-- where $k,l \in \mathbb Z$. -->
-<!-- Thus -->
-<!-- \begin{align} -->
-<!--     a^2 + b^2 &= (2k +1)^2 + (2k)^2 \\ -->
-<!--     &= 4k^2 +4k + 1 + 4k^2 \\ -->
-<!--     &= 8k^2 +4k + 1 \\ -->
-<!--     &= 2(4k^2 +2k) + 1 \\ -->
-<!-- \end{align} -->
-<!-- which is clearly odd. -->
-<!-- We have proved the contrapositive, $T \Rightarrow S$. Thus $P\Rightarrow Q$ is proved. -->
-<!-- ``` -->
-<!-- *** -->
-<!-- Conjecture \@ref(cnj:xes):  -->
-<!-- *** -->
-<!-- Conjecture \@ref(cnj:xats):  -->
-<!-- *** -->
-<!-- Conjecture \@ref(cnj:xian): Rewritten, this conjecture becomes "If $a,b \notin \mathbb Z$, then $ab \notin \mathbb Z$". This conjecture is false, but I know many students struggle to see that immediately. So instead, consider the contrapositive of this conjecture: "If $ab \in \mathbb Z$, then at least one of $a$ or $b$ are integers". But it's easy to find counterexample to this. For example, let $ab = 1 = \frac{3}{5} \times \frac{5}{3}$. Or let $ab = 2 = \sqrt{2} \times \sqrt{2}$. As we've found counterexamples to the contrapositive, we know the original conjecture is false too.  -->
+<!-- If $a, b$ are both even, then the sum of $a$ and $b$ is even. -->
+<hr />
+<p><strong><em>Solutions:</em></strong></p>
+<hr />
+<p>Conjecture <a href="#cnj:xats">16.1</a>: To prove this using a direct proof would require us to set <span class="math inline">\(a^2 + b^2\)</span> equal to <span class="math inline">\(2k+1, k \in \mathbb Z\)</span> (as we’re told that it’s odd) and then doing some crazy algebra involving three variables.</p>
+<p>A proof by contrapositive is probably going to be a lot easier here.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> The contrapositive of the conjecture is “If both of <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is odd, then <span class="math inline">\(a^2+b^2\)</span> is even.”</p>
+<p>W.l.o.g. let <span class="math inline">\(a\)</span> be odd, so <span class="math inline">\(b\)</span> is even. We have,
+<span class="math display">\[\begin{align}
+    a &amp;= 2k +1 \\
+    b &amp;= 2l
+\end{align}\]</span>
+where <span class="math inline">\(k,l \in \mathbb Z\)</span>.</p>
+<p>Thus
+<span class="math display">\[\begin{align}
+    a^2 + b^2 &amp;= (2k +1)^2 + (2k)^2 \\
+    &amp;= 4k^2 +4k + 1 + 4k^2 \\
+    &amp;= 8k^2 +4k + 1 \\
+    &amp;= 2(4k^2 +2k) + 1 \\
+\end{align}\]</span>
+which is clearly odd.</p>
+We have proved the contrapositive, <span class="math inline">\(T \Rightarrow S\)</span>. Thus <span class="math inline">\(P\Rightarrow Q\)</span> is proved.
+</div>
+<hr />
+<!-- Every multiple of $3$ can be written as the sum of three consecutive integers -->
+<p>Conjecture <a href="#cnj:xat">16.2</a>: First, we rewrite the conjecture,</p>
+<center>
+If <span class="math inline">\(a\)</span> is a multiple of <span class="math inline">\(3\)</span>, then <span class="math inline">\(a\)</span> can be expressed as the sum of three consecutive integers. <br /> <br />
+</center>
+<p>We can easily see this conjecture holds for some small multiples of <span class="math inline">\(3\)</span>, for example</p>
+<center>
+<span class="math inline">\(6=1+2+3\)</span> <br />
+</center>
+<center>
+<span class="math inline">\(3 = 0 + 1 + 2\)</span> <br />
+</center>
+<center>
+<span class="math inline">\(9=2+3+4\)</span> <br />
+</center>
+<p>It also holds for <span class="math inline">\(0\)</span>, which is a multiple of <span class="math inline">\(3\)</span>:</p>
+<center>
+<span class="math inline">\(0=-1+0+1\)</span> <br />
+</center>
+<p>And we can probably see that for any positive multiple of <span class="math inline">\(3\)</span> for which the conjecture holds, it will hold for the negative version of that number, for example</p>
+<center>
+<span class="math inline">\(-6=(-1)+(-2)+(-3)\)</span><br />
+</center>
+<p>However, to try to prove it holds for all positive multiples of <span class="math inline">\(3\)</span> doesn’t seem an obvious task. For example, are you <em>sure</em> that <span class="math inline">\(561\)</span> (which is a multiple of <span class="math inline">\(3\)</span>) can be expressed as the sum of three consecutive integers?</p>
+<p>A proof by contrapositive might be easier; let’s try…</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> The contrapositive of the conjecture is “If <span class="math inline">\(a\)</span> cannot be expressed as the multiple of <span class="math inline">\(3\)</span> consecutive numbers, then <span class="math inline">\(a\)</span> is not a multiple of <span class="math inline">\(3\)</span>.”</p>
+<p>If <span class="math inline">\(a\)</span> cannot be expressed as the multiple of <span class="math inline">\(3\)</span> consecutive numbers, then we know that there is no integer <span class="math inline">\(b\)</span> for which <span class="math inline">\(a = b + (b+1) + (b+2)\)</span>. Therefore,
+<span class="math display">\[\begin{align}
+  a &amp;\neq b + b+1 + b+2 \\
+\end{align}\]</span>
+where <span class="math inline">\(b \in \mathbb Z\)</span>.</p>
+<p>Using simple algebra, this becomes
+<span class="math display">\[\begin{align}
+  a &amp; \neq 3b + 3 \\
+   &amp; \neq 3(b+1) \\
+   &amp; \neq 3c \\
+\end{align}\]</span>
+where <span class="math inline">\(c=b+1\)</span> and <span class="math inline">\(c \in \mathbb Z\)</span>.</p>
+<p>Therefore <span class="math inline">\(a\)</span> is not a multiple of <span class="math inline">\(3\)</span>. We have proved the contrapositive, and therefore we’ve proved the original conjecture.</p>
+</div>
+<hr />
+<!-- If $a+b$ is even, with $a,b \in \mathbb$, then $a$ and $b$ have the same parity. -->
+<p>Conjecture <a href="#cnj:xes">16.3</a>: A direct proof of this conjecture would require setting <span class="math inline">\(a+b\)</span> equal to <span class="math inline">\(2k\)</span>, <span class="math inline">\(k \in \mathbb Z\)</span> and then doing algebra. A proof by contrapositive is very straightforward here:</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> The contrapositive of the conjecture is “If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, with <span class="math inline">\(a,b \in \mathbb Z\)</span>, have different parity, then <span class="math inline">\(a+b\)</span> is odd.”</p>
+<p><span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, with <span class="math inline">\(a,b \in \mathbb Z\)</span>, have different parity. W.l.o.g. let <span class="math inline">\(a\)</span> be odd and thus <span class="math inline">\(b\)</span> even Thus,
+<span class="math display">\[\begin{align}
+  a &amp;= 2k+1 \\
+  b &amp;= 2l
+\end{align}\]</span>
+where <span class="math inline">\(k,l \in \mathbb Z\)</span>.</p>
+<p>Then
+<span class="math display">\[\begin{align}
+  a+b &amp;= (2k+1) + 2l \\
+   &amp;= 2(k + l) + 1 
+\end{align}\]</span>
+which is odd, as <span class="math inline">\((k+l) \in \mathbb Z\)</span>. We’ve proved the contrapositive, and thus proved the original conjecture.</p>
+</div>
+<hr />
+<p>Conjecture <a href="#cnj:xian">16.4</a>: As we don’t have an algebraic way to express the family of irrational numbers, but do have an algebraic way to express the family of rational numbers,<a href="#fn43" class="footnote-ref" id="fnref43"><sup>43</sup></a> a proof by contrapositive is probably going to be a lot easier than a direct proof of <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> The contrapositive of the conjecture is “If <span class="math inline">\(\frac{1}{a}\)</span> is rational, then so is <span class="math inline">\(a\)</span>.”</p>
+<p>If <span class="math inline">\(\frac{1}{a}\)</span> is rational, then it be expressed as
+<span class="math display">\[\begin{align}
+  \frac{1}{a} &amp;=  \frac{k}{l}
+\end{align}\]</span>
+where <span class="math inline">\(k,l \in \mathbb Z\)</span>.</p>
+<p>Then using simple algebra,
+<span class="math display">\[\begin{align}
+  \frac{1}{\frac{k}{l}} &amp;=  \frac{1}{\frac{1}{a}} \\
+  \frac{l}{k} &amp;=  a \\
+\end{align}\]</span>
+and so <span class="math inline">\(a\)</span> is rational. We have proved the contrapositive, which proves the original conjecture.</p>
+</div>
+<hr />
+<!-- (\#cnj:xi): The product of two non-integers is never an integer. (This was Conjecture 11.10.) -->
+<!-- Conjecture \@ref(cnj:xi): Rewritten, this conjecture becomes "If $a,b \notin \mathbb Z$, then $ab \notin \mathbb Z$". This conjecture is false, but I know many students struggle to see that immediately. So instead, consider the contrapositive of this conjecture: "If $ab \in \mathbb Z$, then at least one of $a$ or $b$ are integers". But it's easy to find counterexample to this. For example, let $ab = 1 = \frac{3}{5} \times \frac{5}{3}$. Or let $ab = 2 = \sqrt{2} \times \sqrt{2}$. As we've found counterexamples to the contrapositive, we know the original conjecture is false too.  -->
 <!-- The counterexamples we found against the contrapositive can be reworked to give us counterexamples against the original conjecture: $a = b = \sqrt{2} \notin \mathbb Z$ but $ab = \sqrt{2} \times \sqrt{2} = 2 \in \mathbb Z$. -->
-<!-- *** -->
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-144" class="exercise"><strong>Exercise 16.2  </strong></span>This exercise will be uploaded at the start of our next class.</p>
+<p><span id="exr:unnamed-chunk-148" class="exercise"><strong>Exercise 16.2  </strong></span>This exercise will be uploaded at the start of our next class.</p>
 </div>
 </div>
 
@@ -308,6 +385,13 @@
 
 
 
+
+<div class="footnotes">
+<hr />
+<ol start="43">
+<li id="fn43"><p>See <a href="https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub" class="uri">https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub</a>.<a href="proof-by-contrapositive.html#fnref43" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>

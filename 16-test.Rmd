@@ -39,66 +39,145 @@ where $T \Rightarrow S$ is the contrapositive of the original conjecture.
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Use the following examples to practise proof by contrapositive. Try proving them using a direct proof too.
+Use the following examples to practise proof by contrapositive. Consider why this method is easier than a direct proof for these conjectures.
 
 (\#cnj:xats): If $a^2+b^2$ is odd and $a$ and $b$ both integers, then one of $a$ or $b$ is even.
   
 (\#cnj:xat): Every multiple of $3$ can be written as the sum of three consecutive integers
 
-(\#cnj:xes): If $a, b$ are both even, then the sum of $a$ and $b$ is even.
+(\#cnj:xes): If $a+b$ is even, with $a,b \in \mathbb Z$, then $a$ and $b$ have the same parity.
 
-(\#cnj:xian): The product of two non-integers is never an integer. (This was Conjecture 11.10.)
+(\#cnj:xian): If $a$ is irrational, then $\frac{1}{a}$ is too.
 
 ``` 
 </div> 
+<!-- If $a, b$ are both even, then the sum of $a$ and $b$ is even. -->
+***
 
-<!-- *** -->
+***Solutions:***
 
-<!-- ***Solutions:*** -->
+***
 
-<!-- *** -->
+Conjecture \@ref(cnj:xats): To prove this using a direct proof would require us to set $a^2 + b^2$ equal to $2k+1, k \in \mathbb Z$ (as we're told that it's odd) and then doing some crazy algebra involving three variables. 
 
-<!-- Conjecture \@ref(cnj:xat): The conjecture is already in the form "If...then...". To prove this using a direct proof would require us to set $a^2 + b^2$ equal to $2k+1, k \in \mathbb Z$ (as we're told that it's odd) and then doing some crazy algebra involving three variables.  -->
+A proof by contrapositive is probably going to be a lot easier here.
 
-<!-- But a proof by contrapositive here is very quick, so we'll use that: -->
+```{proof} 
+The contrapositive of the conjecture is "If both of $a$ or $b$ is odd, then $a^2+b^2$ is even".
 
-<!-- ```{proof}  -->
-<!-- The contrapositive of the conjecture is "If both of $a$ or $b$ is odd, then $a^2+b^2$ is even". -->
+W.l.o.g. let $a$ be odd, so $b$ is even. We have,
+\begin{align}
+    a &= 2k +1 \\
+    b &= 2l
+\end{align}
+where $k,l \in \mathbb Z$.
 
-<!-- W.l.o.g. let $a$ be odd, so $b$ is even. We have, -->
-<!-- \begin{align} -->
-<!--     a &= 2k +1 \\ -->
-<!--     b &= 2l -->
-<!-- \end{align} -->
-<!-- where $k,l \in \mathbb Z$. -->
+Thus
+\begin{align}
+    a^2 + b^2 &= (2k +1)^2 + (2k)^2 \\
+    &= 4k^2 +4k + 1 + 4k^2 \\
+    &= 8k^2 +4k + 1 \\
+    &= 2(4k^2 +2k) + 1 \\
+\end{align}
+which is clearly odd.
 
-<!-- Thus -->
-<!-- \begin{align} -->
-<!--     a^2 + b^2 &= (2k +1)^2 + (2k)^2 \\ -->
-<!--     &= 4k^2 +4k + 1 + 4k^2 \\ -->
-<!--     &= 8k^2 +4k + 1 \\ -->
-<!--     &= 2(4k^2 +2k) + 1 \\ -->
-<!-- \end{align} -->
-<!-- which is clearly odd. -->
+We have proved the contrapositive, $T \Rightarrow S$. Thus $P\Rightarrow Q$ is proved.
+```
 
-<!-- We have proved the contrapositive, $T \Rightarrow S$. Thus $P\Rightarrow Q$ is proved. -->
-<!-- ``` -->
+***
+<!-- Every multiple of $3$ can be written as the sum of three consecutive integers -->
+Conjecture \@ref(cnj:xat): First, we rewrite the conjecture,
 
-<!-- *** -->
+<center> If $a$ is a multiple of $3$, then $a$ can be expressed as the sum of three consecutive integers. <br /> <br /> </center>
 
-<!-- Conjecture \@ref(cnj:xes):  -->
+We can easily see this conjecture holds for some small multiples of $3$, for example 
 
-<!-- *** -->
+<center> $6=1+2+3$ <br /> </center> <center> $3 = 0 + 1 + 2$ <br /> </center> <center> $9=2+3+4$ <br /> </center> 
 
-<!-- Conjecture \@ref(cnj:xats):  -->
+It also holds for $0$, which is a multiple of $3$: 
 
-<!-- *** -->
+<center> $0=-1+0+1$ <br /> </center>  
 
-<!-- Conjecture \@ref(cnj:xian): Rewritten, this conjecture becomes "If $a,b \notin \mathbb Z$, then $ab \notin \mathbb Z$". This conjecture is false, but I know many students struggle to see that immediately. So instead, consider the contrapositive of this conjecture: "If $ab \in \mathbb Z$, then at least one of $a$ or $b$ are integers". But it's easy to find counterexample to this. For example, let $ab = 1 = \frac{3}{5} \times \frac{5}{3}$. Or let $ab = 2 = \sqrt{2} \times \sqrt{2}$. As we've found counterexamples to the contrapositive, we know the original conjecture is false too.  -->
+And we can probably see that for any positive multiple of $3$ for which the conjecture holds, it will hold for the negative version of that number, for example 
+
+<center> $-6=(-1)+(-2)+(-3)$<br /> </center>  
+
+However, to try to prove it holds for all positive multiples of $3$ doesn't seem an obvious task. For example, are you *sure* that $561$ (which is a multiple of $3$) can be expressed as the sum of three consecutive integers? 
+
+A proof by contrapositive might be easier; let's try...
+
+```{proof}
+The contrapositive of the conjecture is "If $a$ cannot be expressed as the multiple of $3$ consecutive numbers, then $a$ is not a multiple of $3$".
+
+If $a$ cannot be expressed as the multiple of $3$ consecutive numbers, then we know that there is no integer $b$ for which $a = b + (b+1) + (b+2)$. Therefore,
+\begin{align}
+  a &\neq b + b+1 + b+2 \\
+\end{align}
+where $b \in \mathbb Z$.
+
+Using simple algebra, this becomes
+\begin{align}
+  a & \neq 3b + 3 \\
+   & \neq 3(b+1) \\
+   & \neq 3c \\
+\end{align}
+where $c=b+1$ and $c \in \mathbb Z$.
+
+Therefore $a$ is not a multiple of $3$. We have proved the contrapositive, and therefore we've proved the original conjecture.
+
+```
+
+***
+<!-- If $a+b$ is even, with $a,b \in \mathbb$, then $a$ and $b$ have the same parity. -->
+Conjecture \@ref(cnj:xes): A direct proof of this conjecture would require setting $a+b$ equal to $2k$, $k \in \mathbb Z$ and then doing algebra. A proof by contrapositive is very straightforward here:
+
+```{proof}
+The contrapositive of the conjecture is "If $a$ and $b$, with $a,b \in \mathbb Z$, have different parity, then $a+b$ is odd."
+
+$a$ and $b$, with $a,b \in \mathbb Z$, have different parity. W.l.o.g. let $a$ be odd and thus $b$ even Thus,
+\begin{align}
+  a &= 2k+1 \\
+  b &= 2l
+\end{align}
+where $k,l \in \mathbb Z$.
+
+Then
+\begin{align}
+  a+b &= (2k+1) + 2l \\
+   &= 2(k + l) + 1 
+\end{align}
+which is odd, as $(k+l) \in \mathbb Z$. We've proved the contrapositive, and thus proved the original conjecture. 
+
+```
+
+***
+
+Conjecture \@ref(cnj:xian): As we don't have an algebraic way to express the family of irrational numbers, but do have an algebraic way to express the family of rational numbers,^[See https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub.] a proof by contrapositive is probably going to be a lot easier than a direct proof of $P \Rightarrow Q$.
+
+```{proof} 
+The contrapositive of the conjecture is "If $\frac{1}{a}$ is rational, then so is $a$".
+
+If $\frac{1}{a}$ is rational, then it be expressed as
+\begin{align}
+  \frac{1}{a} &=  \frac{k}{l}
+\end{align}
+where $k,l \in \mathbb Z$.
+
+Then using simple algebra,
+\begin{align}
+  \frac{1}{\frac{k}{l}} &=  \frac{1}{\frac{1}{a}} \\
+  \frac{l}{k} &=  a \\
+\end{align}
+and so $a$ is rational. We have proved the contrapositive, which proves the original conjecture.
+
+```
+
+***
+
+<!-- (\#cnj:xi): The product of two non-integers is never an integer. (This was Conjecture 11.10.) -->
+<!-- Conjecture \@ref(cnj:xi): Rewritten, this conjecture becomes "If $a,b \notin \mathbb Z$, then $ab \notin \mathbb Z$". This conjecture is false, but I know many students struggle to see that immediately. So instead, consider the contrapositive of this conjecture: "If $ab \in \mathbb Z$, then at least one of $a$ or $b$ are integers". But it's easy to find counterexample to this. For example, let $ab = 1 = \frac{3}{5} \times \frac{5}{3}$. Or let $ab = 2 = \sqrt{2} \times \sqrt{2}$. As we've found counterexamples to the contrapositive, we know the original conjecture is false too.  -->
 
 <!-- The counterexamples we found against the contrapositive can be reworked to give us counterexamples against the original conjecture: $a = b = \sqrt{2} \notin \mathbb Z$ but $ab = \sqrt{2} \times \sqrt{2} = 2 \in \mathbb Z$. -->
-
-<!-- *** -->
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
