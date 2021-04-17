@@ -41,11 +41,11 @@ where $T \Rightarrow S$ is the contrapositive of the original conjecture.
 ```{exercise}
 Use the following examples to practise proof by contrapositive. Consider why this method is easier than a direct proof for these conjectures.
 
-(\#cnj:xats): If $a^2+b^2$ is odd and $a$ and $b$ both integers, then one of $a$ or $b$ is even.
+(\#cnj:xats): If $a^2+b^2$ is odd and $a$ and $b$ are both integers, then $a$ or $b$ have different parity to one another.
   
-(\#cnj:xat): Every multiple of $3$ can be written as the sum of three consecutive integers
+(\#cnj:xat): Every multiple of $3$ can be written as the sum of three consecutive integers.
 
-(\#cnj:xes): If $a+b$ is even, with $a,b \in \mathbb Z$, then $a$ and $b$ have the same parity.
+(\#cnj:xes): If $a+b$ is even, with $a,b \in \mathbb Z$, then $a$ and $b$ have the same parity as one another.
 
 (\#cnj:xian): If $a$ is irrational, then $\frac{1}{a}$ is too.
 
@@ -60,28 +60,53 @@ Use the following examples to practise proof by contrapositive. Consider why thi
 
 Conjecture \@ref(cnj:xats): To prove this using a direct proof would require us to set $a^2 + b^2$ equal to $2k+1, k \in \mathbb Z$ (as we're told that it's odd) and then doing some crazy algebra involving three variables. 
 
-A proof by contrapositive is probably going to be a lot easier here.
+A proof by contrapositive is probably going to be a lot easier here. We draw the map for the conjecture, to aid correct identification of the contrapositive.
+
+```{r, echo=FALSE, out.width="90%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps9.png"))
+```
+
+Note that an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
 ```{proof} 
-The contrapositive of the conjecture is "If both of $a$ or $b$ is odd, then $a^2+b^2$ is even".
+From the map, it's easy to see the contrapositive of the conjecture is "If $a, b$ both odd or both even, then $a^2+b^2$ is even".
 
-W.l.o.g. let $a$ be odd, so $b$ is even. We have,
+**Case 1:** $a$, $b$ both odd.
+
+We have
 \begin{align}
     a &= 2k +1 \\
+    b &= 2l + 1
+\end{align}
+where $k,l \in \mathbb Z$.
+
+Then,
+\begin{align}
+    a^2 + b^2 &= (2k +1)^2 + (2l + 1)^2 \\
+    &= 4k^2 + 4k + 1 + 4l^2 + 4l + 1  \\
+    &= 4k^2 + 4k + 4l^2 + 4l + 2 \\
+    &= 2(2k^2 + 2k + 2l^2 + 2l + 1) 
+\end{align}
+which is clearly even.
+
+**Case 2:** $a$, $b$ both even
+
+We have
+\begin{align}
+    a &= 2k \\
     b &= 2l
 \end{align}
 where $k,l \in \mathbb Z$.
 
-Thus
+Then,
 \begin{align}
-    a^2 + b^2 &= (2k +1)^2 + (2k)^2 \\
-    &= 4k^2 +4k + 1 + 4k^2 \\
-    &= 8k^2 +4k + 1 \\
-    &= 2(4k^2 +2k) + 1 \\
+    a^2 + b^2 &= (2k)^2 + (2l)^2 \\
+    &= 4k^2 + 4l^2  \\
+    &= 2(2k^2 + 2l^2) 
 \end{align}
-which is clearly odd.
+which is clearly even.
 
-We have proved the contrapositive, $T \Rightarrow S$. Thus $P\Rightarrow Q$ is proved.
+We have proved the contrapositive, $T \Rightarrow S$, using two cases. We have thus proved the original conjecture $P\Rightarrow Q$.
 ```
 
 ***
@@ -98,16 +123,22 @@ It also holds for $0$, which is a multiple of $3$:
 
 <center> $0=-1+0+1$ <br /> </center>  
 
-And we can probably see that for any positive multiple of $3$ for which the conjecture holds, it will hold for the negative version of that number, for example 
+And we can probably see that for any positive multiple of $3$ for which the conjecture holds, it will hold for the negative version of that number, for example
 
 <center> $-6=(-1)+(-2)+(-3)$<br /> </center>  
 
 However, to try to prove it holds for all positive multiples of $3$ doesn't seem an obvious task. For example, are you *sure* that $561$ (which is a multiple of $3$) can be expressed as the sum of three consecutive integers? 
 
-A proof by contrapositive might be easier; let's try...
+A proof by contrapositive might be easier; let's try. We draw the map for the conjecture, to aid correct identification of the contrapositive.
+
+```{r, echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps10.png"))
+```
+
+Again, an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
 ```{proof}
-The contrapositive of the conjecture is "If $a$ cannot be expressed as the multiple of $3$ consecutive numbers, then $a$ is not a multiple of $3$".
+From the map, it's easy to see the contrapositive of the conjecture is "If $a$ cannot be expressed as the multiple of $3$ consecutive numbers, then $a$ is not a multiple of $3$".
 
 If $a$ cannot be expressed as the multiple of $3$ consecutive numbers, then we know that there is no integer $b$ for which $a = b + (b+1) + (b+2)$. Therefore,
 \begin{align}
@@ -129,10 +160,18 @@ Therefore $a$ is not a multiple of $3$. We have proved the contrapositive, and t
 
 ***
 <!-- If $a+b$ is even, with $a,b \in \mathbb$, then $a$ and $b$ have the same parity. -->
-Conjecture \@ref(cnj:xes): A direct proof of this conjecture would require setting $a+b$ equal to $2k$, $k \in \mathbb Z$ and then doing algebra. A proof by contrapositive is very straightforward here:
+Conjecture \@ref(cnj:xes): A direct proof of this conjecture would require setting $a+b$ equal to $2k$, $k \in \mathbb Z$ and then doing algebra. 
+
+Might a proof by contrapositive be easier here? We draw the map for the conjecture, to aid correct identification of the contrapositive.
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps11.png"))
+```
+
+Again, an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
 ```{proof}
-The contrapositive of the conjecture is "If $a$ and $b$, with $a,b \in \mathbb Z$, have different parity, then $a+b$ is odd."
+From the map, it's easy to see the contrapositive of the conjecture is "If $a$ and $b$, with $a,b \in \mathbb Z$, have different parity, then $a+b$ is odd."
 
 $a$ and $b$, with $a,b \in \mathbb Z$, have different parity. W.l.o.g. let $a$ be odd and thus $b$ even Thus,
 \begin{align}
@@ -154,8 +193,16 @@ which is odd, as $(k+l) \in \mathbb Z$. We've proved the contrapositive, and thu
 
 Conjecture \@ref(cnj:xian): As we don't have an algebraic way to express the family of irrational numbers, but do have an algebraic way to express the family of rational numbers,^[See https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub.] a proof by contrapositive is probably going to be a lot easier than a direct proof of $P \Rightarrow Q$.
 
+We draw the map for the conjecture, to aid correct identification of the contrapositive.
+
+```{r, echo=FALSE, out.width="65%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps12.png"))
+```
+
+Again, an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
+
 ```{proof} 
-The contrapositive of the conjecture is "If $\frac{1}{a}$ is rational, then so is $a$".
+From the map, it's easy to see the contrapositive of the conjecture is "If $\frac{1}{a}$ is rational, then so is $a$".
 
 If $\frac{1}{a}$ is rational, then it be expressed as
 \begin{align}
@@ -186,3 +233,83 @@ This exercise will be uploaded at the start of our next class.
 ```
 </div> 
 
+<!-- <div class="alert alert-info" role="alert"> -->
+<!-- ```{exercise} -->
+<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far. -->
+<!-- ``` -->
+
+<!-- (\#cnj:xebec): If $a, b$ and $c$ are a Pythagorean triple^[See https://www.mathsisfun.com/pythagorean_triples.html.], then at least one of them must be even. -->
+
+<!-- (\#cnj:xenia): If the product of two integers is even then at least one of them is even. -->
+
+<!-- (\#cnj:xenon): ($a + b - c$) can't be even unless at least one of $a, b$ or $c$ is even. -->
+
+<!-- (\#cnj:xeric): For an integer $a$, if $a^2$ is even, then $a$ is even. -->
+
+<!-- (\#cnj:xebecs): For an integer $a$, if $a^2$ is odd, then $a$ is odd. -->
+
+<!-- (\#cnj:xenial): If $2a$ is even, then $a$ must be an integer. -->
+
+<!-- (\#cnj:xenias): Every odd number can be written as the sum of two perfect squares. -->
+
+<!-- (\#cnj:xanthan): For integers $a, b$ and $c$, if $a|(bc)$, then $a |$ both $b$ and $c$. -->
+
+<!-- (\#cnj:xanthic): For integers $a, b$ and $c$, if $a|(bc)$, then $a|$ at least one of $b$ or $c$. -->
+
+<!-- (\#cnj:xanthin): For integers $a, b$ and $c$, if $a \nmid (bc)$, then $a \nmid b$. -->
+
+<!-- (\#cnj:xennial): For integers $a$ and $b$, if $5 \nmid (ab)$, then $5 \nmid a$ and $5 \nmid b$. -->
+
+<!-- (\#cnj:xanthate): If $a$ is an odd number, then $8 | (a^2 - 1)$. -->
+
+<!-- (\#cnj:xanthein): For a integer $a$, if $4|a^2$, then $4|a$. -->
+
+<!-- (\#cnj:xanthation): For any non-zero numbers $a, b$ and $c$, if $ab=c$ then at least one of $a, b$ and $c$ is positive. -->
+
+<!-- (\#cnj:xanthomata): The sum of two consecutive numbers is odd. -->
+
+<!-- (\#cnj:xenobiotic): A triangle has at most one obtuse angle.^[An *obtuse* angle is an angle between $90^\text{o}$ and $180^\text{o}$.] -->
+
+<!-- (\#cnj:xenoblasts): If $a$ is odd, $a^2 + 1$ is even. -->
+
+<!-- (\#cnj:xanthophore): If $a$ is odd, $a^3 + 1$ is even. -->
+
+<!-- (\#cnj:xanthophyll): If $(a + b)$ is a multiple of 4, then $(a - b)$ can't be. -->
+
+<!-- (\#cnj:xanthophyls): If $(a + b)$ is a multiple of 3, then $(a - b)$ can't be. -->
+
+<!-- (\#cnj:xenodiagnosis): In the image below, the area of the circle is one half the area of the triangle. -->
+
+<!-- ```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"} -->
+<!-- knitr::include_graphics(rep("figures/dh1.png")) -->
+<!-- ``` -->
+
+<!-- (\#cnj:xenocurrency): In the image below, length $b$ is twice length $a$. -->
+
+<!-- ```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"} -->
+<!-- knitr::include_graphics(rep("figures/dh2.png")) -->
+<!-- ``` -->
+<!-- </div> -->
+
+<!-- https://cs.brown.edu/courses/csci0220/static/files/documents/templates/counterexample.pdf -->
+
+<!-- Note, the symbol $|$ means one number is a \textbf{divisor} of another.} -->
+<!-- For example, 11 is a divisor of 33 and so we can write $11|33$ and 6 is a divisor of 18 so we} -->
+<!-- can write $6|18$. Similarly, $4|16$, $5|25$, $5|30$, $7|42$ etc.} -->
+<!-- Note, we're not actually \textit{doing} the division! We're just stating that if you did the division,} -->
+<!-- the result would be a integer.} -->
+<!-- 4 is NOT a divisor of 15 so we write $4\nmid15$. Similarly $3\nmid10$, $5\nmid8$, $5\nmid7$, $2\nmid5$, $7\nmid22$, $10\nmid31$} -->
+
+  
+<!-- Amazing direct and contrapositive proofs - https://www.people.vcu.edu/~rhammack/BookOfProof2/Contrapositive.pdf -->
+<!-- http://sites.millersville.edu/bikenaga/math-proof/counterexamples/counterexamples.pdf -->
+<!-- Suggestion to call prove by cotraposition 'indirect proof': http://math.northwestern.edu/~mlerma/courses/cs310-05s/notes/dm-proofs.pdf -->
+
+<!-- Practice our new method of proof by contradiction} with these:}} -->
+<!-- (\#cnj:XXX): The sum of two integers is also whole. -->
+<!-- (\#cnj:XXX): There are no integers $a$ and $b$ for which $9a - 6b = 1$. -->
+<!-- (\#cnj:XXX): There are no non-zero integers $a$ and $b$ for which $a^2 - b^2 = 1$. % From here: http://zimmer.csufresno.edu/~larryc/proofs/proofs.contradict.html -->
+<!-- (\#cnj:XXX): There are no integers $a$ and $b$ for which $a^2 - b^2 = 10$. -->
+<!-- (\#cnj:XXX): The product of two consecutive numbers is even. {black}(I know we've done this one before, but try to find a proof by contradiction of it.)} -->
+<!-- (\#cnj:XXX): There is no largest number. -->
+<!-- % Suppose that a largest number does exist. Let it be L. If L really is the largest number, then there can be no number larger than L. Consider the number L+1. This number is larger than L, but it was just stated that there cannot be any number larger than L. This is a contradiction. The premise that there existed a largest number cannot be true, because the consequence of this premise is absurd. Therefore, there is no largest number. From https://brilliant.org/wiki/contradiction/ -->

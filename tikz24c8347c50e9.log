@@ -1,0 +1,51 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.24)  17 APR 2021 12:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tikz24c8347c50e9.tex
+(./tikz24c8347c50e9.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-05-15> (c:/Users/user/AppData/Roaming/TinyTeX/texmf-
+dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(c:/Users/user/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+\@input{preview.aux}
+\openout2 = `preview.aux'.
+
+No file preview.tex.
+
+! LaTeX Error: File `preview.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.4 \usepackage
+               {amsmath}^^M 
+Here is how much of TeX's memory you used:
+ 219 strings out of 482424
+ 2606 string characters out of 5946603
+ 234163 words of memory out of 5000000
+ 16085 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 25i,0n,19p,152b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!

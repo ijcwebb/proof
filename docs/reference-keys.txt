@@ -219,7 +219,7 @@ cnj:xats
 cnj:xat
 cnj:xes
 cnj:xian
-exr:unnamed-chunk-148
+exr:unnamed-chunk-152
 introduction
 about-this-course
 about-this-book
@@ -309,3 +309,5 @@ proof-by-contrapositive
 steps-3
 formal-definition-3
 conjectures-3
+fig:unnamed-chunk-1
+exr:unnamed-chunk-11
