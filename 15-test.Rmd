@@ -2,9 +2,11 @@
 
 ## $\Rightarrow$ revisited
 
-We discussed the symbol "$\Rightarrow$" in Chapter 9. We return to it here, clarifying its meaning a little further.
+We discussed the symbol "$\Rightarrow$" in Chapter 9. Another way of interpreting this symbol is that for sets $A$ and $B$, $A \Rightarrow B$ means
 
-For sets $A$ and $B$, $A \Rightarrow B$ means “*all* elements in $A$ go to $B$”.
+<center> “*all* elements in $A$ go to $B$”. <br /> <br /> </center>
+
+This definition of $\Rightarrow$ will be useful for this chapter.
 
 ## More relations within a map
 
@@ -43,7 +45,7 @@ Take a look at the following conjecture map^[This map assumes that gender is bin
 knitr::include_graphics(rep("figures/maps8.png"))
 ```
 
-a. Write down the conjecture ($P \Rightarrow Q$) for this map.<br />
+a. Write down the conjecture $P \Rightarrow Q$ for this map.<br />
 
 b. For this map, write down the statement which is associated with each of the following: $P \Rightarrow T$, $S \Rightarrow Q$, $S \Rightarrow T$, $Q \Rightarrow P$, $T \Rightarrow P$, $Q \Rightarrow S$, $T \Rightarrow S$.<br />
 
@@ -70,7 +72,7 @@ $T \Rightarrow S$ | All the non-earring-wearing students in our class are male. 
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Consider the following class of twelve students. Female students are coloured yellow, male students are coloured purple. The earring(s) that the students wear are indicated with black dots.
+Consider the following class of twelve students. Female students are yellow, male students are purple. The earring(s) that the students wear are indicated with black dots.
 
 ``` 
 
@@ -78,7 +80,7 @@ Consider the following class of twelve students. Female students are coloured ye
 knitr::include_graphics(rep("figures/classearrings.png"))
 ```
 
-Which of the eight statements from the previous Exercise are true for this class?
+Which of the eight statements from **Exercise 15.1** are true for this class?
 </div>
 
 ***Solution:***
