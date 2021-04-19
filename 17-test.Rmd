@@ -79,10 +79,10 @@ Now, let's explore this world and check if we find any contradictions. Combining
   1 &= 2(k - a)  (\#eq:zzz)
 \end{align}
 but this is clearly crazy: Equation \@ref(eq:zzz) says that $1$ is an even number! We have a blatant contradiction. 
-
-**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
 </div>
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 
 ***
 
@@ -114,10 +114,10 @@ Now, let's explore this world and check if we find any contradictions. Combining
   1 &= 2(k - 2l^2 - 2l)  (\#eq:zzzzzz)
 \end{align}
 but this is clearly crazy: Equation \@ref(eq:zzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proof of Conjecture \@ref(cnj:zabaione)).
-
-**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
 </div>
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 
 ***
 
@@ -168,10 +168,10 @@ Substituting Equation \@ref(eq:zzzzzzzzzz) into Equation \@ref(eq:zzzzzzzzz) giv
 Equation \@ref(eq:zzzzzzzzzzz) tells us that $l^2$ is even, which again means that $l$ is even, as $l$ is an integer.
 
 We now know that both $k$ and $l$ are even, and thus share $2$ as a common divisor. But this is contradictory to us having simplified the fraction $\frac{k}{l}$ as far as possible. We have found our contradiction.
-
-**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
 </div>
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 
 ***
 
@@ -204,10 +204,10 @@ Now, let's explore this world and check if we find any contradictions. Combining
   2(2k^2-l) &= 1  (\#eq:zzzzzzzzzzzzzz)
 \end{align}
 but this is clearly crazy: Equation \@ref(eq:zzzzzzzzzzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proofs of Conjectures \@ref(cnj:zabaione) and \@ref(cnj:zabajone)).
-
-**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
 </div>
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 
 ***
 
