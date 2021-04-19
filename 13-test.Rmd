@@ -355,7 +355,7 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 (\#cnj:hardware): If $a>c$ and $b>c$ for any numbers $a,b$ and $c$, then MAX$(a,b) - c$ is always positive.
 
 
-(\#cnj:honour): Let $a$ be an integer. If 3 does not divide $a$, then 3 does divides $a^2 - 1$.
+(\#cnj:honour): Let $a$ be an integer. If 3 does not divide $a$, then 3 does divide $a^2 - 1$.
 
 (\#cnj:harmony): If $a$ and $b$ are both positive integers and $n = ab$, then either $a \leq \sqrt{n}$ or $b\leq \sqrt{n}$.
 
