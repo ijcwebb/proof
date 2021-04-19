@@ -360,7 +360,7 @@ formal-definition-4
 conjectures-4
 methods-of-contradiction-and-contrapositive
 proof-by-induction
-steps-5
+the-steps
 formal-definition-5
 conjectures-5
 other-methods

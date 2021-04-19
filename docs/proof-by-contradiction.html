@@ -172,7 +172,7 @@
 </ul></li>
 <li class="chapter" data-level="18" data-path="proof-by-induction.html"><a href="proof-by-induction.html"><i class="fa fa-check"></i><b>18</b> Proof by induction</a>
 <ul>
-<li class="chapter" data-level="18.1" data-path="proof-by-induction.html"><a href="proof-by-induction.html#steps-5"><i class="fa fa-check"></i><b>18.1</b> Steps</a></li>
+<li class="chapter" data-level="18.1" data-path="proof-by-induction.html"><a href="proof-by-induction.html#the-steps"><i class="fa fa-check"></i><b>18.1</b> The steps</a></li>
 <li class="chapter" data-level="18.2" data-path="proof-by-induction.html"><a href="proof-by-induction.html#formal-definition-5"><i class="fa fa-check"></i><b>18.2</b> Formal definition</a></li>
 <li class="chapter" data-level="18.3" data-path="proof-by-induction.html"><a href="proof-by-induction.html#conjectures-5"><i class="fa fa-check"></i><b>18.3</b> Conjectures</a></li>
 </ul></li>
@@ -246,6 +246,7 @@ If <span class="math inline">\(a,b\)</span> are consecutive integers, then <span
 <p>To prove this using a direct proof would require us to consider two cases: firstly where the lower of the two integers is even, and then where the lower of the two integers is odd.</p>
 <p>Let’s try a proof by contradiction. To attempt a proof by contradiction, we draw the map for the conjecture, to correctly identify <span class="math inline">\(P\)</span> and <span class="math inline">\(T\)</span>:</p>
 <p><img src="figures/maps13.png" width="75%" style="display: block; margin: auto;" /></p>
+<div class="alert alert-success" role="alert">
 
 <div class="proof">
 <p> <span class="proof"><em>Proof. </em></span> We assume that two integers, <span class="math inline">\(a,b\)</span>, are consecutive (<span class="math inline">\(P\)</span>) and that their sum is even (<span class="math inline">\(T\)</span>). W.l.o.g. let <span class="math inline">\(a\)</span> be the lower of the two integers.</p>
@@ -268,9 +269,11 @@ where <span class="math inline">\(k \in \mathbb Z\)</span>.</p>
 but this is clearly crazy: Equation <a href="proof-by-contradiction.html#eq:zzz">(17.3)</a> says that <span class="math inline">\(1\)</span> is an even number! We have a blatant contradiction.</p>
 <strong>Conclusion:</strong> Assuming <span class="math inline">\(T\)</span> is true when <span class="math inline">\(P\)</span> is true has led to a contradiction, and thus <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true. If <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true, but the elements of <span class="math inline">\(P\)</span> <em>must</em> travel to right-hand side of the map, then they must all travel to <span class="math inline">\(Q\)</span>. We have proved <span class="math inline">\(P \Rightarrow Q\)</span> for every element in <span class="math inline">\(P\)</span>.
 </div>
+</div>
 <hr />
 <p>Conjecture <a href="#cnj:zabajone">17.2</a>: We again draw the map for the conjecture, so as to correctly identify <span class="math inline">\(P\)</span> and <span class="math inline">\(T\)</span>:</p>
 <p><img src="figures/maps17.png" width="80%" style="display: block; margin: auto;" /></p>
+<div class="alert alert-success" role="alert">
 
 <div class="proof">
 <p> <span class="proof"><em>Proof. </em></span> We assume that <span class="math inline">\(a^2\)</span> is even and that <span class="math inline">\(a\)</span> is an integer (<span class="math inline">\(P\)</span>). We also assume that <span class="math inline">\(a\)</span> is not even (<span class="math inline">\(T\)</span>). As we’ve assumed that <span class="math inline">\(a\)</span> is an integer, <span class="math inline">\(T\)</span> implies <span class="math inline">\(a\)</span> is an odd integer.</p>
@@ -293,8 +296,8 @@ where <span class="math inline">\(k,l \in \mathbb Z\)</span>.</p>
 but this is clearly crazy: Equation <a href="proof-by-contradiction.html#eq:zzzzzz">(17.6)</a> says that <span class="math inline">\(1\)</span> is an even number! We have a blatant contradiction (the same one we found in the proof of Conjecture <a href="#cnj:zabaione">17.1</a>).</p>
 <strong>Conclusion:</strong> Assuming <span class="math inline">\(T\)</span> is true when <span class="math inline">\(P\)</span> is true has led to a contradiction, and thus <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true. If <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true, but the elements of <span class="math inline">\(P\)</span> <em>must</em> travel to right-hand side of the map, then they must all travel to <span class="math inline">\(Q\)</span>. We have proved <span class="math inline">\(P \Rightarrow Q\)</span> for every element in <span class="math inline">\(P\)</span>.
 </div>
+</div>
 <hr />
-<!-- (\#cnj:zaibatsu): $\sqrt{d}$ is an irrational number. -->
 <p>Conjecture <a href="#cnj:zaibatsu">17.3</a>: First, we rewrite the conjecture,</p>
 <center>
 If <span class="math inline">\(a = \sqrt{2}\)</span>, then <span class="math inline">\(a\)</span> is irrational. <br /> <br />
@@ -302,6 +305,7 @@ If <span class="math inline">\(a = \sqrt{2}\)</span>, then <span class="math inl
 <p>The trouble with trying to prove this using a direct proof is the same reason Conjecture 16.4 was difficult to prove using a direct proof: we don’t have an algebraic way to express the family of irrational numbers. As we have an algebraic way to express the family of rational numbers,<a href="#fn48" class="footnote-ref" id="fnref48"><sup>48</sup></a> a proof by contradiction is probably going to be a lot easier than a direct proof of <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
 <p>We again draw the map for the conjecture, so as to correctly identify <span class="math inline">\(P\)</span> and <span class="math inline">\(T\)</span>:</p>
 <p><img src="figures/maps16.png" width="55%" style="display: block; margin: auto;" /></p>
+<div class="alert alert-success" role="alert">
 
 <div class="proof">
 <p> <span class="proof"><em>Proof. </em></span> We assume that <span class="math inline">\(a = \sqrt{2}\)</span> (this is <span class="math inline">\(P\)</span>), and that <span class="math inline">\(a\)</span> is rational (this is <span class="math inline">\(T\)</span>). As <span class="math inline">\(a\)</span> is rational, it can be written as the fraction of two integers. Let’s say that we have simplied this fraction as much as possible, arriving at a fraction of two integers, <span class="math inline">\(\frac{k}{l}\)</span>, that can’t be simplied any further.<a href="#fn49" class="footnote-ref" id="fnref49"><sup>49</sup></a></p>
@@ -335,10 +339,12 @@ Equation <a href="proof-by-contradiction.html#eq:zzzzzzzzzzz">(17.11)</a> tells 
 <p>We now know that both <span class="math inline">\(k\)</span> and <span class="math inline">\(l\)</span> are even, and thus share <span class="math inline">\(2\)</span> as a common divisor. But this is contradictory to us having simplified the fraction <span class="math inline">\(\frac{k}{l}\)</span> as far as possible. We have found our contradiction.</p>
 <strong>Conclusion:</strong> Assuming <span class="math inline">\(T\)</span> is true when <span class="math inline">\(P\)</span> is true has led to a contradiction, and thus <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true. If <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true, but the elements of <span class="math inline">\(P\)</span> <em>must</em> travel to right-hand side of the map, then they must all travel to <span class="math inline">\(Q\)</span>. We have proved <span class="math inline">\(P \Rightarrow Q\)</span> for every element in <span class="math inline">\(P\)</span>.
 </div>
+</div>
 <hr />
 <p>Conjecture <a href="#cnj:zaddikim">17.4</a>: It is very easy to prove this conjecture using a direct proof. However, we’ll use a proof by contradiction to practice the method.</p>
 <p>We again draw the map for the conjecture, so as to correctly identify <span class="math inline">\(P\)</span> and <span class="math inline">\(T\)</span>:</p>
 <p><img src="figures/maps14.png" width="55%" style="display: block; margin: auto;" /></p>
+<div class="alert alert-success" role="alert">
 
 <div class="proof">
 <p> <span class="proof"><em>Proof. </em></span> We assume that an integer <span class="math inline">\(a\)</span> is even (<span class="math inline">\(P\)</span>) and that its square <span class="math inline">\(a^2\)</span> is odd (<span class="math inline">\(T\)</span>).</p>
@@ -359,6 +365,7 @@ where <span class="math inline">\(k,l \in \mathbb Z\)</span>.</p>
 \end{align}\]</span>
 but this is clearly crazy: Equation <a href="proof-by-contradiction.html#eq:zzzzzzzzzzzzzz">(17.14)</a> says that <span class="math inline">\(1\)</span> is an even number! We have a blatant contradiction (the same one we found in the proofs of Conjectures <a href="#cnj:zabaione">17.1</a> and <a href="#cnj:zabajone">17.2</a>).</p>
 <strong>Conclusion:</strong> Assuming <span class="math inline">\(T\)</span> is true when <span class="math inline">\(P\)</span> is true has led to a contradiction, and thus <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true. If <span class="math inline">\(T\)</span> can’t be true when <span class="math inline">\(P\)</span> is true, but the elements of <span class="math inline">\(P\)</span> <em>must</em> travel to right-hand side of the map, then they must all travel to <span class="math inline">\(Q\)</span>. We have proved <span class="math inline">\(P \Rightarrow Q\)</span> for every element in <span class="math inline">\(P\)</span>.
+</div>
 </div>
 <hr />
 <div class="alert alert-info" role="alert">

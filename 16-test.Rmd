@@ -68,6 +68,7 @@ knitr::include_graphics(rep("figures/maps9.png"))
 
 Note that an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
+<div class="alert alert-success" role="alert"> 
 ```{proof} 
 From the map, it's easy to see the contrapositive of the conjecture is "If $a, b$ both odd or both even, then $a^2+b^2$ is even".
 
@@ -108,6 +109,7 @@ which is clearly even.
 
 We have proved the contrapositive, $T \Rightarrow S$, using two cases. We have thus proved the original conjecture $P\Rightarrow Q$.
 ```
+</div>
 
 ***
 
@@ -137,6 +139,7 @@ knitr::include_graphics(rep("figures/maps10.png"))
 
 Again, an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
+<div class="alert alert-success" role="alert">
 ```{proof}
 From the map, it's easy to see the contrapositive of the conjecture is "If $a$ cannot be expressed as the multiple of $3$ consecutive numbers, then $a$ is not a multiple of $3$".
 
@@ -157,9 +160,10 @@ where $c=b+1$ and $c \in \mathbb Z$.
 Therefore $a$ is not a multiple of $3$. We have proved the contrapositive, and therefore we've proved the original conjecture.
 
 ```
+</div>
 
 ***
-<!-- If $a+b$ is even, with $a,b \in \mathbb$, then $a$ and $b$ have the same parity. -->
+
 Conjecture \@ref(cnj:xes): A direct proof of this conjecture would require setting $a+b$ equal to $2k$, $k \in \mathbb Z$ and then doing algebra. 
 
 Might a proof by contrapositive be easier here? We draw the map for the conjecture, to aid correct identification of the contrapositive.
@@ -170,6 +174,7 @@ knitr::include_graphics(rep("figures/maps11.png"))
 
 Again, an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
+<div class="alert alert-success" role="alert"> 
 ```{proof}
 From the map, it's easy to see the contrapositive of the conjecture is "If $a$ and $b$, with $a,b \in \mathbb Z$, have different parity, then $a+b$ is odd."
 
@@ -188,6 +193,7 @@ Then
 which is odd, as $(k+l) \in \mathbb Z$. We've proved the contrapositive, and thus proved the original conjecture. 
 
 ```
+</div>
 
 ***
 
@@ -201,6 +207,7 @@ knitr::include_graphics(rep("figures/maps12.png"))
 
 Again, an arrow representing $T \Rightarrow S$, the contrapositive of the original conjecture, has been added to the map.
 
+<div class="alert alert-success" role="alert"> 
 ```{proof} 
 From the map, it's easy to see the contrapositive of the conjecture is "If $\frac{1}{a}$ is rational, then so is $a$".
 
@@ -218,6 +225,7 @@ Then using simple algebra,
 and so $a$ is rational. We have proved the contrapositive, which proves the original conjecture.
 
 ```
+</div>
 
 ***
 

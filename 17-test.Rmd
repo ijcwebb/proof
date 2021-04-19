@@ -57,6 +57,7 @@ Let's try a proof by contradiction. To attempt a proof by contradiction, we draw
 knitr::include_graphics(rep("figures/maps13.png"))
 ```
 
+<div class="alert alert-success" role="alert">
 ```{proof} 
 We assume that two integers, $a,b$, are consecutive ($P$) and that their sum is even ($T$). W.l.o.g. let $a$ be the lower of the two integers.
 
@@ -81,6 +82,7 @@ but this is clearly crazy: Equation \@ref(eq:zzz) says that $1$ is an even numbe
 
 **Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
+</div>
 
 ***
 
@@ -90,6 +92,7 @@ Conjecture \@ref(cnj:zabajone): We again draw the map for the conjecture, so as 
 knitr::include_graphics(rep("figures/maps17.png"))
 ```
 
+<div class="alert alert-success" role="alert">
 ```{proof} 
 We assume that $a^2$ is even and that $a$ is an integer ($P$). We also assume that $a$ is not even ($T$). As we've assumed that $a$ is an integer, $T$ implies $a$ is an odd integer.
 
@@ -114,9 +117,10 @@ but this is clearly crazy: Equation \@ref(eq:zzzzzz) says that $1$ is an even nu
 
 **Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
+</div>
 
 ***
-<!-- (\#cnj:zaibatsu): $\sqrt{d}$ is an irrational number. -->
+
 Conjecture \@ref(cnj:zaibatsu): First, we rewrite the conjecture,
 
 <center> If $a = \sqrt{2}$, then $a$ is irrational. <br /> <br /> </center>
@@ -129,6 +133,7 @@ We again draw the map for the conjecture, so as to correctly identify $P$ and $T
 knitr::include_graphics(rep("figures/maps16.png"))
 ```
 
+<div class="alert alert-success" role="alert">
 ```{proof} 
 We assume that $a = \sqrt{2}$ (this is $P$), and that $a$ is rational (this is $T$). As $a$ is rational, it can be written as the fraction of two integers. Let's say that we have simplied this fraction as much as possible, arriving at a fraction of two integers, $\frac{k}{l}$, that can't be simplied any further.^[For example $\frac{120}{84} = \frac{60}{42} = \frac{30}{21} = \frac{10}{7}$, so $k=10$, $l=7$, and $\frac{k}{l}$ can't be simplied any further.]
 
@@ -166,6 +171,7 @@ We now know that both $k$ and $l$ are even, and thus share $2$ as a common divis
 
 **Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
+</div>
 
 ***
 
@@ -177,6 +183,7 @@ We again draw the map for the conjecture, so as to correctly identify $P$ and $T
 knitr::include_graphics(rep("figures/maps14.png"))
 ```
 
+<div class="alert alert-success" role="alert">
 ```{proof} 
 We assume that an integer $a$ is even ($P$) and that its square $a^2$ is odd ($T$). 
 
@@ -200,6 +207,7 @@ but this is clearly crazy: Equation \@ref(eq:zzzzzzzzzzzzzz) says that $1$ is an
 
 **Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
 ```
+</div>
 
 ***
 

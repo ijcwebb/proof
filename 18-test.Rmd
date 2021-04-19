@@ -1,6 +1,6 @@
 # Proof by induction
 
-## Steps
+## The steps
 
 ## Formal definition
 
