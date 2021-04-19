@@ -1,0 +1,7 @@
+# Proof by induction
+
+## Steps
+
+## Formal definition
+
+## Conjectures

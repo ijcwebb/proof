@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-17" />
+<meta name="date" content="2021-04-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="maps-revisited.html"/>
-
+<link rel="next" href="proof-by-contradiction.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -75,6 +75,7 @@
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#about-this-course"><i class="fa fa-check"></i><b>1.1</b> About this course</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#about-this-book"><i class="fa fa-check"></i><b>1.2</b> About this book</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.3</b> How to use this book</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#contents"><i class="fa fa-check"></i><b>1.4</b> Contents</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="statements.html"><a href="statements.html"><i class="fa fa-check"></i><b>2</b> Statements</a>
 <ul>
@@ -162,6 +163,25 @@
 <li class="chapter" data-level="16.2" data-path="proof-by-contrapositive.html"><a href="proof-by-contrapositive.html#formal-definition-3"><i class="fa fa-check"></i><b>16.2</b> Formal definition</a></li>
 <li class="chapter" data-level="16.3" data-path="proof-by-contrapositive.html"><a href="proof-by-contrapositive.html#conjectures-3"><i class="fa fa-check"></i><b>16.3</b> Conjectures</a></li>
 </ul></li>
+<li class="chapter" data-level="17" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html"><i class="fa fa-check"></i><b>17</b> Proof by contradiction</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html#steps-4"><i class="fa fa-check"></i><b>17.1</b> Steps</a></li>
+<li class="chapter" data-level="17.2" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html#formal-definition-4"><i class="fa fa-check"></i><b>17.2</b> Formal definition</a></li>
+<li class="chapter" data-level="17.3" data-path="proof-by-contradiction.html"><a href="proof-by-contradiction.html#conjectures-4"><i class="fa fa-check"></i><b>17.3</b> Conjectures</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="proof-by-induction.html"><a href="proof-by-induction.html"><i class="fa fa-check"></i><b>18</b> Proof by induction</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="proof-by-induction.html"><a href="proof-by-induction.html#steps-5"><i class="fa fa-check"></i><b>18.1</b> Steps</a></li>
+<li class="chapter" data-level="18.2" data-path="proof-by-induction.html"><a href="proof-by-induction.html#formal-definition-5"><i class="fa fa-check"></i><b>18.2</b> Formal definition</a></li>
+<li class="chapter" data-level="18.3" data-path="proof-by-induction.html"><a href="proof-by-induction.html#conjectures-5"><i class="fa fa-check"></i><b>18.3</b> Conjectures</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="other-methods.html"><a href="other-methods.html"><i class="fa fa-check"></i><b>19</b> Other methods</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="other-methods.html"><a href="other-methods.html#proof-by-smallest-counterexample"><i class="fa fa-check"></i><b>19.1</b> Proof by smallest counterexample</a></li>
+<li class="chapter" data-level="19.2" data-path="other-methods.html"><a href="other-methods.html#proofs-with-no-words"><i class="fa fa-check"></i><b>19.2</b> Proofs with no words</a></li>
+<li class="chapter" data-level="19.3" data-path="other-methods.html"><a href="other-methods.html#geometric-proofs"><i class="fa fa-check"></i><b>19.3</b> Geometric proofs</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>20</b> Mathematical incompleteness</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -214,14 +234,13 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-2" class="exercise"><strong>Exercise 16.1  </strong></span>Use the following examples to practise proof by contrapositive. Consider why this method is easier than a direct proof for these conjectures.</p>
+<p><span id="exr:unnamed-chunk-143" class="exercise"><strong>Exercise 16.1  </strong></span>Use the following examples to practise proof by contrapositive. Consider why this method is easier than a direct proof for these conjectures.</p>
 <p>Conjecture 16.1 : If <span class="math inline">\(a^2+b^2\)</span> is odd and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both integers, then <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> have different parity to one another.</p>
 <p>Conjecture 16.2 : Every multiple of <span class="math inline">\(3\)</span> can be written as the sum of three consecutive integers.</p>
 <p>Conjecture 16.3 : If <span class="math inline">\(a+b\)</span> is even, with <span class="math inline">\(a,b \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> have the same parity as one another.</p>
 <p>Conjecture 16.4 : If <span class="math inline">\(a\)</span> is irrational, then <span class="math inline">\(\frac{1}{a}\)</span> is too.</p>
 </div>
 </div>
-<!-- If $a, b$ are both even, then the sum of $a$ and $b$ is even. -->
 <hr />
 <p><strong><em>Solutions:</em></strong></p>
 <hr />
@@ -264,7 +283,6 @@ which is clearly even.</p>
 We have proved the contrapositive, <span class="math inline">\(T \Rightarrow S\)</span>, using two cases. We have thus proved the original conjecture <span class="math inline">\(P\Rightarrow Q\)</span>.
 </div>
 <hr />
-<!-- Every multiple of $3$ can be written as the sum of three consecutive integers -->
 <p>Conjecture <a href="#cnj:xat">16.2</a>: First, we rewrite the conjecture,</p>
 <center>
 If <span class="math inline">\(a\)</span> is a multiple of <span class="math inline">\(3\)</span>, then <span class="math inline">\(a\)</span> can be expressed as the sum of three consecutive integers. <br /> <br />
@@ -331,7 +349,7 @@ where <span class="math inline">\(k,l \in \mathbb Z\)</span>.</p>
 which is odd, as <span class="math inline">\((k+l) \in \mathbb Z\)</span>. We’ve proved the contrapositive, and thus proved the original conjecture.</p>
 </div>
 <hr />
-<p>Conjecture <a href="#cnj:xian">16.4</a>: As we don’t have an algebraic way to express the family of irrational numbers, but do have an algebraic way to express the family of rational numbers,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> a proof by contrapositive is probably going to be a lot easier than a direct proof of <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
+<p>Conjecture <a href="#cnj:xian">16.4</a>: As we don’t have an algebraic way to express the family of irrational numbers, but do have an algebraic way to express the family of rational numbers,<a href="#fn43" class="footnote-ref" id="fnref43"><sup>43</sup></a> a proof by contrapositive is probably going to be a lot easier than a direct proof of <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
 <p>We draw the map for the conjecture, to aid correct identification of the contrapositive.</p>
 <p><img src="figures/maps12.png" width="65%" style="display: block; margin: auto;" /></p>
 <p>Again, an arrow representing <span class="math inline">\(T \Rightarrow S\)</span>, the contrapositive of the original conjecture, has been added to the map.</p>
@@ -357,42 +375,43 @@ and so <span class="math inline">\(a\)</span> is rational. We have proved the co
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-11" class="exercise"><strong>Exercise 16.2  </strong></span>This exercise will be uploaded at the start of our next class.</p>
+<span id="exr:unnamed-chunk-152" class="exercise"><strong>Exercise 16.2  </strong></span>Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we’ve met so far.
+</div>
+<p>Conjecture 16.5 : If <span class="math inline">\(a, b\)</span> and <span class="math inline">\(c\)</span> are a Pythagorean triple<a href="#fn44" class="footnote-ref" id="fnref44"><sup>44</sup></a>, then at least one of them must be even.</p>
+<p>Conjecture 16.6 : If the product of two integers is even then at least one of them is even.</p>
+<p>Conjecture 16.7 : (<span class="math inline">\(a + b - c\)</span>) can’t be even unless at least one of <span class="math inline">\(a, b\)</span> or <span class="math inline">\(c\)</span> is even.</p>
+<p>Conjecture 16.8 : For an integer <span class="math inline">\(a\)</span>, if <span class="math inline">\(a^2\)</span> is even, then <span class="math inline">\(a\)</span> is even.</p>
+<p>Conjecture 16.9 : For an integer <span class="math inline">\(a\)</span>, if <span class="math inline">\(a^2\)</span> is odd, then <span class="math inline">\(a\)</span> is odd.</p>
+<p>Conjecture 16.10 : If <span class="math inline">\(2a\)</span> is even, then <span class="math inline">\(a\)</span> must be an integer.</p>
+<p>Conjecture 16.11 : Every odd number can be written as the sum of two perfect squares.</p>
+<p>Conjecture 16.12 : For integers <span class="math inline">\(a, b\)</span> and <span class="math inline">\(c\)</span>, if <span class="math inline">\(a|(bc)\)</span>, then <span class="math inline">\(a |\)</span> both <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>.</p>
+<p>Conjecture 16.13 : For integers <span class="math inline">\(a, b\)</span> and <span class="math inline">\(c\)</span>, if <span class="math inline">\(a|(bc)\)</span>, then <span class="math inline">\(a|\)</span> at least one of <span class="math inline">\(b\)</span> or <span class="math inline">\(c\)</span>.</p>
+<p>Conjecture 16.14 : For integers <span class="math inline">\(a, b\)</span> and <span class="math inline">\(c\)</span>, if <span class="math inline">\(a \nmid (bc)\)</span>, then <span class="math inline">\(a \nmid b\)</span>.</p>
+<p>Conjecture 16.15 : For integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, if <span class="math inline">\(5 \nmid (ab)\)</span>, then <span class="math inline">\(5 \nmid a\)</span> and <span class="math inline">\(5 \nmid b\)</span>.</p>
+<p>Conjecture 16.16 : If <span class="math inline">\(a\)</span> is an odd number, then <span class="math inline">\(8 | (a^2 - 1)\)</span>.</p>
+<p>Conjecture 16.17 : For a integer <span class="math inline">\(a\)</span>, if <span class="math inline">\(4|a^2\)</span>, then <span class="math inline">\(4|a\)</span>.</p>
+<p>Conjecture 16.18 : For any non-zero numbers <span class="math inline">\(a, b\)</span> and <span class="math inline">\(c\)</span>, if <span class="math inline">\(ab=c\)</span> then at least one of <span class="math inline">\(a, b\)</span> and <span class="math inline">\(c\)</span> is positive.</p>
+<p>Conjecture 16.19 : The sum of two consecutive numbers is odd.</p>
+<p>Conjecture 16.20 : A triangle has at most one obtuse angle.<a href="#fn45" class="footnote-ref" id="fnref45"><sup>45</sup></a></p>
+<p>Conjecture 16.21 : If <span class="math inline">\(a\)</span> is odd, <span class="math inline">\(a^2 + 1\)</span> is even.</p>
+<p>Conjecture 16.22 : If <span class="math inline">\(a\)</span> is odd, <span class="math inline">\(a^3 + 1\)</span> is even.</p>
+<p>Conjecture 16.23 : If <span class="math inline">\((a + b)\)</span> is a multiple of 4, then <span class="math inline">\((a - b)\)</span> can’t be.</p>
+<p>Conjecture 16.24 : If <span class="math inline">\((a + b)\)</span> is a multiple of 3, then <span class="math inline">\((a - b)\)</span> can’t be.</p>
+<p>Conjecture 16.25 : In the image below, the area of the circle is one half the area of the triangle.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-153"></span>
+<img src="figures/dh1.png" alt="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle." width="70%" />
+<p class="caption">
+Figure 16.1: The figure shows a circle inscribed<a href="#fn46" class="footnote-ref" id="fnref46"><sup>46</sup></a> in an equillateral triangle.
+</p>
+</div>
+<p>Conjecture 16.26 : In the image below, length <span class="math inline">\(b\)</span> is twice length <span class="math inline">\(a\)</span>.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-154"></span>
+<img src="figures/dh2.png" alt="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle." width="70%" />
+<p class="caption">
+Figure 16.2: The figure shows a circle inscribed<a href="#fn47" class="footnote-ref" id="fnref47"><sup>47</sup></a> in an equillateral triangle.
+</p>
 </div>
 </div>
-<!-- <div class="alert alert-info" role="alert"> -->
-<!-- ```{exercise} -->
-<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far. -->
-<!-- ``` -->
-<!-- (\#cnj:xebec): If $a, b$ and $c$ are a Pythagorean triple^[See https://www.mathsisfun.com/pythagorean_triples.html.], then at least one of them must be even. -->
-<!-- (\#cnj:xenia): If the product of two integers is even then at least one of them is even. -->
-<!-- (\#cnj:xenon): ($a + b - c$) can't be even unless at least one of $a, b$ or $c$ is even. -->
-<!-- (\#cnj:xeric): For an integer $a$, if $a^2$ is even, then $a$ is even. -->
-<!-- (\#cnj:xebecs): For an integer $a$, if $a^2$ is odd, then $a$ is odd. -->
-<!-- (\#cnj:xenial): If $2a$ is even, then $a$ must be an integer. -->
-<!-- (\#cnj:xenias): Every odd number can be written as the sum of two perfect squares. -->
-<!-- (\#cnj:xanthan): For integers $a, b$ and $c$, if $a|(bc)$, then $a |$ both $b$ and $c$. -->
-<!-- (\#cnj:xanthic): For integers $a, b$ and $c$, if $a|(bc)$, then $a|$ at least one of $b$ or $c$. -->
-<!-- (\#cnj:xanthin): For integers $a, b$ and $c$, if $a \nmid (bc)$, then $a \nmid b$. -->
-<!-- (\#cnj:xennial): For integers $a$ and $b$, if $5 \nmid (ab)$, then $5 \nmid a$ and $5 \nmid b$. -->
-<!-- (\#cnj:xanthate): If $a$ is an odd number, then $8 | (a^2 - 1)$. -->
-<!-- (\#cnj:xanthein): For a integer $a$, if $4|a^2$, then $4|a$. -->
-<!-- (\#cnj:xanthation): For any non-zero numbers $a, b$ and $c$, if $ab=c$ then at least one of $a, b$ and $c$ is positive. -->
-<!-- (\#cnj:xanthomata): The sum of two consecutive numbers is odd. -->
-<!-- (\#cnj:xenobiotic): A triangle has at most one obtuse angle.^[An *obtuse* angle is an angle between $90^\text{o}$ and $180^\text{o}$.] -->
-<!-- (\#cnj:xenoblasts): If $a$ is odd, $a^2 + 1$ is even. -->
-<!-- (\#cnj:xanthophore): If $a$ is odd, $a^3 + 1$ is even. -->
-<!-- (\#cnj:xanthophyll): If $(a + b)$ is a multiple of 4, then $(a - b)$ can't be. -->
-<!-- (\#cnj:xanthophyls): If $(a + b)$ is a multiple of 3, then $(a - b)$ can't be. -->
-<!-- (\#cnj:xenodiagnosis): In the image below, the area of the circle is one half the area of the triangle. -->
-<!-- ```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"} -->
-<!-- knitr::include_graphics(rep("figures/dh1.png")) -->
-<!-- ``` -->
-<!-- (\#cnj:xenocurrency): In the image below, length $b$ is twice length $a$. -->
-<!-- ```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"} -->
-<!-- knitr::include_graphics(rep("figures/dh2.png")) -->
-<!-- ``` -->
-<!-- </div> -->
 <!-- https://cs.brown.edu/courses/csci0220/static/files/documents/templates/counterexample.pdf -->
 <!-- Note, the symbol $|$ means one number is a \textbf{divisor} of another.} -->
 <!-- For example, 11 is a divisor of 33 and so we can write $11|33$ and 6 is a divisor of 18 so we} -->
@@ -414,16 +433,14 @@ and so <span class="math inline">\(a\)</span> is rational. We have proved the co
 
 </div>
 </div>
-
-
-
-
-
-
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>See <a href="https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub" class="uri">https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub</a>.<a href="proof-by-contrapositive.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<ol start="43">
+<li id="fn43"><p>See <a href="https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub" class="uri">https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub</a>.<a href="proof-by-contrapositive.html#fnref43" class="footnote-back">↩︎</a></p></li>
+<li id="fn44"><p>See <a href="https://www.mathsisfun.com/pythagorean_triples.html" class="uri">https://www.mathsisfun.com/pythagorean_triples.html</a>.<a href="proof-by-contrapositive.html#fnref44" class="footnote-back">↩︎</a></p></li>
+<li id="fn45"><p>An <em>obtuse</em> angle is an angle between <span class="math inline">\(90^\text{o}\)</span> and <span class="math inline">\(180^\text{o}\)</span>.<a href="proof-by-contrapositive.html#fnref45" class="footnote-back">↩︎</a></p></li>
+<li id="fn46"><p>See <a href="https://www.mathopenref.com/inscribed.html" class="uri">https://www.mathopenref.com/inscribed.html</a>.<a href="proof-by-contrapositive.html#fnref46" class="footnote-back">↩︎</a></p></li>
+<li id="fn47"><p>See <a href="https://www.mathopenref.com/inscribed.html" class="uri">https://www.mathopenref.com/inscribed.html</a>.<a href="proof-by-contrapositive.html#fnref47" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -431,8 +448,8 @@ and so <span class="math inline">\(a\)</span> is rational. We have proved the co
           </div>
         </div>
       </div>
-<a href="maps-revisited.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="maps-revisited.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="proof-by-contradiction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,0 +1,8 @@
+# Other methods
+
+## Proof by smallest counterexample
+
+## Proofs with no words
+
+## Geometric proofs
+

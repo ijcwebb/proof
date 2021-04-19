@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Welcome! It's lovely to have you here!
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics(rep("figures/head1.png"))
 ```
 
@@ -33,7 +33,7 @@ This book contains the material we will study as well as exercises (see the next
 
 This textbook may be updated during the course. Therefore you are advised to access the book at the link at https://ijcwebb.github.io/proof, rather than printing or downloading it. Also, even though you *can* read ahead of the set chapter, you are advised that later chapters might change as the course procedes.
 
-Part I of this book (chapters 2-5) covers the terminology surrounding mathematical proof, part II (chapters 6-9) covers the basics of proof, and chapters 10-16 in part III each cover a different method of proof. Chapter 17 covers mathematical completeness.
+If you notice any mistakes in the book, there is a thread on the Forum on our course's e-Course page. Post the mistake you've noticed, along with the chapter and section number. I will check the mistake and update the book accordingly.
 
 ## How to use this book
 
@@ -58,7 +58,7 @@ Solutions might be included underneath exercises, in which case you should aim t
 ```{exercise}
 Extension exercises look like this. These are exercises that require a little more thought. 
 
-Solutions won't be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss.
+Solutions won't be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss. See our syllabus for full details.
 
 ```
 </div>
@@ -73,7 +73,14 @@ There are a couple of other coloured boxes used in this book:
 
 <div class="alert alert-success" role="alert">
 <strong>What we've learnt </strong> 
-These boxes are found at the end of each chapter, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too. 
+These boxes are found at the end of the early chapters, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too. 
 </div>
+
+## Contents
+
+**PART I:** Chapters 2-5 cover the *terminology* of mathematical proof. <br />
+**PART II:** Chapters 6-9 cover the *basics* of proof. <br />
+**PART III:** Chapters 10-19 cover *methods* of proof. <br />
+**PART IV:** Chapter 20 covers *mathematical incompleteness*. <br />
 
 That's it. You're ready to begin!

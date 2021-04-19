@@ -1,18 +1,18 @@
 # Proof by induction
 
-One of the simplest, but most powerful techniques of proof is *Induction*. We use it to show that a conjecture is true for all integers above (and including) a specified integer. 
+One of the simplest, but most powerful methods of proof is **induction**. We use it to show that a conjecture is true for all integers above (and including) a specified integer. 
 
 ## The steps
 
 There are two things to do:
 
-**First**, *assume* that the conjecture is true for $a$ (or whatever is the subject of the conjecture), and show that the conjecture would also be correct for the next number $a + 1$.
+1. Assume that the conjecture is true for $a$, and show that the conjecture would also be correct for the next number $a + 1$.
 
-**Second**, show that the conjecture is true for the lowest value of $a$, called $a_0$. This is known the 'base case'. 
+2. Show that the conjecture is true for the lowest value of $a$, called $a_0$. This is known the 'base case'. 
 
 And you're done!
 
-## The domino analogy
+### The domino analogy
 
 Think of this method of proof like a row of dominoes, and you want every domino to fall over:
 
@@ -26,14 +26,14 @@ Next, you push the first domino. This is proving the conjecture is true for the 
 
 The result: all the dominoes will fall - https://www.youtube.com/watch?v=TE5RdFFgW0w.
 
-## When to use induction
+### When to use induction
 
 We usually use a proof by induction when the conjecture:
 
 - is dealing with integers,
-- has an obvious starting point, for example "for all positive integers...", "for all three-digit primes", "for all odd numbers", etc.
+- has an obvious base case, for example "for all positive integers" (base case = $1$), "for all three-digit primes" (base case = $01$), "for all odd numbers" (base case = $1$), etc.
 
-## Identifying the base case
+### Identifying the base case
 
 It's easy to identify the base case $a = a_0$, as it will be obvious from the conjecture. For example, if the conjecture begins:
 
@@ -45,8 +45,7 @@ It's easy to identify the base case $a = a_0$, as it will be obvious from the co
     
 - "For all integers greater than $-10$ ...", your base case is  $a_0 = -9$.
     
-- "For all composite numbers ...", your base case is  $a_0 = 4$.
-
+- "For all composite numbers ...", your base case is  $a_0 = 4$.^[$1$, whilst not prime, is not composite, as the definition of a composite number is a positive integer which has factor other than $1$ and itself. In fact, $1$ is the only positive integer that is neither prime nor composite.]
 
 ## Formal definition
 
@@ -67,6 +66,44 @@ $P \Rightarrow Q$ for $a_0$,
 </center>
 
 where $a_0$ is the smallest example of $a$.
+
+## Conjectures
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Use the following examples to practise proof by induction.
+
+(\#cnj:YYY): The sum of two consecutive integers is odd.
+  
+(\#cnj:YYY): 
+
+(\#cnj:YYY): 
+
+(\#cnj:YYY): 
+
+``` 
+</div> 
+
+***
+
+***Solutions:***
+
+***
+
+Conjecture \@ref(cnj:YYY):
+```{proof}
+First, we assume that the conjecture is true for $a$, and show that the conjecture would also be correct for the next number $a + 1$.
+
+2. Show that the conjecture is true for the lowest value of $a$, called $a_0$. This is known the 'base case'. 
+First, we assume that 
+```
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+This exercise will be uploaded at the start of our next class.
+
+```
+</div> 
 
 ## Practice
 

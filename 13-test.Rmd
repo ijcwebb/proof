@@ -332,9 +332,9 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 
 (\#cnj:heart): For all numbers $a, b, c$, if $ab = bc$ then $a = c$.
 
-(\#cnj:harvest): For any integer $a$, $(3a-1)$ is a multiple of 2.
+(\#cnj:harvest): For any integer $a$, $(3a-1)$ is a multiple of $2$.
 
-(\#cnj:harm): The sum of two consecutive numbers is odd.
+(\#cnj:harm): The sum of two consecutive integers is odd.
 
 (\#cnj:hover): Let $a$ be an integer. Then $a^{2} + a$ is even.
 

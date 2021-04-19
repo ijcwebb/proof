@@ -51,7 +51,7 @@ Use the following examples to practise proof by contrapositive. Consider why thi
 
 ``` 
 </div> 
-<!-- If $a, b$ are both even, then the sum of $a$ and $b$ is even. -->
+
 ***
 
 ***Solutions:***
@@ -110,7 +110,7 @@ We have proved the contrapositive, $T \Rightarrow S$, using two cases. We have t
 ```
 
 ***
-<!-- Every multiple of $3$ can be written as the sum of three consecutive integers -->
+
 Conjecture \@ref(cnj:xat): First, we rewrite the conjecture,
 
 <center> If $a$ is a multiple of $3$, then $a$ can be expressed as the sum of three consecutive integers. <br /> <br /> </center>
@@ -228,68 +228,61 @@ and so $a$ is rational. We have proved the contrapositive, which proves the orig
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-This exercise will be uploaded at the start of our next class.
-
+Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far.
 ```
-</div> 
 
-<!-- <div class="alert alert-info" role="alert"> -->
-<!-- ```{exercise} -->
-<!-- Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far. -->
-<!-- ``` -->
+(\#cnj:xebec): If $a, b$ and $c$ are a Pythagorean triple^[See https://www.mathsisfun.com/pythagorean_triples.html.], then at least one of them must be even.
 
-<!-- (\#cnj:xebec): If $a, b$ and $c$ are a Pythagorean triple^[See https://www.mathsisfun.com/pythagorean_triples.html.], then at least one of them must be even. -->
+(\#cnj:xenia): If the product of two integers is even then at least one of them is even.
 
-<!-- (\#cnj:xenia): If the product of two integers is even then at least one of them is even. -->
+(\#cnj:xenon): ($a + b - c$) can't be even unless at least one of $a, b$ or $c$ is even.
 
-<!-- (\#cnj:xenon): ($a + b - c$) can't be even unless at least one of $a, b$ or $c$ is even. -->
+(\#cnj:xeric): For an integer $a$, if $a^2$ is even, then $a$ is even.
 
-<!-- (\#cnj:xeric): For an integer $a$, if $a^2$ is even, then $a$ is even. -->
+(\#cnj:xebecs): For an integer $a$, if $a^2$ is odd, then $a$ is odd.
 
-<!-- (\#cnj:xebecs): For an integer $a$, if $a^2$ is odd, then $a$ is odd. -->
+(\#cnj:xenial): If $2a$ is even, then $a$ must be an integer.
 
-<!-- (\#cnj:xenial): If $2a$ is even, then $a$ must be an integer. -->
+(\#cnj:xenias): Every odd number can be written as the sum of two perfect squares.
 
-<!-- (\#cnj:xenias): Every odd number can be written as the sum of two perfect squares. -->
+(\#cnj:xanthan): For integers $a, b$ and $c$, if $a|(bc)$, then $a |$ both $b$ and $c$.
 
-<!-- (\#cnj:xanthan): For integers $a, b$ and $c$, if $a|(bc)$, then $a |$ both $b$ and $c$. -->
+(\#cnj:xanthic): For integers $a, b$ and $c$, if $a|(bc)$, then $a|$ at least one of $b$ or $c$.
 
-<!-- (\#cnj:xanthic): For integers $a, b$ and $c$, if $a|(bc)$, then $a|$ at least one of $b$ or $c$. -->
+(\#cnj:xanthin): For integers $a, b$ and $c$, if $a \nmid (bc)$, then $a \nmid b$.
 
-<!-- (\#cnj:xanthin): For integers $a, b$ and $c$, if $a \nmid (bc)$, then $a \nmid b$. -->
+(\#cnj:xennial): For integers $a$ and $b$, if $5 \nmid (ab)$, then $5 \nmid a$ and $5 \nmid b$.
 
-<!-- (\#cnj:xennial): For integers $a$ and $b$, if $5 \nmid (ab)$, then $5 \nmid a$ and $5 \nmid b$. -->
+(\#cnj:xanthate): If $a$ is an odd number, then $8 | (a^2 - 1)$.
 
-<!-- (\#cnj:xanthate): If $a$ is an odd number, then $8 | (a^2 - 1)$. -->
+(\#cnj:xanthein): For a integer $a$, if $4|a^2$, then $4|a$.
 
-<!-- (\#cnj:xanthein): For a integer $a$, if $4|a^2$, then $4|a$. -->
+(\#cnj:xanthation): For any non-zero numbers $a, b$ and $c$, if $ab=c$ then at least one of $a, b$ and $c$ is positive.
 
-<!-- (\#cnj:xanthation): For any non-zero numbers $a, b$ and $c$, if $ab=c$ then at least one of $a, b$ and $c$ is positive. -->
+(\#cnj:xanthomata): The sum of two consecutive numbers is odd.
 
-<!-- (\#cnj:xanthomata): The sum of two consecutive numbers is odd. -->
+(\#cnj:xenobiotic): A triangle has at most one obtuse angle.^[An *obtuse* angle is an angle between $90^\text{o}$ and $180^\text{o}$.]
 
-<!-- (\#cnj:xenobiotic): A triangle has at most one obtuse angle.^[An *obtuse* angle is an angle between $90^\text{o}$ and $180^\text{o}$.] -->
+(\#cnj:xenoblasts): If $a$ is odd, $a^2 + 1$ is even.
 
-<!-- (\#cnj:xenoblasts): If $a$ is odd, $a^2 + 1$ is even. -->
+(\#cnj:xanthophore): If $a$ is odd, $a^3 + 1$ is even.
 
-<!-- (\#cnj:xanthophore): If $a$ is odd, $a^3 + 1$ is even. -->
+(\#cnj:xanthophyll): If $(a + b)$ is a multiple of 4, then $(a - b)$ can't be.
 
-<!-- (\#cnj:xanthophyll): If $(a + b)$ is a multiple of 4, then $(a - b)$ can't be. -->
+(\#cnj:xanthophyls): If $(a + b)$ is a multiple of 3, then $(a - b)$ can't be.
 
-<!-- (\#cnj:xanthophyls): If $(a + b)$ is a multiple of 3, then $(a - b)$ can't be. -->
+(\#cnj:xenodiagnosis): In the image below, the area of the circle is one half the area of the triangle.
 
-<!-- (\#cnj:xenodiagnosis): In the image below, the area of the circle is one half the area of the triangle. -->
+```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"}
+knitr::include_graphics(rep("figures/dh1.png"))
+```
 
-<!-- ```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"} -->
-<!-- knitr::include_graphics(rep("figures/dh1.png")) -->
-<!-- ``` -->
+(\#cnj:xenocurrency): In the image below, length $b$ is twice length $a$.
 
-<!-- (\#cnj:xenocurrency): In the image below, length $b$ is twice length $a$. -->
-
-<!-- ```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"} -->
-<!-- knitr::include_graphics(rep("figures/dh2.png")) -->
-<!-- ``` -->
-<!-- </div> -->
+```{r, echo=FALSE, out.width="70%", fig.cap="The figure shows a circle inscribed^[See https://www.mathopenref.com/inscribed.html.] in an equillateral triangle.", fig.align="center"}
+knitr::include_graphics(rep("figures/dh2.png"))
+```
+</div>
 
 <!-- https://cs.brown.edu/courses/csci0220/static/files/documents/templates/counterexample.pdf -->
 
