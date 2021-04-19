@@ -78,7 +78,10 @@ Now, let's explore this world and check if we find any contradictions. Combining
   1 &= 2k - 2a  \\
   1 &= 2(k - a)  (\#eq:zzz)
 \end{align}
-but this is clearly crazy: Equation \@ref(eq:zzz) says that $1$ is an even number! We have a blatant contradiction. 
+but this is clearly crazy: Equation \@ref(eq:zzz) says that $1$ is an even number! We have a blatant contradiction.  
+
+We have found our contradiction.
+
 ```
 </div>
 
@@ -113,7 +116,10 @@ Now, let's explore this world and check if we find any contradictions. Combining
   1 &= 2k - 4l^2 - 4l  \\
   1 &= 2(k - 2l^2 - 2l)  (\#eq:zzzzzz)
 \end{align}
-but this is clearly crazy: Equation \@ref(eq:zzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proof of Conjecture \@ref(cnj:zabaione)).
+but this is clearly crazy: Equation \@ref(eq:zzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proof of Conjecture \@ref(cnj:zabaione)). 
+
+We have found our contradiction.
+
 ```
 </div>
 
@@ -167,7 +173,10 @@ Substituting Equation \@ref(eq:zzzzzzzzzz) into Equation \@ref(eq:zzzzzzzzz) giv
 \end{align}
 Equation \@ref(eq:zzzzzzzzzzz) tells us that $l^2$ is even, which again means that $l$ is even, as $l$ is an integer.
 
-We now know that both $k$ and $l$ are even, and thus share $2$ as a common divisor. But this is contradictory to us having simplified the fraction $\frac{k}{l}$ as far as possible. We have found our contradiction.
+We now know that both $k$ and $l$ are even, and thus share $2$ as a common divisor. But this is contradictory to us having simplified the fraction $\frac{k}{l}$ as far as possible. 
+
+We have found our contradiction.
+
 ```
 </div>
 
@@ -203,7 +212,10 @@ Now, let's explore this world and check if we find any contradictions. Combining
   4k^2-2l &= 1  \\
   2(2k^2-l) &= 1  (\#eq:zzzzzzzzzzzzzz)
 \end{align}
-but this is clearly crazy: Equation \@ref(eq:zzzzzzzzzzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proofs of Conjectures \@ref(cnj:zabaione) and \@ref(cnj:zabajone)).
+but this is clearly crazy: Equation \@ref(eq:zzzzzzzzzzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proofs of Conjectures \@ref(cnj:zabaione) and \@ref(cnj:zabajone)). 
+
+We have found our contradiction.
+
 ```
 </div>
 
