@@ -1,7 +1,243 @@
 # Proof by contradiction
 
+This method is based on the same principle as proof by contrapositive. Proof by contrapositive relies on the fact that if $P$ always $\Rightarrow Q$, then $T$ implies $S$. In a proof by contradiction, we assume that $P$ and $T$ are both true (e.g. $a$ is an even integer and $a^2$ is odd) then go looking for a contradiction. Because assuming $P$ is fine (it's the starting point for the conjecture), the contradiction must have arisen due to our other assumption, that of $T$ being true.
+
+Proof by contradiction is like building a fantasy world: one where both $P$ and $T$ can be true at the same time. We then explore this world (usually using algebra) until we find a contradiction, which shatters our illusions and the fantasy world collapses: $P$ and $T$ can't both be true at the same time. If $P$ and $T$ can't both be true simulataneously, and remembering our observation in the last chapter that every element on the left hand side of a conjecture map *must* travel to the right hand side, $P$ must go to $Q$.
+
+Proof by contradiction is a great method - building this fantasy world and pretending all is OK until you find an irrefutable contradiction. It's kind of like this...
+
+```{r, echo=FALSE, out.width="70%", fig.align="center"}
+knitr::include_graphics(rep("figures/truman.png"))
+```
+
+<center> https://www.youtube.com/watch?v=Gn5kuDdeGzs </center>
+
 ## Steps
+
+1. Assume $P$ *and* $T$.
+2. Go exploring within this fantasy world.
+3. When you come up against a contradiction (something that is blatantly impossible), you're forced to conclude that your only assumption (that $T$ can be true whilst $P$ is true) has to be rejected. $P \nRightarrow T$ and so, as the elements in $P$ must go somewhere, $P \Rightarrow Q$.
 
 ## Formal definition
 
+If $P \nRightarrow T$, then $P \Rightarrow Q$.
+
 ## Conjectures
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Use the following examples to practise proof by contradiction.
+
+(\#cnj:zabaione): The sum of two consecutive integers is odd.
+  
+(\#cnj:zabajone): If $a^2$ is even and $a \in \mathbb Z$, then $a$ is even.
+  
+(\#cnj:zaibatsu): $\sqrt{2}$ is irrational.
+
+(\#cnj:zaddikim): If $a$ is even, then $a^2$ is even. (*Note, this is different to Conjecture \@ref(cnj:zabajone), as they have different starting points.*)
+
+``` 
+</div> 
+
+***
+
+***Solutions:***
+
+***
+
+Conjecture \@ref(cnj:zabaione): First, we rewrite the conjecture,
+
+<center> If $a,b$ are consecutive integers, then $a+b$ is odd. <br /> <br /> </center>
+
+To prove this using a direct proof would require us to consider two cases: firstly where the lower of the two integers is even, and then where the lower of the two integers is odd.
+
+Let's try a proof by contradiction. To attempt a proof by contradiction, we draw the map for the conjecture, to correctly identify $P$ and $T$:
+
+```{r, echo=FALSE, out.width="75%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps13.png"))
+```
+
+```{proof} 
+We assume that two integers, $a,b$, are consecutive ($P$) and that their sum is even ($T$). W.l.o.g. let $a$ be the lower of the two integers.
+
+Therefore,
+\begin{align}
+  b &= a+1 (\#eq:z)
+\end{align}
+and
+\begin{align}
+  a + b &= 2k (\#eq:zz)
+\end{align}
+where $k \in \mathbb Z$.
+
+Now, let's explore this world and check if we find any contradictions. Combining Equations \@ref(eq:z) and \@ref(eq:zz), we get
+\begin{align}
+  a + a+1 &= 2k \\
+  2a+1 &= 2k  \\
+  1 &= 2k - 2a  \\
+  1 &= 2(k - a)  (\#eq:zzz)
+\end{align}
+but this is clearly crazy: Equation \@ref(eq:zzz) says that $1$ is an even number! We have a blatant contradiction. 
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
+```
+
+***
+
+Conjecture \@ref(cnj:zabajone): We again draw the map for the conjecture, so as to correctly identify $P$ and $T$:
+
+```{r, echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps17.png"))
+```
+
+```{proof} 
+We assume that $a^2$ is even and that $a$ is an integer ($P$). We also assume that $a$ is not even ($T$). As we've assumed that $a$ is an integer, $T$ implies $a$ is an odd integer.
+
+We have,
+\begin{align}
+  a^2 &= 2k (\#eq:zzzz)
+\end{align}
+and
+\begin{align}
+  a &= 2l + 1 (\#eq:zzzzz)
+\end{align}
+where $k,l \in \mathbb Z$.
+
+Now, let's explore this world and check if we find any contradictions. Combining Equations \@ref(eq:zzzz) and \@ref(eq:zzzzz), we get
+\begin{align}
+  (2l+1)^2 &= 2k \\
+  4l^2 + 4l + 1 &= 2k  \\
+  1 &= 2k - 4l^2 - 4l  \\
+  1 &= 2(k - 2l^2 - 2l)  (\#eq:zzzzzz)
+\end{align}
+but this is clearly crazy: Equation \@ref(eq:zzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proof of Conjecture \@ref(cnj:zabaione)).
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
+```
+
+***
+<!-- (\#cnj:zaibatsu): $\sqrt{d}$ is an irrational number. -->
+Conjecture \@ref(cnj:zaibatsu): First, we rewrite the conjecture,
+
+<center> If $a = \sqrt{2}$, then $a$ is irrational. <br /> <br /> </center>
+
+The trouble with trying to prove this using a direct proof is the same reason Conjecture 16.4 was difficult to prove using a direct proof: we don't have an algebraic way to express the family of irrational numbers. As we have an algebraic way to express the family of rational numbers,^[Again, see https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub.] a proof by contradiction is probably going to be a lot easier than a direct proof of $P \Rightarrow Q$.
+
+We again draw the map for the conjecture, so as to correctly identify $P$ and $T$:
+
+```{r, echo=FALSE, out.width="55%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps16.png"))
+```
+
+```{proof} 
+We assume that $a = \sqrt{2}$ (this is $P$), and that $a$ is rational (this is $T$). As $a$ is rational, it can be written as the fraction of two integers. Let's say that we have simplied this fraction as much as possible, arriving at a fraction of two integers, $\frac{k}{l}$, that can't be simplied any further.^[For example $\frac{120}{84} = \frac{60}{42} = \frac{30}{21} = \frac{10}{7}$, so $k=10$, $l=7$, and $\frac{k}{l}$ can't be simplied any further.]
+
+Therefore,
+\begin{align}
+  a &= \sqrt{2} (\#eq:zzzzzzz)
+\end{align}
+and
+\begin{align}
+  a &= \frac{k}{l} (\#eq:zzzzzzzz)
+\end{align}
+where $k, l \in \mathbb Z$ and $k,l$ share no common divisors.
+
+Now, let's explore this world and check if we find any contradictions. Combining Equations \@ref(eq:zzzzzzz) and \@ref(eq:zzzzzzzz), we get
+\begin{align}
+  \sqrt{2} &= \frac{k}{l} \\
+  2 &= \frac{k^2}{l^2}  \\
+  2l^2 &= k^2  (\#eq:zzzzzzzzz)
+\end{align}
+Equation \@ref(eq:zzzzzzzzz) tells us that $k^2$ is even. As $k^2$ is even and $k \in \mathbb Z$, then $k$ must be even too. (We proved this in Conjecture \@ref(cnj:zabajone).) Therefore,
+\begin{align}
+  k &= 2m (\#eq:zzzzzzzzzz)
+\end{align}
+where $m \in \mathbb Z$.
+
+Substituting Equation \@ref(eq:zzzzzzzzzz) into Equation \@ref(eq:zzzzzzzzz) gives
+\begin{align}
+  2l^2 &= (2m)^2 \\
+  2l^2 &= 4m^2 \\
+  l^2 &= 2m^2 (\#eq:zzzzzzzzzzz)
+\end{align}
+Equation \@ref(eq:zzzzzzzzzzz) tells us that $l^2$ is even, which again means that $l$ is even, as $l$ is an integer.
+
+We now know that both $k$ and $l$ are even, and thus share $2$ as a common divisor. But this is contradictory to us having simplified the fraction $\frac{k}{l}$ as far as possible. We have found our contradiction.
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
+```
+
+***
+
+Conjecture \@ref(cnj:zaddikim): It is very easy to prove this conjecture using a direct proof. However, we'll use a proof by contradiction to practice the method.
+
+We again draw the map for the conjecture, so as to correctly identify $P$ and $T$:
+
+```{r, echo=FALSE, out.width="55%", fig.align="center"}
+knitr::include_graphics(rep("figures/maps14.png"))
+```
+
+```{proof} 
+We assume that an integer $a$ is even ($P$) and that its square $a^2$ is odd ($T$). 
+
+Therefore,
+\begin{align}
+  a &= 2k (\#eq:zzzzzzzzzzzz)
+\end{align}
+and
+\begin{align}
+  a^2 &= 2l + 1 (\#eq:zzzzzzzzzzzzz)
+\end{align}
+where $k,l \in \mathbb Z$.
+
+Now, let's explore this world and check if we find any contradictions. Combining Equations \@ref(eq:zzzzzzzzzzzz) and \@ref(eq:zzzzzzzzzzzzz), we get
+\begin{align}
+  (2k)^2 &= 2l + 1 \\
+  4k^2-2l &= 1  \\
+  2(2k^2-l) &= 1  (\#eq:zzzzzzzzzzzzzz)
+\end{align}
+but this is clearly crazy: Equation \@ref(eq:zzzzzzzzzzzzzz) says that $1$ is an even number! We have a blatant contradiction (the same one we found in the proofs of Conjectures \@ref(cnj:zabaione) and \@ref(cnj:zabajone)).
+
+**Conclusion:** Assuming $T$ is true when $P$ is true has led to a contradiction, and thus $T$ can't be true when $P$ is true. If $T$ can't be true when $P$ is true, but the elements of $P$ *must* travel to right-hand side of the map, then they must all travel to $Q$. We have proved $P \Rightarrow Q$ for every element in $P$. 
+```
+
+***
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+This exercise will be uploaded at the start of our next class.
+
+```
+</div> 
+
+
+## Methods of contradiction and contrapositive
+
+At the beginning of this chapter, I said that proof by contradiction is based on the same principle as proof by contrapositive. In fact, these two methods share the exact same DNA.
+
+<!-- How so? -->
+
+<!-- Consider a conjecture $P \Rightarrow Q$. A direct proof, as we know, begins by assuming $P$ then trying to prove $Q$. For a proof by contradiction, you assume both $P$ and $T$ are true, then look for a contradiction. For a proof by contrapositive, you assume $T$, then aim for $S$.  -->
+			
+<!-- If you could prove $S$ from $T$, then that would also yield a contradiction in the proof by contradiction, since you are assuming $P$. -->
+			
+<!-- So, in a matter of speaking, you might as well do a proof by contradiction if you are going to do a proof by contraposition.  -->
+
+In fact, many proofs by contrapositive are found by a proof by contradiction: you show that by assuming $P$ and $T$ can both be true, a contradiction is reached. The proof is then rewritten in the form $T \Rightarrow S$.
+
+<!-- <div class="alert alert-warning" role="alert"> -->
+<!-- <strong>Thinking point:</strong>  -->
+
+<!-- Proof by contrapositive assumes $T$ and aims for $S$.  -->
+
+<!-- If $Q$ hasn't happened, you know $P$ has not happened, or in other words, $Q$ cannot happen without $P$. If $Q$ cannot happen without $P$, then  -->
+<!-- \end{tcolorbox} -->
+
+<!-- if you are able to prove $S$ from $T$ (the method of contrapositive) then because proof by contradiction requires you to assume $P$ then  then that would also yield a contradiction in the proof by contradiction, since you are assuming $P$. -->
+<!-- \\So you might as well do a proof by contradiction if you are going to do a proof by contrapositive!  -->
+<!-- In fact, this is actually how many proofs by contrapositive are found: begin with a proof by contradiction, and then after you are done you realise you never use the assumption of $P$, so the proof is rewritten. -->
+
+<!-- </div> -->
+
+
+
