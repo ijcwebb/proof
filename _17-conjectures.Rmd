@@ -8,6 +8,8 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 
 (\#cnj:zaibatsus): $\sqrt{3}$ is irrational.
 
+(\#cnj:zany): $\pi$ is irrational.
+
 (\#cnj:zamindar): $3a + 5b$ is even only when $a$ and $b$ are both integers.
 
 (\#cnj:zaniness): The product of three consecutive positive integers is never a perfect cube.
@@ -76,8 +78,6 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 <!-- %((SUPER SPICY!!)) https://sites.google.com/view/enigmaths/polygons/triangle?fbclid=IwAR0f91hdbFEP13-f4wWiF6PPd6rry6nQOyHZZxYZ0KAqYRvzHQoceYZAN4E -->
 
 <!-- %(\#cnj:zirconic): Place three identical squares next to each other in a line so that they touch. From the topmost left corner of the lefthand square, draw a line to each of the bottommost right corners of the three squares. The sum of the three acute angles formed by these lines and the lower horizontal line is 90$^{\circ}$. %https://www.youtube.com/watch?v=m5evLoL0xwg -->
-
-(\#cnj:zaddikims): There are an infinite amount of prime numbers. <br /> *Hint: See 12:30-14:45 of https://www.youtube.com/watch?v=OihQPf4mJH4.*
 
 (\#cnj:zizzling): There are a finite amount of Pythagorean Triples.
 

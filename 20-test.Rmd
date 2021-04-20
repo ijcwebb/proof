@@ -1,1 +1,165 @@
-# Mathematical incompleteness
+# Primes
+
+The primes are a fascinating family of numbers. They are the building blocks of the integers, because every number is either prime or is the product of primes. For that reason, this chapter presents a whole set of conjectures on the primes. 
+
+Remember, the first few primes are $2$, $3$, $5$, $7$, $11$, $13$, $17$, $19$, $23$, $29$, $31$, $37$, $41$, $43$, $47$, $53$, $59$, $61$, $67$, $71$, $73$, $79$, $83$, $89$, $97$, $101$, $103$, $107$, $109$, $113$.... 
+
+The first $10,000$ primes are listed here: https://primes.utm.edu/lists/small/10000.txt.
+
+## Work through in order, building on your earlier work
+
+It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture:
+
+<div class="alert alert-info" role="alert">
+(\#cnj:undue): Every prime number, except $2$ and $3$, is either one more or one less than a multiple of $6$.
+</div> 
+
+will help you in proving the conjecture
+
+<div class="alert alert-info" role="alert">
+(\#cnj:unity): Doubling any prime number (except 2) then adding two creates a number divisible by four.
+</div> 
+
+First, try to the prove Conjecture \@ref(cnj:undue). (Hint: You might want to try writing the positive integers greater than $3$ in a rectangular grid, in such a way that all the primes are in only one or two columns.). 
+
+Then see below how your work can help you in proving Conjecture \@ref(cnj:unity).
+
+<div class="alert alert-success" role="alert">
+```{proof} 
+As conjecture \@ref(cnj:undue) is known to be true, we know that every prime $p$, $p \neq 2, 3$, can be written in the form
+
+\begin{align}
+    p &= 6k + 1
+\end{align}
+
+or
+
+\begin{align}
+    p &= 6k - 1
+\end{align}
+
+with $k \in \mathbb Z$.
+
+Let's deal with these one-by-one.
+
+If
+
+\begin{align}
+    p &= 6k + 1
+\end{align}
+
+then doubling it and adding two gives
+
+\begin{align}
+    2p + 2  &= 2(6k + 1) + 2 \\
+    &= 12p + 2 + 2 \\
+    &= 12p + 4 \\
+    &= 4(3p + 1)
+\end{align}
+
+which is a multiple of 4.
+
+Similarly, if
+
+\begin{align}
+    p &= 6k - 1
+\end{align}
+
+then doubling it and adding two gives
+
+\begin{align}
+    2p + 2  &= 2(6k - 1) + 2 \\
+    &= 12p - 2 + 2 \\
+    &= 12p \\
+    &= 4(3p)
+\end{align}
+
+which is a multiple of 4.
+
+As noted in the first line of the proof, this proof covers all primes *except* $2$ and $3$. However, conjecture  \@ref(cnj:unity) covers all primes except $2$, so we should also check that the conjecture holds for $3$. 
+
+If $p=3$, then $2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8$, which is a multiple of $4$. 
+
+Therefore the conjecture is true.
+
+```
+</div>
+
+## Conjectures
+
+As always, be aware that some of these conjectures are false, and should be disproved using a counterexample or a disproof.
+
+<div class="alert alert-info" role="alert">
+(\#cnj:zaddikims): There are an infinite amount of prime numbers. <br /> *Hint: See 12:30-14:45 of https://www.youtube.com/watch?v=OihQPf4mJH4.*
+
+***
+
+*Look back to Conjecture 13.15. Now attempt these two conjectures:*
+
+(\#cnj:unset): $a^2 - a + 41$ is always prime for all positive integers $a$.
+
+(\#cnj:unman): $a^2 - a + 41$ is always prime for all nonpositive integers $a$.
+
+***
+
+(\#cnj:uncap): All primes are odd.
+
+(\#cnj:unlet): There are no positive integers $a$ and $b$ with $a$ prime and $a = 6b + 3$.
+
+(\#cnj:unary): There are no positive integers $a$ and $b$ with $a$ prime and $a = 6b + 5$.
+
+(\#cnj:umami): For every positive composite^[Composite numbers: http://mathworld.wolfram.com/CompositeNumber.html.] integer $b$, if some prime number $a$ divides $b$, then some other prime $c$ (with $c$ able to be the same as $a$) also divides $b$.
+<!-- [DIRECT] -->
+
+(\#cnj:unhip): For every positive composite integer $b$, if some prime number $a$ divides $b$, then some other prime $c$ (with $c$ $\neq$ $a$) also divides $b$. 
+<!-- (c-e) -->
+
+(\#cnj:urate): For any positive integers $a$ and $b$, where $a \neq 1$, if $(a^b + 1)$ is prime then $a$ is even.
+<!-- Solution: Assume a ≥ 2 is odd, then $a^m + 1$ is even for every natural number m and therefore it cannot be a prime. From: personal.ee.surrey.ac.uk/Personal/M.Bartuccelli/Modules/MS125/10solutass1.pdf -->
+
+(\#cnj:utile): If $a$ is a prime number and $a$ | $b$, then $a\nmid (b+1)$.
+
+(\#cnj:unfed): Every positive integer can be written as the sum of two composite integers.
+
+(\#cnj:ulama): Every integer greater than 11 can be written as the sum of two composite integers.
+<!-- How about this solution?? If n is even, then n is of the form 2k where k≥6. Hence n=2(k−4)+8. And if n is odd, then n is of the form 2k+1 where k≥5. hence n=2(k−4)+9. Thus any number >11 can be expressed as the sum of two composite numbers!! From https://math.stackexchange.com/questions/450930/prove-by-contradiction-that-every-integer-greater-than-11-is-a-sum-of-two-compos -->
+
+***
+
+*Large primes are essential for online security, banking and encryption. There's a search for larger and larger primes to keep the Internet private. One method of finding possible primes is $2^{a} - 1$, where $a$ is a positive integer.*
+
+(\#cnj:umbel): Let $a$ be a positive integer. $2^{a} - 1$ is always prime.
+
+(\#cnj:urger): Let $a$ be a positive composite integer. $2^a - 1$ is always prime.
+
+(\#cnj:urial): Let $a$ be a prime number. $2^a - 1$ is always prime.
+<!-- WHILST THIS THEOREM HOLDS TRUE FOR THE FIRST FEW PRIMES ($n = 2, 3, 5, 7$ ALL YIELD PRIMES), THE THEOREM BREAKS AT $n = 11$ BECAUSE $n^{11} - 1 = 2047$ ISN'T PRIME (IT'S DIVISIBLE BY $23$ AND $89$). -->
+<!-- Bonus question: How effective is this method for finding primes for the first twenty values of $a$? -->
+<!-- Answer: For $n = 1$ to $n = 20$, we have: -->
+<!-- \begin{center} -->
+<!-- No  Yes  Yes  No  Yes  No  Yes  No  No  No  No  No  Yes  No  No  No  Yes  No  Yes  No -->
+<!-- \end{center}  -->
+<!-- 7 out of the first 20 values of $n$ yield prime numbers, an efficiency for finding primes of 35\%. -->
+
+(\#cnj:unpin): If $2^a - 1$ is prime, then $a$ is prime. <br /> *Hint: Try a proof by contrapositive.* <br /> *Hint: For integers $x,y$, $x^n + y^n = (x-y)(x^{n-1} + x^{n-2}y + x^{n-3}y^2 + ... xy^{n-2} + y^{n-1})$.*
+<!-- https://web.maths.unsw.edu.au/~jim/proofsch6.pdf -->
+
+(\#cnj:unpeg): For a positive integer $a$, at least one of $2^{a}-1$ and $2^{a}+1$ isn't prime.
+<!-- (Except in which exceptional case(s)?) -->
+
+(\#cnj:unsay): For a positive integer $a$, at least one of $2^{a}-1$ and $2^{a}+1$ is prime.
+
+(\#cnj:umiak): For a positive integer $a$, exactly one of $2^{a}-1$ and $2^{a}+1$ is prime. 
+
+***
+
+(\#cnj:usnea): If the greatest common divisor of two positive integers, $a$ and $b$, is $> 1$, then either $b$ | $a$ or $b$ is composite. 
+
+(\#cnj:ukase): If $a$ is a integer greater than 1, then none of the numbers $a!+2$, $a!+3$, $a!+4$, $a!+5$, ..., $a!+ a$ are prime. <br /> *Hint: This conjecture could be expressed as: For any $a \geq 2$, there exists $a-1$ consecutive composite numbers.*
+<!-- https://www.ipracticemath.com/learn/realnumber/natural-numbers -->
+
+(\#cnj:unfix): Every integer greater than $1$ has at least one prime divisor. <br /> *WARNING: THis one's tough!*
+<!-- Proof here: http://gauss.math.luc.edu/greicius/Math201/Fall2012/Lectures/primes.article.pdf -->
+</div>
+
+<!-- underuntilunionurbanupperusualusageupsetunityundueuncleultraurineuniteutterulcerunmetusherunifyunfituncutusurpunlitundidusuryudderuntieunwedumberupendulemaunzipumbrauvula -->

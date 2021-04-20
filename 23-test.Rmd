@@ -1,0 +1,31 @@
+# List of sources
+
+Aside from those created by the author, the following were extremely useful in the compiling of conjectures for this book:
+
+https://www.cse.wustl.edu/~cytron/547Pages/f14/IntroToProofs_Final.pdf
+
+http://sites.millersville.edu/bikenaga/math-proof/proof-by-cases/proof-by-cases.pdf
+
+https://www.birmingham.ac.uk/Documents/college-eps/college/stem/Student-Summer-Education-Internships/Proof-and-Reasoning.pdf#page17 
+
+http://www.columbia.edu/~md3405/Proofs\%20Solutions.pdf#page11 
+
+https://www.cs.colostate.edu/~cs160/.Fall13/assignments/Homework2Solution.pdf 
+
+http://mrpaynemath.weebly.com/uploads/3/8/9/9/38994693/math2201ch1.3notes-workings.pdf
+
+http://www.cs.nthu.edu.tw/~wkhon/math/lecture/lecture04.pdf 
+
+https://storm.cis.fordham.edu/zhang/cs2100/slides/IntroToProof.pdf 
+
+http://people.cs.pitt.edu/~litman/courses/cs441/lecture7.pdf 
+
+https://web.maths.unsw.edu.au/~jim/proofsch3.pdf 
+
+https://www.people.vcu.edu/~rhammack/Discrete/ChapterDirect.pdf 
+
+http://mrpaynemath.weebly.com/uploads/3/8/9/9/38994693/math2201ch1.3notes-workings.pdf 
+
+http://alevelmathsrevision.com/downloads/A2/Pure/Proof 
+
+https://madasmaths.com/archive/maths_booklets/further_topics/various/proof_general.pdf

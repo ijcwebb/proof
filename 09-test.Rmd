@@ -6,7 +6,7 @@ Prior to beginning to prove some conjectures, there are several questions which 
 
 We should ask ourselves why we should care about mathematical proof. (Hopefully you asked yourself this prior to taking this course!) Why are mathematics proofs important? This is a *big* question, which we won't pretend to be able to answer in just a few short paragraphs, but I'll mention a couple of my main reasons for caring about mathematical proof:
 
-- A proof of a mathematical statement is absolute; there is no exception to the rule. They cannot be argued this way or that way, and no two people can come to different conclusions upon reading a mathematical proof. There is no "fake news", "alternative facts", or lies in mathematics. Such absolute statements are wonderful and do not exist in any other field of study
+- A proof of a mathematical statement is absolute; there is no exception to the rule. They cannot be argued this way or that way, and no two people can come to different conclusions upon reading a mathematical proof. There is no "fake news", "alternative facts", or lies in mathematics. Such absolute statements are wonderful and do not exist in any other field of study. As the mathematician Simon Singh wrote: “The search for a mathematical proof is the search for a knowledge which is more absolute than the knowledge accumulated by any other discipline”.
 
 - Mathematics is EVERYWHERE! From music to the economy, from demographics to nature, from business to space travel, mathematics is used to help us reason about the world we live in. If we weren't able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us.
 

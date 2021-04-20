@@ -1,0 +1,25 @@
+# Glossary
+
+Below is a list of commons terms in mathematical proof.
+
+
+A **definition** lays down the meaning of a concept. It is a statement which tells the reader what something is.
+
+The term **axiom** is used throughout the whole of mathematics to mean a statement which is accepted as true for that particular branch. Different fields of mathematics usually have different sets of statements which are considered as being axiomatic. 
+
+A **statement** is a sentence which is either true or is false. Once you start considering proving a statement, you can call it a **proposition**. Once a proposition has been accepted “publicly” as something which is true but unproven it can referred to as a **conjecture**. This is an unproven statement which is believed to be true but has not yet been proven.  
+
+The term **theorem** is used throughout the whole of mathematics to mean a statement which has been proved to be true from whichever axioms are relevant to that particular branch. Statements which are taken as axioms in one branch of mathematics may be theorems (or irrelevant) in others.
+
+A **lemma** is a statement which is proven during the course of reaching the proof of a theorem. There is no real difference between a lemma and a theorem: they are both statements whose value is either true or false. However, a lemma is seen more as a stepping-stone than a theorem in itself (and frequently takes a lot more work to prove than the theorem to which it leads). Some lemmas are famous enough to be named after the mathematician who proved them (for example: Abel's Lemma and Urysohn's Lemma), but they are still categorised as second-class citizens in the aristocracy of mathematics!
+
+A **corollary** is a proof which is a direct result, or a direct application, of another proof. It can be considered as being a proof for free on the back of a proof which has been paid for with blood, sweat and tears. The word is ultimately derived from the Latin corolla, meaning small garland, or the money paid for it. Hence has the sense something extra, lagniappe or freebie.
+
+
+Sources: <br /> 
+https://www.quora.com/What-are-the-differences-between-theorems-definitions-axioms-lemmas-corollaries-propositions-and-statements <br /> 
+https://www.mathblog.dk/theorems-lemmas
+
+See also: <br />
+https://mathoverflow.net/questions/18352/theorem-versus-proposition <br /> 
+https://www.slader.com/discussion/question/what-is-the-negation-of-each-of-these-propositions 

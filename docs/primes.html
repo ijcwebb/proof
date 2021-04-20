@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Truth values | An Introduction to Mathematical Proof</title>
+  <title>Chapter 20 Primes | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Truth values | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 20 Primes | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Truth values | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 20 Primes | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="statements.html"/>
-<link rel="next" href="mathematical-statements.html"/>
+<link rel="prev" href="other-methods.html"/>
+<link rel="next" href="mathematical-incompleteness.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -212,212 +212,122 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="truth-values" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Truth values</h1>
-<div id="what-is-the-truth-value-of-a-statement" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> What is the truth value of a statement?</h2>
-<p>Simply, the <em>truth value</em> of a statement is whether the statement is true or false.</p>
-<ul>
-<li>The truth value of the statement “Bishkek is the capital of the Kyrgyz Republic” is true.</li>
-<li>The truth value of the statement “Osh is the capital of the Kyrgyz Republic” is false.</li>
-</ul>
+<div id="primes" class="section level1" number="20">
+<h1><span class="header-section-number">Chapter 20</span> Primes</h1>
+<p>The primes are a fascinating family of numbers. They are the building blocks of the integers, because every number is either prime or is the product of primes. For that reason, this chapter presents a whole set of conjectures on the primes.</p>
+<p>Remember, the first few primes are <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(5\)</span>, <span class="math inline">\(7\)</span>, <span class="math inline">\(11\)</span>, <span class="math inline">\(13\)</span>, <span class="math inline">\(17\)</span>, <span class="math inline">\(19\)</span>, <span class="math inline">\(23\)</span>, <span class="math inline">\(29\)</span>, <span class="math inline">\(31\)</span>, <span class="math inline">\(37\)</span>, <span class="math inline">\(41\)</span>, <span class="math inline">\(43\)</span>, <span class="math inline">\(47\)</span>, <span class="math inline">\(53\)</span>, <span class="math inline">\(59\)</span>, <span class="math inline">\(61\)</span>, <span class="math inline">\(67\)</span>, <span class="math inline">\(71\)</span>, <span class="math inline">\(73\)</span>, <span class="math inline">\(79\)</span>, <span class="math inline">\(83\)</span>, <span class="math inline">\(89\)</span>, <span class="math inline">\(97\)</span>, <span class="math inline">\(101\)</span>, <span class="math inline">\(103\)</span>, <span class="math inline">\(107\)</span>, <span class="math inline">\(109\)</span>, <span class="math inline">\(113\)</span>….</p>
+<p>The first <span class="math inline">\(10,000\)</span> primes are listed here: <a href="https://primes.utm.edu/lists/small/10000.txt" class="uri">https://primes.utm.edu/lists/small/10000.txt</a>.</p>
+<div id="work-through-in-order-building-on-your-earlier-work" class="section level2" number="20.1">
+<h2><span class="header-section-number">20.1</span> Work through in order, building on your earlier work</h2>
+<p>It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture:</p>
 <div class="alert alert-info" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-40" class="exercise"><strong>Exercise 3.1  </strong></span>What are the truth values of the following statements?</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(4 + 4 = 9\)</span></li>
-<li><span class="math inline">\(3 \cdot 6 = 18\)</span></li>
-<li>Ice melts above <span class="math inline">\(0^{\circ}\)</span>C on Earth.</li>
-<li><span class="math inline">\(11,118\)</span> is the largest number in existence.</li>
-<li>The Earth is closer to the Sun than Jupiter.</li>
-<li><span class="math inline">\(a^2+b^2=c^2\)</span>, where <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c = 1\)</span>.</li>
-<li><span class="math inline">\(a = b+c\)</span>.</li>
-<li><span class="math inline">\(1000\)</span> is a large number.</li>
-</ol>
-<p>See below for the answers.</p>
+<p>Conjecture 20.1 : Every prime number, except <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>, is either one more or one less than a multiple of <span class="math inline">\(6\)</span>.</p>
 </div>
-</div>
-</div>
-<div id="statements-with-clearly-defined-truth-values" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Statements with clearly defined truth values</h2>
-<p>Look back up at <strong>Exercise 3.1</strong>. The first 6 statements all have <strong>clearly defined</strong> truth values: they are either true (b, c and e) or false (a, d and f).</p>
-<p>What do we mean when we say a statement has a clearly defined truth value?</p>
-<ul>
-<li><strong>Completeness</strong> - The statement contains enough information for its truth value to be decided. Terms are clearly defined or easily researchable.</li>
-<li><strong>Objectivity</strong> - The truth value of the statement is not based on personal opinion or experience.</li>
-<li><strong>Mutual exclusivity</strong> - If a statement is true, it can’t also be false. If a statement is false, it can’t also be true.</li>
-<li><strong>Universality</strong> - If the statement is true today, it will be true tomorrow, and it was true yesterday.</li>
-</ul>
+<p>will help you in proving the conjecture</p>
 <div class="alert alert-info" role="alert">
+<p>Conjecture 20.2 : Doubling any prime number (except 2) then adding two creates a number divisible by four.</p>
+</div>
+<p>First, try to the prove Conjecture <a href="#cnj:undue">20.1</a>. (Hint: You might want to try writing the positive integers greater than <span class="math inline">\(3\)</span> in a rectangular grid, in such a way that all the primes are in only one or two columns.).</p>
+<p>Then see below how your work can help you in proving Conjecture <a href="#cnj:unity">20.2</a>.</p>
+<div class="alert alert-success" role="alert">
 
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-41" class="exercise"><strong>Exercise 3.2  </strong></span>Write:</p>
-<ol style="list-style-type: lower-alpha">
-<li>a statement which has a clearly defined truth value of <strong>true</strong>.<br />
-</li>
-<li>a statement which has a clearly defined truth value of <strong>false</strong>.</li>
-<li>a statement which has a clearly defined truth value that <em>only you</em> know.</li>
-</ol>
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> As conjecture <a href="#cnj:undue">20.1</a> is known to be true, we know that every prime <span class="math inline">\(p\)</span>, <span class="math inline">\(p \neq 2, 3\)</span>, can be written in the form</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k + 1
+\end{align}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k - 1
+\end{align}\]</span></p>
+<p>with <span class="math inline">\(k \in \mathbb Z\)</span>.</p>
+<p>Let’s deal with these one-by-one.</p>
+<p>If</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k + 1
+\end{align}\]</span></p>
+<p>then doubling it and adding two gives</p>
+<p><span class="math display">\[\begin{align}
+    2p + 2  &amp;= 2(6k + 1) + 2 \\
+    &amp;= 12p + 2 + 2 \\
+    &amp;= 12p + 4 \\
+    &amp;= 4(3p + 1)
+\end{align}\]</span></p>
+<p>which is a multiple of 4.</p>
+<p>Similarly, if</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k - 1
+\end{align}\]</span></p>
+<p>then doubling it and adding two gives</p>
+<p><span class="math display">\[\begin{align}
+    2p + 2  &amp;= 2(6k - 1) + 2 \\
+    &amp;= 12p - 2 + 2 \\
+    &amp;= 12p \\
+    &amp;= 4(3p)
+\end{align}\]</span></p>
+<p>which is a multiple of 4.</p>
+<p>As noted in the first line of the proof, this proof covers all primes <em>except</em> <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>. However, conjecture <a href="#cnj:unity">20.2</a> covers all primes except <span class="math inline">\(2\)</span>, so we should also check that the conjecture holds for <span class="math inline">\(3\)</span>.</p>
+<p>If <span class="math inline">\(p=3\)</span>, then <span class="math inline">\(2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8\)</span>, which is a multiple of <span class="math inline">\(4\)</span>.</p>
+<p>Therefore the conjecture is true.</p>
 </div>
 </div>
 </div>
-<div id="statements-without-clearly-defined-truth-values" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Statements without clearly defined truth values</h2>
-<p>Look again at <strong>Exercise 3.1</strong>. Statements g and h <em>don’t</em> have clearly defined truth values? Why not?</p>
-<p>Let’s look at g:</p>
-<center>
-<p><span class="math inline">\(a = b + c\)</span></p>
-</center>
-<p>This statement doesn’t contain enough information for us to be able to decide on its truth value. Aidai can make this statement true, by choosing the numbers <span class="math inline">\(a = 5\)</span>, <span class="math inline">\(b = 2\)</span> and <span class="math inline">\(c = 3\)</span>. But Patime can make this statement false, by choosing the numbers <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c = 1\)</span>. When two people can come to different conclusions about the truth value of a statement, its truth value is not clearly defined.</p>
-<p>Next we’ll look at h:</p>
-<center>
-<p><span class="math inline">\(1000\)</span> is a large number.</p>
-</center>
-<p>This statement doesn’t have a clearly defined truth value because it depends on personal opinion. Younger members of your family might say the truth value of this statement is true, because they are used to using smaller numbers. However an economist or an astrophysicist or a paleontologist (or you) might disagree, because they are used to dealing with numbers much larger than 1000.</p>
-<p>Let’s look at two more examples:</p>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-42" class="example"><strong>Example 3.1  </strong></span><span class="math inline">\(4x&gt;0\)</span></p>
-</div>
-<p>Why is the truth value of this statement not clearly defined? It’s because there is not enough information. Its truth value depends entirely on the value of <span class="math inline">\(x\)</span>, about which we know nothing. If we choose <span class="math inline">\(x\)</span> to be 10, this statement is true, but if we choose <span class="math inline">\(x\)</span> to be <span class="math inline">\(-5\)</span>, the statement is false.</p>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-43" class="example"><strong>Example 3.2  </strong></span>Bishkek is a big city.</p>
-</div>
-<p>We’ve already said that good statements are clear and specific. The reason for this is so that we can decide their truth value.</p>
-<p>In this statement, “big” is a very vague term. The units of measurement aren’t clear. Is it referring to area, to the number of people in Bishkek, to the number of buildings, to the size of those buildings? Also, big compared to what? Compared to Karakol? Compared to Osh? Compared to Almaty? Compared to Seoul? Or maybe compared to 100 years ago? Again, it’s not clear.</p>
+<div id="conjectures-7" class="section level2" number="20.2">
+<h2><span class="header-section-number">20.2</span> Conjectures</h2>
+<p>As always, be aware that some of these conjectures are false, and should be disproved using a counterexample or a disproof.</p>
 <div class="alert alert-info" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-44" class="exercise"><strong>Exercise 3.3  </strong></span>The following statements <strong>do not</strong> have clearly defined truth values. Why not?</p>
-<ol style="list-style-type: lower-alpha">
-<li>This math problem is difficult.</li>
-<li>Damascus is an old city.</li>
-<li>The largest city in my country is also my capital city.</li>
-<li>The world is in a bad state.</li>
-<li><span class="math inline">\(3.14\)</span>.</li>
-<li><span class="math inline">\(x\)</span> is positive.</li>
-<li><span class="math inline">\(ab &gt; cd\)</span></li>
-<li>Tomorrow is Wednesday.</li>
-<li><span class="math inline">\(4\)</span> is an unlucky number.</li>
-<li>Nur-Sultan is the capital of Kazakhstan.</li>
-</ol>
+<p>Conjecture 20.3 : There are an infinite amount of prime numbers. <br /> <em>Hint: See 12:30-14:45 of <a href="https://www.youtube.com/watch?v=OihQPf4mJH4" class="uri">https://www.youtube.com/watch?v=OihQPf4mJH4</a>.</em></p>
+<hr />
+<p><em>Look back to Conjecture 13.15. Now attempt these two conjectures:</em></p>
+<p>Conjecture 20.4 : <span class="math inline">\(a^2 - a + 41\)</span> is always prime for all positive integers <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 20.5 : <span class="math inline">\(a^2 - a + 41\)</span> is always prime for all nonpositive integers <span class="math inline">\(a\)</span>.</p>
+<hr />
+<p>Conjecture 20.6 : All primes are odd.</p>
+<p>Conjecture 20.7 : There are no positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a\)</span> prime and <span class="math inline">\(a = 6b + 3\)</span>.</p>
+<p>Conjecture 20.8 : There are no positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a\)</span> prime and <span class="math inline">\(a = 6b + 5\)</span>.</p>
+<p>Conjecture 20.9 : For every positive composite<a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a> integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> able to be the same as <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
+<!-- [DIRECT] --></p>
+<p>Conjecture 20.10 : For every positive composite integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> <span class="math inline">\(\neq\)</span> <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
+<!-- (c-e) --></p>
+<p>Conjecture 20.11 : For any positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, where <span class="math inline">\(a \neq 1\)</span>, if <span class="math inline">\((a^b + 1)\)</span> is prime then <span class="math inline">\(a\)</span> is even.
+<!-- Solution: Assume a ≥ 2 is odd, then $a^m + 1$ is even for every natural number m and therefore it cannot be a prime. From: personal.ee.surrey.ac.uk/Personal/M.Bartuccelli/Modules/MS125/10solutass1.pdf --></p>
+<p>Conjecture 20.12 : If <span class="math inline">\(a\)</span> is a prime number and <span class="math inline">\(a\)</span> | <span class="math inline">\(b\)</span>, then <span class="math inline">\(a\nmid (b+1)\)</span>.</p>
+<p>Conjecture 20.13 : Every positive integer can be written as the sum of two composite integers.</p>
+<p>Conjecture 20.14 : Every integer greater than 11 can be written as the sum of two composite integers.
+<!-- How about this solution?? If n is even, then n is of the form 2k where k≥6. Hence n=2(k−4)+8. And if n is odd, then n is of the form 2k+1 where k≥5. hence n=2(k−4)+9. Thus any number >11 can be expressed as the sum of two composite numbers!! From https://math.stackexchange.com/questions/450930/prove-by-contradiction-that-every-integer-greater-than-11-is-a-sum-of-two-compos --></p>
+<hr />
+<p><em>Large primes are essential for online security, banking and encryption. There’s a search for larger and larger primes to keep the Internet private. One method of finding possible primes is <span class="math inline">\(2^{a} - 1\)</span>, where <span class="math inline">\(a\)</span> is a positive integer.</em></p>
+<p>Conjecture 20.15 : Let <span class="math inline">\(a\)</span> be a positive integer. <span class="math inline">\(2^{a} - 1\)</span> is always prime.</p>
+<p>Conjecture 20.16 : Let <span class="math inline">\(a\)</span> be a positive composite integer. <span class="math inline">\(2^a - 1\)</span> is always prime.</p>
+<p>Conjecture 20.17 : Let <span class="math inline">\(a\)</span> be a prime number. <span class="math inline">\(2^a - 1\)</span> is always prime.
+<!-- WHILST THIS THEOREM HOLDS TRUE FOR THE FIRST FEW PRIMES ($n = 2, 3, 5, 7$ ALL YIELD PRIMES), THE THEOREM BREAKS AT $n = 11$ BECAUSE $n^{11} - 1 = 2047$ ISN'T PRIME (IT'S DIVISIBLE BY $23$ AND $89$). -->
+<!-- Bonus question: How effective is this method for finding primes for the first twenty values of $a$? -->
+<!-- Answer: For $n = 1$ to $n = 20$, we have: -->
+<!-- \begin{center} -->
+<!-- No  Yes  Yes  No  Yes  No  Yes  No  No  No  No  No  Yes  No  No  No  Yes  No  Yes  No -->
+<!-- \end{center}  -->
+<!-- 7 out of the first 20 values of $n$ yield prime numbers, an efficiency for finding primes of 35\%. --></p>
+<p>Conjecture 20.18 : If <span class="math inline">\(2^a - 1\)</span> is prime, then <span class="math inline">\(a\)</span> is prime. <br /> <em>Hint: Try a proof by contrapositive.</em> <br /> <em>Hint: For integers <span class="math inline">\(x,y\)</span>, <span class="math inline">\(x^n + y^n = (x-y)(x^{n-1} + x^{n-2}y + x^{n-3}y^2 + ... xy^{n-2} + y^{n-1})\)</span>.</em>
+<!-- https://web.maths.unsw.edu.au/~jim/proofsch6.pdf --></p>
+<p>Conjecture 20.19 : For a positive integer <span class="math inline">\(a\)</span>, at least one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> isn’t prime.
+<!-- (Except in which exceptional case(s)?) --></p>
+<p>Conjecture 20.20 : For a positive integer <span class="math inline">\(a\)</span>, at least one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> is prime.</p>
+<p>Conjecture 20.21 : For a positive integer <span class="math inline">\(a\)</span>, exactly one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> is prime.</p>
+<hr />
+<p>Conjecture 20.22 : If the greatest common divisor of two positive integers, <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, is <span class="math inline">\(&gt; 1\)</span>, then either <span class="math inline">\(b\)</span> | <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is composite.</p>
+<p>Conjecture 20.23 : If <span class="math inline">\(a\)</span> is a integer greater than 1, then none of the numbers <span class="math inline">\(a!+2\)</span>, <span class="math inline">\(a!+3\)</span>, <span class="math inline">\(a!+4\)</span>, <span class="math inline">\(a!+5\)</span>, …, <span class="math inline">\(a!+ a\)</span> are prime. <br /> <em>Hint: This conjecture could be expressed as: For any <span class="math inline">\(a \geq 2\)</span>, there exists <span class="math inline">\(a-1\)</span> consecutive composite numbers.</em>
+<!-- https://www.ipracticemath.com/learn/realnumber/natural-numbers --></p>
+<p>Conjecture 20.24 : Every integer greater than <span class="math inline">\(1\)</span> has at least one prime divisor. <br /> <em>WARNING: THis one’s tough!</em>
+<!-- Proof here: http://gauss.math.luc.edu/greicius/Math201/Fall2012/Lectures/primes.article.pdf --></p>
 </div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-45" class="exercise"><strong>Exercise 3.4  </strong></span>Amend each of the ten statements in <strong>Exercise 3.3</strong> to give a statement with a clearly define truth value.</p>
-</div>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-46" class="exercise"><strong>Exercise 3.5  </strong></span>Write a statement which does not have clearly defined truth value. For what reason(s) does your statement not have a clearly defined truth value?</p>
-</div>
-</div>
-</div>
-<div id="unknown-truth-values" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Unknown truth values</h2>
-<p>What if you don’t know the truth value of a statement? Does that mean it is not clearly defined?</p>
-<p>Let’s consider the following statement:</p>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-47" class="example"><strong>Example 3.3  </strong></span><span class="math inline">\(29,999\)</span> is a prime number.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
-</div>
-<p>You probably don’t know whether this statement is true or false. I certainly didn’t know when I wrote it! However, it’s clear that this statement <em>will</em> have a clearly defined truth value, even if we don’t know what it is:</p>
-<ul>
-<li><strong>Completeness</strong> - The statement contains enough information, and the terms are clear.</li>
-<li><strong>Objectivity</strong> - The primeness of numbers is not a matter of personal opinion.</li>
-<li><strong>Mutual exclusivity</strong> - This statement is either true or it is false: 29,999 can’t be both prime and not prime.</li>
-<li><strong>Universality</strong> - If 29,999 is prime today, it will be prime tomorrow, and it was prime yesterday.</li>
-</ul>
-<p>Here’s another example:</p>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-48" class="example"><strong>Example 3.4  </strong></span>Earth is the only planet in the entire universe with life.</p>
-</div>
-<ul>
-<li><strong>Completeness</strong> - The statement contains enough information, and the terms are clear (as long as life is clearly defined<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>).</li>
-<li><strong>Objectivity</strong> - The existence (or not) of life on other planets won’t be a personal opinion: it either exists or it doesn’t.</li>
-<li><strong>Mutual exclusivity</strong> - This statement is either true or it is false.</li>
-<li><strong>Universality</strong> - This statement is universal to a point. For example, the truth value of this statement <em>could</em> change over time, for example if life appears on a planet sometime in the future. However, considering the huge amounts of time that is required for life to appear, for our purposes this statement has universality.</li>
-</ul>
-<p>Despite not knowing the truth value of this statement, it will have a clearly defined truth value. Either Earth <em>is</em> the only planet with life (statement’s truth value: true) or there are other planets with life somewhere in the universe (statement’s truth value: false).</p>
-<p>However, unlike <strong>Example 3.1</strong>, this statement’s truth value is less easy to find out. Googling ``is there life out there?’’ isn’t going to help, as the answer is not yet known, and might never be known.</p>
-<div class="alert alert-warning" role="alert">
-<p><strong>Careful!</strong></p>
-<p>Just because we don’t know the truth value of a statement, that doesn’t mean it doesn’t have one!</p>
-<p>It’s also possible that a statement has a clearly defined truth value that we will <em>never</em> know.</p>
-</div>
-<div class="alert alert-danger" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-49" class="exercise"><strong>Exercise 3.6  </strong></span>Do you know (or can find out about) any statements which will have a clearly defined truth value but which no one in the world knows? Do people who know a lot about this statement think the truth value <em>will</em> one day be known, do they know it can never be known, or are they not sure?</p>
-</div>
-</div>
-<div class="alert alert-info" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-50" class="exercise"><strong>Exercise 3.7  </strong></span>Which of the following are important for a statement’s truth value to be clearly defined?</p>
-<ul>
-<li>The statement contains enough information to assess its truth value.</li>
-<li>The statement is written in English.</li>
-<li>The statement is about mathematics.</li>
-<li>Any terms new to the reader are easy to look up using Google or in a book.</li>
-<li>The statement is objectively true or false, not personal opinion.</li>
-<li>The statement contains numbers.</li>
-<li>The statement is universally true or false, not just locally.</li>
-<li>The statement is short.</li>
-<li>All terms are clear.</li>
-<li>The statement is not a paradox.</li>
-<li>Someone else wrote the statement, not me.</li>
-<li>The statement is typed, not handwritten.
-</div></li>
-</ul>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-51" class="exercise"><strong>Exercise 3.8  </strong></span>Which of the following statements will have clearly defined truth values? Which <em>won’t</em> have clearly defined truth values? Why not?</p>
-<ol style="list-style-type: lower-alpha">
-<li>No UN member state has a flag which contains purple.</li>
-<li>SZA is taller than The Weeknd.</li>
-<li>People find me funnier than you.</li>
-<li>There is a largest number.</li>
-<li><span class="math inline">\(x &gt; 0\)</span>.</li>
-<li><span class="math inline">\(|x|\)</span> is never negative.</li>
-<li>All odd numbers end with <span class="math inline">\(1\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(5\)</span>, <span class="math inline">\(7\)</span> or <span class="math inline">\(9\)</span>.</li>
-<li>All even numbers end with <span class="math inline">\(2\)</span>, <span class="math inline">\(4\)</span>, <span class="math inline">\(6\)</span>, <span class="math inline">\(8\)</span> or <span class="math inline">\(0\)</span>.</li>
-<li><span class="math inline">\(100\)</span> is prime.</li>
-<li>Poetry is difficult to understand.</li>
-<li>Earth is the only planet in the universe which contains life.</li>
-<li>All square numbers are even.</li>
-<li>There are no solutions to the equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</li>
-<li>There are no solutions to the equation <span class="math inline">\(a^3 + b^3 = c^3\)</span>.</li>
-<li>All perfect numbers are even.</li>
-<li>Eating vegetables is good for people’s health.</li>
-<li>All men are created equal.</li>
-<li>It rained in Bishkek on 01/01/2021.</li>
-<li>All people have black hair.</li>
-<li>Most people are good.</li>
-<li>Max is tall.</li>
-<li>The identity of the oldest person alive is known.</li>
-<li><span class="math inline">\(30\mod 7 = 2\)</span>.</li>
-<li><span class="math inline">\(29\mod 4 = 3\)</span>.</li>
-<li>Japanese is the hardest language for non-native speakers to learn.</li>
-<li>Japanese is difficult for non-native speakers to learn.</li>
-</ol>
-</div>
-</div>
-<!-- <div class="alert alert-success" role="alert"> -->
-<!-- <strong> What have we learnt? </strong>  -->
-<!-- In the previous chapter, we learnt what makes a good statement. In this chapter, we have learnt about truth values, and what it means for a statement to have a clearly defined truth value. -->
-<!-- </div> -->
-<p>In our next chapter, we define a new term…</p>
+<!-- underuntilunionurbanupperusualusageupsetunityundueuncleultraurineuniteutterulcerunmetusherunifyunfituncutusurpunlitundidusuryudderuntieunwedumberupendulemaunzipumbrauvula -->
 
 </div>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="3">
-<li id="fn3"><p>Go googling if you’re not sure what <em>prime</em> means!<a href="truth-values.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>It is possible that people might disagree on what constitutes life, see <a href="https://www.theguardian.com/books/2020/aug/06/lyfe-a-new-word-for-aliens-that-takes-a-leaf-out-of-life" class="uri">https://www.theguardian.com/books/2020/aug/06/lyfe-a-new-word-for-aliens-that-takes-a-leaf-out-of-life</a>. However, as long as we agree on a definition of life, this statement will have a clearly defined truth value.<a href="truth-values.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<ol start="50">
+<li id="fn50"><p>Composite numbers: <a href="http://mathworld.wolfram.com/CompositeNumber.html" class="uri">http://mathworld.wolfram.com/CompositeNumber.html</a>.<a href="primes.html#fnref50" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -425,8 +335,8 @@
           </div>
         </div>
       </div>
-<a href="statements.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="mathematical-statements.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="other-methods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mathematical-incompleteness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -457,7 +367,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/03-test.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/20-test.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -465,7 +375,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/03-test.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/20-test.Rmd",
 "text": null
 },
 "download": null,
