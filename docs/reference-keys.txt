@@ -273,12 +273,6 @@ cnj:progress
 eq:pursuit
 eq:paper
 exr:unnamed-chunk-173
-cnj:japes
-cnj:jade
-cnj:joke
-cnj:jest
-cnj:jeep
-cnj:XXX
 cnj:undue
 cnj:unity
 cnj:zaddikims
