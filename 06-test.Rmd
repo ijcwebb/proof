@@ -76,9 +76,9 @@ How many theories in *your* major do you know? How are theories in your major pr
 ```  
 </div>
 
-<div class="alert alert-success" role="alert">
-<strong> What have we learnt? </strong> 
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong> What have we learnt? </strong>  -->
 
-- As discussed in Chapter 4, a good mathematical statement has an unchanging truth value. In many fields, the truth value of statements can change over time, but in mathematics, once the truth value of a mathematical statement has been established, it will remain this way forever.
+<!-- - As discussed in Chapter 4, a good mathematical statement has an unchanging truth value. In many fields, the truth value of statements can change over time, but in mathematics, once the truth value of a mathematical statement has been established, it will remain this way forever. -->
 
-</div>
+<!-- </div> -->

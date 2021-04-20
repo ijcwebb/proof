@@ -124,6 +124,7 @@ A couple of observations first. Note that $a, c >0$ implies that $a \neq 0$, whi
 
 First, the good proof.
 
+<div class="alert alert-success" role="alert">
 ```{proof}
 Our starting point $P$ is $x = \pm \sqrt{\frac{c}{a}}$, with $a, c \in \mathbb R^+$.
   If
@@ -143,6 +144,7 @@ Our starting point $P$ is $x = \pm \sqrt{\frac{c}{a}}$, with $a, c \in \mathbb R
   We have shown that $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$ as required.
 
 ```
+</div>
 
 Here are a couple of things to notice:
 
@@ -158,6 +160,7 @@ Here are a couple of things to notice:
 
 Now for the bad proof.
 
+<div class="alert alert-success" role="alert">
 ```{proof}
 
 \begin{align}
@@ -167,6 +170,7 @@ Now for the bad proof.
 which completes the proof.
 
 ```
+</div>
 
 You can probably see very easily that this second proof is far from perfect. However, you might argue that the person who wrote the answer more or less knew what they meant. For example, they know "why" $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$. The question then is, what's wrong with this proof? 
 

@@ -120,6 +120,7 @@ Conjecture \@ref(cnj:hobby): First, we rewrite the conjecture,
 
 Now we're ready for a proof by cases. We'll use a direct proof within each of the two cases.
 
+<div class="alert alert-success" role="alert">
 ```{proof}
 <br />
 **Case 1:** $a$ even
@@ -167,6 +168,7 @@ $2k^2 + 2k$ is clearly an integer. Let's call it $m$. Therefore we have
 which is clearly odd.
 
 ```
+</div>
 
 ***
 
@@ -176,6 +178,7 @@ Conjecture \@ref(cnj:haunt): First, we rewrite the conjecture,
 
 Now we're ready for a proof by cases.
 
+<div class="alert alert-success" role="alert">
 ```{proof}
 <br />
 **Case 1:** $a \in \mathbb Z^-$ <br /> 
@@ -196,6 +199,7 @@ If $a=4$ then $a^2 + a^3 = 80 \neq 100$. <br />
 As $5^2 + 5^3 = 150 > 100$, all integers from $5$ and up will be too large for $a^2 + a^3$ to equal $100$.
 
 ```
+</div>
 
 ***
 
@@ -205,6 +209,7 @@ Conjecture \@ref(cnj:have): First, we rewrite the conjecture,
 
 Now we're ready for a proof by cases.
 
+<div class="alert alert-success" role="alert">
 ```{proof}
 <br />
 **Case 1:** $a$ and $b$ both $\geq 0$ <br />
@@ -264,6 +269,7 @@ The conjecture says that $|a + b| \leq |a| + |b|$, so we must show that
 Adding $b$ to both sides gives $-a \leq a$ which, as $a \geq 0$, is clearly true.
 
 ```
+</div>
 
 ***
 
@@ -273,6 +279,7 @@ Conjecture \@ref(cnj:hallway): First, we rewrite the conjecture,
 
 Now we're ready for a proof by cases. 
 
+<div class="alert alert-success" role="alert">
 ```{proof} 
 If $a$ is a perfect square, then there is some integer that when squared gives $a$. As all integers are either a multiple of $3$, one more than a multiple of $3$ or two more than a multiple of $3$, I'll consider these three cases. We'll use a direct proof within each case.
 
@@ -310,6 +317,7 @@ which is clearly one more than a multiple of 3.
 As we've accounted for all square numbers, we're done.
 
 ```
+</div>
 
 ***
 

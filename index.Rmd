@@ -65,16 +65,26 @@ Solutions won't be given in the book for these exercises, but we may discuss the
 
 There are a couple of other coloured boxes used in this book:
 
+<div class="alert alert-success" role="alert">
+```{proof}
+<br />
+Proofs look like this.
+
+```
+</div>
+
 <div class="alert alert-warning" role="alert">
 <strong>Careful!
-</strong> This is where I alert you to mistakes commonly made by students in this course. Read these warnings carefully to avoid these mistakes yourself.
+</strong> 
+
+This is where I alert you to mistakes commonly made by students in this course. Read these warnings carefully to avoid these mistakes yourself.
 </div>
 
 
-<div class="alert alert-success" role="alert">
-<strong>What we've learnt </strong> 
-These boxes are found at the end of the early chapters, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too. 
-</div>
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong>What we've learnt </strong>  -->
+<!-- These boxes are found at the end of the early chapters, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too.  -->
+<!-- </div> -->
 
 ## Contents
 

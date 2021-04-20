@@ -136,11 +136,11 @@ d. There is no set^[A set is a collection of items.] whose cardinality^[Cardinal
 ``` 
 </div>
 
-<div class="alert alert-success" role="alert">
-<strong> What have we learnt? </strong> 
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong> What have we learnt? </strong>  -->
 
-- We've learnt to consider the *nature* of the statement, not its subject, when deciding if it is "mathematical" or not: the phrase 'mathematical statement' refers to a statement with a clearly-defined truth value, but not necessarily about mathematics.
+<!-- - We've learnt to consider the *nature* of the statement, not its subject, when deciding if it is "mathematical" or not: the phrase 'mathematical statement' refers to a statement with a clearly-defined truth value, but not necessarily about mathematics. -->
 
-- Therefore, the statement "C is the eighth letter of the Latin alphabet", "Nur-Sultan is further North than Bishkek" and "10 > 8" are all mathematical statements, but neither "$a > b$" nor  "$a^2 + b^2 = c^2$" nor "Bishkek is a green city" are mathematical statements, because they don't have a clearly-defined truth value.
+<!-- - Therefore, the statement "C is the eighth letter of the Latin alphabet", "Nur-Sultan is further North than Bishkek" and "10 > 8" are all mathematical statements, but neither "$a > b$" nor  "$a^2 + b^2 = c^2$" nor "Bishkek is a green city" are mathematical statements, because they don't have a clearly-defined truth value. -->
 
-</div>
+<!-- </div> -->

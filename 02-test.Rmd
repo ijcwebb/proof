@@ -264,14 +264,14 @@ j. The longest word in this sentence is "complementary".
 ```
 </div>
 
-<div class="alert alert-success" role="alert">
-<strong> What have we learnt? </strong> 
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong> What have we learnt? </strong>  -->
 
-- We know what *isn't* a statement.
-- We know what makes a *bad* statement.
-- We know what makes a *good* statement.
+<!-- - We know what *isn't* a statement. -->
+<!-- - We know what makes a *bad* statement. -->
+<!-- - We know what makes a *good* statement. -->
 
-</div>
+<!-- </div> -->
 
 In this course, we will only work with good, high-quality statements. You should ensure that any statement *you* write obeys the above rules.
         

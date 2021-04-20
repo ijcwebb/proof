@@ -58,13 +58,13 @@ c. Which of the conjectures above have **an infinite number** of counterexamples
 
 Finding a counterexample is the most common and popular way of disproving a conjecture. It's also possible to disprove a conjecture without finding a counterexample. This is called finding a disproof, and often happens when you set out looking for a proof and it goes wrong! We'll look at this a bit later. 
 
-<div class="alert alert-success" role="alert">
-<strong> What have we learnt? </strong> 
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong> What have we learnt? </strong>  -->
 
-- Finding a counterexample (or a few) is the most popular and common way to disprove a conjecture.
-   
-- Whilst there may be many counterexamples for a particular conjecture, just one is enough to disprove a conjecture.
-   
-- True conjectures don't have counterexamples, because they're true! Only conjectures which are false will have counterexamples.
+<!-- - Finding a counterexample (or a few) is the most popular and common way to disprove a conjecture. -->
 
-</div>
+<!-- - Whilst there may be many counterexamples for a particular conjecture, just one is enough to disprove a conjecture. -->
+
+<!-- - True conjectures don't have counterexamples, because they're true! Only conjectures which are false will have counterexamples. -->
+
+<!-- </div> -->

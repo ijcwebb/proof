@@ -218,12 +218,12 @@ z. Japanese is difficult for non-native speakers to learn.
 ```
 </div>
 
-<div class="alert alert-success" role="alert">
-<strong> What have we learnt? </strong> 
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong> What have we learnt? </strong>  -->
 
-In the previous chapter, we learnt what makes a good statement. In this chapter, we have learnt about truth values, and what it means for a statement to have a clearly defined truth value.
+<!-- In the previous chapter, we learnt what makes a good statement. In this chapter, we have learnt about truth values, and what it means for a statement to have a clearly defined truth value. -->
 
-</div>
+<!-- </div> -->
 
 
 In our next chapter, we define a new term...

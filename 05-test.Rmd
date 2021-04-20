@@ -252,14 +252,14 @@ j. How many of the following are *not* lengths?
 
 </div>
 
-<div class="alert alert-success" role="alert">
-<strong> What have we learnt? </strong> 
+<!-- <div class="alert alert-success" role="alert"> -->
+<!-- <strong> What have we learnt? </strong>  -->
 
-- Axioms are special kinds of mathematical statements; they are ones which are self-evidently true. They are the building blocks of mathematics.
-    
-- We've also learnt that *really* fundamental axioms are called definitions. They are how we guarantee that you, your fellow mathematicians and your reader all understand what you're talking about!^[See https://en.wikipedia.org/wiki/Vacuous_truth.]
+<!-- - Axioms are special kinds of mathematical statements; they are ones which are self-evidently true. They are the building blocks of mathematics. -->
 
-</div>
+<!-- - We've also learnt that *really* fundamental axioms are called definitions. They are how we guarantee that you, your fellow mathematicians and your reader all understand what you're talking about!^[See https://en.wikipedia.org/wiki/Vacuous_truth.] -->
+
+<!-- </div> -->
 
 ## Types of real numbers
 
