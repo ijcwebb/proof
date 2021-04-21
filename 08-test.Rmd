@@ -199,6 +199,163 @@ b. The integer
 ```
 </div>
 
+Conjecture maps rely on the idea of partitions. Let's discuss what a partition of a set means.
+
+### Sets and subsets
+
+First of all, what is a set? A **set** is simply a collection of items, called **elements**. For example, an AUCA course might be a set, and the elements would be students enrolled on the course. The set might be an alphabet, like the Kyrgyz alphabet, and the elements would be the 36 letters in this alphabet. Or the set might be the nonnegative integers, and the elements are the numbers $0,1,2,3,4,...$.
+
+Sets are denoted with a capital letter, and the elements in a set are placed within curly brackets. For example, $A = \{$Aibek, Aijamal, Aisuluu, Bektur, Maxim, Nurbek, Tammy$\}$ might be the students enrolled on a course, or the first one-hundred positive integers would be written $B = \{1, 2, 3, ..., 100\}$, and the set of all integers would be $\mathbb{Z} = \{...,-3,-2,-1,-0,1,2,3,...\}$.
+
+A set $A$ is a **subset** of another set $B$ if all of the elements of $A$ are also in $B$. We write this as $A \subseteq B$. For example, if $A$ is the set of students enrolled on a particular course at and $B$ were the set of all AUCA students, then clearly $A \subseteq B$. If it is known that $A$ contains few elements than $B$ (i.e. all elements of $A$ are in $B$ but there are some elements in $B$ that are not in $A$) we can write $A \subset B$. Here are another couple of examples: Kyrgyz vowels $\subset$ Kyrgyz alphabet. Even integers $\subset$ Integers.
+
+### Partitions
+
+A **partition** of a set means breaking a set up into subsets where
+
+- no element is in more than one subset (i.e. subsets contain different elements to one another)
+- each element is in at least one subset (i.e. no element in the original set is forgotten)
+
+An example would be during orientation for freshmen at AUCA: *every* student gets placed into a team, and no teams share any students.
+
+For conjecture maps, you are required to partition sets into two subsets. An example would be classifying the integers as even or odd, classifying the integers as negative and nonnegative, classifying polygons into convex and concave, or classifying real numbers are rational^[Check back to our textbook Chapter 5 if you’ve forgotten what rational numbers are.] or irrational.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+How could we partition the students in our class into **two** subsets? 
+
+```
+</div>
+  
+Here are a few sample answers. Remember that when partitioning, the two subsets must be disjoint and together they must contain the entire (original) set.
+
+- Seniors and non-seniors; 
+- Social science majors and non social science majors;
+- Students born in the Kyrgyz Republic and students born outside the Kyrgyz Republic;
+- Students who wear glasses and students who don’t wear glasses;
+- Students who’ve been to Turkey and students who’ve never been to Turkey;
+- ICP majors and non-ICP majors;
+- Students whose primary phone is a Samsung Galaxy and those whose primary phone is not a Samsung Galaxy (or they don’t have a phone);
+- Students who know how to say hello in Japanese and students who don’t know how to say hello in Japanese.
+
+<div class="alert alert-info" role="alert"> 
+```{exercise}
+How could we partition each of the following sets into **two** subsets? You only need to think of one answer for each!
+  
+a. The students and teacher in our class.
+b. The AUCA student body.
+c. The residents of Bishkek.
+d. Every human on the planet.
+e. The positive integers.
+f. Polygons.^[Two dimensional.]
+g. Animals (including humans!).
+
+```
+
+```{exercise}
+How could we partition each of the following into two subsets? You only need to think of one answer for each. 
+
+a. Polygons.
+b. Animals (including humans).
+c. The rational numbers.
+d. The Cyrillic alphabet (а, б, в, г, д, е, ё, ж, з, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я).
+
+```
+</div>
+
+Bring your answers to our next class.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Which of the following are valid partitions of a set into two subsets? Which are not? Why not?
+
+a. Set: The citizens of Bishkek. <br /> Partition: Those who’ve never taken a trolleybus and those who have.
+
+b. Set: The positive integers. <br /> Partition: Those with two digits and those with more than two digits.
+
+c. Set: The animal kingdom (excluding humans). <br /> Partition: Those which are wild and those which are domesticated.
+
+d. Set: Colours. <br /> Partition: Primary colours and non-primary colours.
+
+e. Set: Positive numbers. <br /> Partition: Integers and non-integers.
+
+f. Set: The AUCA student body. <br /> Partition: Those who smoke daily and those who’ve never smoked.
+
+```
+</div>
+  
+Solution:
+
+a. This is a valid partition: We can categorise everyone who lives in Bishkek as either having taken a trolleybus or having not a trolleybus.^[We will say that those people who have sat in a stationary trolleybus but never a moving one as “not having taken a trolleybus”. We’ll say that people who have only ever been in trolleybuses that stopped working en-route to their destination as “having taken a trolleybus”.]
+
+b. This is not a valid partition: we have forgotten one-digit positive integers, like 4 or 7.
+
+c. This is not a valid partition, as there are some animals which are called semi-feral. These are animals that live mostly in the wild, but which have sporadic contact with humans, for example for feeding or medical attention. Also included in this group are animals which were born in a domesticated environment but which then escaped or were released into the wild, such as pet animals, laboratory animals, and some fish.
+
+d. This is a valid partition. All colours can be categorised as being primary (red, green or blue) or non-primary (for example, secondary colours such as yellow, tertiary colours such as azure, quaternary colours, and quinary colours).
+
+e. This is a valid partition, as positive numbers either are integers (with only zeros to the right of the decimal point) or non-integers (not only zeros to the right of the decimal point.
+
+f. This is not a valid partition, as there are some students who don’t smoke every day, but have smoked.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Look back at the partitions in **Exercise 8.12** and consider just those which you decided were valid. For each of the two subsets in the partition, which contains more elements? Consider the same question for each of the partitions you created in **Exercise 8.10** and **Exercise 8.11**.
+
+```
+</div>
+
+Solution:
+
+a. I would guess that the number of people in Bishkek who have never taken a trolleybus in their lives is much smaller than the number of people who have taken a trolleybus.
+
+d. There are only three primary colours and many more non-primary colours, so the subset containing the non-primary colours contains more elements.
+
+e. Even though there are an infinite number of positive integers and an infinite number of positive non-integers, the size of the infinity of the positive non-integers is larger! Watch the video mentioned in question 5 to learn more.
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+For those partitions in **Exercise 8.12** which you decided were not valid, can you change one (or both) of the subsets to create a valid partition? Note: Try to keep to two subsets please, rather than introducing additional ones!
+
+```
+</div>
+
+Solution:
+
+b. Answers will vary. For example, “positive integers with two digits” and “positive integers with more or less than two digits”, or “positive integers greater than 99” and “positive integers from 1 to 99”.
+
+c. Again, answers will vary. We could make this partition valid by including semi-feral animals in either subset, e.g. “completely wild” and “semi-feral and domesticated”, or “domesticated” and “not domesticated.
+
+f. For example, “has never smoked” and “has smoked”. Or “smokes every day” and “does not smoke every day”.
+
+<div class="alert alert-danger" role="alert">
+```{exercise}
+<br /> 
+  
+a. Watch 0:00 - 2:15 of the video found at https://www.youtube.com/watch?v=Uj3_KqkI9Zo. I recommend watching it a couple of times if it’s the first time you’ve met the concepts!
+
+b. Watch past 2:15 if you want (but you don’t have to!).
+
+```  
+</div>
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+How could we partition each of the following sets into two subsets? You only need to think of one valid partition for each set!
+For each partition you made, which of the two subsets you created contains more elements? Why do you think this? Share your answers on the padlet for this question.
+
+a. The $193$ members of the UN.
+b. The cards in a deck of playing cards.
+c. Letters in the Latin alphabet.
+d. The integers.
+e. All even numbers.
+f. All odd numbers.
+g. The people you live with (including yourself).
+h. People who have the TikTok app on their phone.
+
+```
+</div>
+
 ### Choose your method
 
 Once you have written the conjecture in the form "If ... then ..." and have attempted (hopefully successfully) in drawing its map, you are ready to begin to try building a proof.
@@ -208,15 +365,12 @@ We have lots of choices of methods of proof available. In this course, we'll loo
 - proof by **exhaustion**, 
 - **direct proof**, 
 - proof by **cases**, 
-- proof using **previously proved or disproved conjectures**, 
 - proof via the **contrapositive**, 
 - proof by **contradiction**, and 
 - proof by **induction**.
 
-Each of chapters 10 - 16 will cover one of these methods, and give you some examples to practice on.
+Each of chapters 11 - 16 will cover one of these methods, and give you some examples to practice on.
 
 At the end of each chapter there will be some more conjectures to work on. These conjectures might be true or might be false. To prove the true ones, you will be expected not just to rely on the method introduced in that chapter, but all previous methods too. This is because the challenge (and fun) of proving conjectures comes from not knowing where to start and feeling your own way to a proof. It's a very satisfying experience!^[Also, when presented with a set of conjectures and told to "Prove using a direct proof..." or "Prove by induction...", like a robot you will switch your brain off and switch on your autopilot, which we don't want!]
-
-Chapter 17 is a bonus chapter, and covers the incompleteness of mathematics.
 
 The next chapter, chapter 9, looks at what makes a good proof. 

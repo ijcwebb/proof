@@ -112,6 +112,161 @@ but correct to write
     x^2 &= 9 \Leftrightarrow x = \pm 3
 \end{align}
 
+## Another look at these arrows
+
+The arrows $\Rightarrow$, $\Leftarrow$, $\Leftrightarrow$ describe relationships that can be represented with Venn diagrams.
+
+For sets $A$ and $B$:
+
+```{r, echo=FALSE, out.width="90%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns1.png"))
+```
+
+If $A$ is not a subset of $B$, or $B$ is not a subset of $A$, then we cannot use these arrows:
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns2.png"))
+```
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Add either “⇒”, “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+```
+
+a. The animal is human <br />  The animal has a brain
+b. The animal can fly <br /> The animal is a bird
+c. The animal has feathers <br /> The animal is a bird
+d. The animal knows which year Coca-Cola was founded <br /> The animal is human
+e. The animal lays eggs <br /> The animal is a bird
+f. The animal’s species has been to the Moon <br /> The animal is human
+g. The animal is mortal <br /> The animal is human
+h. The animal has a name for the Moon <br /> The animal is human
+
+</div>
+
+Solutions, including *some* Venn diagrams:
+
+a. The animal is human  ⇒  The animal has a brain 
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns3.png"))
+```
+
+b. The animal can fly  N/A   The animal is a bird
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns4.png"))
+```                         
+
+c. The animal has feathers  ⇔    The animal is a bird
+d. The animal knows which year Coca-Cola was founded ⇒  The animal is human
+e. The animal lays eggs   ⇐   The animal is a bird
+f. The animal’s species has been to the Moon   ⇔   The animal is human
+g. The animal is mortal   ⇐   The animal is human
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns5.png"))
+```                         
+
+h. The animal has a name for the Moon    N/A  The animal is human
+
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns6.png"))
+```                       
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Add either “⇒”, “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+```
+
+a. The number is 3 <br />  The number is odd
+b. The number is odd <br />  The number is positive
+c. The number is divisible by 2 <br />  The number is even
+d. The number is not divisible by 2 <br />  The number is odd
+e. The number is a multiple of 5 <br />  The number ends in a ‘5’
+f. The number is irrational <br />  The number is not an integer
+g. The number squared is zero <br />  The number is zero
+h. The number squared is one <br />  The number is one
+
+</div>
+
+Solutions:
+
+a. The number is 3  ⇒   The number is odd
+b. The number is odd   N/A   The number is positive
+c. The number is divisible by 2    ⇔   The number is even
+d. The number is not divisible by 2   ⇐   The number is odd   
+     
+```{r, echo=FALSE, out.width="50%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns7.png"))
+```                          
+
+e. The number is a multiple of 5   ⇐   The number ends in a ‘5’
+f. The number is irrational   ⇔   The number is not an integer
+g. The number squared is zero   ⇔   The number is zero
+h. The number squared is one   ⇐   The number is one
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Add either “⇒”, “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+
+Note, polygons are straight-edged 2D closed shapes. Polygons come in two flavours, convex and concave. See: https://mathworld.wolfram.com/ConvexPolygon.html.
+```
+
+a. The polygon has three sides <br />  The polygon is a triangle
+b. The polygon has three sides <br />  The polygon is convex
+c. The polygon has four sides <br />  The polygon is convex
+d. The polygon is concave <br />  The polygon has at least four sides
+e. The polygon is regular <br />  The polygon has an even number of sides
+f. The polygon has exactly four right-angles <br />  The polygon is a square
+g. The polygon has exactly four lines of symmetry <br />  The polygon is a square
+h. The polygon has no lines of symmetry <br />  The polygon is not regular
+
+</div>
+
+Solutions:
+
+a. The polygon has three sides   ⇔   The polygon is a triangle
+b. The polygon has three sides   ⇒   The polygon is convex
+c. The polygon has four sides   N/A   The polygon is convex
+
+```{r, echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics(rep("figures/venns8.png"))
+```   
+
+d. The polygon is concave   ⇒   The polygon has at least four sides
+e. The polygon is regular  N/A    The polygon has an even number of sides
+f. The polygon has exactly four right-angles   ⇐   The polygon is a square
+g. The polygon has exactly four lines of symmetry   ⇔   The polygon is a square
+h. The polygon has no lines of symmetry   ⇒   The polygon is not regular
+
+<div class="alert alert-info" role="alert">
+```{exercise}
+Add either “⇒”, “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+```
+
+a. The UN member state has a non-rectangular flag <br />  The UN member state is Nepal
+b. The UN member state has only red and yellow on its flag <br />  The UN member state is c. The Kyrgyz Republic
+c. The UN member state joined the UN in the 2000’s (i.e. between 1st Jan 2000 and 31st Dec 2009) <br />  The UN member state is Serbia
+d. The UN member state has more than one official language <br />  The UN member state is in Africa
+e. The country is a member of the UN <br />  The country is a member of the EU
+f. The UN member state has a sun depicted on its flag <br />  The UN member state is predominantly in situated in the Northern hemisphere
+g. The UN member state is an island nation <br />  The UN member state has a population smaller than 5 million
+h. The UN member state has disputed borders with at least one other UN member state <br />  The UN member state joined the UN in the 1940’s
+
+</div>
+
+Solutions:
+
+a. The UN member state has a non-rectangular flag   ⇔   The UN member state is Nepal
+b. The UN member state has only red and yellow on its flag   ⇐   The UN member state is The Kyrgyz Republic
+c. The UN member state joined the UN in the 2000’s (i.e. between 1st Jan 2000 and 31st Dec 2009)   ⇐   The UN member state is Serbia
+d. The UN member state has more than one official language   N/A   The UN member state is in Africa
+e. The country is a member of the UN   ⇐   The country is a member of the EU
+f. The UN member state has a sun depicted on its flag   N/A   The UN member state is predominantly in situated in the Northern hemisphere
+g. The UN member state is an island nation   N/A   The UN member state has a population smaller than 5 million
+h. The UN member state has disputed borders with at least one other UN member state   N/A   The UN member state joined the UN in the 1940’s
+
 ## Example
 
 Let's look at an example of a good proof and a bad proof. Both are trying to prove the following conjecture:

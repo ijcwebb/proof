@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-20" />
+<meta name="date" content="2021-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,8 @@
 <li class="chapter" data-level="9.3" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-check-my-proof-is-correct"><i class="fa fa-check"></i><b>9.3</b> How do I check my proof is correct?</a></li>
 <li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
 <li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
-<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
+<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#another-look-at-these-arrows"><i class="fa fa-check"></i><b>9.6</b> Another look at these arrows</a></li>
+<li class="chapter" data-level="9.7" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.7</b> Example</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="the-flowchart-of-proof.html"><a href="the-flowchart-of-proof.html"><i class="fa fa-check"></i><b>10</b> The flowchart of proof</a></li>
 <li class="chapter" data-level="11" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>11</b> Proof by exhaustion</a>
@@ -191,7 +192,8 @@
 </ul></li>
 <li class="chapter" data-level="21" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>21</b> Mathematical incompleteness</a></li>
 <li class="chapter" data-level="22" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>22</b> Glossary</a></li>
-<li class="chapter" data-level="23" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>23</b> List of sources</a></li>
+<li class="chapter" data-level="23" data-path="representations-of-numbers.html"><a href="representations-of-numbers.html"><i class="fa fa-check"></i><b>23</b> Representations of numbers</a></li>
+<li class="chapter" data-level="24" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>24</b> List of sources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -239,7 +241,7 @@
   a &amp;= 2m \\
   b &amp;= 2n + 1
 \end{align}\]</span></p>
-<p>with <span class="math inline">\(m, n \in \mathbb Z\)</span>.<a href="#fn37" class="footnote-ref" id="fnref37"><sup>37</sup></a> We could now continue with our proof, having halved the amount of work we need to do!</p>
+<p>with <span class="math inline">\(m, n \in \mathbb Z\)</span>.<a href="#fn40" class="footnote-ref" id="fnref40"><sup>40</sup></a> We could now continue with our proof, having halved the amount of work we need to do!</p>
 <p><strong>Do you see why w.l.o.g. worked here?</strong> If I wanted to demonstrate this conjecture to someone by asking them to pick two numbers, one even and one odd, I just assign the even one to <span class="math inline">\(a\)</span> and the odd one to <span class="math inline">\(b\)</span>. If we had made <span class="math inline">\(a\)</span> the odd one and <span class="math inline">\(b\)</span> the even one, the proof would look identical, so our choice of which was odd and which was even was unimportant. That’s what w.l.o.g. means!</p>
 <p>Here’s the complete proof:</p>
 
@@ -262,7 +264,7 @@
 <div id="when-w.l.o.g.-doesnt-work" class="section level2" number="14.2">
 <h2><span class="header-section-number">14.2</span> When w.l.o.g. doesn’t work</h2>
 <p>Sometimes w.l.o.g. doesn’t work. That’s because changing the letters <em>does</em> fundamentally change the case we’re considering. Let’s look at an example…</p>
-<p>Conjecture 14.2 : The product of two consecutive numbers is even.<a href="#fn38" class="footnote-ref" id="fnref38"><sup>38</sup></a></p>
+<p>Conjecture 14.2 : The product of two consecutive numbers is even.<a href="#fn41" class="footnote-ref" id="fnref41"><sup>41</sup></a></p>
 <p>We are considering the product of two integers, <span class="math inline">\(a \cdot b\)</span>. If two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are consecutive, then <span class="math inline">\(b = a + 1\)</span>. If we multiply them, we get</p>
 <p><span class="math display">\[\begin{align}
     a \cdot b &amp;= (a)(a+1) \\
@@ -331,9 +333,9 @@ which is clearly even.</p>
 </div>
 <div class="footnotes">
 <hr />
-<ol start="37">
-<li id="fn37"><p>Notice I have used two different integers here, <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>, as the conjecture doesn’t say <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> must be consecutive (though of course they can be).<a href="without-loss-of-generality.html#fnref37" class="footnote-back">↩︎</a></p></li>
-<li id="fn38"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">14.1</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="without-loss-of-generality.html#fnref38" class="footnote-back">↩︎</a></p></li>
+<ol start="40">
+<li id="fn40"><p>Notice I have used two different integers here, <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>, as the conjecture doesn’t say <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> must be consecutive (though of course they can be).<a href="without-loss-of-generality.html#fnref40" class="footnote-back">↩︎</a></p></li>
+<li id="fn41"><p>Note, we could simply use the fact that conjecture <a href="#cnj:hall">14.1</a> is true and our knowledge of the alternating nature of the parity of integers to declare this conjecture true, but I prove it in full here as a useful illustration.<a href="without-loss-of-generality.html#fnref41" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

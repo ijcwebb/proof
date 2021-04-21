@@ -1,31 +1,26 @@
-# List of sources
+# Representations of numbers
 
-Aside from those created by the author, the following were extremely useful in the compiling of conjectures for this book:
+There are some families of numbers which we often want to refer to (integers, even integers, square numbers, multiples of $3$, etc.). Therefore it is useful to have notation for these families. Also, if we want to use these families in a proof using algebra, having algebraic representations of them is essential.
 
-https://www.cse.wustl.edu/~cytron/547Pages/f14/IntroToProofs_Final.pdf
+The table below lists the notation for these families, often in reference to an integer $k$. 
 
-http://sites.millersville.edu/bikenaga/math-proof/proof-by-cases/proof-by-cases.pdf
+A few examples of members of each family are given, for illustrative purposes. Note that the symbol “...” means “continue this pattern till infinity”.^[Unless an endpoint is given, like $\{1, 2, 3, ..., 99, 100\}$ indicates the set containing the first hundred positive integers.]
 
-https://www.birmingham.ac.uk/Documents/college-eps/college/stem/Student-Summer-Education-Internships/Proof-and-Reasoning.pdf#page17 
+**If you want to refer to all possible...** | **The general form is** | **The set is**
+-- | -- | --
+integers | $a \in \mathbb{Z}$ | $\{..., –3, –2, –1, 0, 1, 2, 3, ...\}$ 
+positive integers | $a \in \mathbb{Z}^+$ | $\{1, 2, 3, ...\}$ 
+nonnegative integers | $a \in \mathbb{Z}^*$ | $\{ 0, 1, 2, 3, ...\}$ 
+negative integers | $a \in \mathbb{Z}^–$ | $\{..., –3, –2, –1, 0, 1, 2, 3, ...\}$ 
+even integers | $a = 2k$,  <br /> where $k \in \mathbb{Z}$ | $\{..., –6, –4, –2, 0, 2, 4, 6, ...\}$ 
+odd integers | $a = 2k + 1$, <br /> where $k \in \mathbb{Z}$ | $\{..., –5, –3, –1, 1, 3, 5, 7, ...\}$ 
+square numbers | $a = k^2$, <br /> where $k \in \mathbb{Z}$ | $\{0, 1, 4, 9, ...\}$
+cube numbers | $a = k^3$, <br /> where $k \in \mathbb{Z}$ | $\{0, 1, 8, 27, ...\}$
+multiples of 3 | $a = 3k$, <br /> where $k \in \mathbb{Z}$ | $\{..., –9, –6, –3, 0, 3, 6, 9, ...\}$ 
+multiples of 4 | $a = 4k$, <br /> where $k \in \mathbb{Z}$ | $\{..., –12, –8, –4, 0, 4, 8, 12, ...\}$ 
+multiples of 5 | $a = 5k$, <br /> where $k \in \mathbb{Z}$ | $\{..., –15, –10, –5, 0, 5, 10, 15, ...\}$ 
+rational numbers | $a = \frac{k}{l}$ <br /> where $k,l \in \mathbb{Z}$ | There’s no systematic order to write the rational numbers, but some examples are $\frac{2}{3}, 3, –1, \frac{1}{4}, \frac{5}{6}, \frac{21}{7}, –\frac{101}{2}$  
 
-http://www.columbia.edu/~md3405/Proofs\%20Solutions.pdf#page11 
-
-https://www.cs.colostate.edu/~cs160/.Fall13/assignments/Homework2Solution.pdf 
-
-http://mrpaynemath.weebly.com/uploads/3/8/9/9/38994693/math2201ch1.3notes-workings.pdf
-
-http://www.cs.nthu.edu.tw/~wkhon/math/lecture/lecture04.pdf 
-
-https://storm.cis.fordham.edu/zhang/cs2100/slides/IntroToProof.pdf 
-
-http://people.cs.pitt.edu/~litman/courses/cs441/lecture7.pdf 
-
-https://web.maths.unsw.edu.au/~jim/proofsch3.pdf 
-
-https://www.people.vcu.edu/~rhammack/Discrete/ChapterDirect.pdf 
-
-http://mrpaynemath.weebly.com/uploads/3/8/9/9/38994693/math2201ch1.3notes-workings.pdf 
-
-http://alevelmathsrevision.com/downloads/A2/Pure/Proof 
-
-https://madasmaths.com/archive/maths_booklets/further_topics/various/proof_general.pdf
+ <br /> 
+ 
+Can you think of any families of numbers I have forgotten? Let me know and I can add them to this list.

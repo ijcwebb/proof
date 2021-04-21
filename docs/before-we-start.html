@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-20" />
+<meta name="date" content="2021-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,8 @@
 <li class="chapter" data-level="9.3" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-check-my-proof-is-correct"><i class="fa fa-check"></i><b>9.3</b> How do I check my proof is correct?</a></li>
 <li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
 <li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
-<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
+<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#another-look-at-these-arrows"><i class="fa fa-check"></i><b>9.6</b> Another look at these arrows</a></li>
+<li class="chapter" data-level="9.7" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.7</b> Example</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="the-flowchart-of-proof.html"><a href="the-flowchart-of-proof.html"><i class="fa fa-check"></i><b>10</b> The flowchart of proof</a></li>
 <li class="chapter" data-level="11" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>11</b> Proof by exhaustion</a>
@@ -191,7 +192,8 @@
 </ul></li>
 <li class="chapter" data-level="21" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>21</b> Mathematical incompleteness</a></li>
 <li class="chapter" data-level="22" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>22</b> Glossary</a></li>
-<li class="chapter" data-level="23" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>23</b> List of sources</a></li>
+<li class="chapter" data-level="23" data-path="representations-of-numbers.html"><a href="representations-of-numbers.html"><i class="fa fa-check"></i><b>23</b> Representations of numbers</a></li>
+<li class="chapter" data-level="24" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>24</b> List of sources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -252,7 +254,7 @@
 <ul>
 <li><strong>Arguing from examples:</strong> Looking at examples is one of the most helpful practices a conjecture-prover can engage in. We discussed how useful it is to start with examples as a “way-in” to a new conjecture. However, it is a mistake to think that general statement can be proved by showing it to be true for some cases. For example, finding five right-angled triangles where Pythagoras’ Theorem is true does not prove that the theorem is true for all right-angled triangles.</li>
 <li><strong>Using the same letter to mean two different things:</strong> Often beginner conjecture provers give a new variable quantity the same letter name as a previously introduced variable. This will confuse your reader.</li>
-<li><strong>Assuming the thing to be proved is true:</strong> If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a></li>
+<li><strong>Assuming the thing to be proved is true:</strong> If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.<a href="#fn35" class="footnote-ref" id="fnref35"><sup>35</sup></a></li>
 <li><strong>Claiming something is true without having justified it:</strong>. This is also called “jumping to a conclusion.”
 <!-- - **Using “any” when you mean “some” -->
 <!-- - For example, *any* multiple of 5 ends with 5 versus *some* multiples of 5 end with 5. -->
@@ -302,13 +304,146 @@
 \end{align}\]</span></p>
 </div>
 </div>
-<div id="example" class="section level2" number="9.6">
-<h2><span class="header-section-number">9.6</span> Example</h2>
+<div id="another-look-at-these-arrows" class="section level2" number="9.6">
+<h2><span class="header-section-number">9.6</span> Another look at these arrows</h2>
+<p>The arrows <span class="math inline">\(\Rightarrow\)</span>, <span class="math inline">\(\Leftarrow\)</span>, <span class="math inline">\(\Leftrightarrow\)</span> describe relationships that can be represented with Venn diagrams.</p>
+<p>For sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>:</p>
+<p><img src="figures/venns1.png" width="90%" style="display: block; margin: auto;" /></p>
+<p>If <span class="math inline">\(A\)</span> is not a subset of <span class="math inline">\(B\)</span>, or <span class="math inline">\(B\)</span> is not a subset of <span class="math inline">\(A\)</span>, then we cannot use these arrows:</p>
+<p><img src="figures/venns2.png" width="50%" style="display: block; margin: auto;" /></p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-119" class="exercise"><strong>Exercise 9.1  </strong></span>Add either “⇒,” “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+</div>
+<ol style="list-style-type: lower-alpha">
+<li>The animal is human <br /> The animal has a brain</li>
+<li>The animal can fly <br /> The animal is a bird</li>
+<li>The animal has feathers <br /> The animal is a bird</li>
+<li>The animal knows which year Coca-Cola was founded <br /> The animal is human</li>
+<li>The animal lays eggs <br /> The animal is a bird</li>
+<li>The animal’s species has been to the Moon <br /> The animal is human</li>
+<li>The animal is mortal <br /> The animal is human</li>
+<li>The animal has a name for the Moon <br /> The animal is human</li>
+</ol>
+</div>
+<p>Solutions, including <em>some</em> Venn diagrams:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The animal is human ⇒ The animal has a brain</li>
+</ol>
+<p><img src="figures/venns3.png" width="50%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>The animal can fly N/A The animal is a bird</li>
+</ol>
+<p><img src="figures/venns4.png" width="50%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>The animal has feathers ⇔ The animal is a bird</li>
+<li>The animal knows which year Coca-Cola was founded ⇒ The animal is human</li>
+<li>The animal lays eggs ⇐ The animal is a bird</li>
+<li>The animal’s species has been to the Moon ⇔ The animal is human</li>
+<li>The animal is mortal ⇐ The animal is human</li>
+</ol>
+<p><img src="figures/venns5.png" width="50%" style="display: block; margin: auto;" /></p>
+<ol start="8" style="list-style-type: lower-alpha">
+<li>The animal has a name for the Moon N/A The animal is human</li>
+</ol>
+<p><img src="figures/venns6.png" width="50%" style="display: block; margin: auto;" /></p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-124" class="exercise"><strong>Exercise 9.2  </strong></span>Add either “⇒,” “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+</div>
+<ol style="list-style-type: lower-alpha">
+<li>The number is 3 <br /> The number is odd</li>
+<li>The number is odd <br /> The number is positive</li>
+<li>The number is divisible by 2 <br /> The number is even</li>
+<li>The number is not divisible by 2 <br /> The number is odd</li>
+<li>The number is a multiple of 5 <br /> The number ends in a ‘5’</li>
+<li>The number is irrational <br /> The number is not an integer</li>
+<li>The number squared is zero <br /> The number is zero</li>
+<li>The number squared is one <br /> The number is one</li>
+</ol>
+</div>
+<p>Solutions:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The number is 3 ⇒ The number is odd</li>
+<li>The number is odd N/A The number is positive</li>
+<li>The number is divisible by 2 ⇔ The number is even</li>
+<li>The number is not divisible by 2 ⇐ The number is odd</li>
+</ol>
+<p><img src="figures/venns7.png" width="50%" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: lower-alpha">
+<li>The number is a multiple of 5 ⇐ The number ends in a ‘5’</li>
+<li>The number is irrational ⇔ The number is not an integer</li>
+<li>The number squared is zero ⇔ The number is zero</li>
+<li>The number squared is one ⇐ The number is one</li>
+</ol>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-126" class="exercise"><strong>Exercise 9.3  </strong></span>Add either “⇒,” “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.</p>
+Note, polygons are straight-edged 2D closed shapes. Polygons come in two flavours, convex and concave. See: <a href="https://mathworld.wolfram.com/ConvexPolygon.html" class="uri">https://mathworld.wolfram.com/ConvexPolygon.html</a>.
+</div>
+<ol style="list-style-type: lower-alpha">
+<li>The polygon has three sides <br /> The polygon is a triangle</li>
+<li>The polygon has three sides <br /> The polygon is convex</li>
+<li>The polygon has four sides <br /> The polygon is convex</li>
+<li>The polygon is concave <br /> The polygon has at least four sides</li>
+<li>The polygon is regular <br /> The polygon has an even number of sides</li>
+<li>The polygon has exactly four right-angles <br /> The polygon is a square</li>
+<li>The polygon has exactly four lines of symmetry <br /> The polygon is a square</li>
+<li>The polygon has no lines of symmetry <br /> The polygon is not regular</li>
+</ol>
+</div>
+<p>Solutions:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The polygon has three sides ⇔ The polygon is a triangle</li>
+<li>The polygon has three sides ⇒ The polygon is convex</li>
+<li>The polygon has four sides N/A The polygon is convex</li>
+</ol>
+<p><img src="figures/venns8.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>The polygon is concave ⇒ The polygon has at least four sides</li>
+<li>The polygon is regular N/A The polygon has an even number of sides</li>
+<li>The polygon has exactly four right-angles ⇐ The polygon is a square</li>
+<li>The polygon has exactly four lines of symmetry ⇔ The polygon is a square</li>
+<li>The polygon has no lines of symmetry ⇒ The polygon is not regular</li>
+</ol>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-128" class="exercise"><strong>Exercise 9.4  </strong></span>Add either “⇒,” “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
+</div>
+<ol style="list-style-type: lower-alpha">
+<li>The UN member state has a non-rectangular flag <br /> The UN member state is Nepal</li>
+<li>The UN member state has only red and yellow on its flag <br /> The UN member state is c. The Kyrgyz Republic</li>
+<li>The UN member state joined the UN in the 2000’s (i.e. between 1st Jan 2000 and 31st Dec 2009) <br /> The UN member state is Serbia</li>
+<li>The UN member state has more than one official language <br /> The UN member state is in Africa</li>
+<li>The country is a member of the UN <br /> The country is a member of the EU</li>
+<li>The UN member state has a sun depicted on its flag <br /> The UN member state is predominantly in situated in the Northern hemisphere</li>
+<li>The UN member state is an island nation <br /> The UN member state has a population smaller than 5 million</li>
+<li>The UN member state has disputed borders with at least one other UN member state <br /> The UN member state joined the UN in the 1940’s</li>
+</ol>
+</div>
+<p>Solutions:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The UN member state has a non-rectangular flag ⇔ The UN member state is Nepal</li>
+<li>The UN member state has only red and yellow on its flag ⇐ The UN member state is The Kyrgyz Republic</li>
+<li>The UN member state joined the UN in the 2000’s (i.e. between 1st Jan 2000 and 31st Dec 2009) ⇐ The UN member state is Serbia</li>
+<li>The UN member state has more than one official language N/A The UN member state is in Africa</li>
+<li>The country is a member of the UN ⇐ The country is a member of the EU</li>
+<li>The UN member state has a sun depicted on its flag N/A The UN member state is predominantly in situated in the Northern hemisphere</li>
+<li>The UN member state is an island nation N/A The UN member state has a population smaller than 5 million</li>
+<li>The UN member state has disputed borders with at least one other UN member state N/A The UN member state joined the UN in the 1940’s</li>
+</ol>
+</div>
+<div id="example" class="section level2" number="9.7">
+<h2><span class="header-section-number">9.7</span> Example</h2>
 <p>Let’s look at an example of a good proof and a bad proof. Both are trying to prove the following conjecture:</p>
 <p>Conjecture 9.1 : If <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> are positive real numbers and <span class="math inline">\(x = \pm \sqrt{\frac{c}{a}}\)</span>, then <span class="math inline">\(ax^2-c=0\)</span>.</p>
 <p>A couple of observations first. Note that <span class="math inline">\(a, c &gt;0\)</span> implies that <span class="math inline">\(a \neq 0\)</span>, which is important as it’s the denominator of the fraction <span class="math inline">\(\frac{c}{a}\)</span>. This means that <span class="math inline">\(\frac{c}{a}\)</span> is defined. Also note that <span class="math inline">\(a, c &gt; 0\)</span> implies that <span class="math inline">\(\frac{c}{a} &gt; 0\)</span> which is important as it is under a square root. This means that <span class="math inline">\(\sqrt{\frac{c}{a}}\)</span> is defined.</p>
-<div id="a-good-proof" class="section level3" number="9.6.1">
-<h3><span class="header-section-number">9.6.1</span> A good proof</h3>
+<div id="a-good-proof" class="section level3" number="9.7.1">
+<h3><span class="header-section-number">9.7.1</span> A good proof</h3>
 <p>First, the good proof.</p>
 <div class="alert alert-success" role="alert">
 
@@ -339,8 +474,8 @@ We have shown that <span class="math inline">\(x = \pm \sqrt{\frac{c}{a}}\Righta
 <li><p>Notice that we used the <span class="math inline">\(\square\)</span> symbol to indicate that we consider the proof is finished.</p></li>
 </ul>
 </div>
-<div id="a-bad-proof" class="section level3" number="9.6.2">
-<h3><span class="header-section-number">9.6.2</span> A bad proof</h3>
+<div id="a-bad-proof" class="section level3" number="9.7.2">
+<h3><span class="header-section-number">9.7.2</span> A bad proof</h3>
 <p>Now for the bad proof.</p>
 <div class="alert alert-success" role="alert">
 
@@ -383,7 +518,7 @@ and so
 <div class="alert alert-danger" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-111" class="exercise"><strong>Exercise 9.1  </strong></span>Look back at the “bad proof” above. Based on everything you’ve read in this chapter, how many things can you find to criticise about this proof?</p>
+<p><span id="exr:unnamed-chunk-131" class="exercise"><strong>Exercise 9.5  </strong></span>Look back at the “bad proof” above. Based on everything you’ve read in this chapter, how many things can you find to criticise about this proof?</p>
 </div>
 </div>
 <!-- <div class="alert alert-info" role="alert"> -->
@@ -418,8 +553,8 @@ and so
 </div>
 <div class="footnotes">
 <hr />
-<ol start="32">
-<li id="fn32"><p>A lawyer in court trying to prove a defendant guilty is not allowed to say, “Because we know the defendant is guilty, we know he can’t have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.” No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.<a href="before-we-start.html#fnref32" class="footnote-back">↩︎</a></p></li>
+<ol start="35">
+<li id="fn35"><p>A lawyer in court trying to prove a defendant guilty is not allowed to say, “Because we know the defendant is guilty, we know he can’t have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night.” No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.<a href="before-we-start.html#fnref35" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

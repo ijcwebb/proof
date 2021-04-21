@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-20" />
+<meta name="date" content="2021-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,8 @@
 <li class="chapter" data-level="9.3" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-check-my-proof-is-correct"><i class="fa fa-check"></i><b>9.3</b> How do I check my proof is correct?</a></li>
 <li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
 <li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
-<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
+<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#another-look-at-these-arrows"><i class="fa fa-check"></i><b>9.6</b> Another look at these arrows</a></li>
+<li class="chapter" data-level="9.7" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.7</b> Example</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="the-flowchart-of-proof.html"><a href="the-flowchart-of-proof.html"><i class="fa fa-check"></i><b>10</b> The flowchart of proof</a></li>
 <li class="chapter" data-level="11" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>11</b> Proof by exhaustion</a>
@@ -191,7 +192,8 @@
 </ul></li>
 <li class="chapter" data-level="21" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>21</b> Mathematical incompleteness</a></li>
 <li class="chapter" data-level="22" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>22</b> Glossary</a></li>
-<li class="chapter" data-level="23" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>23</b> List of sources</a></li>
+<li class="chapter" data-level="23" data-path="representations-of-numbers.html"><a href="representations-of-numbers.html"><i class="fa fa-check"></i><b>23</b> Representations of numbers</a></li>
+<li class="chapter" data-level="24" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>24</b> List of sources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -238,7 +240,7 @@
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-157" class="exercise"><strong>Exercise 17.1  </strong></span>Use the following examples to practise proof by contradiction.</p>
+<p><span id="exr:unnamed-chunk-177" class="exercise"><strong>Exercise 17.1  </strong></span>Use the following examples to practise proof by contradiction.</p>
 <p>Conjecture 17.1 : The sum of two consecutive integers is odd.</p>
 <p>Conjecture 17.2 : If <span class="math inline">\(a^2\)</span> is even and <span class="math inline">\(a \in \mathbb Z\)</span>, then <span class="math inline">\(a\)</span> is even.</p>
 <p>Conjecture 17.3 : <span class="math inline">\(\sqrt{2}\)</span> is irrational.</p>
@@ -313,13 +315,13 @@ but this is clearly crazy: Equation <a href="proof-by-contradiction.html#eq:zzzz
 <center>
 If <span class="math inline">\(a = \sqrt{2}\)</span>, then <span class="math inline">\(a\)</span> is irrational. <br /> <br />
 </center>
-<p>The trouble with trying to prove this using a direct proof is the same reason Conjecture 16.4 was difficult to prove using a direct proof: we don’t have an algebraic way to express the family of irrational numbers. As we have an algebraic way to express the family of rational numbers,<a href="#fn47" class="footnote-ref" id="fnref47"><sup>47</sup></a> a proof by contradiction is probably going to be a lot easier than a direct proof of <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
+<p>The trouble with trying to prove this using a direct proof is the same reason Conjecture 16.4 was difficult to prove using a direct proof: we don’t have an algebraic way to express the family of irrational numbers. As we have an algebraic way to express the family of rational numbers,<a href="#fn50" class="footnote-ref" id="fnref50"><sup>50</sup></a> a proof by contradiction is probably going to be a lot easier than a direct proof of <span class="math inline">\(P \Rightarrow Q\)</span>.</p>
 <p>We again draw the map for the conjecture, so as to correctly identify <span class="math inline">\(P\)</span> and <span class="math inline">\(T\)</span>:</p>
 <p><img src="figures/maps16.png" width="55%" style="display: block; margin: auto;" /></p>
 <div class="alert alert-success" role="alert">
 
 <div class="proof">
-<p> <span class="proof"><em>Proof. </em></span> We assume that <span class="math inline">\(a = \sqrt{2}\)</span> (this is <span class="math inline">\(P\)</span>), and that <span class="math inline">\(a\)</span> is rational (this is <span class="math inline">\(T\)</span>). As <span class="math inline">\(a\)</span> is rational, it can be written as the fraction of two integers. Let’s say that we have simplied this fraction as much as possible, arriving at a fraction of two integers, <span class="math inline">\(\frac{k}{l}\)</span>, that can’t be simplied any further.<a href="#fn48" class="footnote-ref" id="fnref48"><sup>48</sup></a></p>
+<p> <span class="proof"><em>Proof. </em></span> We assume that <span class="math inline">\(a = \sqrt{2}\)</span> (this is <span class="math inline">\(P\)</span>), and that <span class="math inline">\(a\)</span> is rational (this is <span class="math inline">\(T\)</span>). As <span class="math inline">\(a\)</span> is rational, it can be written as the fraction of two integers. Let’s say that we have simplied this fraction as much as possible, arriving at a fraction of two integers, <span class="math inline">\(\frac{k}{l}\)</span>, that can’t be simplied any further.<a href="#fn51" class="footnote-ref" id="fnref51"><sup>51</sup></a></p>
 <p>Therefore,
 <span class="math display" id="eq:zzzzzzz">\[\begin{align}
   a &amp;= \sqrt{2} \tag{17.7}
@@ -384,7 +386,7 @@ but this is clearly crazy: Equation <a href="proof-by-contradiction.html#eq:zzzz
 <div class="alert alert-info" role="alert">
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-166" class="exercise"><strong>Exercise 17.2  </strong></span>This exercise will be uploaded at the start of our next class.</p>
+<p><span id="exr:unnamed-chunk-186" class="exercise"><strong>Exercise 17.2  </strong></span>This exercise will be uploaded at the start of our next class.</p>
 </div>
 </div>
 </div>
@@ -410,9 +412,9 @@ but this is clearly crazy: Equation <a href="proof-by-contradiction.html#eq:zzzz
 </div>
 <div class="footnotes">
 <hr />
-<ol start="47">
-<li id="fn47"><p>Again, see <a href="https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub" class="uri">https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub</a>.<a href="proof-by-contradiction.html#fnref47" class="footnote-back">↩︎</a></p></li>
-<li id="fn48"><p>For example <span class="math inline">\(\frac{120}{84} = \frac{60}{42} = \frac{30}{21} = \frac{10}{7}\)</span>, so <span class="math inline">\(k=10\)</span>, <span class="math inline">\(l=7\)</span>, and <span class="math inline">\(\frac{k}{l}\)</span> can’t be simplied any further.<a href="proof-by-contradiction.html#fnref48" class="footnote-back">↩︎</a></p></li>
+<ol start="50">
+<li id="fn50"><p>Again, see <a href="https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub" class="uri">https://docs.google.com/document/d/e/2PACX-1vQZLBbHTEunXLfb_ylj08CVcDncvXdnumcJ8rDGWSa1bwGRr-UYSU2eyubpwifi548abUJyAqXSOghN/pub</a>.<a href="proof-by-contradiction.html#fnref50" class="footnote-back">↩︎</a></p></li>
+<li id="fn51"><p>For example <span class="math inline">\(\frac{120}{84} = \frac{60}{42} = \frac{30}{21} = \frac{10}{7}\)</span>, so <span class="math inline">\(k=10\)</span>, <span class="math inline">\(l=7\)</span>, and <span class="math inline">\(\frac{k}{l}\)</span> can’t be simplied any further.<a href="proof-by-contradiction.html#fnref51" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>

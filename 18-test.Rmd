@@ -146,10 +146,10 @@ https://www.youtube.com/watch?v=wNRvF6vx_go
 A couple of things to note about this video:
 
 - He does **Step 2** first, then **Step 1**. This is common. The order of the steps isn't important.
-- He used $n$ instead of $a$. It's OK; it's just a different letter.
+- He uses $n$ instead of $a$. It's OK; it's just a different letter.
 - He uses the mathematical symbol $\forall$, which means "for all". For example "AUCA studdent ID numbers are 4-digits long $\forall$ students" or "$a^2$ is even $\forall$ even integers $a$".
 - At one point he introduces $k$. Here, $k$ is simply a specific value of $n$.
-- At another point he write $22^k$ but he means $2 \cdot 2^k$ or $2 \times 2^k$. It's clear from the context what he meant.
+- At another point he writes $22^k$ but he means $2 \cdot 2^k$ or $2 \times 2^k$. It's clear from the context what he mean, however.
 
 ***
 

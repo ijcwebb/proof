@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-20" />
+<meta name="date" content="2021-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,8 @@
 <li class="chapter" data-level="9.3" data-path="before-we-start.html"><a href="before-we-start.html#how-do-i-check-my-proof-is-correct"><i class="fa fa-check"></i><b>9.3</b> How do I check my proof is correct?</a></li>
 <li class="chapter" data-level="9.4" data-path="before-we-start.html"><a href="before-we-start.html#common-mistakes-in-proof"><i class="fa fa-check"></i><b>9.4</b> Common mistakes in proof</a></li>
 <li class="chapter" data-level="9.5" data-path="before-we-start.html"><a href="before-we-start.html#rightarrow-and-leftrightarrow"><i class="fa fa-check"></i><b>9.5</b> <span class="math inline">\(=\)</span>, <span class="math inline">\(\Rightarrow\)</span> and <span class="math inline">\(\Leftrightarrow\)</span></a></li>
-<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.6</b> Example</a></li>
+<li class="chapter" data-level="9.6" data-path="before-we-start.html"><a href="before-we-start.html#another-look-at-these-arrows"><i class="fa fa-check"></i><b>9.6</b> Another look at these arrows</a></li>
+<li class="chapter" data-level="9.7" data-path="before-we-start.html"><a href="before-we-start.html#example"><i class="fa fa-check"></i><b>9.7</b> Example</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="the-flowchart-of-proof.html"><a href="the-flowchart-of-proof.html"><i class="fa fa-check"></i><b>10</b> The flowchart of proof</a></li>
 <li class="chapter" data-level="11" data-path="proof-by-exhaustion.html"><a href="proof-by-exhaustion.html"><i class="fa fa-check"></i><b>11</b> Proof by exhaustion</a>
@@ -191,7 +192,8 @@
 </ul></li>
 <li class="chapter" data-level="21" data-path="mathematical-incompleteness.html"><a href="mathematical-incompleteness.html"><i class="fa fa-check"></i><b>21</b> Mathematical incompleteness</a></li>
 <li class="chapter" data-level="22" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>22</b> Glossary</a></li>
-<li class="chapter" data-level="23" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>23</b> List of sources</a></li>
+<li class="chapter" data-level="23" data-path="representations-of-numbers.html"><a href="representations-of-numbers.html"><i class="fa fa-check"></i><b>23</b> Representations of numbers</a></li>
+<li class="chapter" data-level="24" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>24</b> List of sources</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -387,23 +389,155 @@ a. Our class.
 b. The integer</p>
 </div>
 </div>
+<p>Conjecture maps rely on the idea of partitions. Let’s discuss what a partition of a set means.</p>
 </div>
-<div id="choose-your-method" class="section level3" number="8.2.3">
-<h3><span class="header-section-number">8.2.3</span> Choose your method</h3>
+<div id="sets-and-subsets" class="section level3" number="8.2.3">
+<h3><span class="header-section-number">8.2.3</span> Sets and subsets</h3>
+<p>First of all, what is a set? A <strong>set</strong> is simply a collection of items, called <strong>elements</strong>. For example, an AUCA course might be a set, and the elements would be students enrolled on the course. The set might be an alphabet, like the Kyrgyz alphabet, and the elements would be the 36 letters in this alphabet. Or the set might be the nonnegative integers, and the elements are the numbers <span class="math inline">\(0,1,2,3,4,...\)</span>.</p>
+<p>Sets are denoted with a capital letter, and the elements in a set are placed within curly brackets. For example, <span class="math inline">\(A = \{\)</span>Aibek, Aijamal, Aisuluu, Bektur, Maxim, Nurbek, Tammy<span class="math inline">\(\}\)</span> might be the students enrolled on a course, or the first one-hundred positive integers would be written <span class="math inline">\(B = \{1, 2, 3, ..., 100\}\)</span>, and the set of all integers would be <span class="math inline">\(\mathbb{Z} = \{...,-3,-2,-1,-0,1,2,3,...\}\)</span>.</p>
+<p>A set <span class="math inline">\(A\)</span> is a <strong>subset</strong> of another set <span class="math inline">\(B\)</span> if all of the elements of <span class="math inline">\(A\)</span> are also in <span class="math inline">\(B\)</span>. We write this as <span class="math inline">\(A \subseteq B\)</span>. For example, if <span class="math inline">\(A\)</span> is the set of students enrolled on a particular course at and <span class="math inline">\(B\)</span> were the set of all AUCA students, then clearly <span class="math inline">\(A \subseteq B\)</span>. If it is known that <span class="math inline">\(A\)</span> contains few elements than <span class="math inline">\(B\)</span> (i.e. all elements of <span class="math inline">\(A\)</span> are in <span class="math inline">\(B\)</span> but there are some elements in <span class="math inline">\(B\)</span> that are not in <span class="math inline">\(A\)</span>) we can write <span class="math inline">\(A \subset B\)</span>. Here are another couple of examples: Kyrgyz vowels <span class="math inline">\(\subset\)</span> Kyrgyz alphabet. Even integers <span class="math inline">\(\subset\)</span> Integers.</p>
+</div>
+<div id="partitions" class="section level3" number="8.2.4">
+<h3><span class="header-section-number">8.2.4</span> Partitions</h3>
+<p>A <strong>partition</strong> of a set means breaking a set up into subsets where</p>
+<ul>
+<li>no element is in more than one subset (i.e. subsets contain different elements to one another)</li>
+<li>each element is in at least one subset (i.e. no element in the original set is forgotten)</li>
+</ul>
+<p>An example would be during orientation for freshmen at AUCA: <em>every</em> student gets placed into a team, and no teams share any students.</p>
+<p>For conjecture maps, you are required to partition sets into two subsets. An example would be classifying the integers as even or odd, classifying the integers as negative and nonnegative, classifying polygons into convex and concave, or classifying real numbers are rational<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a> or irrational.</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-109" class="exercise"><strong>Exercise 8.9  </strong></span>How could we partition the students in our class into <strong>two</strong> subsets?</p>
+</div>
+</div>
+<p>Here are a few sample answers. Remember that when partitioning, the two subsets must be disjoint and together they must contain the entire (original) set.</p>
+<ul>
+<li>Seniors and non-seniors;</li>
+<li>Social science majors and non social science majors;</li>
+<li>Students born in the Kyrgyz Republic and students born outside the Kyrgyz Republic;</li>
+<li>Students who wear glasses and students who don’t wear glasses;</li>
+<li>Students who’ve been to Turkey and students who’ve never been to Turkey;</li>
+<li>ICP majors and non-ICP majors;</li>
+<li>Students whose primary phone is a Samsung Galaxy and those whose primary phone is not a Samsung Galaxy (or they don’t have a phone);</li>
+<li>Students who know how to say hello in Japanese and students who don’t know how to say hello in Japanese.</li>
+</ul>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-110" class="exercise"><strong>Exercise 8.10  </strong></span>How could we partition each of the following sets into <strong>two</strong> subsets? You only need to think of one answer for each!</p>
+<ol style="list-style-type: lower-alpha">
+<li>The students and teacher in our class.</li>
+<li>The AUCA student body.</li>
+<li>The residents of Bishkek.</li>
+<li>Every human on the planet.</li>
+<li>The positive integers.</li>
+<li>Polygons.<a href="#fn32" class="footnote-ref" id="fnref32"><sup>32</sup></a></li>
+<li>Animals (including humans!).</li>
+</ol>
+</div>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-111" class="exercise"><strong>Exercise 8.11  </strong></span>How could we partition each of the following into two subsets? You only need to think of one answer for each.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Polygons.</li>
+<li>Animals (including humans).</li>
+<li>The rational numbers.</li>
+<li>The Cyrillic alphabet (а, б, в, г, д, е, ё, ж, з, и, й, к, л, м, н, о, п, р, с, т, у, ф, х, ц, ч, ш, щ, ъ, ы, ь, э, ю, я).</li>
+</ol>
+</div>
+</div>
+<p>Bring your answers to our next class.</p>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-112" class="exercise"><strong>Exercise 8.12  </strong></span>Which of the following are valid partitions of a set into two subsets? Which are not? Why not?</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Set: The citizens of Bishkek. <br /> Partition: Those who’ve never taken a trolleybus and those who have.</p></li>
+<li><p>Set: The positive integers. <br /> Partition: Those with two digits and those with more than two digits.</p></li>
+<li><p>Set: The animal kingdom (excluding humans). <br /> Partition: Those which are wild and those which are domesticated.</p></li>
+<li><p>Set: Colours. <br /> Partition: Primary colours and non-primary colours.</p></li>
+<li><p>Set: Positive numbers. <br /> Partition: Integers and non-integers.</p></li>
+<li><p>Set: The AUCA student body. <br /> Partition: Those who smoke daily and those who’ve never smoked.</p></li>
+</ol>
+</div>
+</div>
+<p>Solution:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>This is a valid partition: We can categorise everyone who lives in Bishkek as either having taken a trolleybus or having not a trolleybus.<a href="#fn33" class="footnote-ref" id="fnref33"><sup>33</sup></a></p></li>
+<li><p>This is not a valid partition: we have forgotten one-digit positive integers, like 4 or 7.</p></li>
+<li><p>This is not a valid partition, as there are some animals which are called semi-feral. These are animals that live mostly in the wild, but which have sporadic contact with humans, for example for feeding or medical attention. Also included in this group are animals which were born in a domesticated environment but which then escaped or were released into the wild, such as pet animals, laboratory animals, and some fish.</p></li>
+<li><p>This is a valid partition. All colours can be categorised as being primary (red, green or blue) or non-primary (for example, secondary colours such as yellow, tertiary colours such as azure, quaternary colours, and quinary colours).</p></li>
+<li><p>This is a valid partition, as positive numbers either are integers (with only zeros to the right of the decimal point) or non-integers (not only zeros to the right of the decimal point.</p></li>
+<li><p>This is not a valid partition, as there are some students who don’t smoke every day, but have smoked.</p></li>
+</ol>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-113" class="exercise"><strong>Exercise 8.13  </strong></span>Look back at the partitions in <strong>Exercise 8.12</strong> and consider just those which you decided were valid. For each of the two subsets in the partition, which contains more elements? Consider the same question for each of the partitions you created in <strong>Exercise 8.10</strong> and <strong>Exercise 8.11</strong>.</p>
+</div>
+</div>
+<p>Solution:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>I would guess that the number of people in Bishkek who have never taken a trolleybus in their lives is much smaller than the number of people who have taken a trolleybus.</p></li>
+<li><p>There are only three primary colours and many more non-primary colours, so the subset containing the non-primary colours contains more elements.</p></li>
+<li><p>Even though there are an infinite number of positive integers and an infinite number of positive non-integers, the size of the infinity of the positive non-integers is larger! Watch the video mentioned in question 5 to learn more.</p></li>
+</ol>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-114" class="exercise"><strong>Exercise 8.14  </strong></span>For those partitions in <strong>Exercise 8.12</strong> which you decided were not valid, can you change one (or both) of the subsets to create a valid partition? Note: Try to keep to two subsets please, rather than introducing additional ones!</p>
+</div>
+</div>
+<p>Solution:</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li><p>Answers will vary. For example, “positive integers with two digits” and “positive integers with more or less than two digits,” or “positive integers greater than 99” and “positive integers from 1 to 99.”</p></li>
+<li><p>Again, answers will vary. We could make this partition valid by including semi-feral animals in either subset, e.g. “completely wild” and “semi-feral and domesticated,” or “domesticated” and “not domesticated.</p></li>
+<li><p>For example, “has never smoked” and “has smoked.” Or “smokes every day” and “does not smoke every day.”</p></li>
+</ol>
+<div class="alert alert-danger" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-115" class="exercise"><strong>Exercise 8.15  </strong></span><br /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Watch 0:00 - 2:15 of the video found at <a href="https://www.youtube.com/watch?v=Uj3_KqkI9Zo" class="uri">https://www.youtube.com/watch?v=Uj3_KqkI9Zo</a>. I recommend watching it a couple of times if it’s the first time you’ve met the concepts!</p></li>
+<li><p>Watch past 2:15 if you want (but you don’t have to!).</p></li>
+</ol>
+</div>
+</div>
+<div class="alert alert-info" role="alert">
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-116" class="exercise"><strong>Exercise 8.16  </strong></span>How could we partition each of the following sets into two subsets? You only need to think of one valid partition for each set!
+For each partition you made, which of the two subsets you created contains more elements? Why do you think this? Share your answers on the padlet for this question.</p>
+<ol style="list-style-type: lower-alpha">
+<li>The <span class="math inline">\(193\)</span> members of the UN.</li>
+<li>The cards in a deck of playing cards.</li>
+<li>Letters in the Latin alphabet.</li>
+<li>The integers.</li>
+<li>All even numbers.</li>
+<li>All odd numbers.</li>
+<li>The people you live with (including yourself).</li>
+<li>People who have the TikTok app on their phone.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="choose-your-method" class="section level3" number="8.2.5">
+<h3><span class="header-section-number">8.2.5</span> Choose your method</h3>
 <p>Once you have written the conjecture in the form “If … then …” and have attempted (hopefully successfully) in drawing its map, you are ready to begin to try building a proof.</p>
 <p>We have lots of choices of methods of proof available. In this course, we’ll look at:</p>
 <ul>
 <li>proof by <strong>exhaustion</strong>,</li>
 <li><strong>direct proof</strong>,</li>
 <li>proof by <strong>cases</strong>,</li>
-<li>proof using <strong>previously proved or disproved conjectures</strong>,</li>
 <li>proof via the <strong>contrapositive</strong>,</li>
 <li>proof by <strong>contradiction</strong>, and</li>
 <li>proof by <strong>induction</strong>.</li>
 </ul>
-<p>Each of chapters 10 - 16 will cover one of these methods, and give you some examples to practice on.</p>
-<p>At the end of each chapter there will be some more conjectures to work on. These conjectures might be true or might be false. To prove the true ones, you will be expected not just to rely on the method introduced in that chapter, but all previous methods too. This is because the challenge (and fun) of proving conjectures comes from not knowing where to start and feeling your own way to a proof. It’s a very satisfying experience!<a href="#fn31" class="footnote-ref" id="fnref31"><sup>31</sup></a></p>
-<p>Chapter 17 is a bonus chapter, and covers the incompleteness of mathematics.</p>
+<p>Each of chapters 11 - 16 will cover one of these methods, and give you some examples to practice on.</p>
+<p>At the end of each chapter there will be some more conjectures to work on. These conjectures might be true or might be false. To prove the true ones, you will be expected not just to rely on the method introduced in that chapter, but all previous methods too. This is because the challenge (and fun) of proving conjectures comes from not knowing where to start and feeling your own way to a proof. It’s a very satisfying experience!<a href="#fn34" class="footnote-ref" id="fnref34"><sup>34</sup></a></p>
 <p>The next chapter, chapter 9, looks at what makes a good proof.</p>
 
 </div>
@@ -414,7 +548,10 @@ b. The integer</p>
 <ol start="29">
 <li id="fn29"><p>Which is not an axiom or a definition.<a href="getting-started-with-a-new-conjecture.html#fnref29" class="footnote-back">↩︎</a></p></li>
 <li id="fn30"><p>This could be for a number of reasons, such as the the counterexample(s) are really really big, or maybe because you forgot to check all types of examples. Also, maybe you were just unlucky.<a href="getting-started-with-a-new-conjecture.html#fnref30" class="footnote-back">↩︎</a></p></li>
-<li id="fn31"><p>Also, when presented with a set of conjectures and told to “Prove using a direct proof…” or “Prove by induction…,” like a robot you will switch your brain off and switch on your autopilot, which we don’t want!<a href="getting-started-with-a-new-conjecture.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn31"><p>Check back to our textbook Chapter 5 if you’ve forgotten what rational numbers are.<a href="getting-started-with-a-new-conjecture.html#fnref31" class="footnote-back">↩︎</a></p></li>
+<li id="fn32"><p>Two dimensional.<a href="getting-started-with-a-new-conjecture.html#fnref32" class="footnote-back">↩︎</a></p></li>
+<li id="fn33"><p>We will say that those people who have sat in a stationary trolleybus but never a moving one as “not having taken a trolleybus.” We’ll say that people who have only ever been in trolleybuses that stopped working en-route to their destination as “having taken a trolleybus.”<a href="getting-started-with-a-new-conjecture.html#fnref33" class="footnote-back">↩︎</a></p></li>
+<li id="fn34"><p>Also, when presented with a set of conjectures and told to “Prove using a direct proof…” or “Prove by induction…,” like a robot you will switch your brain off and switch on your autopilot, which we don’t want!<a href="getting-started-with-a-new-conjecture.html#fnref34" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
