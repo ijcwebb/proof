@@ -234,78 +234,12 @@ Why are we done?? Because $0$ is even, then $1$ must be odd and because $1$ is o
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-Some of these conjectures are false; disprove them by finding a counterexample. Some of them are true; prove them using one (or a combination of more than one) of the methods we've met so far.
+This exercise will be uploaded at the start of our next class.
 
 ```
-
-(\#cnj:point): $8a - 1$ is divisible by $7$ for any positive integer $a$.
-
-(\#cnj:pain): For any positive integer $a$, $5^a - 1$ is divisible by $4$.
-
-(\#cnj:partner): The sum of two consecutive positive integers is odd. <br /> *We have proved this theorem before, but try to prove it again using induction.*
-        
-(\#cnj:peasant): The sum of the first $a$ positive odd numbers equals $a^2$.
-        
-(\#cnj:parade): Any group of students is able to be split up into groups of twos, groups of threes, or a combination of groups of twos and threes.
-        
-(\#cnj:pleasant): Any group of students greater than two is able to be split up into groups of threes, groups of fours, or a combination of groups of threes and fours.
-        
-(\#cnj:patch): Any amount greater than or equal to 12 soms can be made using an infinite supply of 4-som and 5-som coins.
-
-(\#cnj:prayer): Every negative integer is either even or odd. <br /> *Section 18.4 discusses using a proof by induction in the opposite direction (towards negative infinity). See Conjecture \@ref(cnj:progress) for the non-negative version of this.*
-        
-(\#cnj:pillow): $2^a > a$ for all negative integers $a$.
-
-(\#cnj:prey): Every row of Pascal's Triangle is a power of $11$. <br /> *The first six rows of Pascal's Triangle are shown below^[Source: https://www.livescience.com/51238-properties-of-pascals-triangle.html.], but this conjecture says that **every** row (till infinity) is a power of $11$. For example $1$ is a power of $11$ ($11^0=1$), $11$ is a power of $11$, $121$ is a power of $11$, $1331$ is a power of $11$, etc.*
-
-```{r, echo=FALSE, out.width="50%", fig.align="center"}
-knitr::include_graphics(rep("figures/pascal.png"))
-```
-
-(\#cnj:prickly): $1^2$, $11^2$, $111^2$, $1111^2$, ... are all palindromic numbers.^[A palindromic number is one that reads the same backwards as it does forwards, e.g. $987789$ and $434$. Similarly, a word is palindromic if it reads the same backwards as it does forwards, e.g. *racecar* and *noon*. Sentences can be palindromic too, usually by ignoring spaces and punctuation, e.g. "*No lemon, no melon*" or "*Was it a cat I saw?*".]
-
-(\#cnj:private): The product of three odd numbers is odd.
-  
-(\#cnj:petty): The product of any amount of odd numbers is odd.
-
-(\#cnj:platform): There are no two integers $a$ and $b$ where $a^2 = b^3$, with $a$, $b > 1$.
-
-<!-- The only numbers which can be classed as "odd" or "even" are integers (integers). -->
-
-(\#cnj:pheasant): The interior angles of the octagon formed by joining the midpoint of each side of a square with each corner of the square are not all equal. <br /> *Hint: Draw the picture first!*
-
-(\#cnj:pan): Squares of odd numbers are all one more than a multiple of $8$.
-
-(\#cnj:peak): If $a + b < 15$, then at least one of $a$ and $b$ is less than $8$.
-<!-- \item If $r + s = 2$ for two numbers $r$ and $s$, then either $r \geq 1$ or $s \geq 1$. -->
-<!-- \item If $a + b \leq 4$ ($a, b$ any real numbers) then either $a \leq 1$ or $b \leq 3$. -->
-<!-- \item If $a + b + z = 20$, then $a \geq 10$ or $a \geq 6$ or $a \geq 4$. -->
-
-(\#cnj:passion): There's no positive integer $a$ such that the deletion of its first digit divides it by $2$.
-<!-- There's no positive integer $a$ such that the deletion of its first digit divides it by 11. STRANGE -->
-<!-- There's no positive integer $a$ such that the deletion of its first digit divides it by 35. -->
-
-(\#cnj:please): There's only \textit{one} positive integer that is equal to the sum of all the positive integers less than it. 
-<!-- INDUCTION?? -->
-
-(\#cnj:person): Every positive odd integer is equal to the difference of two perfect squares. 
-<!-- (induction, visual, direct too??) -->
-
-(\#cnj:penchant): If an integer $a$ is not divisible by $3$, then $a^2 = 3k + 1$ for some integer $k$.
-
-(\#cnj:perchance): If $a^2 = b^2$, then $a = b$.
-
-</div>
+</div> 
 
 <!-- As always, a method of proof is easier to understand when actually doing it. Use the examples below to get hands on with this method. As always, if the conjecture is not in the form **If ... then ...**, make sure you rewrite it before starting the proof. -->
-
-<!-- (\#cnj:halt): DELETE If an integer $a$ is not divisible by 3,  then $n^2=3k+1$ where $k$ is a integer -->
-
-<!-- Today's date is 03/12/2020, which contains lots of repeated digits: three 0's and three 2's. The last three dates with *no* repeated digits were probably before you were born: 23/06/1987, 24/06/1987 and 25/06/1987. <br /> (\#cnj:handicap): The next date this will happen is over 300 years in the future. -->
-        
-<!-- The game Tenzi (https://ilovetenzi.com) uses forty 6-sided dice, each numbered 1 to 6. <br /> (\#cnj:heroine): If you roll all forty dice at the same time, at least seven will land on the same number. -->
-
-<!-- You have 27 small cubes, 3 each of nine different colours. <br /> (\#cnj:hypothesis): You can use all these small cubes to make a 3 x 3 x 3 cube so that *each* face of the bigger cube contains one of each of the nine colours. -->
 
 ## Going the "other" way
 
