@@ -6,9 +6,11 @@ Remember, the first few primes are $2$, $3$, $5$, $7$, $11$, $13$, $17$, $19$, $
 
 The first $10,000$ primes are listed here: https://primes.utm.edu/lists/small/10000.txt.
 
+And remember that non-prime positive integers, such as $1, 4, 6, 8, 9, 10, 12, 14, 15, ...$ are called composite numbers.^[See http://mathworld.wolfram.com/CompositeNumber.html.]
+
 ## Work through in order, building on your earlier work
 
-It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture:
+It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture
 
 <div class="alert alert-info" role="alert">
 (\#cnj:undue): Every prime number, except $2$ and $3$, is either one more or one less than a multiple of $6$.
@@ -22,7 +24,7 @@ will help you in proving the conjecture
 
 First, try to the prove Conjecture \@ref(cnj:undue). (Hint: You might want to try writing the positive integers greater than $3$ in a rectangular grid, in such a way that all the primes are in only one or two columns.). 
 
-Then see below how your work can help you in proving Conjecture \@ref(cnj:unity).
+Once you've done that, see how your work on Conjecture \@ref(cnj:undue) can help you in proving Conjecture \@ref(cnj:unity):
 
 <div class="alert alert-success" role="alert">
 ```{proof} 
@@ -40,9 +42,9 @@ or
 
 with $k \in \mathbb Z$.
 
-Let's deal with these one-by-one.
+Let's deal with these one-by-one:
 
-If
+**Case 1:** If
 
 \begin{align}
     p &= 6k + 1
@@ -59,7 +61,7 @@ then doubling it and adding two gives
 
 which is a multiple of 4.
 
-Similarly, if
+**Case 2:** If
 
 \begin{align}
     p &= 6k - 1
@@ -78,7 +80,7 @@ which is a multiple of 4.
 
 As noted in the first line of the proof, this proof covers all primes *except* $2$ and $3$. However, conjecture  \@ref(cnj:unity) covers all primes except $2$, so we should also check that the conjecture holds for $3$. 
 
-If $p=3$, then $2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8$, which is a multiple of $4$. 
+**Case 3:** If $p=3$, then $2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8$, which is a multiple of $4$. 
 
 Therefore the conjecture is true.
 
@@ -108,7 +110,7 @@ As always, be aware that some of these conjectures are false, and should be disp
 
 (\#cnj:unary): There are no positive integers $a$ and $b$ with $a$ prime and $a = 6b + 5$.
 
-(\#cnj:umami): For every positive composite^[Composite numbers: http://mathworld.wolfram.com/CompositeNumber.html.] integer $b$, if some prime number $a$ divides $b$, then some other prime $c$ (with $c$ able to be the same as $a$) also divides $b$.
+(\#cnj:umami): For every positive composite integer $b$, if some prime number $a$ divides $b$, then some other prime $c$ (with $c$ able to be the same as $a$) also divides $b$.
 <!-- [DIRECT] -->
 
 (\#cnj:unhip): For every positive composite integer $b$, if some prime number $a$ divides $b$, then some other prime $c$ (with $c$ $\neq$ $a$) also divides $b$. 
@@ -155,10 +157,10 @@ As always, be aware that some of these conjectures are false, and should be disp
 
 (\#cnj:usnea): If the greatest common divisor of two positive integers, $a$ and $b$, is $> 1$, then either $b$ | $a$ or $b$ is composite. 
 
-(\#cnj:ukase): If $a$ is a integer greater than 1, then none of the numbers $a!+2$, $a!+3$, $a!+4$, $a!+5$, ..., $a!+ a$ are prime. <br /> *Hint: This conjecture could be expressed as: For any $a \geq 2$, there exists $a-1$ consecutive composite numbers.*
+(\#cnj:ukase): If $a$ is an integer greater than $1$, then none of the numbers $a!+2$, $a!+3$, $a!+4$, $a!+5$, ..., $a!+ a$ are prime. <br /> *Hint: This conjecture could be expressed as: "If $a \in \mathbb{Z}$ and $a \geq 2$, there exists $a-1$ consecutive composite numbers."*
 <!-- https://www.ipracticemath.com/learn/realnumber/natural-numbers -->
 
-(\#cnj:unfix): Every integer greater than $1$ has at least one prime divisor. <br /> *WARNING: THis one's tough!*
+(\#cnj:unfix): Every integer greater than $1$ has at least one prime divisor. <br /> *WARNING: This one's tough!*
 <!-- Proof here: http://gauss.math.luc.edu/greicius/Math201/Fall2012/Lectures/primes.article.pdf -->
 </div>
 

@@ -24,7 +24,7 @@
 <meta name="author" content="Iain Webb" />
 
 
-<meta name="date" content="2021-04-21" />
+<meta name="date" content="2021-04-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -219,9 +219,10 @@
 <p>The primes are a fascinating family of numbers. They are the building blocks of the integers, because every number is either prime or is the product of primes. For that reason, this chapter presents a whole set of conjectures on the primes.</p>
 <p>Remember, the first few primes are <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(5\)</span>, <span class="math inline">\(7\)</span>, <span class="math inline">\(11\)</span>, <span class="math inline">\(13\)</span>, <span class="math inline">\(17\)</span>, <span class="math inline">\(19\)</span>, <span class="math inline">\(23\)</span>, <span class="math inline">\(29\)</span>, <span class="math inline">\(31\)</span>, <span class="math inline">\(37\)</span>, <span class="math inline">\(41\)</span>, <span class="math inline">\(43\)</span>, <span class="math inline">\(47\)</span>, <span class="math inline">\(53\)</span>, <span class="math inline">\(59\)</span>, <span class="math inline">\(61\)</span>, <span class="math inline">\(67\)</span>, <span class="math inline">\(71\)</span>, <span class="math inline">\(73\)</span>, <span class="math inline">\(79\)</span>, <span class="math inline">\(83\)</span>, <span class="math inline">\(89\)</span>, <span class="math inline">\(97\)</span>, <span class="math inline">\(101\)</span>, <span class="math inline">\(103\)</span>, <span class="math inline">\(107\)</span>, <span class="math inline">\(109\)</span>, <span class="math inline">\(113\)</span>….</p>
 <p>The first <span class="math inline">\(10,000\)</span> primes are listed here: <a href="https://primes.utm.edu/lists/small/10000.txt" class="uri">https://primes.utm.edu/lists/small/10000.txt</a>.</p>
+<p>And remember that non-prime positive integers, such as <span class="math inline">\(1, 4, 6, 8, 9, 10, 12, 14, 15, ...\)</span> are called composite numbers.<a href="#fn55" class="footnote-ref" id="fnref55"><sup>55</sup></a></p>
 <div id="work-through-in-order-building-on-your-earlier-work" class="section level2" number="20.1">
 <h2><span class="header-section-number">20.1</span> Work through in order, building on your earlier work</h2>
-<p>It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture:</p>
+<p>It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture</p>
 <div class="alert alert-info" role="alert">
 <p>Conjecture 20.1 : Every prime number, except <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>, is either one more or one less than a multiple of <span class="math inline">\(6\)</span>.</p>
 </div>
@@ -230,7 +231,7 @@
 <p>Conjecture 20.2 : Doubling any prime number (except 2) then adding two creates a number divisible by four.</p>
 </div>
 <p>First, try to the prove Conjecture <a href="#cnj:undue">20.1</a>. (Hint: You might want to try writing the positive integers greater than <span class="math inline">\(3\)</span> in a rectangular grid, in such a way that all the primes are in only one or two columns.).</p>
-<p>Then see below how your work can help you in proving Conjecture <a href="#cnj:unity">20.2</a>.</p>
+<p>Once you’ve done that, see how your work on Conjecture <a href="#cnj:undue">20.1</a> can help you in proving Conjecture <a href="#cnj:unity">20.2</a>:</p>
 <div class="alert alert-success" role="alert">
 
 <div class="proof">
@@ -243,8 +244,8 @@
     p &amp;= 6k - 1
 \end{align}\]</span></p>
 <p>with <span class="math inline">\(k \in \mathbb Z\)</span>.</p>
-<p>Let’s deal with these one-by-one.</p>
-<p>If</p>
+<p>Let’s deal with these one-by-one:</p>
+<p><strong>Case 1:</strong> If</p>
 <p><span class="math display">\[\begin{align}
     p &amp;= 6k + 1
 \end{align}\]</span></p>
@@ -256,7 +257,7 @@
     &amp;= 4(3p + 1)
 \end{align}\]</span></p>
 <p>which is a multiple of 4.</p>
-<p>Similarly, if</p>
+<p><strong>Case 2:</strong> If</p>
 <p><span class="math display">\[\begin{align}
     p &amp;= 6k - 1
 \end{align}\]</span></p>
@@ -269,7 +270,7 @@
 \end{align}\]</span></p>
 <p>which is a multiple of 4.</p>
 <p>As noted in the first line of the proof, this proof covers all primes <em>except</em> <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>. However, conjecture <a href="#cnj:unity">20.2</a> covers all primes except <span class="math inline">\(2\)</span>, so we should also check that the conjecture holds for <span class="math inline">\(3\)</span>.</p>
-<p>If <span class="math inline">\(p=3\)</span>, then <span class="math inline">\(2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8\)</span>, which is a multiple of <span class="math inline">\(4\)</span>.</p>
+<p><strong>Case 3:</strong> If <span class="math inline">\(p=3\)</span>, then <span class="math inline">\(2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8\)</span>, which is a multiple of <span class="math inline">\(4\)</span>.</p>
 <p>Therefore the conjecture is true.</p>
 </div>
 </div>
@@ -287,7 +288,7 @@
 <p>Conjecture 20.6 : All primes are odd.</p>
 <p>Conjecture 20.7 : There are no positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a\)</span> prime and <span class="math inline">\(a = 6b + 3\)</span>.</p>
 <p>Conjecture 20.8 : There are no positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a\)</span> prime and <span class="math inline">\(a = 6b + 5\)</span>.</p>
-<p>Conjecture 20.9 : For every positive composite<a href="#fn53" class="footnote-ref" id="fnref53"><sup>53</sup></a> integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> able to be the same as <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
+<p>Conjecture 20.9 : For every positive composite integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> able to be the same as <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
 <!-- [DIRECT] --></p>
 <p>Conjecture 20.10 : For every positive composite integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> <span class="math inline">\(\neq\)</span> <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
 <!-- (c-e) --></p>
@@ -317,9 +318,9 @@
 <p>Conjecture 20.21 : For a positive integer <span class="math inline">\(a\)</span>, exactly one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> is prime.</p>
 <hr />
 <p>Conjecture 20.22 : If the greatest common divisor of two positive integers, <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, is <span class="math inline">\(&gt; 1\)</span>, then either <span class="math inline">\(b\)</span> | <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is composite.</p>
-<p>Conjecture 20.23 : If <span class="math inline">\(a\)</span> is a integer greater than 1, then none of the numbers <span class="math inline">\(a!+2\)</span>, <span class="math inline">\(a!+3\)</span>, <span class="math inline">\(a!+4\)</span>, <span class="math inline">\(a!+5\)</span>, …, <span class="math inline">\(a!+ a\)</span> are prime. <br /> <em>Hint: This conjecture could be expressed as: For any <span class="math inline">\(a \geq 2\)</span>, there exists <span class="math inline">\(a-1\)</span> consecutive composite numbers.</em>
+<p>Conjecture 20.23 : If <span class="math inline">\(a\)</span> is an integer greater than <span class="math inline">\(1\)</span>, then none of the numbers <span class="math inline">\(a!+2\)</span>, <span class="math inline">\(a!+3\)</span>, <span class="math inline">\(a!+4\)</span>, <span class="math inline">\(a!+5\)</span>, …, <span class="math inline">\(a!+ a\)</span> are prime. <br /> <em>Hint: This conjecture could be expressed as: “If <span class="math inline">\(a \in \mathbb{Z}\)</span> and <span class="math inline">\(a \geq 2\)</span>, there exists <span class="math inline">\(a-1\)</span> consecutive composite numbers.”</em>
 <!-- https://www.ipracticemath.com/learn/realnumber/natural-numbers --></p>
-<p>Conjecture 20.24 : Every integer greater than <span class="math inline">\(1\)</span> has at least one prime divisor. <br /> <em>WARNING: THis one’s tough!</em>
+<p>Conjecture 20.24 : Every integer greater than <span class="math inline">\(1\)</span> has at least one prime divisor. <br /> <em>WARNING: This one’s tough!</em>
 <!-- Proof here: http://gauss.math.luc.edu/greicius/Math201/Fall2012/Lectures/primes.article.pdf --></p>
 </div>
 <!-- underuntilunionurbanupperusualusageupsetunityundueuncleultraurineuniteutterulcerunmetusherunifyunfituncutusurpunlitundidusuryudderuntieunwedumberupendulemaunzipumbrauvula -->
@@ -328,8 +329,8 @@
 </div>
 <div class="footnotes">
 <hr />
-<ol start="53">
-<li id="fn53"><p>Composite numbers: <a href="http://mathworld.wolfram.com/CompositeNumber.html" class="uri">http://mathworld.wolfram.com/CompositeNumber.html</a>.<a href="primes.html#fnref53" class="footnote-back">↩︎</a></p></li>
+<ol start="55">
+<li id="fn55"><p>See <a href="http://mathworld.wolfram.com/CompositeNumber.html" class="uri">http://mathworld.wolfram.com/CompositeNumber.html</a>.<a href="primes.html#fnref55" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
