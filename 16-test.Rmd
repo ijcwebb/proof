@@ -263,7 +263,7 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 
 (\#cnj:xanthate): If $a$ is an odd number, then $8 | (a^2 - 1)$.
 
-(\#cnj:xanthein): For a integer $a$, if $4|a^2$, then $4|a$.
+(\#cnj:xanthein): For an integer $a$, if $4|a^2$, then $4|a$.
 
 (\#cnj:xanthation): For any non-zero numbers $a, b$ and $c$, if $ab=c$ then at least one of $a, b$ and $c$ is positive.
 
