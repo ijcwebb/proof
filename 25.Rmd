@@ -1,0 +1,83 @@
+# Mathematical incompleteness
+
+Finding some, or even lots and lots of, examples where the statement is true is not enough to prove it. A proof in mathematics shows that it is true in *all* cases.
+
+Here's a couple of examples:
+
+
+- To prove that Pythagoras's Theorem for Right Triangle is true, you can't just should that it works for a 3-4-5 triangle and a 5-12-13 triangle and a 8, 15, 17 triangle. Why? Because to your reader, it might look like you just carefully picked some examples which worked! There are an infinity of triangles we could pick, and you have shown the theorem works for just three triangles!
+    
+- Imagine I tell you that $\sqrt{a + b} = \sqrt{a} + \sqrt{b}$ is a true} statement. What I am saying is this is *always* text}, for all possibles values of $a$ and $b$. I might illustrate I'm right by showing you a couple of examples: When $a = 1$ and $b = 0$, it works. And when $a = 0$ and $b = 1$, it works. But you might be thinking something is wrong. These examples look quite similar. Trying it out on other numbers and you immediately see this statement is definitely *not* true for all cases. You decide I'm trying to cover up the truth value of this statement by a careful selection of illustrative examples.
+    
+- Finally, maybe you're not trying to deceive, just think you've checked enough examples (all of which worked) and, having found no counterexample, you conclude that your work is done and declare the statement true}. Here's an example... The proper divisors of a positive number *never* sum to more than the number itself.} Remember, divisors are numbers which divide into another number without a remainder, and the "proper" bit means you don't include the number itself. This seems completely believable, and we could start check some examples. 1 has no proper divisors so the sum of its proper divisors is 0, and 0 is indeed < 1. 2 has just one proper divisor, 1, so the sum of its proper divisors is 1. 1 < 2, so we're still good. 3 has just 1 proper divisor, 1, and so the sum of its proper divisors is 1, and 1 < 3. In fact, prime numbers only have one proper divisor, 1, and so the sum of a prime number's proper divisors will always = 1, and 1 < any prime number.
+    Let's keep checking. The proper divisors of 6 are 1, 2 and 3, and their sum is 6 which is not greater than 6. 7 is prime. 8's proper divisors are 1, 2 and 4, which sum to 7, which is < 8. It's looking good! The proper divisors of 9 are 1 and 3, and their sum, 4, is < 9. The proper divisors of 10 are 1, 2 and 5, sum = 8, which < 10. Etc. etc. etc.
+    Except, not etc.! Because if we get checking, we do find examples where this statement fails. Consider 30. The proper factors are 1, 2, 3, 5, 6, 10 and 15 which very quickly you can see sum to more than 30. In fact, there's lots of counterexamples. The moral of the story: never assume that because all of the examples you've checked have all worked, that the statement is universally true.^[Can you find some other counterexamples to this statement? Although only one counterexample, for example $n = 30$, is needed to disprove a statement, it can be interesting to find more. Can you find  relationship between the counterexamples? Are there an infinite number of counterexamples?] ^[Read more here: https://paulgafni.com/conjectures/]
+
+<!-- REMOVE THESE THREE: -->
+- If a rectangle’s perimeter is not an integer, neither is its area. From: https://mathforlove.com/lesson/counterexamples/
+- Take any four-digit number. Create a second number by moving the first digit to the 'back of the queue' and moving the rest along. Now add your two numbers. I predict your answer will be a multiple of 11... https://nrich.maths.org/564
+- https://nrich.maths.org/10586/note
+If n2−1 is divisible by 5, then n is divisible by 2 or 3 See: https://math.stackexchange.com/questions/3110870/provide-a-counterexample-if-n2-1-is-divisible-by-5-then-n-is-divisible
+    
+- A more extreme example is the statement 12, 121, 1211, 12111, 121111, ... are not prime}. This statement suggests that any number which begins with 12 and then has *any* amount of 1's after is not prime. Sure enough, 12 is not prime, 121 is not prime, 1211 is not prime, 12111 is not prime, 121111 is not prime, 1211111 is not prime. If you keep going, you'll find that this pattern continues, 12[six 1's] is not prime, 12[seven 1's] is not prime...12[forty-nine 1's] is not prime, 12[fifty 1's] is not prime,...,12[eighty 1's] is not prime...12[ninety-nine 1's] is not prime, 12[one-hundred 1's] is not prime...12[one-hundred-twenty 1's] is not prime. This point you might be happy that this pattern is always true and declare the statement true}. Keep going, however, and you'll discover that 12[one-hundred-thirty-six 1's] is prime! The statement is false}, and the eventual counterexample, though not easy to find, was found. Are there more (bigger) counterexamples? Maybe, nut just one was enough to disprove the conjecture.
+<!-- https://www.quora.com/What-is-an-example-of-a-conjecture-that-was-proven-wrong-for-very-large-numbers https://mathoverflow.net/questions/15444/examples-of-eventual-counterexamples https://math.stackexchange.com/questions/514/conjectures-that-have-been-disproved-with-extremely-large-counterexamples https://math.hmc.edu/funfacts/large-counterexample/ -->
+    
+- Here's another example. Start with a whole number. concatenate this number with itself. The resulting number is never a perfect square. Let's try some examples.
+
+1: 11 is not a perfect square. <br />
+2: 22 is not a perfect square. <br />
+3: 33 is not a perfect square. <br />
+4: 44 is not a perfect square. <br />
+5: 55 is not a perfect square. <br />
+6: 66 is not a perfect square. <br />
+7: 77 is not a perfect square. <br />
+8: 88 is not a perfect square. <br />
+9: 99 is not a perfect square. <br />
+10: 1010 is not a perfect square. <br />
+11: 1111 is not a perfect square. <br />
+$\vdots$
+99: 9999 is not a perfect square. <br />
+100: 100100 is not a perfect square. <br />
+101: 101101 is not a perfect square. <br />
+$\vdots$
+45105: 4510545105 is not a perfect square. <br />
+45106: 4510645106 is not a perfect square. <br />
+45107: 4510745107 is not a perfect square. <br />
+$\vdots$
+
+The statement *looks* to be true. But finding 45107 examples where the statement works and none where it doesn't work is not good enough. Mathematical proof doesn't work like this. A proof was needing to be found. Unfortunately no one was able to find a proof of the statement. This might be because of one of four reasons:
+
+(A) The statement is not true, in which case a counterexample is out there somewhere, but obviously very big. 
+(B) The statement is true, a proof is possible and within our power to find, just we haven't yet found it.
+(C) The statement is true, but a proof is too difficult to build with current mathematics. Maybe we aren't yet clever enough to proof the statement is true}, but future mathematicians will be able to.
+(D) The statement is true, but is unprovable. Sadly, in mathematics there are some statements which are unprovable. Even more sad, we don't know which currently unproven statements are actually unprovable.
+
+Failing to find a proof is bad news. What to do? You can set up a computer to hunt for a counterexample, in case it's (A). You can keep hunting for a proof, hoping for (B). You can, and probably should do both of these things. Work on the proof, but have a computer hunting for a counterexample while you work. If it finds a counterexample, you can put your pen down and relax. It might be that we are in (C). In this case, the computer is never going to find a counterexample, and your hunt for a proof is going to be tough going. BUT, mathematics is not finished, and mathematicians around the world keep adding to the field. Mathematics is only really interesting if we are working on things we find challenging and new for us. The subject only moves forward when people push the boundaries in search of unproven statements, so inventing and discovering new mathematics shouldn't cause you concern (but isn't necessarily going to be easy). However, you need to be aware of (D). There's nothing you can do to mitigate the effects of (D). It's just a fact: some mathematical statements are unprovable. Let's be clear - this isn't just time dependent. (D) isn't saying that the statement is *currently* unprovable and we just need to create some new mathematics to find a proof. That's (C). (D) says that the statement is unprovable period. No matter how much mathematics we develop or come up with, the statement will remain unprovable. This fact means that mathematics is *incomplete*. It's a (rather depressing) fact of the subject and something which mathematicians has been slowly (and grudgingly) accepting since it was discovered around 100 years ago.^[Check out Natalie Wolchover's Quanta article on this *How G\"{o}del’s Proof Works* (accessible at https://www.quantamagazine.org/how-godels-incompleteness-theorems-work-20200714/). In short, Natalie states that "...if a set of axioms is consistent, then it is incomplete."] ^[There are actually three laws at play here. They are, in order, that for any non-trivial mathematical formalisation: (*i*) There are true statements that cannot be proved. (*ii*) The consistency of the formalisation cannot be proved within the system. (*iii*) The problem of checking whether a given statement has a proof is undecidable. The first part and second parts were proved by the European-American mathematician Kurt G\"{o}del in 1931, and the third part by the American Alonzo Church and Brit Alan Turing in 1936. Source: http://theory.stanford.edu/~trevisan/cs154-12/notelogic.pdf] 
+<!-- https://infinityplusonemath.wordpress.com/2017/09/04/how-godel-proved-maths-inherent-limitations/ -->
+    
+How many currently unproven statements are actually completely unprovable? Well of course, we don't know. Here's a couple of rays of sunshine:
+    
+- Mathematicians are working on the currently unproven statements, and do have regular successes. Success might mean a complete proof (such as *Fermat's last theorem*), or it might mean cutting down the work remaining for future mathematicians to continue with (such as the *Hadwiger–Nelson problem*^[See https://www.quantamagazine.org/decades-old-graph-problem-yields-to-amateur-mathematician-20180417] and *Ramsey's theorem*^[See http://dx.doi.org/10.1007\%2Fs00454-002-0780-5] % Or direct download at https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwinuNDw3JXLAhVINSYKHeSeAScQFggdMAA&url=http%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1007%2Fs00454-002-0780-5.pdf&usg=AFQjCNF4PX85H1EkoXwW6yWE-QPZ7N29Sg&sig2=ex_rtKMal75efadUm9nQlw.
+        
+- Whilst we will definitely meet (and already have met) some unproven (therefore possibly unprovable) statements in this course, I won't be assigning you any to work on! However, reading about the work that been/is being done on these statements will give you an appreciation that mathematics is not "done" - it is not all written down in textbooks with no more to be said or added. Mathematics is still alive and kicking. In one of my other courses, *Make-It-Yourself Mathematics*, we do creative, playful, thought-provoking and quite often 100\% original mathematics. Why not come try next semester? ;) If you've got imagination, not only can you work on existing problems, you can create your own and attempt to solve them.^[You might be thinking, if you could prove a statement is unprovable, then it must be true}, because counterexamples of false} statements can always be found, given you leave a computer program long enough to find one. The issue with this logic is that this assumes that a counterexample, once found, is checkable. See https://www.quora.com/If-P-is-undecidable-then-a-counterexample-for-P-does-not-exist-If-no-counterexample-exists-then-P-is-true-What-is-wrong-with-this-reasoning for the Quora community's take on this.]
+<!-- https://mindmatters.ai/2019/03/things-exist-that-are-unknowable/ -->
+   
+    
+You have three options: continue working on finding a proof (hoping , program a computer to hunt for a counterexample, or give up. Did mathematicians *know* that a counterexample existed? No, they didn't. They programmed the computer to hunt for counterexamples 
+    
+Mathematicians weren't happy with this. They decided to set a computer to check more and more numbers to look for a counterexample. Eventually, this happened:
+
+$\vdots$
+
+13223140494: 1322314049413223140494 is not a perfect square.
+13223140495: 1322314049513223140495 is not a perfect square.
+13223140496: 1322314049613223140496 is a perfect square!!!!
+    
+Indeed, 1322314049613223140496 is $36363636364^2$.
+    
+
+*Exercise*
+1. $(a + b)^2 = a^2 + b^2$ - You have to do your best to "sell" this statement. Come up with some examples where it works, 
+    
+- Here's another example. Take a whole. Concatenate it with itself. The resulting number is never the square of the original number. 
+<!-- [REMOVE] -->

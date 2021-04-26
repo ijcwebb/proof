@@ -1,21 +1,12 @@
-# Using previous proofs / disproofs
+# Writing your own conjectures task
 
 <div class="alert alert-info" role="alert">
 ```{exercise}
-The following conjectures *might* need you to use earlier work, or might not.
-  
+For this exercise, I want you to look back over *all* the previous conjectures we've proved and disproved and use your findings to write some new conjectures.
 
+<!-- Something slightly different today: -->
 
-  
-
-``` 
-</div>
-
-<div class="alert alert-info" role="alert">
-```{exercise}
-Something slightly different today:
-  
-This chapter was all about using previously proved (or disproved) conjectures to aid your work on new proofs. Today, I want you to look back over *all* the previous conjectures we've proved and disproved and use your findings to write some new conjectures.
+<!-- This chapter was all about using previously proved (or disproved) conjectures to aid your work on new proofs. -->
 
 Here are the rules:
 
@@ -27,11 +18,9 @@ Each student should write at least two conjectures.
     
 - DON'T rush - take your time to write these conjectures.
     
-- Post your conjectures onto the XXXXXXXXXXXXXXXXXXXx padlet.
-**Note:** Post each conjecture whenever it's ready to go!
+- Post your conjectures onto the padlet. <br /> **Note:** Post each conjecture whenever it's ready to go!
     
-- If you still have time remaining in class OR as homework, try to solve some of your classmates' conjectures. Post your proof **underneath** their post.
-**Note:** DON'T solve too many conjectures - leave some for other people to solve!!
+- If you still have time remaining in class OR as homework, try to solve some of your classmates' conjectures. Post your proof **underneath** their post.  <br /> **Note:** DON'T solve too many conjectures - leave some for other people to solve!!
     
 - If there are no unsolved conjectures left on the padlet, try solving one of the conjectures already solved. Maybe you can solve it in a different way??
     

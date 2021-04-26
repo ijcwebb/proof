@@ -1,0 +1,8 @@
+# ▶ Proof without words
+
+See 
+
+- https://artofproblemsolving.com/wiki/index.php/Proofs_without_words,
+- http://proofwords.blogspot.com
+
+for more information about the method of **proof without words**.

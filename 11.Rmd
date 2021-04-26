@@ -1,4 +1,4 @@
-# Proof by exhaustion
+# ▶ Proof by exhaustion
 
 <div class="alert alert-warning" role="alert">
 <strong>Note: You should be familiar with the flowchart of proof in Chapter 10 before reading this chapter.

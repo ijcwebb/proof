@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 26 Glossary | An Introduction to Mathematical Proof</title>
+  <title>Chapter 24 More conjectures II: Prime numbers | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 26 Glossary | An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 24 More conjectures II: Prime numbers | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 26 Glossary | An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 24 More conjectures II: Prime numbers | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mathematical-incompleteness.html"/>
-<link rel="next" href="representations-of-numbers.html"/>
+<link rel="prev" href="more-conjectures-i-assorted.html"/>
+<link rel="next" href="mathematical-incompleteness.html"/>
 <script src="libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -212,30 +212,132 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="glossary" class="section level1" number="26">
-<h1><span class="header-section-number">Chapter 26</span> Glossary</h1>
-<p>Below is a list of commons terms in mathematical proof.</p>
-<p>A <strong>definition</strong> lays down the meaning of a concept. It is a statement which tells the reader what something is.</p>
-<p>The term <strong>axiom</strong> is used throughout the whole of mathematics to mean a statement which is accepted as true for that particular branch. Different fields of mathematics usually have different sets of statements which are considered as being axiomatic.</p>
-<p>A <strong>statement</strong> is a sentence which is either true or is false. Once you start considering proving a statement, you can call it a <strong>proposition</strong>. Once a proposition has been accepted “publicly” as something which is true but unproven it can referred to as a <strong>conjecture</strong>. This is an unproven statement which is believed to be true but has not yet been proven.</p>
-<p>The term <strong>theorem</strong> is used throughout the whole of mathematics to mean a statement which has been proved to be true from whichever axioms are relevant to that particular branch. Statements which are taken as axioms in one branch of mathematics may be theorems (or irrelevant) in others.</p>
-<p>A <strong>lemma</strong> is a statement which is proven during the course of reaching the proof of a theorem. There is no real difference between a lemma and a theorem: they are both statements whose value is either true or false. However, a lemma is seen more as a stepping-stone than a theorem in itself (and frequently takes a lot more work to prove than the theorem to which it leads). Some lemmas are famous enough to be named after the mathematician who proved them (for example: Abel’s Lemma and Urysohn’s Lemma), but they are still categorised as second-class citizens in the aristocracy of mathematics!</p>
-<p>A <strong>corollary</strong> is a proof which is a direct result, or a direct application, of another proof. It can be considered as being a proof for free on the back of a proof which has been paid for with blood, sweat and tears. The word is ultimately derived from the Latin corolla, meaning small garland, or the money paid for it. Hence has the sense something extra, lagniappe or freebie.</p>
-<p>Sources: <br />
-<a href="https://www.quora.com/What-are-the-differences-between-theorems-definitions-axioms-lemmas-corollaries-propositions-and-statements" class="uri">https://www.quora.com/What-are-the-differences-between-theorems-definitions-axioms-lemmas-corollaries-propositions-and-statements</a> <br />
-<a href="https://www.mathblog.dk/theorems-lemmas" class="uri">https://www.mathblog.dk/theorems-lemmas</a></p>
-<p>See also: <br />
-<a href="https://mathoverflow.net/questions/18352/theorem-versus-proposition" class="uri">https://mathoverflow.net/questions/18352/theorem-versus-proposition</a> <br />
-<a href="https://www.slader.com/discussion/question/what-is-the-negation-of-each-of-these-propositions" class="uri">https://www.slader.com/discussion/question/what-is-the-negation-of-each-of-these-propositions</a></p>
+<div id="more-conjectures-ii-prime-numbers" class="section level1" number="24">
+<h1><span class="header-section-number">Chapter 24</span> More conjectures II: Prime numbers</h1>
+<p>The primes are a fascinating family of numbers. They are the building blocks of the integers, because every number is either prime or is the product of primes. For that reason, this chapter presents a whole set of conjectures on the primes.</p>
+<p>Remember, the first few primes are <span class="math inline">\(2\)</span>, <span class="math inline">\(3\)</span>, <span class="math inline">\(5\)</span>, <span class="math inline">\(7\)</span>, <span class="math inline">\(11\)</span>, <span class="math inline">\(13\)</span>, <span class="math inline">\(17\)</span>, <span class="math inline">\(19\)</span>, <span class="math inline">\(23\)</span>, <span class="math inline">\(29\)</span>, <span class="math inline">\(31\)</span>, <span class="math inline">\(37\)</span>, <span class="math inline">\(41\)</span>, <span class="math inline">\(43\)</span>, <span class="math inline">\(47\)</span>, <span class="math inline">\(53\)</span>, <span class="math inline">\(59\)</span>, <span class="math inline">\(61\)</span>, <span class="math inline">\(67\)</span>, <span class="math inline">\(71\)</span>, <span class="math inline">\(73\)</span>, <span class="math inline">\(79\)</span>, <span class="math inline">\(83\)</span>, <span class="math inline">\(89\)</span>, <span class="math inline">\(97\)</span>, <span class="math inline">\(101\)</span>, <span class="math inline">\(103\)</span>, <span class="math inline">\(107\)</span>, <span class="math inline">\(109\)</span>, <span class="math inline">\(113\)</span>….</p>
+<p>The first <span class="math inline">\(10,000\)</span> primes are listed here: <a href="https://primes.utm.edu/lists/small/10000.txt" class="uri">https://primes.utm.edu/lists/small/10000.txt</a>.</p>
+<p>And remember that non-prime positive integers, such as <span class="math inline">\(1, 4, 6, 8, 9, 10, 12, 14, 15, ...\)</span> are called composite numbers.<a href="#fn56" class="footnote-ref" id="fnref56"><sup>56</sup></a></p>
+<div id="work-through-in-order-building-on-your-earlier-work" class="section level2" number="24.1">
+<h2><span class="header-section-number">24.1</span> Work through in order, building on your earlier work</h2>
+<p>It is recommended that you work through the conjectures below in order, not because they get more difficult, but because later conjectures build on earlier ones. For example, proving the conjecture</p>
+<div class="alert alert-info" role="alert">
+<p>Conjecture 24.1 : Every prime number, except <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>, is either one more or one less than a multiple of <span class="math inline">\(6\)</span>.</p>
+</div>
+<p>will help you in proving the conjecture</p>
+<div class="alert alert-info" role="alert">
+<p>Conjecture 24.2 : Doubling any prime number (except 2) then adding two creates a number divisible by four.</p>
+</div>
+<p>First, try to the prove Conjecture <a href="#cnj:undue">24.1</a>. (Hint: You might want to try writing the positive integers greater than <span class="math inline">\(3\)</span> in a rectangular grid, in such a way that all the primes are in only one or two columns.).</p>
+<p>Once you’ve done that, see how your work on Conjecture <a href="#cnj:undue">24.1</a> can help you in proving Conjecture <a href="#cnj:unity">24.2</a>:</p>
+<div class="alert alert-success" role="alert">
 
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> As conjecture <a href="#cnj:undue">24.1</a> is known to be true, we know that every prime <span class="math inline">\(p\)</span>, <span class="math inline">\(p \neq 2, 3\)</span>, can be written in the form</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k + 1
+\end{align}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k - 1
+\end{align}\]</span></p>
+<p>with <span class="math inline">\(k \in \mathbb Z\)</span>.</p>
+<p>Let’s deal with these one-by-one:</p>
+<p><strong>Case 1:</strong> If</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k + 1
+\end{align}\]</span></p>
+<p>then doubling it and adding two gives</p>
+<p><span class="math display">\[\begin{align}
+    2p + 2  &amp;= 2(6k + 1) + 2 \\
+    &amp;= 12p + 2 + 2 \\
+    &amp;= 12p + 4 \\
+    &amp;= 4(3p + 1)
+\end{align}\]</span></p>
+<p>which is a multiple of 4.</p>
+<p><strong>Case 2:</strong> If</p>
+<p><span class="math display">\[\begin{align}
+    p &amp;= 6k - 1
+\end{align}\]</span></p>
+<p>then doubling it and adding two gives</p>
+<p><span class="math display">\[\begin{align}
+    2p + 2  &amp;= 2(6k - 1) + 2 \\
+    &amp;= 12p - 2 + 2 \\
+    &amp;= 12p \\
+    &amp;= 4(3p)
+\end{align}\]</span></p>
+<p>which is a multiple of 4.</p>
+<p>As noted in the first line of the proof, this proof covers all primes <em>except</em> <span class="math inline">\(2\)</span> and <span class="math inline">\(3\)</span>. However, conjecture <a href="#cnj:unity">24.2</a> covers all primes except <span class="math inline">\(2\)</span>, so we should also check that the conjecture holds for <span class="math inline">\(3\)</span>.</p>
+<p><strong>Case 3:</strong> If <span class="math inline">\(p=3\)</span>, then <span class="math inline">\(2p+2 = 2 \cdot 3 + 2 = 6 + 2 = 8\)</span>, which is a multiple of <span class="math inline">\(4\)</span>.</p>
+<p>Therefore the conjecture is true.</p>
+</div>
+</div>
+</div>
+<div id="conjectures-6" class="section level2" number="24.2">
+<h2><span class="header-section-number">24.2</span> Conjectures</h2>
+<p>As always, be aware that some of these conjectures are false, and should be disproved using a counterexample or a disproof.</p>
+<div class="alert alert-info" role="alert">
+<p>Conjecture 24.3 : There are an infinite amount of prime numbers. <br /> <em>Hint: See 12:30-14:45 of <a href="https://www.youtube.com/watch?v=OihQPf4mJH4" class="uri">https://www.youtube.com/watch?v=OihQPf4mJH4</a>.</em></p>
+<hr />
+<p><em>Look back to Conjecture 13.15. Now attempt these two conjectures:</em></p>
+<p>Conjecture 24.4 : <span class="math inline">\(a^2 - a + 41\)</span> is always prime for all positive integers <span class="math inline">\(a\)</span>.</p>
+<p>Conjecture 24.5 : <span class="math inline">\(a^2 - a + 41\)</span> is always prime for all nonpositive integers <span class="math inline">\(a\)</span>.</p>
+<hr />
+<p>Conjecture 24.6 : All primes are odd.</p>
+<p>Conjecture 24.7 : There are no positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a\)</span> prime and <span class="math inline">\(a = 6b + 3\)</span>.</p>
+<p>Conjecture 24.8 : There are no positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> with <span class="math inline">\(a\)</span> prime and <span class="math inline">\(a = 6b + 5\)</span>.</p>
+<p>Conjecture 24.9 : For every positive composite integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> able to be the same as <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
+<!-- [DIRECT] --></p>
+<p>Conjecture 24.10 : For every positive composite integer <span class="math inline">\(b\)</span>, if some prime number <span class="math inline">\(a\)</span> divides <span class="math inline">\(b\)</span>, then some other prime <span class="math inline">\(c\)</span> (with <span class="math inline">\(c\)</span> <span class="math inline">\(\neq\)</span> <span class="math inline">\(a\)</span>) also divides <span class="math inline">\(b\)</span>.
+<!-- (c-e) --></p>
+<p>Conjecture 24.11 : For any positive integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, where <span class="math inline">\(a \neq 1\)</span>, if <span class="math inline">\((a^b + 1)\)</span> is prime then <span class="math inline">\(a\)</span> is even.
+<!-- Solution: Assume a ≥ 2 is odd, then $a^m + 1$ is even for every natural number m and therefore it cannot be a prime. From: personal.ee.surrey.ac.uk/Personal/M.Bartuccelli/Modules/MS125/10solutass1.pdf --></p>
+<p>Conjecture 24.12 : If <span class="math inline">\(a\)</span> is a prime number and <span class="math inline">\(a\)</span> | <span class="math inline">\(b\)</span>, then <span class="math inline">\(a\nmid (b+1)\)</span>.</p>
+<p>Conjecture 24.13 : Every positive integer can be written as the sum of two composite integers.</p>
+<p>Conjecture 24.14 : Every integer greater than 11 can be written as the sum of two composite integers.
+<!-- How about this solution?? If n is even, then n is of the form 2k where k≥6. Hence n=2(k−4)+8. And if n is odd, then n is of the form 2k+1 where k≥5. hence n=2(k−4)+9. Thus any number >11 can be expressed as the sum of two composite numbers!! From https://math.stackexchange.com/questions/450930/prove-by-contradiction-that-every-integer-greater-than-11-is-a-sum-of-two-compos --></p>
+<hr />
+<p><em>Large primes are essential for online security, banking and encryption. There’s a search for larger and larger primes to keep the Internet private. One method of finding possible primes is <span class="math inline">\(2^{a} - 1\)</span>, where <span class="math inline">\(a\)</span> is a positive integer.</em></p>
+<p>Conjecture 24.15 : Let <span class="math inline">\(a\)</span> be a positive integer. <span class="math inline">\(2^{a} - 1\)</span> is always prime.</p>
+<p>Conjecture 24.16 : Let <span class="math inline">\(a\)</span> be a positive composite integer. <span class="math inline">\(2^a - 1\)</span> is always prime.</p>
+<p>Conjecture 24.17 : Let <span class="math inline">\(a\)</span> be a prime number. <span class="math inline">\(2^a - 1\)</span> is always prime.
+<!-- WHILST THIS THEOREM HOLDS TRUE FOR THE FIRST FEW PRIMES ($n = 2, 3, 5, 7$ ALL YIELD PRIMES), THE THEOREM BREAKS AT $n = 11$ BECAUSE $n^{11} - 1 = 2047$ ISN'T PRIME (IT'S DIVISIBLE BY $23$ AND $89$). -->
+<!-- Bonus question: How effective is this method for finding primes for the first twenty values of $a$? -->
+<!-- Answer: For $n = 1$ to $n = 20$, we have: -->
+<!-- \begin{center} -->
+<!-- No  Yes  Yes  No  Yes  No  Yes  No  No  No  No  No  Yes  No  No  No  Yes  No  Yes  No -->
+<!-- \end{center}  -->
+<!-- 7 out of the first 20 values of $n$ yield prime numbers, an efficiency for finding primes of 35\%. --></p>
+<p>Conjecture 24.18 : If <span class="math inline">\(2^a - 1\)</span> is prime, then <span class="math inline">\(a\)</span> is prime. <br /> <em>Hint: Try a proof by contrapositive.</em> <br /> <em>Hint: For integers <span class="math inline">\(x,y\)</span>, <span class="math inline">\(x^n + y^n = (x-y)(x^{n-1} + x^{n-2}y + x^{n-3}y^2 + ... xy^{n-2} + y^{n-1})\)</span>.</em>
+<!-- https://web.maths.unsw.edu.au/~jim/proofsch6.pdf --></p>
+<p>Conjecture 24.19 : For a positive integer <span class="math inline">\(a\)</span>, at least one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> isn’t prime.
+<!-- (Except in which exceptional case(s)?) --></p>
+<p>Conjecture 24.20 : For a positive integer <span class="math inline">\(a\)</span>, at least one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> is prime.</p>
+<p>Conjecture 24.21 : For a positive integer <span class="math inline">\(a\)</span>, exactly one of <span class="math inline">\(2^{a}-1\)</span> and <span class="math inline">\(2^{a}+1\)</span> is prime.</p>
+<hr />
+<p>Conjecture 24.22 : If the greatest common divisor of two positive integers, <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, is <span class="math inline">\(&gt; 1\)</span>, then either <span class="math inline">\(b\)</span> | <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is composite.</p>
+<p>Conjecture 24.23 : If <span class="math inline">\(a\)</span> is an integer greater than <span class="math inline">\(1\)</span>, then none of the numbers <span class="math inline">\(a!+2\)</span>, <span class="math inline">\(a!+3\)</span>, <span class="math inline">\(a!+4\)</span>, <span class="math inline">\(a!+5\)</span>, …, <span class="math inline">\(a!+ a\)</span> are prime. <br /> <em>Hint: This conjecture could be expressed as: “If <span class="math inline">\(a \in \mathbb{Z}\)</span> and <span class="math inline">\(a \geq 2\)</span>, there exists <span class="math inline">\(a-1\)</span> consecutive composite numbers.”</em>
+<!-- https://www.ipracticemath.com/learn/realnumber/natural-numbers --></p>
+<p>Conjecture 24.24 : Every integer greater than <span class="math inline">\(1\)</span> has at least one prime divisor. <br /> <em>WARNING: This one’s tough!</em>
+<!-- Proof here: http://gauss.math.luc.edu/greicius/Math201/Fall2012/Lectures/primes.article.pdf --></p>
+</div>
+<!-- underuntilunionurbanupperusualusageupsetunityundueuncleultraurineuniteutterulcerunmetusherunifyunfituncutusurpunlitundidusuryudderuntieunwedumberupendulemaunzipumbrauvula -->
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="56">
+<li id="fn56"><p>See <a href="http://mathworld.wolfram.com/CompositeNumber.html" class="uri">http://mathworld.wolfram.com/CompositeNumber.html</a>.<a href="more-conjectures-ii-prime-numbers.html#fnref56" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="mathematical-incompleteness.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="representations-of-numbers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="more-conjectures-i-assorted.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mathematical-incompleteness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -266,7 +368,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/26.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/24.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -274,7 +376,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/26.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/24.Rmd",
 "text": null
 },
 "download": null,

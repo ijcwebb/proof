@@ -1,4 +1,4 @@
-# Proof by contradiction
+# ▶ Proof by contradiction
 
 This method is based on the same principle as proof by contrapositive. Proof by contrapositive relies on the fact that if $P$ always $\Rightarrow Q$, then $T$ implies $S$. In a proof by contradiction, we assume that $P$ and $T$ are both true (e.g. $a$ is an even integer and $a^2$ is odd) then go looking for a contradiction. Because assuming $P$ is fine (it's the starting point for the conjecture), the contradiction must have arisen due to our other assumption, that of $T$ being true.
 

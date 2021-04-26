@@ -1,4 +1,4 @@
-# Proof by contrapositive
+# ▶ Proof by contrapositive
 
 Look back at the definition of the **contrapositive** from Chapter 15. Do you notice something? The contrapositive always has the same truth value as the original conjecture $P \Rightarrow Q$. If one of them is true, the other is too. If one of them is false, the other is too.
 

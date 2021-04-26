@@ -1,0 +1,3 @@
+# ▶ Geometric proof
+
+See https://www.khanacademy.org/math/geometry-home/geometry-miscellaneous/geometry-worked-examples/v/ca-geometry-proof-by-contradiction for more information about **geometric proof**.

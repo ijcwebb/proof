@@ -1,0 +1,5 @@
+# ▶ Proof by smallest counterexample 
+
+There are many more methods of mathematical proof which we haven't discussed in this book. Other the next three chapters, links to more information about three of these methods are provided.
+
+See https://math.libretexts.org/Bookshelves/Mathematical_Logic_and_Proof/Book%3A_Book_of_Proof_(Hammack)/10%3A__Mathematical_Induction/10.03%3A_Proof_by_Smallest_Counterexample for more information about the method of **proof by smallest counterexample**.

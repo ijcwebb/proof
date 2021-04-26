@@ -1,4 +1,4 @@
-# Proof by cases
+# ▶ Proof by cases
 
 Our third method of proof is called **proof by cases**. Proving something by cases is very similar to proving something by exhaustion. 
 

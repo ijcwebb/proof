@@ -1,4 +1,4 @@
-# Primes
+# More conjectures II: Prime numbers
 
 The primes are a fascinating family of numbers. They are the building blocks of the integers, because every number is either prime or is the product of primes. For that reason, this chapter presents a whole set of conjectures on the primes. 
 
