@@ -41,7 +41,7 @@ It's easy to identify the base case $a = a_0$, as it will be obvious from the co
     
 - "For all positive integers ...", your base case is  $a_0 = 1$. 
     
-- "For all non-negative integers ...", your base case is $a_0 = 0$.
+- "For all nonnegative integers ...", your base case is $a_0 = 0$.
     
 - "For all integers greater than $-10$ ...", your base case is  $a_0 = -9$.
     
@@ -79,7 +79,7 @@ Use the following examples to practise proof by induction.
 
 (\#cnj:pack): The sum of the first $a$ positive integers is given by $\frac{a(a+1)}{2}$.
   
-(\#cnj:progress): Every non-negative integer is either even or odd.
+(\#cnj:progress): Every nonnegative integer is either even or odd.
 
 ``` 
 </div> 
@@ -221,7 +221,7 @@ Conjecture \@ref(cnj:progress): For this conjecture, we'll need a proof by induc
 
 - **Case 2:** Consider two consecutive numbers $x$ and $y$. If $x$ is odd, it can be written as $2k +1$, where $k$ is some integer. As $y$ is consecutive to $x$, it must equal $(2k + 1) + 1 = 2k + 2$ which can be written as $2(k + 1)$, which means it is even. We have shown that even numbers always follow odd numbers.
 
-**Step 2:** We should show that the conjecture is true for the base case. As the conjecture concerns non-negative integers, our base case is $a_0 = 0$. $0$ is even, because $0 = 2(0)$.
+**Step 2:** We should show that the conjecture is true for the base case. As the conjecture concerns nonnegative integers, our base case is $a_0 = 0$. $0$ is even, because $0 = 2(0)$.
 
 We are done.
 
@@ -260,7 +260,7 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
         
 (\#cnj:patch): Any amount greater than or equal to 12 soms can be made using an infinite supply of 4-som and 5-som coins.
 
-(\#cnj:prayer): Every negative integer is either even or odd. <br /> *Section 18.4 discusses using a proof by induction in the opposite direction (towards negative infinity). See Conjecture \@ref(cnj:progress) for the non-negative version of this.*
+(\#cnj:prayer): Every negative integer is either even or odd. <br /> *Section 18.4 discusses using a proof by induction in the opposite direction (towards negative infinity). See Conjecture \@ref(cnj:progress) for the nonnegative version of this.*
         
 (\#cnj:pillow): $2^a > a$ for all negative integers $a$.
 
@@ -293,7 +293,7 @@ knitr::include_graphics(rep("figures/pascal.png"))
 <!-- There's no positive integer $a$ such that the deletion of its first digit divides it by 11. STRANGE -->
 <!-- There's no positive integer $a$ such that the deletion of its first digit divides it by 35. -->
 
-(\#cnj:please): There's only \textit{one} positive integer that is equal to the sum of all the positive integers less than it. 
+(\#cnj:please): There's only one positive integer that is equal to the sum of all the positive integers less than it. 
 <!-- INDUCTION?? -->
 
 (\#cnj:person): Every positive odd integer is equal to the difference of two perfect squares. 
