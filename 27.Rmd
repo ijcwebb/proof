@@ -19,7 +19,9 @@ cube numbers | $a = k^3$, <br /> where $k \in \mathbb{Z}$ | $\{0, 1, 8, 27, ...\
 multiples of 3 | $a = 3k$, <br /> where $k \in \mathbb{Z}$ | $\{..., –9, –6, –3, 0, 3, 6, 9, ...\}$ 
 multiples of 4 | $a = 4k$, <br /> where $k \in \mathbb{Z}$ | $\{..., –12, –8, –4, 0, 4, 8, 12, ...\}$ 
 multiples of 5 | $a = 5k$, <br /> where $k \in \mathbb{Z}$ | $\{..., –15, –10, –5, 0, 5, 10, 15, ...\}$ 
-rational numbers | $a = \frac{k}{l}$ <br /> where $k,l \in \mathbb{Z}$ | There’s no systematic order to write the rational numbers, but some examples are $\frac{2}{3}, 3, –1, \frac{1}{4}, \frac{5}{6}, \frac{21}{7}, –\frac{101}{2}$  
+rational numbers | $a = \frac{k}{l}$, <br /> where $k,l \in \mathbb{Z}$ | There's no systematic order to write the rational numbers, but some examples are $\frac{2}{3}, 3, –1, \frac{1}{4}, \frac{5}{6}, \frac{21}{7}, –\frac{101}{2}$  
+two consecutive integers | $a$, $a + 1$, <br /> where $a \in \mathbb{Z}$ |   
+three consecutive integers | $a$, $a + 1$, $a + 2$, <br /> where $a \in \mathbb{Z}$, <br />  or <br />  $a-1$, $a$, $a + 1$, <br /> where $a \in \mathbb{Z}$  | Sometimes the first form will work best, sometimes the second. If struggling with one, try the other!
 
  <br /> 
  

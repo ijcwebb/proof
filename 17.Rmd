@@ -2,7 +2,7 @@
 
 This method is based on the same principle as proof by contrapositive. Proof by contrapositive relies on the fact that if $P$ always $\Rightarrow Q$, then $T$ implies $S$. In a proof by contradiction, we assume that $P$ and $T$ are both true (e.g. $a$ is an even integer and $a^2$ is odd) then go looking for a contradiction. Because assuming $P$ is fine (it's the starting point for the conjecture), the contradiction must have arisen due to our other assumption, that of $T$ being true.
 
-Proof by contradiction is like building a fantasy world: one where both $P$ and $T$ can be true at the same time. We then explore this world (usually using algebra) until we find a contradiction, which shatters our illusions and the fantasy world collapses: $P$ and $T$ can't both be true at the same time. If $P$ and $T$ can't both be true simulataneously, and remembering our observation in the last chapter that every element on the left hand side of a conjecture map *must* travel to the right hand side, $P$ must go to $Q$.
+Proof by contradiction is like building a fantasy world: one where both $P$ and $T$ can be true at the same time. We then explore this world (usually using algebra) until we find a contradiction, which shatters our illusions and the fantasy world collapses: $P$ and $T$ can't both be true at the same time. If $P$ and $T$ can't both be true simultaneously, and remembering our observation in the last chapter that every element on the left hand side of a conjecture map *must* travel to the right hand side, $P$ must go to $Q$.
 
 Proof by contradiction is a great method - building this fantasy world and pretending all is OK until you find an irrefutable contradiction. It's kind of like this...
 
@@ -237,7 +237,7 @@ Some of these conjectures are false; disprove them by finding a counterexample. 
 
 (\#cnj:zaniness): The product of three consecutive positive integers is never a perfect cube.
 
-(\#cnj:zapateos): The product of three consecutive integers is never a perfect cube (ignoring the trivial case where one of the three numbers is $0$). <br /> *Hint: Build on your work from Conjecture \@ref(cnj:zaniness).*
+(\#cnj:zapateos): The product of three consecutive integers is never a perfect cube (ignoring the trivial case where one of the three numbers is $0$). <br /> *Hint 1: Build on your work from Conjecture \@ref(cnj:zaniness).* <br /> *Hint 2: There are two different ways to express three consecutive integers - see the table in Chapter 27.*
 
 (\#cnj:zappiest): In a right angled triangle,^[A right triangle is a triangle containing a $90^\text{o}$ angle.] the length of the hypotenuse is always less than the sum of the lengths of the two other sides.
 

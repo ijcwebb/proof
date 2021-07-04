@@ -124,6 +124,10 @@ Some of these conjectures below are false; **disprove them by finding a countere
 (\#cnj:drag): There are fewer square numbers below 50 than prime numbers.
 
 (\#cnj:junior): Every even integer between (and including) 4 and 30 can be written as a sum of two primes.
+  
+(\#cnj:seniors): Every odd integer between 4 and 30 can be written as a sum of two primes.
+  
+(\#cnj:freshmen): Every composite integer between (and including) 4 and 30 can be written as a sum of two primes.
 
 (\#cnj:world): The sum of two distinct square numbers is a square number. *(**Distinct** means the two square numbers can't be the same.)*
 
@@ -144,3 +148,7 @@ Some of these conjectures below are false; **disprove them by finding a countere
 
 ```
 </div> 
+
+<!-- (\#cnj:seniors): Counterexample is 17. -->
+
+<!-- (\#cnj:freshmen): Counterexample is 27. -->

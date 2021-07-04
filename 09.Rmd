@@ -2,31 +2,34 @@
 
 Prior to beginning to prove some conjectures, there are several questions which students always have, or difficulties that seem to arise. This chapter will address some of them.
 
-## Why prove something?
+<!-- From Sheffield -->
+<!-- ## Why prove something? -->
 
-We should ask ourselves why we should care about mathematical proof. (Hopefully you asked yourself this prior to taking this course!) Why are mathematics proofs important? This is a *big* question, which we won't pretend to be able to answer in just a few short paragraphs, but I'll mention a couple of my main reasons for caring about mathematical proof:
+<!-- We should ask ourselves why we should care about mathematical proof. (Hopefully you asked yourself this prior to taking this course!) Why are mathematics proofs important? This is a *big* question, which we won't pretend to be able to answer in just a few short paragraphs, but I'll mention a couple of my main reasons for caring about mathematical proof: -->
 
-- A proof of a mathematical statement is absolute; there is no exception to the rule. They cannot be argued this way or that way, and no two people can come to different conclusions upon reading a mathematical proof. There is no "fake news", "alternative facts", or lies in mathematics. Such absolute statements are wonderful and do not exist in any other field of study. As the mathematician Simon Singh wrote: “The search for a mathematical proof is the search for a knowledge which is more absolute than the knowledge accumulated by any other discipline”.
+<!-- - A proof of a mathematical statement is absolute; there is no exception to the rule. They cannot be argued this way or that way, and no two people can come to different conclusions upon reading a mathematical proof. There is no "fake news", "alternative facts", or lies in mathematics. Such absolute statements are wonderful and do not exist in any other field of study. As the mathematician Simon Singh wrote: “The search for a mathematical proof is the search for a knowledge which is more absolute than the knowledge accumulated by any other discipline”. -->
 
-- Mathematics is EVERYWHERE! From music to the economy, from demographics to nature, from business to space travel, mathematics is used to help us reason about the world we live in. If we weren't able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us.
+<!-- - Mathematics is EVERYWHERE! From music to the economy, from demographics to nature, from business to space travel, mathematics is used to help us reason about the world we live in. If we weren't able to apply mathematical theorems that we have proved to be true, we would not know much about the world around us. -->
 
-- It is possible to know when you can not do better; for example, a cartographer wishing to use as few colours as possible to colour her maps can be told by a mathematician that four different colours will suffice to ensure no two adjacent areas are the same colour (this theorem is called the *Four Colour Theorem*}. Similarly mathematicians have been able to tell chemists when certain crystal structures have no mathematical obstructions (which led chemists to search for, and successfully produce, new crystal structures). There are numerous other examples of this kind.
+<!-- - It is possible to know when you can not do better; for example, a cartographer wishing to use as few colours as possible to colour her maps can be told by a mathematician that four different colours will suffice to ensure no two adjacent areas are the same colour (this theorem is called the *Four Colour Theorem*}. Similarly mathematicians have been able to tell chemists when certain crystal structures have no mathematical obstructions (which led chemists to search for, and successfully produce, new crystal structures). There are numerous other examples of this kind. -->
 
-- Mathematics isn't done simply to serve a purpose, however, or to support other fields. A mathematical proof precisely captures an idea, ideas which as well as being fundamental are often beautiful and elegant. These beautiful ideas deserve to be written down correctly.
+<!-- - Mathematics isn't done simply to serve a purpose, however, or to support other fields. A mathematical proof precisely captures an idea, ideas which as well as being fundamental are often beautiful and elegant. These beautiful ideas deserve to be written down correctly. -->
 
 ## How do I write a good proof?
 
 Here are some things to remember when writing proofs:
 
-- Always use English (or Kyrgyz, Spanish, Russian, Arabic or whichever language you're writing your proof in) to clearly convey what you mean; good mathematical arguments should read like an essay. Whenever you write a proof, you should read through your answer and check to see if it could be read aloud and still be understood. 
+<!-- From Sheffield -->
+<!-- - Always use English (or Kyrgyz, Spanish, Russian, Arabic or whichever language you're writing your proof in) to clearly convey what you mean; good mathematical arguments should read like an essay. Whenever you write a proof, you should read through your answer and check to see if it could be read aloud and still be understood.  -->
 
 - Label lines of work that you need to refer back to with reference numbers. In this course, you should also label the conjecture with the reference number from the textbook. End the proof with the $\square$ symbol to show you're done.
 
-- Always clearly state your assumptions. This becomes extra important with the method proof by contradiction, and is key with the method proof by cases.
+<!-- From Sheffield -->
+<!-- - Always clearly state your assumptions. This becomes extra important with the method proof by contradiction, and is key with the method proof by cases. -->
 
-- Use words or symbols to correctly connect the mathematical statements which make up your proof (See the section below on the difference between the symbols $=$, $\Rightarrow$ and $\Leftrightarrow$.)
+<!-- - Use words or symbols to correctly connect the mathematical statements which make up your proof (See the section below on the difference between the symbols $=$, $\Rightarrow$ and $\Leftrightarrow$.) -->
 
-- Take pride in the mathematics you write; when you write a piece of mathematics, you are showing people *exactly* how you think. So, you should try to write as elegantly and beautifully as you can!
+<!-- - Take pride in the mathematics you write; when you write a piece of mathematics, you are showing people *exactly* how you think. So, you should try to write as elegantly and beautifully as you can! -->
 
 - Good mathematical proofs written by one person should be understandable by another. All terms should be clearly defined, and any variables used too.
 
@@ -42,77 +45,84 @@ For a proof to be declared valid, it should be shared with your peers to check i
 
 Once your peers have approved it, you then can publish your proof as a piece of mathematics. It's at *this* point that you enter the history books and your mathematical proof remains valid for ever!
 
-Note however, that as you move through the rest of this course, you will start to get a sense of when you have finished a proof. Knowing when a proof is finished, and when it is *not* finished, is a valuable skill you will develop.
+**Note:** As you move through the rest of this course, you will start to get a sense of when you have finished a proof. Knowing when a proof is finished, and when it is *not* finished, is a valuable skill you will develop.
 
-## Common mistakes in proof
+## Key things to bear in mind when proving
 
-Here are some of the most common mistakes when writing proofs, all of which make your proof *invalid:
+**You can't prove a conjecture using examples** unless you can be sure that the examples cover all possible instances of the conjecture. Even if the conjecture holds for the first few examples you try, this is no guarantee that the conjecture is always true. Let's look at a couple of examples.
 
-- **Arguing from examples:** Looking at examples is one of the most helpful practices a conjecture-prover can engage in. We discussed how useful it is to start with examples as a "way-in" to a new conjecture. However, it is a mistake to think that general statement can be proved by showing it to be true for some cases. For example, finding five right-angled triangles where Pythagoras' Theorem is true does not prove that the theorem is true for all right-angled triangles.
-- **Using the same letter to mean two different things:** Often beginner conjecture provers give a new variable quantity the same letter name as a previously introduced variable. This will confuse your reader.
-- **Assuming the thing to be proved is true:** If you are trying to prove something is true, you can’t assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.^[A lawyer in court trying to prove a defendant guilty is not allowed to say, "Because we know the defendant is guilty, we know he can't have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night". No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.]
-- **Claiming something is true without having justified it:**. This is also called “jumping to a conclusion”.
-<!-- - **Using “any” when you mean “some” -->
-<!-- - For example, *any* multiple of 5 ends with 5 versus *some* multiples of 5 end with 5. -->
-<!-- **Using “if” when you mean “because”** -->
+(\#cnj:hot): If $a$ is a prime number then so is $2^a - 1$. 
 
-The first of these means you haven't actually started a proof. The second is not too much of a problem and is easily rectified. The last two would mean you have started a proof but that it contains fundamental problems. Both of these two are a headache to mathematicians and conjecture-provers around the world!
+Whilst this conjecture holds for $a=2$, $a=3$, $a=5$, $a=7$ (the first four primes), the conjecture breaks at $a = 11$, because $a^{11} - 1 = 2047$ which isn't prime (it's divisible by both $23$ and $89$). 
 
-## $=$, $\Rightarrow$ and $\Leftrightarrow$
+(\#cnj:cold): $a^2 - a + 11$ is prime, for $a \in \mathbb Z^+$ 
 
-Finally, we discuss the important mathematical symbols "$\Rightarrow$", "$\Leftrightarrow$" and "$=$", and how they should be used in proofs.
+holds for all values of $a$ from $1$ to $10$ but breaks at $a= 11$.
 
-### The equals sign
+**You must define any variables you introduce.** For example, if you are told that $a$ is odd and you decide to express it as $a = 2k + 1$, you should tell your reader what $k$ is (in this case, $k$ is an integer). 
 
-The equals sign, "$=$", is used to denote an equality between mathematics expressions (not statements). So for example, 
+**Don't assume the thing to be proved is true.** If you are trying to prove something is true, you can't assume it is true at the beginning of the proof. The reason for this is because assuming it true at the beginning might encourage you to use it as an established fact during your proof.^[A lawyer in court trying to prove a defendant guilty is not allowed to say, "Because we know the defendant is guilty, we know he can't have been where he says he was on the night of the crime. Because we know he is guilty, we know he was at the scene of the crime that night". No one in the jury is going to be convinced by this argument! The lawyer must find explicit evidence that the defendant was at the scene of the crime that night.]
 
-\begin{align}
-  1+1=2
-\end{align}
+**You mustn't claim something is true without having justified it**. This might simply involve showing it to be true in the proof, or referring to a previously proved conjecture.
 
-or
+**Note:** The first of these means you haven't actually started a proof. The second is not too much of a problem and is easily rectified. The last two would mean you *have* started a proof but that it contains fundamental problems.
 
-\begin{align}
-  \sin^2 \theta + \cos^2 \theta = 1
-\end{align}
+<!-- From Sheffield -->
+<!-- ## $=$, $\Rightarrow$ and $\Leftrightarrow$ -->
 
-### The implies sign
+<!-- Finally, we discuss the important mathematical symbols "$\Rightarrow$", "$\Leftrightarrow$" and "$=$", and how they should be used in proofs. -->
 
-The implies sign, "$\Rightarrow$", is used to denote when one mathematical statement follows directly from another. For example
+<!-- ### The equals sign -->
 
-\begin{align}
-  x &= 3 \Rightarrow x^2 = 9
-\end{align}
+<!-- The equals sign, "$=$", is used to denote an equality between mathematics expressions (not statements). So for example,  -->
 
-which is read "if $x$ equals three then $x$ squared equals nine". Note that it would be wrong to write
+<!-- \begin{align} -->
+<!--   1+1=2 -->
+<!-- \end{align} -->
 
-\begin{align}
-  x^2 = 9 \Rightarrow x &= 3
-\end{align}
+<!-- or -->
 
-as $x^2 = 9$ doesn't mean that $x$ is definitely $3$ (it could be $-3$).
+<!-- \begin{align} -->
+<!--   \sin^2 \theta + \cos^2 \theta = 1 -->
+<!-- \end{align} -->
 
-### The equivalence sign
+<!-- ### The implies sign -->
 
-The equivalence sign, "$\Leftrightarrow$", is used to denote the equivalence of two mathematical statements. If $A$ and $B$ are mathematical statements, then writing $A \Leftrightarrow B$ means that both $A \Rightarrow B$ and $B \Rightarrow A$ are true. For example,
+<!-- The implies sign, "$\Rightarrow$", is used to denote when one mathematical statement follows directly from another. For example -->
 
-\begin{align}
-    x - 1 &= 0 \Leftrightarrow x = 1
-\end{align}
+<!-- \begin{align} -->
+<!--   x &= 3 \Rightarrow x^2 = 9 -->
+<!-- \end{align} -->
 
-Note that it would be wrong to write
+<!-- which is read "if $x$ equals three then $x$ squared equals nine". Note that it would be wrong to write -->
 
-\begin{align}
-    x^2 &= 9 \Leftrightarrow x = 3
-\end{align}
+<!-- \begin{align} -->
+<!--   x^2 = 9 \Rightarrow x &= 3 -->
+<!-- \end{align} -->
 
-but correct to write
+<!-- as $x^2 = 9$ doesn't mean that $x$ is definitely $3$ (it could be $-3$). -->
 
-\begin{align}
-    x^2 &= 9 \Leftrightarrow x = \pm 3
-\end{align}
+<!-- ### The equivalence sign -->
 
-## Another look at these arrows
+<!-- The equivalence sign, "$\Leftrightarrow$", is used to denote the equivalence of two mathematical statements. If $A$ and $B$ are mathematical statements, then writing $A \Leftrightarrow B$ means that both $A \Rightarrow B$ and $B \Rightarrow A$ are true. For example, -->
+
+<!-- \begin{align} -->
+<!--     x - 1 &= 0 \Leftrightarrow x = 1 -->
+<!-- \end{align} -->
+
+<!-- Note that it would be wrong to write -->
+
+<!-- \begin{align} -->
+<!--     x^2 &= 9 \Leftrightarrow x = 3 -->
+<!-- \end{align} -->
+
+<!-- but correct to write -->
+
+<!-- \begin{align} -->
+<!--     x^2 &= 9 \Leftrightarrow x = \pm 3 -->
+<!-- \end{align} -->
+
+## Some useful arrows
 
 The arrows $\Rightarrow$, $\Leftarrow$, $\Leftrightarrow$ describe relationships that can be represented with Venn diagrams.
 
@@ -210,7 +220,7 @@ h. The number squared is one   ⇐   The number is one
 ```{exercise}
 Add either “⇒”, “⇐” or “⇔” to the following, to make them correct. If neither arrow is correct, write N/A. Draw a Venn diagram to summarise each answer. Solutions are below.
 
-Note, polygons are straight-edged 2D closed shapes. Polygons come in two flavours, convex and concave. See: https://mathworld.wolfram.com/ConvexPolygon.html.
+**Note:** Polygons are straight-edged 2D closed shapes. Polygons come in two flavours, convex and concave. See: https://mathworld.wolfram.com/ConvexPolygon.html.
 ```
 
 a. The polygon has three sides <br />  The polygon is a triangle
@@ -271,9 +281,7 @@ h. The UN member state has disputed borders with at least one other UN member st
 
 Let's look at an example of a good proof and a bad proof. Both are trying to prove the following conjecture:
 
-(\#cnj:red): If $a$ and $c$ are positive real numbers and $x = \pm \sqrt{\frac{c}{a}}$, then $ax^2-c=0$.
-
-A couple of observations first. Note that $a, c >0$ implies that $a \neq 0$, which is important as it's the denominator of the fraction $\frac{c}{a}$. This means that $\frac{c}{a}$ is defined. Also note that $a, c > 0$ implies that $\frac{c}{a} > 0$ which is important as it is under a square root. This means that $\sqrt{\frac{c}{a}}$ is defined.
+(\#cnj:red): If $a$ is odd, the $3a$ is odd.
 
 ### A good proof
 
@@ -281,22 +289,19 @@ First, the good proof.
 
 <div class="alert alert-success" role="alert">
 ```{proof}
-Our starting point $P$ is $x = \pm \sqrt{\frac{c}{a}}$, with $a, c \in \mathbb R^+$.
-  If
+Our starting point, $P$, is that $a$ is odd. As $a$ is odd, we can express it as
 \begin{align}
-  x &= \pm \sqrt{\frac{c}{a}}(\#eq:abe)
+  a &= 2k + 1 (\#eq:abe)
 \end{align}
-  then squaring both sides, meaning both sides are positive and equivalent, gives
+where $k$ is an integer.
+Then
 \begin{align}
-  x^2 &= \left(\pm \sqrt{\frac{c}{a}} \right)^2 (\#eq:chick) \\
-  &= \frac{c}{a} (\#eq:maybe)
+  3a &= 3(2k + 1) (\#eq:chick) \\
+  &= 6k + 3 (\#eq:maybe) \\
+  &= 6k + 2 + 1 (\#eq:load) \\
+  &= 2(3k + 1) + 1 (\#eq:neigh)
 \end{align}
-  Multiplying both sides by $a$, which we can do as $a\neq 0$, we get
-\begin{align}
-  ax^2 &= c (\#eq:load) \\
-  ax^2 - c &= 0 (\#eq:neigh)
-\end{align}
-  We have shown that $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$ as required.
+which is odd.
 
 ```
 </div>
@@ -316,45 +321,38 @@ Here are a couple of things to notice:
 Now for the bad proof.
 
 <div class="alert alert-success" role="alert">
-```{proof}
 
 \begin{align}
-  ax^2 + c &= x^2 + \frac{c}{a} = 0 (\#eq:water) \\
-  &= x \Rightarrow \pm \sqrt{\frac{c}{a}} (\#eq:fire)
+  a = 2k + 1 &= 3(2k + 1) \\
+  &= 2(3k + 1) + 1
 \end{align}
-which completes the proof.
 
-```
 </div>
 
-You can probably see very easily that this second proof is far from perfect. However, you might argue that the person who wrote the answer more or less knew what they meant. For example, they know "why" $x = \pm \sqrt{\frac{c}{a}}\Rightarrow ax^2 - c = 0$. The question then is, what's wrong with this proof? 
+Whilst the same reasoning underpins this proof as the proof above, it is far from easy to understand for the reader. Also, not writing out each step means the author of the proof runs the risk of making mistakes, which are then harder to spot. Finally, there are some plain mathematical mistakes ($2k + 1 \neq 3(2k + 1)$), even though we know what the author meant!
 
-- Firstly, it is really hard for the reader to follow. 
+<!-- Here's another example which demonstrates this: -->
 
-- Secondly, when you, the author, are not absolutely clear about what your assumptions are, or don't properly justify implications, it is easy to run into trouble. 
-
-Here's another example which demonstrates this:
-
-Let
-\begin{align}
-  x=y
-\end{align}
-  As $x=y$,
-\begin{align}
-    y(x-y) &= x(x-y) (\#eq:noone)
-\end{align}
-  Also,
-\begin{align}
-    & x(x-y) = x^2 - xy - x^2 - y^2 = (x+y)(x-y) = 2y(x-y) (\#eq:reign)
-\end{align}
-  So,
-\begin{align}
-  y(x-y) &= 2y(x-y) (\#eq:rain)
-\end{align}
-  and so
-\begin{align}
-  1 &= 2 (\#eq:decide)
-\end{align}
+<!-- Let -->
+<!-- \begin{align} -->
+<!--   x=y -->
+<!-- \end{align} -->
+<!--   As $x=y$, -->
+<!-- \begin{align} -->
+<!--     y(x-y) &= x(x-y) (\#eq:noone) -->
+<!-- \end{align} -->
+<!--   Also, -->
+<!-- \begin{align} -->
+<!--     & x(x-y) = x^2 - xy - x^2 - y^2 = (x+y)(x-y) = 2y(x-y) (\#eq:reign) -->
+<!-- \end{align} -->
+<!--   So, -->
+<!-- \begin{align} -->
+<!--   y(x-y) &= 2y(x-y) (\#eq:rain) -->
+<!-- \end{align} -->
+<!--   and so -->
+<!-- \begin{align} -->
+<!--   1 &= 2 (\#eq:decide) -->
+<!-- \end{align} -->
 
 <!-- ## Exercises -->
 

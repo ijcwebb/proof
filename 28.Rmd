@@ -29,3 +29,7 @@ http://mrpaynemath.weebly.com/uploads/3/8/9/9/38994693/math2201ch1.3notes-workin
 http://alevelmathsrevision.com/downloads/A2/Pure/Proof 
 
 https://madasmaths.com/archive/maths_booklets/further_topics/various/proof_general.pdf
+
+https://www.cs.sfu.ca/~ggbaker/zju/math/proof.html 
+
+https://www.khanacademy.org/math/geometry-home/geometry-miscellaneous/geometry-worked-examples/v/ca-geometry-proof-by-contradiction

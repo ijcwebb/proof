@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>An Introduction to Mathematical Proof</title>
+  <title>Chapter 29 Story proofs | An Introduction to Mathematical Proof</title>
   <meta name="description" content="Description" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="An Introduction to Mathematical Proof" />
+  <meta property="og:title" content="Chapter 29 Story proofs | An Introduction to Mathematical Proof" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="An Introduction to Mathematical Proof" />
+  <meta name="twitter:title" content="Chapter 29 Story proofs | An Introduction to Mathematical Proof" />
   
   <meta name="twitter:description" content="Description" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="list-of-sources.html"/>
 
-<link rel="next" href="statements.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -193,6 +193,7 @@
 <li class="chapter" data-level="26" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>26</b> Glossary</a></li>
 <li class="chapter" data-level="27" data-path="representations-of-numbers.html"><a href="representations-of-numbers.html"><i class="fa fa-check"></i><b>27</b> Representations of numbers</a></li>
 <li class="chapter" data-level="28" data-path="list-of-sources.html"><a href="list-of-sources.html"><i class="fa fa-check"></i><b>28</b> List of sources</a></li>
+<li class="chapter" data-level="29" data-path="story-proofs.html"><a href="story-proofs.html"><i class="fa fa-check"></i><b>29</b> Story proofs</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -213,85 +214,96 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">An Introduction to Mathematical Proof</h1>
-<p class="author"><em>Iain Webb</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-07-04</em></p>
-</div>
-<div id="introduction" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>Welcome! It’s lovely to have you here!</p>
-<p><img src="figures/head1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div id="about-this-course" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> About this course</h2>
-<p>This book accompanies the course “Reason and Argue Better: Logic in Proof and Argument,” which was written between 2018-2019 and has been taught every semester since.</p>
-<p>This is the third semester that this course has been taught online or partly online. The course has been adapted for online teaching, with some elements simplified and others expanded. Completing this course online offers some challenges, but also opportunities for things not possible when offline.</p>
-</div>
-<div id="about-this-book" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> About this book</h2>
-<p>This book contains the material we will study as well as exercises (see the next section) and links for further reading. Most weeks I will assign you a chapter to read, and you should complete both the reading and the exercises within the chapter before our next class.</p>
-<p>This textbook may be updated during the course. Therefore you are advised to access the book at the link at <a href="https://ijcwebb.github.io/proof" class="uri">https://ijcwebb.github.io/proof</a>, rather than printing or downloading it. Also, even though you <em>can</em> read ahead of the set chapter, you are advised that later chapters might change as the course procedes.</p>
-<p>If you notice any mistakes in the book, there is a thread on the Forum on our course’s e-Course page. Post the mistake you’ve noticed, along with the chapter and section number. I will check the mistake and update the book accordingly.</p>
-</div>
-<div id="how-to-use-this-book" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> How to use this book</h2>
-<p>When completing the week’s reading, you will encounter some exercises. I will indicate which of these you should attempt.</p>
-<div class="alert alert-info" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-2" class="exercise"><strong>Exercise 1.1  </strong></span>Regular exercises look like this…</p>
-<ol style="list-style-type: lower-alpha">
-<li>…with subparts…</li>
-<li>…like this.</li>
-</ol>
-</div>
-</div>
-
-<div class="solution">
-<p> <span class="solution"><em>Solution. </em></span> Solutions might be included underneath exercises, in which case you should aim to complete the exercise before checking the solution. If the solution is not included, then we will probably discuss it in class.</p>
-</div>
-<div class="alert alert-danger" role="alert">
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-4" class="exercise"><strong>Exercise 1.2  </strong></span>Extension exercises look like this. These are exercises that require a little more thought.</p>
-<p>Solutions won’t be given in the book for these exercises, but we may discuss these in class. You can also book one-to-one consultations to discuss. See our syllabus for full details.</p>
-</div>
-</div>
-<p>There are a couple of other coloured boxes used in this book:</p>
-<div class="alert alert-success" role="alert">
-
-<div class="proof">
-<p> <span class="proof"><em>Proof. </em></span> <br />
-Proofs look like this.</p>
-</div>
-</div>
-<div class="alert alert-warning" role="alert">
-<p><strong>Careful!
-</strong></p>
-<p>This is where I alert you to mistakes commonly made by students in this course. Read these warnings carefully to avoid these mistakes yourself.</p>
-</div>
-<!-- <div class="alert alert-success" role="alert"> -->
-<!-- <strong>What we've learnt </strong>  -->
-<!-- These boxes are found at the end of the early chapters, and recap the main things we have covered in the chapter. You can view these as key takeaways from the chapter. These often set us up for the next chapter too.  -->
-<!-- </div> -->
-</div>
-<div id="contents" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Contents</h2>
-<p><strong>PART I:</strong> Chapters 2-5 cover the <em>terminology</em> of mathematical proof. <br />
-<strong>PART II:</strong> Chapters 6-9 cover the <em>basics</em> of proof. <br />
-<strong>PART III:</strong> Chapters 10-19 cover <em>methods</em> of proof. <br />
-<strong>PART IV:</strong> Chapter 20 covers <em>mathematical incompleteness</em>. <br /></p>
-<p>That’s it. You’re ready to begin!</p>
+<div id="story-proofs" class="section level1" number="29">
+<h1><span class="header-section-number">Chapter 29</span> Story proofs</h1>
+<p><a href="https://bardnetwork.padlet.org/webb_i/za98e85hce5oym0e" class="uri">https://bardnetwork.padlet.org/webb_i/za98e85hce5oym0e</a>
+17.10 - In a right angled triangle, the length of the hypotenuse is always less than the sum of the lengths of the two other sides.
+Saera Turdieva
+TRUE. Direct proof:
+Let’s say that I am in a rectangle room and I have to hit the corner at the other end of the diagonal.
+It is shorter for me to go straight to the other end diagonally than going up and turning right (or left).
+In my example, diagonal means the hypotenuese of a right angled triangle, and “up” and “turn right” means sides of a triangle. Rectangle room divided by diagonal is a right angled triangle.
+It intuitively proves that sum of lengths of two other sides is always greater than the length of the hypotenuse.</p>
+<p>17.22 - Sukcha Anniessara
+<img src="figures/sukchaanniessara.jpg" width="90%" style="display: block; margin: auto;" /></p>
 
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
+<a href="list-of-sources.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="statements.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -323,7 +335,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ijcwebb/proof/edit/master/index.Rmd",
+"link": "https://github.com/ijcwebb/proof/edit/master/29.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -331,7 +343,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ijcwebb/proof/blob/master/index.Rmd",
+"link": "https://github.com/ijcwebb/proof/blob/master/29.Rmd",
 "text": null
 },
 "download": null,

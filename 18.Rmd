@@ -158,7 +158,7 @@ Conjecture \@ref(cnj:pack):
 <div class="alert alert-success" role="alert">
 ```{proof}
 <br />
-**Step 1:**: Show that if the conjecture is true for $a$, then it must be true for $a+1$.
+**Step 1:** Show that if the conjecture is true for $a$, then it must be true for $a+1$.
 
 We assume that the sum of the first $a$ positive integers is $\frac{a(a+1)}{2}$. The sum of the first $a+1$ positive integers would therefore be
 

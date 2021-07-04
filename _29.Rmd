@@ -1,0 +1,15 @@
+# Story proofs
+
+https://bardnetwork.padlet.org/webb_i/za98e85hce5oym0e
+17.10 -  In a right angled triangle, the length of the hypotenuse is always less than the sum of the lengths of the two other sides.
+Saera Turdieva
+TRUE. Direct proof:
+Let’s say that I am in a rectangle room and I have to hit the corner at the other end of the diagonal.
+It is shorter for me to go straight to the other end diagonally than going up and turning right (or left).
+In my example, diagonal means the hypotenuese of a right angled triangle, and “up” and “turn right” means sides of a triangle. Rectangle room divided by diagonal is a right angled triangle.
+It intuitively proves that sum of lengths of two other sides is always greater than the length of the hypotenuse.
+
+17.22 - Sukcha Anniessara
+```{r, echo=FALSE, out.width="90%", fig.align="center"}
+knitr::include_graphics(rep("figures/sukchaanniessara.jpg"))
+```
